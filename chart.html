@@ -3181,9 +3181,22 @@ var chart = new tauCharts.Chart({
     x: 'date',
     y: 'elo',
     color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
     plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
         tauCharts.api.plugins.get('legend')(),
-        tauCharts.api.plugins.get('tooltip')()
     ]
 });
 chart.renderTo('#line');
