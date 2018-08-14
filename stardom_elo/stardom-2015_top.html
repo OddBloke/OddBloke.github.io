@@ -1,0 +1,1951 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2015/01/03",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1047.6671324834967,
+  "opponent": "Momo Watanabe; Koguma (winner), Act Yasukawa, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kris Wolf, Mayu Iwatani, Momo Watanabe, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/03",
+  "wrestler": "Takumi Iroha",
+  "elo": 1022.4406702233307,
+  "opponent": "Hatsuhinode Kamen, Kris Wolf; Koguma (winner), Act Yasukawa, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Momo Watanabe, Nanae Takahashi, Reo Hazuki, Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/03",
+  "wrestler": "Act Yasukawa",
+  "elo": 997.9166666666666,
+  "opponent": "Koguma (winner), Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Momo Watanabe, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/03",
+  "wrestler": "Io Shirai",
+  "elo": 997.9411261423568,
+  "opponent": "Koguma (winner), Act Yasukawa, Hatsuhinode Kamen, Kairi Hojo, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Momo Watanabe, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/03",
+  "wrestler": "Kairi Hojo",
+  "elo": 997.953469094312,
+  "opponent": "Koguma (winner), Act Yasukawa, Hatsuhinode Kamen, Io Shirai, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Momo Watanabe, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/03",
+  "wrestler": "Mayu Iwatani",
+  "elo": 997.9913831304956,
+  "opponent": "Koguma (winner), Act Yasukawa, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Kris Wolf, Momo Watanabe, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/03",
+  "wrestler": "Nanae Takahashi",
+  "elo": 998.013589817585,
+  "opponent": "Koguma (winner), Act Yasukawa, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Momo Watanabe, Reo Hazuki, Takumi Iroha, Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/03",
+  "wrestler": "Reo Hazuki",
+  "elo": 998.0254718890052,
+  "opponent": "Koguma (winner), Act Yasukawa, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Momo Watanabe, Nanae Takahashi, Takumi Iroha, Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/03",
+  "wrestler": "Yoshiko",
+  "elo": 998.049879897321,
+  "opponent": "Koguma (winner), Act Yasukawa, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Momo Watanabe, Nanae Takahashi, Reo Hazuki, Takumi Iroha",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/03",
+  "wrestler": "Koguma",
+  "elo": 1024.196320074239,
+  "opponent": "Act Yasukawa, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Momo Watanabe, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2015/01/11",
+  "wrestler": "Dragonita",
+  "elo": 950.0,
+  "opponent": "Kyoko Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/11",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1050.0,
+  "opponent": "Dragonita",
+  "result": "won"
+ },
+ {
+  "date": "2015/01/11",
+  "wrestler": "Takumi Iroha",
+  "elo": 1067.145000950461,
+  "opponent": "Hatsuhinode Kamen",
+  "result": "won"
+ },
+ {
+  "date": "2015/01/11",
+  "wrestler": "Io Shirai",
+  "elo": 1083.749388832974,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/01/18",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1002.841198379561,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/18",
+  "wrestler": "Io Shirai",
+  "elo": 1128.57532293691,
+  "opponent": "Kaori Yoneyama",
+  "result": "won"
+ },
+ {
+  "date": "2015/01/18",
+  "wrestler": "Mayu Iwatani",
+  "elo": 897.9698780038503,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/18",
+  "wrestler": "Act Yasukawa",
+  "elo": 1097.9381717933118,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2015/01/18",
+  "wrestler": "Nanae Takahashi",
+  "elo": 898.0240349421249,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2015/01/18",
+  "wrestler": "Yoshiko",
+  "elo": 1098.039434772781,
+  "opponent": "Nanae Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2015/02/01",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1022.8182538509884,
+  "opponent": "Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Dragonita",
+  "elo": 1058.330710227818,
+  "opponent": "Hatsuhinode Kamen; Koguma (winner), Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kairi Hojo, Yoshiko, Kris Wolf, Mayu Iwatani, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yuna Manase",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Heidi Lovelace",
+  "elo": 998.2285930324704,
+  "opponent": "Koguma (winner), Dragonita, Hatsuhinode Kamen, Hudson Envy, Io Shirai, Kairi Hojo, Yoshiko, Kris Wolf, Mayu Iwatani, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yuna Manase",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Hudson Envy",
+  "elo": 998.2383328876812,
+  "opponent": "Koguma (winner), Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Io Shirai, Kairi Hojo, Yoshiko, Kris Wolf, Mayu Iwatani, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yuna Manase",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Io Shirai",
+  "elo": 1126.1258839945444,
+  "opponent": "Koguma (winner), Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Kairi Hojo, Yoshiko, Kris Wolf, Mayu Iwatani, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yuna Manase",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Kairi Hojo",
+  "elo": 996.226138754585,
+  "opponent": "Koguma (winner), Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Yoshiko, Kris Wolf, Mayu Iwatani, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yuna Manase",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Yoshiko",
+  "elo": 1095.772113023487,
+  "opponent": "Koguma (winner), Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kairi Hojo, Kris Wolf, Mayu Iwatani, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yuna Manase",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Mayu Iwatani",
+  "elo": 896.7873510311025,
+  "opponent": "Koguma (winner), Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kairi Hojo, Yoshiko, Kris Wolf, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yuna Manase",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1020.9914014817139,
+  "opponent": "Koguma (winner), Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kairi Hojo, Yoshiko, Kris Wolf, Mayu Iwatani, Reo Hazuki, Takumi Iroha, Yuna Manase",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Reo Hazuki",
+  "elo": 996.3447458828099,
+  "opponent": "Koguma (winner), Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kairi Hojo, Yoshiko, Kris Wolf, Mayu Iwatani, Nanae Takahashi, Takumi Iroha, Yuna Manase",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Takumi Iroha",
+  "elo": 1065.0924884339581,
+  "opponent": "Koguma (winner), Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kairi Hojo, Yoshiko, Kris Wolf, Mayu Iwatani, Nanae Takahashi, Reo Hazuki, Yuna Manase",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/07",
+  "wrestler": "Koguma",
+  "elo": 1046.5436999068202,
+  "opponent": "Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kairi Hojo, Yoshiko, Kris Wolf, Mayu Iwatani, Nanae Takahashi, Reo Hazuki, Takumi Iroha, Yuna Manase",
+  "result": "won"
+ },
+ {
+  "date": "2015/02/08",
+  "wrestler": "Risa Sera",
+  "elo": 1024.3791142770706,
+  "opponent": "Yuna Manase",
+  "result": "won"
+ },
+ {
+  "date": "2015/02/08",
+  "wrestler": "Yoshiko",
+  "elo": 1117.669235882214,
+  "opponent": "Hatsuhinode Kamen",
+  "result": "won"
+ },
+ {
+  "date": "2015/02/08",
+  "wrestler": "Koguma",
+  "elo": 1032.2459316482802,
+  "opponent": "Kairi Hojo (winner), Kris Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/08",
+  "wrestler": "Kairi Hojo",
+  "elo": 1021.811235370774,
+  "opponent": "Koguma, Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/02/08",
+  "wrestler": "Reo Hazuki",
+  "elo": 903.4267479778791,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/08",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1067.4504004341793,
+  "opponent": "Reo Hazuki",
+  "result": "won"
+ },
+ {
+  "date": "2015/02/22",
+  "wrestler": "Tsukushi",
+  "elo": 1040.0178392729113,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/02/22",
+  "wrestler": "Reo Hazuki",
+  "elo": 963.0300784507405,
+  "opponent": "Yuna Manase",
+  "result": "won"
+ },
+ {
+  "date": "2015/02/22",
+  "wrestler": "Io Shirai",
+  "elo": 1062.934955134024,
+  "opponent": "Koguma",
+  "result": "lost"
+ },
+ {
+  "date": "2015/02/22",
+  "wrestler": "Koguma",
+  "elo": 1095.4368605088007,
+  "opponent": "Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2015/02/22",
+  "wrestler": "Act Yasukawa",
+  "elo": 1100.7746514512542,
+  "opponent": "Yoshiko",
+  "result": "draw"
+ },
+ {
+  "date": "2015/02/22",
+  "wrestler": "Yoshiko",
+  "elo": 1114.8327562242716,
+  "opponent": "Act Yasukawa",
+  "result": "draw"
+ },
+ {
+  "date": "2015/03/08",
+  "wrestler": "Heidi Lovelace",
+  "elo": 1016.2165407085254,
+  "opponent": "Hatsuhinode Kamen, Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/08",
+  "wrestler": "Dragonita",
+  "elo": 1000.412340105887,
+  "opponent": "Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/08",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1060.759568501492,
+  "opponent": "Dragonita",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/08",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1089.6560861574444,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/21",
+  "wrestler": "Heidi Lovelace",
+  "elo": 1039.1080633081876,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/21",
+  "wrestler": "Hudson Envy",
+  "elo": 1051.943972798067,
+  "opponent": "Hatsuhinode Kamen",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/21",
+  "wrestler": "Dragonita",
+  "elo": 950.3529996224315,
+  "opponent": "DASH Chisako",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/21",
+  "wrestler": "DASH Chisako",
+  "elo": 1050.0593404834553,
+  "opponent": "Dragonita",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/21",
+  "wrestler": "Reo Hazuki",
+  "elo": 1060.5313739952198,
+  "opponent": "Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "DASH Chisako",
+  "elo": 1063.957898430699,
+  "opponent": "Momo Watanabe; Koguma (winner), Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Takumi Iroha, Momo Watanabe, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Dragonita",
+  "elo": 949.1019898975841,
+  "opponent": "Koguma (winner), DASH Chisako, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Takumi Iroha, Momo Watanabe, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Heidi Lovelace",
+  "elo": 1037.3811699973755,
+  "opponent": "Koguma (winner), DASH Chisako, Dragonita, Hatsuhinode Kamen, Hudson Envy, Io Shirai, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Takumi Iroha, Momo Watanabe, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Hudson Envy",
+  "elo": 1050.152082819618,
+  "opponent": "Koguma (winner), DASH Chisako, Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Io Shirai, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Takumi Iroha, Momo Watanabe, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Io Shirai",
+  "elo": 1061.088795660019,
+  "opponent": "Koguma (winner), DASH Chisako, Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Takumi Iroha, Momo Watanabe, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1058.937178571339,
+  "opponent": "Koguma (winner), DASH Chisako, Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kris Wolf, Mayu Iwatani, Takumi Iroha, Momo Watanabe, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Mayu Iwatani",
+  "elo": 895.8308730520187,
+  "opponent": "Koguma (winner), DASH Chisako, Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kaori Yoneyama, Kris Wolf, Takumi Iroha, Momo Watanabe, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Takumi Iroha",
+  "elo": 1063.265650233136,
+  "opponent": "Koguma (winner), DASH Chisako, Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Momo Watanabe, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Reo Hazuki",
+  "elo": 1058.744613573329,
+  "opponent": "Koguma (winner), DASH Chisako, Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Takumi Iroha, Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Koguma",
+  "elo": 1112.1155442677202,
+  "opponent": "DASH Chisako, Dragonita, Hatsuhinode Kamen, Heidi Lovelace, Hudson Envy, Io Shirai, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Takumi Iroha, Momo Watanabe, Reo Hazuki",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/29",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1082.659908626561,
+  "opponent": "Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/29",
+  "wrestler": "Reo Hazuki",
+  "elo": 1016.3654584008234,
+  "opponent": "Koguma",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/29",
+  "wrestler": "Koguma",
+  "elo": 1154.4946994402258,
+  "opponent": "Reo Hazuki",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/29",
+  "wrestler": "Kyoko Kimura",
+  "elo": 995.9521886090771,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/29",
+  "wrestler": "Kairi Hojo",
+  "elo": 1130.9563289423927,
+  "opponent": "Kyoko Kimura; Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2015/03/29",
+  "wrestler": "Takumi Iroha",
+  "elo": 1012.9523797768086,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/03/29",
+  "wrestler": "Io Shirai",
+  "elo": 1056.304783935651,
+  "opponent": "Takumi Iroha; Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/05",
+  "wrestler": "Reo Hazuki",
+  "elo": 971.2124751558229,
+  "opponent": "Hudson Envy",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/05",
+  "wrestler": "Hudson Envy",
+  "elo": 1095.3050660646186,
+  "opponent": "Reo Hazuki",
+  "result": "won"
+ },
+ {
+  "date": "2015/04/05",
+  "wrestler": "Heidi Lovelace",
+  "elo": 983.8713664275288,
+  "opponent": "Takumi Iroha",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/05",
+  "wrestler": "Takumi Iroha",
+  "elo": 1066.4621833466554,
+  "opponent": "Heidi Lovelace",
+  "result": "won"
+ },
+ {
+  "date": "2015/04/12",
+  "wrestler": "Mayu Iwatani",
+  "elo": 916.9168001278222,
+  "opponent": "Azumi",
+  "result": "draw"
+ },
+ {
+  "date": "2015/04/12",
+  "wrestler": "DASH Chisako",
+  "elo": 1073.4125769208385,
+  "opponent": "Hatsuhinode Kamen",
+  "result": "won"
+ },
+ {
+  "date": "2015/04/12",
+  "wrestler": "Koguma",
+  "elo": 1083.6192426369275,
+  "opponent": "Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/12",
+  "wrestler": "Star Fire",
+  "elo": 1070.8754568032982,
+  "opponent": "Koguma",
+  "result": "won"
+ },
+ {
+  "date": "2015/04/18",
+  "wrestler": "Star Fire",
+  "elo": 1076.2944644805677,
+  "opponent": "Hatsuhinode Kamen; Reo Hazuki (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Mayu Iwatani, Momo Watanabe, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/18",
+  "wrestler": "Mayu Iwatani",
+  "elo": 987.702338623425,
+  "opponent": "Momo Watanabe; Reo Hazuki (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/18",
+  "wrestler": "Chelsea",
+  "elo": 997.539390766118,
+  "opponent": "Reo Hazuki (winner), Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Mayu Iwatani, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/18",
+  "wrestler": "Io Shirai",
+  "elo": 1053.505015818669,
+  "opponent": "Reo Hazuki (winner), Chelsea, Hatsuhinode Kamen, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Mayu Iwatani, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/18",
+  "wrestler": "Kairi Hojo",
+  "elo": 1127.7378553297144,
+  "opponent": "Reo Hazuki (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kaori Yoneyama, Koguma, Kris Wolf, Mayu Iwatani, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/18",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1079.7360876888656,
+  "opponent": "Reo Hazuki (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Koguma, Kris Wolf, Mayu Iwatani, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/18",
+  "wrestler": "Koguma",
+  "elo": 1080.7072366101083,
+  "opponent": "Reo Hazuki (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/18",
+  "wrestler": "Reo Hazuki",
+  "elo": 996.1203721800832,
+  "opponent": "Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Mayu Iwatani, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "won"
+ },
+ {
+  "date": "2015/04/23",
+  "wrestler": "Reo Hazuki",
+  "elo": 991.211867905431,
+  "opponent": "Momo Watanabe; Koguma",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/23",
+  "wrestler": "Star Fire",
+  "elo": 1034.621902963701,
+  "opponent": "Hatsuhinode Kamen; Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/23",
+  "wrestler": "Chelsea",
+  "elo": 1015.9848665797265,
+  "opponent": "Kris Wolf; Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/23",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1019.6103041381614,
+  "opponent": "Kaori Yoneyama",
+  "result": "draw"
+ },
+ {
+  "date": "2015/04/23",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1067.9070299243235,
+  "opponent": "Kyoko Kimura",
+  "result": "draw"
+ },
+ {
+  "date": "2015/04/23",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1233.868551455485,
+  "opponent": "Thunder Rosa; Star Fire; Io Shirai; Koguma",
+  "result": "won"
+ },
+ {
+  "date": "2015/04/23",
+  "wrestler": "Kairi Hojo",
+  "elo": 1102.785755640126,
+  "opponent": "Haruka Kato; Koguma",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/23",
+  "wrestler": "Koguma",
+  "elo": 1129.7481930443087,
+  "opponent": "Reo Hazuki; Kairi Hojo; Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/23",
+  "wrestler": "Io Shirai",
+  "elo": 1060.4750977435133,
+  "opponent": "Chelsea; Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/29",
+  "wrestler": "Star Fire",
+  "elo": 1043.6533889304012,
+  "opponent": "Momo Watanabe; Kris Wolf (winner), Chelsea, DASH Chisako, Dump Matsumoto, Haruka Kato, Hatsuhinode Kamen, Kagetsu, Momo Watanabe, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/29",
+  "wrestler": "Kagetsu",
+  "elo": 1006.08624023112,
+  "opponent": "Hatsuhinode Kamen; Kris Wolf (winner), Chelsea, DASH Chisako, Dump Matsumoto, Haruka Kato, Hatsuhinode Kamen, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/29",
+  "wrestler": "Chelsea",
+  "elo": 1044.8454230998916,
+  "opponent": "Thunder Rosa; Kris Wolf (winner), DASH Chisako, Dump Matsumoto, Haruka Kato, Hatsuhinode Kamen, Kagetsu, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/29",
+  "wrestler": "DASH Chisako",
+  "elo": 1068.93430561506,
+  "opponent": "Kris Wolf (winner), Chelsea, Dump Matsumoto, Haruka Kato, Hatsuhinode Kamen, Kagetsu, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/04/29",
+  "wrestler": "Dump Matsumoto",
+  "elo": 995.9644616628997,
+  "opponent": "Kris Wolf (winner), Chelsea, DASH Chisako, Haruka Kato, Hatsuhinode Kamen, Kagetsu, Momo Watanabe, Star Fire, Thunder Rosa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/03",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1077.6103010705012,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/03",
+  "wrestler": "Nikki Storm",
+  "elo": 1038.163636251124,
+  "opponent": "Haruka Kato",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/06",
+  "wrestler": "Reo Hazuki",
+  "elo": 904.6440053078785,
+  "opponent": "Nikki Storm",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/06",
+  "wrestler": "Nikki Storm",
+  "elo": 1081.4475675499002,
+  "opponent": "Reo Hazuki",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/06",
+  "wrestler": "Koguma",
+  "elo": 1113.6280766281936,
+  "opponent": "Kyoko Kimura (winner), Haruka Kato",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/06",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1042.2839487842828,
+  "opponent": "Haruka Kato, Koguma",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/09",
+  "wrestler": "Star Fire",
+  "elo": 1050.5332694756814,
+  "opponent": "Hatsuhinode Kamen, Momo Watanabe; Mayu Iwatani (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Kyoko Kimura, Momo Watanabe, Nikki Storm, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/09",
+  "wrestler": "Nikki Storm",
+  "elo": 1101.1750469416763,
+  "opponent": "Kris Wolf; Mayu Iwatani (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Kyoko Kimura, Momo Watanabe, Reo Hazuki, Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/09",
+  "wrestler": "Reo Hazuki",
+  "elo": 841.932698302686,
+  "opponent": "Kyoko Kimura; Mayu Iwatani (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Kyoko Kimura, Momo Watanabe, Nikki Storm, Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/09",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1072.2981804658953,
+  "opponent": "Reo Hazuki; Mayu Iwatani (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Momo Watanabe, Nikki Storm, Reo Hazuki, Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/09",
+  "wrestler": "Chelsea",
+  "elo": 1043.795525751088,
+  "opponent": "Mayu Iwatani (winner), Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Kyoko Kimura, Momo Watanabe, Nikki Storm, Reo Hazuki, Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/09",
+  "wrestler": "Io Shirai",
+  "elo": 1059.3586702456248,
+  "opponent": "Mayu Iwatani (winner), Chelsea, Hatsuhinode Kamen, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Kyoko Kimura, Momo Watanabe, Nikki Storm, Reo Hazuki, Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/09",
+  "wrestler": "Kairi Hojo",
+  "elo": 1101.4652470631945,
+  "opponent": "Mayu Iwatani (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kaori Yoneyama, Koguma, Kris Wolf, Kyoko Kimura, Momo Watanabe, Nikki Storm, Reo Hazuki, Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/09",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1076.4233806914847,
+  "opponent": "Mayu Iwatani (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Koguma, Kris Wolf, Kyoko Kimura, Momo Watanabe, Nikki Storm, Reo Hazuki, Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/09",
+  "wrestler": "Koguma",
+  "elo": 1112.2639149790716,
+  "opponent": "Mayu Iwatani (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Kris Wolf, Kyoko Kimura, Momo Watanabe, Nikki Storm, Reo Hazuki, Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/09",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1244.5639935229467,
+  "opponent": "Chelsea, Hatsuhinode Kamen, Io Shirai, Kairi Hojo, Kaori Yoneyama, Koguma, Kris Wolf, Kyoko Kimura, Momo Watanabe, Nikki Storm, Reo Hazuki, Star Fire",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/10",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1060.0268939000182,
+  "opponent": "Kaori Yoneyama (winner), Hatsuhinode Kamen",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/10",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1088.6271734011068,
+  "opponent": "Hatsuhinode Kamen, Kyoko Kimura; Koguma (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Star Fire, Kris Wolf, Kairi Hojo, Mayu Iwatani, Nikki Storm, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/10",
+  "wrestler": "Chelsea",
+  "elo": 1041.781915224193,
+  "opponent": "Koguma (winner), Hatsuhinode Kamen, Io Shirai, Star Fire, Kaori Yoneyama, Kris Wolf, Kairi Hojo, Mayu Iwatani, Nikki Storm, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/10",
+  "wrestler": "Io Shirai",
+  "elo": 1057.2531188765547,
+  "opponent": "Koguma (winner), Chelsea, Hatsuhinode Kamen, Star Fire, Kaori Yoneyama, Kris Wolf, Kairi Hojo, Mayu Iwatani, Nikki Storm, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/10",
+  "wrestler": "Star Fire",
+  "elo": 1048.5040106868223,
+  "opponent": "Koguma (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Kaori Yoneyama, Kris Wolf, Kairi Hojo, Mayu Iwatani, Nikki Storm, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/10",
+  "wrestler": "Kairi Hojo",
+  "elo": 1099.1143697658902,
+  "opponent": "Koguma (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Star Fire, Kaori Yoneyama, Kris Wolf, Mayu Iwatani, Nikki Storm, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/10",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1241.233302646628,
+  "opponent": "Koguma (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Star Fire, Kaori Yoneyama, Kris Wolf, Kairi Hojo, Nikki Storm, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/10",
+  "wrestler": "Nikki Storm",
+  "elo": 1098.8669390211446,
+  "opponent": "Koguma (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Star Fire, Kaori Yoneyama, Kris Wolf, Kairi Hojo, Mayu Iwatani, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/10",
+  "wrestler": "Reo Hazuki",
+  "elo": 841.133500072378,
+  "opponent": "Koguma (winner), Chelsea, Hatsuhinode Kamen, Io Shirai, Star Fire, Kaori Yoneyama, Kris Wolf, Kairi Hojo, Mayu Iwatani, Nikki Storm",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/10",
+  "wrestler": "Koguma",
+  "elo": 1131.0029664091858,
+  "opponent": "Chelsea, Hatsuhinode Kamen, Io Shirai, Star Fire, Kaori Yoneyama, Kris Wolf, Kairi Hojo, Mayu Iwatani, Nikki Storm, Reo Hazuki",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/17",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1076.3168619953567,
+  "opponent": "Kris Wolf (winner), Momo Watanabe, Reo Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/17",
+  "wrestler": "Reo Hazuki",
+  "elo": 834.7576031517676,
+  "opponent": "Kris Wolf (winner), Kaori Yoneyama, Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/17",
+  "wrestler": "Koguma",
+  "elo": 1069.3486289443165,
+  "opponent": "Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/17",
+  "wrestler": "Star Fire",
+  "elo": 1110.1583481516916,
+  "opponent": "Koguma",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/17",
+  "wrestler": "Chelsea",
+  "elo": 985.7978337472663,
+  "opponent": "Meiko Satomura",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/17",
+  "wrestler": "Meiko Satomura",
+  "elo": 1055.9840814769266,
+  "opponent": "Chelsea",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/17",
+  "wrestler": "Nikki Storm",
+  "elo": 1042.9067032476896,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/17",
+  "wrestler": "Io Shirai",
+  "elo": 1113.2133546500097,
+  "opponent": "Nikki Storm",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/17",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1206.541634081607,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2015/05/17",
+  "wrestler": "Kairi Hojo",
+  "elo": 1168.4977068959322,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/31",
+  "wrestler": "Nikki Storm",
+  "elo": 1055.4649710629271,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/05/31",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1059.0159655170003,
+  "opponent": "Kris Wolf (winner), Haruka Kato",
+  "result": "lost"
+ },
+ {
+  "date": "2015/06/14",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1042.8147625134704,
+  "opponent": "Kris Wolf (winner), Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2015/06/14",
+  "wrestler": "Reo Hazuki",
+  "elo": 932.1590283024556,
+  "opponent": "Thunder Rosa",
+  "result": "won"
+ },
+ {
+  "date": "2015/06/14",
+  "wrestler": "Chelsea",
+  "elo": 889.8832705332501,
+  "opponent": "Melissa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/06/14",
+  "wrestler": "Melissa",
+  "elo": 1047.957281607008,
+  "opponent": "Chelsea",
+  "result": "won"
+ },
+ {
+  "date": "2015/06/14",
+  "wrestler": "Meiko Satomura",
+  "elo": 1071.632839133667,
+  "opponent": "Kairi Hojo",
+  "result": "draw"
+ },
+ {
+  "date": "2015/06/14",
+  "wrestler": "Kairi Hojo",
+  "elo": 1152.8489492391918,
+  "opponent": "Meiko Satomura",
+  "result": "draw"
+ },
+ {
+  "date": "2015/06/20",
+  "wrestler": "Reo Hazuki",
+  "elo": 1007.647313386403,
+  "opponent": "Azumi",
+  "result": "won"
+ },
+ {
+  "date": "2015/06/20",
+  "wrestler": "Star Fire",
+  "elo": 1060.5979875975745,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/06/20",
+  "wrestler": "Io Shirai",
+  "elo": 1162.7737152041268,
+  "opponent": "Star Fire",
+  "result": "won"
+ },
+ {
+  "date": "2015/06/28",
+  "wrestler": "Reo Hazuki",
+  "elo": 983.5056363552094,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2015/06/28",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1218.6124725972038,
+  "opponent": "Reo Hazuki",
+  "result": "won"
+ },
+ {
+  "date": "2015/07/04",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1221.5811209342182,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/07/04",
+  "wrestler": "Takumi Iroha",
+  "elo": 1028.6442258965424,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2015/07/04",
+  "wrestler": "Kairi Hojo",
+  "elo": 1190.6669066893048,
+  "opponent": "Takumi Iroha",
+  "result": "won"
+ },
+ {
+  "date": "2015/07/11",
+  "wrestler": "Star Fire",
+  "elo": 1073.3678849637674,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/07/11",
+  "wrestler": "Reo Hazuki",
+  "elo": 900.412271586307,
+  "opponent": "Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2015/07/11",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1084.3614448979217,
+  "opponent": "Reo Hazuki",
+  "result": "won"
+ },
+ {
+  "date": "2015/07/19",
+  "wrestler": "Star Fire",
+  "elo": 1079.011276487674,
+  "opponent": "Hatsuhinode Kamen",
+  "result": "won"
+ },
+ {
+  "date": "2015/07/19",
+  "wrestler": "Melissa",
+  "elo": 1054.729304766723,
+  "opponent": "Hudson Envy",
+  "result": "draw"
+ },
+ {
+  "date": "2015/07/19",
+  "wrestler": "Hudson Envy",
+  "elo": 1088.5330429049036,
+  "opponent": "Melissa",
+  "result": "draw"
+ },
+ {
+  "date": "2015/07/19",
+  "wrestler": "Nikki Storm",
+  "elo": 1020.4349255184298,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/07/19",
+  "wrestler": "Io Shirai",
+  "elo": 1197.8037607486242,
+  "opponent": "Nikki Storm",
+  "result": "won"
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Reo Hazuki",
+  "elo": 1028.3158856231148,
+  "opponent": "Alex Lee",
+  "result": "won"
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Star Fire",
+  "elo": 1115.8641983733585,
+  "opponent": "Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Kairi Hojo",
+  "elo": 1124.1767392467455,
+  "opponent": "Meiko Satomura",
+  "result": "lost"
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Meiko Satomura",
+  "elo": 1138.1230065762263,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/09",
+  "wrestler": "Kairi Hojo",
+  "elo": 1129.289433983972,
+  "opponent": "Azumi",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/09",
+  "wrestler": "Star Fire",
+  "elo": 1120.0681500236867,
+  "opponent": "Hatsuhinode Kamen",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/09",
+  "wrestler": "Kagetsu",
+  "elo": 1020.533641376633,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/23",
+  "wrestler": "La Rosa Negra",
+  "elo": 1037.5664565693223,
+  "opponent": "Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/23",
+  "wrestler": "Queen Maya",
+  "elo": 1022.5188176145239,
+  "opponent": "Haruka Kato",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/23",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1034.9617572619754,
+  "opponent": "Hudson Envy",
+  "result": "lost"
+ },
+ {
+  "date": "2015/08/23",
+  "wrestler": "Hudson Envy",
+  "elo": 1137.93273054085,
+  "opponent": "Kaori Yoneyama",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/23",
+  "wrestler": "Star Fire",
+  "elo": 1053.4454834043486,
+  "opponent": "KAORU",
+  "result": "lost"
+ },
+ {
+  "date": "2015/08/23",
+  "wrestler": "KAORU",
+  "elo": 1066.6226666193381,
+  "opponent": "Star Fire",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/23",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1219.872868421499,
+  "opponent": "Io Shirai",
+  "result": "draw"
+ },
+ {
+  "date": "2015/08/23",
+  "wrestler": "Io Shirai",
+  "elo": 1201.2202657740625,
+  "opponent": "Mayu Iwatani",
+  "result": "draw"
+ },
+ {
+  "date": "2015/08/23",
+  "wrestler": "Kairi Hojo",
+  "elo": 1049.420341037268,
+  "opponent": "Chelsea",
+  "result": "lost"
+ },
+ {
+  "date": "2015/08/23",
+  "wrestler": "Chelsea",
+  "elo": 1049.6214564266584,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/30",
+  "wrestler": "La Rosa Negra",
+  "elo": 1001.6215168670318,
+  "opponent": "Hudson Envy",
+  "result": "lost"
+ },
+ {
+  "date": "2015/08/30",
+  "wrestler": "Hudson Envy",
+  "elo": 1173.8776702431405,
+  "opponent": "La Rosa Negra",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/30",
+  "wrestler": "Chelsea",
+  "elo": 995.7289654917973,
+  "opponent": "Queen Maya",
+  "result": "lost"
+ },
+ {
+  "date": "2015/08/30",
+  "wrestler": "Queen Maya",
+  "elo": 1076.4113085493848,
+  "opponent": "Chelsea",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/30",
+  "wrestler": "Star Fire",
+  "elo": 1052.8662447683278,
+  "opponent": "Kairi Hojo",
+  "result": "draw"
+ },
+ {
+  "date": "2015/08/30",
+  "wrestler": "Kairi Hojo",
+  "elo": 1049.9995796732887,
+  "opponent": "Star Fire",
+  "result": "draw"
+ },
+ {
+  "date": "2015/08/30",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1182.6960203701894,
+  "opponent": "Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2015/08/30",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1109.3154533645945,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2015/08/30",
+  "wrestler": "Io Shirai",
+  "elo": 1206.6809027192317,
+  "opponent": "Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/04",
+  "wrestler": "Hudson Envy",
+  "elo": 1185.1107897277568,
+  "opponent": "Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/04",
+  "wrestler": "Chelsea",
+  "elo": 1033.1066911898922,
+  "opponent": "Haruka Kato",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/04",
+  "wrestler": "Queen Maya",
+  "elo": 1075.0029823482766,
+  "opponent": "KAORU",
+  "result": "draw"
+ },
+ {
+  "date": "2015/09/04",
+  "wrestler": "KAORU",
+  "elo": 1068.0309928204463,
+  "opponent": "Queen Maya",
+  "result": "draw"
+ },
+ {
+  "date": "2015/09/04",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1072.9718263721252,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/04",
+  "wrestler": "Io Shirai",
+  "elo": 1224.8527162154664,
+  "opponent": "Kaori Yoneyama",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/05",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1089.5529121328047,
+  "opponent": "Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/05",
+  "wrestler": "DASH Chisako",
+  "elo": 1100.6914732733294,
+  "opponent": "Alex Lee",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/05",
+  "wrestler": "Star Fire",
+  "elo": 1006.0476734917511,
+  "opponent": "Queen Maya",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/05",
+  "wrestler": "Queen Maya",
+  "elo": 1121.8215536248533,
+  "opponent": "Star Fire",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/05",
+  "wrestler": "KAORU",
+  "elo": 1078.923943165058,
+  "opponent": "Haruka Kato",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/06",
+  "wrestler": "Star Fire",
+  "elo": 1019.3980545876714,
+  "opponent": "Haruka Kato",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/06",
+  "wrestler": "Chelsea",
+  "elo": 1023.8924656969953,
+  "opponent": "Queen Maya (winner), Alex Lee",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/06",
+  "wrestler": "Queen Maya",
+  "elo": 1135.8437401202207,
+  "opponent": "Alex Lee, Chelsea",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/06",
+  "wrestler": "Hudson Envy",
+  "elo": 1134.7632820779686,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/06",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1233.0435280199777,
+  "opponent": "Hudson Envy",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/06",
+  "wrestler": "La Rosa Negra",
+  "elo": 979.951860148575,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/06",
+  "wrestler": "Io Shirai",
+  "elo": 1235.6875445746948,
+  "opponent": "La Rosa Negra",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/06",
+  "wrestler": "KAORU",
+  "elo": 1024.7709825728957,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/06",
+  "wrestler": "Kairi Hojo",
+  "elo": 1104.152540265451,
+  "opponent": "KAORU",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/09",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1246.7923762962964,
+  "opponent": "Kris Wolf; Hudson Envy, Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/09",
+  "wrestler": "Hudson Envy",
+  "elo": 1125.8095319937836,
+  "opponent": "Mayu Iwatani (winner), Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/09",
+  "wrestler": "La Rosa Negra",
+  "elo": 1010.491212981503,
+  "opponent": "Kaori Yoneyama",
+  "result": "draw"
+ },
+ {
+  "date": "2015/09/09",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1074.2832357163406,
+  "opponent": "La Rosa Negra",
+  "result": "draw"
+ },
+ {
+  "date": "2015/09/09",
+  "wrestler": "Chelsea",
+  "elo": 973.2457040213467,
+  "opponent": "Star Fire",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/09",
+  "wrestler": "Star Fire",
+  "elo": 1070.04481626332,
+  "opponent": "Chelsea",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/09",
+  "wrestler": "Kairi Hojo",
+  "elo": 1111.1390291488615,
+  "opponent": "Haruka Kato",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/09",
+  "wrestler": "Queen Maya",
+  "elo": 1099.829523086061,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/09",
+  "wrestler": "Io Shirai",
+  "elo": 1253.6946530917746,
+  "opponent": "Queen Maya",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/13",
+  "wrestler": "Star Fire",
+  "elo": 1080.0622137547227,
+  "opponent": "Alex Lee, Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/13",
+  "wrestler": "Chelsea",
+  "elo": 887.9680974695398,
+  "opponent": "KAORU",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/13",
+  "wrestler": "KAORU",
+  "elo": 1067.4097858487992,
+  "opponent": "Chelsea",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/13",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1207.0022881552811,
+  "opponent": "La Rosa Negra",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/13",
+  "wrestler": "La Rosa Negra",
+  "elo": 1090.0713892635335,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/13",
+  "wrestler": "Queen Maya",
+  "elo": 1051.4565172309788,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/13",
+  "wrestler": "Kairi Hojo",
+  "elo": 1159.5120350039438,
+  "opponent": "Queen Maya",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/13",
+  "wrestler": "Io Shirai",
+  "elo": 1219.8868089328541,
+  "opponent": "Hudson Envy",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/13",
+  "wrestler": "Hudson Envy",
+  "elo": 1193.4252203116243,
+  "opponent": "Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/23",
+  "wrestler": "Star Fire",
+  "elo": 1031.5022515388875,
+  "opponent": "La Rosa Negra",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/23",
+  "wrestler": "La Rosa Negra",
+  "elo": 1138.6313514793687,
+  "opponent": "Star Fire",
+  "result": "won"
+ },
+ {
+  "date": "2015/09/23",
+  "wrestler": "Hudson Envy",
+  "elo": 1138.560161779298,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2015/09/23",
+  "wrestler": "Kairi Hojo",
+  "elo": 1214.3770935362702,
+  "opponent": "Hudson Envy",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/04",
+  "wrestler": "Act Yasukawa",
+  "elo": 1114.9217173266866,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/04",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1050.4516068966423,
+  "opponent": "La Rosa Negra (winner), Alex Lee",
+  "result": "lost"
+ },
+ {
+  "date": "2015/10/04",
+  "wrestler": "La Rosa Negra",
+  "elo": 1152.4282976590243,
+  "opponent": "Alex Lee, Kyoko Kimura",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/04",
+  "wrestler": "Hudson Envy",
+  "elo": 1100.0548313620175,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/10/04",
+  "wrestler": "Io Shirai",
+  "elo": 1239.1394741414942,
+  "opponent": "Hudson Envy",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/11",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1087.53578454815,
+  "opponent": "Momo Watanabe, Starlight Kid",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/11",
+  "wrestler": "Act Yasukawa",
+  "elo": 1078.8559584881875,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2015/10/11",
+  "wrestler": "Kairi Hojo",
+  "elo": 1232.4099729555196,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/11",
+  "wrestler": "La Rosa Negra",
+  "elo": 1110.218164763072,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2015/10/11",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1228.1073546032571,
+  "opponent": "La Rosa Negra",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/11",
+  "wrestler": "Dark Angel",
+  "elo": 979.8443983177946,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/10/11",
+  "wrestler": "Io Shirai",
+  "elo": 1249.217274982597,
+  "opponent": "Dark Angel",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/16",
+  "wrestler": "Nicole Savoy",
+  "elo": 978.8030013497543,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2015/10/16",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1238.70585392838,
+  "opponent": "Nicole Savoy",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/16",
+  "wrestler": "Mia Yim",
+  "elo": 980.761858420089,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/10/16",
+  "wrestler": "Io Shirai",
+  "elo": 1258.8363457725525,
+  "opponent": "Mia Yim",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/18",
+  "wrestler": "Santana Garrett",
+  "elo": 1037.2085957699526,
+  "opponent": "Kris Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/18",
+  "wrestler": "Shayna Baszler",
+  "elo": 957.8116745697888,
+  "opponent": "Melissa",
+  "result": "lost"
+ },
+ {
+  "date": "2015/10/18",
+  "wrestler": "Melissa",
+  "elo": 1096.9176301969342,
+  "opponent": "Shayna Baszler",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/25",
+  "wrestler": "Holidead",
+  "elo": 1011.1573548662068,
+  "opponent": "Act Yasukawa",
+  "result": "draw"
+ },
+ {
+  "date": "2015/10/25",
+  "wrestler": "Act Yasukawa",
+  "elo": 1067.6986036219807,
+  "opponent": "Holidead",
+  "result": "draw"
+ },
+ {
+  "date": "2015/10/25",
+  "wrestler": "La Rosa Negra",
+  "elo": 1144.8680052725579,
+  "opponent": "Datura",
+  "result": "won"
+ },
+ {
+  "date": "2015/10/25",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1065.7603840868014,
+  "opponent": "Momo Watanabe (winner), Starlight Kid",
+  "result": "lost"
+ },
+ {
+  "date": "2015/11/03",
+  "wrestler": "Act Yasukawa",
+  "elo": 1112.0407952908954,
+  "opponent": "Datura",
+  "result": "won"
+ },
+ {
+  "date": "2015/11/03",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1088.9344985859418,
+  "opponent": "Alex Lee",
+  "result": "won"
+ },
+ {
+  "date": "2015/11/15",
+  "wrestler": "Jungle Kyona",
+  "elo": 1023.6945243248435,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/11/15",
+  "wrestler": "Holidead",
+  "elo": 964.8994195182828,
+  "opponent": "Santana Garrett",
+  "result": "lost"
+ },
+ {
+  "date": "2015/11/15",
+  "wrestler": "Santana Garrett",
+  "elo": 1083.4665311178765,
+  "opponent": "Holidead",
+  "result": "won"
+ },
+ {
+  "date": "2015/11/15",
+  "wrestler": "Mika Iwata",
+  "elo": 979.2137691582333,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2015/11/15",
+  "wrestler": "Kairi Hojo",
+  "elo": 1242.803088376403,
+  "opponent": "Mika Iwata",
+  "result": "won"
+ },
+ {
+  "date": "2015/11/15",
+  "wrestler": "Sendai Sachiko",
+  "elo": 981.6075537580172,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/11/15",
+  "wrestler": "Io Shirai",
+  "elo": 1268.0325688935438,
+  "opponent": "Sendai Sachiko",
+  "result": "won"
+ },
+ {
+  "date": "2015/11/15",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1206.6639739800305,
+  "opponent": "Meiko Satomura",
+  "result": "lost"
+ },
+ {
+  "date": "2015/11/15",
+  "wrestler": "Meiko Satomura",
+  "elo": 1202.2067664729254,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2015/11/23",
+  "wrestler": "Act Yasukawa",
+  "elo": 1124.105916069305,
+  "opponent": "Hiromi Mimura",
+  "result": "won"
+ },
+ {
+  "date": "2015/11/23",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1055.2571346122782,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2015/11/23",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1223.5026559668624,
+  "opponent": "Kaori Yoneyama",
+  "result": "won"
+ },
+ {
+  "date": "2015/11/23",
+  "wrestler": "Io Shirai",
+  "elo": 1230.8746693281755,
+  "opponent": "Santana Garrett",
+  "result": "lost"
+ },
+ {
+  "date": "2015/11/23",
+  "wrestler": "Santana Garrett",
+  "elo": 1157.782330248613,
+  "opponent": "Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2015/12/06",
+  "wrestler": "Jungle Kyona",
+  "elo": 1092.6314085367337,
+  "opponent": "Starlight Kid; Hiromi Mimura",
+  "result": "won"
+ },
+ {
+  "date": "2015/12/06",
+  "wrestler": "Holidead",
+  "elo": 1062.67878600259,
+  "opponent": "Alex Lee",
+  "result": "won"
+ },
+ {
+  "date": "2015/12/12",
+  "wrestler": "Jungle Kyona",
+  "elo": 1111.3812128640272,
+  "opponent": "Datura",
+  "result": "won"
+ },
+ {
+  "date": "2015/12/12",
+  "wrestler": "Kellie Skater",
+  "elo": 1019.1190358859235,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2015/12/23",
+  "wrestler": "Meiko Satomura",
+  "elo": 1179.2649191323137,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2015/12/23",
+  "wrestler": "Io Shirai",
+  "elo": 1253.8165166687872,
+  "opponent": "Meiko Satomura",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

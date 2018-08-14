@@ -1,0 +1,1650 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2018/01/03",
+  "wrestler": "Hanan",
+  "elo": 987.5,
+  "opponent": "Shiki Shibusawa (winner), Ruaka",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/03",
+  "wrestler": "Ruaka",
+  "elo": 987.9495297093191,
+  "opponent": "Shiki Shibusawa (winner), Hanan",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/03",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1024.5504702906808,
+  "opponent": "Hanan, Ruaka",
+  "result": "won"
+ },
+ {
+  "date": "2018/01/03",
+  "wrestler": "Hiromi Mimura",
+  "elo": 950.0,
+  "opponent": "Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/03",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1050.0,
+  "opponent": "Hiromi Mimura",
+  "result": "won"
+ },
+ {
+  "date": "2018/01/05",
+  "wrestler": "AZM",
+  "elo": 987.5,
+  "opponent": "Natsu Sumire (winner), Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/05",
+  "wrestler": "Io Shirai",
+  "elo": 987.9495297093191,
+  "opponent": "Natsu Sumire (winner), AZM",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/05",
+  "wrestler": "Natsu Sumire",
+  "elo": 1024.5504702906808,
+  "opponent": "AZM, Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2018/01/06",
+  "wrestler": "AZM",
+  "elo": 891.096237674553,
+  "opponent": "Kagetsu",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/06",
+  "wrestler": "Kagetsu",
+  "elo": 1048.2018811627236,
+  "opponent": "AZM",
+  "result": "won"
+ },
+ {
+  "date": "2018/01/06",
+  "wrestler": "Natsu Sumire",
+  "elo": 969.3025705181743,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/06",
+  "wrestler": "Io Shirai",
+  "elo": 1098.445329254332,
+  "opponent": "Natsu Sumire",
+  "result": "won"
+ },
+ {
+  "date": "2018/01/07",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 971.0232422662785,
+  "opponent": "Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/07",
+  "wrestler": "Momo Watanabe",
+  "elo": 1053.5272280244023,
+  "opponent": "Shiki Shibusawa",
+  "result": "won"
+ },
+ {
+  "date": "2018/01/07",
+  "wrestler": "Hiromi Mimura",
+  "elo": 864.2926234816763,
+  "opponent": "Hana Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/07",
+  "wrestler": "Hana Kimura",
+  "elo": 1042.8536882591618,
+  "opponent": "Hiromi Mimura",
+  "result": "won"
+ },
+ {
+  "date": "2018/01/13",
+  "wrestler": "Hanan",
+  "elo": 975.0161731223429,
+  "opponent": "Ruaka (winner), Miranda",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/13",
+  "wrestler": "Miranda",
+  "elo": 987.5155912484321,
+  "opponent": "Ruaka (winner), Hanan",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/13",
+  "wrestler": "Ruaka",
+  "elo": 1012.9177653385441,
+  "opponent": "Hanan, Miranda",
+  "result": "won"
+ },
+ {
+  "date": "2018/01/13",
+  "wrestler": "Rachael Ellering",
+  "elo": 963.8000646103958,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/13",
+  "wrestler": "Io Shirai",
+  "elo": 1134.6452646439361,
+  "opponent": "Rachael Ellering",
+  "result": "won"
+ },
+ {
+  "date": "2018/01/21",
+  "wrestler": "Kay Lee Ray",
+  "elo": 950.0,
+  "opponent": "Mary Apache",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/21",
+  "wrestler": "Mary Apache",
+  "elo": 1050.0,
+  "opponent": "Kay Lee Ray",
+  "result": "won"
+ },
+ {
+  "date": "2018/01/21",
+  "wrestler": "Rachael Ellering",
+  "elo": 874.1817032763009,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2018/01/21",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1044.8091806670475,
+  "opponent": "Rachael Ellering",
+  "result": "won"
+ },
+ {
+  "date": "2018/02/04",
+  "wrestler": "Kay Lee Ray",
+  "elo": 864.2926234816763,
+  "opponent": "Viper",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/04",
+  "wrestler": "Viper",
+  "elo": 1042.8536882591618,
+  "opponent": "Kay Lee Ray",
+  "result": "won"
+ },
+ {
+  "date": "2018/02/04",
+  "wrestler": "Nicole Savoy",
+  "elo": 968.4618870587664,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/04",
+  "wrestler": "Io Shirai",
+  "elo": 1166.1833775851696,
+  "opponent": "Nicole Savoy",
+  "result": "won"
+ },
+ {
+  "date": "2018/02/18",
+  "wrestler": "Natsu Sumire",
+  "elo": 839.9661854392375,
+  "opponent": "Hiromi Mimura",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/18",
+  "wrestler": "Hiromi Mimura",
+  "elo": 993.6290085606131,
+  "opponent": "Natsu Sumire",
+  "result": "won"
+ },
+ {
+  "date": "2018/02/18",
+  "wrestler": "Toni Storm",
+  "elo": 1000.0,
+  "opponent": "Meiko Satomura",
+  "result": "draw"
+ },
+ {
+  "date": "2018/02/18",
+  "wrestler": "Meiko Satomura",
+  "elo": 1000.0,
+  "opponent": "Toni Storm",
+  "result": "draw"
+ },
+ {
+  "date": "2018/02/18",
+  "wrestler": "Momo Watanabe",
+  "elo": 1019.194485067094,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/18",
+  "wrestler": "Io Shirai",
+  "elo": 1200.516120542478,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1035.7134220647904,
+  "opponent": "Natsuko Tora (winner), Starlight Kid",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Starlight Kid",
+  "elo": 976.3559772787738,
+  "opponent": "Natsuko Tora (winner), Kaori Yoneyama; Tam Nakano (winner), Shiki Shibusawa",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Natsuko Tora",
+  "elo": 972.4990875114187,
+  "opponent": "Kaori Yoneyama, Starlight Kid; Xia Brookside",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Jenny Rose",
+  "elo": 956.8926423963674,
+  "opponent": "Kagetsu",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Kagetsu",
+  "elo": 1091.3092387663562,
+  "opponent": "Jenny Rose",
+  "result": "won"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "HZK",
+  "elo": 956.4130415781357,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1088.396139088912,
+  "opponent": "HZK",
+  "result": "won"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 959.5633544207027,
+  "opponent": "Tam Nakano (winner), Starlight Kid",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Tam Nakano",
+  "elo": 1023.117622020381,
+  "opponent": "Shiki Shibusawa, Starlight Kid",
+  "result": "won"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Xia Brookside",
+  "elo": 1053.7737789702119,
+  "opponent": "Natsuko Tora",
+  "result": "won"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Jungle Kyona",
+  "elo": 945.4737259212912,
+  "opponent": "Nicole Savoy",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Nicole Savoy",
+  "elo": 1077.514435216184,
+  "opponent": "Jungle Kyona",
+  "result": "won"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Miranda",
+  "elo": 891.1073471974066,
+  "opponent": "Toni Storm",
+  "result": "lost"
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Toni Storm",
+  "elo": 1048.2041220255128,
+  "opponent": "Miranda",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/03",
+  "wrestler": "Ruaka",
+  "elo": 957.1271492485602,
+  "opponent": "Natsuko Tora",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/03",
+  "wrestler": "Natsuko Tora",
+  "elo": 1084.0803196913866,
+  "opponent": "Ruaka",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/03",
+  "wrestler": "Hanan",
+  "elo": 964.6779837459559,
+  "opponent": "Kaori Yoneyama (winner), Shiki Shibusawa",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/03",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 950.1122994980444,
+  "opponent": "Kaori Yoneyama (winner), Hanan",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/03",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1055.5026663638357,
+  "opponent": "Hanan, Shiki Shibusawa",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/03",
+  "wrestler": "Hiromi Mimura",
+  "elo": 895.462521796943,
+  "opponent": "Konami",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/03",
+  "wrestler": "Konami",
+  "elo": 1049.083243381835,
+  "opponent": "Hiromi Mimura",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/04",
+  "wrestler": "Hanan",
+  "elo": 868.0379152590647,
+  "opponent": "Starlight Kid",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/04",
+  "wrestler": "Starlight Kid",
+  "elo": 1072.996045765665,
+  "opponent": "Hanan",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/04",
+  "wrestler": "Ruaka",
+  "elo": 838.3474887696012,
+  "opponent": "AZM",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/04",
+  "wrestler": "AZM",
+  "elo": 1009.8758981535118,
+  "opponent": "Ruaka",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/04",
+  "wrestler": "Nao Yamaguchi",
+  "elo": 942.8695200474259,
+  "opponent": "Shiki Shibusawa",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/04",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1064.3732594031926,
+  "opponent": "Nao Yamaguchi",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/04",
+  "wrestler": "Xia Brookside",
+  "elo": 1023.7195491696363,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/04",
+  "wrestler": "Io Shirai",
+  "elo": 1215.5432354427658,
+  "opponent": "Xia Brookside",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/21",
+  "wrestler": "Nao Yamaguchi",
+  "elo": 829.3087436553949,
+  "opponent": "Hiromi Mimura",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/21",
+  "wrestler": "Hiromi Mimura",
+  "elo": 1009.023298188974,
+  "opponent": "Nao Yamaguchi",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/21",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1049.5833885184613,
+  "opponent": "Bea Priestley (winner), Xia Brookside",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/21",
+  "wrestler": "Xia Brookside",
+  "elo": 1010.8983488906665,
+  "opponent": "Bea Priestley (winner), Shiki Shibusawa",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/21",
+  "wrestler": "Bea Priestley",
+  "elo": 1027.6110711637011,
+  "opponent": "Shiki Shibusawa, Xia Brookside",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/25",
+  "wrestler": "Nao Yamaguchi",
+  "elo": 779.100627282865,
+  "opponent": "Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/25",
+  "wrestler": "Momo Watanabe",
+  "elo": 1044.298543253359,
+  "opponent": "Nao Yamaguchi",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/25",
+  "wrestler": "Natsuko Tora",
+  "elo": 1122.210999323819,
+  "opponent": "Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/25",
+  "wrestler": "AZM",
+  "elo": 965.5655150816121,
+  "opponent": "Shiki Shibusawa",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/25",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1093.893771590361,
+  "opponent": "AZM",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/28",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1040.8899686463742,
+  "opponent": "Starlight Kid",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/28",
+  "wrestler": "Starlight Kid",
+  "elo": 1125.9998487096518,
+  "opponent": "Shiki Shibusawa",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/28",
+  "wrestler": "Natsumi",
+  "elo": 977.5697424265289,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/28",
+  "wrestler": "Io Shirai",
+  "elo": 1226.7583642295012,
+  "opponent": "Natsumi",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/28",
+  "wrestler": "Toni Storm",
+  "elo": 997.434193573806,
+  "opponent": "Viper",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/28",
+  "wrestler": "Viper",
+  "elo": 1093.6236167108686,
+  "opponent": "Toni Storm",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/31",
+  "wrestler": "Natsu Sumire",
+  "elo": 832.8484952763451,
+  "opponent": "Saki Kashima (winner), Shiki Shibusawa",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/31",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1027.178725745827,
+  "opponent": "Saki Kashima (winner), Natsu Sumire",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/31",
+  "wrestler": "Saki Kashima",
+  "elo": 1020.8289330634395,
+  "opponent": "Natsu Sumire, Shiki Shibusawa",
+  "result": "won"
+ },
+ {
+  "date": "2018/03/31",
+  "wrestler": "Bea Priestley",
+  "elo": 1003.4960526429227,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/03/31",
+  "wrestler": "Io Shirai",
+  "elo": 1238.8158734898905,
+  "opponent": "Bea Priestley",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Konami",
+  "elo": 993.610014830019,
+  "opponent": "Xia Brookside",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Xia Brookside",
+  "elo": 1066.3715774424825,
+  "opponent": "Konami",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "AZM",
+  "elo": 908.717852763954,
+  "opponent": "Starlight Kid",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Starlight Kid",
+  "elo": 1154.4236798684808,
+  "opponent": "AZM",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Momo Watanabe",
+  "elo": 988.4534398973879,
+  "opponent": "Bea Priestley",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Bea Priestley",
+  "elo": 1059.3411559988938,
+  "opponent": "Momo Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "HZK",
+  "elo": 880.7917136877335,
+  "opponent": "Hana Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Hana Kimura",
+  "elo": 1080.6643522043628,
+  "opponent": "HZK",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Jungle Kyona",
+  "elo": 885.7053710488232,
+  "opponent": "Viper",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Viper",
+  "elo": 1123.5077941471027,
+  "opponent": "Jungle Kyona",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1025.5967759928985,
+  "opponent": "Toni Storm",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Toni Storm",
+  "elo": 1123.0329197658325,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/14",
+  "wrestler": "Nao Yamaguchi",
+  "elo": 770.2585798383589,
+  "opponent": "Hanan (winner), Leo Onozaki",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/14",
+  "wrestler": "Hanan",
+  "elo": 892.676069797204,
+  "opponent": "Leo Onozaki, Nao Yamaguchi",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/14",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 973.2753515689645,
+  "opponent": "Candy Floss",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/14",
+  "wrestler": "Candy Floss",
+  "elo": 1053.9033741768624,
+  "opponent": "Shiki Shibusawa",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/14",
+  "wrestler": "Mary Apache",
+  "elo": 1024.7799698254034,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/14",
+  "wrestler": "Io Shirai",
+  "elo": 1251.4258885771887,
+  "opponent": "Mary Apache",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/15",
+  "wrestler": "Hanan",
+  "elo": 1007.9251287436927,
+  "opponent": "Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/21",
+  "wrestler": "Ruaka",
+  "elo": 936.1824374332276,
+  "opponent": "Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/21",
+  "wrestler": "Martina",
+  "elo": 980.9586215934459,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/21",
+  "wrestler": "Io Shirai",
+  "elo": 1260.9465777804658,
+  "opponent": "Martina",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/22",
+  "wrestler": "Nao Yamaguchi",
+  "elo": 762.492080336417,
+  "opponent": "AZM (winner), Ruaka",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/22",
+  "wrestler": "Ruaka",
+  "elo": 922.9745002186995,
+  "opponent": "AZM (winner), Nao Yamaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/22",
+  "wrestler": "AZM",
+  "elo": 929.692289480424,
+  "opponent": "Nao Yamaguchi, Ruaka",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Konami",
+  "elo": 892.1259422273247,
+  "opponent": "Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Momo Watanabe",
+  "elo": 1184.1205381839554,
+  "opponent": "Konami; Jungle Kyona; Bea Priestley",
+  "result": "won"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Candy Floss",
+  "elo": 999.15790571904,
+  "opponent": "Saki Kashima",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Saki Kashima",
+  "elo": 1025.526277736577,
+  "opponent": "Candy Floss; Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Martina",
+  "elo": 903.1438147556476,
+  "opponent": "Bea Priestley",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Bea Priestley",
+  "elo": 1091.4795904271675,
+  "opponent": "Martina; Hazuki; Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Natsu Sumire",
+  "elo": 777.5609646846355,
+  "opponent": "Brandi Rhodes",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Brandi Rhodes",
+  "elo": 1007.7892786405562,
+  "opponent": "Natsu Sumire; Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Hana Kimura",
+  "elo": 1019.2599966687703,
+  "opponent": "Hazuki",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Hazuki",
+  "elo": 1016.6868755025022,
+  "opponent": "Hana Kimura; Bea Priestley",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Tam Nakano",
+  "elo": 973.4743949014669,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1146.1869159539442,
+  "opponent": "Tam Nakano; Saki Kashima; Io Shirai",
+  "result": "draw"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Chardonnay",
+  "elo": 981.7891831586802,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Io Shirai",
+  "elo": 1269.5298350000517,
+  "opponent": "Chardonnay; Brandi Rhodes; Mayu Iwatani",
+  "result": "draw"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Kagetsu",
+  "elo": 1014.750670506525,
+  "opponent": "Jungle Kyona",
+  "result": "lost"
+ },
+ {
+  "date": "2018/04/30",
+  "wrestler": "Jungle Kyona",
+  "elo": 996.125930908328,
+  "opponent": "Kagetsu; Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/03",
+  "wrestler": "Natsumi",
+  "elo": 958.4810624709171,
+  "opponent": "Nao Yamaguchi (winner), Leo Onozaki",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/03",
+  "wrestler": "Nao Yamaguchi",
+  "elo": 793.0218529981772,
+  "opponent": "Leo Onozaki, Natsumi",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/03",
+  "wrestler": "Hanan",
+  "elo": 956.6636916611717,
+  "opponent": "Candy Floss",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/03",
+  "wrestler": "Candy Floss",
+  "elo": 1101.6807798840819,
+  "opponent": "Hanan",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/03",
+  "wrestler": "Martina",
+  "elo": 825.4009221919715,
+  "opponent": "Chardonnay",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/03",
+  "wrestler": "Chardonnay",
+  "elo": 1059.5320757223562,
+  "opponent": "Martina",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Hanan",
+  "elo": 947.061690155235,
+  "opponent": "Kaori Yoneyama (winner), Leo Onozaki; Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1066.6819995494227,
+  "opponent": "Hanan, Leo Onozaki; Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "AZM",
+  "elo": 929.1605010809162,
+  "opponent": "Mayu Iwatani (winner), Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Bea Priestley",
+  "elo": 1090.4768103016995,
+  "opponent": "Mayu Iwatani (winner), AZM, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Candy Floss",
+  "elo": 1100.6471436122624,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Chardonnay",
+  "elo": 1058.6407713361223,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Hana Kimura",
+  "elo": 1018.4964293206561,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Hazuki",
+  "elo": 1015.9349110266656,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Jungle Kyona",
+  "elo": 995.4356155148297,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Konami",
+  "elo": 891.6928620836331,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Martina",
+  "elo": 825.088760332873,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Momo Watanabe",
+  "elo": 1182.8279554131675,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Nao Yamaguchi",
+  "elo": 792.7590338193278,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Natsuko Tora",
+  "elo": 1121.1352681890323,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Natsumi",
+  "elo": 957.905013505648,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Ruaka",
+  "elo": 922.4842462074743,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Saki Kashima",
+  "elo": 1024.7687662812743,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 972.6660735385852,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Starlight Kid, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Starlight Kid",
+  "elo": 1153.2499521711513,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Tam Nakano",
+  "elo": 972.869241460445,
+  "opponent": "Mayu Iwatani (winner), AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1161.0908624558751,
+  "opponent": "AZM, Bea Priestley, Candy Floss, Chardonnay, Hana Kimura, Hanan, Hazuki, Jungle Kyona, Kaori Yoneyama, Konami, Leo Onozaki, Martina, Momo Watanabe, Nao Yamaguchi, Natsuko Tora, Natsumi, Ruaka, Saki Kashima, Shiki Shibusawa, Starlight Kid, Tam Nakano",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Kagetsu",
+  "elo": 996.005083454045,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/05",
+  "wrestler": "Io Shirai",
+  "elo": 1278.9026285262917,
+  "opponent": "Kagetsu",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/06",
+  "wrestler": "Nao Yamaguchi",
+  "elo": 785.6282321989925,
+  "opponent": "Hanan (winner), Leo Onozaki",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/06",
+  "wrestler": "Hanan",
+  "elo": 959.4765217590627,
+  "opponent": "Leo Onozaki, Nao Yamaguchi",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/06",
+  "wrestler": "Ruaka",
+  "elo": 880.5992242714769,
+  "opponent": "Starlight Kid",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/06",
+  "wrestler": "Starlight Kid",
+  "elo": 1174.19246313915,
+  "opponent": "Ruaka",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/23",
+  "wrestler": "Zoe Lucas",
+  "elo": 926.7592836991851,
+  "opponent": "Martina",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/23",
+  "wrestler": "Martina",
+  "elo": 971.5701929345028,
+  "opponent": "Zoe Lucas",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/23",
+  "wrestler": "Io Shirai",
+  "elo": 1247.1604791154618,
+  "opponent": "Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/23",
+  "wrestler": "Momo Watanabe",
+  "elo": 1246.312254234827,
+  "opponent": "Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Candy Floss",
+  "elo": 1007.38481491472,
+  "opponent": "Zoe Lucas (winner), Leo Onozaki; Konami",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Zoe Lucas",
+  "elo": 950.2467420621762,
+  "opponent": "Candy Floss, Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Martina",
+  "elo": 921.2830098959176,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1186.2344539751678,
+  "opponent": "Martina",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Starlight Kid",
+  "elo": 1134.5416894036491,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Io Shirai",
+  "elo": 1266.9858659832123,
+  "opponent": "Starlight Kid",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1008.4255366307425,
+  "opponent": "Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Konami",
+  "elo": 1041.654968715625,
+  "opponent": "Candy Floss",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 994.784748317928,
+  "opponent": "Tam Nakano (winner), Leo Onozaki",
+  "result": "lost"
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Tam Nakano",
+  "elo": 990.2698144310314,
+  "opponent": "Leo Onozaki, Shiki Shibusawa",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "AZM",
+  "elo": 982.2316128462627,
+  "opponent": "Starlight Kid",
+  "result": "draw"
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Starlight Kid",
+  "elo": 1108.006133520976,
+  "opponent": "AZM",
+  "result": "draw"
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1021.27783766759,
+  "opponent": "Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Hanan",
+  "elo": 902.9152131890917,
+  "opponent": "Natsuko Tora",
+  "result": "lost"
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Natsuko Tora",
+  "elo": 1149.4159224740179,
+  "opponent": "Hanan",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Toni Storm",
+  "elo": 1055.525384749592,
+  "opponent": "Kagetsu",
+  "result": "lost"
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Kagetsu",
+  "elo": 1131.0201534865264,
+  "opponent": "Toni Storm",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/10",
+  "wrestler": "Hanan",
+  "elo": 892.1076448621221,
+  "opponent": "Zoe Lucas (winner), Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2018/06/10",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1050.4946497067283,
+  "opponent": "Zoe Lucas (winner), Hanan",
+  "result": "lost"
+ },
+ {
+  "date": "2018/06/10",
+  "wrestler": "Zoe Lucas",
+  "elo": 977.2416602318401,
+  "opponent": "Hanan, Kaori Yoneyama",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/17",
+  "wrestler": "Hanan",
+  "elo": 760.2832587371514,
+  "opponent": "Natsu Sumire",
+  "result": "lost"
+ },
+ {
+  "date": "2018/06/17",
+  "wrestler": "Natsu Sumire",
+  "elo": 909.3853508096062,
+  "opponent": "Hanan",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/17",
+  "wrestler": "Jungle Kyona",
+  "elo": 957.2552829105742,
+  "opponent": "Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/06/17",
+  "wrestler": "Momo Watanabe",
+  "elo": 1255.8573373858908,
+  "opponent": "Jungle Kyona",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/23",
+  "wrestler": "Zoe Lucas",
+  "elo": 898.0186073494324,
+  "opponent": "Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2018/06/23",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1090.106176147932,
+  "opponent": "Zoe Lucas",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/23",
+  "wrestler": "Deonna Purrazzo",
+  "elo": 981.3487640744255,
+  "opponent": "Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/06/23",
+  "wrestler": "Momo Watanabe",
+  "elo": 1265.182955348678,
+  "opponent": "Deonna Purrazzo",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/24",
+  "wrestler": "Kagetsu",
+  "elo": 1173.3240375935447,
+  "opponent": "Leo Onozaki; Konami",
+  "result": "won"
+ },
+ {
+  "date": "2018/06/24",
+  "wrestler": "Konami",
+  "elo": 1004.9972567471298,
+  "opponent": "Kagetsu",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "AZM",
+  "elo": 887.3413118151924,
+  "opponent": "Dust",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Dust",
+  "elo": 1047.445150515535,
+  "opponent": "AZM",
+  "result": "won"
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Kikyo",
+  "elo": 948.6000797111295,
+  "opponent": "Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Tam Nakano",
+  "elo": 1126.6716566971925,
+  "opponent": "Kikyo; Kylie Rae (winner), Shiki Shibusawa; Britt Baker",
+  "result": "won"
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1008.0132615668516,
+  "opponent": "Kylie Rae (winner), Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Kylie Rae",
+  "elo": 1028.5863419667155,
+  "opponent": "Shiki Shibusawa, Tam Nakano",
+  "result": "won"
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Natsuko Tora",
+  "elo": 1079.1476175952353,
+  "opponent": "Britt Baker",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Britt Baker",
+  "elo": 1021.3445373243853,
+  "opponent": "Natsuko Tora; Tam Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "Ruaka",
+  "elo": 918.9225663870874,
+  "opponent": "Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "Tam Nakano",
+  "elo": 1076.2163528610054,
+  "opponent": "Viper",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "Viper",
+  "elo": 1173.9630979832898,
+  "opponent": "Tam Nakano",
+  "result": "won"
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "Hazuki",
+  "elo": 996.6995212642462,
+  "opponent": "Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "Momo Watanabe",
+  "elo": 1274.8006502298877,
+  "opponent": "Hazuki",
+  "result": "won"
+ },
+ {
+  "date": "2018/07/22",
+  "wrestler": "AZM",
+  "elo": 918.261626779161,
+  "opponent": "Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/07/22",
+  "wrestler": "Viper",
+  "elo": 1123.8711299040726,
+  "opponent": "Kagetsu",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/22",
+  "wrestler": "Kagetsu",
+  "elo": 1223.416005672762,
+  "opponent": "Viper",
+  "result": "won"
+ },
+ {
+  "date": "2018/07/29",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1015.1121860922102,
+  "opponent": "Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/07/29",
+  "wrestler": "AZM",
+  "elo": 883.0293925352299,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/29",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1203.8505710971333,
+  "opponent": "AZM",
+  "result": "won"
+ },
+ {
+  "date": "2018/07/29",
+  "wrestler": "Starlight Kid",
+  "elo": 1074.0298802310485,
+  "opponent": "Kagetsu",
+  "result": "lost"
+ },
+ {
+  "date": "2018/07/29",
+  "wrestler": "Kagetsu",
+  "elo": 1240.4041323177255,
+  "opponent": "Starlight Kid",
+  "result": "won"
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Hanan",
+  "elo": 722.8008102896005,
+  "opponent": "Shiki Shibusawa",
+  "result": "lost"
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Shiki Shibusawa",
+  "elo": 1033.8534103159857,
+  "opponent": "Hanan",
+  "result": "won"
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Dust",
+  "elo": 1001.9948822211134,
+  "opponent": "Natsuko Tora",
+  "result": "lost"
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Natsuko Tora",
+  "elo": 1124.597885889657,
+  "opponent": "Dust",
+  "result": "won"
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Stephanie Vaquer",
+  "elo": 953.558485613771,
+  "opponent": "Saki Kashima",
+  "result": "lost"
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Saki Kashima",
+  "elo": 1071.2102806675032,
+  "opponent": "Stephanie Vaquer",
+  "result": "won"
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "Hanan",
+  "elo": 665.904943152003,
+  "opponent": "AZM",
+  "result": "lost"
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "AZM",
+  "elo": 939.9252596728273,
+  "opponent": "Hanan",
+  "result": "won"
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "Konami",
+  "elo": 1011.6832228534882,
+  "opponent": "Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "Dust",
+  "elo": 984.7788909822332,
+  "opponent": "Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "Momo Watanabe",
+  "elo": 1283.4086458493277,
+  "opponent": "Dust",
+  "result": "won"
+ },
+ {
+  "date": "2018/08/12",
+  "wrestler": "Dust",
+  "elo": 998.65106699421,
+  "opponent": "Leo Onozaki",
+  "result": "won"
+ },
+ {
+  "date": "2018/08/12",
+  "wrestler": "Saki Kashima",
+  "elo": 1048.443232722484,
+  "opponent": "Momo Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2018/08/12",
+  "wrestler": "Momo Watanabe",
+  "elo": 1294.7921698218374,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2018/08/12",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1181.4711492726647,
+  "opponent": "Kagetsu",
+  "result": "lost"
+ },
+ {
+  "date": "2018/08/12",
+  "wrestler": "Kagetsu",
+  "elo": 1262.7835541421941,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

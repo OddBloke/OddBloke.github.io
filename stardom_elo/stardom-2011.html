@@ -1,0 +1,1251 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2011/01/23",
+  "wrestler": "Eri Susa",
+  "elo": 950.0,
+  "opponent": "Mika Nagano",
+  "result": "lost"
+ },
+ {
+  "date": "2011/01/23",
+  "wrestler": "Mika Nagano",
+  "elo": 1050.0,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/01/23",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1000.0,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/01/23",
+  "wrestler": "Haruka",
+  "elo": 1000.0,
+  "opponent": "Natsuki Taiyo",
+  "result": "draw"
+ },
+ {
+  "date": "2011/01/23",
+  "wrestler": "Mayu Iwatani",
+  "elo": 950.0,
+  "opponent": "Arisa Hoshiki",
+  "result": "lost"
+ },
+ {
+  "date": "2011/01/23",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 1050.0,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2011/01/23",
+  "wrestler": "Yoshiko",
+  "elo": 950.0,
+  "opponent": "Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2011/01/23",
+  "wrestler": "Yoko Bito",
+  "elo": 1050.0,
+  "opponent": "Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2011/02/12",
+  "wrestler": "Eri Susa",
+  "elo": 864.2926234816763,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/02/12",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1042.8536882591618,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/02/12",
+  "wrestler": "Mayu Iwatani",
+  "elo": 878.012999960577,
+  "opponent": "Mika Nagano",
+  "result": "lost"
+ },
+ {
+  "date": "2011/02/12",
+  "wrestler": "Mika Nagano",
+  "elo": 1085.9935000197115,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2011/02/12",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 992.8536882591618,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/02/12",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1057.1463117408382,
+  "opponent": "Arisa Hoshiki",
+  "result": "won"
+ },
+ {
+  "date": "2011/02/27",
+  "wrestler": "Eri Susa",
+  "elo": 813.1746323048519,
+  "opponent": "Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2011/02/27",
+  "wrestler": "Yoko Bito",
+  "elo": 1114.8534288292967,
+  "opponent": "Eri Susa; Iris",
+  "result": "won"
+ },
+ {
+  "date": "2011/02/27",
+  "wrestler": "Iris",
+  "elo": 960.7055667591154,
+  "opponent": "Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2011/02/27",
+  "wrestler": "Sakura Hirota",
+  "elo": 1000.0,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/02/27",
+  "wrestler": "Haruka",
+  "elo": 1000.0,
+  "opponent": "Sakura Hirota",
+  "result": "draw"
+ },
+ {
+  "date": "2011/02/27",
+  "wrestler": "Mayu Iwatani",
+  "elo": 825.4416963871743,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/02/27",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1083.4319635275394,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2011/03/27",
+  "wrestler": "Iris",
+  "elo": 857.6252317650835,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2011/03/27",
+  "wrestler": "Yoshiko",
+  "elo": 1094.498807302651,
+  "opponent": "Iris; Arisa Hoshiki",
+  "result": "won"
+ },
+ {
+  "date": "2011/03/27",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 910.016743641924,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2011/03/27",
+  "wrestler": "Sakura Hirota",
+  "elo": 1000.0,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/03/27",
+  "wrestler": "Haruka",
+  "elo": 1000.0,
+  "opponent": "Sakura Hirota",
+  "result": "draw"
+ },
+ {
+  "date": "2011/03/27",
+  "wrestler": "Eri Susa",
+  "elo": 778.3224808760932,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/03/27",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1100.8580392419187,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/03",
+  "wrestler": "Eri Susa",
+  "elo": 714.510397970477,
+  "opponent": "Arisa Hoshiki",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/03",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 973.8288265475402,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/03",
+  "wrestler": "Haruka",
+  "elo": 1000.0,
+  "opponent": "Ebessan",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/03",
+  "wrestler": "Ebessan",
+  "elo": 1000.0,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/03",
+  "wrestler": "Iris",
+  "elo": 796.4544571688833,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/03",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1030.5853872981002,
+  "opponent": "Iris",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/03",
+  "wrestler": "Mayu Iwatani",
+  "elo": 793.6497292518741,
+  "opponent": "Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/03",
+  "wrestler": "Yoko Bito",
+  "elo": 1130.7494123969468,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "Eri Susa",
+  "elo": 682.110085441172,
+  "opponent": "DASH Chisako",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "DASH Chisako",
+  "elo": 1016.2001562646525,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1137.8545355585106,
+  "opponent": "Haruka; Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "Haruka",
+  "elo": 1014.1202128908004,
+  "opponent": "Nanae Takahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "Mayu Iwatani",
+  "elo": 752.9286590069341,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1050.94592242057,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 893.4384604071832,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1083.0488713293403,
+  "opponent": "Arisa Hoshiki",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "Yoko Bito",
+  "elo": 1074.34391077927,
+  "opponent": "Mika Nagano",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "Mika Nagano",
+  "elo": 1142.3990016373884,
+  "opponent": "Yoko Bito",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/10",
+  "wrestler": "Yoshiko",
+  "elo": 1043.3820980952585,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/24",
+  "wrestler": "Yuzupon Mask",
+  "elo": 1002.0309439280819,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/24",
+  "wrestler": "Haruka",
+  "elo": 1012.0892689627185,
+  "opponent": "Yuzupon Mask",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/24",
+  "wrestler": "Eri Susa",
+  "elo": 654.4605591547319,
+  "opponent": "Hiren",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/24",
+  "wrestler": "Hiren",
+  "elo": 1013.8247631432201,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/24",
+  "wrestler": "Mayu Iwatani",
+  "elo": 745.2252125038756,
+  "opponent": "Arisa Hoshiki (winner), Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/24",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1064.543235084308,
+  "opponent": "Arisa Hoshiki (winner), Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/24",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 919.6475431552742,
+  "opponent": "Mayu Iwatani, Yuzuki Aikawa",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Eri Susa",
+  "elo": 620.2148192703479,
+  "opponent": "Ryo Mizunami; Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Ryo Mizunami",
+  "elo": 1012.0353707792727,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1001.7390838523982,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Haruka",
+  "elo": 1028.6639158421563,
+  "opponent": "Hiroyo Matsumoto; Nanae Takahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Yoko Bito",
+  "elo": 1083.3833629195362,
+  "opponent": "Nanae Takahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1091.1338017479811,
+  "opponent": "Yoko Bito; Mayu Iwatani; Eri Susa; Haruka; Yuzuki Aikawa; Arisa Hoshiki",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Mayu Iwatani",
+  "elo": 725.4204913956972,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1073.2254766873514,
+  "opponent": "Nanae Takahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 970.9978812600593,
+  "opponent": "Nanae Takahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Yoshiko",
+  "elo": 994.4704479799514,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2011/04/30",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1099.8575725358771,
+  "opponent": "Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2011/05/08",
+  "wrestler": "Eri Susa",
+  "elo": 600.0158492997663,
+  "opponent": "Tomoka Nakagawa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/05/08",
+  "wrestler": "Tomoka Nakagawa",
+  "elo": 1010.0994849852908,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/05/08",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1089.753013711083,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/05/08",
+  "wrestler": "Haruka",
+  "elo": 1038.7684746669504,
+  "opponent": "Natsuki Taiyo",
+  "result": "draw"
+ },
+ {
+  "date": "2011/05/08",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 902.2621227867041,
+  "opponent": "Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2011/05/08",
+  "wrestler": "Yoko Bito",
+  "elo": 1117.751242156214,
+  "opponent": "Arisa Hoshiki",
+  "result": "won"
+ },
+ {
+  "date": "2011/05/29",
+  "wrestler": "Eri Susa",
+  "elo": 581.9973296712803,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2011/05/29",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1010.7483436666411,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/05/29",
+  "wrestler": "Yoko Bito",
+  "elo": 1106.576548136954,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/05/29",
+  "wrestler": "Haruka",
+  "elo": 1049.9431686862104,
+  "opponent": "Yoko Bito",
+  "result": "draw"
+ },
+ {
+  "date": "2011/05/29",
+  "wrestler": "Mayu Iwatani",
+  "elo": 701.6245232748818,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/05/29",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1085.123460747759,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2011/05/29",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 862.1354008280887,
+  "opponent": "Mika Nagano",
+  "result": "lost"
+ },
+ {
+  "date": "2011/05/29",
+  "wrestler": "Mika Nagano",
+  "elo": 1162.4623626166963,
+  "opponent": "Arisa Hoshiki",
+  "result": "won"
+ },
+ {
+  "date": "2011/06/12",
+  "wrestler": "Saki Kashima",
+  "elo": 1012.6366403097588,
+  "opponent": "Natsuki Taiyo",
+  "result": "draw"
+ },
+ {
+  "date": "2011/06/12",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1099.6029959138534,
+  "opponent": "Saki Kashima; Arisa Hoshiki",
+  "result": "won"
+ },
+ {
+  "date": "2011/06/12",
+  "wrestler": "Eri Susa",
+  "elo": 564.967959452972,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2011/06/12",
+  "wrestler": "Yoshiko",
+  "elo": 1011.4998181982598,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/06/12",
+  "wrestler": "Haruka",
+  "elo": 1042.804868742706,
+  "opponent": "Cherry",
+  "result": "draw"
+ },
+ {
+  "date": "2011/06/12",
+  "wrestler": "Cherry",
+  "elo": 1007.1382999435043,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/06/12",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 817.1621558030303,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2011/06/26",
+  "wrestler": "Mayu Iwatani",
+  "elo": 564.2018476923973,
+  "opponent": "Eri Susa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/06/26",
+  "wrestler": "Eri Susa",
+  "elo": 702.3906350354564,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2011/06/26",
+  "wrestler": "Haruka",
+  "elo": 1014.2398239421709,
+  "opponent": "Arisa Hoshiki",
+  "result": "draw"
+ },
+ {
+  "date": "2011/06/26",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 874.2922454041005,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/06/26",
+  "wrestler": "Saki Kashima",
+  "elo": 973.7449199860179,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/06/26",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1130.025522071722,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2011/07/10",
+  "wrestler": "Saki Kashima",
+  "elo": 844.4171287202095,
+  "opponent": "Arisa Hoshiki; Yoshiko (winner), Arisa Hoshiki, Eri Susa, Haruka, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Yoko Bito, Yuu Yamagata",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/10",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 999.4568873425512,
+  "opponent": "Saki Kashima; Yoshiko (winner), Eri Susa, Haruka, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Saki Kashima, Yoko Bito, Yuu Yamagata",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/10",
+  "wrestler": "Mayu Iwatani",
+  "elo": 649.654241649669,
+  "opponent": "Haruka; Yoshiko (winner), Arisa Hoshiki, Eri Susa, Haruka, Nanae Takahashi, Natsuki Taiyo, Saki Kashima, Yoko Bito, Yuu Yamagata",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/10",
+  "wrestler": "Haruka",
+  "elo": 968.7846420161582,
+  "opponent": "Mayu Iwatani; Yoshiko (winner), Arisa Hoshiki, Eri Susa, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Saki Kashima, Yoko Bito, Yuu Yamagata",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/10",
+  "wrestler": "Eri Susa",
+  "elo": 701.5991426429545,
+  "opponent": "Yoshiko (winner), Arisa Hoshiki, Haruka, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Saki Kashima, Yoko Bito, Yuu Yamagata",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/10",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1126.3820552499578,
+  "opponent": "Yoshiko (winner), Arisa Hoshiki, Eri Susa, Haruka, Mayu Iwatani, Natsuki Taiyo, Saki Kashima, Yoko Bito, Yuu Yamagata",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/10",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1096.2123526467647,
+  "opponent": "Yoshiko (winner), Arisa Hoshiki, Eri Susa, Haruka, Mayu Iwatani, Nanae Takahashi, Saki Kashima, Yoko Bito, Yuu Yamagata",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/10",
+  "wrestler": "Yoko Bito",
+  "elo": 1103.1697803735706,
+  "opponent": "Yoshiko (winner), Arisa Hoshiki, Eri Susa, Haruka, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Saki Kashima, Yuu Yamagata",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/10",
+  "wrestler": "Yuu Yamagata",
+  "elo": 997.4608751231075,
+  "opponent": "Yoshiko (winner), Arisa Hoshiki, Eri Susa, Haruka, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Saki Kashima, Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/10",
+  "wrestler": "Yoshiko",
+  "elo": 1032.4628403448385,
+  "opponent": "Arisa Hoshiki, Eri Susa, Haruka, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Saki Kashima, Yoko Bito, Yuu Yamagata",
+  "result": "won"
+ },
+ {
+  "date": "2011/07/24",
+  "wrestler": "Kenny Omega",
+  "elo": 995.5197973181067,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/07/24",
+  "wrestler": "Haruka",
+  "elo": 977.7450473799448,
+  "opponent": "Kenny Omega",
+  "result": "draw"
+ },
+ {
+  "date": "2011/07/24",
+  "wrestler": "Mika Nagano",
+  "elo": 1104.0113578273674,
+  "opponent": "Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/24",
+  "wrestler": "Yoko Bito",
+  "elo": 1111.2373157073243,
+  "opponent": "Mika Nagano; Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/24",
+  "wrestler": "Mercedes Martinez",
+  "elo": 967.4259410293301,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/24",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1209.339583676203,
+  "opponent": "Mercedes Martinez; Yoko Bito",
+  "result": "won"
+ },
+ {
+  "date": "2011/07/24",
+  "wrestler": "Yoshiko",
+  "elo": 989.9838070277972,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/24",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1127.6024940648003,
+  "opponent": "Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2011/07/24",
+  "wrestler": "Leon",
+  "elo": 963.502669475855,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2011/07/24",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1132.7096831709096,
+  "opponent": "Leon",
+  "result": "won"
+ },
+ {
+  "date": "2011/08/07",
+  "wrestler": "Saki Kashima",
+  "elo": 812.4525210584856,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2011/08/07",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1148.6919870017714,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2011/08/07",
+  "wrestler": "Kuishinbo Kamen",
+  "elo": 996.801628009005,
+  "opponent": "Haruka",
+  "result": "draw"
+ },
+ {
+  "date": "2011/08/07",
+  "wrestler": "Haruka",
+  "elo": 984.141791361935,
+  "opponent": "Kuishinbo Kamen",
+  "result": "draw"
+ },
+ {
+  "date": "2011/08/14",
+  "wrestler": "Saki Kashima",
+  "elo": 759.523060263318,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2011/08/14",
+  "wrestler": "Yoshiko",
+  "elo": 1084.535132213419,
+  "opponent": "Saki Kashima; Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2011/08/14",
+  "wrestler": "Eri Susa",
+  "elo": 687.4287222836106,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2011/08/14",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1155.7771971814434,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/08/14",
+  "wrestler": "Haruka",
+  "elo": 900.8980625810266,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2011/08/14",
+  "wrestler": "Mayu Iwatani",
+  "elo": 626.0983021896961,
+  "opponent": "Arisa Hoshiki",
+  "result": "lost"
+ },
+ {
+  "date": "2011/08/14",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 1023.012826802524,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2011/08/28",
+  "wrestler": "Saki Kashima",
+  "elo": 621.4852391239125,
+  "opponent": "Eri Susa; Arisa Hoshiki",
+  "result": "lost"
+ },
+ {
+  "date": "2011/08/28",
+  "wrestler": "Eri Susa",
+  "elo": 762.9423037624429,
+  "opponent": "Saki Kashima; Arisa Hoshiki",
+  "result": "lost"
+ },
+ {
+  "date": "2011/08/28",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 1054.2749466328107,
+  "opponent": "Eri Susa; Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2011/08/28",
+  "wrestler": "Yoko Bito",
+  "elo": 1095.7544320741795,
+  "opponent": "Io Shirai",
+  "result": "draw"
+ },
+ {
+  "date": "2011/08/28",
+  "wrestler": "Io Shirai",
+  "elo": 1015.482883633145,
+  "opponent": "Yoko Bito",
+  "result": "draw"
+ },
+ {
+  "date": "2011/09/10",
+  "wrestler": "Eri Susa",
+  "elo": 688.6484838309731,
+  "opponent": "Yuu Yamagata; Saki Kashima",
+  "result": "draw"
+ },
+ {
+  "date": "2011/09/10",
+  "wrestler": "Yuu Yamagata",
+  "elo": 1038.6350339701314,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/09/10",
+  "wrestler": "Saki Kashima",
+  "elo": 635.3103107849395,
+  "opponent": "Tomoka Nakagawa; Eri Susa",
+  "result": "draw"
+ },
+ {
+  "date": "2011/09/10",
+  "wrestler": "Tomoka Nakagawa",
+  "elo": 1019.7467796970003,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2011/09/20",
+  "wrestler": "Mayu Iwatani",
+  "elo": 606.4022113310917,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2011/09/20",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1020.5963890959433,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2011/09/20",
+  "wrestler": "Sendai Sachiko",
+  "elo": 951.7313366221794,
+  "opponent": "Ryo Mizunami",
+  "result": "lost"
+ },
+ {
+  "date": "2011/09/20",
+  "wrestler": "Ryo Mizunami",
+  "elo": 1060.3040341570934,
+  "opponent": "Sendai Sachiko",
+  "result": "won"
+ },
+ {
+  "date": "2011/09/20",
+  "wrestler": "Saki Kashima",
+  "elo": 624.206000468672,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/09/20",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1133.154649222934,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2011/09/25",
+  "wrestler": "Saki Kashima",
+  "elo": 542.5442224732252,
+  "opponent": "Eri Susa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/09/25",
+  "wrestler": "Eri Susa",
+  "elo": 770.3102618264198,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2011/09/25",
+  "wrestler": "Mayu Iwatani",
+  "elo": 587.8001715920482,
+  "opponent": "Yuzupon Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2011/09/25",
+  "wrestler": "Yuzupon Mask",
+  "elo": 1011.3319637976036,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2011/09/25",
+  "wrestler": "Io Shirai",
+  "elo": 981.7980992355943,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/09/25",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1166.8394336204847,
+  "opponent": "Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2011/10/10",
+  "wrestler": "Saki Kashima",
+  "elo": 530.5482168692065,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2011/10/10",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1026.5943918979526,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2011/10/10",
+  "wrestler": "Eri Susa",
+  "elo": 735.1367938199514,
+  "opponent": "Yuu Yamagata",
+  "result": "lost"
+ },
+ {
+  "date": "2011/10/10",
+  "wrestler": "Yuu Yamagata",
+  "elo": 1056.2217679733656,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/10/23",
+  "wrestler": "Saki Kashima",
+  "elo": 509.3416701750729,
+  "opponent": "Yuu Yamagata; Aya Yuuki",
+  "result": "lost"
+ },
+ {
+  "date": "2011/10/23",
+  "wrestler": "Yuu Yamagata",
+  "elo": 1060.848179341181,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2011/10/23",
+  "wrestler": "Aya Yuuki",
+  "elo": 1005.9768619792512,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2011/11/12",
+  "wrestler": "Yoshiko",
+  "elo": 1026.2732387883605,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2011/11/12",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1084.8562853230112,
+  "opponent": "Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2011/11/12",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1113.4249523760989,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/11/12",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1230.5157060788752,
+  "opponent": "Natsuki Taiyo",
+  "result": "won"
+ },
+ {
+  "date": "2011/11/27",
+  "wrestler": "Eri Susa",
+  "elo": 577.9771619223168,
+  "opponent": "Saki Kashima",
+  "result": "lost"
+ },
+ {
+  "date": "2011/11/27",
+  "wrestler": "Saki Kashima",
+  "elo": 666.5013020727076,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2011/12/11",
+  "wrestler": "Saki Kashima",
+  "elo": 650.9177377175072,
+  "opponent": "Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2011/12/11",
+  "wrestler": "Yoko Bito",
+  "elo": 1046.5026638496297,
+  "opponent": "Saki Kashima; Arisa Hoshiki",
+  "result": "lost"
+ },
+ {
+  "date": "2011/12/11",
+  "wrestler": "Mayu Iwatani",
+  "elo": 659.3297836581808,
+  "opponent": "Eri Susa; Eri Susa; Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2011/12/11",
+  "wrestler": "Eri Susa",
+  "elo": 482.0038449875722,
+  "opponent": "Mayu Iwatani; Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2011/12/11",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 1050.9891919605955,
+  "opponent": "Yoko Bito; Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2011/12/11",
+  "wrestler": "Yoshiko",
+  "elo": 1098.8243962970316,
+  "opponent": "Mayu Iwatani; Arisa Hoshiki",
+  "result": "won"
+ },
+ {
+  "date": "2011/12/23",
+  "wrestler": "Yoko Bito",
+  "elo": 1056.0161895713156,
+  "opponent": "Natsuki Taiyo",
+  "result": "draw"
+ },
+ {
+  "date": "2011/12/23",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1103.911426654413,
+  "opponent": "Yoko Bito",
+  "result": "draw"
+ },
+ {
+  "date": "2011/12/23",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 1017.0697810152734,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2011/12/23",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1200.7588445658066,
+  "opponent": "Arisa Hoshiki",
+  "result": "won"
+ },
+ {
+  "date": "2011/12/25",
+  "wrestler": "Yuuri Haruka",
+  "elo": 964.5235746678703,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2011/12/25",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1139.3878519865425,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2011/12/25",
+  "wrestler": "Kellie Skater",
+  "elo": 947.3829297791926,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2011/12/25",
+  "wrestler": "Io Shirai",
+  "elo": 1087.032239677209,
+  "opponent": "Kellie Skater",
+  "result": "won"
+ },
+ {
+  "date": "2011/12/25",
+  "wrestler": "Miho Wakizawa",
+  "elo": 979.0336521829557,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2011/12/25",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1240.9988799873972,
+  "opponent": "Miho Wakizawa",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>
