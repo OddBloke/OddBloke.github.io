@@ -1,0 +1,3780 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1989/01/06",
+  "wrestler": "Akira Nogami",
+  "elo": 900.0
+ },
+ {
+  "date": "1989/01/06",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "1989/01/06",
+  "wrestler": "Osamu Kido",
+  "elo": 950.0
+ },
+ {
+  "date": "1989/01/06",
+  "wrestler": "Masa Saito",
+  "elo": 1050.0
+ },
+ {
+  "date": "1989/01/10",
+  "wrestler": "George Takano",
+  "elo": 1019.3427016944706
+ },
+ {
+  "date": "1989/01/10",
+  "wrestler": "Super Strong Machine",
+  "elo": 1050.0
+ },
+ {
+  "date": "1989/01/10",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 950.0
+ },
+ {
+  "date": "1989/01/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1050.0
+ },
+ {
+  "date": "1989/01/10",
+  "wrestler": "Big Van Vader",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "1989/01/10",
+  "wrestler": "Riki Choshu",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "1989/01/11",
+  "wrestler": "Akira Nogami",
+  "elo": 750.8929943356761
+ },
+ {
+  "date": "1989/01/11",
+  "wrestler": "George Takano",
+  "elo": 1066.561935520193
+ },
+ {
+  "date": "1989/01/11",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1050.0
+ },
+ {
+  "date": "1989/01/13",
+  "wrestler": "Akira Nogami",
+  "elo": 844.3171058110249
+ },
+ {
+  "date": "1989/01/13",
+  "wrestler": "Makoto Arakawa",
+  "elo": 963.9137249267861
+ },
+ {
+  "date": "1989/01/13",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1031.1684407621424
+ },
+ {
+  "date": "1989/01/14",
+  "wrestler": "Osamu Kido",
+  "elo": 1027.6430406708355
+ },
+ {
+  "date": "1989/01/16",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1023.3331707714744
+ },
+ {
+  "date": "1989/01/16",
+  "wrestler": "Masa Saito",
+  "elo": 1092.8536882591618
+ },
+ {
+  "date": "1989/01/16",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1101.9462167848305
+ },
+ {
+  "date": "1989/01/16",
+  "wrestler": "Riki Choshu",
+  "elo": 843.9294508424492
+ },
+ {
+  "date": "1989/01/16",
+  "wrestler": "Big Van Vader",
+  "elo": 1032.0452418223465
+ },
+ {
+  "date": "1989/01/16",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 878.012999960577
+ },
+ {
+  "date": "1989/01/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1085.9935000197115
+ },
+ {
+  "date": "1989/01/18",
+  "wrestler": "Akira Nogami",
+  "elo": 731.640007097015
+ },
+ {
+  "date": "1989/01/18",
+  "wrestler": "Osamu Kido",
+  "elo": 1084.134157529064
+ },
+ {
+  "date": "1989/01/19",
+  "wrestler": "Masa Saito",
+  "elo": 1123.3805762237143
+ },
+ {
+  "date": "1989/01/20",
+  "wrestler": "Akira Nogami",
+  "elo": 696.4724158536778
+ },
+ {
+  "date": "1989/01/20",
+  "wrestler": "Don Arakawa",
+  "elo": 1017.5837956216686
+ },
+ {
+  "date": "1989/01/20",
+  "wrestler": "Super Strong Machine",
+  "elo": 1086.9465898301644
+ },
+ {
+  "date": "1989/01/20",
+  "wrestler": "George Takano",
+  "elo": 1021.6366098202654
+ },
+ {
+  "date": "1989/01/20",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1146.871542484758
+ },
+ {
+  "date": "1989/01/21",
+  "wrestler": "Antonio Inoki",
+  "elo": 1050.0
+ },
+ {
+  "date": "1989/01/22",
+  "wrestler": "Akira Nogami",
+  "elo": 778.613968290423
+ },
+ {
+  "date": "1989/01/22",
+  "wrestler": "Super Strong Machine",
+  "elo": 1028.9877285984937
+ },
+ {
+  "date": "1989/01/22",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1089.127301993813
+ },
+ {
+  "date": "1989/01/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1109.7320479698453
+ },
+ {
+  "date": "1989/01/24",
+  "wrestler": "Akira Nogami",
+  "elo": 923.0229102873601
+ },
+ {
+  "date": "1989/01/24",
+  "wrestler": "George Takano",
+  "elo": 1035.9615705661067
+ },
+ {
+  "date": "1989/01/26",
+  "wrestler": "Akira Nogami",
+  "elo": 945.458011186157
+ },
+ {
+  "date": "1989/01/26",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 836.30940970732
+ },
+ {
+  "date": "1989/01/26",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1130.5838430964739
+ },
+ {
+  "date": "1989/01/26",
+  "wrestler": "Big Van Vader",
+  "elo": 957.3413517582936
+ },
+ {
+  "date": "1989/01/26",
+  "wrestler": "Riki Choshu",
+  "elo": 993.337230970555
+ },
+ {
+  "date": "1989/01/28",
+  "wrestler": "Akira Nogami",
+  "elo": 987.5718003949974
+ },
+ {
+  "date": "1989/01/28",
+  "wrestler": "Makoto Arakawa",
+  "elo": 793.8587550059764
+ },
+ {
+  "date": "1989/01/28",
+  "wrestler": "George Takano",
+  "elo": 1086.3772643595478
+ },
+ {
+  "date": "1989/01/28",
+  "wrestler": "Super Strong Machine",
+  "elo": 1054.7469283564017
+ },
+ {
+  "date": "1989/01/31",
+  "wrestler": "Makoto Arakawa",
+  "elo": 762.1994970839636
+ },
+ {
+  "date": "1989/01/31",
+  "wrestler": "Osamu Kido",
+  "elo": 1099.9637864900703
+ },
+ {
+  "date": "1989/01/31",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1165.3428341439785
+ },
+ {
+  "date": "1989/02/01",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1084.195654945986
+ },
+ {
+  "date": "1989/02/01",
+  "wrestler": "Super Strong Machine",
+  "elo": 1059.678575404229
+ },
+ {
+  "date": "1989/02/01",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1147.3312400912844
+ },
+ {
+  "date": "1989/02/02",
+  "wrestler": "Akira Nogami",
+  "elo": 998.7242832172278
+ },
+ {
+  "date": "1989/02/02",
+  "wrestler": "Makoto Arakawa",
+  "elo": 889.703487860435
+ },
+ {
+  "date": "1989/02/02",
+  "wrestler": "Hiro Saito",
+  "elo": 1021.7030227886211
+ },
+ {
+  "date": "1989/02/03",
+  "wrestler": "Akira Nogami",
+  "elo": 834.4525702373651
+ },
+ {
+  "date": "1989/02/03",
+  "wrestler": "George Takano",
+  "elo": 1105.4919303217648
+ },
+ {
+  "date": "1989/02/03",
+  "wrestler": "Super Strong Machine",
+  "elo": 1079.6467513114433
+ },
+ {
+  "date": "1989/02/03",
+  "wrestler": "Antonio Inoki",
+  "elo": 1085.9935000197115
+ },
+ {
+  "date": "1989/02/04",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1183.0096146024114
+ },
+ {
+  "date": "1989/02/04",
+  "wrestler": "Riki Choshu",
+  "elo": 1042.2780138975397
+ },
+ {
+  "date": "1989/02/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1164.8352396376667
+ },
+ {
+  "date": "1989/02/07",
+  "wrestler": "Hiro Saito",
+  "elo": 993.3812340283026
+ },
+ {
+  "date": "1989/02/07",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1211.3314033627298
+ },
+ {
+  "date": "1989/02/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 943.8915915606069
+ },
+ {
+  "date": "1989/02/07",
+  "wrestler": "Big Van Vader",
+  "elo": 1069.55816863708
+ },
+ {
+  "date": "1989/02/08",
+  "wrestler": "Akira Nogami",
+  "elo": 859.1151934013187
+ },
+ {
+  "date": "1989/02/08",
+  "wrestler": "Don Arakawa",
+  "elo": 939.587247723662
+ },
+ {
+  "date": "1989/02/08",
+  "wrestler": "Hiro Saito",
+  "elo": 924.5740989684776
+ },
+ {
+  "date": "1989/02/08",
+  "wrestler": "George Takano",
+  "elo": 1139.8954978516772
+ },
+ {
+  "date": "1989/02/08",
+  "wrestler": "Super Strong Machine",
+  "elo": 1030.3013537637428
+ },
+ {
+  "date": "1989/02/08",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1133.5410524936865
+ },
+ {
+  "date": "1989/02/08",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1228.1894457622564
+ },
+ {
+  "date": "1989/02/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1101.457442423301
+ },
+ {
+  "date": "1989/02/09",
+  "wrestler": "Big Van Vader",
+  "elo": 1132.9359658514456
+ },
+ {
+  "date": "1989/02/09",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 797.9165601714224
+ },
+ {
+  "date": "1989/02/09",
+  "wrestler": "Antonio Inoki",
+  "elo": 1105.1899247876604
+ },
+ {
+  "date": "1989/02/10",
+  "wrestler": "Makoto Arakawa",
+  "elo": 940.0374191571854
+ },
+ {
+  "date": "1989/02/10",
+  "wrestler": "Masa Saito",
+  "elo": 1149.584963215487
+ },
+ {
+  "date": "1989/02/10",
+  "wrestler": "Riki Choshu",
+  "elo": 1011.9541914612684
+ },
+ {
+  "date": "1989/02/10",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 858.564205043965
+ },
+ {
+  "date": "1989/02/22",
+  "wrestler": "Kengo Kimura",
+  "elo": 1050.0
+ },
+ {
+  "date": "1989/02/22",
+  "wrestler": "Hiro Saito",
+  "elo": 845.9486779624153
+ },
+ {
+  "date": "1989/02/22",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1035.5538440165813
+ },
+ {
+  "date": "1989/02/22",
+  "wrestler": "Victor Zangiev",
+  "elo": 1016.9029243764702
+ },
+ {
+  "date": "1989/02/22",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 1008.57597778472
+ },
+ {
+  "date": "1989/02/22",
+  "wrestler": "Vicious Warrior",
+  "elo": 964.1995557017452
+ },
+ {
+  "date": "1989/02/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1137.2578867215557
+ },
+ {
+  "date": "1989/02/22",
+  "wrestler": "Antonio Inoki",
+  "elo": 1042.085295935523
+ },
+ {
+  "date": "1989/02/22",
+  "wrestler": "Riki Choshu",
+  "elo": 1075.0588203134057
+ },
+ {
+  "date": "1989/02/25",
+  "wrestler": "Antonio Inoki",
+  "elo": 1086.0581843447999
+ },
+ {
+  "date": "1989/02/25",
+  "wrestler": "Hiro Saito",
+  "elo": 808.3233344260032
+ },
+ {
+  "date": "1989/02/25",
+  "wrestler": "Osamu Kido",
+  "elo": 1118.7764582582765
+ },
+ {
+  "date": "1989/02/25",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1235.2202685772406
+ },
+ {
+  "date": "1989/02/25",
+  "wrestler": "George Takano",
+  "elo": 1066.5663450875254
+ },
+ {
+  "date": "1989/02/25",
+  "wrestler": "Vicious Warrior",
+  "elo": 1110.8578612300487
+ },
+ {
+  "date": "1989/02/28",
+  "wrestler": "Antonio Inoki",
+  "elo": 1117.4209481148928
+ },
+ {
+  "date": "1989/02/28",
+  "wrestler": "Osamu Kido",
+  "elo": 1136.5981200910692
+ },
+ {
+  "date": "1989/02/28",
+  "wrestler": "Hiro Saito",
+  "elo": 792.5437546543046
+ },
+ {
+  "date": "1989/02/28",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1239.1651635201652
+ },
+ {
+  "date": "1989/02/28",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 979.5230096162653
+ },
+ {
+  "date": "1989/02/28",
+  "wrestler": "George Takano",
+  "elo": 1110.3765062427346
+ },
+ {
+  "date": "1989/02/28",
+  "wrestler": "Super Strong Machine",
+  "elo": 991.6909955664798
+ },
+ {
+  "date": "1989/02/28",
+  "wrestler": "Vicious Warrior",
+  "elo": 1149.4682194273116
+ },
+ {
+  "date": "1989/03/01",
+  "wrestler": "Jose Perez",
+  "elo": 966.2829557269744
+ },
+ {
+  "date": "1989/03/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1151.1379923879185
+ },
+ {
+  "date": "1989/03/01",
+  "wrestler": "Super Strong Machine",
+  "elo": 1094.1979844703026
+ },
+ {
+  "date": "1989/03/01",
+  "wrestler": "Daniel Castillo",
+  "elo": 979.8467780623948
+ },
+ {
+  "date": "1989/03/01",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1249.2417744889676
+ },
+ {
+  "date": "1989/03/01",
+  "wrestler": "Vicious Warrior",
+  "elo": 1162.3625695172266
+ },
+ {
+  "date": "1989/03/01",
+  "wrestler": "Riki Choshu",
+  "elo": 1100.2097421401688
+ },
+ {
+  "date": "1989/03/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1165.104351767187
+ },
+ {
+  "date": "1989/03/02",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1145.81112351797
+ },
+ {
+  "date": "1989/03/02",
+  "wrestler": "Masa Saito",
+  "elo": 1167.6791305683469
+ },
+ {
+  "date": "1989/03/02",
+  "wrestler": "Kengo Kimura",
+  "elo": 1015.6291456773561
+ },
+ {
+  "date": "1989/03/02",
+  "wrestler": "Vicious Warrior",
+  "elo": 1196.7334238398705
+ },
+ {
+  "date": "1989/03/03",
+  "wrestler": "Antonio Inoki",
+  "elo": 1188.1888638186697
+ },
+ {
+  "date": "1989/03/03",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1075.9781607467294
+ },
+ {
+  "date": "1989/03/03",
+  "wrestler": "Bob Orton",
+  "elo": 1069.8329627712405
+ },
+ {
+  "date": "1989/03/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1200.7479457487598
+ },
+ {
+  "date": "1989/03/04",
+  "wrestler": "Kengo Kimura",
+  "elo": 1056.6623290357534
+ },
+ {
+  "date": "1989/03/04",
+  "wrestler": "Super Strong Machine",
+  "elo": 1040.697312826247
+ },
+ {
+  "date": "1989/03/04",
+  "wrestler": "Bob Orton",
+  "elo": 1123.333634415296
+ },
+ {
+  "date": "1989/03/04",
+  "wrestler": "George Takano",
+  "elo": 1072.554508178537
+ },
+ {
+  "date": "1989/03/04",
+  "wrestler": "Vicious Warrior",
+  "elo": 1234.5554219040682
+ },
+ {
+  "date": "1989/03/04",
+  "wrestler": "Riki Choshu",
+  "elo": 1113.0812041945726
+ },
+ {
+  "date": "1989/03/05",
+  "wrestler": "Super Strong Machine",
+  "elo": 1012.2285237483568
+ },
+ {
+  "date": "1989/03/05",
+  "wrestler": "Antonio Inoki",
+  "elo": 1214.9823402877048
+ },
+ {
+  "date": "1989/03/05",
+  "wrestler": "Osamu Kido",
+  "elo": 1154.3776115185294
+ },
+ {
+  "date": "1989/03/05",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 905.6775133866755
+ },
+ {
+  "date": "1989/03/05",
+  "wrestler": "George Takano",
+  "elo": 1109.477256293332
+ },
+ {
+  "date": "1989/03/05",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1088.752369658644
+ },
+ {
+  "date": "1989/03/05",
+  "wrestler": "Bob Orton",
+  "elo": 1148.2820145996056
+ },
+ {
+  "date": "1989/03/06",
+  "wrestler": "Naoki Sano",
+  "elo": 910.0440895716242
+ },
+ {
+  "date": "1989/03/06",
+  "wrestler": "Hiro Saito",
+  "elo": 950.9784934069882
+ },
+ {
+  "date": "1989/03/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1161.8282398672268
+ },
+ {
+  "date": "1989/03/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 859.9019477898539
+ },
+ {
+  "date": "1989/03/06",
+  "wrestler": "Bob Orton Jr.",
+  "elo": 1041.9948218853765
+ },
+ {
+  "date": "1989/03/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1151.54152791268
+ },
+ {
+  "date": "1989/03/07",
+  "wrestler": "Bob Orton",
+  "elo": 1107.7647499915095
+ },
+ {
+  "date": "1989/03/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1235.240972591753
+ },
+ {
+  "date": "1989/03/07",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1115.0646912506159
+ },
+ {
+  "date": "1989/03/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 942.104214465174
+ },
+ {
+  "date": "1989/03/07",
+  "wrestler": "Vicious Warrior",
+  "elo": 1201.1542176537262
+ },
+ {
+  "date": "1989/03/07",
+  "wrestler": "Riki Choshu",
+  "elo": 1179.8836126952567
+ },
+ {
+  "date": "1989/03/08",
+  "wrestler": "Jose Perez",
+  "elo": 931.215029952849
+ },
+ {
+  "date": "1989/03/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1244.0079540352845
+ },
+ {
+  "date": "1989/03/08",
+  "wrestler": "Naoki Sano",
+  "elo": 915.189965684228
+ },
+ {
+  "date": "1989/03/08",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1133.9946617115486
+ },
+ {
+  "date": "1989/03/10",
+  "wrestler": "Antonio Inoki",
+  "elo": 1246.2816579433845
+ },
+ {
+  "date": "1989/03/10",
+  "wrestler": "Hiro Saito",
+  "elo": 1031.4120802944358
+ },
+ {
+  "date": "1989/03/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1009.4964536343795
+ },
+ {
+  "date": "1989/03/10",
+  "wrestler": "Kengo Kimura",
+  "elo": 1013.9639800255783
+ },
+ {
+  "date": "1989/03/10",
+  "wrestler": "Bob Orton",
+  "elo": 1150.4630990016844
+ },
+ {
+  "date": "1989/03/11",
+  "wrestler": "Antonio Inoki",
+  "elo": 1249.8716846180625
+ },
+ {
+  "date": "1989/03/11",
+  "wrestler": "George Takano",
+  "elo": 1118.4089372712851
+ },
+ {
+  "date": "1989/03/11",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1138.827114839768
+ },
+ {
+  "date": "1989/03/11",
+  "wrestler": "Masa Saito",
+  "elo": 1162.8466774401275
+ },
+ {
+  "date": "1989/03/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1263.045755168592
+ },
+ {
+  "date": "1989/03/12",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 965.3495944492869
+ },
+ {
+  "date": "1989/03/12",
+  "wrestler": "Hiro Saito",
+  "elo": 1009.2099968266526
+ },
+ {
+  "date": "1989/03/12",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1260.3428162228593
+ },
+ {
+  "date": "1989/03/13",
+  "wrestler": "George Takano",
+  "elo": 1088.0993028589455
+ },
+ {
+  "date": "1989/03/13",
+  "wrestler": "Antonio Inoki",
+  "elo": 1278.2005723747618
+ },
+ {
+  "date": "1989/03/13",
+  "wrestler": "Osamu Kido",
+  "elo": 1168.2859434717925
+ },
+ {
+  "date": "1989/03/13",
+  "wrestler": "Bob Orton",
+  "elo": 1102.2444848967896
+ },
+ {
+  "date": "1989/03/13",
+  "wrestler": "Masa Saito",
+  "elo": 1211.0652915450223
+ },
+ {
+  "date": "1989/03/15",
+  "wrestler": "Antonio Inoki",
+  "elo": 1297.842608824546
+ },
+ {
+  "date": "1989/03/15",
+  "wrestler": "Masa Saito",
+  "elo": 1215.0765320405453
+ },
+ {
+  "date": "1989/03/15",
+  "wrestler": "Naoki Sano",
+  "elo": 850.8931137290562
+ },
+ {
+  "date": "1989/03/15",
+  "wrestler": "Vicious Warrior",
+  "elo": 1181.616149076787
+ },
+ {
+  "date": "1989/03/15",
+  "wrestler": "Jerry Lawler",
+  "elo": 973.7979502166302
+ },
+ {
+  "date": "1989/03/15",
+  "wrestler": "Riki Choshu",
+  "elo": 1206.0856624786265
+ },
+ {
+  "date": "1989/03/16",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1110.2368260689025
+ },
+ {
+  "date": "1989/03/16",
+  "wrestler": "Antonio Inoki",
+  "elo": 1312.1377532099789
+ },
+ {
+  "date": "1989/03/16",
+  "wrestler": "Don Arakawa",
+  "elo": 964.2284344214563
+ },
+ {
+  "date": "1989/03/16",
+  "wrestler": "Hiro Saito",
+  "elo": 1020.5155769243794
+ },
+ {
+  "date": "1989/03/16",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1223.2576623584125
+ },
+ {
+  "date": "1989/03/16",
+  "wrestler": "Jerry Lawler",
+  "elo": 920.9160401287312
+ },
+ {
+  "date": "1989/03/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1177.9824829566296
+ },
+ {
+  "date": "1989/04/13",
+  "wrestler": "Akira Nogami",
+  "elo": 756.7491303162855
+ },
+ {
+  "date": "1989/04/13",
+  "wrestler": "Naoki Sano",
+  "elo": 953.2591768140894
+ },
+ {
+  "date": "1989/04/13",
+  "wrestler": "Hiro Saito",
+  "elo": 939.7512885734345
+ },
+ {
+  "date": "1989/04/13",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 917.9133333432765
+ },
+ {
+  "date": "1989/04/13",
+  "wrestler": "Osamu Kido",
+  "elo": 1192.0040740247978
+ },
+ {
+  "date": "1989/04/13",
+  "wrestler": "Brian Pillman",
+  "elo": 977.5229640867148
+ },
+ {
+  "date": "1989/04/13",
+  "wrestler": "Masa Saito",
+  "elo": 1226.315049997188
+ },
+ {
+  "date": "1989/04/13",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1204.517145463563
+ },
+ {
+  "date": "1989/04/13",
+  "wrestler": "Antonio Inoki",
+  "elo": 1330.8782701048283
+ },
+ {
+  "date": "1989/04/14",
+  "wrestler": "Naoki Sano",
+  "elo": 967.9925260974567
+ },
+ {
+  "date": "1989/04/14",
+  "wrestler": "Akira Nogami",
+  "elo": 703.4872491449194
+ },
+ {
+  "date": "1989/04/14",
+  "wrestler": "Hiro Saito",
+  "elo": 961.4696728845857
+ },
+ {
+  "date": "1989/04/14",
+  "wrestler": "Brian Pillman",
+  "elo": 929.5688496577498
+ },
+ {
+  "date": "1989/04/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1201.9595401711122
+ },
+ {
+  "date": "1989/04/14",
+  "wrestler": "Buzz Sawyer",
+  "elo": 987.0421243842483
+ },
+ {
+  "date": "1989/04/14",
+  "wrestler": "Antonio Inoki",
+  "elo": 1337.357207912704
+ },
+ {
+  "date": "1989/04/15",
+  "wrestler": "Akira Nogami",
+  "elo": 731.5552172807052
+ },
+ {
+  "date": "1989/04/15",
+  "wrestler": "Hiro Saito",
+  "elo": 919.5405436817352
+ },
+ {
+  "date": "1989/04/15",
+  "wrestler": "Osamu Kido",
+  "elo": 1212.968638626223
+ },
+ {
+  "date": "1989/04/15",
+  "wrestler": "Brian Pillman",
+  "elo": 840.583205091601
+ },
+ {
+  "date": "1989/04/15",
+  "wrestler": "Naoki Sano",
+  "elo": 1056.9781706636054
+ },
+ {
+  "date": "1989/04/15",
+  "wrestler": "Kengo Kimura",
+  "elo": 961.955483126907
+ },
+ {
+  "date": "1989/04/15",
+  "wrestler": "Brad Rheingans",
+  "elo": 1052.0084968986714
+ },
+ {
+  "date": "1989/04/17",
+  "wrestler": "Naoki Sano",
+  "elo": 1101.651597617261
+ },
+ {
+  "date": "1989/04/17",
+  "wrestler": "Hiro Saito",
+  "elo": 994.4952839093462
+ },
+ {
+  "date": "1989/04/17",
+  "wrestler": "Akira Nogami",
+  "elo": 680.5796395368466
+ },
+ {
+  "date": "1989/04/17",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 968.888911087135
+ },
+ {
+  "date": "1989/04/17",
+  "wrestler": "Steve Armstrong",
+  "elo": 977.3108247428845
+ },
+ {
+  "date": "1989/04/17",
+  "wrestler": "Osamu Kido",
+  "elo": 1224.3132262547808
+ },
+ {
+  "date": "1989/04/17",
+  "wrestler": "Tracy Smothers",
+  "elo": 987.4569966205073
+ },
+ {
+  "date": "1989/04/17",
+  "wrestler": "Antonio Inoki",
+  "elo": 1343.6287096024505
+ },
+ {
+  "date": "1989/04/18",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 974.0650929340414
+ },
+ {
+  "date": "1989/04/18",
+  "wrestler": "Brian Pillman",
+  "elo": 868.4079643301818
+ },
+ {
+  "date": "1989/04/18",
+  "wrestler": "Akira Nogami",
+  "elo": 664.3057630117944
+ },
+ {
+  "date": "1989/04/18",
+  "wrestler": "Naoki Sano",
+  "elo": 1109.788535879787
+ },
+ {
+  "date": "1989/04/18",
+  "wrestler": "Hiro Saito",
+  "elo": 885.1568648701224
+ },
+ {
+  "date": "1989/04/18",
+  "wrestler": "Kengo Kimura",
+  "elo": 1071.293902166131
+ },
+ {
+  "date": "1989/04/18",
+  "wrestler": "Riki Choshu",
+  "elo": 1217.8475562787717
+ },
+ {
+  "date": "1989/04/19",
+  "wrestler": "Akira Nogami",
+  "elo": 620.4995272006363
+ },
+ {
+  "date": "1989/04/19",
+  "wrestler": "Hiro Saito",
+  "elo": 928.9631006812805
+ },
+ {
+  "date": "1989/04/19",
+  "wrestler": "Osamu Kido",
+  "elo": 1224.6078512490753
+ },
+ {
+  "date": "1989/04/19",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 983.6598589056009
+ },
+ {
+  "date": "1989/04/19",
+  "wrestler": "Brian Pillman",
+  "elo": 889.4066944528856
+ },
+ {
+  "date": "1989/04/19",
+  "wrestler": "Kengo Kimura",
+  "elo": 1042.2318750153859
+ },
+ {
+  "date": "1989/04/19",
+  "wrestler": "Masa Saito",
+  "elo": 1240.8460635725605
+ },
+ {
+  "date": "1989/04/20",
+  "wrestler": "Akira Nogami",
+  "elo": 609.2125082694286
+ },
+ {
+  "date": "1989/04/20",
+  "wrestler": "Naoki Sano",
+  "elo": 1115.4320453453909
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Hiro Saito",
+  "elo": 878.0117515883347
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Naoki Sano",
+  "elo": 1140.9077198918637
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Masahiro Chono",
+  "elo": 774.3502745445687
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Big Van Vader",
+  "elo": 1223.5212899946848
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 983.8485967649331
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1184.4528275824607
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Buzz Sawyer",
+  "elo": 895.6156536733012
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Victor Zangiev",
+  "elo": 1001.4159128953587
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Riki Choshu",
+  "elo": 1171.985937452523
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1069.8076585412957
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 888.3594650792721
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Jushin Liger",
+  "elo": 1047.6501969131643
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 805.5132981256435
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1062.0792974757421
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Antonio Inoki",
+  "elo": 1299.704861312554
+ },
+ {
+  "date": "1989/04/24",
+  "wrestler": "Shota Chochishvili",
+  "elo": 1087.847696579793
+ },
+ {
+  "date": "1989/05/12",
+  "wrestler": "Hiro Saito",
+  "elo": 895.9225452069268
+ },
+ {
+  "date": "1989/05/12",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 980.638377238552
+ },
+ {
+  "date": "1989/05/12",
+  "wrestler": "Naoki Sano",
+  "elo": 1071.8465758704194
+ },
+ {
+  "date": "1989/05/12",
+  "wrestler": "Victor Zangiev",
+  "elo": 1070.4770569168031
+ },
+ {
+  "date": "1989/05/12",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1165.4776948968017
+ },
+ {
+  "date": "1989/05/12",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 1140.0063990319784
+ },
+ {
+  "date": "1989/05/12",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1100.176744983687
+ },
+ {
+  "date": "1989/05/12",
+  "wrestler": "Jushin Liger",
+  "elo": 1060.6797548614193
+ },
+ {
+  "date": "1989/05/13",
+  "wrestler": "Hiro Saito",
+  "elo": 902.701080178129
+ },
+ {
+  "date": "1989/05/13",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1012.5208968922202
+ },
+ {
+  "date": "1989/05/13",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1102.5869043909745
+ },
+ {
+  "date": "1989/05/13",
+  "wrestler": "Masa Saito",
+  "elo": 1243.9507477206166
+ },
+ {
+  "date": "1989/05/13",
+  "wrestler": "Akira Nogami",
+  "elo": 595.3700708884285
+ },
+ {
+  "date": "1989/05/13",
+  "wrestler": "Jushin Liger",
+  "elo": 1067.6009735519192
+ },
+ {
+  "date": "1989/05/14",
+  "wrestler": "Osamu Kido",
+  "elo": 1238.3600031528192
+ },
+ {
+  "date": "1989/05/14",
+  "wrestler": "Kengo Kimura",
+  "elo": 1058.4351760140812
+ },
+ {
+  "date": "1989/05/14",
+  "wrestler": "Jushin Liger",
+  "elo": 1070.416922575518
+ },
+ {
+  "date": "1989/05/14",
+  "wrestler": "George Takano",
+  "elo": 1035.5654303240929
+ },
+ {
+  "date": "1989/05/14",
+  "wrestler": "Victor Zangiev",
+  "elo": 1123.0109294516558
+ },
+ {
+  "date": "1989/05/14",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1126.5044068819657
+ },
+ {
+  "date": "1989/05/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1196.739791355138
+ },
+ {
+  "date": "1989/05/15",
+  "wrestler": "Hiro Saito",
+  "elo": 942.3439424000154
+ },
+ {
+  "date": "1989/05/15",
+  "wrestler": "Akira Nogami",
+  "elo": 730.8836552209037
+ },
+ {
+  "date": "1989/05/15",
+  "wrestler": "Naoki Sano",
+  "elo": 989.600084167188
+ },
+ {
+  "date": "1989/05/15",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 970.0062815321064
+ },
+ {
+  "date": "1989/05/15",
+  "wrestler": "Steve Williams",
+  "elo": 1030.1107317237074
+ },
+ {
+  "date": "1989/05/15",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1193.3145983619315
+ },
+ {
+  "date": "1989/05/15",
+  "wrestler": "Jushin Liger",
+  "elo": 1104.9248967790186
+ },
+ {
+  "date": "1989/05/15",
+  "wrestler": "Osamu Kido",
+  "elo": 1205.578360611103
+ },
+ {
+  "date": "1989/05/15",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1192.067691965398
+ },
+ {
+  "date": "1989/05/17",
+  "wrestler": "Osamu Kido",
+  "elo": 1183.3283036187945
+ },
+ {
+  "date": "1989/05/17",
+  "wrestler": "Masa Saito",
+  "elo": 1266.2008047129252
+ },
+ {
+  "date": "1989/05/17",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 975.5139821321551
+ },
+ {
+  "date": "1989/05/17",
+  "wrestler": "Jushin Liger",
+  "elo": 1141.9318115390836
+ },
+ {
+  "date": "1989/05/17",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 1074.6982883343828
+ },
+ {
+  "date": "1989/05/17",
+  "wrestler": "Steve Williams",
+  "elo": 1095.418842421303
+ },
+ {
+  "date": "1989/05/17",
+  "wrestler": "Victor Zangiev",
+  "elo": 1152.5707058041562
+ },
+ {
+  "date": "1989/05/17",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1113.851866463889
+ },
+ {
+  "date": "1989/05/17",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1126.4379325351238
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 1027.6766854619004
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Steve Williams",
+  "elo": 1142.4404452937854
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1137.7923431134893
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Hiro Saito",
+  "elo": 894.2066662227517
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Jushin Liger",
+  "elo": 1166.0004496277154
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Riki Choshu",
+  "elo": 1182.1536818096092
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Osamu Kido",
+  "elo": 1183.8470789624273
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Akira Nogami",
+  "elo": 704.5328457321012
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Kengo Kimura",
+  "elo": 1071.6105807584825
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1153.6525551268173
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Masa Saito",
+  "elo": 1286.0318263304823
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Naoki Sano",
+  "elo": 943.0338040475344
+ },
+ {
+  "date": "1989/05/19",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1220.022931414965
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Naoki Sano",
+  "elo": 947.084451159439
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Akira Nogami",
+  "elo": 691.4139753588308
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Jushin Liger",
+  "elo": 1172.5598848143507
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1101.3716712727698
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1190.0732269675368
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 1003.2120470529518
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Big Van Vader",
+  "elo": 1235.7536091991592
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Riki Choshu",
+  "elo": 1124.2035733491493
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1184.3880409955837
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Kengo Kimura",
+  "elo": 1091.395745043547
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Osamu Kido",
+  "elo": 1186.9993781362257
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Masa Saito",
+  "elo": 1251.2502777339123
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Steve Williams",
+  "elo": 1212.0035424869252
+ },
+ {
+  "date": "1989/05/20",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1225.762330845944
+ },
+ {
+  "date": "1989/05/21",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 922.4781263584732
+ },
+ {
+  "date": "1989/05/21",
+  "wrestler": "Victor Zangiev",
+  "elo": 1179.088633690997
+ },
+ {
+  "date": "1989/05/21",
+  "wrestler": "Hiro Saito",
+  "elo": 860.6754208279216
+ },
+ {
+  "date": "1989/05/21",
+  "wrestler": "Jushin Liger",
+  "elo": 1189.3255075117656
+ },
+ {
+  "date": "1989/05/22",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 956.5108823938644
+ },
+ {
+  "date": "1989/05/22",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1063.7656120432355
+ },
+ {
+  "date": "1989/05/22",
+  "wrestler": "Jushin Liger",
+  "elo": 1226.9315667413
+ },
+ {
+  "date": "1989/05/22",
+  "wrestler": "Osamu Kido",
+  "elo": 1135.8611271891277
+ },
+ {
+  "date": "1989/05/22",
+  "wrestler": "Victor Zangiev",
+  "elo": 1230.226884638095
+ },
+ {
+  "date": "1989/05/22",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 969.9528064885034
+ },
+ {
+  "date": "1989/05/22",
+  "wrestler": "Riki Choshu",
+  "elo": 1157.4628139135978
+ },
+ {
+  "date": "1989/05/22",
+  "wrestler": "Masa Saito",
+  "elo": 1221.8931726141261
+ },
+ {
+  "date": "1989/05/22",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1248.787437207109
+ },
+ {
+  "date": "1989/05/23",
+  "wrestler": "Akira Nogami",
+  "elo": 670.4245912593098
+ },
+ {
+  "date": "1989/05/23",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1074.260304092996
+ },
+ {
+  "date": "1989/05/23",
+  "wrestler": "Naoki Sano",
+  "elo": 899.907653098607
+ },
+ {
+  "date": "1989/05/23",
+  "wrestler": "Hiro Saito",
+  "elo": 841.3303721007685
+ },
+ {
+  "date": "1989/05/23",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1253.6236993888972
+ },
+ {
+  "date": "1989/05/23",
+  "wrestler": "Jushin Liger",
+  "elo": 1228.3510217442224
+ },
+ {
+  "date": "1989/05/23",
+  "wrestler": "Masa Saito",
+  "elo": 1227.0275485110503
+ },
+ {
+  "date": "1989/05/23",
+  "wrestler": "Kengo Kimura",
+  "elo": 1110.636258892808
+ },
+ {
+  "date": "1989/05/24",
+  "wrestler": "Akira Nogami",
+  "elo": 640.158988689699
+ },
+ {
+  "date": "1989/05/24",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 1000.2184090581142
+ },
+ {
+  "date": "1989/05/24",
+  "wrestler": "Osamu Kido",
+  "elo": 1099.1170790354704
+ },
+ {
+  "date": "1989/05/24",
+  "wrestler": "Victor Zangiev",
+  "elo": 1248.5989087149237
+ },
+ {
+  "date": "1989/05/24",
+  "wrestler": "Kengo Kimura",
+  "elo": 1080.1256973460831
+ },
+ {
+  "date": "1989/05/24",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1268.8789801622597
+ },
+ {
+  "date": "1989/05/24",
+  "wrestler": "Antonio Inoki",
+  "elo": 1302.4257872582293
+ },
+ {
+  "date": "1989/05/25",
+  "wrestler": "Jushin Liger",
+  "elo": 1249.531961337981
+ },
+ {
+  "date": "1989/05/25",
+  "wrestler": "Big Van Vader",
+  "elo": 1213.129975063972
+ },
+ {
+  "date": "1989/05/25",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1291.5026142974468
+ },
+ {
+  "date": "1989/05/25",
+  "wrestler": "Shota Chochishvili",
+  "elo": 1065.3206247357894
+ },
+ {
+  "date": "1989/05/25",
+  "wrestler": "Antonio Inoki",
+  "elo": 1313.689323180231
+ },
+ {
+  "date": "1989/06/16",
+  "wrestler": "Mike Kirchner",
+  "elo": 1007.7726458946479
+ },
+ {
+  "date": "1989/06/16",
+  "wrestler": "Black Tiger",
+  "elo": 1058.6619678272896
+ },
+ {
+  "date": "1989/06/16",
+  "wrestler": "Jushin Liger",
+  "elo": 1259.1369674116802
+ },
+ {
+  "date": "1989/06/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1236.4740116444339
+ },
+ {
+  "date": "1989/06/17",
+  "wrestler": "Hiro Saito",
+  "elo": 824.7732669485334
+ },
+ {
+  "date": "1989/06/17",
+  "wrestler": "Jushin Liger",
+  "elo": 1263.2762436997389
+ },
+ {
+  "date": "1989/06/17",
+  "wrestler": "Brad Rheingans",
+  "elo": 1068.734962803689
+ },
+ {
+  "date": "1989/06/17",
+  "wrestler": "Mike Kirchner",
+  "elo": 986.6327082574674
+ },
+ {
+  "date": "1989/06/17",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1247.0439804630241
+ },
+ {
+  "date": "1989/06/18",
+  "wrestler": "Osamu Kido",
+  "elo": 1044.7558520510852
+ },
+ {
+  "date": "1989/06/18",
+  "wrestler": "Brad Rheingans",
+  "elo": 1123.0961897880743
+ },
+ {
+  "date": "1989/06/18",
+  "wrestler": "The Great Kokina",
+  "elo": 971.226883335751
+ },
+ {
+  "date": "1989/06/18",
+  "wrestler": "Riki Choshu",
+  "elo": 1186.2359305778468
+ },
+ {
+  "date": "1989/06/21",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 760.719359340406
+ },
+ {
+  "date": "1989/06/21",
+  "wrestler": "Osamu Kido",
+  "elo": 1064.3961723808823
+ },
+ {
+  "date": "1989/06/21",
+  "wrestler": "Naoki Sano",
+  "elo": 1022.7758320823926
+ },
+ {
+  "date": "1989/06/21",
+  "wrestler": "Jushin Liger",
+  "elo": 1264.1681906470876
+ },
+ {
+  "date": "1989/06/22",
+  "wrestler": "Akira Nogami",
+  "elo": 759.3363971589654
+ },
+ {
+  "date": "1989/06/22",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 717.9018970526312
+ },
+ {
+  "date": "1989/06/22",
+  "wrestler": "Mike Kirchner",
+  "elo": 1029.4501705452421
+ },
+ {
+  "date": "1989/06/22",
+  "wrestler": "Big Van Vader",
+  "elo": 1190.5625627817583
+ },
+ {
+  "date": "1989/06/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1269.611392745238
+ },
+ {
+  "date": "1989/06/24",
+  "wrestler": "Naoki Sano",
+  "elo": 1034.241040741569
+ },
+ {
+  "date": "1989/06/24",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 700.2082978555728
+ },
+ {
+  "date": "1989/06/24",
+  "wrestler": "Brad Rheingans",
+  "elo": 1131.9429893866036
+ },
+ {
+  "date": "1989/06/24",
+  "wrestler": "Akira Nogami",
+  "elo": 748.965292172057
+ },
+ {
+  "date": "1989/06/24",
+  "wrestler": "Jushin Liger",
+  "elo": 1266.7609668938146
+ },
+ {
+  "date": "1989/06/24",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1061.9713085333722
+ },
+ {
+  "date": "1989/06/24",
+  "wrestler": "Kengo Kimura",
+  "elo": 1095.3161314561025
+ },
+ {
+  "date": "1989/06/24",
+  "wrestler": "Mike Kirchner",
+  "elo": 1009.3890568986819
+ },
+ {
+  "date": "1989/06/24",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1279.641949568518
+ },
+ {
+  "date": "1989/06/26",
+  "wrestler": "Hiro Saito",
+  "elo": 828.8100850412295
+ },
+ {
+  "date": "1989/06/26",
+  "wrestler": "Akira Nogami",
+  "elo": 716.5315412746099
+ },
+ {
+  "date": "1989/06/26",
+  "wrestler": "Naoki Sano",
+  "elo": 1050.4579161902925
+ },
+ {
+  "date": "1989/06/26",
+  "wrestler": "Black Tiger",
+  "elo": 1067.1124710857437
+ },
+ {
+  "date": "1989/06/26",
+  "wrestler": "Jushin Liger",
+  "elo": 1267.3777095852402
+ },
+ {
+  "date": "1989/06/26",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 948.755041408692
+ },
+ {
+  "date": "1989/06/26",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 697.9694008404989
+ },
+ {
+  "date": "1989/06/26",
+  "wrestler": "Kengo Kimura",
+  "elo": 1105.3108694563489
+ },
+ {
+  "date": "1989/06/26",
+  "wrestler": "Mike Kirchner",
+  "elo": 987.1679563435932
+ },
+ {
+  "date": "1989/06/26",
+  "wrestler": "Masa Saito",
+  "elo": 1238.1380987885946
+ },
+ {
+  "date": "1989/06/27",
+  "wrestler": "Hiro Saito",
+  "elo": 937.1695584303753
+ },
+ {
+  "date": "1989/06/27",
+  "wrestler": "Black Tiger",
+  "elo": 1070.852905044541
+ },
+ {
+  "date": "1989/06/27",
+  "wrestler": "Riki Choshu",
+  "elo": 1136.858550819167
+ },
+ {
+  "date": "1989/06/27",
+  "wrestler": "Big Van Vader",
+  "elo": 1239.939942540438
+ },
+ {
+  "date": "1989/06/28",
+  "wrestler": "Akira Nogami",
+  "elo": 723.3081491752077
+ },
+ {
+  "date": "1989/06/28",
+  "wrestler": "Black Tiger",
+  "elo": 1048.5505854292535
+ },
+ {
+  "date": "1989/06/28",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 726.2114081430764
+ },
+ {
+  "date": "1989/06/28",
+  "wrestler": "Naoki Sano",
+  "elo": 1036.2258950878436
+ },
+ {
+  "date": "1989/06/28",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 977.2190836135896
+ },
+ {
+  "date": "1989/06/28",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1075.3051100335738
+ },
+ {
+  "date": "1989/06/28",
+  "wrestler": "Hiro Saito",
+  "elo": 911.1666664372541
+ },
+ {
+  "date": "1989/06/28",
+  "wrestler": "Jushin Liger",
+  "elo": 1273.8784325835204
+ },
+ {
+  "date": "1989/06/28",
+  "wrestler": "Brad Rheingans",
+  "elo": 1096.7669053905026
+ },
+ {
+  "date": "1989/06/28",
+  "wrestler": "Masa Saito",
+  "elo": 1255.7261407866451
+ },
+ {
+  "date": "1989/06/30",
+  "wrestler": "Akira Nogami",
+  "elo": 694.9695551019767
+ },
+ {
+  "date": "1989/06/30",
+  "wrestler": "Naoki Sano",
+  "elo": 1050.395192124459
+ },
+ {
+  "date": "1989/06/30",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 978.7121119289044
+ },
+ {
+  "date": "1989/06/30",
+  "wrestler": "George Takano",
+  "elo": 1048.8818312186413
+ },
+ {
+  "date": "1989/06/30",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 693.8934593226123
+ },
+ {
+  "date": "1989/06/30",
+  "wrestler": "Super Strong Machine",
+  "elo": 1028.3874981585889
+ },
+ {
+  "date": "1989/06/30",
+  "wrestler": "Kengo Kimura",
+  "elo": 1137.8404181231142
+ },
+ {
+  "date": "1989/07/01",
+  "wrestler": "Naoki Sano",
+  "elo": 1050.882158978847
+ },
+ {
+  "date": "1989/07/01",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 670.9508350293216
+ },
+ {
+  "date": "1989/07/01",
+  "wrestler": "George Takano",
+  "elo": 1060.3531433652868
+ },
+ {
+  "date": "1989/07/01",
+  "wrestler": "Super Strong Machine",
+  "elo": 1040.463426904416
+ },
+ {
+  "date": "1989/07/01",
+  "wrestler": "Brad Rheingans",
+  "elo": 1052.6504754278756
+ },
+ {
+  "date": "1989/07/01",
+  "wrestler": "Kengo Kimura",
+  "elo": 1181.9568480857413
+ },
+ {
+  "date": "1989/07/01",
+  "wrestler": "Akira Nogami",
+  "elo": 688.0747535368982
+ },
+ {
+  "date": "1989/07/01",
+  "wrestler": "Jushin Liger",
+  "elo": 1275.60213297479
+ },
+ {
+  "date": "1989/07/01",
+  "wrestler": "Mike Kirchner",
+  "elo": 955.8444980165536
+ },
+ {
+  "date": "1989/07/01",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1287.4728141502778
+ },
+ {
+  "date": "1989/07/02",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1006.1617950480481
+ },
+ {
+  "date": "1989/07/02",
+  "wrestler": "Brad Rheingans",
+  "elo": 1003.7587968726106
+ },
+ {
+  "date": "1989/07/02",
+  "wrestler": "George Takano",
+  "elo": 1109.2448219205517
+ },
+ {
+  "date": "1989/07/02",
+  "wrestler": "Kengo Kimura",
+  "elo": 1112.6500542094614
+ },
+ {
+  "date": "1989/07/02",
+  "wrestler": "Super Strong Machine",
+  "elo": 1109.770220780696
+ },
+ {
+  "date": "1989/07/02",
+  "wrestler": "Riki Choshu",
+  "elo": 1158.5174799157917
+ },
+ {
+  "date": "1989/07/02",
+  "wrestler": "Masa Saito",
+  "elo": 1229.591013547166
+ },
+ {
+  "date": "1989/07/02",
+  "wrestler": "Big Van Vader",
+  "elo": 1266.0750697799172
+ },
+ {
+  "date": "1989/07/03",
+  "wrestler": "Akira Nogami",
+  "elo": 666.030585555325
+ },
+ {
+  "date": "1989/07/03",
+  "wrestler": "Naoki Sano",
+  "elo": 1061.9042429696335
+ },
+ {
+  "date": "1989/07/03",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 962.2319438214936
+ },
+ {
+  "date": "1989/07/03",
+  "wrestler": "Black Tiger",
+  "elo": 1092.480436655808
+ },
+ {
+  "date": "1989/07/03",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1093.9115396887184
+ },
+ {
+  "date": "1989/07/03",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 664.9772824988071
+ },
+ {
+  "date": "1989/07/03",
+  "wrestler": "Jushin Liger",
+  "elo": 1277.0955211074188
+ },
+ {
+  "date": "1989/07/06",
+  "wrestler": "Akira Nogami",
+  "elo": 686.4278377427843
+ },
+ {
+  "date": "1989/07/06",
+  "wrestler": "Naoki Sano",
+  "elo": 1078.5234081528822
+ },
+ {
+  "date": "1989/07/06",
+  "wrestler": "Black Tiger",
+  "elo": 1097.6886041613152
+ },
+ {
+  "date": "1989/07/06",
+  "wrestler": "George Takano",
+  "elo": 1115.2661839271975
+ },
+ {
+  "date": "1989/07/06",
+  "wrestler": "Mike Kirchner",
+  "elo": 897.4601010279109
+ },
+ {
+  "date": "1989/07/06",
+  "wrestler": "Super Strong Machine",
+  "elo": 1138.9624192750175
+ },
+ {
+  "date": "1989/07/08",
+  "wrestler": "Black Tiger",
+  "elo": 1136.9050702683544
+ },
+ {
+  "date": "1989/07/08",
+  "wrestler": "Mike Kirchner",
+  "elo": 931.1138596761433
+ },
+ {
+  "date": "1989/07/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1078.357065702448
+ },
+ {
+  "date": "1989/07/11",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 874.1277391776166
+ },
+ {
+  "date": "1989/07/11",
+  "wrestler": "Brad Rheingans",
+  "elo": 1047.8108991945492
+ },
+ {
+  "date": "1989/07/11",
+  "wrestler": "Naoki Sano",
+  "elo": 1084.304094209063
+ },
+ {
+  "date": "1989/07/11",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 649.3673216585597
+ },
+ {
+  "date": "1989/07/11",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1101.7165201088421
+ },
+ {
+  "date": "1989/07/11",
+  "wrestler": "Akira Nogami",
+  "elo": 679.9697229748061
+ },
+ {
+  "date": "1989/07/11",
+  "wrestler": "Jushin Liger",
+  "elo": 1278.7100497994134
+ },
+ {
+  "date": "1989/07/11",
+  "wrestler": "Mike Kirchner",
+  "elo": 908.7951166727737
+ },
+ {
+  "date": "1989/07/11",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1297.0823000482892
+ },
+ {
+  "date": "1989/07/12",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 905.5187873263205
+ },
+ {
+  "date": "1989/07/12",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 769.576531454319
+ },
+ {
+  "date": "1989/07/12",
+  "wrestler": "Akira Nogami",
+  "elo": 662.1961242655582
+ },
+ {
+  "date": "1989/07/12",
+  "wrestler": "Naoki Sano",
+  "elo": 1093.1908935636868
+ },
+ {
+  "date": "1989/07/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1023.9724105702567
+ },
+ {
+  "date": "1989/07/12",
+  "wrestler": "Brad Rheingans",
+  "elo": 1102.1955543267404
+ },
+ {
+  "date": "1989/07/12",
+  "wrestler": "Black Tiger",
+  "elo": 1106.250002563734
+ },
+ {
+  "date": "1989/07/12",
+  "wrestler": "Jushin Liger",
+  "elo": 1294.0375836517237
+ },
+ {
+  "date": "1989/07/12",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1262.6087941423862
+ },
+ {
+  "date": "1989/07/12",
+  "wrestler": "Riki Choshu",
+  "elo": 1227.4644917275975
+ },
+ {
+  "date": "1989/07/13",
+  "wrestler": "Akira Nogami",
+  "elo": 674.6689378460856
+ },
+ {
+  "date": "1989/07/13",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 924.1577724839485
+ },
+ {
+  "date": "1989/07/13",
+  "wrestler": "Masa Saito",
+  "elo": 1235.1992242716788
+ },
+ {
+  "date": "1989/07/13",
+  "wrestler": "Naoki Sano",
+  "elo": 1119.2544383400173
+ },
+ {
+  "date": "1989/07/13",
+  "wrestler": "Jushin Liger",
+  "elo": 1281.0058112635584
+ },
+ {
+  "date": "1989/07/13",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1237.8582044489885
+ },
+ {
+  "date": "1989/07/13",
+  "wrestler": "Big Van Vader",
+  "elo": 1290.8256594733148
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1237.9820207784378
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 960.1012996887869
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1109.9247679106231
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Akira Nogami",
+  "elo": 668.7513594683022
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Jushin Liger",
+  "elo": 1282.4852058580043
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Manny Fernandez",
+  "elo": 953.4444428986127
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Osamu Kido",
+  "elo": 1070.5279676716439
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Buzz Sawyer",
+  "elo": 870.8094754221307
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Masa Saito",
+  "elo": 1241.4007688344714
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Dick Murdoch",
+  "elo": 1068.194057438259
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Big Van Vader",
+  "elo": 1261.3163370089082
+ },
+ {
+  "date": "1989/07/28",
+  "wrestler": "Riki Choshu",
+  "elo": 1256.973814192004
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 901.6026641294293
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Jushin Liger",
+  "elo": 1288.123982946634
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 890.2464989352674
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Dick Murdoch",
+  "elo": 1103.1214578150189
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Super Strong Machine",
+  "elo": 1178.3802043023327
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Kengo Kimura",
+  "elo": 1117.2571513431515
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "George Takano",
+  "elo": 1058.8631872059711
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Osamu Kido",
+  "elo": 1126.9309643928702
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Masa Saito",
+  "elo": 1207.3674411657398
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1177.9914232480862
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1072.682509709248
+ },
+ {
+  "date": "1989/07/29",
+  "wrestler": "Riki Choshu",
+  "elo": 1271.490819391801
+ },
+ {
+  "date": "1989/07/30",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 881.1466748289807
+ },
+ {
+  "date": "1989/07/30",
+  "wrestler": "Victor Zangiev",
+  "elo": 1254.6919368392587
+ },
+ {
+  "date": "1989/07/30",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1163.174966786163
+ },
+ {
+  "date": "1989/07/30",
+  "wrestler": "Dick Murdoch",
+  "elo": 1127.6697098309774
+ },
+ {
+  "date": "1989/08/03",
+  "wrestler": "Shinji Sasazaki",
+  "elo": 913.2067099495425
+ },
+ {
+  "date": "1989/08/03",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 918.5391469828077
+ },
+ {
+  "date": "1989/08/03",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1046.7163948866591
+ },
+ {
+  "date": "1989/08/03",
+  "wrestler": "Victor Zangiev",
+  "elo": 1267.6749942505533
+ },
+ {
+  "date": "1989/08/03",
+  "wrestler": "Super Strong Machine",
+  "elo": 1136.8744336262994
+ },
+ {
+  "date": "1989/08/03",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1258.7349061164543
+ },
+ {
+  "date": "1989/08/04",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 845.6512301633982
+ },
+ {
+  "date": "1989/08/04",
+  "wrestler": "Jushin Liger",
+  "elo": 1288.433367641761
+ },
+ {
+  "date": "1989/08/04",
+  "wrestler": "Big Van Vader",
+  "elo": 1262.1297759340507
+ },
+ {
+  "date": "1989/08/04",
+  "wrestler": "George Takano",
+  "elo": 984.1660507689938
+ },
+ {
+  "date": "1989/08/04",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1020.2037482960852
+ },
+ {
+  "date": "1989/08/04",
+  "wrestler": "Manny Fernandez",
+  "elo": 879.6634088165162
+ },
+ {
+  "date": "1989/08/04",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1083.6069119277074
+ },
+ {
+  "date": "1989/08/04",
+  "wrestler": "Dick Murdoch",
+  "elo": 1082.7616139857062
+ },
+ {
+  "date": "1989/08/04",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1208.0830626314341
+ },
+ {
+  "date": "1989/08/05",
+  "wrestler": "Jushin Liger",
+  "elo": 1292.8030234462535
+ },
+ {
+  "date": "1989/08/05",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 804.9627684097577
+ },
+ {
+  "date": "1989/08/05",
+  "wrestler": "Dick Murdoch",
+  "elo": 1103.1058448625263
+ },
+ {
+  "date": "1989/08/05",
+  "wrestler": "Victor Zangiev",
+  "elo": 1227.3723877624516
+ },
+ {
+  "date": "1989/08/05",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1100.8089612722888
+ },
+ {
+  "date": "1989/08/08",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 906.4436544440737
+ },
+ {
+  "date": "1989/08/08",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1083.8806488812966
+ },
+ {
+  "date": "1989/08/08",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1186.940967738978
+ },
+ {
+  "date": "1989/08/08",
+  "wrestler": "Big Van Vader",
+  "elo": 1283.2718708265068
+ },
+ {
+  "date": "1989/08/08",
+  "wrestler": "Kengo Kimura",
+  "elo": 1086.562026768229
+ },
+ {
+  "date": "1989/08/08",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1274.0824684039155
+ },
+ {
+  "date": "1989/08/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1040.4784079460253
+ },
+ {
+  "date": "1989/08/08",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 977.8678813034475
+ },
+ {
+  "date": "1989/08/08",
+  "wrestler": "Victor Zangiev",
+  "elo": 1205.5300104208034
+ },
+ {
+  "date": "1989/08/08",
+  "wrestler": "Riki Choshu",
+  "elo": 1293.3331967334493
+ },
+ {
+  "date": "1989/08/10",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 991.2543470238825
+ },
+ {
+  "date": "1989/08/10",
+  "wrestler": "Victor Zangiev",
+  "elo": 1169.4731112796978
+ },
+ {
+  "date": "1989/08/10",
+  "wrestler": "Osamu Kido",
+  "elo": 1112.5922062282364
+ },
+ {
+  "date": "1989/08/10",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1149.2251236642217
+ },
+ {
+  "date": "1989/08/10",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1292.9403904412939
+ },
+ {
+  "date": "1989/08/10",
+  "wrestler": "Jushin Liger",
+  "elo": 1256.2596720399017
+ },
+ {
+  "date": "1989/08/10",
+  "wrestler": "Naoki Sano",
+  "elo": 1192.341141152721
+ },
+ {
+  "date": "1989/08/10",
+  "wrestler": "Riki Choshu",
+  "elo": 1267.609428447468
+ },
+ {
+  "date": "1989/08/10",
+  "wrestler": "Big Van Vader",
+  "elo": 1308.995639112488
+ },
+ {
+  "date": "1989/08/25",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 953.7292284186344
+ },
+ {
+  "date": "1989/08/25",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1089.1664150046115
+ },
+ {
+  "date": "1989/08/25",
+  "wrestler": "Naoki Sano",
+  "elo": 1192.4872527229118
+ },
+ {
+  "date": "1989/08/25",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1146.140648544935
+ },
+ {
+  "date": "1989/08/25",
+  "wrestler": "Riki Choshu",
+  "elo": 1286.7331246727924
+ },
+ {
+  "date": "1989/08/26",
+  "wrestler": "Victor Zangiev",
+  "elo": 1169.6394663609415
+ },
+ {
+  "date": "1989/08/26",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 970.2453535860291
+ },
+ {
+  "date": "1989/08/26",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1178.9797700781926
+ },
+ {
+  "date": "1989/08/26",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1257.9640325519167
+ },
+ {
+  "date": "1989/08/26",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1216.0933643236892
+ },
+ {
+  "date": "1989/08/27",
+  "wrestler": "Naoki Sano",
+  "elo": 1201.941953256414
+ },
+ {
+  "date": "1989/08/27",
+  "wrestler": "Akira Nogami",
+  "elo": 642.8836636451755
+ },
+ {
+  "date": "1989/08/27",
+  "wrestler": "Owen Hart",
+  "elo": 1012.9338479115634
+ },
+ {
+  "date": "1989/08/27",
+  "wrestler": "George Takano",
+  "elo": 1002.7376185526092
+ },
+ {
+  "date": "1989/08/27",
+  "wrestler": "Billy Jack",
+  "elo": 976.7402679103069
+ },
+ {
+  "date": "1989/08/27",
+  "wrestler": "Masa Saito",
+  "elo": 1218.9973072105863
+ },
+ {
+  "date": "1989/08/30",
+  "wrestler": "Billy Jack",
+  "elo": 884.2089730511975
+ },
+ {
+  "date": "1989/08/30",
+  "wrestler": "George Takano",
+  "elo": 1049.0032659821638
+ },
+ {
+  "date": "1989/08/30",
+  "wrestler": "Naoki Sano",
+  "elo": 1202.0108385517397
+ },
+ {
+  "date": "1989/08/31",
+  "wrestler": "Osamu Kido",
+  "elo": 1116.7993006424438
+ },
+ {
+  "date": "1989/08/31",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 1095.7543796562425
+ },
+ {
+  "date": "1989/08/31",
+  "wrestler": "Akira Nogami",
+  "elo": 635.1892766905453
+ },
+ {
+  "date": "1989/08/31",
+  "wrestler": "Naoki Sano",
+  "elo": 1203.9344352903972
+ },
+ {
+  "date": "1989/09/01",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 978.9692476832508
+ },
+ {
+  "date": "1989/09/01",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1043.1347430467097
+ },
+ {
+  "date": "1989/09/01",
+  "wrestler": "Osamu Kido",
+  "elo": 1162.8309726003456
+ },
+ {
+  "date": "1989/09/01",
+  "wrestler": "Masa Saito",
+  "elo": 1193.7883565887444
+ },
+ {
+  "date": "1989/09/01",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1241.3023149455312
+ },
+ {
+  "date": "1989/09/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1066.443521873936
+ },
+ {
+  "date": "1989/09/03",
+  "wrestler": "George Takano",
+  "elo": 976.9192639440648
+ },
+ {
+  "date": "1989/09/03",
+  "wrestler": "Billy Jack",
+  "elo": 1028.3769771273955
+ },
+ {
+  "date": "1989/09/03",
+  "wrestler": "Kengo Kimura",
+  "elo": 1091.4188679079984
+ },
+ {
+  "date": "1989/09/06",
+  "wrestler": "Akira Nogami",
+  "elo": 744.9955822463431
+ },
+ {
+  "date": "1989/09/06",
+  "wrestler": "George Takano",
+  "elo": 1095.6247285026811
+ },
+ {
+  "date": "1989/09/06",
+  "wrestler": "Kengo Kimura",
+  "elo": 1106.0581235310076
+ },
+ {
+  "date": "1989/09/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1075.8570605798614
+ },
+ {
+  "date": "1989/09/06",
+  "wrestler": "Naoki Sano",
+  "elo": 1204.0740481515745
+ },
+ {
+  "date": "1989/09/06",
+  "wrestler": "Super Strong Machine",
+  "elo": 1140.3617821788127
+ },
+ {
+  "date": "1989/09/08",
+  "wrestler": "Owen Hart",
+  "elo": 1031.4777343025892
+ },
+ {
+  "date": "1989/09/08",
+  "wrestler": "Billy Jack",
+  "elo": 1029.003860147709
+ },
+ {
+  "date": "1989/09/09",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1056.520547567004
+ },
+ {
+  "date": "1989/09/09",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 893.2716297857296
+ },
+ {
+  "date": "1989/09/09",
+  "wrestler": "Billy Jack",
+  "elo": 1071.8526690964698
+ },
+ {
+  "date": "1989/09/09",
+  "wrestler": "Naoki Sano",
+  "elo": 1204.1876858262817
+ },
+ {
+  "date": "1989/09/12",
+  "wrestler": "Billy Jack",
+  "elo": 1076.657137496941
+ },
+ {
+  "date": "1989/09/12",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 1070.7684346408723
+ },
+ {
+  "date": "1989/09/12",
+  "wrestler": "Riki Choshu",
+  "elo": 1299.2260971804776
+ },
+ {
+  "date": "1989/09/14",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 896.5546422494542
+ },
+ {
+  "date": "1989/09/14",
+  "wrestler": "Osamu Kido",
+  "elo": 1085.7449530182405
+ },
+ {
+  "date": "1989/09/14",
+  "wrestler": "Billy Jack",
+  "elo": 1030.8782085819462
+ },
+ {
+  "date": "1989/09/14",
+  "wrestler": "Kengo Kimura",
+  "elo": 1151.8370524460024
+ },
+ {
+  "date": "1989/09/15",
+  "wrestler": "Owen Hart",
+  "elo": 1044.7681246852728
+ },
+ {
+  "date": "1989/09/15",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 1079.9281346203575
+ },
+ {
+  "date": "1989/09/15",
+  "wrestler": "Akira Nogami",
+  "elo": 734.9825944147782
+ },
+ {
+  "date": "1989/09/15",
+  "wrestler": "Jushin Liger",
+  "elo": 1258.762918997793
+ },
+ {
+  "date": "1989/09/15",
+  "wrestler": "Naoki Sano",
+  "elo": 1169.1589051935425
+ },
+ {
+  "date": "1989/09/15",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1126.5781088324825
+ },
+ {
+  "date": "1989/09/17",
+  "wrestler": "Akira Nogami",
+  "elo": 678.4010383826825
+ },
+ {
+  "date": "1989/09/17",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 953.1361982815499
+ },
+ {
+  "date": "1989/09/17",
+  "wrestler": "George Takano",
+  "elo": 1096.0084861593295
+ },
+ {
+  "date": "1989/09/17",
+  "wrestler": "Billy Jack",
+  "elo": 1009.5828180714652
+ },
+ {
+  "date": "1989/09/17",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1268.6117278071572
+ },
+ {
+  "date": "1989/09/17",
+  "wrestler": "Jushin Liger",
+  "elo": 1260.5340121087997
+ },
+ {
+  "date": "1989/09/20",
+  "wrestler": "Akira Nogami",
+  "elo": 688.788364979622
+ },
+ {
+  "date": "1989/09/20",
+  "wrestler": "Owen Hart",
+  "elo": 1050.0541802096295
+ },
+ {
+  "date": "1989/09/20",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1269.8740533551288
+ },
+ {
+  "date": "1989/09/20",
+  "wrestler": "Jushin Liger",
+  "elo": 1229.1065578247078
+ },
+ {
+  "date": "1989/09/20",
+  "wrestler": "Naoki Sano",
+  "elo": 1232.0138137617264
+ },
+ {
+  "date": "1989/09/20",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1221.1125270713794
+ },
+ {
+  "date": "1989/09/20",
+  "wrestler": "Big Van Vader",
+  "elo": 1329.1854269866399
+ },
+ {
+  "date": "1989/09/21",
+  "wrestler": "Billy Jack",
+  "elo": 969.5702194506837
+ },
+ {
+  "date": "1989/09/21",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 1119.940733241139
+ },
+ {
+  "date": "1989/09/21",
+  "wrestler": "Owen Hart",
+  "elo": 1024.0825548178263
+ },
+ {
+  "date": "1989/09/21",
+  "wrestler": "Naoki Sano",
+  "elo": 1244.999626457628
+ },
+ {
+  "date": "1989/09/21",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1149.3429638089615
+ },
+ {
+  "date": "1989/09/21",
+  "wrestler": "Big Van Vader",
+  "elo": 1344.0038301212555
+ },
+ {
+  "date": "1989/10/13",
+  "wrestler": "Naoki Sano",
+  "elo": 1254.8087174407722
+ },
+ {
+  "date": "1989/10/13",
+  "wrestler": "Akira Nogami",
+  "elo": 680.2516642580957
+ },
+ {
+  "date": "1989/10/13",
+  "wrestler": "Jushin Liger",
+  "elo": 1231.2407330050894
+ },
+ {
+  "date": "1989/10/15",
+  "wrestler": "George Takano",
+  "elo": 1102.5222632469815
+ },
+ {
+  "date": "1989/10/15",
+  "wrestler": "Jushin Liger",
+  "elo": 1240.7866041194698
+ },
+ {
+  "date": "1989/10/15",
+  "wrestler": "Masahiro Chono",
+  "elo": 906.7457395202819
+ },
+ {
+  "date": "1989/10/17",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 893.6656262353418
+ },
+ {
+  "date": "1989/10/17",
+  "wrestler": "George Takano",
+  "elo": 1132.2575492700855
+ },
+ {
+  "date": "1989/10/17",
+  "wrestler": "Masa Saito",
+  "elo": 1197.339465214295
+ },
+ {
+  "date": "1989/10/17",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1179.083433961756
+ },
+ {
+  "date": "1989/10/19",
+  "wrestler": "Osamu Kido",
+  "elo": 1119.711450990735
+ },
+ {
+  "date": "1989/10/19",
+  "wrestler": "Kengo Kimura",
+  "elo": 1156.1430535594654
+ },
+ {
+  "date": "1989/10/20",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1008.0427795266597
+ },
+ {
+  "date": "1989/10/20",
+  "wrestler": "Naoki Sano",
+  "elo": 1254.9075512905265
+ },
+ {
+  "date": "1989/10/20",
+  "wrestler": "Jushin Liger",
+  "elo": 1240.869318260651
+ },
+ {
+  "date": "1989/10/23",
+  "wrestler": "Super Strong Machine",
+  "elo": 1178.2896808256025
+ },
+ {
+  "date": "1989/10/23",
+  "wrestler": "George Takano",
+  "elo": 1088.9558278473337
+ },
+ {
+  "date": "1989/10/23",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1222.385155384508
+ },
+ {
+  "date": "1989/10/23",
+  "wrestler": "Masa Saito",
+  "elo": 1209.1312003630887
+ },
+ {
+  "date": "1989/10/25",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1148.1482308582003
+ },
+ {
+  "date": "1989/10/25",
+  "wrestler": "Jushin Liger",
+  "elo": 1245.1534649957796
+ },
+ {
+  "date": "1989/10/26",
+  "wrestler": "Osamu Kido",
+  "elo": 1137.9584277556016
+ },
+ {
+  "date": "1989/10/26",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1225.6262084121468
+ },
+ {
+  "date": "1989/10/26",
+  "wrestler": "Masa Saito",
+  "elo": 1193.3762702148128
+ },
+ {
+  "date": "1989/10/26",
+  "wrestler": "Big Van Vader",
+  "elo": 1359.7587602695314
+ },
+ {
+  "date": "1989/10/29",
+  "wrestler": "Osamu Kido",
+  "elo": 1145.9591789072347
+ },
+ {
+  "date": "1989/10/29",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1226.988163078814
+ },
+ {
+  "date": "1989/10/29",
+  "wrestler": "Masahiro Chono",
+  "elo": 983.4198048983941
+ },
+ {
+  "date": "1989/10/31",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1161.4622487847726
+ },
+ {
+  "date": "1989/10/31",
+  "wrestler": "Super Strong Machine",
+  "elo": 1185.252417894978
+ },
+ {
+  "date": "1989/10/31",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1223.5067945441263
+ },
+ {
+  "date": "1989/11/01",
+  "wrestler": "Naoki Sano",
+  "elo": 1257.5888136529895
+ },
+ {
+  "date": "1989/11/01",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1226.5393136239375
+ },
+ {
+  "date": "1989/11/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1150.0752274627653
+ },
+ {
+  "date": "1989/11/03",
+  "wrestler": "Jushin Liger",
+  "elo": 1251.6733523816558
+ },
+ {
+  "date": "1989/11/03",
+  "wrestler": "Big Van Vader",
+  "elo": 1325.6165590040334
+ },
+ {
+  "date": "1989/11/03",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1260.6815148894354
+ },
+ {
+  "date": "1989/11/24",
+  "wrestler": "George Takano",
+  "elo": 1012.0183539625621
+ },
+ {
+  "date": "1989/11/24",
+  "wrestler": "Manny Fernandez",
+  "elo": 1033.5383565860593
+ },
+ {
+  "date": "1989/11/24",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 947.4280388570426
+ },
+ {
+  "date": "1989/11/24",
+  "wrestler": "Steve Williams",
+  "elo": 1222.9601195286352
+ },
+ {
+  "date": "1989/11/24",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1279.3966505210897
+ },
+ {
+  "date": "1989/11/25",
+  "wrestler": "Steve Williams",
+  "elo": 1225.5817013278274
+ },
+ {
+  "date": "1989/11/25",
+  "wrestler": "George Takano",
+  "elo": 974.7121227787917
+ },
+ {
+  "date": "1989/11/25",
+  "wrestler": "Brad Rheingans",
+  "elo": 1139.501785510511
+ },
+ {
+  "date": "1989/11/25",
+  "wrestler": "Super Strong Machine",
+  "elo": 1131.8340781283507
+ },
+ {
+  "date": "1989/11/25",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1214.8805885513998
+ },
+ {
+  "date": "1989/11/25",
+  "wrestler": "Wayne Bloom",
+  "elo": 971.0709351034179
+ },
+ {
+  "date": "1989/11/25",
+  "wrestler": "Kengo Kimura",
+  "elo": 1185.0721184560475
+ },
+ {
+  "date": "1989/11/25",
+  "wrestler": "Manny Fernandez",
+  "elo": 1012.2484972212422
+ },
+ {
+  "date": "1989/11/25",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1271.326444571844
+ },
+ {
+  "date": "1989/11/26",
+  "wrestler": "Naoki Sano",
+  "elo": 1257.9018280252067
+ },
+ {
+  "date": "1989/11/26",
+  "wrestler": "Victor Zangiev",
+  "elo": 1098.4210595892657
+ },
+ {
+  "date": "1989/11/26",
+  "wrestler": "Manny Fernandez",
+  "elo": 1083.466903992918
+ },
+ {
+  "date": "1989/11/26",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 899.9315195376063
+ },
+ {
+  "date": "1989/11/26",
+  "wrestler": "Osamu Kido",
+  "elo": 1173.8234871224834
+ },
+ {
+  "date": "1989/11/26",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1229.332522898599
+ },
+ {
+  "date": "1989/11/26",
+  "wrestler": "Masahiro Chono",
+  "elo": 1151.3954915913735
+ },
+ {
+  "date": "1989/11/27",
+  "wrestler": "Naoki Sano",
+  "elo": 1258.5904399692263
+ },
+ {
+  "date": "1989/11/27",
+  "wrestler": "Brad Rheingans",
+  "elo": 1153.9959988217233
+ },
+ {
+  "date": "1989/11/27",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1186.9399680761737
+ },
+ {
+  "date": "1989/11/27",
+  "wrestler": "Osamu Kido",
+  "elo": 1229.7047280729353
+ },
+ {
+  "date": "1989/11/27",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1284.1870653064527
+ },
+ {
+  "date": "1989/11/27",
+  "wrestler": "Kengo Kimura",
+  "elo": 1150.9335027006593
+ },
+ {
+  "date": "1989/11/27",
+  "wrestler": "Riki Choshu",
+  "elo": 1316.2954050581718
+ },
+ {
+  "date": "1989/11/28",
+  "wrestler": "Wayne Bloom",
+  "elo": 906.1673675469036
+ },
+ {
+  "date": "1989/11/28",
+  "wrestler": "Victor Zangiev",
+  "elo": 1130.8728433675228
+ },
+ {
+  "date": "1989/11/28",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 858.2627868920569
+ },
+ {
+  "date": "1989/11/28",
+  "wrestler": "Super Strong Machine",
+  "elo": 1152.6684444511254
+ },
+ {
+  "date": "1989/11/28",
+  "wrestler": "George Takano",
+  "elo": 1047.555207618908
+ },
+ {
+  "date": "1989/11/28",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 986.1828231512229
+ },
+ {
+  "date": "1989/11/28",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1240.2625010863176
+ },
+ {
+  "date": "1989/11/29",
+  "wrestler": "George Takano",
+  "elo": 1027.1663007179425
+ },
+ {
+  "date": "1989/11/29",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1294.3815187569355
+ },
+ {
+  "date": "1989/11/29",
+  "wrestler": "Osamu Kido",
+  "elo": 1204.408066376185
+ },
+ {
+  "date": "1989/11/29",
+  "wrestler": "Steve Williams",
+  "elo": 1250.8783630245778
+ },
+ {
+  "date": "1989/11/30",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1297.2032101350762
+ },
+ {
+  "date": "1989/11/30",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1146.0389559062041
+ },
+ {
+  "date": "1989/11/30",
+  "wrestler": "Steve Williams",
+  "elo": 1271.3288691095627
+ },
+ {
+  "date": "1989/11/30",
+  "wrestler": "Wayne Bloom",
+  "elo": 888.9265044023409
+ },
+ {
+  "date": "1989/11/30",
+  "wrestler": "Riki Choshu",
+  "elo": 1320.6056208443124
+ },
+ {
+  "date": "1989/12/02",
+  "wrestler": "Naoki Sano",
+  "elo": 1258.8994446902698
+ },
+ {
+  "date": "1989/12/02",
+  "wrestler": "George Takano",
+  "elo": 1048.666222363191
+ },
+ {
+  "date": "1989/12/02",
+  "wrestler": "Super Strong Machine",
+  "elo": 1119.110672116812
+ },
+ {
+  "date": "1989/12/02",
+  "wrestler": "Steve Williams",
+  "elo": 1288.1077552767194
+ },
+ {
+  "date": "1989/12/02",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 827.0393699502433
+ },
+ {
+  "date": "1989/12/02",
+  "wrestler": "Masahiro Chono",
+  "elo": 1167.0072000622802
+ },
+ {
+  "date": "1989/12/02",
+  "wrestler": "Kengo Kimura",
+  "elo": 1098.0497456824091
+ },
+ {
+  "date": "1989/12/02",
+  "wrestler": "Victor Zangiev",
+  "elo": 1183.756600385773
+ },
+ {
+  "date": "1989/12/03",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1059.7877937710198
+ },
+ {
+  "date": "1989/12/03",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 999.5416942206123
+ },
+ {
+  "date": "1989/12/03",
+  "wrestler": "Brad Rheingans",
+  "elo": 1165.1664676309188
+ },
+ {
+  "date": "1989/12/03",
+  "wrestler": "Manny Fernandez",
+  "elo": 1045.2628611600871
+ },
+ {
+  "date": "1989/12/03",
+  "wrestler": "Masahiro Chono",
+  "elo": 1205.2112428951111
+ },
+ {
+  "date": "1989/12/04",
+  "wrestler": "Super Strong Machine",
+  "elo": 1081.1451354218182
+ },
+ {
+  "date": "1989/12/04",
+  "wrestler": "Osamu Kido",
+  "elo": 1223.3908347236818
+ },
+ {
+  "date": "1989/12/04",
+  "wrestler": "Brad Rheingans",
+  "elo": 1133.303243258879
+ },
+ {
+  "date": "1989/12/04",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1313.1348223210962
+ },
+ {
+  "date": "1989/12/04",
+  "wrestler": "Victor Zangiev",
+  "elo": 1152.4917511667604
+ },
+ {
+  "date": "1989/12/04",
+  "wrestler": "Riki Choshu",
+  "elo": 1336.2380454538186
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 1010.5388912374718
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1015.2719786315528
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Kengo Kimura",
+  "elo": 1142.565560821876
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Brad Rheingans",
+  "elo": 1093.506364675261
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Masahiro Chono",
+  "elo": 1225.1096821869203
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Victor Zangiev",
+  "elo": 1121.074167908326
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Steve Williams",
+  "elo": 1303.8165469059368
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Osamu Kido",
+  "elo": 1206.2368592185162
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Riki Choshu",
+  "elo": 1353.3920209589842
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1282.9668003494987
+ },
+ {
+  "date": "1989/12/05",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1270.430523057915
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Akira Nogami",
+  "elo": 673.3468500831261
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Naoki Sano",
+  "elo": 1260.6256482340123
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Manny Fernandez",
+  "elo": 1008.9108770045324
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Kengo Kimura",
+  "elo": 1178.9175449774307
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Brad Rheingans",
+  "elo": 1068.356246510444
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1295.5418594319071
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Victor Zangiev",
+  "elo": 1083.0903672140437
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1225.2287595656574
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Steve Williams",
+  "elo": 1276.421596350172
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1297.8254736136798
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Masahiro Chono",
+  "elo": 1208.942550610492
+ },
+ {
+  "date": "1989/12/06",
+  "wrestler": "Riki Choshu",
+  "elo": 1369.5591525354125
+ },
+ {
+  "date": "1989/12/07",
+  "wrestler": "Akira Nogami",
+  "elo": 725.9753849335927
+ },
+ {
+  "date": "1989/12/07",
+  "wrestler": "Manny Fernandez",
+  "elo": 984.8888975714318
+ },
+ {
+  "date": "1989/12/07",
+  "wrestler": "Masahiro Chono",
+  "elo": 1220.9535403270422
+ },
+ {
+  "date": "1989/12/07",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1277.9150120332617
+ },
+ {
+  "date": "1989/12/07",
+  "wrestler": "Riki Choshu",
+  "elo": 1389.4696141158306
+ },
+ {
+  "date": "1989/12/19",
+  "wrestler": "Jushin Liger",
+  "elo": 1251.719806020368
+ },
+ {
+  "date": "1989/12/19",
+  "wrestler": "Akira Nogami",
+  "elo": 870.6551771969106
+ },
+ {
+  "date": "1989/12/31",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1026.7283319091464
+ },
+ {
+  "date": "1989/12/31",
+  "wrestler": "Black Tiger",
+  "elo": 1076.0415577627932
+ },
+ {
+  "date": "1989/12/31",
+  "wrestler": "Jushin Liger",
+  "elo": 1266.8240284208382
+ },
+ {
+  "date": "1989/12/31",
+  "wrestler": "Victor Zangiev",
+  "elo": 1068.4571218699714
+ },
+ {
+  "date": "1989/12/31",
+  "wrestler": "Riki Choshu",
+  "elo": 1396.7862367878668
+ },
+ {
+  "date": "1989/12/31",
+  "wrestler": "Vladimir Berkovich",
+  "elo": 987.6069699389274
+ },
+ {
+  "date": "1989/12/31",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1232.5784877206518
+ },
+ {
+  "date": "1989/12/31",
+  "wrestler": "Manny Fernandez",
+  "elo": 956.2317145115233
+ },
+ {
+  "date": "1989/12/31",
+  "wrestler": "Salman Hashimikov",
+  "elo": 1302.7061551968843
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5155 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1977/01/07",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1050.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Shoji Kai",
+  "elo": 1050.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Takashi Kimura",
+  "elo": 950.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1050.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1050.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Masashi Ozawa",
+  "elo": 950.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Haruka Eigen",
+  "elo": 1050.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "David Taylor",
+  "elo": 950.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1050.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Osamu Kido",
+  "elo": 950.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Pete Roberts",
+  "elo": 1050.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Stan Hansen",
+  "elo": 950.0
+ },
+ {
+  "date": "1977/01/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1050.0
+ },
+ {
+  "date": "1977/01/08",
+  "wrestler": "Pete Roberts",
+  "elo": 992.8536882591618
+ },
+ {
+  "date": "1977/01/08",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1057.1463117408382
+ },
+ {
+  "date": "1977/01/08",
+  "wrestler": "Stan Hansen",
+  "elo": 864.2926234816763
+ },
+ {
+  "date": "1977/01/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1042.8536882591618
+ },
+ {
+  "date": "1977/01/10",
+  "wrestler": "Strong Kobayashi",
+  "elo": 998.9956660701752
+ },
+ {
+  "date": "1977/01/10",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1058.1506456706632
+ },
+ {
+  "date": "1977/01/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1086.7176321283082
+ },
+ {
+  "date": "1977/01/11",
+  "wrestler": "Strong Kobayashi",
+  "elo": 862.057530258274
+ },
+ {
+  "date": "1977/01/11",
+  "wrestler": "Stan Hansen",
+  "elo": 1001.2307592935774
+ },
+ {
+  "date": "1977/01/12",
+  "wrestler": "Strong Kobayashi",
+  "elo": 988.4925560758197
+ },
+ {
+  "date": "1977/01/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1032.6157517599518
+ },
+ {
+  "date": "1977/01/12",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1112.2525260390196
+ },
+ {
+  "date": "1977/01/13",
+  "wrestler": "Stan Hansen",
+  "elo": 1005.7351772744727
+ },
+ {
+  "date": "1977/01/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1028.1113337790566
+ },
+ {
+  "date": "1977/01/14",
+  "wrestler": "Stan Hansen",
+  "elo": 962.0711527726623
+ },
+ {
+  "date": "1977/01/14",
+  "wrestler": "Antonio Inoki",
+  "elo": 1093.6640245018102
+ },
+ {
+  "date": "1977/01/17",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1050.3749394097701
+ },
+ {
+  "date": "1977/01/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1089.988920408306
+ },
+ {
+  "date": "1977/01/18",
+  "wrestler": "Strong Kobayashi",
+  "elo": 980.9024907170881
+ },
+ {
+  "date": "1977/01/18",
+  "wrestler": "Stan Hansen",
+  "elo": 969.661218131394
+ },
+ {
+  "date": "1977/01/21",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1056.0512731034398
+ },
+ {
+  "date": "1977/01/21",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1084.3125867146364
+ },
+ {
+  "date": "1977/01/22",
+  "wrestler": "Stan Hansen",
+  "elo": 872.8955879175255
+ },
+ {
+  "date": "1977/01/22",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1077.6681209309565
+ },
+ {
+  "date": "1977/01/24",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1024.5612144884851
+ },
+ {
+  "date": "1977/01/24",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1109.1581795459113
+ },
+ {
+  "date": "1977/01/25",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1055.5886938773488
+ },
+ {
+  "date": "1977/01/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1137.8820723831989
+ },
+ {
+  "date": "1977/01/26",
+  "wrestler": "Stan Hansen",
+  "elo": 937.1615988897546
+ },
+ {
+  "date": "1977/01/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1105.7490668970843
+ },
+ {
+  "date": "1977/01/28",
+  "wrestler": "Strong Kobayashi",
+  "elo": 979.0145950543499
+ },
+ {
+  "date": "1977/01/28",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1101.135313311484
+ },
+ {
+  "date": "1977/01/28",
+  "wrestler": "Stan Hansen",
+  "elo": 982.2041320927906
+ },
+ {
+  "date": "1977/01/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1083.2278002955663
+ },
+ {
+  "date": "1977/01/29",
+  "wrestler": "Stan Hansen",
+  "elo": 881.2861353263932
+ },
+ {
+  "date": "1977/01/29",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1079.9325918207473
+ },
+ {
+  "date": "1977/01/31",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1048.5604946906774
+ },
+ {
+  "date": "1977/01/31",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1135.802618916373
+ },
+ {
+  "date": "1977/02/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1111.617641443972
+ },
+ {
+  "date": "1977/02/02",
+  "wrestler": "Stan Hansen",
+  "elo": 839.3182882017882
+ },
+ {
+  "date": "1977/02/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1132.6015650062745
+ },
+ {
+  "date": "1977/02/04",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1010.8582564722562
+ },
+ {
+  "date": "1977/02/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1173.504857134794
+ },
+ {
+  "date": "1977/02/05",
+  "wrestler": "Stan Hansen",
+  "elo": 913.8291044809519
+ },
+ {
+  "date": "1977/02/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1136.249448995212
+ },
+ {
+  "date": "1977/02/06",
+  "wrestler": "Stan Hansen",
+  "elo": 869.6121331773065
+ },
+ {
+  "date": "1977/02/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1154.7100506580973
+ },
+ {
+  "date": "1977/02/07",
+  "wrestler": "Shoji Kai",
+  "elo": 1085.9935000197115
+ },
+ {
+  "date": "1977/02/07",
+  "wrestler": "Makoto Arakawa",
+  "elo": 985.9935000197115
+ },
+ {
+  "date": "1977/02/07",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1078.012999960577
+ },
+ {
+  "date": "1977/02/07",
+  "wrestler": "Takashi Kimura",
+  "elo": 878.012999960577
+ },
+ {
+  "date": "1977/02/07",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1085.9935000197115
+ },
+ {
+  "date": "1977/02/07",
+  "wrestler": "Haruka Eigen",
+  "elo": 1085.9935000197115
+ },
+ {
+  "date": "1977/02/07",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1068.6207850576616
+ },
+ {
+  "date": "1977/02/07",
+  "wrestler": "Osamu Kido",
+  "elo": 862.2721122617071
+ },
+ {
+  "date": "1977/02/07",
+  "wrestler": "Pete Roberts",
+  "elo": 1080.5815759974548
+ },
+ {
+  "date": "1977/02/08",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 978.1587971402323
+ },
+ {
+  "date": "1977/02/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1168.948908327236
+ },
+ {
+  "date": "1977/02/09",
+  "wrestler": "Stan Hansen",
+  "elo": 837.15055522178
+ },
+ {
+  "date": "1977/02/09",
+  "wrestler": "Antonio Inoki",
+  "elo": 1170.9408396358606
+ },
+ {
+  "date": "1977/02/10",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 972.5627095623265
+ },
+ {
+  "date": "1977/02/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1196.3861987649095
+ },
+ {
+  "date": "1977/02/10",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 928.5750229499265
+ },
+ {
+  "date": "1977/02/10",
+  "wrestler": "Antonio Inoki",
+  "elo": 1195.7327267310134
+ },
+ {
+  "date": "1977/03/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1120.793270268629
+ },
+ {
+  "date": "1977/03/04",
+  "wrestler": "Johnny Powers",
+  "elo": 1075.5929284962806
+ },
+ {
+  "date": "1977/03/07",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1026.0730784081384
+ },
+ {
+  "date": "1977/03/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1163.3409769181521
+ },
+ {
+  "date": "1977/03/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1141.4256334387162
+ },
+ {
+  "date": "1977/03/09",
+  "wrestler": "Nikolai Volkoff",
+  "elo": 1021.915343479436
+ },
+ {
+  "date": "1977/03/10",
+  "wrestler": "Tony Charles",
+  "elo": 969.2984923557015
+ },
+ {
+  "date": "1977/03/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1172.1271410830147
+ },
+ {
+  "date": "1977/03/11",
+  "wrestler": "Roberto Soto",
+  "elo": 972.9254491842828
+ },
+ {
+  "date": "1977/03/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1199.201691898732
+ },
+ {
+  "date": "1977/03/12",
+  "wrestler": "Nikolai Volkoff",
+  "elo": 995.032471394053
+ },
+ {
+  "date": "1977/03/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1222.6155988163964
+ },
+ {
+  "date": "1977/03/13",
+  "wrestler": "Tony Charles",
+  "elo": 927.2488264178611
+ },
+ {
+  "date": "1977/03/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1220.2265248676522
+ },
+ {
+  "date": "1977/03/14",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1205.9657652666185
+ },
+ {
+  "date": "1977/03/14",
+  "wrestler": "Nikolai Volkoff",
+  "elo": 1052.0755097981873
+ },
+ {
+  "date": "1977/03/17",
+  "wrestler": "Haruka Eigen",
+  "elo": 1052.6038917141284
+ },
+ {
+  "date": "1977/03/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1222.6605694194102
+ },
+ {
+  "date": "1977/03/18",
+  "wrestler": "Nikolai Volkoff",
+  "elo": 1024.8202021306581
+ },
+ {
+  "date": "1977/03/18",
+  "wrestler": "Antonio Inoki",
+  "elo": 1236.2432526501611
+ },
+ {
+  "date": "1977/03/18",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1183.5233017655876
+ },
+ {
+  "date": "1977/03/18",
+  "wrestler": "Masked Superstar",
+  "elo": 1078.2745353076452
+ },
+ {
+  "date": "1977/03/19",
+  "wrestler": "Masked Superstar",
+  "elo": 1049.5610652135747
+ },
+ {
+  "date": "1977/03/19",
+  "wrestler": "Antonio Inoki",
+  "elo": 1250.5999876971964
+ },
+ {
+  "date": "1977/03/20",
+  "wrestler": "Vera Rodriguez",
+  "elo": 974.2010603289333
+ },
+ {
+  "date": "1977/03/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1209.3222414366544
+ },
+ {
+  "date": "1977/03/24",
+  "wrestler": "Johnny Powers",
+  "elo": 1098.844453688101
+ },
+ {
+  "date": "1977/03/24",
+  "wrestler": "Antonio Inoki",
+  "elo": 1238.9742251012863
+ },
+ {
+  "date": "1977/03/25",
+  "wrestler": "Mitsuo Yoshida",
+  "elo": 976.9405198369976
+ },
+ {
+  "date": "1977/03/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1220.8519815181555
+ },
+ {
+  "date": "1977/03/26",
+  "wrestler": "Masked Superstar",
+  "elo": 1024.405823687528
+ },
+ {
+  "date": "1977/03/26",
+  "wrestler": "Antonio Inoki",
+  "elo": 1251.5518458643096
+ },
+ {
+  "date": "1977/03/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1208.0743479792795
+ },
+ {
+  "date": "1977/03/27",
+  "wrestler": "Nikolai Volkoff",
+  "elo": 1050.37546920841
+ },
+ {
+  "date": "1977/03/30",
+  "wrestler": "Nikolai Volkoff",
+  "elo": 1021.6301940398494
+ },
+ {
+  "date": "1977/03/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1222.4469855635598
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1077.0904817674336
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Makoto Arakawa",
+  "elo": 855.8776778448771
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Takashi Kimura",
+  "elo": 1008.1288221354114
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Osamu Kido",
+  "elo": 966.7996066052627
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Vera Rodriguez",
+  "elo": 896.3918078292622
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Haruka Eigen",
+  "elo": 1091.5085179639639
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1019.9693499734719
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Nikolai Volkoff",
+  "elo": 1079.6738440269544
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Masked Superstar",
+  "elo": 1000.1740917740892
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1234.562851520279
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Johnny Powers",
+  "elo": 1069.5070770602322
+ },
+ {
+  "date": "1977/03/31",
+  "wrestler": "Antonio Inoki",
+  "elo": 1266.2205341782442
+ },
+ {
+  "date": "1977/04/01",
+  "wrestler": "Takashi Kimura",
+  "elo": 1063.1095585179187
+ },
+ {
+  "date": "1977/04/01",
+  "wrestler": "Masashi Ozawa",
+  "elo": 947.9668101564635
+ },
+ {
+  "date": "1977/04/01",
+  "wrestler": "Makoto Arakawa",
+  "elo": 999.8827574788941
+ },
+ {
+  "date": "1977/04/01",
+  "wrestler": "Roberto Soto",
+  "elo": 1021.0938566817194
+ },
+ {
+  "date": "1977/04/01",
+  "wrestler": "Tony Charles",
+  "elo": 854.9496799692806
+ },
+ {
+  "date": "1977/04/01",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1062.2226516324286
+ },
+ {
+  "date": "1977/04/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 1039.806029882395
+ },
+ {
+  "date": "1977/04/01",
+  "wrestler": "Nikolai Volkoff",
+  "elo": 1131.3763321085232
+ },
+ {
+  "date": "1977/04/01",
+  "wrestler": "Mitsuo Yoshida",
+  "elo": 883.617729281581
+ },
+ {
+  "date": "1977/04/01",
+  "wrestler": "Masked Superstar",
+  "elo": 1046.8354870517976
+ },
+ {
+  "date": "1977/04/23",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1244.8543077573574
+ },
+ {
+  "date": "1977/04/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1204.6699961608333
+ },
+ {
+  "date": "1977/04/25",
+  "wrestler": "Brute Bernard",
+  "elo": 1080.3686231930483
+ },
+ {
+  "date": "1977/04/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1191.4390190500574
+ },
+ {
+  "date": "1977/04/27",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1026.4619542215519
+ },
+ {
+  "date": "1977/04/28",
+  "wrestler": "Brute Bernard",
+  "elo": 1104.8254544660417
+ },
+ {
+  "date": "1977/04/28",
+  "wrestler": "Antonio Inoki",
+  "elo": 1253.9921185417475
+ },
+ {
+  "date": "1977/05/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1129.2262799078476
+ },
+ {
+  "date": "1977/05/01",
+  "wrestler": "Brute Bernard",
+  "elo": 1167.0381936082515
+ },
+ {
+  "date": "1977/05/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1114.8540023863773
+ },
+ {
+  "date": "1977/05/03",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1040.8342317430222
+ },
+ {
+  "date": "1977/05/04",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1018.1641601718975
+ },
+ {
+  "date": "1977/05/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1265.32715432731
+ },
+ {
+  "date": "1977/05/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1146.293803080952
+ },
+ {
+  "date": "1977/05/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1271.2465019198085
+ },
+ {
+  "date": "1977/05/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1128.6473007898458
+ },
+ {
+  "date": "1977/05/09",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1035.810662463004
+ },
+ {
+  "date": "1977/05/11",
+  "wrestler": "Terry Rudge",
+  "elo": 967.7116856115606
+ },
+ {
+  "date": "1977/05/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1160.9356151782852
+ },
+ {
+  "date": "1977/05/12",
+  "wrestler": "Brute Bernard",
+  "elo": 1131.6008784231665
+ },
+ {
+  "date": "1977/05/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1288.965159512351
+ },
+ {
+  "date": "1977/05/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1089.300776096259
+ },
+ {
+  "date": "1977/05/13",
+  "wrestler": "Andre The Giant",
+  "elo": 1071.6348390820262
+ },
+ {
+  "date": "1977/05/15",
+  "wrestler": "Terry Rudge",
+  "elo": 901.3458286404042
+ },
+ {
+  "date": "1977/05/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1122.4837045818372
+ },
+ {
+  "date": "1977/05/16",
+  "wrestler": "Victor Rivera",
+  "elo": 966.9311533938254
+ },
+ {
+  "date": "1977/05/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1155.5525511880116
+ },
+ {
+  "date": "1977/05/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1088.971660908089
+ },
+ {
+  "date": "1977/05/17",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1102.3915527429267
+ },
+ {
+  "date": "1977/05/20",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1050.4612349354602
+ },
+ {
+  "date": "1977/05/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1140.9019787155555
+ },
+ {
+  "date": "1977/05/21",
+  "wrestler": "Victor Rivera",
+  "elo": 939.8451389445179
+ },
+ {
+  "date": "1977/05/21",
+  "wrestler": "Antonio Inoki",
+  "elo": 1295.7366631246778
+ },
+ {
+  "date": "1977/05/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1160.245464603227
+ },
+ {
+  "date": "1977/05/24",
+  "wrestler": "Victor Rivera",
+  "elo": 895.9500643066428
+ },
+ {
+  "date": "1977/05/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1182.1930019221645
+ },
+ {
+  "date": "1977/05/25",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1018.5598837801031
+ },
+ {
+  "date": "1977/05/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1214.0943530775216
+ },
+ {
+  "date": "1977/05/26",
+  "wrestler": "Victor Rivera",
+  "elo": 877.747931191809
+ },
+ {
+  "date": "1977/05/26",
+  "wrestler": "Antonio Inoki",
+  "elo": 1300.2871964033861
+ },
+ {
+  "date": "1977/05/27",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1002.0635554989047
+ },
+ {
+  "date": "1977/05/27",
+  "wrestler": "Antonio Inoki",
+  "elo": 1308.5353605439852
+ },
+ {
+  "date": "1977/05/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1219.6873935962888
+ },
+ {
+  "date": "1977/05/29",
+  "wrestler": "Antonio Inoki",
+  "elo": 1311.5558184186666
+ },
+ {
+  "date": "1977/05/30",
+  "wrestler": "Victor Rivera",
+  "elo": 862.5369754985483
+ },
+ {
+  "date": "1977/05/30",
+  "wrestler": "Antonio Inoki",
+  "elo": 1315.3585573419819
+ },
+ {
+  "date": "1977/05/31",
+  "wrestler": "Antonio Inoki",
+  "elo": 1318.0845450695022
+ },
+ {
+  "date": "1977/06/01",
+  "wrestler": "Andre The Giant",
+  "elo": 1102.1479561645558
+ },
+ {
+  "date": "1977/06/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1302.8279865282375
+ },
+ {
+  "date": "1977/06/24",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1118.628114346703
+ },
+ {
+  "date": "1977/06/24",
+  "wrestler": "Antonio Inoki",
+  "elo": 1310.273218901073
+ },
+ {
+  "date": "1977/06/25",
+  "wrestler": "Asian Terror #1",
+  "elo": 966.4380805377419
+ },
+ {
+  "date": "1977/06/25",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1152.1900338089608
+ },
+ {
+  "date": "1977/06/25",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 897.0439418055386
+ },
+ {
+  "date": "1977/06/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1227.5701638823857
+ },
+ {
+  "date": "1977/06/26",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1179.84197555164
+ },
+ {
+  "date": "1977/06/27",
+  "wrestler": "Asian Terror #1",
+  "elo": 921.1475700699639
+ },
+ {
+  "date": "1977/06/27",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1202.487230785529
+ },
+ {
+  "date": "1977/06/27",
+  "wrestler": "Asian Terror #2",
+  "elo": 978.7513016555744
+ },
+ {
+  "date": "1977/06/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1238.1945130545985
+ },
+ {
+  "date": "1977/06/28",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1159.8375696662627
+ },
+ {
+  "date": "1977/06/28",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1067.6425862826034
+ },
+ {
+  "date": "1977/06/29",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 921.7873165601077
+ },
+ {
+  "date": "1977/06/29",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1185.225266167372
+ },
+ {
+  "date": "1977/06/29",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1201.8214913645338
+ },
+ {
+  "date": "1977/06/29",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1140.388629662733
+ },
+ {
+  "date": "1977/06/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1211.835635932503
+ },
+ {
+  "date": "1977/07/01",
+  "wrestler": "Black Gordman",
+  "elo": 974.3881656581616
+ },
+ {
+  "date": "1977/07/01",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1210.8371005092104
+ },
+ {
+  "date": "1977/07/01",
+  "wrestler": "Great Goliath",
+  "elo": 977.1962158323141
+ },
+ {
+  "date": "1977/07/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1223.237528016346
+ },
+ {
+  "date": "1977/07/02",
+  "wrestler": "Great Goliath",
+  "elo": 951.564638583201
+ },
+ {
+  "date": "1977/07/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1316.6811132133514
+ },
+ {
+  "date": "1977/07/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1219.1128911277256
+ },
+ {
+  "date": "1977/07/03",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1102.090580652912
+ },
+ {
+  "date": "1977/07/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1242.3865525212564
+ },
+ {
+  "date": "1977/07/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1249.1882870271534
+ },
+ {
+  "date": "1977/07/07",
+  "wrestler": "Great Goliath",
+  "elo": 921.0163527589709
+ },
+ {
+  "date": "1977/07/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1256.825358483211
+ },
+ {
+  "date": "1977/07/08",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1225.7826652728036
+ },
+ {
+  "date": "1977/07/08",
+  "wrestler": "Black Gordman",
+  "elo": 949.9189066850518
+ },
+ {
+  "date": "1977/07/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1322.798427956629
+ },
+ {
+  "date": "1977/07/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1221.3733704461872
+ },
+ {
+  "date": "1977/07/09",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1172.9945567269597
+ },
+ {
+  "date": "1977/07/11",
+  "wrestler": "Great Goliath",
+  "elo": 891.517129513039
+ },
+ {
+  "date": "1977/07/11",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1233.1574710842865
+ },
+ {
+  "date": "1977/07/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1227.1376418423583
+ },
+ {
+  "date": "1977/07/13",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1237.9751395265023
+ },
+ {
+  "date": "1977/07/13",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1130.7239051111758
+ },
+ {
+  "date": "1977/07/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1248.2729676502502
+ },
+ {
+  "date": "1977/07/14",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1244.1240573619536
+ },
+ {
+  "date": "1977/07/15",
+  "wrestler": "Great Goliath",
+  "elo": 876.100503600544
+ },
+ {
+  "date": "1977/07/15",
+  "wrestler": "Antonio Inoki",
+  "elo": 1326.6525844347527
+ },
+ {
+  "date": "1977/07/16",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1248.2353721843126
+ },
+ {
+  "date": "1977/07/17",
+  "wrestler": "Great Goliath",
+  "elo": 855.0876656782291
+ },
+ {
+  "date": "1977/07/17",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1253.4885816648914
+ },
+ {
+  "date": "1977/07/17",
+  "wrestler": "Black Gordman",
+  "elo": 919.4792865507676
+ },
+ {
+  "date": "1977/07/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1255.8828726838212
+ },
+ {
+  "date": "1977/07/18",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1258.496753598946
+ },
+ {
+  "date": "1977/07/18",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1259.421667664918
+ },
+ {
+  "date": "1977/07/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1225.5626496321227
+ },
+ {
+  "date": "1977/07/20",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1198.4419411767665
+ },
+ {
+  "date": "1977/07/21",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1229.2179910228635
+ },
+ {
+  "date": "1977/07/21",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1256.9994663289315
+ },
+ {
+  "date": "1977/07/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1230.7793381425097
+ },
+ {
+  "date": "1977/07/23",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1233.8109893600063
+ },
+ {
+  "date": "1977/07/23",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1234.5310660288949
+ },
+ {
+  "date": "1977/07/24",
+  "wrestler": "Black Gordman",
+  "elo": 891.3380918254213
+ },
+ {
+  "date": "1977/07/24",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1240.8462880413429
+ },
+ {
+  "date": "1977/07/25",
+  "wrestler": "Great Goliath",
+  "elo": 834.8529408419054
+ },
+ {
+  "date": "1977/07/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1239.5897472379759
+ },
+ {
+  "date": "1977/07/26",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1230.7477837943388
+ },
+ {
+  "date": "1977/07/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1265.8414297725685
+ },
+ {
+  "date": "1977/07/29",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1244.7679449076402
+ },
+ {
+  "date": "1977/07/30",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 897.5349461274144
+ },
+ {
+  "date": "1977/07/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1271.9045223807418
+ },
+ {
+  "date": "1977/07/31",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 873.6698624986086
+ },
+ {
+  "date": "1977/07/31",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1250.7342158148417
+ },
+ {
+  "date": "1977/08/01",
+  "wrestler": "Black Gordman",
+  "elo": 868.9057984736825
+ },
+ {
+  "date": "1977/08/01",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1256.3422891527764
+ },
+ {
+  "date": "1977/08/26",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1096.4274336800709
+ },
+ {
+  "date": "1977/08/26",
+  "wrestler": "Osamu Kido",
+  "elo": 1076.3264677138106
+ },
+ {
+  "date": "1977/08/26",
+  "wrestler": "Haruka Eigen",
+  "elo": 984.1024160550639
+ },
+ {
+  "date": "1977/08/26",
+  "wrestler": "Sonny King",
+  "elo": 1055.703613827331
+ },
+ {
+  "date": "1977/08/26",
+  "wrestler": "John Harris",
+  "elo": 950.0
+ },
+ {
+  "date": "1977/08/26",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1050.0
+ },
+ {
+  "date": "1977/08/26",
+  "wrestler": "The Hangman",
+  "elo": 1032.7099433106557
+ },
+ {
+  "date": "1977/08/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1255.549550725414
+ },
+ {
+  "date": "1977/08/26",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1210.451393753004
+ },
+ {
+  "date": "1977/08/26",
+  "wrestler": "Stan Hansen",
+  "elo": 1020.7141368208696
+ },
+ {
+  "date": "1977/08/27",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1131.2064004722997
+ },
+ {
+  "date": "1977/08/27",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 978.6146845193757
+ },
+ {
+  "date": "1977/08/27",
+  "wrestler": "John Harris",
+  "elo": 1040.5481338150696
+ },
+ {
+  "date": "1977/08/27",
+  "wrestler": "Riki Choshu",
+  "elo": 939.5264833179388
+ },
+ {
+  "date": "1977/08/27",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1007.9856174401324
+ },
+ {
+  "date": "1977/08/27",
+  "wrestler": "The Hangman",
+  "elo": 1086.946977502952
+ },
+ {
+  "date": "1977/08/27",
+  "wrestler": "Sonny King",
+  "elo": 1026.6091339695995
+ },
+ {
+  "date": "1977/08/27",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1224.9986336818697
+ },
+ {
+  "date": "1977/08/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1214.888617231378
+ },
+ {
+  "date": "1977/08/27",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1081.321866988072
+ },
+ {
+  "date": "1977/08/28",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1145.9613917469474
+ },
+ {
+  "date": "1977/08/28",
+  "wrestler": "Haruka Eigen",
+  "elo": 1036.839183394943
+ },
+ {
+  "date": "1977/08/28",
+  "wrestler": "John Harris",
+  "elo": 995.6789262112675
+ },
+ {
+  "date": "1977/08/28",
+  "wrestler": "Osamu Kido",
+  "elo": 1121.1956753176128
+ },
+ {
+  "date": "1977/08/28",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 960.6631929464592
+ },
+ {
+  "date": "1977/08/28",
+  "wrestler": "Sonny King",
+  "elo": 1073.9315584632727
+ },
+ {
+  "date": "1977/08/28",
+  "wrestler": "Roddy Piper",
+  "elo": 978.5025409672791
+ },
+ {
+  "date": "1977/08/28",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1235.7473631982302
+ },
+ {
+  "date": "1977/08/28",
+  "wrestler": "Riki Choshu",
+  "elo": 878.2139994047914
+ },
+ {
+  "date": "1977/08/28",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1111.9781089446458
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1070.198046998536
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1099.493499653286
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "Osamu Kido",
+  "elo": 1164.0149573921055
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "John Harris",
+  "elo": 907.4706869143018
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "Haruka Eigen",
+  "elo": 1080.9433030434257
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "Riki Choshu",
+  "elo": 943.6510580742157
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 908.8225493651155
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "The Hangman",
+  "elo": 1121.8430450800822
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "Roddy Piper",
+  "elo": 937.6787773056071
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1225.094558146796
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1227.1999935017227
+ },
+ {
+  "date": "1977/08/30",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1129.0728483376608
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1114.1737084777146
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 858.7842119788352
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1124.5126683464262
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "Osamu Kido",
+  "elo": 1170.0642332381867
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "John Harris",
+  "elo": 822.662210918633
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1045.471668942128
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "Haruka Eigen",
+  "elo": 1037.8257330034264
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1172.19041837766
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "Sonny King",
+  "elo": 1044.661089007734
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1241.835228229492
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "The Hangman",
+  "elo": 1098.3194532941236
+ },
+ {
+  "date": "1977/08/31",
+  "wrestler": "Antonio Inoki",
+  "elo": 1338.414380327732
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1124.4142101087705
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1062.2900007637372
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 1100.0484005861153
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Sonny King",
+  "elo": 970.2015245468979
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1007.7033409005077
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "John Harris",
+  "elo": 756.1430451126481
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Riki Choshu",
+  "elo": 1010.1702238802006
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1243.6828945410925
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1012.9401642681428
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1204.7219230516453
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1186.8785880340458
+ },
+ {
+  "date": "1977/09/01",
+  "wrestler": "Stan Hansen",
+  "elo": 1097.14607704637
+ },
+ {
+  "date": "1977/09/02",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1070.9134256435643
+ },
+ {
+  "date": "1977/09/02",
+  "wrestler": "Haruka Eigen",
+  "elo": 1153.5491850513215
+ },
+ {
+  "date": "1977/09/02",
+  "wrestler": "Sonny King",
+  "elo": 1039.606660985064
+ },
+ {
+  "date": "1977/09/02",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1025.014979328432
+ },
+ {
+  "date": "1977/09/02",
+  "wrestler": "Osamu Kido",
+  "elo": 1125.0353979192876
+ },
+ {
+  "date": "1977/09/02",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1227.236340711095
+ },
+ {
+  "date": "1977/09/02",
+  "wrestler": "Stan Hansen",
+  "elo": 1077.1869678129667
+ },
+ {
+  "date": "1977/09/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1348.3939349444338
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1019.6726698207043
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1113.5307565865974
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 930.0158826836087
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "John Harris",
+  "elo": 734.7766049462895
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1135.7186180024669
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "Riki Choshu",
+  "elo": 987.8921251654249
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1238.3753900684828
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "Sonny King",
+  "elo": 1009.61647755048
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1216.8687714686298
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1207.5425508667513
+ },
+ {
+  "date": "1977/09/03",
+  "wrestler": "Stan Hansen",
+  "elo": 1149.467655161649
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1036.1659184475598
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1041.3236406729172
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Haruka Eigen",
+  "elo": 1176.8269821830468
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Sonny King",
+  "elo": 977.0070186567499
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Osamu Kido",
+  "elo": 1168.328076896197
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 962.7044985318212
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Roddy Piper",
+  "elo": 1062.2997388988288
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1212.5252625727735
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 901.0330436955945
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1245.6210998154863
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "John Harris",
+  "elo": 723.0401784893243
+ },
+ {
+  "date": "1977/09/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1219.802878082871
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1059.5503618412106
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "Osamu Kido",
+  "elo": 1185.8980148054748
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "Masashi Ozawa",
+  "elo": 955.121436531365
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "John Harris",
+  "elo": 895.4445867724287
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "Sonny King",
+  "elo": 928.9185596423358
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "Haruka Eigen",
+  "elo": 1200.8712116902539
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "Riki Choshu",
+  "elo": 1039.683625072587
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 929.9000200973514
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1253.8222194241039
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "The Hangman",
+  "elo": 1065.1230371588726
+ },
+ {
+  "date": "1977/09/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1236.4010861504967
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "Masashi Ozawa",
+  "elo": 884.3049075732556
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1094.9586263202652
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 853.1448062837308
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "John Harris",
+  "elo": 866.0408254234928
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "Haruka Eigen",
+  "elo": 1208.2221520274877
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 983.0731684878743
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "Sonny King",
+  "elo": 859.7613841983674
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "Riki Choshu",
+  "elo": 1074.262212794571
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1118.8250086115377
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "Roddy Piper",
+  "elo": 1129.3727450927659
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "The Hangman",
+  "elo": 1048.74874413826
+ },
+ {
+  "date": "1977/09/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1356.5810814547401
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1100.827836988681
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "Masashi Ozawa",
+  "elo": 978.6572522053588
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1127.0714131979125
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "John Harris",
+  "elo": 798.5067130347968
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1050.6072808765703
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "Haruka Eigen",
+  "elo": 1186.4846290584767
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1275.559742393115
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "Sonny King",
+  "elo": 836.5573897636434
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1218.3262611814546
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "Roddy Piper",
+  "elo": 1071.5075558134438
+ },
+ {
+  "date": "1977/09/08",
+  "wrestler": "Riki Choshu",
+  "elo": 1132.127402073893
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1056.8962129422453
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "Masashi Ozawa",
+  "elo": 932.2322382964829
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "Haruka Eigen",
+  "elo": 1209.6971360129146
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "Sonny King",
+  "elo": 917.7175420293752
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "John Harris",
+  "elo": 772.289054961588
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "Osamu Kido",
+  "elo": 1140.180242234517
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "Riki Choshu",
+  "elo": 1101.6711117964855
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1290.7878875318186
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1220.5294674439056
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "The Hangman",
+  "elo": 1023.4021865877363
+ },
+ {
+  "date": "1977/09/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1249.0743649257586
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "Masashi Ozawa",
+  "elo": 987.4869653604237
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "Makoto Arakawa",
+  "elo": 967.642526109621
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "Haruka Eigen",
+  "elo": 1211.8981162038517
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "Sonny King",
+  "elo": 866.2144338574647
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "Riki Choshu",
+  "elo": 1127.422665882441
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "John Harris",
+  "elo": 738.7521872623877
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1067.3757147261704
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "Osamu Kido",
+  "elo": 1091.5164901315302
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "Stan Hansen",
+  "elo": 1198.1314072646358
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "The Hangman",
+  "elo": 1010.5929501064076
+ },
+ {
+  "date": "1977/09/11",
+  "wrestler": "Antonio Inoki",
+  "elo": 1362.9856996954045
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "Makoto Arakawa",
+  "elo": 995.0663886623887
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "Shoji Kai",
+  "elo": 1050.7471498615398
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1113.1248116193608
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "John Harris",
+  "elo": 700.189522636874
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1026.0496299859374
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1076.4095237304673
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 795.5951115126559
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "The Hangman",
+  "elo": 1039.367797491945
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "Sonny King",
+  "elo": 846.3346098658387
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1254.044320923665
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1200.5171646090353
+ },
+ {
+  "date": "1977/09/12",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1310.8001903666889
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "Makoto Arakawa",
+  "elo": 903.9605179215323
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1071.6025653563656
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "Osamu Kido",
+  "elo": 1119.5600054050524
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "John Harris",
+  "elo": 684.4380498606147
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "Riki Choshu",
+  "elo": 1135.2984022705707
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "Haruka Eigen",
+  "elo": 1193.8284993361874
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1328.8698072343532
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "Sonny King",
+  "elo": 823.2976022162853
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1206.2764165214237
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "Roddy Piper",
+  "elo": 1055.769956964207
+ },
+ {
+  "date": "1977/09/13",
+  "wrestler": "Antonio Inoki",
+  "elo": 1370.8544991200229
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "Makoto Arakawa",
+  "elo": 926.529055865211
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1038.500867985552
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "Haruka Eigen",
+  "elo": 1226.930196707001
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "John Harris",
+  "elo": 873.6115639303162
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "Sonny King",
+  "elo": 785.5131822276223
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1095.3017337247989
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "Riki Choshu",
+  "elo": 1140.6205573536065
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1180.6904433367429
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "Stan Hansen",
+  "elo": 1249.3033536339974
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "The Hangman",
+  "elo": 1066.8506130554304
+ },
+ {
+  "date": "1977/09/14",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1240.3029131419225
+ },
+ {
+  "date": "1977/09/16",
+  "wrestler": "Makoto Arakawa",
+  "elo": 857.6858316861272
+ },
+ {
+  "date": "1977/09/16",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1072.922480075094
+ },
+ {
+  "date": "1977/09/16",
+  "wrestler": "John Harris",
+  "elo": 1015.4068844250634
+ },
+ {
+  "date": "1977/09/16",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1101.5424486511365
+ },
+ {
+  "date": "1977/09/16",
+  "wrestler": "Sonny King",
+  "elo": 762.5844679282177
+ },
+ {
+  "date": "1977/09/16",
+  "wrestler": "Riki Choshu",
+  "elo": 1152.0849145033087
+ },
+ {
+  "date": "1977/09/16",
+  "wrestler": "Stan Hansen",
+  "elo": 1248.6558647146617
+ },
+ {
+  "date": "1977/09/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1240.9504020612583
+ },
+ {
+  "date": "1977/09/16",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1306.876228924015
+ },
+ {
+  "date": "1977/09/16",
+  "wrestler": "Antonio Inoki",
+  "elo": 1392.848077430361
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1016.1999892648062
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1106.8836129944875
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "Haruka Eigen",
+  "elo": 1228.341058654904
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "John Harris",
+  "elo": 979.9623005260831
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "Osamu Kido",
+  "elo": 1155.0045893040326
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1078.0731032173123
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1318.6109016409273
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "Sonny King",
+  "elo": 750.6088136294843
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1243.9443156359416
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "The Hangman",
+  "elo": 1082.6713256454066
+ },
+ {
+  "date": "1977/09/17",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1164.8697307467667
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "Shoji Kai",
+  "elo": 1054.2119771255605
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "Makoto Arakawa",
+  "elo": 998.7304827459614
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "Osamu Kido",
+  "elo": 1185.4272098257252
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "John Harris",
+  "elo": 914.9504667326883
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1139.389529891185
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "Haruka Eigen",
+  "elo": 1181.3452560058206
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "Sonny King",
+  "elo": 938.5920242258176
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "Riki Choshu",
+  "elo": 1156.2302818177277
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1208.107173442349
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "The Hangman",
+  "elo": 1154.345610032592
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1176.699092135471
+ },
+ {
+  "date": "1977/09/20",
+  "wrestler": "Stan Hansen",
+  "elo": 1242.7411840203094
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1007.6223449170627
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1006.4313382963155
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1095.3982650035864
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "Haruka Eigen",
+  "elo": 1225.3365208934192
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1084.011445563806
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "John Harris",
+  "elo": 880.1346490047129
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "Osamu Kido",
+  "elo": 1202.8351186897128
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "Sonny King",
+  "elo": 898.0891984848522
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1196.9505050059536
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "The Hangman",
+  "elo": 1134.130931817771
+ },
+ {
+  "date": "1977/09/21",
+  "wrestler": "Antonio Inoki",
+  "elo": 1402.9554165377715
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 963.2645011535576
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "Shoji Kai",
+  "elo": 1097.3788142683184
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "Makoto Arakawa",
+  "elo": 934.028849614073
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1041.139082636224
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "Haruka Eigen",
+  "elo": 1226.5683177777664
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "Sonny King",
+  "elo": 868.5870230304795
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "Osamu Kido",
+  "elo": 1210.2106625533058
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "John Harris",
+  "elo": 846.2391314029447
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "Riki Choshu",
+  "elo": 1173.1780406186117
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "Roddy Piper",
+  "elo": 1043.834539067592
+ },
+ {
+  "date": "1977/09/22",
+  "wrestler": "Antonio Inoki",
+  "elo": 1408.923125486079
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Shoji Kai",
+  "elo": 1099.8229012353695
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 867.1462710722888
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Masashi Ozawa",
+  "elo": 976.1951398396554
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1063.91673520721
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Riki Choshu",
+  "elo": 1215.582866868852
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1089.259349683591
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Haruka Eigen",
+  "elo": 1182.2170709312695
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Sonny King",
+  "elo": 1045.9920104164669
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "John Harris",
+  "elo": 822.7916841601769
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1208.6742286273375
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1215.8008597661928
+ },
+ {
+  "date": "1977/09/24",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1310.9172153170834
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 883.9406084515443
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "Makoto Arakawa",
+  "elo": 996.201383509585
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1103.3254892800355
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "Haruka Eigen",
+  "elo": 1136.2369774865078
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "Osamu Kido",
+  "elo": 1233.2007092756867
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "John Harris",
+  "elo": 985.3029727263411
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "Sonny King",
+  "elo": 1002.186690581927
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1133.0646695181308
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "Riki Choshu",
+  "elo": 1216.7760563621016
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "Roddy Piper",
+  "elo": 1016.7417060156156
+ },
+ {
+  "date": "1977/09/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1229.347276292181
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 815.1724613146447
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1064.9695306464846
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "Osamu Kido",
+  "elo": 1243.3839732753424
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "Riki Choshu",
+  "elo": 1228.400907472263
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1039.1681026960396
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "Sonny King",
+  "elo": 1066.344077165923
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "Haruka Eigen",
+  "elo": 1139.8564968876633
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "John Harris",
+  "elo": 945.892877688593
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1239.199800051618
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1190.8259387467594
+ },
+ {
+  "date": "1977/09/27",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1328.7655051976615
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 834.8369976121406
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "Shoji Kai",
+  "elo": 1044.8238557597122
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1119.968576122142
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "Masashi Ozawa",
+  "elo": 981.584388017062
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "Sonny King",
+  "elo": 1100.9249021895585
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1136.6034037769664
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "Haruka Eigen",
+  "elo": 1089.0325964209337
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "The Hangman",
+  "elo": 1184.9548322845005
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "Riki Choshu",
+  "elo": 1204.4321877546809
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "Stan Hansen",
+  "elo": 1266.7099037378916
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "John Harris",
+  "elo": 906.6444272332126
+ },
+ {
+  "date": "1977/09/28",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1210.4501639744497
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1051.043830957667
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1119.4338783460116
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 749.579739428504
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "John Harris",
+  "elo": 1057.446518045342
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "Haruka Eigen",
+  "elo": 1093.3737642910312
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "Sonny King",
+  "elo": 1056.041478427426
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1181.4868275390988
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "Osamu Kido",
+  "elo": 1204.0530815946304
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "Roddy Piper",
+  "elo": 1095.40348937704
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "Riki Choshu",
+  "elo": 1188.015380775782
+ },
+ {
+  "date": "1977/09/29",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1345.1823121765603
+ },
+ {
+  "date": "1977/09/30",
+  "wrestler": "Shoji Kai",
+  "elo": 997.2936718303846
+ },
+ {
+  "date": "1977/09/30",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 915.7088942815194
+ },
+ {
+  "date": "1977/09/30",
+  "wrestler": "Makoto Arakawa",
+  "elo": 989.8186620903167
+ },
+ {
+  "date": "1977/09/30",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1060.410885048082
+ },
+ {
+  "date": "1977/09/30",
+  "wrestler": "Sonny King",
+  "elo": 1115.0644717253556
+ },
+ {
+  "date": "1977/09/30",
+  "wrestler": "John Harris",
+  "elo": 1024.5756965069202
+ },
+ {
+  "date": "1977/09/30",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1214.3576490775206
+ },
+ {
+  "date": "1977/09/30",
+  "wrestler": "Riki Choshu",
+  "elo": 1190.3990242581024
+ },
+ {
+  "date": "1977/09/30",
+  "wrestler": "Stan Hansen",
+  "elo": 1264.7345191830193
+ },
+ {
+  "date": "1977/09/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1241.1751846064903
+ },
+ {
+  "date": "1977/10/01",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1001.1526597838393
+ },
+ {
+  "date": "1977/10/01",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1058.6734842449468
+ },
+ {
+  "date": "1977/10/01",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1094.0987519773003
+ },
+ {
+  "date": "1977/10/01",
+  "wrestler": "Sonny King",
+  "elo": 1061.946977212162
+ },
+ {
+  "date": "1977/10/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 1146.4912588042248
+ },
+ {
+  "date": "1977/10/01",
+  "wrestler": "John Harris",
+  "elo": 1084.4554330099556
+ },
+ {
+  "date": "1977/10/01",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1215.3579670664374
+ },
+ {
+  "date": "1977/10/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1248.4432766532568
+ },
+ {
+  "date": "1977/10/01",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1337.9142201297939
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "Shoji Kai",
+  "elo": 1007.5240937742708
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 963.3339065620877
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "John Harris",
+  "elo": 1022.6917608175063
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1062.9163319762888
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1039.484902669923
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "Sonny King",
+  "elo": 1116.5608265195392
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1194.231459498746
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1354.1329246054975
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "Stan Hansen",
+  "elo": 1263.5631284262217
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1249.6146674100542
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "The Hangman",
+  "elo": 1163.3571102198507
+ },
+ {
+  "date": "1977/10/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1419.721986518404
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "Shoji Kai",
+  "elo": 961.364466791952
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "Masashi Ozawa",
+  "elo": 992.851853324073
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1109.5493813221387
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1174.94866051965
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "Haruka Eigen",
+  "elo": 1204.7001009541852
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "John Harris",
+  "elo": 997.8874386750418
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1227.7601281376697
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "Sonny King",
+  "elo": 1084.8245799467402
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1265.4827906964535
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1154.0787243210152
+ },
+ {
+  "date": "1977/10/03",
+  "wrestler": "Stan Hansen",
+  "elo": 1283.6394960150872
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 982.1991826589073
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "Masashi Ozawa",
+  "elo": 829.7414212947181
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1055.997190776221
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "Sonny King",
+  "elo": 1138.376770492658
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "Haruka Eigen",
+  "elo": 1176.7391956751862
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "The Hangman",
+  "elo": 1219.2789207778487
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "John Harris",
+  "elo": 962.5920895057137
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1274.3066279887855
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1180.0591115431373
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1341.1427309944365
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "Stan Hansen",
+  "elo": 1267.9596200601504
+ },
+ {
+  "date": "1977/10/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1435.4018624733408
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "Shoji Kai",
+  "elo": 978.6322644060256
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1092.3267283795087
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "Haruka Eigen",
+  "elo": 1134.0293692239745
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1249.1150413632756
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "Masashi Ozawa",
+  "elo": 766.2182419815858
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "John Harris",
+  "elo": 1026.1152688188458
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "Osamu Kido",
+  "elo": 1186.4655675186161
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "Sonny King",
+  "elo": 1094.346726866701
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1224.0891551690943
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "Blackjack Mulligan",
+  "elo": 1322.7635732574295
+ },
+ {
+  "date": "1977/10/05",
+  "wrestler": "Antonio Inoki",
+  "elo": 1453.7810202103478
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1096.1966828985367
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 955.1618353588706
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1199.1136886770616
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "Masashi Ozawa",
+  "elo": 744.7327324917999
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "Haruka Eigen",
+  "elo": 1144.7721239688674
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "Sonny King",
+  "elo": 1148.9500415856885
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1252.576712905503
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "John Harris",
+  "elo": 1006.7852040099164
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1283.9716603932502
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "Riki Choshu",
+  "elo": 1151.37909737537
+ },
+ {
+  "date": "1977/10/06",
+  "wrestler": "Stan Hansen",
+  "elo": 1287.4695835015166
+ },
+ {
+  "date": "1977/10/25",
+  "wrestler": "Osamu Kido",
+  "elo": 1209.538766321356
+ },
+ {
+  "date": "1977/10/25",
+  "wrestler": "Haruka Eigen",
+  "elo": 1095.7228292772622
+ },
+ {
+  "date": "1977/10/25",
+  "wrestler": "Riki Choshu",
+  "elo": 1200.4283920669752
+ },
+ {
+  "date": "1977/10/25",
+  "wrestler": "Bad News Allen",
+  "elo": 788.3825321523107
+ },
+ {
+  "date": "1977/10/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1286.8760273551725
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Shoji Kai",
+  "elo": 992.4273452697413
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1026.9460719017945
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1093.6630573523548
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Haruka Eigen",
+  "elo": 1142.2885470394835
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Masashi Ozawa",
+  "elo": 731.2006402657653
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Riki Choshu",
+  "elo": 1203.8114151234838
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Marty Jones",
+  "elo": 976.9626264535443
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Osamu Kido",
+  "elo": 1221.057453094584
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "The Golden Falcon",
+  "elo": 983.9078981082297
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1294.9220783010576
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 978.4140566027463
+ },
+ {
+  "date": "1977/10/28",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1234.8821268677211
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Shoji Kai",
+  "elo": 920.7677739963824
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1129.4928429890342
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Masashi Ozawa",
+  "elo": 883.905626944504
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Makoto Arakawa",
+  "elo": 992.9611150103437
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Haruka Eigen",
+  "elo": 1176.2735039309343
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1263.2130640595692
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Marty Jones",
+  "elo": 934.3260887464949
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Riki Choshu",
+  "elo": 1214.4705495502462
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Steve Wright",
+  "elo": 979.4471141843247
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1245.1585697755588
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1257.3184469082485
+ },
+ {
+  "date": "1977/10/29",
+  "wrestler": "Andre The Giant",
+  "elo": 1177.3552189501738
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1088.033918772091
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Shoji Kai",
+  "elo": 841.2527115483888
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1072.4761774583374
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1017.1533054406253
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Haruka Eigen",
+  "elo": 1132.6829741053198
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Osamu Kido",
+  "elo": 1242.8527180073913
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Marty Jones",
+  "elo": 908.1506639532249
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1269.7569202578868
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "The Golden Falcon",
+  "elo": 947.5383811322284
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1254.2509490195591
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1240.679143764447
+ },
+ {
+  "date": "1977/10/30",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1044.9712691779523
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Shoji Kai",
+  "elo": 869.9205127060917
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1006.4324522276645
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1089.7624173437835
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 1066.6437596318126
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1083.1925199141324
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Osamu Kido",
+  "elo": 1219.784770724061
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1292.8248675412171
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Steve Wright",
+  "elo": 1067.3921195866997
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1017.5970100130451
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Riki Choshu",
+  "elo": 1228.1576791327
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Marty Jones",
+  "elo": 884.1481976190769
+ },
+ {
+  "date": "1977/11/01",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1260.2515656030962
+ },
+ {
+  "date": "1977/11/04",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1076.115897402313
+ },
+ {
+  "date": "1977/11/04",
+  "wrestler": "Haruka Eigen",
+  "elo": 1088.9055611279982
+ },
+ {
+  "date": "1977/11/04",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1060.16469617384
+ },
+ {
+  "date": "1977/11/04",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1304.3387794113635
+ },
+ {
+  "date": "1977/11/04",
+  "wrestler": "Osamu Kido",
+  "elo": 1178.4157367259659
+ },
+ {
+  "date": "1977/11/04",
+  "wrestler": "The Golden Falcon",
+  "elo": 1113.0145171246093
+ },
+ {
+  "date": "1977/11/04",
+  "wrestler": "Marty Jones",
+  "elo": 863.5610945537236
+ },
+ {
+  "date": "1977/11/04",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1265.3983413694345
+ },
+ {
+  "date": "1977/11/04",
+  "wrestler": "Steve Wright",
+  "elo": 1040.4491955988876
+ },
+ {
+  "date": "1977/11/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1254.150605758353
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1011.629519208376
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Shoji Kai",
+  "elo": 940.8585321867125
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1104.3766315808962
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1027.9556470306516
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Haruka Eigen",
+  "elo": 1137.0658114996597
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Riki Choshu",
+  "elo": 1232.1791685169026
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Marty Jones",
+  "elo": 848.904504625137
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1308.0029268935102
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "The Golden Falcon",
+  "elo": 1082.2775367530369
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1269.5190959441393
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1234.1953414673433
+ },
+ {
+  "date": "1977/11/05",
+  "wrestler": "Andre The Giant",
+  "elo": 1239.7612187543562
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Shoji Kai",
+  "elo": 854.8666562771832
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 963.977310073512
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1075.6078561655156
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1122.4929422151101
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Haruka Eigen",
+  "elo": 1192.9886060105155
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1018.8379745851734
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 966.6724255041015
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Marty Jones",
+  "elo": 829.2738151597237
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1239.1030138336967
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1010.0870929090702
+ },
+ {
+  "date": "1977/11/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1457.5359787623354
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 899.044485664405
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1038.1296198817804
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Masashi Ozawa",
+  "elo": 991.9927924514839
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Haruka Eigen",
+  "elo": 1219.8337881442048
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 908.7379189443143
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Osamu Kido",
+  "elo": 1151.4601954950037
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Marty Jones",
+  "elo": 811.3665510967188
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Riki Choshu",
+  "elo": 1236.6559845326537
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "The Golden Falcon",
+  "elo": 1053.4291723550905
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1253.5271960326697
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1242.383065262033
+ },
+ {
+  "date": "1977/11/07",
+  "wrestler": "Andre The Giant",
+  "elo": 1266.8972494364625
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 924.3687348156286
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Makoto Arakawa",
+  "elo": 987.4579222716613
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Masashi Ozawa",
+  "elo": 844.5665594041232
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Osamu Kido",
+  "elo": 1113.4808827453928
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Riki Choshu",
+  "elo": 1255.6456409074592
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Haruka Eigen",
+  "elo": 1174.1818080768153
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Marty Jones",
+  "elo": 993.9744713662769
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Steve Wright",
+  "elo": 1017.7710612732913
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1264.866263195468
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Antonio Inoki",
+  "elo": 1445.0473029414761
+ },
+ {
+  "date": "1977/11/09",
+  "wrestler": "Andre The Giant",
+  "elo": 1279.3859252573218
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1067.3641355383168
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Masashi Ozawa",
+  "elo": 783.5219819405112
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1048.5024997352732
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 823.469761883784
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Haruka Eigen",
+  "elo": 1142.541171484285
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1323.8232451897754
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Marty Jones",
+  "elo": 927.0759158789773
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Osamu Kido",
+  "elo": 1146.9301604890427
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "The Golden Falcon",
+  "elo": 1028.2241231960923
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1254.9855898415321
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1249.239056467748
+ },
+ {
+  "date": "1977/11/10",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1041.3415063645105
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Shoji Kai",
+  "elo": 791.405658354562
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Makoto Arakawa",
+  "elo": 960.5758714443278
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Masashi Ozawa",
+  "elo": 741.3212348534344
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Riki Choshu",
+  "elo": 1267.136693837136
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 795.9818905081623
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Haruka Eigen",
+  "elo": 1156.2851071720959
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1281.1516351305145
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Steve Wright",
+  "elo": 1103.1142813918134
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Marty Jones",
+  "elo": 900.0073044814936
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1256.0062093171189
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1032.4253653068906
+ },
+ {
+  "date": "1977/11/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1449.505373470286
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 992.6809926320084
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Shoji Kai",
+  "elo": 736.5817889601352
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1015.3997408387546
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Masashi Ozawa",
+  "elo": 708.2546497488081
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Haruka Eigen",
+  "elo": 1104.9391473783846
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Osamu Kido",
+  "elo": 1198.276120282754
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Marty Jones",
+  "elo": 878.4464193019039
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Riki Choshu",
+  "elo": 1272.5269151320333
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "The Golden Falcon",
+  "elo": 1006.9958314186551
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1266.6203552058375
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1240.853234448741
+ },
+ {
+  "date": "1977/11/16",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1060.690076092473
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Shoji Kai",
+  "elo": 808.7943495642305
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1018.8075079934836
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 825.2478323899941
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Masashi Ozawa",
+  "elo": 875.6878099908224
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 957.3001324960183
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Osamu Kido",
+  "elo": 1159.9816918209183
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1300.2988493614323
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Marty Jones",
+  "elo": 835.7410812397467
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Haruka Eigen",
+  "elo": 1126.2918164094633
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1037.886413841175
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Riki Choshu",
+  "elo": 1283.9287462576822
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Steve Wright",
+  "elo": 1075.0488157474504
+ },
+ {
+  "date": "1977/11/17",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1280.653088028019
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Makoto Arakawa",
+  "elo": 943.5160242438386
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 975.830799889284
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Masashi Ozawa",
+  "elo": 800.4086946127304
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Marty Jones",
+  "elo": 987.683584247794
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "The Golden Falcon",
+  "elo": 990.1158054064508
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Riki Choshu",
+  "elo": 1292.3687592637843
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1014.1714567443387
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1252.7107129971591
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Haruka Eigen",
+  "elo": 1115.0560612456077
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1286.2859881634593
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "The Great Antonio",
+  "elo": 1033.9037720111694
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Willem Ruska",
+  "elo": 983.4183139685324
+ },
+ {
+  "date": "1977/11/18",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1288.9439310437529
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 991.8899800072966
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Makoto Arakawa",
+  "elo": 867.9112010166216
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 950.7749522323409
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Masashi Ozawa",
+  "elo": 797.0630063050446
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Shoji Kai",
+  "elo": 805.3704061689431
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "The Great Antonio",
+  "elo": 1047.1985839778201
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Marty Jones",
+  "elo": 957.2808385329881
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1293.8866745921607
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Steve Wright",
+  "elo": 1052.796006434701
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Riki Choshu",
+  "elo": 1303.495163920159
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1246.9099401448836
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Pat Patterson",
+  "elo": 1084.0679817977382
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1006.6274787673393
+ },
+ {
+  "date": "1977/11/19",
+  "wrestler": "Antonio Inoki",
+  "elo": 1453.2773624587858
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Shoji Kai",
+  "elo": 840.4012792294741
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Makoto Arakawa",
+  "elo": 747.7974735701215
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Masashi Ozawa",
+  "elo": 917.1767337515447
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1280.4642349230144
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 944.9918925691032
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "The Great Antonio",
+  "elo": 1072.5850035263934
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Steve Wright",
+  "elo": 1017.7498370859369
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Osamu Kido",
+  "elo": 1195.0278611696824
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Haruka Eigen",
+  "elo": 1046.9691712471067
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Willem Ruska",
+  "elo": 1119.5920939655343
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Marty Jones",
+  "elo": 925.5223141825411
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1254.8495712324955
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "The Golden Falcon",
+  "elo": 953.975973580321
+ },
+ {
+  "date": "1977/11/21",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1261.7456709536916
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 903.0889121776281
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Makoto Arakawa",
+  "elo": 727.7700256432913
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Masashi Ozawa",
+  "elo": 827.7289762708527
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "The Golden Falcon",
+  "elo": 1043.4237310610129
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Marty Jones",
+  "elo": 859.1201452863486
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Haruka Eigen",
+  "elo": 1080.170255695203
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Riki Choshu",
+  "elo": 1266.3737202724978
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Willem Ruska",
+  "elo": 1193.8349812608567
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Osamu Kido",
+  "elo": 1178.2963739487461
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1243.5057298664597
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "The Great Antonio",
+  "elo": 1107.5564318345616
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 987.3001725428232
+ },
+ {
+  "date": "1977/11/22",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1264.5132243447536
+ },
+ {
+  "date": "1977/11/23",
+  "wrestler": "Masashi Ozawa",
+  "elo": 799.1933346771377
+ },
+ {
+  "date": "1977/11/23",
+  "wrestler": "Haruka Eigen",
+  "elo": 1072.4924299206145
+ },
+ {
+  "date": "1977/11/23",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1268.4418278400426
+ },
+ {
+  "date": "1977/11/23",
+  "wrestler": "The Great Antonio",
+  "elo": 1133.2611179741632
+ },
+ {
+  "date": "1977/11/23",
+  "wrestler": "Marty Jones",
+  "elo": 841.6168032971823
+ },
+ {
+  "date": "1977/11/23",
+  "wrestler": "Riki Choshu",
+  "elo": 1270.7495557697894
+ },
+ {
+  "date": "1977/11/23",
+  "wrestler": "The Golden Falcon",
+  "elo": 1021.5440780429773
+ },
+ {
+  "date": "1977/11/23",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1275.4530508537714
+ },
+ {
+  "date": "1977/11/23",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1207.7760743926592
+ },
+ {
+  "date": "1977/11/23",
+  "wrestler": "Pat Patterson",
+  "elo": 1155.5272927453393
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Shoji Kai",
+  "elo": 775.9674461993142
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1021.6699197889022
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Osamu Kido",
+  "elo": 1113.5238201498305
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Haruka Eigen",
+  "elo": 1137.2649837195302
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 941.8319647137374
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Makoto Arakawa",
+  "elo": 726.684070185018
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Masashi Ozawa",
+  "elo": 797.6329933690147
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Riki Choshu",
+  "elo": 1262.2379993271466
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "The Great Antonio",
+  "elo": 1147.5788990385684
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Marty Jones",
+  "elo": 989.2132014002647
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1227.995122517974
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Steve Wright",
+  "elo": 1098.6432477300739
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 943.4200014674788
+ },
+ {
+  "date": "1977/11/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1218.7461171614952
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "Makoto Arakawa",
+  "elo": 800.742804344276
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "Masashi Ozawa",
+  "elo": 771.8245882694251
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "Haruka Eigen",
+  "elo": 1149.6650448762628
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1186.130996708649
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1110.876504704779
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "Marty Jones",
+  "elo": 956.929978505511
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1283.5238565774598
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 939.4892992078522
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "The Great Antonio",
+  "elo": 1153.945268748854
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "Pat Patterson",
+  "elo": 1190.2625652360964
+ },
+ {
+  "date": "1977/11/25",
+  "wrestler": "Antonio Inoki",
+  "elo": 1435.9097262134073
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Makoto Arakawa",
+  "elo": 692.4386403247736
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Masashi Ozawa",
+  "elo": 880.1287522889276
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1227.69304146429
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1016.364351172703
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Haruka Eigen",
+  "elo": 1141.561570960158
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 935.9525807893995
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "The Great Antonio",
+  "elo": 1170.8910296996107
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Marty Jones",
+  "elo": 927.5090893247891
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Riki Choshu",
+  "elo": 1269.593221622327
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Osamu Kido",
+  "elo": 1061.3836421129104
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Steve Wright",
+  "elo": 1150.783425766994
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1083.861038863544
+ },
+ {
+  "date": "1977/11/26",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1297.0315894980774
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1022.1233726180559
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1013.5446360923638
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Riki Choshu",
+  "elo": 1282.4541487619163
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 932.5279820714347
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Osamu Kido",
+  "elo": 1055.723497644433
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "The Great Antonio",
+  "elo": 1182.5728256362886
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Haruka Eigen",
+  "elo": 1064.1414914738814
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Marty Jones",
+  "elo": 1082.3492482973425
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Steve Wright",
+  "elo": 1120.6693613900495
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1312.0886216865497
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1072.2167514753685
+ },
+ {
+  "date": "1977/11/28",
+  "wrestler": "Antonio Inoki",
+  "elo": 1441.7318699074951
+ },
+ {
+  "date": "1977/11/29",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1009.7275453841954
+ },
+ {
+  "date": "1977/11/29",
+  "wrestler": "Makoto Arakawa",
+  "elo": 841.3320378084397
+ },
+ {
+  "date": "1977/11/29",
+  "wrestler": "Marty Jones",
+  "elo": 1052.1255082920177
+ },
+ {
+  "date": "1977/11/29",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1242.8049114669525
+ },
+ {
+  "date": "1977/11/29",
+  "wrestler": "Osamu Kido",
+  "elo": 1008.0952863020661
+ },
+ {
+  "date": "1977/11/29",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1119.8449628177354
+ },
+ {
+  "date": "1977/11/29",
+  "wrestler": "The Golden Falcon",
+  "elo": 1005.7350808187385
+ },
+ {
+  "date": "1977/11/29",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1319.993120298669
+ },
+ {
+  "date": "1977/11/29",
+  "wrestler": "Antonio Inoki",
+  "elo": 1400.9141602587733
+ },
+ {
+  "date": "1977/11/29",
+  "wrestler": "The Great Antonio",
+  "elo": 1264.208244933732
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "Shoji Kai",
+  "elo": 813.1268507212562
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "Makoto Arakawa",
+  "elo": 973.9479173159446
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "Marty Jones",
+  "elo": 1031.141311213721
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "Riki Choshu",
+  "elo": 1292.9462473010647
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "Haruka Eigen",
+  "elo": 1031.9847027592853
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "Willem Ruska",
+  "elo": 1225.9917699754528
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1006.5989169538182
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1235.05900774993
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "The Great Antonio",
+  "elo": 1275.254555500809
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1211.8157951292
+ },
+ {
+  "date": "1977/11/30",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1133.7056068823256
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Makoto Arakawa",
+  "elo": 983.3180619009374
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1001.9138446613217
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1070.140752897795
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Marty Jones",
+  "elo": 977.8295773078225
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Osamu Kido",
+  "elo": 1061.4070202079647
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 996.2191082398869
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1169.471201401724
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Bad News Allen",
+  "elo": 899.2618485909159
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "The Great Antonio",
+  "elo": 1270.7398316630415
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1216.3305189669675
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Riki Choshu",
+  "elo": 1263.1872521613038
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Willem Ruska",
+  "elo": 1255.7507651152137
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Pat Patterson",
+  "elo": 1167.3385741573434
+ },
+ {
+  "date": "1977/12/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1412.3761557981497
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Shoji Kai",
+  "elo": 762.6805195440486
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1027.1370102499257
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Makoto Arakawa",
+  "elo": 859.5859686545366
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Bad News Allen",
+  "elo": 1022.9939418373167
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Haruka Eigen",
+  "elo": 993.3731501462405
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 930.4827870269571
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "The Great Antonio",
+  "elo": 1276.2757186938732
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Marty Jones",
+  "elo": 940.7661900415801
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1244.3248545664906
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Osamu Kido",
+  "elo": 1036.7823739224373
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Willem Ruska",
+  "elo": 1268.0630882579774
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "The Golden Falcon",
+  "elo": 982.8053775047345
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1227.7953706239696
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1309.6649619935397
+ },
+ {
+  "date": "1977/12/02",
+  "wrestler": "Pat Patterson",
+  "elo": 1187.994890767602
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Shoji Kai",
+  "elo": 690.1053196996231
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Bad News Allen",
+  "elo": 1070.1271756419123
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 928.479465216124
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Makoto Arakawa",
+  "elo": 858.2126541424348
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1033.4803366729006
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "The Great Antonio",
+  "elo": 1282.9543922663447
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Marty Jones",
+  "elo": 855.7930278324161
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Haruka Eigen",
+  "elo": 1078.3463123554045
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Steve Wright",
+  "elo": 1090.1014628562507
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Riki Choshu",
+  "elo": 1278.4712014282034
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Willem Ruska",
+  "elo": 1246.0423587429036
+ },
+ {
+  "date": "1977/12/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1331.6856915086134
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1032.1393673263815
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Makoto Arakawa",
+  "elo": 885.6160424030297
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Haruka Eigen",
+  "elo": 1074.4222355086856
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 926.6005597916242
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "The Great Antonio",
+  "elo": 1290.0111547204986
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Marty Jones",
+  "elo": 802.8985168860518
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Osamu Kido",
+  "elo": 1059.9275921460828
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Riki Choshu",
+  "elo": 1251.1445113550628
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Willem Ruska",
+  "elo": 1273.3690488160441
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "The Golden Falcon",
+  "elo": 959.1388771580794
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1337.6023165952772
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1127.7867582683407
+ },
+ {
+  "date": "1977/12/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1248.6375921906613
+ },
+ {
+  "date": "1977/12/05",
+  "wrestler": "Makoto Arakawa",
+  "elo": 904.1841043440388
+ },
+ {
+  "date": "1977/12/05",
+  "wrestler": "Marty Jones",
+  "elo": 737.5566954237471
+ },
+ {
+  "date": "1977/12/05",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1029.0600452171063
+ },
+ {
+  "date": "1977/12/05",
+  "wrestler": "The Great Antonio",
+  "elo": 1295.9160145595363
+ },
+ {
+  "date": "1977/12/05",
+  "wrestler": "Steve Wright",
+  "elo": 1096.710389913053
+ },
+ {
+  "date": "1977/12/05",
+  "wrestler": "Haruka Eigen",
+  "elo": 1050.2860918590575
+ },
+ {
+  "date": "1977/12/05",
+  "wrestler": "Willem Ruska",
+  "elo": 1285.4371206408582
+ },
+ {
+  "date": "1977/12/05",
+  "wrestler": "Pat Patterson",
+  "elo": 1166.4373958668202
+ },
+ {
+  "date": "1977/12/05",
+  "wrestler": "Antonio Inoki",
+  "elo": 1423.1549032485407
+ },
+ {
+  "date": "1977/12/06",
+  "wrestler": "Makoto Arakawa",
+  "elo": 749.3386517959102
+ },
+ {
+  "date": "1977/12/06",
+  "wrestler": "Shoji Kai",
+  "elo": 844.9507722477517
+ },
+ {
+  "date": "1977/12/06",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 1026.1084424322137
+ },
+ {
+  "date": "1977/12/06",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1237.2891015824039
+ },
+ {
+  "date": "1977/12/06",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 924.9131057303168
+ },
+ {
+  "date": "1977/12/06",
+  "wrestler": "The Great Antonio",
+  "elo": 1307.590824389823
+ },
+ {
+  "date": "1977/12/06",
+  "wrestler": "Haruka Eigen",
+  "elo": 987.4618169586739
+ },
+ {
+  "date": "1977/12/06",
+  "wrestler": "The Golden Falcon",
+  "elo": 1084.7874269588465
+ },
+ {
+  "date": "1977/12/06",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1104.7776228208947
+ },
+ {
+  "date": "1977/12/06",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1349.106884319
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Shoji Kai",
+  "elo": 878.0224411356243
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 943.0016476024427
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Makoto Arakawa",
+  "elo": 915.5522414554521
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Bad News Allen",
+  "elo": 1087.2616905995324
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Steve Wright",
+  "elo": 1113.1561326200883
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Kurt von Stroheim",
+  "elo": 1048.3587992523146
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Osamu Kido",
+  "elo": 1116.346415714663
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Haruka Eigen",
+  "elo": 985.1831633765529
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1230.6717379392683
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 923.3298032983371
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "The Great Antonio",
+  "elo": 1318.0701440470593
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Willem Ruska",
+  "elo": 1264.9679224862307
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1369.5760824736276
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "The Golden Falcon",
+  "elo": 1056.7619328138067
+ },
+ {
+  "date": "1977/12/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1262.6503392631812
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 960.0418723035013
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "Makoto Arakawa",
+  "elo": 976.494308755597
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "Haruka Eigen",
+  "elo": 1032.4542447984022
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1132.2299733505115
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1222.7299591213439
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "Marty Jones",
+  "elo": 844.5968991733051
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "The Golden Falcon",
+  "elo": 1032.141435480735
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "Riki Choshu",
+  "elo": 1263.4547600215985
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "Bad News Allen",
+  "elo": 1060.8165540489729
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "Willem Ruska",
+  "elo": 1278.1904907615103
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "The Great Antonio",
+  "elo": 1300.409159885866
+ },
+ {
+  "date": "1977/12/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1440.815887409734
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

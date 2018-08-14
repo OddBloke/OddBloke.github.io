@@ -1,0 +1,2520 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1994/01/04",
+  "wrestler": "Brutus Beefcake",
+  "elo": 1050.0
+ },
+ {
+  "date": "1994/01/04",
+  "wrestler": "Super Strong Machine",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "1994/01/04",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1050.0
+ },
+ {
+  "date": "1994/01/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 950.0
+ },
+ {
+  "date": "1994/01/04",
+  "wrestler": "Hulk Hogan",
+  "elo": 1050.0
+ },
+ {
+  "date": "1994/01/04",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "1994/01/04",
+  "wrestler": "Riki Choshu",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "1994/01/04",
+  "wrestler": "Masahiro Chono",
+  "elo": 700.0
+ },
+ {
+  "date": "1994/01/04",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 900.0
+ },
+ {
+  "date": "1994/01/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 950.0
+ },
+ {
+  "date": "1994/01/04",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1050.0
+ },
+ {
+  "date": "1994/01/30",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "1994/01/30",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1028.012999960577
+ },
+ {
+  "date": "1994/01/31",
+  "wrestler": "Chris Benoit",
+  "elo": 900.0
+ },
+ {
+  "date": "1994/02/01",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 950.0
+ },
+ {
+  "date": "1994/02/01",
+  "wrestler": "Osamu Kido",
+  "elo": 1050.0
+ },
+ {
+  "date": "1994/02/01",
+  "wrestler": "Chris Benoit",
+  "elo": 934.5665362258003
+ },
+ {
+  "date": "1994/02/01",
+  "wrestler": "Max Moon",
+  "elo": 957.1463117408382
+ },
+ {
+  "date": "1994/02/01",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1092.8536882591618
+ },
+ {
+  "date": "1994/02/02",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 996.1188055213757
+ },
+ {
+  "date": "1994/02/04",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1089.4057876186484
+ },
+ {
+  "date": "1994/02/05",
+  "wrestler": "Hiromichi Fuyuki",
+  "elo": 1050.0
+ },
+ {
+  "date": "1994/02/05",
+  "wrestler": "Koki Kitahara",
+  "elo": 1052.1714038516366
+ },
+ {
+  "date": "1994/02/05",
+  "wrestler": "Kengo Kimura",
+  "elo": 1050.0
+ },
+ {
+  "date": "1994/02/05",
+  "wrestler": "The Great Kabuki",
+  "elo": 1050.0
+ },
+ {
+  "date": "1994/02/05",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1065.2423631010022
+ },
+ {
+  "date": "1994/02/05",
+  "wrestler": "Super Strong Machine",
+  "elo": 970.5732881859517
+ },
+ {
+  "date": "1994/02/05",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1053.4520191492525
+ },
+ {
+  "date": "1994/02/06",
+  "wrestler": "Chris Benoit",
+  "elo": 1066.6201223446521
+ },
+ {
+  "date": "1994/02/06",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1115.5013119123153
+ },
+ {
+  "date": "1994/02/06",
+  "wrestler": "Kengo Kimura",
+  "elo": 986.2524286799725
+ },
+ {
+  "date": "1994/02/06",
+  "wrestler": "Riki Choshu",
+  "elo": 1079.4445279696465
+ },
+ {
+  "date": "1994/02/06",
+  "wrestler": "The Great Kabuki",
+  "elo": 996.2688900014779
+ },
+ {
+  "date": "1994/02/06",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1077.7564173337262
+ },
+ {
+  "date": "1994/02/06",
+  "wrestler": "Akira Nogami",
+  "elo": 740.6770006943657
+ },
+ {
+  "date": "1994/02/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1087.7250469240564
+ },
+ {
+  "date": "1994/02/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 878.9260313508926
+ },
+ {
+  "date": "1994/02/06",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1088.9890034738062
+ },
+ {
+  "date": "1994/02/09",
+  "wrestler": "Max Moon",
+  "elo": 1064.8524043628995
+ },
+ {
+  "date": "1994/02/09",
+  "wrestler": "The Great Kabuki",
+  "elo": 1051.5120921578266
+ },
+ {
+  "date": "1994/02/11",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1002.6409285107297
+ },
+ {
+  "date": "1994/02/11",
+  "wrestler": "Osamu Kido",
+  "elo": 1102.1123008135146
+ },
+ {
+  "date": "1994/02/11",
+  "wrestler": "Akira Nogami",
+  "elo": 880.5823633892215
+ },
+ {
+  "date": "1994/02/11",
+  "wrestler": "Masahiro Chono",
+  "elo": 876.6275123717736
+ },
+ {
+  "date": "1994/02/13",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1032.0591982194085
+ },
+ {
+  "date": "1994/02/14",
+  "wrestler": "Max Moon",
+  "elo": 1020.1940720499941
+ },
+ {
+  "date": "1994/02/14",
+  "wrestler": "Osamu Kido",
+  "elo": 1146.77063312642
+ },
+ {
+  "date": "1994/02/14",
+  "wrestler": "Masahiro Chono",
+  "elo": 1028.653487989956
+ },
+ {
+  "date": "1994/02/14",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1044.6992390952153
+ },
+ {
+  "date": "1994/02/14",
+  "wrestler": "The Great Kabuki",
+  "elo": 998.1354483131602
+ },
+ {
+  "date": "1994/02/14",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1081.3896438052434
+ },
+ {
+  "date": "1994/02/15",
+  "wrestler": "Max Moon",
+  "elo": 971.9009374660845
+ },
+ {
+  "date": "1994/02/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1080.3523328033182
+ },
+ {
+  "date": "1994/02/15",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1094.596075016291
+ },
+ {
+  "date": "1994/02/16",
+  "wrestler": "Max Moon",
+  "elo": 1051.0478850678828
+ },
+ {
+  "date": "1994/02/16",
+  "wrestler": "Chris Benoit",
+  "elo": 1076.0419849237169
+ },
+ {
+  "date": "1994/02/16",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1123.2349169173854
+ },
+ {
+  "date": "1994/02/17",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1017.564471927169
+ },
+ {
+  "date": "1994/02/17",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1129.0675349790765
+ },
+ {
+  "date": "1994/02/24",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1116.749525577322
+ },
+ {
+  "date": "1994/02/24",
+  "wrestler": "Masahiro Chono",
+  "elo": 954.2942256274306
+ },
+ {
+  "date": "1994/02/24",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1067.4526567466773
+ },
+ {
+  "date": "1994/02/24",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1177.1161901447144
+ },
+ {
+  "date": "1994/03/05",
+  "wrestler": "Killer Bee",
+  "elo": 1013.5300039947382
+ },
+ {
+  "date": "1994/03/05",
+  "wrestler": "Akira Nogami",
+  "elo": 1020.0510402590328
+ },
+ {
+  "date": "1994/03/06",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 990.364423242375
+ },
+ {
+  "date": "1994/03/06",
+  "wrestler": "Black Tiger",
+  "elo": 1010.285091513501
+ },
+ {
+  "date": "1994/03/06",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1107.865589544631
+ },
+ {
+  "date": "1994/03/06",
+  "wrestler": "The Great Kabuki",
+  "elo": 1087.489485651157
+ },
+ {
+  "date": "1994/03/06",
+  "wrestler": "Masahiro Chono",
+  "elo": 1029.930051444355
+ },
+ {
+  "date": "1994/03/06",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1103.627448214174
+ },
+ {
+  "date": "1994/03/06",
+  "wrestler": "Scott Norton",
+  "elo": 1073.4887419305405
+ },
+ {
+  "date": "1994/03/07",
+  "wrestler": "Black Tiger",
+  "elo": 1053.0404064400022
+ },
+ {
+  "date": "1994/03/07",
+  "wrestler": "Killer Bee",
+  "elo": 976.2130341307782
+ },
+ {
+  "date": "1994/03/07",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1140.944418078134
+ },
+ {
+  "date": "1994/03/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1074.0239423879386
+ },
+ {
+  "date": "1994/03/08",
+  "wrestler": "Killer Bee",
+  "elo": 1121.7064156077408
+ },
+ {
+  "date": "1994/03/08",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1050.0404543476561
+ },
+ {
+  "date": "1994/03/08",
+  "wrestler": "Black Tiger",
+  "elo": 1110.865541636977
+ },
+ {
+  "date": "1994/03/09",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1026.92872684353
+ },
+ {
+  "date": "1994/03/09",
+  "wrestler": "The Barbarian",
+  "elo": 969.2395251401728
+ },
+ {
+  "date": "1994/03/09",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1171.7048929379612
+ },
+ {
+  "date": "1994/03/10",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1032.6016113396634
+ },
+ {
+  "date": "1994/03/10",
+  "wrestler": "Akira Nogami",
+  "elo": 1016.1084351633535
+ },
+ {
+  "date": "1994/03/10",
+  "wrestler": "Osamu Kido",
+  "elo": 1069.7957229681683
+ },
+ {
+  "date": "1994/03/11",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1197.5081515729273
+ },
+ {
+  "date": "1994/03/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1090.0674099933394
+ },
+ {
+  "date": "1994/03/12",
+  "wrestler": "Black Tiger",
+  "elo": 1119.1940065201575
+ },
+ {
+  "date": "1994/03/12",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 973.582838535057
+ },
+ {
+  "date": "1994/03/12",
+  "wrestler": "The Barbarian",
+  "elo": 1087.2770707493853
+ },
+ {
+  "date": "1994/03/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1028.0540826829329
+ },
+ {
+  "date": "1994/03/15",
+  "wrestler": "The Great Kabuki",
+  "elo": 1116.0308573287073
+ },
+ {
+  "date": "1994/03/16",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1057.15381602041
+ },
+ {
+  "date": "1994/03/16",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1066.124391064651
+ },
+ {
+  "date": "1994/03/16",
+  "wrestler": "Scott Norton",
+  "elo": 1130.5992677832749
+ },
+ {
+  "date": "1994/03/16",
+  "wrestler": "The Barbarian",
+  "elo": 1052.6289138002999
+ },
+ {
+  "date": "1994/03/16",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1232.1563085220128
+ },
+ {
+  "date": "1994/03/16",
+  "wrestler": "Rick Rude",
+  "elo": 966.1965234729747
+ },
+ {
+  "date": "1994/03/16",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1150.5530021043473
+ },
+ {
+  "date": "1994/03/18",
+  "wrestler": "Osamu Kido",
+  "elo": 1112.1441764096437
+ },
+ {
+  "date": "1994/03/18",
+  "wrestler": "The Great Kabuki",
+  "elo": 1131.0640092201002
+ },
+ {
+  "date": "1994/03/19",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 974.4303330543314
+ },
+ {
+  "date": "1994/03/20",
+  "wrestler": "Black Tiger",
+  "elo": 1134.8634368303976
+ },
+ {
+  "date": "1994/03/21",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1029.319376214532
+ },
+ {
+  "date": "1994/03/21",
+  "wrestler": "Masahiro Chono",
+  "elo": 970.8595730295411
+ },
+ {
+  "date": "1994/03/21",
+  "wrestler": "Rick Rude",
+  "elo": 1084.3374803026027
+ },
+ {
+  "date": "1994/03/21",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1106.7215831479073
+ },
+ {
+  "date": "1994/03/21",
+  "wrestler": "Black Tiger",
+  "elo": 1072.8933128084561
+ },
+ {
+  "date": "1994/03/21",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1112.0105783695976
+ },
+ {
+  "date": "1994/03/21",
+  "wrestler": "Scott Norton",
+  "elo": 1094.8119997634255
+ },
+ {
+  "date": "1994/03/21",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1250.0499425319374
+ },
+ {
+  "date": "1994/03/23",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1038.304373456422
+ },
+ {
+  "date": "1994/03/23",
+  "wrestler": "Riki Choshu",
+  "elo": 1122.5292105672677
+ },
+ {
+  "date": "1994/03/23",
+  "wrestler": "Rick Rude",
+  "elo": 1056.5277161799133
+ },
+ {
+  "date": "1994/03/23",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1263.954824593282
+ },
+ {
+  "date": "1994/03/24",
+  "wrestler": "Killer Bee",
+  "elo": 1054.874371413977
+ },
+ {
+  "date": "1994/03/24",
+  "wrestler": "Great Muta",
+  "elo": 1066.8320441937637
+ },
+ {
+  "date": "1994/03/24",
+  "wrestler": "The Barbarian",
+  "elo": 1010.3511799970217
+ },
+ {
+  "date": "1994/03/24",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1148.9993169511854
+ },
+ {
+  "date": "1994/03/24",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 991.5565545182884
+ },
+ {
+  "date": "1994/03/24",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1087.3426159108408
+ },
+ {
+  "date": "1994/03/24",
+  "wrestler": "Rick Rude",
+  "elo": 1119.73810237342
+ },
+ {
+  "date": "1994/03/28",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1117.251101296911
+ },
+ {
+  "date": "1994/03/28",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1177.3567163000685
+ },
+ {
+  "date": "1994/04/03",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 995.0169621889183
+ },
+ {
+  "date": "1994/04/03",
+  "wrestler": "The Great Kabuki",
+  "elo": 1178.1513747440845
+ },
+ {
+  "date": "1994/04/03",
+  "wrestler": "Kengo Kimura",
+  "elo": 1021.6925367872741
+ },
+ {
+  "date": "1994/04/04",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1218.8691773326998
+ },
+ {
+  "date": "1994/04/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1059.2686203932215
+ },
+ {
+  "date": "1994/04/05",
+  "wrestler": "Osamu Kido",
+  "elo": 1042.8629590873502
+ },
+ {
+  "date": "1994/04/05",
+  "wrestler": "Masahiro Chono",
+  "elo": 1109.4220076741283
+ },
+ {
+  "date": "1994/04/06",
+  "wrestler": "Masahiro Chono",
+  "elo": 1117.3771230802458
+ },
+ {
+  "date": "1994/04/06",
+  "wrestler": "Great Muta",
+  "elo": 1098.2578764188393
+ },
+ {
+  "date": "1994/04/07",
+  "wrestler": "Hiro Saito",
+  "elo": 945.7752530863941
+ },
+ {
+  "date": "1994/04/07",
+  "wrestler": "Super Strong Machine",
+  "elo": 1079.0227820131636
+ },
+ {
+  "date": "1994/04/10",
+  "wrestler": "Hiro Saito",
+  "elo": 1020.1480702498068
+ },
+ {
+  "date": "1994/04/10",
+  "wrestler": "The Great Kabuki",
+  "elo": 1183.2811155310626
+ },
+ {
+  "date": "1994/04/10",
+  "wrestler": "Norio Honaga",
+  "elo": 772.262737795094
+ },
+ {
+  "date": "1994/04/10",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1131.119732399364
+ },
+ {
+  "date": "1994/04/11",
+  "wrestler": "Great Muta",
+  "elo": 1040.352778690741
+ },
+ {
+  "date": "1994/04/11",
+  "wrestler": "Osamu Kido",
+  "elo": 1100.7680568154485
+ },
+ {
+  "date": "1994/04/14",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1127.1500888110668
+ },
+ {
+  "date": "1994/04/15",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1145.4981532762818
+ },
+ {
+  "date": "1994/04/15",
+  "wrestler": "Akira Nogami",
+  "elo": 1010.5244564803569
+ },
+ {
+  "date": "1994/04/15",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1044.3580862022097
+ },
+ {
+  "date": "1994/04/16",
+  "wrestler": "Gedo",
+  "elo": 1051.1502270465623
+ },
+ {
+  "date": "1994/04/16",
+  "wrestler": "Super Delfin",
+  "elo": 976.7800565852726
+ },
+ {
+  "date": "1994/04/16",
+  "wrestler": "Black Tiger",
+  "elo": 1057.319080394377
+ },
+ {
+  "date": "1994/04/16",
+  "wrestler": "Ricky Fuji",
+  "elo": 1017.3400487300398
+ },
+ {
+  "date": "1994/04/16",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1172.3829612841407
+ },
+ {
+  "date": "1994/04/16",
+  "wrestler": "Chris Benoit",
+  "elo": 1217.7337369686497
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "El Gigante",
+  "elo": 1018.3468525932417
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Satoru Sayama",
+  "elo": 1022.9545151149216
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1149.4284461692191
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1000.7458939897341
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1132.6011956862817
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Rick Rude",
+  "elo": 1153.1576970722135
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 874.5637420103317
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Masahiro Chono",
+  "elo": 1142.107905742682
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1076.485130183482
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Riki Choshu",
+  "elo": 1173.1941691948527
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1030.747041736204
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1233.1299666612085
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Great Muta",
+  "elo": 977.6353737316676
+ },
+ {
+  "date": "1994/05/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1075.4348099181466
+ },
+ {
+  "date": "1994/05/26",
+  "wrestler": "Super Delfin",
+  "elo": 1072.0514506928755
+ },
+ {
+  "date": "1994/05/26",
+  "wrestler": "Chris Benoit",
+  "elo": 1170.790382513474
+ },
+ {
+  "date": "1994/05/26",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1079.1586351655371
+ },
+ {
+  "date": "1994/05/26",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1115.6524648952268
+ },
+ {
+  "date": "1994/05/27",
+  "wrestler": "Chris Benoit",
+  "elo": 1185.4708926684593
+ },
+ {
+  "date": "1994/05/27",
+  "wrestler": "Black Tiger",
+  "elo": 1109.181977632125
+ },
+ {
+  "date": "1994/05/28",
+  "wrestler": "Chris Benoit",
+  "elo": 1185.9912291069847
+ },
+ {
+  "date": "1994/05/28",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1026.9642287212014
+ },
+ {
+  "date": "1994/05/29",
+  "wrestler": "Super Delfin",
+  "elo": 1084.7633671000017
+ },
+ {
+  "date": "1994/05/29",
+  "wrestler": "Black Tiger",
+  "elo": 1060.176701948362
+ },
+ {
+  "date": "1994/05/29",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1044.871994753662
+ },
+ {
+  "date": "1994/05/29",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1070.8191979040776
+ },
+ {
+  "date": "1994/05/30",
+  "wrestler": "Black Tiger",
+  "elo": 1072.9632367894847
+ },
+ {
+  "date": "1994/05/30",
+  "wrestler": "Chris Benoit",
+  "elo": 1213.5851880544992
+ },
+ {
+  "date": "1994/05/30",
+  "wrestler": "Super Delfin",
+  "elo": 1029.047631661045
+ },
+ {
+  "date": "1994/05/30",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1100.5877301926187
+ },
+ {
+  "date": "1994/06/01",
+  "wrestler": "Chris Benoit",
+  "elo": 1235.1188863151679
+ },
+ {
+  "date": "1994/06/01",
+  "wrestler": "Black Tiger",
+  "elo": 1016.676717016093
+ },
+ {
+  "date": "1994/06/01",
+  "wrestler": "Super Delfin",
+  "elo": 1085.3341514344368
+ },
+ {
+  "date": "1994/06/01",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 852.0361266099142
+ },
+ {
+  "date": "1994/06/01",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1238.761870511313
+ },
+ {
+  "date": "1994/06/02",
+  "wrestler": "Black Tiger",
+  "elo": 1043.40019178816
+ },
+ {
+  "date": "1994/06/03",
+  "wrestler": "Black Tiger",
+  "elo": 1046.1481818569114
+ },
+ {
+  "date": "1994/06/03",
+  "wrestler": "Super Delfin",
+  "elo": 1102.3539884756788
+ },
+ {
+  "date": "1994/06/03",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1122.3677359347696
+ },
+ {
+  "date": "1994/06/04",
+  "wrestler": "Super Delfin",
+  "elo": 1104.2665072776406
+ },
+ {
+  "date": "1994/06/06",
+  "wrestler": "Chris Benoit",
+  "elo": 1197.7204987097207
+ },
+ {
+  "date": "1994/06/06",
+  "wrestler": "Black Tiger",
+  "elo": 1120.9449570678057
+ },
+ {
+  "date": "1994/06/06",
+  "wrestler": "Super Delfin",
+  "elo": 1018.203048586954
+ },
+ {
+  "date": "1994/06/06",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1134.3579984899914
+ },
+ {
+  "date": "1994/06/08",
+  "wrestler": "Super Delfin",
+  "elo": 991.9602207064195
+ },
+ {
+  "date": "1994/06/08",
+  "wrestler": "Chris Benoit",
+  "elo": 1223.9633265902553
+ },
+ {
+  "date": "1994/06/08",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1061.194198964878
+ },
+ {
+  "date": "1994/06/08",
+  "wrestler": "Great Muta",
+  "elo": 1048.5632387333872
+ },
+ {
+  "date": "1994/06/09",
+  "wrestler": "Chris Benoit",
+  "elo": 1226.4133211832552
+ },
+ {
+  "date": "1994/06/09",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1068.1069088796933
+ },
+ {
+  "date": "1994/06/10",
+  "wrestler": "Super Delfin",
+  "elo": 1102.4749676477543
+ },
+ {
+  "date": "1994/06/10",
+  "wrestler": "Black Tiger",
+  "elo": 1031.631132269117
+ },
+ {
+  "date": "1994/06/10",
+  "wrestler": "Chris Benoit",
+  "elo": 1190.7501694887487
+ },
+ {
+  "date": "1994/06/10",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1139.433212268706
+ },
+ {
+  "date": "1994/06/11",
+  "wrestler": "Chris Benoit",
+  "elo": 1185.7262145999941
+ },
+ {
+  "date": "1994/06/13",
+  "wrestler": "Great Muta",
+  "elo": 1001.7617549859165
+ },
+ {
+  "date": "1994/06/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1117.6206816515482
+ },
+ {
+  "date": "1994/06/13",
+  "wrestler": "Super Delfin",
+  "elo": 1057.7737156444684
+ },
+ {
+  "date": "1994/06/13",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1184.1344642719919
+ },
+ {
+  "date": "1994/06/15",
+  "wrestler": "Riki Choshu",
+  "elo": 1132.5196730343084
+ },
+ {
+  "date": "1994/06/15",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1259.0991185915852
+ },
+ {
+  "date": "1994/06/30",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1151.31003389255
+ },
+ {
+  "date": "1994/06/30",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1221.4840162108235
+ },
+ {
+  "date": "1994/06/30",
+  "wrestler": "Kengo Kimura",
+  "elo": 968.8274088753376
+ },
+ {
+  "date": "1994/06/30",
+  "wrestler": "Great Muta",
+  "elo": 1054.626882897853
+ },
+ {
+  "date": "1994/06/30",
+  "wrestler": "Masahiro Chono",
+  "elo": 1184.0950567558102
+ },
+ {
+  "date": "1994/07/01",
+  "wrestler": "Kengo Kimura",
+  "elo": 905.076938672583
+ },
+ {
+  "date": "1994/07/01",
+  "wrestler": "Osamu Kido",
+  "elo": 1132.6432919168258
+ },
+ {
+  "date": "1994/07/01",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1011.9203877937296
+ },
+ {
+  "date": "1994/07/01",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1234.7166564201332
+ },
+ {
+  "date": "1994/07/02",
+  "wrestler": "Riki Choshu",
+  "elo": 1166.5453440209383
+ },
+ {
+  "date": "1994/07/02",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1056.9768538608334
+ },
+ {
+  "date": "1994/07/02",
+  "wrestler": "Kengo Kimura",
+  "elo": 859.6127229995021
+ },
+ {
+  "date": "1994/07/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1140.3527894880885
+ },
+ {
+  "date": "1994/07/02",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1268.8263563467199
+ },
+ {
+  "date": "1994/07/03",
+  "wrestler": "Akira Nogami",
+  "elo": 955.5726399416978
+ },
+ {
+  "date": "1994/07/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1062.4037764941613
+ },
+ {
+  "date": "1994/07/03",
+  "wrestler": "Black Tiger",
+  "elo": 1028.745284801483
+ },
+ {
+  "date": "1994/07/03",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 992.4312650211693
+ },
+ {
+  "date": "1994/07/03",
+  "wrestler": "Max Moon",
+  "elo": 1025.2649723822092
+ },
+ {
+  "date": "1994/07/03",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1247.60811276297
+ },
+ {
+  "date": "1994/07/04",
+  "wrestler": "Hiro Saito",
+  "elo": 1057.125544309284
+ },
+ {
+  "date": "1994/07/04",
+  "wrestler": "Norio Honaga",
+  "elo": 696.8874259870166
+ },
+ {
+  "date": "1994/07/04",
+  "wrestler": "Kengo Kimura",
+  "elo": 934.9880348075795
+ },
+ {
+  "date": "1994/07/04",
+  "wrestler": "Super Strong Machine",
+  "elo": 1131.7400152710225
+ },
+ {
+  "date": "1994/07/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1156.4521161729967
+ },
+ {
+  "date": "1994/07/05",
+  "wrestler": "Kengo Kimura",
+  "elo": 893.2537046676797
+ },
+ {
+  "date": "1994/07/05",
+  "wrestler": "Riki Choshu",
+  "elo": 1187.4125090908883
+ },
+ {
+  "date": "1994/07/06",
+  "wrestler": "Norio Honaga",
+  "elo": 681.1213415283089
+ },
+ {
+  "date": "1994/07/06",
+  "wrestler": "Hiro Saito",
+  "elo": 985.1485218030493
+ },
+ {
+  "date": "1994/07/06",
+  "wrestler": "Kengo Kimura",
+  "elo": 1037.207749680149
+ },
+ {
+  "date": "1994/07/06",
+  "wrestler": "Riki Choshu",
+  "elo": 1218.9332486397407
+ },
+ {
+  "date": "1994/07/08",
+  "wrestler": "Akira Nogami",
+  "elo": 864.0647602838236
+ },
+ {
+  "date": "1994/07/08",
+  "wrestler": "Hiro Saito",
+  "elo": 1076.6564014609237
+ },
+ {
+  "date": "1994/07/08",
+  "wrestler": "The Great Kabuki",
+  "elo": 1086.4985615911569
+ },
+ {
+  "date": "1994/07/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1082.3845580314062
+ },
+ {
+  "date": "1994/07/08",
+  "wrestler": "Kengo Kimura",
+  "elo": 981.9796461640951
+ },
+ {
+  "date": "1994/07/08",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1055.9739975057878
+ },
+ {
+  "date": "1994/07/08",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1218.938078807043
+ },
+ {
+  "date": "1994/07/09",
+  "wrestler": "Black Tiger",
+  "elo": 1003.6744450761535
+ },
+ {
+  "date": "1994/07/09",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1231.4734986697076
+ },
+ {
+  "date": "1994/07/09",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1257.1811498064524
+ },
+ {
+  "date": "1994/07/09",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 910.5191084425612
+ },
+ {
+  "date": "1994/07/09",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1096.9300757950919
+ },
+ {
+  "date": "1994/07/09",
+  "wrestler": "Osamu Kido",
+  "elo": 1139.4525003274498
+ },
+ {
+  "date": "1994/07/09",
+  "wrestler": "Hiro Saito",
+  "elo": 1034.6386354268136
+ },
+ {
+  "date": "1994/07/09",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1174.6189617203918
+ },
+ {
+  "date": "1994/07/09",
+  "wrestler": "Masahiro Chono",
+  "elo": 1109.8310412499916
+ },
+ {
+  "date": "1994/07/09",
+  "wrestler": "Lord Steven Regal",
+  "elo": 1074.2640155058186
+ },
+ {
+  "date": "1994/07/14",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1110.9181293376291
+ },
+ {
+  "date": "1994/07/14",
+  "wrestler": "Akira Nogami",
+  "elo": 796.7577022277509
+ },
+ {
+  "date": "1994/07/14",
+  "wrestler": "Kengo Kimura",
+  "elo": 1049.2867042201678
+ },
+ {
+  "date": "1994/07/15",
+  "wrestler": "Akira Nogami",
+  "elo": 884.3521909062043
+ },
+ {
+  "date": "1994/07/15",
+  "wrestler": "Kengo Kimura",
+  "elo": 1076.3766346212983
+ },
+ {
+  "date": "1994/07/15",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1153.2611704734884
+ },
+ {
+  "date": "1994/07/17",
+  "wrestler": "Hiro Saito",
+  "elo": 997.3525044599122
+ },
+ {
+  "date": "1994/07/17",
+  "wrestler": "Masahiro Chono",
+  "elo": 1117.0346588880384
+ },
+ {
+  "date": "1994/07/17",
+  "wrestler": "Great Muta",
+  "elo": 1098.9412180089578
+ },
+ {
+  "date": "1994/07/17",
+  "wrestler": "Kengo Kimura",
+  "elo": 1051.5490616135314
+ },
+ {
+  "date": "1994/07/17",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1281.2401428506034
+ },
+ {
+  "date": "1994/07/18",
+  "wrestler": "Osamu Kido",
+  "elo": 1045.1350090588498
+ },
+ {
+  "date": "1994/07/18",
+  "wrestler": "Hiro Saito",
+  "elo": 889.6771039358283
+ },
+ {
+  "date": "1994/07/18",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1202.8840849042138
+ },
+ {
+  "date": "1994/07/18",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1218.9004080400666
+ },
+ {
+  "date": "1994/07/18",
+  "wrestler": "Kengo Kimura",
+  "elo": 1128.1105451463031
+ },
+ {
+  "date": "1994/07/19",
+  "wrestler": "Masahiro Chono",
+  "elo": 1161.484451341898
+ },
+ {
+  "date": "1994/07/19",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1017.0731351259237
+ },
+ {
+  "date": "1994/07/19",
+  "wrestler": "Kengo Kimura",
+  "elo": 1168.0142638812129
+ },
+ {
+  "date": "1994/07/19",
+  "wrestler": "Riki Choshu",
+  "elo": 1224.007046527295
+ },
+ {
+  "date": "1994/07/19",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1199.9024330325678
+ },
+ {
+  "date": "1994/07/20",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1227.6739050105612
+ },
+ {
+  "date": "1994/07/20",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1074.2411231446667
+ },
+ {
+  "date": "1994/07/20",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1284.5198410533203
+ },
+ {
+  "date": "1994/07/21",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 981.7304317954341
+ },
+ {
+  "date": "1994/07/21",
+  "wrestler": "Osamu Kido",
+  "elo": 1089.53909246929
+ },
+ {
+  "date": "1994/07/21",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1223.1628059411457
+ },
+ {
+  "date": "1994/07/21",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1175.3833903005668
+ },
+ {
+  "date": "1994/07/21",
+  "wrestler": "Kengo Kimura",
+  "elo": 1223.015653088507
+ },
+ {
+  "date": "1994/07/21",
+  "wrestler": "Great Muta",
+  "elo": 1136.4219540912804
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1186.2955488135856
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1251.9153280317394
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1240.5924163437287
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1198.48738737256
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1252.3493235791468
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "El Gigante",
+  "elo": 1065.708979732092
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1048.607977319436
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1194.1922856233423
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Great Muta",
+  "elo": 1077.5677469893146
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1133.0953302466326
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Masahiro Chono",
+  "elo": 1120.386291613221
+ },
+ {
+  "date": "1994/08/03",
+  "wrestler": "Riki Choshu",
+  "elo": 1244.5561263916336
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1071.1707494186214
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Osamu Kido",
+  "elo": 1110.5325581474472
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1151.38988094156
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Riki Choshu",
+  "elo": 1265.9573287325247
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Great Muta",
+  "elo": 1033.6988216521688
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Masahiro Chono",
+  "elo": 1164.2552169503667
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1191.9110650784821
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Gran Hamada",
+  "elo": 1079.124867182451
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1145.688553251503
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1272.6528213601882
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1255.363234278644
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1212.57746128374
+ },
+ {
+  "date": "1994/08/04",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1254.5172974925376
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1275.514790024914
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1182.8230134284663
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1205.1974489620504
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1255.3023643541376
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1254.5781674170441
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Osamu Kido",
+  "elo": 1068.202837177808
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Masahiro Chono",
+  "elo": 1206.5849379200058
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1032.5143481084226
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1190.0462822517588
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Riki Choshu",
+  "elo": 1226.3576242044817
+ },
+ {
+  "date": "1994/08/05",
+  "wrestler": "Great Muta",
+  "elo": 1112.898230708255
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1191.5266682467989
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1183.7269431521852
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1276.0486732269094
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1249.0620276509271
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1281.7551267281244
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1024.5997721818756
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Great Muta",
+  "elo": 1156.5012957041874
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1142.4245900163976
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Masahiro Chono",
+  "elo": 1230.3957840376863
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Riki Choshu",
+  "elo": 1188.6967032364198
+ },
+ {
+  "date": "1994/08/06",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1107.8361900445464
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1020.9024807180717
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1251.1868940715653
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1197.4715303636358
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1274.882833122399
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1219.9594594671194
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1249.7318046144146
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Osamu Kido",
+  "elo": 996.6029222608613
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Riki Choshu",
+  "elo": 1216.693553157434
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1094.4492830531944
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Great Muta",
+  "elo": 1204.4766026673906
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1074.7770117827192
+ },
+ {
+  "date": "1994/08/07",
+  "wrestler": "Masahiro Chono",
+  "elo": 1274.1874761783563
+ },
+ {
+  "date": "1994/08/20",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1053.918372079508
+ },
+ {
+  "date": "1994/08/20",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1150.1561595638086
+ },
+ {
+  "date": "1994/08/20",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1270.6092573717513
+ },
+ {
+  "date": "1994/08/22",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1087.9643912371123
+ },
+ {
+  "date": "1994/08/23",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1093.6222592601412
+ },
+ {
+  "date": "1994/08/23",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1257.6438780938458
+ },
+ {
+  "date": "1994/08/27",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1103.0810736762894
+ },
+ {
+  "date": "1994/08/27",
+  "wrestler": "Hiro Saito",
+  "elo": 1059.3071839629158
+ },
+ {
+  "date": "1994/08/27",
+  "wrestler": "Norio Honaga",
+  "elo": 668.5264513995817
+ },
+ {
+  "date": "1994/08/27",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1156.4536046281723
+ },
+ {
+  "date": "1994/08/27",
+  "wrestler": "Akira Nogami",
+  "elo": 857.0077234381697
+ },
+ {
+  "date": "1994/08/27",
+  "wrestler": "Great Muta",
+  "elo": 1211.3127195343993
+ },
+ {
+  "date": "1994/08/28",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1113.419855124796
+ },
+ {
+  "date": "1994/08/28",
+  "wrestler": "Norio Honaga",
+  "elo": 780.8971497921979
+ },
+ {
+  "date": "1994/08/28",
+  "wrestler": "Hiro Saito",
+  "elo": 1074.2008089270623
+ },
+ {
+  "date": "1994/09/17",
+  "wrestler": "Black Tiger",
+  "elo": 998.0825908179904
+ },
+ {
+  "date": "1994/09/17",
+  "wrestler": "Gran Hamada",
+  "elo": 1073.133624674198
+ },
+ {
+  "date": "1994/09/17",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1150.1183713609655
+ },
+ {
+  "date": "1994/09/17",
+  "wrestler": "Chris Benoit",
+  "elo": 1179.3162004060157
+ },
+ {
+  "date": "1994/09/17",
+  "wrestler": "Norio Honaga",
+  "elo": 815.3969977549524
+ },
+ {
+  "date": "1994/09/17",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1060.7445269837212
+ },
+ {
+  "date": "1994/09/17",
+  "wrestler": "Scott Norton",
+  "elo": 1147.4873279045003
+ },
+ {
+  "date": "1994/09/19",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1245.8667218089972
+ },
+ {
+  "date": "1994/09/19",
+  "wrestler": "Masahiro Chono",
+  "elo": 1298.9300117411103
+ },
+ {
+  "date": "1994/09/23",
+  "wrestler": "Gran Hamada",
+  "elo": 1079.2166193124642
+ },
+ {
+  "date": "1994/09/23",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1089.4426931070373
+ },
+ {
+  "date": "1994/09/23",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1135.4526900366475
+ },
+ {
+  "date": "1994/09/23",
+  "wrestler": "Great Muta",
+  "elo": 1192.486956121883
+ },
+ {
+  "date": "1994/09/23",
+  "wrestler": "Masahiro Chono",
+  "elo": 1317.7557751536267
+ },
+ {
+  "date": "1994/09/23",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1233.8833036671974
+ },
+ {
+  "date": "1994/09/23",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1298.6434075490474
+ },
+ {
+  "date": "1994/09/23",
+  "wrestler": "Willem Ruska",
+  "elo": 960.6885130068417
+ },
+ {
+  "date": "1994/09/23",
+  "wrestler": "Antonio Inoki",
+  "elo": 1114.7462969113049
+ },
+ {
+  "date": "1994/09/24",
+  "wrestler": "Black Tiger",
+  "elo": 921.0194132522552
+ },
+ {
+  "date": "1994/09/24",
+  "wrestler": "Gran Hamada",
+  "elo": 1117.7482080953318
+ },
+ {
+  "date": "1994/09/24",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1097.3799061563798
+ },
+ {
+  "date": "1994/09/24",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1238.9958514072532
+ },
+ {
+  "date": "1994/09/24",
+  "wrestler": "Masahiro Chono",
+  "elo": 1324.672757633474
+ },
+ {
+  "date": "1994/09/26",
+  "wrestler": "Osamu Kido",
+  "elo": 947.6820336475181
+ },
+ {
+  "date": "1994/09/26",
+  "wrestler": "Great Muta",
+  "elo": 1216.9474004285546
+ },
+ {
+  "date": "1994/09/26",
+  "wrestler": "Masahiro Chono",
+  "elo": 1287.9245043543597
+ },
+ {
+  "date": "1994/09/26",
+  "wrestler": "Scott Norton",
+  "elo": 1220.983834462729
+ },
+ {
+  "date": "1994/09/27",
+  "wrestler": "Gran Hamada",
+  "elo": 1032.6734885416547
+ },
+ {
+  "date": "1994/09/27",
+  "wrestler": "Norio Honaga",
+  "elo": 1080.7432285402979
+ },
+ {
+  "date": "1994/09/27",
+  "wrestler": "Black Tiger",
+  "elo": 1033.3729196480335
+ },
+ {
+  "date": "1994/09/27",
+  "wrestler": "Chris Benoit",
+  "elo": 1175.29618513815
+ },
+ {
+  "date": "1994/09/27",
+  "wrestler": "Masahiro Chono",
+  "elo": 1263.6955468248682
+ },
+ {
+  "date": "1994/09/27",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1322.872365078539
+ },
+ {
+  "date": "1994/10/09",
+  "wrestler": "Hiro Saito",
+  "elo": 1112.1457505699423
+ },
+ {
+  "date": "1994/10/10",
+  "wrestler": "Hiro Saito",
+  "elo": 1079.6308394038172
+ },
+ {
+  "date": "1994/10/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1255.2533069903157
+ },
+ {
+  "date": "1994/10/11",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1031.822541482787
+ },
+ {
+  "date": "1994/10/11",
+  "wrestler": "Great Muta",
+  "elo": 1231.4083931790217
+ },
+ {
+  "date": "1994/10/12",
+  "wrestler": "Hiro Saito",
+  "elo": 1080.5856423509615
+ },
+ {
+  "date": "1994/10/12",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1252.2769283329494
+ },
+ {
+  "date": "1994/10/13",
+  "wrestler": "Hiro Saito",
+  "elo": 1107.0249698977675
+ },
+ {
+  "date": "1994/10/14",
+  "wrestler": "Hiro Saito",
+  "elo": 1076.7900801727978
+ },
+ {
+  "date": "1994/10/14",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1267.3943731954341
+ },
+ {
+  "date": "1994/10/15",
+  "wrestler": "Hiro Saito",
+  "elo": 1020.3546252623465
+ },
+ {
+  "date": "1994/10/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1088.2579963932385
+ },
+ {
+  "date": "1994/10/17",
+  "wrestler": "Osamu Kido",
+  "elo": 983.2860033598045
+ },
+ {
+  "date": "1994/10/17",
+  "wrestler": "Great Muta",
+  "elo": 1232.341634096624
+ },
+ {
+  "date": "1994/10/19",
+  "wrestler": "Norio Honaga",
+  "elo": 1122.6648391728202
+ },
+ {
+  "date": "1994/10/26",
+  "wrestler": "Hiro Saito",
+  "elo": 1064.884417570145
+ },
+ {
+  "date": "1994/10/27",
+  "wrestler": "Norio Honaga",
+  "elo": 1127.5368314289328
+ },
+ {
+  "date": "1994/10/28",
+  "wrestler": "Lord Steven Regal",
+  "elo": 1101.5087761724924
+ },
+ {
+  "date": "1994/10/30",
+  "wrestler": "Osamu Kido",
+  "elo": 916.0580677074446
+ },
+ {
+  "date": "1994/10/30",
+  "wrestler": "Lord Steven Regal",
+  "elo": 1135.1227439986724
+ },
+ {
+  "date": "1994/10/30",
+  "wrestler": "Norio Honaga",
+  "elo": 1137.5179478833697
+ },
+ {
+  "date": "1994/11/05",
+  "wrestler": "Akira Nogami",
+  "elo": 853.6453909961757
+ },
+ {
+  "date": "1994/11/05",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1263.0006367211722
+ },
+ {
+  "date": "1994/11/05",
+  "wrestler": "Great Muta",
+  "elo": 1227.9849673143046
+ },
+ {
+  "date": "1994/11/05",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1084.1326671807767
+ },
+ {
+  "date": "1994/11/05",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1318.4499512415732
+ },
+ {
+  "date": "1994/11/06",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1237.8027370600491
+ },
+ {
+  "date": "1994/11/06",
+  "wrestler": "Akira Nogami",
+  "elo": 940.8439875531013
+ },
+ {
+  "date": "1994/11/06",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1265.0113418262706
+ },
+ {
+  "date": "1994/11/06",
+  "wrestler": "Great Muta",
+  "elo": 1229.9020411365564
+ },
+ {
+  "date": "1994/11/06",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1063.5266378989256
+ },
+ {
+  "date": "1994/11/06",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1328.7529658824988
+ },
+ {
+  "date": "1994/11/13",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1022.9499019386303
+ },
+ {
+  "date": "1994/11/13",
+  "wrestler": "The Great Kabuki",
+  "elo": 1037.6425626968028
+ },
+ {
+  "date": "1994/11/13",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1143.3052819475486
+ },
+ {
+  "date": "1994/11/13",
+  "wrestler": "Kengo Kimura",
+  "elo": 1233.8610156314508
+ },
+ {
+  "date": "1994/11/13",
+  "wrestler": "Willem Ruska",
+  "elo": 1064.1093001659854
+ },
+ {
+  "date": "1994/11/13",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1221.7635166049045
+ },
+ {
+  "date": "1994/11/16",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1065.8438291738375
+ },
+ {
+  "date": "1994/11/16",
+  "wrestler": "Perro Aguayo",
+  "elo": 954.6882802708645
+ },
+ {
+  "date": "1994/11/16",
+  "wrestler": "Gran Hamada",
+  "elo": 1077.9852082707903
+ },
+ {
+  "date": "1994/11/17",
+  "wrestler": "Hiro Saito",
+  "elo": 1071.9239080711711
+ },
+ {
+  "date": "1994/11/17",
+  "wrestler": "Perro Aguayo",
+  "elo": 1002.9373812018465
+ },
+ {
+  "date": "1994/11/17",
+  "wrestler": "Norio Honaga",
+  "elo": 1113.3933974178788
+ },
+ {
+  "date": "1994/11/18",
+  "wrestler": "Norio Honaga",
+  "elo": 1147.6305228998426
+ },
+ {
+  "date": "1994/11/19",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1072.3374648872198
+ },
+ {
+  "date": "1994/11/19",
+  "wrestler": "Hiro Saito",
+  "elo": 1073.730080102482
+ },
+ {
+  "date": "1994/11/19",
+  "wrestler": "Perro Aguayo",
+  "elo": 1045.944879311658
+ },
+ {
+  "date": "1994/11/21",
+  "wrestler": "Hiro Saito",
+  "elo": 1093.0878092001876
+ },
+ {
+  "date": "1994/11/23",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1088.5597822846632
+ },
+ {
+  "date": "1994/11/23",
+  "wrestler": "Norio Honaga",
+  "elo": 1164.2948268695773
+ },
+ {
+  "date": "1994/11/23",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1335.3012107176953
+ },
+ {
+  "date": "1994/11/23",
+  "wrestler": "Osamu Kido",
+  "elo": 891.2032742943818
+ },
+ {
+  "date": "1994/11/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1261.4670053435814
+ },
+ {
+  "date": "1994/11/24",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1093.1400841349664
+ },
+ {
+  "date": "1994/11/25",
+  "wrestler": "Black Tiger",
+  "elo": 1039.2609057430245
+ },
+ {
+  "date": "1994/11/25",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1128.3107256302558
+ },
+ {
+  "date": "1994/11/25",
+  "wrestler": "Chris Benoit",
+  "elo": 1123.713491336947
+ },
+ {
+  "date": "1994/11/25",
+  "wrestler": "Norio Honaga",
+  "elo": 1215.87752067078
+ },
+ {
+  "date": "1994/11/28",
+  "wrestler": "Osamu Kido",
+  "elo": 998.4892339245882
+ },
+ {
+  "date": "1994/11/30",
+  "wrestler": "Chris Benoit",
+  "elo": 1126.1587406590793
+ },
+ {
+  "date": "1994/11/30",
+  "wrestler": "Norio Honaga",
+  "elo": 1216.1114996295123
+ },
+ {
+  "date": "1994/11/30",
+  "wrestler": "Gran Hamada",
+  "elo": 1022.4352959219647
+ },
+ {
+  "date": "1994/11/30",
+  "wrestler": "Black Tiger",
+  "elo": 1094.8108180918503
+ },
+ {
+  "date": "1994/11/30",
+  "wrestler": "Hiro Saito",
+  "elo": 1029.8007127284789
+ },
+ {
+  "date": "1994/11/30",
+  "wrestler": "Osamu Kido",
+  "elo": 1125.0634268680055
+ },
+ {
+  "date": "1994/12/02",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1060.6414136495437
+ },
+ {
+  "date": "1994/12/02",
+  "wrestler": "Ron Simmons",
+  "elo": 1067.669311980712
+ },
+ {
+  "date": "1994/12/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1152.8404339169347
+ },
+ {
+  "date": "1994/12/03",
+  "wrestler": "Ron Simmons",
+  "elo": 1050.024694694559
+ },
+ {
+  "date": "1994/12/03",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1344.1235193607718
+ },
+ {
+  "date": "1994/12/05",
+  "wrestler": "Osamu Kido",
+  "elo": 1154.3196794981407
+ },
+ {
+  "date": "1994/12/05",
+  "wrestler": "Chris Benoit",
+  "elo": 1135.4932952954446
+ },
+ {
+  "date": "1994/12/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1172.5236014177735
+ },
+ {
+  "date": "1994/12/07",
+  "wrestler": "Akira Nogami",
+  "elo": 983.2021722480333
+ },
+ {
+  "date": "1994/12/07",
+  "wrestler": "Chris Benoit",
+  "elo": 1103.3144697226514
+ },
+ {
+  "date": "1994/12/07",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1281.100754612667
+ },
+ {
+  "date": "1994/12/07",
+  "wrestler": "Great Muta",
+  "elo": 1236.5281263694442
+ },
+ {
+  "date": "1994/12/08",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1084.2742230468773
+ },
+ {
+  "date": "1994/12/08",
+  "wrestler": "Norio Honaga",
+  "elo": 1227.3075782596734
+ },
+ {
+  "date": "1994/12/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1131.6317906346997
+ },
+ {
+  "date": "1994/12/08",
+  "wrestler": "Great Muta",
+  "elo": 1256.974031760981
+ },
+ {
+  "date": "1994/12/09",
+  "wrestler": "Black Tiger",
+  "elo": 1029.2796358829683
+ },
+ {
+  "date": "1994/12/09",
+  "wrestler": "Akira Nogami",
+  "elo": 1114.2645366657976
+ },
+ {
+  "date": "1994/12/11",
+  "wrestler": "Black Tiger",
+  "elo": 1005.0465067937893
+ },
+ {
+  "date": "1994/12/11",
+  "wrestler": "Norio Honaga",
+  "elo": 1239.4241428042628
+ },
+ {
+  "date": "1994/12/11",
+  "wrestler": "Masahiro Chono",
+  "elo": 1222.6836999081079
+ },
+ {
+  "date": "1994/12/11",
+  "wrestler": "Junji Hirata",
+  "elo": 1082.0236938335206
+ },
+ {
+  "date": "1994/12/12",
+  "wrestler": "Masahiro Chono",
+  "elo": 1188.0813777790493
+ },
+ {
+  "date": "1994/12/12",
+  "wrestler": "Junji Hirata",
+  "elo": 1151.2283380916379
+ },
+ {
+  "date": "1994/12/12",
+  "wrestler": "Gran Hamada",
+  "elo": 1000.1494945351219
+ },
+ {
+  "date": "1994/12/12",
+  "wrestler": "Norio Honaga",
+  "elo": 1250.5670434976842
+ },
+ {
+  "date": "1994/12/13",
+  "wrestler": "Norio Honaga",
+  "elo": 1203.4089747398887
+ },
+ {
+  "date": "1994/12/13",
+  "wrestler": "Riki Choshu",
+  "elo": 1194.8975453352868
+ },
+ {
+  "date": "1994/12/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1283.2630131657286
+ },
+ {
+  "date": "1994/12/13",
+  "wrestler": "Masahiro Chono",
+  "elo": 1132.7976004342572
+ },
+ {
+  "date": "1994/12/13",
+  "wrestler": "Junji Hirata",
+  "elo": 1206.51211543643
+ },
+ {
+  "date": "1994/12/13",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1260.5865151059597
+ },
+ {
+  "date": "1994/12/13",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1364.637758867479
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

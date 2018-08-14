@@ -1,0 +1,6315 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1981/01/09",
+  "wrestler": "George Takano",
+  "elo": 950.0
+ },
+ {
+  "date": "1981/01/09",
+  "wrestler": "Tom Prichard",
+  "elo": 1050.0
+ },
+ {
+  "date": "1981/01/09",
+  "wrestler": "Kengo Kimura",
+  "elo": 950.0
+ },
+ {
+  "date": "1981/01/09",
+  "wrestler": "The Enforcer",
+  "elo": 1050.0
+ },
+ {
+  "date": "1981/01/09",
+  "wrestler": "Osamu Kido",
+  "elo": 950.0
+ },
+ {
+  "date": "1981/01/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1050.0
+ },
+ {
+  "date": "1981/01/09",
+  "wrestler": "Bad News Allen",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "1981/01/09",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "1981/01/09",
+  "wrestler": "Riki Choshu",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "1981/01/09",
+  "wrestler": "Ken Patera",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "1981/01/10",
+  "wrestler": "The Enforcer",
+  "elo": 1042.8536882591618
+ },
+ {
+  "date": "1981/01/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1007.1463117408381
+ },
+ {
+  "date": "1981/01/11",
+  "wrestler": "Shunji Kosugi",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "1981/01/11",
+  "wrestler": "Norio Honaga",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "1981/01/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 996.2688900014779
+ },
+ {
+  "date": "1981/01/11",
+  "wrestler": "Ken Patera",
+  "elo": 1077.7564173337262
+ },
+ {
+  "date": "1981/01/12",
+  "wrestler": "The Enforcer",
+  "elo": 986.1894853052835
+ },
+ {
+  "date": "1981/01/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1109.5972959092346
+ },
+ {
+  "date": "1981/01/12",
+  "wrestler": "The Samoan 1",
+  "elo": 951.0282919201761
+ },
+ {
+  "date": "1981/01/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1056.1180198206619
+ },
+ {
+  "date": "1981/01/13",
+  "wrestler": "Bad News Allen",
+  "elo": 729.3158806122765
+ },
+ {
+  "date": "1981/01/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1120.9140482678922
+ },
+ {
+  "date": "1981/01/16",
+  "wrestler": "Tom Prichard",
+  "elo": 1000.8803628350587
+ },
+ {
+  "date": "1981/01/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1105.2376569856033
+ },
+ {
+  "date": "1981/01/18",
+  "wrestler": "Bad News Allen",
+  "elo": 708.7094645070677
+ },
+ {
+  "date": "1981/01/18",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1115.5408650382076
+ },
+ {
+  "date": "1981/01/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1064.7349146639147
+ },
+ {
+  "date": "1981/01/19",
+  "wrestler": "Ken Patera",
+  "elo": 1133.9355509377037
+ },
+ {
+  "date": "1981/01/20",
+  "wrestler": "The Enforcer",
+  "elo": 908.4192511684437
+ },
+ {
+  "date": "1981/01/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1103.6200317323346
+ },
+ {
+  "date": "1981/01/22",
+  "wrestler": "Bad News Allen",
+  "elo": 621.0910542333655
+ },
+ {
+  "date": "1981/01/22",
+  "wrestler": "Riki Choshu",
+  "elo": 839.5677956032937
+ },
+ {
+  "date": "1981/01/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1068.185602455649
+ },
+ {
+  "date": "1981/01/22",
+  "wrestler": "Ken Patera",
+  "elo": 1181.2908135202624
+ },
+ {
+  "date": "1981/01/24",
+  "wrestler": "The Samoan 1",
+  "elo": 892.3259321885158
+ },
+ {
+  "date": "1981/01/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1132.9712115981647
+ },
+ {
+  "date": "1981/01/25",
+  "wrestler": "The Samoan 2",
+  "elo": 1018.253447829667
+ },
+ {
+  "date": "1981/01/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1114.7177637684977
+ },
+ {
+  "date": "1981/01/25",
+  "wrestler": "The Samoan 1",
+  "elo": 839.0210953061846
+ },
+ {
+  "date": "1981/01/25",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1094.8380208968144
+ },
+ {
+  "date": "1981/01/27",
+  "wrestler": "Bad News Allen",
+  "elo": 610.0670380734185
+ },
+ {
+  "date": "1981/01/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1120.2297718484713
+ },
+ {
+  "date": "1981/01/27",
+  "wrestler": "Tom Prichard",
+  "elo": 964.0816955107196
+ },
+ {
+  "date": "1981/01/27",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1131.6366882211537
+ },
+ {
+  "date": "1981/01/28",
+  "wrestler": "Tom Prichard",
+  "elo": 874.383141207261
+ },
+ {
+  "date": "1981/01/28",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1044.8492771517292
+ },
+ {
+  "date": "1981/01/28",
+  "wrestler": "The Enforcer",
+  "elo": 862.8065925345724
+ },
+ {
+  "date": "1981/01/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1143.036101165407
+ },
+ {
+  "date": "1981/01/30",
+  "wrestler": "The Samoan 1",
+  "elo": 807.7191643421191
+ },
+ {
+  "date": "1981/01/30",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1147.2876537031864
+ },
+ {
+  "date": "1981/01/31",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1098.5192567017148
+ },
+ {
+  "date": "1981/01/31",
+  "wrestler": "Ken Patera",
+  "elo": 1225.8076579839546
+ },
+ {
+  "date": "1981/02/01",
+  "wrestler": "Tom Prichard",
+  "elo": 795.8101650303862
+ },
+ {
+  "date": "1981/02/01",
+  "wrestler": "Osamu Kido",
+  "elo": 1028.5729761768748
+ },
+ {
+  "date": "1981/02/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 931.2222622954943
+ },
+ {
+  "date": "1981/02/01",
+  "wrestler": "The Enforcer",
+  "elo": 1000.3620679435838
+ },
+ {
+  "date": "1981/02/02",
+  "wrestler": "Strong Kobayashi",
+  "elo": 973.1947463872812
+ },
+ {
+  "date": "1981/02/02",
+  "wrestler": "The Samoan 2",
+  "elo": 1069.08400877759
+ },
+ {
+  "date": "1981/02/02",
+  "wrestler": "Osamu Kido",
+  "elo": 974.5219989669856
+ },
+ {
+  "date": "1981/02/02",
+  "wrestler": "The Enforcer",
+  "elo": 1054.413045153473
+ },
+ {
+  "date": "1981/02/02",
+  "wrestler": "The Samoan 1",
+  "elo": 776.1403090032729
+ },
+ {
+  "date": "1981/02/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1114.3086843711378
+ },
+ {
+  "date": "1981/02/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1158.3990584275793
+ },
+ {
+  "date": "1981/02/02",
+  "wrestler": "Ken Patera",
+  "elo": 1220.251955621758
+ },
+ {
+  "date": "1981/02/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 950.0
+ },
+ {
+  "date": "1981/02/02",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1050.0
+ },
+ {
+  "date": "1981/02/03",
+  "wrestler": "The Enforcer",
+  "elo": 992.9331451321561
+ },
+ {
+  "date": "1981/02/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1096.1545464299147
+ },
+ {
+  "date": "1981/02/03",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1009.1505020009741
+ },
+ {
+  "date": "1981/02/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1155.1581823701636
+ },
+ {
+  "date": "1981/02/04",
+  "wrestler": "George Takano",
+  "elo": 862.2946367296537
+ },
+ {
+  "date": "1981/02/04",
+  "wrestler": "The Enforcer",
+  "elo": 1080.6385084025026
+ },
+ {
+  "date": "1981/02/04",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1033.8889798353205
+ },
+ {
+  "date": "1981/02/04",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1071.4160685955683
+ },
+ {
+  "date": "1981/02/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1134.2039495909119
+ },
+ {
+  "date": "1981/02/04",
+  "wrestler": "Bobby Duncum",
+  "elo": 1020.9542327792517
+ },
+ {
+  "date": "1981/02/04",
+  "wrestler": "Ken Patera",
+  "elo": 1178.9652161171164
+ },
+ {
+  "date": "1981/02/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1115.1469580185665
+ },
+ {
+  "date": "1981/02/06",
+  "wrestler": "Tom Prichard",
+  "elo": 743.1447849988696
+ },
+ {
+  "date": "1981/02/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1027.1873789985023
+ },
+ {
+  "date": "1981/02/06",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 999.9816212842092
+ },
+ {
+  "date": "1981/02/06",
+  "wrestler": "The Enforcer",
+  "elo": 1125.5061642700227
+ },
+ {
+  "date": "1981/02/06",
+  "wrestler": "Bad News Allen",
+  "elo": 594.0282548002798
+ },
+ {
+  "date": "1981/02/06",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1041.9083714718897
+ },
+ {
+  "date": "1981/02/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1058.8866024952601
+ },
+ {
+  "date": "1981/02/06",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1127.6764241188746
+ },
+ {
+  "date": "1981/02/07",
+  "wrestler": "The Enforcer",
+  "elo": 1113.7023935012946
+ },
+ {
+  "date": "1981/02/07",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1053.7121422406178
+ },
+ {
+  "date": "1981/02/07",
+  "wrestler": "Haruka Eigen",
+  "elo": 892.4815679016104
+ },
+ {
+  "date": "1981/02/07",
+  "wrestler": "Ken Patera",
+  "elo": 1198.3355633140582
+ },
+ {
+  "date": "1981/02/07",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1082.0862785890577
+ },
+ {
+  "date": "1981/02/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1203.9892039573963
+ },
+ {
+  "date": "1981/02/08",
+  "wrestler": "Kengo Kimura",
+  "elo": 893.9146883191586
+ },
+ {
+  "date": "1981/02/08",
+  "wrestler": "The Enforcer",
+  "elo": 1141.7450493417155
+ },
+ {
+  "date": "1981/02/08",
+  "wrestler": "Osamu Kido",
+  "elo": 976.2904533764508
+ },
+ {
+  "date": "1981/02/08",
+  "wrestler": "Bobby Duncum",
+  "elo": 1071.851158401303
+ },
+ {
+  "date": "1981/02/08",
+  "wrestler": "George Takano",
+  "elo": 729.2846045533349
+ },
+ {
+  "date": "1981/02/08",
+  "wrestler": "Tom Prichard",
+  "elo": 876.1548171751883
+ },
+ {
+  "date": "1981/02/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1203.582427714876
+ },
+ {
+  "date": "1981/02/08",
+  "wrestler": "Ken Patera",
+  "elo": 1199.1491157990984
+ },
+ {
+  "date": "1981/02/09",
+  "wrestler": "Tom Prichard",
+  "elo": 810.3589230917453
+ },
+ {
+  "date": "1981/02/09",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1065.7775153676523
+ },
+ {
+  "date": "1981/02/09",
+  "wrestler": "Haruka Eigen",
+  "elo": 722.9064464953893
+ },
+ {
+  "date": "1981/02/09",
+  "wrestler": "Bad News Allen",
+  "elo": 763.6033762065009
+ },
+ {
+  "date": "1981/02/09",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1023.49971294988
+ },
+ {
+  "date": "1981/02/09",
+  "wrestler": "Ken Patera",
+  "elo": 1229.3615450898362
+ },
+ {
+  "date": "1981/02/09",
+  "wrestler": "The Enforcer",
+  "elo": 1090.6599682413391
+ },
+ {
+  "date": "1981/02/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1185.2890306912882
+ },
+ {
+  "date": "1981/02/10",
+  "wrestler": "Osamu Kido",
+  "elo": 821.725690506865
+ },
+ {
+  "date": "1981/02/10",
+  "wrestler": "Bad News Allen",
+  "elo": 918.1681390760867
+ },
+ {
+  "date": "1981/02/10",
+  "wrestler": "The Enforcer",
+  "elo": 1009.7309780610794
+ },
+ {
+  "date": "1981/02/10",
+  "wrestler": "Riki Choshu",
+  "elo": 1001.4257759638131
+ },
+ {
+  "date": "1981/02/10",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1046.5164165349192
+ },
+ {
+  "date": "1981/02/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1220.8588927454266
+ },
+ {
+  "date": "1981/02/11",
+  "wrestler": "Junji Hirata",
+  "elo": 951.4000342482417
+ },
+ {
+  "date": "1981/02/11",
+  "wrestler": "The Enforcer",
+  "elo": 1058.3309438128376
+ },
+ {
+  "date": "1981/02/11",
+  "wrestler": "Bobby Duncum",
+  "elo": 1011.8526948595966
+ },
+ {
+  "date": "1981/02/11",
+  "wrestler": "Riki Choshu",
+  "elo": 1061.4242395055196
+ },
+ {
+  "date": "1981/02/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1221.470585651188
+ },
+ {
+  "date": "1981/02/11",
+  "wrestler": "Ken Patera",
+  "elo": 1228.7498521840748
+ },
+ {
+  "date": "1981/02/12",
+  "wrestler": "Tom Prichard",
+  "elo": 713.6293749842123
+ },
+ {
+  "date": "1981/02/12",
+  "wrestler": "Osamu Kido",
+  "elo": 918.455238614398
+ },
+ {
+  "date": "1981/02/12",
+  "wrestler": "Haruka Eigen",
+  "elo": 697.5753315929757
+ },
+ {
+  "date": "1981/02/12",
+  "wrestler": "The Enforcer",
+  "elo": 1070.9965012640446
+ },
+ {
+  "date": "1981/02/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1167.992403606881
+ },
+ {
+  "date": "1981/02/12",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1117.6964647509096
+ },
+ {
+  "date": "1981/02/12",
+  "wrestler": "Bobby Duncum",
+  "elo": 968.5803707125476
+ },
+ {
+  "date": "1981/02/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1102.158926642309
+ },
+ {
+  "date": "1981/03/06",
+  "wrestler": "Osamu Kido",
+  "elo": 888.7016357329405
+ },
+ {
+  "date": "1981/03/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1228.9089863715524
+ },
+ {
+  "date": "1981/03/06",
+  "wrestler": "George Takano",
+  "elo": 694.5082727217894
+ },
+ {
+  "date": "1981/03/06",
+  "wrestler": "Fishman",
+  "elo": 1017.3881659157728
+ },
+ {
+  "date": "1981/03/07",
+  "wrestler": "Don Muraco",
+  "elo": 978.8799799707034
+ },
+ {
+  "date": "1981/03/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1239.4689963862006
+ },
+ {
+  "date": "1981/03/09",
+  "wrestler": "Fishman",
+  "elo": 987.7991836517806
+ },
+ {
+  "date": "1981/03/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1197.5813858708732
+ },
+ {
+  "date": "1981/03/09",
+  "wrestler": "Don Muraco",
+  "elo": 1042.3969918926468
+ },
+ {
+  "date": "1981/03/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1223.5897434057147
+ },
+ {
+  "date": "1981/03/09",
+  "wrestler": "Antonio Inoki",
+  "elo": 1037.8666144082752
+ },
+ {
+  "date": "1981/03/09",
+  "wrestler": "Hulk Hogan",
+  "elo": 1064.292312234034
+ },
+ {
+  "date": "1981/03/10",
+  "wrestler": "Haruka Eigen",
+  "elo": 688.3398089483255
+ },
+ {
+  "date": "1981/03/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1225.8986240668771
+ },
+ {
+  "date": "1981/03/10",
+  "wrestler": "Killer Khan",
+  "elo": 1009.148224754838
+ },
+ {
+  "date": "1981/03/10",
+  "wrestler": "Hulk Hogan",
+  "elo": 1055.1440874791958
+ },
+ {
+  "date": "1981/03/11",
+  "wrestler": "Kengo Kimura",
+  "elo": 868.1421719166444
+ },
+ {
+  "date": "1981/03/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1232.3417531675057
+ },
+ {
+  "date": "1981/03/11",
+  "wrestler": "Anibal",
+  "elo": 975.7196419401008
+ },
+ {
+  "date": "1981/03/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1221.8617439307723
+ },
+ {
+  "date": "1981/03/13",
+  "wrestler": "Anibal",
+  "elo": 882.696736110583
+ },
+ {
+  "date": "1981/03/13",
+  "wrestler": "Gran Hamada",
+  "elo": 1046.511452914759
+ },
+ {
+  "date": "1981/03/13",
+  "wrestler": "Killer Khan",
+  "elo": 957.8319935527697
+ },
+ {
+  "date": "1981/03/13",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1051.3162312020684
+ },
+ {
+  "date": "1981/03/13",
+  "wrestler": "Don Muraco",
+  "elo": 991.7450551125528
+ },
+ {
+  "date": "1981/03/13",
+  "wrestler": "Antonio Inoki",
+  "elo": 1088.5185511883692
+ },
+ {
+  "date": "1981/03/14",
+  "wrestler": "Perro Aguayo",
+  "elo": 978.1962353647704
+ },
+ {
+  "date": "1981/03/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1232.763626248387
+ },
+ {
+  "date": "1981/03/15",
+  "wrestler": "Haruka Eigen",
+  "elo": 679.9747346609272
+ },
+ {
+  "date": "1981/03/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1234.4330217393551
+ },
+ {
+  "date": "1981/03/15",
+  "wrestler": "Fishman",
+  "elo": 948.5564316075877
+ },
+ {
+  "date": "1981/03/15",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1242.5743142594354
+ },
+ {
+  "date": "1981/03/17",
+  "wrestler": "Kengo Kimura",
+  "elo": 846.4882556696307
+ },
+ {
+  "date": "1981/03/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1239.8465008011085
+ },
+ {
+  "date": "1981/03/17",
+  "wrestler": "Fishman",
+  "elo": 917.4670402294967
+ },
+ {
+  "date": "1981/03/17",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1250.3466621039581
+ },
+ {
+  "date": "1981/03/19",
+  "wrestler": "Don Muraco",
+  "elo": 953.0687809998163
+ },
+ {
+  "date": "1981/03/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1249.5155693292927
+ },
+ {
+  "date": "1981/03/20",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 991.6252495100231
+ },
+ {
+  "date": "1981/03/20",
+  "wrestler": "Anibal",
+  "elo": 1031.0012678258413
+ },
+ {
+  "date": "1981/03/20",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 988.1783025775213
+ },
+ {
+  "date": "1981/03/20",
+  "wrestler": "Killer Khan",
+  "elo": 1084.1078508018636
+ },
+ {
+  "date": "1981/03/21",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 951.8236159654234
+ },
+ {
+  "date": "1981/03/21",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1258.6042409823172
+ },
+ {
+  "date": "1981/03/22",
+  "wrestler": "Fishman",
+  "elo": 891.8100615528955
+ },
+ {
+  "date": "1981/03/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1256.7609067731084
+ },
+ {
+  "date": "1981/03/22",
+  "wrestler": "Don Muraco",
+  "elo": 923.6807294574124
+ },
+ {
+  "date": "1981/03/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1265.951253867918
+ },
+ {
+  "date": "1981/03/23",
+  "wrestler": "Anibal",
+  "elo": 1009.5776453749263
+ },
+ {
+  "date": "1981/03/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1267.472717998566
+ },
+ {
+  "date": "1981/03/24",
+  "wrestler": "Haruka Eigen",
+  "elo": 673.3457047596622
+ },
+ {
+  "date": "1981/03/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1267.6085113432343
+ },
+ {
+  "date": "1981/03/24",
+  "wrestler": "Don Muraco",
+  "elo": 899.3961835139532
+ },
+ {
+  "date": "1981/03/24",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1273.5438544844308
+ },
+ {
+  "date": "1981/03/25",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 923.8840986772326
+ },
+ {
+  "date": "1981/03/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1274.593390665282
+ },
+ {
+  "date": "1981/03/26",
+  "wrestler": "Anibal",
+  "elo": 923.5969791132183
+ },
+ {
+  "date": "1981/03/26",
+  "wrestler": "George Takano",
+  "elo": 866.4696052452055
+ },
+ {
+  "date": "1981/03/26",
+  "wrestler": "Gran Hamada",
+  "elo": 986.804874069651
+ },
+ {
+  "date": "1981/03/26",
+  "wrestler": "Perro Aguayo",
+  "elo": 1097.6093930549866
+ },
+ {
+  "date": "1981/03/26",
+  "wrestler": "Kengo Kimura",
+  "elo": 930.721945933462
+ },
+ {
+  "date": "1981/03/26",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1252.4854319184728
+ },
+ {
+  "date": "1981/04/03",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1000.0
+ },
+ {
+  "date": "1981/04/03",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1000.0
+ },
+ {
+  "date": "1981/04/03",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 950.0
+ },
+ {
+  "date": "1981/04/03",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 1050.0
+ },
+ {
+  "date": "1981/04/03",
+  "wrestler": "Zaire Biko",
+  "elo": 958.7486987373894
+ },
+ {
+  "date": "1981/04/03",
+  "wrestler": "Riki Choshu",
+  "elo": 1102.6755407681303
+ },
+ {
+  "date": "1981/04/03",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1000.4364034082059
+ },
+ {
+  "date": "1981/04/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1255.4553144825386
+ },
+ {
+  "date": "1981/04/03",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1062.8776777606433
+ },
+ {
+  "date": "1981/04/03",
+  "wrestler": "Killer Khan",
+  "elo": 1138.92663779213
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 943.1287141970668
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Norio Honaga",
+  "elo": 1065.6919569354582
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Shunji Kosugi",
+  "elo": 831.4875273322484
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 1042.5377800029557
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Shinichi Nakano",
+  "elo": 950.0
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Akira Maeda",
+  "elo": 1050.0
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Zaire Biko",
+  "elo": 870.5662988703881
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1044.0911999335008
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "George Takano",
+  "elo": 803.1159146064855
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Dynamite Kid",
+  "elo": 1031.67684531936
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 894.0352297292903
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Canek",
+  "elo": 1048.7950098903664
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1250.780171738822
+ },
+ {
+  "date": "1981/04/04",
+  "wrestler": "Ken Patera",
+  "elo": 1230.4551123637257
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Shunji Kosugi",
+  "elo": 790.2542084792478
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Norio Honaga",
+  "elo": 1086.3086163619585
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 870.9849020736284
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 1078.6096860646749
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Zaire Biko",
+  "elo": 719.2034228145438
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Haruka Eigen",
+  "elo": 824.7085808155066
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Osamu Kido",
+  "elo": 819.6832884588197
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Rick McGraw",
+  "elo": 1034.5091736370605
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Kengo Kimura",
+  "elo": 850.5223545385145
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1040.5361991056798
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1038.0638448401019
+ },
+ {
+  "date": "1981/04/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1267.8622309428092
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 826.0803983456261
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Norio Honaga",
+  "elo": 1108.7608682259597
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Shunji Kosugi",
+  "elo": 758.2993272299443
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 1094.5871266893266
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Akira Maeda",
+  "elo": 992.8536882591618
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1057.1463117408382
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "George Takano",
+  "elo": 679.4228617635406
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Zaire Biko",
+  "elo": 842.8964756574887
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Kengo Kimura",
+  "elo": 802.1078062791297
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Canek",
+  "elo": 1073.0022840200588
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1265.1809249975574
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Ken Patera",
+  "elo": 1233.1364183089775
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1017.5707222731905
+ },
+ {
+  "date": "1981/04/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1262.2629101550665
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Norio Honaga",
+  "elo": 1042.6729330251985
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Akira Maeda",
+  "elo": 1125.0295586606842
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 1039.219721333006
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1112.5137170971589
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Rick McGraw",
+  "elo": 955.2962201581266
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Kengo Kimura",
+  "elo": 960.5337132369974
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Osamu Kido",
+  "elo": 781.9353855158449
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Canek",
+  "elo": 1091.8762354915461
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Zaire Biko",
+  "elo": 826.7266384210757
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1269.2233843066606
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Riki Choshu",
+  "elo": 1070.6150477199558
+ },
+ {
+  "date": "1981/04/07",
+  "wrestler": "Ken Patera",
+  "elo": 1249.1666648330647
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Shunji Kosugi",
+  "elo": 725.7242098918903
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Norio Honaga",
+  "elo": 1058.9604916942255
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 1001.3236341872438
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Akira Maeda",
+  "elo": 1162.9256458064465
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "George Takano",
+  "elo": 656.1585932003838
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Dynamite Kid",
+  "elo": 1043.3089796009383
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 966.33956595933
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Zaire Biko",
+  "elo": 982.2299063694172
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 845.5294449646861
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Canek",
+  "elo": 1116.1291278738481
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Rick McGraw",
+  "elo": 926.1141137248998
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1269.5584367633733
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Ken Patera",
+  "elo": 1213.3660654797802
+ },
+ {
+  "date": "1981/04/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1160.1197498949382
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 784.5969853919297
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Norio Honaga",
+  "elo": 1079.7021981710739
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 913.3818406623662
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "George Takano",
+  "elo": 832.0421802501389
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Zaire Biko",
+  "elo": 830.2186555674602
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Osamu Kido",
+  "elo": 933.9466363178019
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Haruka Eigen",
+  "elo": 805.4183301202505
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Ken Patera",
+  "elo": 1218.1886281535942
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 998.5494595070974
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1278.7340156897071
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Kengo Kimura",
+  "elo": 902.5458671166862
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Canek",
+  "elo": 1145.1230509340037
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Dynamite Kid",
+  "elo": 1021.9327841289443
+ },
+ {
+  "date": "1981/04/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1280.2465344993702
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Shunji Kosugi",
+  "elo": 702.6631881898836
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Norio Honaga",
+  "elo": 1091.2327090220772
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 764.2452530371859
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Akira Maeda",
+  "elo": 1173.1015119838185
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 850.7950101751796
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 1081.2934152435932
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 792.3468795234008
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Dynamite Kid",
+  "elo": 1048.524066849587
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Zaire Biko",
+  "elo": 790.139829761166
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Riki Choshu",
+  "elo": 1090.654460623103
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1249.4209957148848
+ },
+ {
+  "date": "1981/04/11",
+  "wrestler": "Ken Patera",
+  "elo": 1247.5016481284165
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 737.8200662077146
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Norio Honaga",
+  "elo": 1104.4453024368129
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Shunji Kosugi",
+  "elo": 690.1633109754575
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Akira Maeda",
+  "elo": 1179.3514505910314
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 734.129206393024
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 909.0126833055565
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Rick McGraw",
+  "elo": 819.3410128397358
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Kengo Kimura",
+  "elo": 1009.3189680018502
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Zaire Biko",
+  "elo": 776.8658278845002
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1252.7394961840514
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Riki Choshu",
+  "elo": 1027.8964577986865
+ },
+ {
+  "date": "1981/04/12",
+  "wrestler": "Bob Backlund",
+  "elo": 1062.7580028244165
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Shunji Kosugi",
+  "elo": 673.2954650603555
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Norio Honaga",
+  "elo": 1112.8792253943639
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Akira Maeda",
+  "elo": 1119.8496533268594
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1172.0155143613308
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "George Takano",
+  "elo": 716.293326476788
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Zaire Biko",
+  "elo": 892.6146816578512
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Rick McGraw",
+  "elo": 773.065237919041
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Riki Choshu",
+  "elo": 1051.034345259034
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Canek",
+  "elo": 1110.1333070340177
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1270.2343681340444
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Kengo Kimura",
+  "elo": 966.9493858296073
+ },
+ {
+  "date": "1981/04/13",
+  "wrestler": "Bob Backlund",
+  "elo": 1105.1275849966594
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 717.1216879328432
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Norio Honaga",
+  "elo": 1123.2284145317994
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Shunji Kosugi",
+  "elo": 662.5728993334563
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1177.3767972247804
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 680.6043744220875
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 962.537515276493
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Dynamite Kid",
+  "elo": 986.9955943900487
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Kengo Kimura",
+  "elo": 1090.0063307486837
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Zaire Biko",
+  "elo": 873.2212804606914
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1285.0948847986601
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Osamu Kido",
+  "elo": 879.5821835914048
+ },
+ {
+  "date": "1981/04/14",
+  "wrestler": "Bob Backlund",
+  "elo": 1132.309811359858
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Shunji Kosugi",
+  "elo": 567.7581204556494
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 775.4191532998944
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Norio Honaga",
+  "elo": 1052.0692916821072
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1108.6578116587145
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "George Takano",
+  "elo": 681.5148235665378
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Dynamite Kid",
+  "elo": 1021.774097300299
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Zaire Biko",
+  "elo": 828.6090284481069
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Kengo Kimura",
+  "elo": 1112.312456754976
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1268.6009477141895
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Ken Patera",
+  "elo": 1249.1350685482714
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Canek",
+  "elo": 1083.3797020529657
+ },
+ {
+  "date": "1981/04/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1298.471687289186
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Shunji Kosugi",
+  "elo": 556.1620202394894
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Norio Honaga",
+  "elo": 1057.867341790187
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Akira Maeda",
+  "elo": 1027.274023241632
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "George Takano",
+  "elo": 866.6660837369927
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 749.8083638499567
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1121.4632063836834
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Zaire Biko",
+  "elo": 721.9441041032552
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Haruka Eigen",
+  "elo": 912.0832544651022
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Osamu Kido",
+  "elo": 818.3667051359754
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Dynamite Kid",
+  "elo": 1052.3818365280138
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 895.9808637753735
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Canek",
+  "elo": 1116.6580278035256
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Kengo Kimura",
+  "elo": 1086.802918830593
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1311.2264562513776
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Stan Hansen",
+  "elo": 1021.5393124655876
+ },
+ {
+  "date": "1981/04/17",
+  "wrestler": "Antonio Inoki",
+  "elo": 1138.5804374293507
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Shunji Kosugi",
+  "elo": 545.6125069982054
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Norio Honaga",
+  "elo": 1063.142098410829
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 682.2292811727954
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "George Takano",
+  "elo": 934.245166414154
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Akira Maeda",
+  "elo": 961.2785753393616
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Haruka Eigen",
+  "elo": 1044.0741502696428
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1042.91371214824
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1053.0798522462605
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Kengo Kimura",
+  "elo": 1041.088870490585
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Canek",
+  "elo": 1162.3720761435336
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Zaire Biko",
+  "elo": 713.7006706582422
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1270.6618060754427
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Riki Choshu",
+  "elo": 1026.808907742641
+ },
+ {
+  "date": "1981/04/18",
+  "wrestler": "Ken Patera",
+  "elo": 1261.247787306468
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 607.1124739055371
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 792.2384952001015
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Norio Honaga",
+  "elo": 1029.0139294265432
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1211.5049662090662
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Akira Maeda",
+  "elo": 884.3519951180109
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1081.3770022589154
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "George Takano",
+  "elo": 778.1118139774126
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Zaire Biko",
+  "elo": 869.8340230949836
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Dynamite Kid",
+  "elo": 1000.7572201674013
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Kengo Kimura",
+  "elo": 1092.7134868511973
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Riki Choshu",
+  "elo": 1045.3847706818556
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Canek",
+  "elo": 1143.796213204319
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1230.285116134671
+ },
+ {
+  "date": "1981/04/21",
+  "wrestler": "Stan Hansen",
+  "elo": 1102.2926923471312
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 590.9098391324111
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Norio Honaga",
+  "elo": 1037.1152468131063
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Akira Maeda",
+  "elo": 857.9486514694972
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1218.1058021211945
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 754.2284102666893
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Haruka Eigen",
+  "elo": 1063.079192736349
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Zaire Biko",
+  "elo": 816.4596296443984
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Riki Choshu",
+  "elo": 1072.0719674071481
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Osamu Kido",
+  "elo": 791.7351629819682
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Canek",
+  "elo": 1157.1119842813225
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1232.5071800090643
+ },
+ {
+  "date": "1981/04/22",
+  "wrestler": "Ken Patera",
+  "elo": 1259.0257234320745
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 661.0917989568087
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "George Takano",
+  "elo": 871.2484252872931
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "Akira Maeda",
+  "elo": 814.6478528684714
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1103.0274015594282
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "Dynamite Kid",
+  "elo": 950.6482475980937
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "Tiger Mask",
+  "elo": 1050.1089725693075
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "Zaire Biko",
+  "elo": 782.5897446043887
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "Kengo Kimura",
+  "elo": 1109.6484293712022
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1268.3705133095616
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "El Canek",
+  "elo": 1085.7118858836318
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "Stan Hansen",
+  "elo": 1057.4960119846442
+ },
+ {
+  "date": "1981/04/23",
+  "wrestler": "Antonio Inoki",
+  "elo": 1183.3771177918377
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 576.6720105534523
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Norio Honaga",
+  "elo": 1044.2341611025856
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Shinichi Nakano",
+  "elo": 781.8695463913721
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 829.2222525654366
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1185.545657869803
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Kengo Kimura",
+  "elo": 1174.7687178739852
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Chris Adams",
+  "elo": 923.1676516660264
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Osamu Kido",
+  "elo": 945.3998596499154
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1038.6204000932642
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Mike Masters",
+  "elo": 1064.407001466164
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1220.74896837416
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Hulk Hogan",
+  "elo": 1078.660510749004
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Black Cat",
+  "elo": 957.161673106152
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Tiger Mask",
+  "elo": 1092.9472994631556
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 982.4170819951398
+ },
+ {
+  "date": "1981/05/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1277.1619723119916
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 760.6244778339401
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Norio Honaga",
+  "elo": 1063.9219221856156
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 529.7051403194228
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Shinichi Nakano",
+  "elo": 828.8364166254016
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Black Cat",
+  "elo": 912.7132143359663
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Kengo Kimura",
+  "elo": 1196.992947259078
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 975.5178075045931
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Osamu Kido",
+  "elo": 1071.6050448272576
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 793.2746477784276
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Tiger Mask",
+  "elo": 1110.92110185666
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Chris Adams",
+  "elo": 863.5811324978652
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Riki Choshu",
+  "elo": 1101.8652269912288
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Bobby Duncum",
+  "elo": 899.2447028771633
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Hulk Hogan",
+  "elo": 1113.3283446666962
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 934.5679264533417
+ },
+ {
+  "date": "1981/05/09",
+  "wrestler": "Antonio Inoki",
+  "elo": 1207.3016955627368
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Norio Honaga",
+  "elo": 981.3157217342391
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 958.4870486811807
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1119.7118947644599
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Osamu Kido",
+  "elo": 1137.4388079326009
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 931.8343432353372
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Kengo Kimura",
+  "elo": 1218.8346793937058
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Black Cat",
+  "elo": 864.2849837414799
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Tiger Mask",
+  "elo": 1135.135217153903
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Riki Choshu",
+  "elo": 1075.6162662877566
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Bobby Duncum",
+  "elo": 951.7426242841078
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Chris Adams",
+  "elo": 840.8920984855812
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1226.421226877231
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Hulk Hogan",
+  "elo": 1055.3618835469376
+ },
+ {
+  "date": "1981/05/10",
+  "wrestler": "Stan Hansen",
+  "elo": 1115.4624731044028
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "George Takano",
+  "elo": 855.1000753607664
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Akira Maeda",
+  "elo": 830.7962027949982
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1038.4007534262432
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Black Cat",
+  "elo": 1026.9072664179132
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Kengo Kimura",
+  "elo": 1183.400933254651
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Mike Masters",
+  "elo": 1135.2744937442737
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1062.9990294349907
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Bobby Duncum",
+  "elo": 1100.622181279328
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Chris Adams",
+  "elo": 809.8367352822506
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Tiger Mask",
+  "elo": 1150.6628987555684
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Stan Hansen",
+  "elo": 1087.186576733049
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1291.2999204976684
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Hulk Hogan",
+  "elo": 1025.9328244182998
+ },
+ {
+  "date": "1981/05/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1222.0162251270558
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Akira Maeda",
+  "elo": 784.3254470371606
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1061.636131305162
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "George Takano",
+  "elo": 776.8337370436583
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1010.1006815524453
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Black Cat",
+  "elo": 998.019680273154
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Kengo Kimura",
+  "elo": 1212.28851939941
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 908.7730321408701
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Tiger Mask",
+  "elo": 1175.5199070257238
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 979.0273631644792
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Bobby Duncum",
+  "elo": 1078.3924629237592
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Mike Masters",
+  "elo": 1070.038671786276
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Hulk Hogan",
+  "elo": 1091.1686463762976
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1191.9064740587069
+ },
+ {
+  "date": "1981/05/13",
+  "wrestler": "Stan Hansen",
+  "elo": 1156.2160823700972
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Shinichi Nakano",
+  "elo": 770.1072112032844
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Norio Honaga",
+  "elo": 1040.0449271563564
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 833.9098280709867
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Black Cat",
+  "elo": 1072.8828843430374
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Kengo Kimura",
+  "elo": 1166.775989020401
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Chris Adams",
+  "elo": 991.8868567982862
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Haruka Eigen",
+  "elo": 1001.2137414541568
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 1102.7582657288633
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Mike Masters",
+  "elo": 1017.6000378871495
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1105.518486145387
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1250.7405511053835
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1119.1825836246717
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Bobby Duncum",
+  "elo": 1047.959506613364
+ },
+ {
+  "date": "1981/05/14",
+  "wrestler": "Antonio Inoki",
+  "elo": 1237.2327032822534
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Shinichi Nakano",
+  "elo": 688.2673983051475
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 915.7496409691236
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Norio Honaga",
+  "elo": 994.7566672277504
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Black Cat",
+  "elo": 1118.1711442716435
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Akira Maeda",
+  "elo": 739.7337913857186
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Haruka Eigen",
+  "elo": 1023.5095692798777
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Mike Masters",
+  "elo": 979.6156319452681
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 1140.7426716707446
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Riki Choshu",
+  "elo": 1041.753599357409
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1225.7691409890544
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Bobby Duncum",
+  "elo": 1013.0535361294152
+ },
+ {
+  "date": "1981/05/15",
+  "wrestler": "Stan Hansen",
+  "elo": 1191.122052854046
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Shinichi Nakano",
+  "elo": 659.0167272882633
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Norio Honaga",
+  "elo": 1024.0073382446346
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Hiro Saito",
+  "elo": 921.6760023069221
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "George Takano",
+  "elo": 933.481732429814
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Osamu Kido",
+  "elo": 1005.860401770811
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Bobby Duncum",
+  "elo": 1070.1921637935948
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Haruka Eigen",
+  "elo": 983.1252473519028
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Hulk Hogan",
+  "elo": 1131.5529683042726
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Kengo Kimura",
+  "elo": 1120.27394577153
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Stan Hansen",
+  "elo": 1237.624096102917
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 1102.7403975527939
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1244.77027804803
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Chris Adams",
+  "elo": 952.7133119248076
+ },
+ {
+  "date": "1981/05/16",
+  "wrestler": "Antonio Inoki",
+  "elo": 1247.0260895006231
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 724.6187544648717
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Norio Honaga",
+  "elo": 1042.0101999291687
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Shinichi Nakano",
+  "elo": 641.0826079201863
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1070.6031909892006
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 868.2060544239647
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Black Cat",
+  "elo": 1141.942937544223
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Akira Maeda",
+  "elo": 690.3570704590725
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "George Takano",
+  "elo": 982.8584533564601
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Chris Adams",
+  "elo": 885.2941211122583
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Bobby Duncum",
+  "elo": 1103.9017591998695
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Riki Choshu",
+  "elo": 1017.2917151609785
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Stan Hansen",
+  "elo": 1249.8550382011324
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1236.9002538490267
+ },
+ {
+  "date": "1981/05/17",
+  "wrestler": "Hulk Hogan",
+  "elo": 1147.2930167022787
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Norio Honaga",
+  "elo": 968.8945698778966
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 1014.437314526509
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Akira Maeda",
+  "elo": 676.523428383589
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Black Cat",
+  "elo": 1148.8597585819648
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "George Takano",
+  "elo": 890.6833675325145
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1056.188224464418
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Kengo Kimura",
+  "elo": 1067.9195411753344
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Bobby Duncum",
+  "elo": 1156.256163796065
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 1059.1171209281015
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Hulk Hogan",
+  "elo": 1190.916293326971
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Chris Adams",
+  "elo": 863.4471641907562
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Stan Hansen",
+  "elo": 1255.316777431508
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Riki Choshu",
+  "elo": 996.250740897504
+ },
+ {
+  "date": "1981/05/18",
+  "wrestler": "Antonio Inoki",
+  "elo": 1257.5465766323605
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Norio Honaga",
+  "elo": 800.2336722835186
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Akira Maeda",
+  "elo": 845.1843259779671
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Shinichi Nakano",
+  "elo": 630.8769638777109
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Black Cat",
+  "elo": 1153.9625806032025
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 947.3445205540091
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "George Takano",
+  "elo": 1024.8689554775142
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Kengo Kimura",
+  "elo": 1034.9160291735036
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Hulk Hogan",
+  "elo": 1223.9198053288019
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 1032.6805943110162
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1250.1185171575694
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Mike Masters",
+  "elo": 926.4863551953702
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Bobby Duncum",
+  "elo": 1182.820802171014
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Antonio Inoki",
+  "elo": 1232.3861318852078
+ },
+ {
+  "date": "1981/05/20",
+  "wrestler": "Stan Hansen",
+  "elo": 1280.4772221786607
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Shinichi Nakano",
+  "elo": 603.0317692376575
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 975.1897151940625
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Akira Maeda",
+  "elo": 792.7359165882915
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "George Takano",
+  "elo": 1051.0931601723519
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1008.2735503856975
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Haruka Eigen",
+  "elo": 1107.784528558909
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1023.6458314095397
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Bobby Duncum",
+  "elo": 1215.3631952258922
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1087.2594939270946
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1266.702095954172
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Mike Masters",
+  "elo": 897.1508404293858
+ },
+ {
+  "date": "1981/05/21",
+  "wrestler": "Antonio Inoki",
+  "elo": 1239.7200105767038
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 896.6954241455528
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "George Takano",
+  "elo": 1090.3403056966067
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1028.0917049940933
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Black Cat",
+  "elo": 1134.1444259948066
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Akira Maeda",
+  "elo": 764.6943679066051
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Haruka Eigen",
+  "elo": 1121.8053028997522
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 971.0885357239921
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Osamu Kido",
+  "elo": 1058.4176974563586
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 977.4570459837287
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Riki Choshu",
+  "elo": 1106.6978375520791
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1109.118769345564
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1239.1888794483348
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1239.7644726634974
+ },
+ {
+  "date": "1981/05/22",
+  "wrestler": "Antonio Inoki",
+  "elo": 1266.6576338673783
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Norio Honaga",
+  "elo": 774.7091556789264
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Black Cat",
+  "elo": 1146.9066842971026
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 817.7861439443294
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1049.9978159252155
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Chris Adams",
+  "elo": 814.331687626329
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Osamu Kido",
+  "elo": 1082.9754357385723
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Kengo Kimura",
+  "elo": 976.7215886166296
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 1093.8459270974768
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1093.9120524598516
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Dusty Rhodes",
+  "elo": 1015.2067168857126
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Mike Masters",
+  "elo": 851.0777734363857
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Riki Choshu",
+  "elo": 1129.734371048579
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Bobby Duncum",
+  "elo": 1192.074908664634
+ },
+ {
+  "date": "1981/05/23",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1262.477166009593
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Norio Honaga",
+  "elo": 687.0445658972228
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 905.450733726033
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Shinichi Nakano",
+  "elo": 587.0978056242595
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1036.0586868007922
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Black Cat",
+  "elo": 1090.9784592263863
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1161.4467112161033
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Haruka Eigen",
+  "elo": 1081.782242894947
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Bobby Duncum",
+  "elo": 1232.097968669439
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 1066.3722145654067
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1276.2140222756282
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1225.5346325125495
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Dusty Rhodes",
+  "elo": 1043.6663971876085
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Mike Masters",
+  "elo": 811.4467959268993
+ },
+ {
+  "date": "1981/05/24",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1113.7275412145948
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Akira Maeda",
+  "elo": 730.0252240219727
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1053.3932587431084
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 854.2933801891872
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Black Cat",
+  "elo": 1116.5571359948092
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "George Takano",
+  "elo": 1039.108950484357
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Haruka Eigen",
+  "elo": 1133.013598107197
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Kengo Kimura",
+  "elo": 833.1123191176064
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Chris Adams",
+  "elo": 957.9409571253522
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Bobby Duncum",
+  "elo": 1206.6257548400288
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1251.0068463419598
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Hulk Hogan",
+  "elo": 1187.000259632329
+ },
+ {
+  "date": "1981/05/25",
+  "wrestler": "Dusty Rhodes",
+  "elo": 1117.5054885805541
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Shinichi Nakano",
+  "elo": 526.0620305914699
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Akira Maeda",
+  "elo": 791.0609990547623
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Norio Honaga",
+  "elo": 665.3970783044383
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1064.2170025395008
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 802.979794573802
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "George Takano",
+  "elo": 1064.7657432920496
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Black Cat",
+  "elo": 1057.0939645540793
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1109.4609873659454
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Mike Masters",
+  "elo": 787.9144452112931
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1173.2128865739064
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Bobby Duncum",
+  "elo": 1175.0960643614305
+ },
+ {
+  "date": "1981/05/26",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1176.7869221717913
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 765.3718671759628
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Black Cat",
+  "elo": 1075.897928252999
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1020.691578172709
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1152.986411732737
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 1018.7597929481765
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Osamu Kido",
+  "elo": 1130.5878573558025
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Mike Masters",
+  "elo": 733.2865197349124
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Chris Adams",
+  "elo": 1012.5688826017329
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Kengo Kimura",
+  "elo": 808.8133523144733
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1188.936405573358
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1221.4526083012142
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Hulk Hogan",
+  "elo": 1246.1087357138204
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1250.5265582127884
+ },
+ {
+  "date": "1981/05/27",
+  "wrestler": "Antonio Inoki",
+  "elo": 1292.3450979302181
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 672.7523488554043
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Akira Maeda",
+  "elo": 883.680517375321
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Norio Honaga",
+  "elo": 654.0054048282367
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1158.6822484708377
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "George Takano",
+  "elo": 1024.126581618929
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Osamu Kido",
+  "elo": 1171.227019028923
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Black Cat",
+  "elo": 993.5883751380186
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Kengo Kimura",
+  "elo": 973.432458544434
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 991.4629811924827
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1216.2332173290515
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Riki Choshu",
+  "elo": 1095.8825528576017
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Hulk Hogan",
+  "elo": 1263.0346448093092
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1198.539777566195
+ },
+ {
+  "date": "1981/05/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1273.4393889478076
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 649.3837662253595
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "George Takano",
+  "elo": 1035.8108729339515
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Akira Maeda",
+  "elo": 845.2249449817674
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Haruka Eigen",
+  "elo": 1152.2413843039737
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Black Cat",
+  "elo": 940.6829646027871
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Osamu Kido",
+  "elo": 1197.6797242965388
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1084.2913933079085
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Kengo Kimura",
+  "elo": 1122.2141688702925
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1080.5745323091417
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Mike Masters",
+  "elo": 918.563228264442
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Chris Adams",
+  "elo": 987.0387380654773
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1224.0699221024506
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Antonio Inoki",
+  "elo": 1261.9543680483284
+ },
+ {
+  "date": "1981/05/29",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1246.6239472109412
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 700.4537605610774
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Akira Maeda",
+  "elo": 794.1549506460495
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "George Takano",
+  "elo": 992.7428483538948
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1127.3594178879653
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Black Cat",
+  "elo": 895.0191885807799
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Haruka Eigen",
+  "elo": 1175.0732723149774
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 958.5098099018867
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1281.6776817704567
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Kengo Kimura",
+  "elo": 1071.5365767901603
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Dusty Rhodes",
+  "elo": 1168.1830806606863
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Riki Choshu",
+  "elo": 1063.5363274322517
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1240.2430348151256
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1222.8039144414136
+ },
+ {
+  "date": "1981/05/30",
+  "wrestler": "Hulk Hogan",
+  "elo": 1286.8546775788368
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Norio Honaga",
+  "elo": 567.2952350441603
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 787.1639303451537
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Shinichi Nakano",
+  "elo": 504.70270857233413
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Black Cat",
+  "elo": 916.3785105999157
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "George Takano",
+  "elo": 940.8816305872579
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Haruka Eigen",
+  "elo": 1201.0038811982959
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Mike Masters",
+  "elo": 896.5537051412255
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1287.1800625512608
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Osamu Kido",
+  "elo": 1143.444985405706
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Dusty Rhodes",
+  "elo": 1222.417819551519
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Chris Adams",
+  "elo": 946.0987231574198
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1233.038918168428
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 925.5180909648144
+ },
+ {
+  "date": "1981/05/31",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1248.4909645493938
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 689.1758362129946
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Akira Maeda",
+  "elo": 892.1430447782087
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Norio Honaga",
+  "elo": 553.5951930265832
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1027.5415991814975
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Black Cat",
+  "elo": 823.4194058283723
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "George Takano",
+  "elo": 1033.8407353588013
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1087.8017844302315
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 1220.7826979271626
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Osamu Kido",
+  "elo": 1134.494679793811
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1089.5248379210366
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Sgt. Slaughter",
+  "elo": 863.2773053019961
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Riki Choshu",
+  "elo": 1094.6567202636609
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1258.315524669043
+ },
+ {
+  "date": "1981/06/01",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1261.9034560506457
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 579.0190801663299
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Norio Honaga",
+  "elo": 699.194867325125
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Shinichi Nakano",
+  "elo": 485.28999157209194
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Akira Maeda",
+  "elo": 911.5557617784509
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1038.0497497274703
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1139.2768726237978
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Chris Adams",
+  "elo": 921.4388205327537
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Hulk Hogan",
+  "elo": 1293.0196532350033
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Mike Masters",
+  "elo": 876.7832284249458
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Stan Hansen",
+  "elo": 1285.4198413577305
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Riki Choshu",
+  "elo": 1067.0239185948633
+ },
+ {
+  "date": "1981/06/02",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1275.7198568850445
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Akira Maeda",
+  "elo": 846.4359442510769
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1070.6096584911572
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Black Cat",
+  "elo": 794.8218551247312
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1148.7934551456315
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Chris Adams",
+  "elo": 895.0221724654707
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1255.0951265662145
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Mike Masters",
+  "elo": 856.7661555614715
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1263.3197928849117
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1276.4176455841855
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Stan Hansen",
+  "elo": 1284.7220526585895
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Hulk Hogan",
+  "elo": 1257.2154414762365
+ },
+ {
+  "date": "1981/06/03",
+  "wrestler": "Bob Backlund",
+  "elo": 1203.9182348773913
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Norio Honaga",
+  "elo": 544.3844227241316
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Shinichi Nakano",
+  "elo": 640.1004361730852
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Black Cat",
+  "elo": 760.8764245075524
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1087.5823737997466
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Kengo Kimura",
+  "elo": 1046.6373281607612
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1275.7694171996113
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Riki Choshu",
+  "elo": 1041.9529414133704
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Hulk Hogan",
+  "elo": 1269.7509300669828
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1249.4868751690676
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1313.5855946954862
+ },
+ {
+  "date": "1981/06/04",
+  "wrestler": "Stan Hansen",
+  "elo": 1260.0215964265496
+ },
+ {
+  "date": "1981/06/24",
+  "wrestler": "Akira Maeda",
+  "elo": 795.6888816205359
+ },
+ {
+  "date": "1981/06/24",
+  "wrestler": "George Takano",
+  "elo": 1059.214266674072
+ },
+ {
+  "date": "1981/06/24",
+  "wrestler": "Kengo Kimura",
+  "elo": 995.9632315636434
+ },
+ {
+  "date": "1981/06/24",
+  "wrestler": "Riki Choshu",
+  "elo": 1092.6270380104881
+ },
+ {
+  "date": "1981/06/24",
+  "wrestler": "Black Cat",
+  "elo": 749.8878513125188
+ },
+ {
+  "date": "1981/06/24",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1257.8422698649729
+ },
+ {
+  "date": "1981/06/24",
+  "wrestler": "Villano III",
+  "elo": 973.309329683349
+ },
+ {
+  "date": "1981/06/24",
+  "wrestler": "Tiger Mask",
+  "elo": 1202.2105773423748
+ },
+ {
+  "date": "1981/06/24",
+  "wrestler": "Killer Khan",
+  "elo": 1069.9350508320133
+ },
+ {
+  "date": "1981/06/24",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1068.9915869601166
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Junji Hirata",
+  "elo": 887.6030948630032
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Hiroyuki Saito",
+  "elo": 752.972775598233
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Akira Maeda",
+  "elo": 748.5383879305725
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Don Arakawa",
+  "elo": 1023.5752468449816
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Haruka Eigen",
+  "elo": 1181.7376250533785
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Frank Savage",
+  "elo": 1078.0901457475684
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Kengo Kimura",
+  "elo": 897.125054637022
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Stanley Lane",
+  "elo": 1049.4190884633108
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Riki Choshu",
+  "elo": 1029.6040275019564
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "The Masked Superstar",
+  "elo": 1063.0230105085318
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Les Thornton",
+  "elo": 981.5215078677096
+ },
+ {
+  "date": "1981/07/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1267.081515931118
+ },
+ {
+  "date": "1981/07/04",
+  "wrestler": "Junji Hirata",
+  "elo": 749.9186797036614
+ },
+ {
+  "date": "1981/07/04",
+  "wrestler": "Black Cat",
+  "elo": 887.5722664718606
+ },
+ {
+  "date": "1981/07/04",
+  "wrestler": "George Takano",
+  "elo": 1007.8050005733182
+ },
+ {
+  "date": "1981/07/04",
+  "wrestler": "Stanley Lane",
+  "elo": 1100.8283545640645
+ },
+ {
+  "date": "1981/07/04",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1068.015488217188
+ },
+ {
+  "date": "1981/07/04",
+  "wrestler": "Les Thornton",
+  "elo": 1124.044276680929
+ },
+ {
+  "date": "1981/07/04",
+  "wrestler": "The Masked Superstar",
+  "elo": 1090.3113874980497
+ },
+ {
+  "date": "1981/07/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1262.1252287048524
+ },
+ {
+  "date": "1981/07/05",
+  "wrestler": "Akira Maeda",
+  "elo": 686.5479719650426
+ },
+ {
+  "date": "1981/07/05",
+  "wrestler": "Black Cat",
+  "elo": 949.5626824373905
+ },
+ {
+  "date": "1981/07/05",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1039.4877006141778
+ },
+ {
+  "date": "1981/07/05",
+  "wrestler": "Stanley Lane",
+  "elo": 1148.9230277496333
+ },
+ {
+  "date": "1981/07/05",
+  "wrestler": "Kengo Kimura",
+  "elo": 854.5021169491496
+ },
+ {
+  "date": "1981/07/05",
+  "wrestler": "Les Thornton",
+  "elo": 1145.3557455248651
+ },
+ {
+  "date": "1981/07/05",
+  "wrestler": "Bad News Allen",
+  "elo": 893.9038633926311
+ },
+ {
+  "date": "1981/07/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1268.1912976257163
+ },
+ {
+  "date": "1981/07/05",
+  "wrestler": "The Masked Superstar",
+  "elo": 1113.761299774959
+ },
+ {
+  "date": "1981/07/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1255.3565597926633
+ },
+ {
+  "date": "1981/07/07",
+  "wrestler": "George Takano",
+  "elo": 976.6268931527759
+ },
+ {
+  "date": "1981/07/07",
+  "wrestler": "Les Thornton",
+  "elo": 1176.5338529454075
+ },
+ {
+  "date": "1981/07/07",
+  "wrestler": "Frank Savage",
+  "elo": 1053.0093947886076
+ },
+ {
+  "date": "1981/07/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1280.7316731051967
+ },
+ {
+  "date": "1981/07/07",
+  "wrestler": "Riki Choshu",
+  "elo": 991.4837976205256
+ },
+ {
+  "date": "1981/07/07",
+  "wrestler": "The Masked Superstar",
+  "elo": 1151.8815296563898
+ },
+ {
+  "date": "1981/07/08",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1029.453015222414
+ },
+ {
+  "date": "1981/07/08",
+  "wrestler": "Stanley Lane",
+  "elo": 1187.4855007444073
+ },
+ {
+  "date": "1981/07/08",
+  "wrestler": "Frank Savage",
+  "elo": 977.1918976970147
+ },
+ {
+  "date": "1981/07/08",
+  "wrestler": "Kengo Kimura",
+  "elo": 1006.1371111323351
+ },
+ {
+  "date": "1981/07/08",
+  "wrestler": "Les Thornton",
+  "elo": 1137.6866607007419
+ },
+ {
+  "date": "1981/07/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1274.7801559149962
+ },
+ {
+  "date": "1981/07/08",
+  "wrestler": "The Masked Superstar",
+  "elo": 1169.6187384097645
+ },
+ {
+  "date": "1981/07/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1271.8630687285095
+ },
+ {
+  "date": "1981/07/10",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1003.2550043187688
+ },
+ {
+  "date": "1981/07/10",
+  "wrestler": "Les Thornton",
+  "elo": 1173.919356996151
+ },
+ {
+  "date": "1981/07/10",
+  "wrestler": "Frank Savage",
+  "elo": 892.1214271739805
+ },
+ {
+  "date": "1981/07/10",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1071.988250483931
+ },
+ {
+  "date": "1981/07/10",
+  "wrestler": "Stanley Lane",
+  "elo": 1149.7903647494632
+ },
+ {
+  "date": "1981/07/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1293.6277239124684
+ },
+ {
+  "date": "1981/07/10",
+  "wrestler": "The Masked Superstar",
+  "elo": 1189.227579442199
+ },
+ {
+  "date": "1981/07/10",
+  "wrestler": "Antonio Inoki",
+  "elo": 1303.7811741792689
+ },
+ {
+  "date": "1981/07/11",
+  "wrestler": "George Takano",
+  "elo": 922.7130414566651
+ },
+ {
+  "date": "1981/07/11",
+  "wrestler": "Stanley Lane",
+  "elo": 1176.7472905975185
+ },
+ {
+  "date": "1981/07/11",
+  "wrestler": "Riki Choshu",
+  "elo": 893.9344669186261
+ },
+ {
+  "date": "1981/07/11",
+  "wrestler": "Masked Superstar",
+  "elo": 1048.7746653509498
+ },
+ {
+  "date": "1981/07/11",
+  "wrestler": "Frank Savage",
+  "elo": 871.9179055338141
+ },
+ {
+  "date": "1981/07/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1276.913949138551
+ },
+ {
+  "date": "1981/07/12",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1036.623435201865
+ },
+ {
+  "date": "1981/07/12",
+  "wrestler": "Stanley Lane",
+  "elo": 1212.1121058795845
+ },
+ {
+  "date": "1981/07/12",
+  "wrestler": "Ryuma Go",
+  "elo": 973.1286645697925
+ },
+ {
+  "date": "1981/07/12",
+  "wrestler": "Les Thornton",
+  "elo": 1200.7906924263586
+ },
+ {
+  "date": "1981/07/12",
+  "wrestler": "Frank Savage",
+  "elo": 855.6988372236574
+ },
+ {
+  "date": "1981/07/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1297.6824909900074
+ },
+ {
+  "date": "1981/07/12",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 983.1184421287745
+ },
+ {
+  "date": "1981/07/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1285.3547280741639
+ },
+ {
+  "date": "1981/07/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1265.1076767090146
+ },
+ {
+  "date": "1981/07/13",
+  "wrestler": "Bad News Allen",
+  "elo": 974.8920688532276
+ },
+ {
+  "date": "1981/07/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1265.1225076412388
+ },
+ {
+  "date": "1981/07/14",
+  "wrestler": "The Masked Superstar",
+  "elo": 1254.347546139736
+ },
+ {
+  "date": "1981/07/15",
+  "wrestler": "Kengo Kimura",
+  "elo": 981.5455543963501
+ },
+ {
+  "date": "1981/07/15",
+  "wrestler": "Les Thornton",
+  "elo": 1213.0864707943513
+ },
+ {
+  "date": "1981/07/15",
+  "wrestler": "The Masked Superstar",
+  "elo": 1255.1215523256403
+ },
+ {
+  "date": "1981/07/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1264.3336705231104
+ },
+ {
+  "date": "1981/07/16",
+  "wrestler": "Frank Savage",
+  "elo": 838.393987109999
+ },
+ {
+  "date": "1981/07/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1269.4487201696534
+ },
+ {
+  "date": "1981/07/16",
+  "wrestler": "Bad News Allen",
+  "elo": 943.1046988646202
+ },
+ {
+  "date": "1981/07/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1272.2805130202623
+ },
+ {
+  "date": "1981/07/17",
+  "wrestler": "Stanley Lane",
+  "elo": 1187.1822168872748
+ },
+ {
+  "date": "1981/07/17",
+  "wrestler": "Les Thornton",
+  "elo": 1238.016359786661
+ },
+ {
+  "date": "1981/07/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1230.238116374362
+ },
+ {
+  "date": "1981/07/17",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1151.2880287123758
+ },
+ {
+  "date": "1981/07/18",
+  "wrestler": "Stanley Lane",
+  "elo": 1148.8049142880109
+ },
+ {
+  "date": "1981/07/18",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1288.6373714692854
+ },
+ {
+  "date": "1981/07/19",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1285.0204542714305
+ },
+ {
+  "date": "1981/07/19",
+  "wrestler": "Les Thornton",
+  "elo": 1241.633276984516
+ },
+ {
+  "date": "1981/07/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1207.0255683410362
+ },
+ {
+  "date": "1981/07/19",
+  "wrestler": "The Masked Superstar",
+  "elo": 1278.3341003589662
+ },
+ {
+  "date": "1981/07/20",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1002.2290624126657
+ },
+ {
+  "date": "1981/07/20",
+  "wrestler": "Stanley Lane",
+  "elo": 1183.1992870772103
+ },
+ {
+  "date": "1981/07/20",
+  "wrestler": "Frank Savage",
+  "elo": 754.2450288587539
+ },
+ {
+  "date": "1981/07/20",
+  "wrestler": "Riki Choshu",
+  "elo": 978.0834251698711
+ },
+ {
+  "date": "1981/07/20",
+  "wrestler": "Kengo Kimura",
+  "elo": 950.8726384424052
+ },
+ {
+  "date": "1981/07/20",
+  "wrestler": "The Masked Superstar",
+  "elo": 1286.0023293474524
+ },
+ {
+  "date": "1981/07/20",
+  "wrestler": "Bad News Allen",
+  "elo": 907.1903205470702
+ },
+ {
+  "date": "1981/07/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1216.0041629204236
+ },
+ {
+  "date": "1981/07/21",
+  "wrestler": "Frank Savage",
+  "elo": 741.1467152376847
+ },
+ {
+  "date": "1981/07/21",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1219.2787413256908
+ },
+ {
+  "date": "1981/07/23",
+  "wrestler": "The Masked Superstar",
+  "elo": 1285.9316779445028
+ },
+ {
+  "date": "1981/07/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1285.09110567438
+ },
+ {
+  "date": "1981/07/24",
+  "wrestler": "Frank Savage",
+  "elo": 729.1558924758872
+ },
+ {
+  "date": "1981/07/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1222.27644701614
+ },
+ {
+  "date": "1981/07/24",
+  "wrestler": "George Takano",
+  "elo": 886.2124039620911
+ },
+ {
+  "date": "1981/07/24",
+  "wrestler": "Stanley Lane",
+  "elo": 1201.4496058244974
+ },
+ {
+  "date": "1981/07/24",
+  "wrestler": "Riki Choshu",
+  "elo": 884.3831686983128
+ },
+ {
+  "date": "1981/07/24",
+  "wrestler": "Michael Nador",
+  "elo": 1046.850128235779
+ },
+ {
+  "date": "1981/07/25",
+  "wrestler": "Frank Savage",
+  "elo": 721.3244060782607
+ },
+ {
+  "date": "1981/07/25",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1287.0489772737867
+ },
+ {
+  "date": "1981/07/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1217.2383342413718
+ },
+ {
+  "date": "1981/07/25",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1161.3642542619123
+ },
+ {
+  "date": "1981/07/26",
+  "wrestler": "The Masked Superstar",
+  "elo": 1281.052211102683
+ },
+ {
+  "date": "1981/07/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1222.1178010831916
+ },
+ {
+  "date": "1981/07/28",
+  "wrestler": "Frank Savage",
+  "elo": 710.7223112657567
+ },
+ {
+  "date": "1981/07/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1224.7683247863176
+ },
+ {
+  "date": "1981/07/28",
+  "wrestler": "Michael Nador",
+  "elo": 1026.7924878579747
+ },
+ {
+  "date": "1981/07/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1297.077797462689
+ },
+ {
+  "date": "1981/07/29",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1181.6914086719858
+ },
+ {
+  "date": "1981/07/29",
+  "wrestler": "Bad News Allen",
+  "elo": 1079.4979850043978
+ },
+ {
+  "date": "1981/07/30",
+  "wrestler": "Michael Nador",
+  "elo": 997.7159532414555
+ },
+ {
+  "date": "1981/07/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1210.767943288505
+ },
+ {
+  "date": "1981/07/30",
+  "wrestler": "The Masked Superstar",
+  "elo": 1282.2045276489418
+ },
+ {
+  "date": "1981/07/30",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1295.9254809164302
+ },
+ {
+  "date": "1981/07/31",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1118.4264824539937
+ },
+ {
+  "date": "1981/07/31",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1232.2368291924643
+ },
+ {
+  "date": "1981/07/31",
+  "wrestler": "Les Thornton",
+  "elo": 1220.50842402721
+ },
+ {
+  "date": "1981/07/31",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1317.0503338737362
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Frank Savage",
+  "elo": 679.2514808351357
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1017.9644776279763
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Haruka Eigen",
+  "elo": 1145.806021580762
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "The Masked Superstar",
+  "elo": 1300.1703293852502
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Scorpio",
+  "elo": 976.2061976593357
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Tiger Mask",
+  "elo": 1214.107478512707
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Riki Choshu",
+  "elo": 816.4841016972639
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Roland Bock",
+  "elo": 1033.9495335005245
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1279.1354346742073
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1194.2562808530515
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Bad News Allen",
+  "elo": 1057.9309415567934
+ },
+ {
+  "date": "1981/08/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1314.5646959030712
+ },
+ {
+  "date": "1981/08/03",
+  "wrestler": "Black Cat",
+  "elo": 913.7540097438523
+ },
+ {
+  "date": "1981/08/03",
+  "wrestler": "Tiger Mask",
+  "elo": 1223.0596466860916
+ },
+ {
+  "date": "1981/08/03",
+  "wrestler": "Ryuma Go",
+  "elo": 804.239327872857
+ },
+ {
+  "date": "1981/08/03",
+  "wrestler": "Frank Savage",
+  "elo": 848.1408175320712
+ },
+ {
+  "date": "1981/08/03",
+  "wrestler": "The Masked Superstar",
+  "elo": 1295.3434772204112
+ },
+ {
+  "date": "1981/08/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1237.0636813573033
+ },
+ {
+  "date": "1981/08/04",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1000.668979800061
+ },
+ {
+  "date": "1981/08/04",
+  "wrestler": "Stanley Lane",
+  "elo": 1214.8859155152156
+ },
+ {
+  "date": "1981/08/04",
+  "wrestler": "Frank Savage",
+  "elo": 817.5987225829584
+ },
+ {
+  "date": "1981/08/04",
+  "wrestler": "Haruka Eigen",
+  "elo": 1161.0770690553184
+ },
+ {
+  "date": "1981/08/04",
+  "wrestler": "Riki Choshu",
+  "elo": 804.5403871642175
+ },
+ {
+  "date": "1981/08/04",
+  "wrestler": "The Masked Superstar",
+  "elo": 1298.3294058536728
+ },
+ {
+  "date": "1981/08/05",
+  "wrestler": "Ryuma Go",
+  "elo": 754.8045055507837
+ },
+ {
+  "date": "1981/08/05",
+  "wrestler": "Michael Nador",
+  "elo": 1047.1507755635287
+ },
+ {
+  "date": "1981/08/05",
+  "wrestler": "Black Cat",
+  "elo": 884.9058860101651
+ },
+ {
+  "date": "1981/08/05",
+  "wrestler": "Tiger Mask",
+  "elo": 1230.2716776195134
+ },
+ {
+  "date": "1981/08/05",
+  "wrestler": "Haruka Eigen",
+  "elo": 1129.8620907912273
+ },
+ {
+  "date": "1981/08/05",
+  "wrestler": "The Masked Superstar",
+  "elo": 1313.9368949857183
+ },
+ {
+  "date": "1981/08/05",
+  "wrestler": "Frank Savage",
+  "elo": 801.1860154187991
+ },
+ {
+  "date": "1981/08/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1241.1668581483432
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Makoto Arakawa",
+  "elo": 984.599636010753
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Black Cat",
+  "elo": 917.0445735887812
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Akira Maeda",
+  "elo": 605.9448750770771
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Ryuma Go",
+  "elo": 835.4076024387493
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "George Takano",
+  "elo": 860.7372297302294
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Les Thornton",
+  "elo": 1226.8772175851752
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Scorpio",
+  "elo": 938.5897107722187
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Tiger Mask",
+  "elo": 1239.6757993412928
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1237.8117343024091
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1200.9665285449194
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Stanley Lane",
+  "elo": 1194.4570516959382
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1299.5642984934848
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "The Masked Superstar",
+  "elo": 1288.9820688438547
+ },
+ {
+  "date": "1981/08/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1339.5195220449348
+ },
+ {
+  "date": "1981/08/21",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1225.9129161393885
+ },
+ {
+  "date": "1981/08/21",
+  "wrestler": "Bad News Allen",
+  "elo": 1081.728577882835
+ },
+ {
+  "date": "1981/08/21",
+  "wrestler": "Dick Murdoch",
+  "elo": 959.8002123622604
+ },
+ {
+  "date": "1981/08/21",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1109.1913745978563
+ },
+ {
+  "date": "1981/08/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1209.7989441218763
+ },
+ {
+  "date": "1981/08/22",
+  "wrestler": "Dick Murdoch",
+  "elo": 1024.2561004323093
+ },
+ {
+  "date": "1981/08/23",
+  "wrestler": "Pete Roberts",
+  "elo": 984.8698661220297
+ },
+ {
+  "date": "1981/08/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1307.12936543247
+ },
+ {
+  "date": "1981/08/26",
+  "wrestler": "Jim Duggan",
+  "elo": 985.420612829032
+ },
+ {
+  "date": "1981/08/26",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1314.419059017954
+ },
+ {
+  "date": "1981/08/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1188.3877923960022
+ },
+ {
+  "date": "1981/08/26",
+  "wrestler": "Stan Hansen",
+  "elo": 1281.4327481524238
+ },
+ {
+  "date": "1981/08/27",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 948.3310801461
+ },
+ {
+  "date": "1981/08/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1213.496982076501
+ },
+ {
+  "date": "1981/08/28",
+  "wrestler": "Brazo de Oro",
+  "elo": 979.8940374067727
+ },
+ {
+  "date": "1981/08/28",
+  "wrestler": "Tiger Mask",
+  "elo": 1249.7287806379063
+ },
+ {
+  "date": "1981/08/28",
+  "wrestler": "Dick Murdoch",
+  "elo": 1060.2502259370742
+ },
+ {
+  "date": "1981/08/28",
+  "wrestler": "Antonio Inoki",
+  "elo": 1321.5224592925524
+ },
+ {
+  "date": "1981/08/29",
+  "wrestler": "Brazo de Oro",
+  "elo": 944.971822866254
+ },
+ {
+  "date": "1981/08/29",
+  "wrestler": "Tiger Mask",
+  "elo": 1258.459334273036
+ },
+ {
+  "date": "1981/08/29",
+  "wrestler": "El Solitario",
+  "elo": 924.505615567363
+ },
+ {
+  "date": "1981/08/29",
+  "wrestler": "Riki Choshu",
+  "elo": 955.5291560294916
+ },
+ {
+  "date": "1981/08/29",
+  "wrestler": "Jim Duggan",
+  "elo": 919.610474793061
+ },
+ {
+  "date": "1981/08/29",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1142.0964436158417
+ },
+ {
+  "date": "1981/08/29",
+  "wrestler": "Bad News Allen",
+  "elo": 1049.8318082418102
+ },
+ {
+  "date": "1981/08/29",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1229.4453668970132
+ },
+ {
+  "date": "1981/08/29",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1028.7688998332267
+ },
+ {
+  "date": "1981/08/29",
+  "wrestler": "Dick Murdoch",
+  "elo": 1054.9810390537275
+ },
+ {
+  "date": "1981/08/31",
+  "wrestler": "Jim Duggan",
+  "elo": 890.8374820718083
+ },
+ {
+  "date": "1981/08/31",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1236.6386150773264
+ },
+ {
+  "date": "1981/09/01",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1111.1384580738556
+ },
+ {
+  "date": "1981/09/01",
+  "wrestler": "Stan Hansen",
+  "elo": 1296.9117409234168
+ },
+ {
+  "date": "1981/09/01",
+  "wrestler": "George Takano",
+  "elo": 778.8878891064459
+ },
+ {
+  "date": "1981/09/01",
+  "wrestler": "El Solitario",
+  "elo": 1006.3549561911465
+ },
+ {
+  "date": "1981/09/01",
+  "wrestler": "Jim Duggan",
+  "elo": 809.2450057987745
+ },
+ {
+  "date": "1981/09/01",
+  "wrestler": "Riki Choshu",
+  "elo": 1037.1216323025253
+ },
+ {
+  "date": "1981/09/02",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 953.7011114164544
+ },
+ {
+  "date": "1981/09/02",
+  "wrestler": "El Solitario",
+  "elo": 1055.9088490934607
+ },
+ {
+  "date": "1981/09/02",
+  "wrestler": "Jim Duggan",
+  "elo": 765.1768338568822
+ },
+ {
+  "date": "1981/09/02",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1050.8029858041727
+ },
+ {
+  "date": "1981/09/02",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 916.3687883259629
+ },
+ {
+  "date": "1981/09/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1244.6291880323608
+ },
+ {
+  "date": "1981/09/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1298.5893175572555
+ },
+ {
+  "date": "1981/09/02",
+  "wrestler": "Dick Murdoch",
+  "elo": 1086.6405219751243
+ },
+ {
+  "date": "1981/09/03",
+  "wrestler": "Haruka Eigen",
+  "elo": 1040.7786066951012
+ },
+ {
+  "date": "1981/09/03",
+  "wrestler": "Jim Duggan",
+  "elo": 943.3438020491342
+ },
+ {
+  "date": "1981/09/03",
+  "wrestler": "Bad News Allen",
+  "elo": 1025.2555985478539
+ },
+ {
+  "date": "1981/09/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1256.9172928793391
+ },
+ {
+  "date": "1981/09/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1031.2852911243228
+ },
+ {
+  "date": "1981/09/03",
+  "wrestler": "Stan Hansen",
+  "elo": 1306.6705882633416
+ },
+ {
+  "date": "1981/09/04",
+  "wrestler": "Jim Duggan",
+  "elo": 915.0968984223312
+ },
+ {
+  "date": "1981/09/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1263.97901878604
+ },
+ {
+  "date": "1981/09/04",
+  "wrestler": "Killer Khan",
+  "elo": 1060.0043490506605
+ },
+ {
+  "date": "1981/09/04",
+  "wrestler": "Andre The Giant",
+  "elo": 1009.9307017813528
+ },
+ {
+  "date": "1981/09/05",
+  "wrestler": "Jim Duggan",
+  "elo": 848.8421981475071
+ },
+ {
+  "date": "1981/09/05",
+  "wrestler": "Riki Choshu",
+  "elo": 1070.2489824399372
+ },
+ {
+  "date": "1981/09/05",
+  "wrestler": "El Solitario",
+  "elo": 1002.3711554060957
+ },
+ {
+  "date": "1981/09/05",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1084.822984811688
+ },
+ {
+  "date": "1981/09/05",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1086.6405645400735
+ },
+ {
+  "date": "1981/09/05",
+  "wrestler": "Stan Hansen",
+  "elo": 1318.9195350302327
+ },
+ {
+  "date": "1981/09/06",
+  "wrestler": "Jim Duggan",
+  "elo": 808.2819432663212
+ },
+ {
+  "date": "1981/09/06",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1106.9206919806663
+ },
+ {
+  "date": "1981/09/06",
+  "wrestler": "El Solitario",
+  "elo": 986.9920160376001
+ },
+ {
+  "date": "1981/09/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1306.2788872415033
+ },
+ {
+  "date": "1981/09/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1223.3838948898517
+ },
+ {
+  "date": "1981/09/06",
+  "wrestler": "Andre The Giant",
+  "elo": 1091.1209495737291
+ },
+ {
+  "date": "1981/09/08",
+  "wrestler": "Jim Duggan",
+  "elo": 791.4868570094125
+ },
+ {
+  "date": "1981/09/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1227.582666454079
+ },
+ {
+  "date": "1981/09/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1193.23905696133
+ },
+ {
+  "date": "1981/09/09",
+  "wrestler": "Andre The Giant",
+  "elo": 1159.8081685592267
+ },
+ {
+  "date": "1981/09/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1160.576234329878
+ },
+ {
+  "date": "1981/09/10",
+  "wrestler": "Stan Hansen",
+  "elo": 1335.250946345959
+ },
+ {
+  "date": "1981/09/11",
+  "wrestler": "Jim Duggan",
+  "elo": 781.6652812906019
+ },
+ {
+  "date": "1981/09/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1308.734281171206
+ },
+ {
+  "date": "1981/09/12",
+  "wrestler": "Jim Duggan",
+  "elo": 761.3747433322573
+ },
+ {
+  "date": "1981/09/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1170.7215033090504
+ },
+ {
+  "date": "1981/09/13",
+  "wrestler": "Bad News Allen",
+  "elo": 995.0466805867428
+ },
+ {
+  "date": "1981/09/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1200.9304212701616
+ },
+ {
+  "date": "1981/09/15",
+  "wrestler": "Jim Duggan",
+  "elo": 753.1632211995689
+ },
+ {
+  "date": "1981/09/15",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1310.7871617043781
+ },
+ {
+  "date": "1981/09/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1185.1411767081456
+ },
+ {
+  "date": "1981/09/15",
+  "wrestler": "Stan Hansen",
+  "elo": 1351.0401909079749
+ },
+ {
+  "date": "1981/09/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1131.5019108630772
+ },
+ {
+  "date": "1981/09/16",
+  "wrestler": "Andre The Giant",
+  "elo": 1213.447434404295
+ },
+ {
+  "date": "1981/09/17",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 862.6482108141503
+ },
+ {
+  "date": "1981/09/17",
+  "wrestler": "Pete Roberts",
+  "elo": 1075.922766724334
+ },
+ {
+  "date": "1981/09/17",
+  "wrestler": "El Solitario",
+  "elo": 960.142532989819
+ },
+ {
+  "date": "1981/09/17",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1317.4995324663234
+ },
+ {
+  "date": "1981/09/17",
+  "wrestler": "Brazo de Plata",
+  "elo": 981.5749567310638
+ },
+ {
+  "date": "1981/09/17",
+  "wrestler": "Tiger Mask",
+  "elo": 1267.6718559075039
+ },
+ {
+  "date": "1981/09/17",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1087.2224923320998
+ },
+ {
+  "date": "1981/09/17",
+  "wrestler": "Stan Hansen",
+  "elo": 1360.8892907322581
+ },
+ {
+  "date": "1981/09/17",
+  "wrestler": "Andre The Giant",
+  "elo": 1195.9825741688278
+ },
+ {
+  "date": "1981/09/17",
+  "wrestler": "Antonio Inoki",
+  "elo": 1338.9873195280197
+ },
+ {
+  "date": "1981/09/18",
+  "wrestler": "Stan Hansen",
+  "elo": 1359.3154014979245
+ },
+ {
+  "date": "1981/09/18",
+  "wrestler": "Antonio Inoki",
+  "elo": 1340.5612087623533
+ },
+ {
+  "date": "1981/09/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1110.27664189316
+ },
+ {
+  "date": "1981/09/19",
+  "wrestler": "Stan Hansen",
+  "elo": 1369.928035982883
+ },
+ {
+  "date": "1981/09/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1044.2761311490449
+ },
+ {
+  "date": "1981/09/20",
+  "wrestler": "Bad News Allen",
+  "elo": 1127.0477020749731
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Junji Hirata",
+  "elo": 708.7750769583654
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1025.743238756049
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 817.3316107021083
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Pete Roberts",
+  "elo": 1098.581066780355
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1029.0141709211975
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1100.0849450395353
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Solar I",
+  "elo": 982.3587248361268
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Tiger Mask",
+  "elo": 1276.4924934894404
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "El Solitario",
+  "elo": 937.4753933279716
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1323.1663173817853
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Stan Hansen",
+  "elo": 1373.8466508220554
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Andre The Giant",
+  "elo": 1203.6297680285966
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1068.3502790198343
+ },
+ {
+  "date": "1981/09/23",
+  "wrestler": "Antonio Inoki",
+  "elo": 1349.997315418486
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 496.420792821435
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Shinichi Nakano",
+  "elo": 722.6987235179802
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Akira Maeda",
+  "elo": 587.1894385671861
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Tim Tall Tree",
+  "elo": 1009.3777182549454
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Ryuma Go",
+  "elo": 779.5288205563648
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1027.9393909411922
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Isamu Teranishi",
+  "elo": 986.5331312959338
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1329.8997517338184
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Masked Hurricane",
+  "elo": 983.0843725809694
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Tiger Mask",
+  "elo": 1284.9503071989557
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1305.8804807847473
+ },
+ {
+  "date": "1981/10/08",
+  "wrestler": "Rusher Kimura",
+  "elo": 1088.2336692674778
+ },
+ {
+  "date": "1981/10/09",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 765.5450904045031
+ },
+ {
+  "date": "1981/10/09",
+  "wrestler": "Dino Bravo",
+  "elo": 1025.8932601488025
+ },
+ {
+  "date": "1981/10/09",
+  "wrestler": "Ryuma Go",
+  "elo": 750.3675134623533
+ },
+ {
+  "date": "1981/10/09",
+  "wrestler": "Dick Murdoch",
+  "elo": 1101.2211755221301
+ },
+ {
+  "date": "1981/10/09",
+  "wrestler": "Strong Kobayashi",
+  "elo": 974.8483754396434
+ },
+ {
+  "date": "1981/10/09",
+  "wrestler": "Billy Crusher",
+  "elo": 1054.1657954815541
+ },
+ {
+  "date": "1981/10/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1072.7297598868468
+ },
+ {
+  "date": "1981/10/09",
+  "wrestler": "Hulk Hogan",
+  "elo": 1283.4285226433271
+ },
+ {
+  "date": "1981/10/11",
+  "wrestler": "Bad News Allen",
+  "elo": 1103.3207906597952
+ },
+ {
+  "date": "1981/10/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1341.7632074414075
+ },
+ {
+  "date": "1981/10/12",
+  "wrestler": "Makoto Arakawa",
+  "elo": 942.7494080251428
+ },
+ {
+  "date": "1981/10/12",
+  "wrestler": "Ryuma Go",
+  "elo": 916.3551749241659
+ },
+ {
+  "date": "1981/10/12",
+  "wrestler": "Tim Tall Tree",
+  "elo": 960.613200722701
+ },
+ {
+  "date": "1981/10/12",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1066.7289951602206
+ },
+ {
+  "date": "1981/10/12",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 733.6311806426304
+ },
+ {
+  "date": "1981/10/12",
+  "wrestler": "Billy Crusher",
+  "elo": 1070.1227503624905
+ },
+ {
+  "date": "1981/10/12",
+  "wrestler": "Riki Choshu",
+  "elo": 1024.6944696728483
+ },
+ {
+  "date": "1981/10/12",
+  "wrestler": "Dick Murdoch",
+  "elo": 1146.775688289219
+ },
+ {
+  "date": "1981/10/12",
+  "wrestler": "Strong Kobayashi",
+  "elo": 945.8969990315161
+ },
+ {
+  "date": "1981/10/12",
+  "wrestler": "Hulk Hogan",
+  "elo": 1290.666366745359
+ },
+ {
+  "date": "1981/10/13",
+  "wrestler": "Junji Hirata",
+  "elo": 681.0195301796073
+ },
+ {
+  "date": "1981/10/13",
+  "wrestler": "Dino Bravo",
+  "elo": 1039.7710335381817
+ },
+ {
+  "date": "1981/10/13",
+  "wrestler": "Ryuma Go",
+  "elo": 874.4043160498002
+ },
+ {
+  "date": "1981/10/13",
+  "wrestler": "Dick Murdoch",
+  "elo": 1167.7511177264018
+ },
+ {
+  "date": "1981/10/13",
+  "wrestler": "Bad News Allen",
+  "elo": 1032.098511161184
+ },
+ {
+  "date": "1981/10/13",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1088.3415580287385
+ },
+ {
+  "date": "1981/10/13",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1166.7609346854438
+ },
+ {
+  "date": "1981/10/13",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1135.1401828791718
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Akira Maeda",
+  "elo": 570.1903065733117
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "El Signo",
+  "elo": 1008.4995659969372
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Makoto Arakawa",
+  "elo": 859.0799146248767
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Steve Travis",
+  "elo": 1041.834746700133
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Norio Honaga",
+  "elo": 527.6888610012711
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Tim Tall Tree",
+  "elo": 977.3087624455616
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1089.8195399464669
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Dick Murdoch",
+  "elo": 1213.0717606591065
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Bad News Allen",
+  "elo": 947.3099097174521
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 903.2083835300941
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1140.01192000969
+ },
+ {
+  "date": "1981/10/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1355.1377147792846
+ },
+ {
+  "date": "1981/10/16",
+  "wrestler": "El Texano",
+  "elo": 983.75765466464
+ },
+ {
+  "date": "1981/10/16",
+  "wrestler": "Tiger Mask",
+  "elo": 1293.0714798666356
+ },
+ {
+  "date": "1981/10/16",
+  "wrestler": "Steve Travis",
+  "elo": 1027.6923968129433
+ },
+ {
+  "date": "1981/10/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1362.2088897228796
+ },
+ {
+  "date": "1981/10/18",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1118.241038574001
+ },
+ {
+  "date": "1981/10/18",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1373.094330440724
+ },
+ {
+  "date": "1981/10/26",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1099.501950160149
+ },
+ {
+  "date": "1981/10/26",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1382.46387464765
+ },
+ {
+  "date": "1981/10/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1072.3545880987474
+ },
+ {
+  "date": "1981/10/27",
+  "wrestler": "Billy Crusher",
+  "elo": 1070.4979221505898
+ },
+ {
+  "date": "1981/10/28",
+  "wrestler": "Bad News Allen",
+  "elo": 881.8231665838524
+ },
+ {
+  "date": "1981/10/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1105.0979596655473
+ },
+ {
+  "date": "1981/10/29",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1371.1571372989
+ },
+ {
+  "date": "1981/10/29",
+  "wrestler": "Dick Murdoch",
+  "elo": 1224.3784980078567
+ },
+ {
+  "date": "1981/10/29",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1050.3072110311975
+ },
+ {
+  "date": "1981/10/29",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1154.2926987944986
+ },
+ {
+  "date": "1981/11/01",
+  "wrestler": "Steve Travis",
+  "elo": 995.1459250163313
+ },
+ {
+  "date": "1981/11/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1186.8391705911108
+ },
+ {
+  "date": "1981/11/01",
+  "wrestler": "Riki Choshu",
+  "elo": 978.3737767388591
+ },
+ {
+  "date": "1981/11/01",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1096.6279039651868
+ },
+ {
+  "date": "1981/11/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1170.6952576213037
+ },
+ {
+  "date": "1981/11/02",
+  "wrestler": "Billy Crusher",
+  "elo": 1086.641835120397
+ },
+ {
+  "date": "1981/11/03",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1057.1284600081224
+ },
+ {
+  "date": "1981/11/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1210.194701578368
+ },
+ {
+  "date": "1981/11/04",
+  "wrestler": "Billy Crusher",
+  "elo": 1053.7090680537553
+ },
+ {
+  "date": "1981/11/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1226.6610851116889
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Junji Hirata",
+  "elo": 628.2085299579439
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Makoto Arakawa",
+  "elo": 911.89091484654
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Akira Maeda",
+  "elo": 544.5511482379704
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 928.8475418654353
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Isamu Teranishi",
+  "elo": 876.3051078991795
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Kengo Kimura",
+  "elo": 1061.1006618391596
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Gran Hamada",
+  "elo": 957.5221797779153
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Tiger Mask",
+  "elo": 1300.3921534395695
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1015.761809883346
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1377.245927827823
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1004.632601644085
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Dino Bravo",
+  "elo": 1092.2668919022192
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Rusher Kimura",
+  "elo": 1066.013396455624
+ },
+ {
+  "date": "1981/11/05",
+  "wrestler": "Antonio Inoki",
+  "elo": 1316.9906171906741
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "George Takano",
+  "elo": 769.4209479247128
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Tiger Mask",
+  "elo": 1302.7588887350028
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Andre The Giant",
+  "elo": 1202.256521750921
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1015.0924115675641
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Canek",
+  "elo": 1155.9402047489343
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Dick Murdoch",
+  "elo": 1222.9311749932776
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Kengo Kimura",
+  "elo": 1060.2979675006495
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Killer Khan",
+  "elo": 1059.2080187971524
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Pat Patterson",
+  "elo": 999.390066043261
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Rene Goulet",
+  "elo": 999.3917617130252
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Riki Choshu",
+  "elo": 977.8249769559112
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Rusher Kimura",
+  "elo": 1065.2054951683144
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Stan Hansen",
+  "elo": 1371.8195767043603
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Super Maquina",
+  "elo": 999.4027737660367
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1375.216045558524
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "The Samoan 1",
+  "elo": 775.95000662997
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "The Samoan 2",
+  "elo": 1068.284787060131
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1067.5561831284042
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 999.4147672950521
+ },
+ {
+  "date": "1981/11/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1242.5197654662004
+ },
+ {
+  "date": "1981/11/20",
+  "wrestler": "Black Cat",
+  "elo": 897.4569992459521
+ },
+ {
+  "date": "1981/11/20",
+  "wrestler": "Tiger Mask",
+  "elo": 1307.65578232071
+ },
+ {
+  "date": "1981/11/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1227.414006588155
+ },
+ {
+  "date": "1981/11/20",
+  "wrestler": "Pat Patterson",
+  "elo": 1059.813101555443
+ },
+ {
+  "date": "1981/11/21",
+  "wrestler": "Isamu Teranishi",
+  "elo": 860.8941632299301
+ },
+ {
+  "date": "1981/11/21",
+  "wrestler": "Tiger Mask",
+  "elo": 1311.5085184880222
+ },
+ {
+  "date": "1981/11/22",
+  "wrestler": "Black Cat",
+  "elo": 880.5686507745835
+ },
+ {
+  "date": "1981/11/22",
+  "wrestler": "Tiger Mask",
+  "elo": 1315.7306056058644
+ },
+ {
+  "date": "1981/11/22",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1088.5361306121067
+ },
+ {
+  "date": "1981/11/22",
+  "wrestler": "Dick Murdoch",
+  "elo": 1212.4412012514265
+ },
+ {
+  "date": "1981/11/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1212.2451266240455
+ },
+ {
+  "date": "1981/11/22",
+  "wrestler": "Stan Hansen",
+  "elo": 1386.9884566684698
+ },
+ {
+  "date": "1981/11/23",
+  "wrestler": "George Takano",
+  "elo": 761.161704021935
+ },
+ {
+  "date": "1981/11/23",
+  "wrestler": "Tiger Mask",
+  "elo": 1317.7954165815588
+ },
+ {
+  "date": "1981/11/23",
+  "wrestler": "Riki Choshu",
+  "elo": 936.6691955521053
+ },
+ {
+  "date": "1981/11/23",
+  "wrestler": "Dick Murdoch",
+  "elo": 1222.730146602378
+ },
+ {
+  "date": "1981/11/24",
+  "wrestler": "Isamu Teranishi",
+  "elo": 847.4493667124748
+ },
+ {
+  "date": "1981/11/24",
+  "wrestler": "Tiger Mask",
+  "elo": 1321.1566157109226
+ },
+ {
+  "date": "1981/11/25",
+  "wrestler": "Black Cat",
+  "elo": 865.8972202576178
+ },
+ {
+  "date": "1981/11/25",
+  "wrestler": "Tiger Mask",
+  "elo": 1324.8244733401639
+ },
+ {
+  "date": "1981/11/25",
+  "wrestler": "The Samoan 1",
+  "elo": 769.7941624976329
+ },
+ {
+  "date": "1981/11/25",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1376.7550065916082
+ },
+ {
+  "date": "1981/11/27",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 494.73676796109464
+ },
+ {
+  "date": "1981/11/27",
+  "wrestler": "Tiger Mask",
+  "elo": 1325.245479555249
+ },
+ {
+  "date": "1981/11/28",
+  "wrestler": "Black Cat",
+  "elo": 852.6280040104211
+ },
+ {
+  "date": "1981/11/28",
+  "wrestler": "Tiger Mask",
+  "elo": 1328.5627836170481
+ },
+ {
+  "date": "1981/11/28",
+  "wrestler": "Riki Choshu",
+  "elo": 904.3580833982413
+ },
+ {
+  "date": "1981/11/28",
+  "wrestler": "Dick Murdoch",
+  "elo": 1230.807924640844
+ },
+ {
+  "date": "1981/11/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1198.8560109378498
+ },
+ {
+  "date": "1981/11/28",
+  "wrestler": "Stan Hansen",
+  "elo": 1400.3775723546655
+ },
+ {
+  "date": "1981/11/29",
+  "wrestler": "Isamu Teranishi",
+  "elo": 835.6505409826037
+ },
+ {
+  "date": "1981/11/29",
+  "wrestler": "Tiger Mask",
+  "elo": 1331.512490049516
+ },
+ {
+  "date": "1981/11/29",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1161.7693976958722
+ },
+ {
+  "date": "1981/11/29",
+  "wrestler": "Hulk Hogan",
+  "elo": 1309.2096733663477
+ },
+ {
+  "date": "1981/11/30",
+  "wrestler": "Kengo Kimura",
+  "elo": 1033.0392206806432
+ },
+ {
+  "date": "1981/11/30",
+  "wrestler": "Dick Murdoch",
+  "elo": 1244.4372980508472
+ },
+ {
+  "date": "1981/11/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1117.569731652217
+ },
+ {
+  "date": "1981/11/30",
+  "wrestler": "Andre The Giant",
+  "elo": 1224.3563547727485
+ },
+ {
+  "date": "1981/12/01",
+  "wrestler": "Akira Maeda",
+  "elo": 499.90407058069127
+ },
+ {
+  "date": "1981/12/01",
+  "wrestler": "George Takano",
+  "elo": 805.8087816792141
+ },
+ {
+  "date": "1981/12/01",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 900.8810132451033
+ },
+ {
+  "date": "1981/12/01",
+  "wrestler": "Dick Murdoch",
+  "elo": 1251.42893020593
+ },
+ {
+  "date": "1981/12/01",
+  "wrestler": "Killer Khan",
+  "elo": 1046.9037808188662
+ },
+ {
+  "date": "1981/12/01",
+  "wrestler": "Stan Hansen",
+  "elo": 1406.5296913438085
+ },
+ {
+  "date": "1981/12/01",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1057.1438720778754
+ },
+ {
+  "date": "1981/12/01",
+  "wrestler": "Andre The Giant",
+  "elo": 1240.0524840398643
+ },
+ {
+  "date": "1981/12/01",
+  "wrestler": "Hulk Hogan",
+  "elo": 1284.769463695845
+ },
+ {
+  "date": "1981/12/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1341.4308268611771
+ },
+ {
+  "date": "1981/12/02",
+  "wrestler": "George Takano",
+  "elo": 796.5574907921127
+ },
+ {
+  "date": "1981/12/02",
+  "wrestler": "Tiger Mask",
+  "elo": 1333.8253127712912
+ },
+ {
+  "date": "1981/12/02",
+  "wrestler": "Ryuma Go",
+  "elo": 853.9149447525696
+ },
+ {
+  "date": "1981/12/02",
+  "wrestler": "Dick Murdoch",
+  "elo": 1256.5512730302378
+ },
+ {
+  "date": "1981/12/03",
+  "wrestler": "Black Cat",
+  "elo": 840.8345388895456
+ },
+ {
+  "date": "1981/12/03",
+  "wrestler": "Tiger Mask",
+  "elo": 1336.77367905151
+ },
+ {
+  "date": "1981/12/03",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 995.1508206854738
+ },
+ {
+  "date": "1981/12/03",
+  "wrestler": "Dick Murdoch",
+  "elo": 1266.5220684712829
+ },
+ {
+  "date": "1981/12/04",
+  "wrestler": "George Takano",
+  "elo": 788.0159901106038
+ },
+ {
+  "date": "1981/12/04",
+  "wrestler": "Tiger Mask",
+  "elo": 1338.9090542218873
+ },
+ {
+  "date": "1981/12/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1101.6389492276392
+ },
+ {
+  "date": "1981/12/04",
+  "wrestler": "Stan Hansen",
+  "elo": 1414.4950825560973
+ },
+ {
+  "date": "1981/12/04",
+  "wrestler": "Riki Choshu",
+  "elo": 840.0188741530075
+ },
+ {
+  "date": "1981/12/04",
+  "wrestler": "Roland Bock",
+  "elo": 1066.1191381231413
+ },
+ {
+  "date": "1981/12/05",
+  "wrestler": "Black Cat",
+  "elo": 830.074201782672
+ },
+ {
+  "date": "1981/12/05",
+  "wrestler": "Tiger Mask",
+  "elo": 1341.5991384986057
+ },
+ {
+  "date": "1981/12/06",
+  "wrestler": "George Takano",
+  "elo": 780.0819826601862
+ },
+ {
+  "date": "1981/12/06",
+  "wrestler": "Tiger Mask",
+  "elo": 1343.5826403612102
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Shinichi Nakano",
+  "elo": 566.1234073410183
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Akira Maeda",
+  "elo": 656.4793867576533
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Makoto Arakawa",
+  "elo": 808.7230707409923
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1004.048857350651
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Fumihiro Niikura",
+  "elo": 517.1955818156194
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Shunji Takano",
+  "elo": 1006.2547792519017
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "George Takano",
+  "elo": 735.9736275972411
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Super Maquina",
+  "elo": 1043.5111288289818
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1073.6441836896595
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Bad News Allen",
+  "elo": 937.8126976598119
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Tiger Mask",
+  "elo": 1327.8206514690219
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "El Canek",
+  "elo": 1117.2358636680085
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Killer Khan",
+  "elo": 1022.1512272784695
+ },
+ {
+  "date": "1981/12/08",
+  "wrestler": "Andre The Giant",
+  "elo": 1252.4287608100626
+ },
+ {
+  "date": "1981/12/10",
+  "wrestler": "Bad News Allen",
+  "elo": 855.359707280466
+ },
+ {
+  "date": "1981/12/10",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1081.867757674398
+ },
+ {
+  "date": "1981/12/10",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1008.4352294458275
+ },
+ {
+  "date": "1981/12/10",
+  "wrestler": "Roland Bock",
+  "elo": 1114.8277807551892
+ },
+ {
+  "date": "1981/12/10",
+  "wrestler": "Killer Khan",
+  "elo": 998.153920585449
+ },
+ {
+  "date": "1981/12/10",
+  "wrestler": "Dusty Rhodes",
+  "elo": 1234.4164728980293
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

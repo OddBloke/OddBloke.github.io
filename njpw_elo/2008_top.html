@@ -1,0 +1,1505 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2008/01/04",
+  "wrestler": "Christopher Daniels",
+  "elo": 950.0
+ },
+ {
+  "date": "2008/01/04",
+  "wrestler": "Wataru Inoue",
+  "elo": 1050.0
+ },
+ {
+  "date": "2008/01/04",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1050.0
+ },
+ {
+  "date": "2008/01/04",
+  "wrestler": "Hirooki Goto",
+  "elo": 950.0
+ },
+ {
+  "date": "2008/01/04",
+  "wrestler": "Great Muta",
+  "elo": 1050.0
+ },
+ {
+  "date": "2008/01/04",
+  "wrestler": "Yuji Nagata",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "2008/01/04",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "2008/01/04",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "2008/01/13",
+  "wrestler": "GENTARO",
+  "elo": 1050.0
+ },
+ {
+  "date": "2008/01/25",
+  "wrestler": "Takashi Iizuka",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2008/01/27",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 957.1463117408382
+ },
+ {
+  "date": "2008/01/27",
+  "wrestler": "Wataru Inoue",
+  "elo": 1092.8536882591618
+ },
+ {
+  "date": "2008/02/02",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1039.2373668029368
+ },
+ {
+  "date": "2008/02/08",
+  "wrestler": "Togi Makabe",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "2008/02/08",
+  "wrestler": "Giant Bernard",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "2008/02/11",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1086.364436444165
+ },
+ {
+  "date": "2008/02/11",
+  "wrestler": "Hirooki Goto",
+  "elo": 1064.2926234816764
+ },
+ {
+  "date": "2008/02/14",
+  "wrestler": "Tiger Mask",
+  "elo": 1049.8520173291743
+ },
+ {
+  "date": "2008/02/14",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1118.8022332052544
+ },
+ {
+  "date": "2008/02/14",
+  "wrestler": "Giant Bernard",
+  "elo": 970.5732881859517
+ },
+ {
+  "date": "2008/02/17",
+  "wrestler": "Wataru Inoue",
+  "elo": 1023.3805762237143
+ },
+ {
+  "date": "2008/02/17",
+  "wrestler": "Christopher Daniels",
+  "elo": 1088.946224070895
+ },
+ {
+  "date": "2008/02/17",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 913.2639819406502
+ },
+ {
+  "date": "2008/02/17",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1074.0253073352042
+ },
+ {
+  "date": "2008/02/24",
+  "wrestler": "Takashi Uwano",
+  "elo": 950.0
+ },
+ {
+  "date": "2008/02/24",
+  "wrestler": "Daisuke Sekimoto",
+  "elo": 1050.0
+ },
+ {
+  "date": "2008/02/24",
+  "wrestler": "Mammoth Sasaki",
+  "elo": 1041.8493543293368
+ },
+ {
+  "date": "2008/02/29",
+  "wrestler": "Takashi Uwano",
+  "elo": 1064.2926234816764
+ },
+ {
+  "date": "2008/03/09",
+  "wrestler": "Takashi Iizuka",
+  "elo": 992.1912378462789
+ },
+ {
+  "date": "2008/03/09",
+  "wrestler": "Koji Kanemoto",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2008/03/09",
+  "wrestler": "Hirooki Goto",
+  "elo": 993.830732559669
+ },
+ {
+  "date": "2008/03/09",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1054.187763784665
+ },
+ {
+  "date": "2008/03/13",
+  "wrestler": "Takashi Iizuka",
+  "elo": 832.2985805507359
+ },
+ {
+  "date": "2008/03/13",
+  "wrestler": "Togi Makabe",
+  "elo": 911.8420426251346
+ },
+ {
+  "date": "2008/03/14",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 943.8639438691465
+ },
+ {
+  "date": "2008/03/14",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1069.4184240025454
+ },
+ {
+  "date": "2008/03/15",
+  "wrestler": "Takashi Iizuka",
+  "elo": 977.1375954263526
+ },
+ {
+  "date": "2008/03/15",
+  "wrestler": "Milano Collection AT",
+  "elo": 947.8066286525693
+ },
+ {
+  "date": "2008/03/16",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1073.2395991673372
+ },
+ {
+  "date": "2008/03/16",
+  "wrestler": "Giant Bernard",
+  "elo": 1067.4592328983374
+ },
+ {
+  "date": "2008/03/17",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 992.8536882591618
+ },
+ {
+  "date": "2008/03/17",
+  "wrestler": "Rhino",
+  "elo": 1057.1463117408382
+ },
+ {
+  "date": "2008/03/19",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1082.5617450886643
+ },
+ {
+  "date": "2008/03/19",
+  "wrestler": "Rhino",
+  "elo": 1011.7370111221952
+ },
+ {
+  "date": "2008/03/19",
+  "wrestler": "Koji Kanemoto",
+  "elo": 884.0226962689618
+ },
+ {
+  "date": "2008/03/19",
+  "wrestler": "Giant Bernard",
+  "elo": 1101.4225774286522
+ },
+ {
+  "date": "2008/03/21",
+  "wrestler": "Rhino",
+  "elo": 1041.5341013076643
+ },
+ {
+  "date": "2008/03/21",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1086.192938252942
+ },
+ {
+  "date": "2008/03/21",
+  "wrestler": "Togi Makabe",
+  "elo": 1114.1524643603282
+ },
+ {
+  "date": "2008/03/21",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1017.2279587740128
+ },
+ {
+  "date": "2008/03/21",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1106.3782290131978
+ },
+ {
+  "date": "2008/03/23",
+  "wrestler": "Togi Makabe",
+  "elo": 1063.033848645175
+ },
+ {
+  "date": "2008/03/23",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1207.3066039661387
+ },
+ {
+  "date": "2008/03/23",
+  "wrestler": "Giant Bernard",
+  "elo": 1106.3651508993023
+ },
+ {
+  "date": "2008/03/23",
+  "wrestler": "Rhino",
+  "elo": 1068.3654062904125
+ },
+ {
+  "date": "2008/03/30",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1173.1605476380128
+ },
+ {
+  "date": "2008/03/30",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1142.317419991456
+ },
+ {
+  "date": "2008/04/12",
+  "wrestler": "Hirooki Goto",
+  "elo": 1043.8929490513312
+ },
+ {
+  "date": "2008/04/13",
+  "wrestler": "Wataru Inoue",
+  "elo": 1052.3390226895328
+ },
+ {
+  "date": "2008/04/13",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1039.4899303939324
+ },
+ {
+  "date": "2008/04/13",
+  "wrestler": "Koji Kanemoto",
+  "elo": 816.2166591930131
+ },
+ {
+  "date": "2008/04/16",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1129.667974299816
+ },
+ {
+  "date": "2008/04/18",
+  "wrestler": "Giant Bernard",
+  "elo": 1125.922827390744
+ },
+ {
+  "date": "2008/04/19",
+  "wrestler": "GAINA",
+  "elo": 1040.7819225902801
+ },
+ {
+  "date": "2008/04/20",
+  "wrestler": "Hirooki Goto",
+  "elo": 1083.9623225273483
+ },
+ {
+  "date": "2008/04/22",
+  "wrestler": "AKIRA",
+  "elo": 947.4559369862669
+ },
+ {
+  "date": "2008/04/24",
+  "wrestler": "Christopher Daniels",
+  "elo": 1121.4307419574106
+ },
+ {
+  "date": "2008/04/25",
+  "wrestler": "Christopher Daniels",
+  "elo": 1143.2049472234644
+ },
+ {
+  "date": "2008/04/27",
+  "wrestler": "Christopher Daniels",
+  "elo": 1080.418498049679
+ },
+ {
+  "date": "2008/04/27",
+  "wrestler": "Wataru Inoue",
+  "elo": 1115.1254718633181
+ },
+ {
+  "date": "2008/04/27",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1079.3359539622588
+ },
+ {
+  "date": "2008/04/27",
+  "wrestler": "Great Muta",
+  "elo": 1112.9814660291972
+ },
+ {
+  "date": "2008/04/29",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1133.2572451616002
+ },
+ {
+  "date": "2008/04/29",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 995.8552956288305
+ },
+ {
+  "date": "2008/04/29",
+  "wrestler": "Hirooki Goto",
+  "elo": 1127.59695729245
+ },
+ {
+  "date": "2008/05/02",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1081.7931064991467
+ },
+ {
+  "date": "2008/05/02",
+  "wrestler": "Hirooki Goto",
+  "elo": 1139.1879530789267
+ },
+ {
+  "date": "2008/05/05",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 774.3915997675595
+ },
+ {
+  "date": "2008/05/05",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1146.0614452778204
+ },
+ {
+  "date": "2008/05/15",
+  "wrestler": "Hirooki Goto",
+  "elo": 1143.4612967027722
+ },
+ {
+  "date": "2008/05/16",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1068.1160117513148
+ },
+ {
+  "date": "2008/05/16",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1084.994449820759
+ },
+ {
+  "date": "2008/05/20",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1073.7715260382065
+ },
+ {
+  "date": "2008/05/26",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 964.4666415038279
+ },
+ {
+  "date": "2008/05/27",
+  "wrestler": "Koji Kanemoto",
+  "elo": 851.2922227166279
+ },
+ {
+  "date": "2008/05/31",
+  "wrestler": "AKIRA",
+  "elo": 862.4650798396493
+ },
+ {
+  "date": "2008/05/31",
+  "wrestler": "Tiger Mask",
+  "elo": 1074.4992138829232
+ },
+ {
+  "date": "2008/05/31",
+  "wrestler": "Wataru Inoue",
+  "elo": 1059.202106861513
+ },
+ {
+  "date": "2008/05/31",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1129.6948910400117
+ },
+ {
+  "date": "2008/06/01",
+  "wrestler": "Milano Collection AT",
+  "elo": 1005.1792611922042
+ },
+ {
+  "date": "2008/06/01",
+  "wrestler": "Wataru Inoue",
+  "elo": 1074.0271741692527
+ },
+ {
+  "date": "2008/06/01",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 904.402256057054
+ },
+ {
+  "date": "2008/06/01",
+  "wrestler": "Prince Devitt",
+  "elo": 960.5599490994738
+ },
+ {
+  "date": "2008/06/01",
+  "wrestler": "Tiger Mask",
+  "elo": 1113.9392647834493
+ },
+ {
+  "date": "2008/06/04",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1031.2435192014268
+ },
+ {
+  "date": "2008/06/04",
+  "wrestler": "Koji Kanemoto",
+  "elo": 754.5069214242939
+ },
+ {
+  "date": "2008/06/04",
+  "wrestler": "AKIRA",
+  "elo": 959.2503811319833
+ },
+ {
+  "date": "2008/06/05",
+  "wrestler": "AKIRA",
+  "elo": 808.6355841885288
+ },
+ {
+  "date": "2008/06/05",
+  "wrestler": "Wataru Inoue",
+  "elo": 1105.217997905953
+ },
+ {
+  "date": "2008/06/05",
+  "wrestler": "Koji Kanemoto",
+  "elo": 732.0787801852597
+ },
+ {
+  "date": "2008/06/05",
+  "wrestler": "Tiger Mask",
+  "elo": 1125.1533354029664
+ },
+ {
+  "date": "2008/06/06",
+  "wrestler": "Koji Kanemoto",
+  "elo": 880.6030753293508
+ },
+ {
+  "date": "2008/06/06",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1041.5093890161227
+ },
+ {
+  "date": "2008/06/06",
+  "wrestler": "Wataru Inoue",
+  "elo": 1162.2033584944936
+ },
+ {
+  "date": "2008/06/07",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1069.1347167952617
+ },
+ {
+  "date": "2008/06/07",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1070.7012835358148
+ },
+ {
+  "date": "2008/06/08",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1123.1493522341555
+ },
+ {
+  "date": "2008/06/08",
+  "wrestler": "AKIRA",
+  "elo": 780.7973143335544
+ },
+ {
+  "date": "2008/06/08",
+  "wrestler": "Tiger Mask",
+  "elo": 1139.0724703304536
+ },
+ {
+  "date": "2008/06/08",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1028.7425945621394
+ },
+ {
+  "date": "2008/06/13",
+  "wrestler": "Tiger Mask",
+  "elo": 1168.7093077177071
+ },
+ {
+  "date": "2008/06/13",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1033.5732548895978
+ },
+ {
+  "date": "2008/06/13",
+  "wrestler": "Wataru Inoue",
+  "elo": 1199.3313871407106
+ },
+ {
+  "date": "2008/06/14",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 996.1860580706534
+ },
+ {
+  "date": "2008/06/14",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1160.5365490530999
+ },
+ {
+  "date": "2008/06/15",
+  "wrestler": "Tiger Mask",
+  "elo": 1123.1048033765053
+ },
+ {
+  "date": "2008/06/15",
+  "wrestler": "Wataru Inoue",
+  "elo": 1259.8817811047636
+ },
+ {
+  "date": "2008/06/15",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1092.430123814458
+ },
+ {
+  "date": "2008/06/15",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1066.9572405550791
+ },
+ {
+  "date": "2008/06/15",
+  "wrestler": "Hirooki Goto",
+  "elo": 1093.8354811763409
+ },
+ {
+  "date": "2008/06/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1195.6872608042518
+ },
+ {
+  "date": "2008/06/22",
+  "wrestler": "Wataru Inoue",
+  "elo": 1264.1950938648654
+ },
+ {
+  "date": "2008/06/22",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1220.1686407251075
+ },
+ {
+  "date": "2008/07/05",
+  "wrestler": "AKIRA",
+  "elo": 893.0251355390225
+ },
+ {
+  "date": "2008/07/05",
+  "wrestler": "Prince Devitt",
+  "elo": 1037.9745864743943
+ },
+ {
+  "date": "2008/07/05",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1085.1379001591501
+ },
+ {
+  "date": "2008/07/06",
+  "wrestler": "Prince Devitt",
+  "elo": 1078.126162738941
+ },
+ {
+  "date": "2008/07/06",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1010.0016920557072
+ },
+ {
+  "date": "2008/07/06",
+  "wrestler": "AKIRA",
+  "elo": 1043.2975517459085
+ },
+ {
+  "date": "2008/07/06",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1098.1584385400017
+ },
+ {
+  "date": "2008/07/06",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1046.8331306414068
+ },
+ {
+  "date": "2008/07/06",
+  "wrestler": "Tiger Mask",
+  "elo": 1168.7017965495565
+ },
+ {
+  "date": "2008/07/06",
+  "wrestler": "Togi Makabe",
+  "elo": 1034.2220184061753
+ },
+ {
+  "date": "2008/07/06",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1234.5745558446074
+ },
+ {
+  "date": "2008/07/07",
+  "wrestler": "Yuji Nagata",
+  "elo": 818.9926055117742
+ },
+ {
+  "date": "2008/07/08",
+  "wrestler": "AKIRA",
+  "elo": 1010.5997458810756
+ },
+ {
+  "date": "2008/07/08",
+  "wrestler": "Tiger Mask",
+  "elo": 1217.8837544773664
+ },
+ {
+  "date": "2008/07/08",
+  "wrestler": "Prince Devitt",
+  "elo": 1045.157858612987
+ },
+ {
+  "date": "2008/07/08",
+  "wrestler": "Hirooki Goto",
+  "elo": 1010.8849867698624
+ },
+ {
+  "date": "2008/07/08",
+  "wrestler": "Yuji Nagata",
+  "elo": 984.8935943247311
+ },
+ {
+  "date": "2008/07/08",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1028.6523790630465
+ },
+ {
+  "date": "2008/07/13",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1057.8292613498152
+ },
+ {
+  "date": "2008/07/16",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1102.3226182185408
+ },
+ {
+  "date": "2008/07/17",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1039.4209823346102
+ },
+ {
+  "date": "2008/07/17",
+  "wrestler": "AKIRA",
+  "elo": 1073.501381765006
+ },
+ {
+  "date": "2008/07/19",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1049.193542660579
+ },
+ {
+  "date": "2008/07/20",
+  "wrestler": "AKIRA",
+  "elo": 1097.0249537252741
+ },
+ {
+  "date": "2008/07/20",
+  "wrestler": "Prince Devitt",
+  "elo": 990.115676656326
+ },
+ {
+  "date": "2008/07/20",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1065.0438740123682
+ },
+ {
+  "date": "2008/07/20",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1066.021630039837
+ },
+ {
+  "date": "2008/07/21",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1041.8038781695764
+ },
+ {
+  "date": "2008/07/21",
+  "wrestler": "Wataru Inoue",
+  "elo": 1276.3039697999957
+ },
+ {
+  "date": "2008/07/21",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1201.165764868112
+ },
+ {
+  "date": "2008/07/21",
+  "wrestler": "Great Muta",
+  "elo": 1179.799047982188
+ },
+ {
+  "date": "2008/07/24",
+  "wrestler": "Prince Devitt",
+  "elo": 1049.6481203788069
+ },
+ {
+  "date": "2008/08/09",
+  "wrestler": "Wataru Inoue",
+  "elo": 1244.0928145696205
+ },
+ {
+  "date": "2008/08/09",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1237.5828580987632
+ },
+ {
+  "date": "2008/08/09",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 944.984170047792
+ },
+ {
+  "date": "2008/08/09",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1155.6835653444973
+ },
+ {
+  "date": "2008/08/09",
+  "wrestler": "Shinjiro Otani",
+  "elo": 981.9287980944594
+ },
+ {
+  "date": "2008/08/09",
+  "wrestler": "Satoshi Kojima",
+  "elo": 773.4339467538562
+ },
+ {
+  "date": "2008/08/09",
+  "wrestler": "Giant Bernard",
+  "elo": 1139.205854013816
+ },
+ {
+  "date": "2008/08/09",
+  "wrestler": "Toshiaki Kawada",
+  "elo": 965.7223805134694
+ },
+ {
+  "date": "2008/08/09",
+  "wrestler": "Yuji Nagata",
+  "elo": 912.9333427029436
+ },
+ {
+  "date": "2008/08/09",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1120.9745756316527
+ },
+ {
+  "date": "2008/08/11",
+  "wrestler": "Wataru Inoue",
+  "elo": 1203.1461479195927
+ },
+ {
+  "date": "2008/08/11",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1145.7154646945698
+ },
+ {
+  "date": "2008/08/11",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1065.6549717929768
+ },
+ {
+  "date": "2008/08/11",
+  "wrestler": "Satoshi Kojima",
+  "elo": 953.4911338568972
+ },
+ {
+  "date": "2008/08/11",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 891.7087519493225
+ },
+ {
+  "date": "2008/08/11",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1147.6122846808873
+ },
+ {
+  "date": "2008/08/11",
+  "wrestler": "Hirooki Goto",
+  "elo": 954.4219264273677
+ },
+ {
+  "date": "2008/08/11",
+  "wrestler": "Toshiaki Kawada",
+  "elo": 1078.6485011984587
+ },
+ {
+  "date": "2008/08/11",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1199.4198323131202
+ },
+ {
+  "date": "2008/08/11",
+  "wrestler": "Togi Makabe",
+  "elo": 1110.548069977461
+ },
+ {
+  "date": "2008/08/13",
+  "wrestler": "Wataru Inoue",
+  "elo": 1171.6365851849148
+ },
+ {
+  "date": "2008/08/13",
+  "wrestler": "Togi Makabe",
+  "elo": 1173.5671954468166
+ },
+ {
+  "date": "2008/08/13",
+  "wrestler": "Hirooki Goto",
+  "elo": 1088.2261098370686
+ },
+ {
+  "date": "2008/08/13",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1094.7787660172894
+ },
+ {
+  "date": "2008/08/13",
+  "wrestler": "Giant Bernard",
+  "elo": 1190.1425526910964
+ },
+ {
+  "date": "2008/08/13",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 797.8100922562966
+ },
+ {
+  "date": "2008/08/13",
+  "wrestler": "Yuji Nagata",
+  "elo": 1006.8320023959695
+ },
+ {
+  "date": "2008/08/13",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1095.9214537118005
+ },
+ {
+  "date": "2008/08/13",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1131.067473956891
+ },
+ {
+  "date": "2008/08/13",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1134.007330149206
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Giant Bernard",
+  "elo": 1132.1336146781236
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1192.0162681621787
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Yuji Nagata",
+  "elo": 1080.7226705923108
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Hirooki Goto",
+  "elo": 1004.0449568465516
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 966.1723982373305
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Togi Makabe",
+  "elo": 1112.4190752789787
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1155.9268861851272
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1057.5271574281583
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1100.571766914363
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Toshiaki Kawada",
+  "elo": 1031.1322329273173
+ },
+ {
+  "date": "2008/08/14",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1143.4377219829419
+ },
+ {
+  "date": "2008/08/15",
+  "wrestler": "Wataru Inoue",
+  "elo": 1111.5498117877487
+ },
+ {
+  "date": "2008/08/15",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1160.6585403115291
+ },
+ {
+  "date": "2008/08/15",
+  "wrestler": "Toshiaki Kawada",
+  "elo": 1092.7903373963477
+ },
+ {
+  "date": "2008/08/15",
+  "wrestler": "Togi Makabe",
+  "elo": 1073.6777422612736
+ },
+ {
+  "date": "2008/08/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1230.7576011798837
+ },
+ {
+  "date": "2008/08/15",
+  "wrestler": "Yuji Nagata",
+  "elo": 1120.6521392853124
+ },
+ {
+  "date": "2008/08/15",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1018.101850712968
+ },
+ {
+  "date": "2008/08/15",
+  "wrestler": "Giant Bernard",
+  "elo": 1171.5589213933138
+ },
+ {
+  "date": "2008/08/15",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1074.388761114318
+ },
+ {
+  "date": "2008/08/15",
+  "wrestler": "Hirooki Goto",
+  "elo": 1073.0939177151754
+ },
+ {
+  "date": "2008/08/16",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1197.501378665171
+ },
+ {
+  "date": "2008/08/16",
+  "wrestler": "Wataru Inoue",
+  "elo": 1178.0622568171743
+ },
+ {
+  "date": "2008/08/16",
+  "wrestler": "Hirooki Goto",
+  "elo": 1120.0620929400675
+ },
+ {
+  "date": "2008/08/16",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1067.2297136727198
+ },
+ {
+  "date": "2008/08/16",
+  "wrestler": "Giant Bernard",
+  "elo": 1107.833893459803
+ },
+ {
+  "date": "2008/08/16",
+  "wrestler": "Togi Makabe",
+  "elo": 1137.4027701947844
+ },
+ {
+  "date": "2008/08/16",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1156.6077838559652
+ },
+ {
+  "date": "2008/08/16",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1159.977642640691
+ },
+ {
+  "date": "2008/08/16",
+  "wrestler": "Yuji Nagata",
+  "elo": 1066.6510767770326
+ },
+ {
+  "date": "2008/08/16",
+  "wrestler": "Toshiaki Kawada",
+  "elo": 1146.7913999046275
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1097.8305871187245
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1078.483529808795
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Toshiaki Kawada",
+  "elo": 1135.537583768552
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Yuji Nagata",
+  "elo": 1024.2775562544668
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Hirooki Goto",
+  "elo": 1216.4866578028439
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Giant Bernard",
+  "elo": 1067.8051343771963
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Wataru Inoue",
+  "elo": 1218.091015899781
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1087.6680301247527
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1087.0416044441806
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1106.7334215880353
+ },
+ {
+  "date": "2008/08/17",
+  "wrestler": "Togi Makabe",
+  "elo": 1136.5959469072295
+ },
+ {
+  "date": "2008/08/30",
+  "wrestler": "Kohei Sato",
+  "elo": 1027.6194251366069
+ },
+ {
+  "date": "2008/09/05",
+  "wrestler": "Milano Collection AT",
+  "elo": 1022.3838735789519
+ },
+ {
+  "date": "2008/09/08",
+  "wrestler": "Prince Devitt",
+  "elo": 999.2430196552243
+ },
+ {
+  "date": "2008/09/08",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1097.2382313649894
+ },
+ {
+  "date": "2008/09/12",
+  "wrestler": "Prince Devitt",
+  "elo": 1005.8160093775064
+ },
+ {
+  "date": "2008/09/14",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1140.0808188400765
+ },
+ {
+  "date": "2008/09/15",
+  "wrestler": "Wataru Inoue",
+  "elo": 1229.2433770643906
+ },
+ {
+  "date": "2008/09/19",
+  "wrestler": "Prince Devitt",
+  "elo": 1011.396225102928
+ },
+ {
+  "date": "2008/09/20",
+  "wrestler": "Prince Devitt",
+  "elo": 1027.6261747819794
+ },
+ {
+  "date": "2008/09/21",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1019.7950646179295
+ },
+ {
+  "date": "2008/09/21",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1143.4072479344404
+ },
+ {
+  "date": "2008/09/21",
+  "wrestler": "Milano Collection AT",
+  "elo": 1035.4932606869181
+ },
+ {
+  "date": "2008/09/21",
+  "wrestler": "Tiger Mask",
+  "elo": 1178.982108837068
+ },
+ {
+  "date": "2008/09/21",
+  "wrestler": "Low Ki",
+  "elo": 1077.803291280597
+ },
+ {
+  "date": "2008/09/21",
+  "wrestler": "Togi Makabe",
+  "elo": 1092.7815241467267
+ },
+ {
+  "date": "2008/09/21",
+  "wrestler": "Great Muta",
+  "elo": 1223.6134707426909
+ },
+ {
+  "date": "2008/09/23",
+  "wrestler": "Low Ki",
+  "elo": 1082.7295933726602
+ },
+ {
+  "date": "2008/10/02",
+  "wrestler": "Masaaki Mochizuki",
+  "elo": 1022.1309732032846
+ },
+ {
+  "date": "2008/10/02",
+  "wrestler": "Tiger Mask",
+  "elo": 1205.284629119139
+ },
+ {
+  "date": "2008/10/02",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1085.3660039181416
+ },
+ {
+  "date": "2008/10/02",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1145.0828484604795
+ },
+ {
+  "date": "2008/10/13",
+  "wrestler": "Hirooki Goto",
+  "elo": 1181.3967039715317
+ },
+ {
+  "date": "2008/10/13",
+  "wrestler": "Giant Bernard",
+  "elo": 1137.9850420398207
+ },
+ {
+  "date": "2008/10/13",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1063.8009097835509
+ },
+ {
+  "date": "2008/10/13",
+  "wrestler": "Yuji Nagata",
+  "elo": 1070.8440365304052
+ },
+ {
+  "date": "2008/10/13",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1101.8757371461313
+ },
+ {
+  "date": "2008/10/13",
+  "wrestler": "Great Muta",
+  "elo": 1242.7160115896636
+ },
+ {
+  "date": "2008/10/20",
+  "wrestler": "Rick Fuller",
+  "elo": 1019.9033163907366
+ },
+ {
+  "date": "2008/10/23",
+  "wrestler": "Wataru Inoue",
+  "elo": 1229.4312710859074
+ },
+ {
+  "date": "2008/10/25",
+  "wrestler": "Wataru Inoue",
+  "elo": 1230.6665114450188
+ },
+ {
+  "date": "2008/11/01",
+  "wrestler": "Prince Devitt",
+  "elo": 1043.4436575600173
+ },
+ {
+  "date": "2008/11/23",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1075.8397098258908
+ },
+ {
+  "date": "2008/11/24",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1081.4647871086077
+ },
+ {
+  "date": "2008/11/25",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1094.8880065988383
+ },
+ {
+  "date": "2008/11/27",
+  "wrestler": "AKIRA",
+  "elo": 1044.7871617053352
+ },
+ {
+  "date": "2008/11/27",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1133.7025791285466
+ },
+ {
+  "date": "2008/11/29",
+  "wrestler": "Milano Collection AT",
+  "elo": 1063.5931783868527
+ },
+ {
+  "date": "2008/12/01",
+  "wrestler": "Tiger Mask",
+  "elo": 1207.759081347011
+ },
+ {
+  "date": "2008/12/06",
+  "wrestler": "Wataru Inoue",
+  "elo": 1198.8650695806803
+ },
+ {
+  "date": "2008/12/06",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1197.3054628572236
+ },
+ {
+  "date": "2008/12/06",
+  "wrestler": "Giant Bernard",
+  "elo": 1089.0063564157283
+ },
+ {
+  "date": "2008/12/06",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1194.0615340845718
+ },
+ {
+  "date": "2008/12/07",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1045.1514833559056
+ },
+ {
+  "date": "2008/12/07",
+  "wrestler": "Low Ki",
+  "elo": 1134.816341381744
+ },
+ {
+  "date": "2008/12/07",
+  "wrestler": "Hirooki Goto",
+  "elo": 1118.4054508042834
+ },
+ {
+  "date": "2008/12/07",
+  "wrestler": "Giant Bernard",
+  "elo": 1151.9976095829766
+ },
+ {
+  "date": "2008/12/07",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1138.2889506409806
+ },
+ {
+  "date": "2008/12/07",
+  "wrestler": "Togi Makabe",
+  "elo": 1056.9576012469074
+ },
+ {
+  "date": "2008/12/07",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1229.885456984391
+ },
+ {
+  "date": "2008/12/20",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1093.520415607009
+ },
+ {
+  "date": "2008/12/20",
+  "wrestler": "Milano Collection AT",
+  "elo": 1062.3864497728734
+ },
+ {
+  "date": "2008/12/20",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1044.038181001263
+ },
+ {
+  "date": "2008/12/20",
+  "wrestler": "Tiger Mask",
+  "elo": 1205.8076919483551
+ },
+ {
+  "date": "2008/12/20",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1205.9254005712835
+ },
+ {
+  "date": "2008/12/20",
+  "wrestler": "Yuji Nagata",
+  "elo": 1081.2452622332862
+ },
+ {
+  "date": "2008/12/22",
+  "wrestler": "AKIRA",
+  "elo": 1062.4521089625812
+ },
+ {
+  "date": "2008/12/22",
+  "wrestler": "Tiger Mask",
+  "elo": 1205.9863496380942
+ },
+ {
+  "date": "2008/12/22",
+  "wrestler": "Hirooki Goto",
+  "elo": 1156.9542528903128
+ },
+ {
+  "date": "2008/12/22",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1142.0400664889266
+ },
+ {
+  "date": "2008/12/22",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1232.2131479693853
+ },
+ {
+  "date": "2008/12/22",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1024.3354418346444
+ },
+ {
+  "date": "2008/12/23",
+  "wrestler": "AKIRA",
+  "elo": 1032.0082413983891
+ },
+ {
+  "date": "2008/12/23",
+  "wrestler": "Tiger Mask",
+  "elo": 1221.2082834201901
+ },
+ {
+  "date": "2008/12/26",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1092.4256708244104
+ },
+ {
+  "date": "2008/12/26",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1217.6295161605153
+ },
+ {
+  "date": "2008/12/26",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1079.1942775139048
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,2980 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1975/01/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 950.0
+ },
+ {
+  "date": "1975/01/03",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1050.0
+ },
+ {
+  "date": "1975/01/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1064.2926234816764
+ },
+ {
+  "date": "1975/01/05",
+  "wrestler": "Antonio Inoki",
+  "elo": 1050.0
+ },
+ {
+  "date": "1975/01/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1105.144355434171
+ },
+ {
+  "date": "1975/01/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1092.8536882591618
+ },
+ {
+  "date": "1975/01/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1140.4584866757752
+ },
+ {
+  "date": "1975/01/07",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1042.8536882591618
+ },
+ {
+  "date": "1975/01/07",
+  "wrestler": "The Canadian Wildman",
+  "elo": 950.0
+ },
+ {
+  "date": "1975/01/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1050.0
+ },
+ {
+  "date": "1975/01/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1166.5020511815885
+ },
+ {
+  "date": "1975/01/08",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1006.1360561308536
+ },
+ {
+  "date": "1975/01/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1136.7176321283082
+ },
+ {
+  "date": "1975/01/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1094.9338863859814
+ },
+ {
+  "date": "1975/01/09",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1077.7042209264607
+ },
+ {
+  "date": "1975/01/09",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1080.763657589249
+ },
+ {
+  "date": "1975/01/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1031.6019539987467
+ },
+ {
+  "date": "1975/01/10",
+  "wrestler": "Osamu Kido",
+  "elo": 1063.3319323872347
+ },
+ {
+  "date": "1975/01/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1075.5589955884122
+ },
+ {
+  "date": "1975/01/10",
+  "wrestler": "Antonio Inoki",
+  "elo": 1062.1661372266217
+ },
+ {
+  "date": "1975/01/10",
+  "wrestler": "The Canadian Wildman",
+  "elo": 1099.102989803373
+ },
+ {
+  "date": "1975/01/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1069.1007713373797
+ },
+ {
+  "date": "1975/01/11",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1119.345755224702
+ },
+ {
+  "date": "1975/01/11",
+  "wrestler": "The Canadian Wildman",
+  "elo": 1045.7199135659037
+ },
+ {
+  "date": "1975/01/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1128.9420718258816
+ },
+ {
+  "date": "1975/01/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1009.2854506639934
+ },
+ {
+  "date": "1975/01/12",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1152.8156230956108
+ },
+ {
+  "date": "1975/01/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1098.0604675005306
+ },
+ {
+  "date": "1975/01/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1044.984498083883
+ },
+ {
+  "date": "1975/01/14",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1148.3238625642
+ },
+ {
+  "date": "1975/01/14",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1030.6303727769207
+ },
+ {
+  "date": "1975/01/14",
+  "wrestler": "Antonio Inoki",
+  "elo": 1145.1343156500707
+ },
+ {
+  "date": "1975/01/15",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 988.5466429674785
+ },
+ {
+  "date": "1975/01/15",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1056.4378551164043
+ },
+ {
+  "date": "1975/01/15",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1170.8351868201612
+ },
+ {
+  "date": "1975/01/15",
+  "wrestler": "Antonio Inoki",
+  "elo": 1081.2055133532149
+ },
+ {
+  "date": "1975/01/15",
+  "wrestler": "The Canadian Wildman",
+  "elo": 1109.6487158627594
+ },
+ {
+  "date": "1975/01/17",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 991.8419904950498
+ },
+ {
+  "date": "1975/01/17",
+  "wrestler": "Shoji Kai",
+  "elo": 998.3523262362144
+ },
+ {
+  "date": "1975/01/18",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1084.041708480217
+ },
+ {
+  "date": "1975/01/18",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1182.151208731081
+ },
+ {
+  "date": "1975/01/18",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1092.7809372599768
+ },
+ {
+  "date": "1975/01/18",
+  "wrestler": "The Canadian Wildman",
+  "elo": 1165.1916411669827
+ },
+ {
+  "date": "1975/01/19",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1031.0648569298141
+ },
+ {
+  "date": "1975/01/19",
+  "wrestler": "Osamu Kido",
+  "elo": 1116.3087839376376
+ },
+ {
+  "date": "1975/01/19",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1204.5736709127702
+ },
+ {
+  "date": "1975/01/21",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 985.1929629567446
+ },
+ {
+  "date": "1975/01/21",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1210.427429912278
+ },
+ {
+  "date": "1975/01/21",
+  "wrestler": "Antonio Inoki",
+  "elo": 1101.4071731735967
+ },
+ {
+  "date": "1975/01/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 889.4521924344675
+ },
+ {
+  "date": "1975/01/22",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1047.8703852611386
+ },
+ {
+  "date": "1975/01/22",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1214.5215122251823
+ },
+ {
+  "date": "1975/01/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1053.0533705723005
+ },
+ {
+  "date": "1975/01/22",
+  "wrestler": "The Canadian Wildman",
+  "elo": 1204.919207854659
+ },
+ {
+  "date": "1975/01/25",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 827.9885480064171
+ },
+ {
+  "date": "1975/01/25",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1061.362194990946
+ },
+ {
+  "date": "1975/01/25",
+  "wrestler": "Antonio Inoki",
+  "elo": 1118.7526547779426
+ },
+ {
+  "date": "1975/01/26",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 773.813144617836
+ },
+ {
+  "date": "1975/01/26",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1027.0877016942907
+ },
+ {
+  "date": "1975/01/26",
+  "wrestler": "The Canadian Wildman",
+  "elo": 1180.609973326225
+ },
+ {
+  "date": "1975/01/26",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1238.8307467536163
+ },
+ {
+  "date": "1975/01/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1072.142002287907
+ },
+ {
+  "date": "1975/01/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 901.4738016505617
+ },
+ {
+  "date": "1975/01/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1089.044253125378
+ },
+ {
+  "date": "1975/01/28",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1019.547038797671
+ },
+ {
+  "date": "1975/01/28",
+  "wrestler": "Antonio Inoki",
+  "elo": 1160.5678109712176
+ },
+ {
+  "date": "1975/01/29",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 982.7552791428697
+ },
+ {
+  "date": "1975/01/29",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1241.8444036888384
+ },
+ {
+  "date": "1975/01/29",
+  "wrestler": "The Canadian Wildman",
+  "elo": 1117.7294501214776
+ },
+ {
+  "date": "1975/01/29",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1151.9247763301253
+ },
+ {
+  "date": "1975/01/31",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 893.305392663456
+ },
+ {
+  "date": "1975/01/31",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1064.2719820373777
+ },
+ {
+  "date": "1975/01/31",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1244.621579729167
+ },
+ {
+  "date": "1975/01/31",
+  "wrestler": "Antonio Inoki",
+  "elo": 1180.7472195344935
+ },
+ {
+  "date": "1975/02/01",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 985.9935564338518
+ },
+ {
+  "date": "1975/02/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1189.071413820245
+ },
+ {
+  "date": "1975/02/03",
+  "wrestler": "Masashi Ozawa",
+  "elo": 971.2012035319697
+ },
+ {
+  "date": "1975/02/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1097.766552758494
+ },
+ {
+  "date": "1975/02/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1247.7462624044322
+ },
+ {
+  "date": "1975/02/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1160.3976117703025
+ },
+ {
+  "date": "1975/02/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1109.3580936985318
+ },
+ {
+  "date": "1975/02/04",
+  "wrestler": "Brute Bernard",
+  "elo": 974.8077022397437
+ },
+ {
+  "date": "1975/02/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1214.2637115805014
+ },
+ {
+  "date": "1975/02/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1120.8300983067488
+ },
+ {
+  "date": "1975/02/06",
+  "wrestler": "Brute Bernard",
+  "elo": 923.6639757592483
+ },
+ {
+  "date": "1975/02/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1185.9694750105502
+ },
+ {
+  "date": "1975/02/06",
+  "wrestler": "Benny McGuire",
+  "elo": 994.3603321690392
+ },
+ {
+  "date": "1975/02/06",
+  "wrestler": "Billy McGuire",
+  "elo": 994.5008546704615
+ },
+ {
+  "date": "1975/02/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1225.4025247410004
+ },
+ {
+  "date": "1975/02/21",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1130.4384112581504
+ },
+ {
+  "date": "1975/02/21",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 980.6299502622321
+ },
+ {
+  "date": "1975/02/21",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1257.431287273316
+ },
+ {
+  "date": "1975/02/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1078.406114721563
+ },
+ {
+  "date": "1975/02/22",
+  "wrestler": "Osamu Kido",
+  "elo": 1168.3410804742248
+ },
+ {
+  "date": "1975/02/22",
+  "wrestler": "Antonio Inoki",
+  "elo": 1236.1316489846815
+ },
+ {
+  "date": "1975/02/23",
+  "wrestler": "Masashi Ozawa",
+  "elo": 901.1139034163791
+ },
+ {
+  "date": "1975/02/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1113.4497647793582
+ },
+ {
+  "date": "1975/02/23",
+  "wrestler": "Antonio Inoki",
+  "elo": 1246.3494915952215
+ },
+ {
+  "date": "1975/02/25",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1036.2028984017986
+ },
+ {
+  "date": "1975/02/25",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1055.6076361714981
+ },
+ {
+  "date": "1975/02/25",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1033.6924472639018
+ },
+ {
+  "date": "1975/02/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1159.4382265097154
+ },
+ {
+  "date": "1975/02/26",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1012.0723509061653
+ },
+ {
+  "date": "1975/02/26",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1268.2413354521843
+ },
+ {
+  "date": "1975/02/26",
+  "wrestler": "Tony Charles",
+  "elo": 971.4593671179475
+ },
+ {
+  "date": "1975/02/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1187.9788593917679
+ },
+ {
+  "date": "1975/02/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1054.4061344557645
+ },
+ {
+  "date": "1975/02/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1114.6260073410806
+ },
+ {
+  "date": "1975/02/28",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1085.4252029568527
+ },
+ {
+  "date": "1975/03/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 996.6398392057944
+ },
+ {
+  "date": "1975/03/02",
+  "wrestler": "Peter Kaiser",
+  "elo": 1057.76629524997
+ },
+ {
+  "date": "1975/03/02",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1276.2176393996074
+ },
+ {
+  "date": "1975/03/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1145.9855405095275
+ },
+ {
+  "date": "1975/03/03",
+  "wrestler": "Makoto Arakawa",
+  "elo": 949.516449066452
+ },
+ {
+  "date": "1975/03/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1097.6069410728905
+ },
+ {
+  "date": "1975/03/03",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1110.4191511190143
+ },
+ {
+  "date": "1975/03/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1263.7206653185267
+ },
+ {
+  "date": "1975/03/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1252.8398475308268
+ },
+ {
+  "date": "1975/03/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1107.9078749309715
+ },
+ {
+  "date": "1975/03/05",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1270.6959797484515
+ },
+ {
+  "date": "1975/03/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1090.8849300867887
+ },
+ {
+  "date": "1975/03/05",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1165.519761541753
+ },
+ {
+  "date": "1975/03/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1142.8594681169902
+ },
+ {
+  "date": "1975/03/07",
+  "wrestler": "Tony Charles",
+  "elo": 941.1506235256595
+ },
+ {
+  "date": "1975/03/07",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1278.2731656465235
+ },
+ {
+  "date": "1975/03/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1114.8028415663823
+ },
+ {
+  "date": "1975/03/08",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1282.026850567924
+ },
+ {
+  "date": "1975/03/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1087.5302696494466
+ },
+ {
+  "date": "1975/03/09",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1248.944206581004
+ },
+ {
+  "date": "1975/03/09",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1231.6850495155932
+ },
+ {
+  "date": "1975/03/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1048.9546038438712
+ },
+ {
+  "date": "1975/03/10",
+  "wrestler": "Osamu Kido",
+  "elo": 1206.9167462798002
+ },
+ {
+  "date": "1975/03/11",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1252.9941784970788
+ },
+ {
+  "date": "1975/03/11",
+  "wrestler": "Osamu Kido",
+  "elo": 1195.306351108223
+ },
+ {
+  "date": "1975/03/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1106.7258948977528
+ },
+ {
+  "date": "1975/03/11",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1251.3723913558
+ },
+ {
+  "date": "1975/03/11",
+  "wrestler": "Antonio Inoki",
+  "elo": 1259.2475809448085
+ },
+ {
+  "date": "1975/03/12",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1258.6174276202598
+ },
+ {
+  "date": "1975/03/12",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1216.5266201450422
+ },
+ {
+  "date": "1975/03/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1176.4174373192684
+ },
+ {
+  "date": "1975/03/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1000.0313637698007
+ },
+ {
+  "date": "1975/03/13",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1105.3610951904748
+ },
+ {
+  "date": "1975/03/13",
+  "wrestler": "Antonio Inoki",
+  "elo": 1231.1889599931849
+ },
+ {
+  "date": "1975/03/13",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1244.5852410966659
+ },
+ {
+  "date": "1975/03/14",
+  "wrestler": "Antonio Inoki",
+  "elo": 1235.2723809373563
+ },
+ {
+  "date": "1975/03/15",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1261.850309645989
+ },
+ {
+  "date": "1975/03/15",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1214.7421600308924
+ },
+ {
+  "date": "1975/03/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1236.1035994508154
+ },
+ {
+  "date": "1975/03/16",
+  "wrestler": "Peter Kaiser",
+  "elo": 1034.1674859392601
+ },
+ {
+  "date": "1975/03/16",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1273.649714301344
+ },
+ {
+  "date": "1975/03/16",
+  "wrestler": "Antonio Inoki",
+  "elo": 1240.7600078114647
+ },
+ {
+  "date": "1975/03/18",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1276.4286317850574
+ },
+ {
+  "date": "1975/03/20",
+  "wrestler": "Masashi Ozawa",
+  "elo": 997.6770938318563
+ },
+ {
+  "date": "1975/03/20",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1057.9619061094427
+ },
+ {
+  "date": "1975/03/20",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1280.3767011258153
+ },
+ {
+  "date": "1975/03/20",
+  "wrestler": "Antonio Inoki",
+  "elo": 1238.8913648722018
+ },
+ {
+  "date": "1975/03/20",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1216.6108029701552
+ },
+ {
+  "date": "1975/04/04",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1277.2081272261348
+ },
+ {
+  "date": "1975/04/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1239.272173350496
+ },
+ {
+  "date": "1975/04/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1198.9806629637974
+ },
+ {
+  "date": "1975/04/04",
+  "wrestler": "Kintaro Oki",
+  "elo": 1079.821403816809
+ },
+ {
+  "date": "1975/04/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1071.69703547881
+ },
+ {
+  "date": "1975/04/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1249.3438290026975
+ },
+ {
+  "date": "1975/04/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1011.2030018271587
+ },
+ {
+  "date": "1975/04/06",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1118.6651611351588
+ },
+ {
+  "date": "1975/04/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1153.020863886003
+ },
+ {
+  "date": "1975/04/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1270.4865726138075
+ },
+ {
+  "date": "1975/04/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1243.5388094213781
+ },
+ {
+  "date": "1975/04/09",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1291.4015738247153
+ },
+ {
+  "date": "1975/04/09",
+  "wrestler": "Super Destroyer",
+  "elo": 980.248871653702
+ },
+ {
+  "date": "1975/04/09",
+  "wrestler": "Antonio Inoki",
+  "elo": 1253.414373594527
+ },
+ {
+  "date": "1975/04/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 959.5913187969667
+ },
+ {
+  "date": "1975/04/10",
+  "wrestler": "Sangre Fria",
+  "elo": 1051.611683030192
+ },
+ {
+  "date": "1975/04/10",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1298.5344140619343
+ },
+ {
+  "date": "1975/04/10",
+  "wrestler": "Osamu Kido",
+  "elo": 1119.3095777880073
+ },
+ {
+  "date": "1975/04/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1287.3422156628055
+ },
+ {
+  "date": "1975/04/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 998.2319194680905
+ },
+ {
+  "date": "1975/04/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1245.37016540618
+ },
+ {
+  "date": "1975/04/11",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1083.9441005132512
+ },
+ {
+  "date": "1975/04/11",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 981.134453824167
+ },
+ {
+  "date": "1975/04/11",
+  "wrestler": "Antonio Inoki",
+  "elo": 1262.8471466824435
+ },
+ {
+  "date": "1975/04/12",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1080.6111807950751
+ },
+ {
+  "date": "1975/04/12",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1310.909371259634
+ },
+ {
+  "date": "1975/04/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1269.9807989447268
+ },
+ {
+  "date": "1975/04/14",
+  "wrestler": "Osamu Kido",
+  "elo": 1105.54157877572
+ },
+ {
+  "date": "1975/04/14",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1291.5758955802144
+ },
+ {
+  "date": "1975/04/14",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1117.0455752049584
+ },
+ {
+  "date": "1975/04/14",
+  "wrestler": "Sangre Fria",
+  "elo": 1029.4631879595747
+ },
+ {
+  "date": "1975/04/14",
+  "wrestler": "Antonio Inoki",
+  "elo": 1281.0550464800353
+ },
+ {
+  "date": "1975/04/15",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1088.7098729517463
+ },
+ {
+  "date": "1975/04/15",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1023.5813896142382
+ },
+ {
+  "date": "1975/04/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1257.51466322963
+ },
+ {
+  "date": "1975/04/17",
+  "wrestler": "Masa Saito",
+  "elo": 984.2698616617903
+ },
+ {
+  "date": "1975/04/17",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1299.4409647493192
+ },
+ {
+  "date": "1975/04/18",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1043.0101352727672
+ },
+ {
+  "date": "1975/04/18",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1164.3648988141379
+ },
+ {
+  "date": "1975/04/18",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1262.402678141098
+ },
+ {
+  "date": "1975/04/18",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1191.1221484214009
+ },
+ {
+  "date": "1975/04/18",
+  "wrestler": "Super Destroyer",
+  "elo": 946.542556451665
+ },
+ {
+  "date": "1975/04/18",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1265.9412420301394
+ },
+ {
+  "date": "1975/04/18",
+  "wrestler": "Masa Saito",
+  "elo": 953.5964432527257
+ },
+ {
+  "date": "1975/04/18",
+  "wrestler": "Antonio Inoki",
+  "elo": 1288.7234010823015
+ },
+ {
+  "date": "1975/04/19",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 948.6272783325154
+ },
+ {
+  "date": "1975/04/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1274.0680359030523
+ },
+ {
+  "date": "1975/04/20",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1057.4278873435276
+ },
+ {
+  "date": "1975/04/20",
+  "wrestler": "Antonio Inoki",
+  "elo": 1300.3150478080752
+ },
+ {
+  "date": "1975/04/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1070.5058251029043
+ },
+ {
+  "date": "1975/04/22",
+  "wrestler": "Osamu Kido",
+  "elo": 1076.6974232400332
+ },
+ {
+  "date": "1975/04/22",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1276.8247559089414
+ },
+ {
+  "date": "1975/04/24",
+  "wrestler": "Sangre Fria",
+  "elo": 1010.0585288869135
+ },
+ {
+  "date": "1975/04/24",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1286.527085445272
+ },
+ {
+  "date": "1975/04/24",
+  "wrestler": "Antonio Inoki",
+  "elo": 1305.424180408327
+ },
+ {
+  "date": "1975/04/25",
+  "wrestler": "Gran Hamada",
+  "elo": 960.0095767341923
+ },
+ {
+  "date": "1975/04/25",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1110.496248368712
+ },
+ {
+  "date": "1975/04/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1261.3855478016615
+ },
+ {
+  "date": "1975/04/25",
+  "wrestler": "Kintaro Oki",
+  "elo": 1105.1863800195904
+ },
+ {
+  "date": "1975/04/25",
+  "wrestler": "Antonio Inoki",
+  "elo": 1272.4839083697175
+ },
+ {
+  "date": "1975/04/25",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1257.00269249862
+ },
+ {
+  "date": "1975/04/26",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1033.8159615292104
+ },
+ {
+  "date": "1975/04/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1273.19151070882
+ },
+ {
+  "date": "1975/04/27",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1117.939994346437
+ },
+ {
+  "date": "1975/04/27",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1233.115918867671
+ },
+ {
+  "date": "1975/04/27",
+  "wrestler": "Antonio Inoki",
+  "elo": 1296.3706820006664
+ },
+ {
+  "date": "1975/04/28",
+  "wrestler": "Gran Hamada",
+  "elo": 902.5736105540418
+ },
+ {
+  "date": "1975/04/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1146.6579774365123
+ },
+ {
+  "date": "1975/04/28",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 923.6097183156085
+ },
+ {
+  "date": "1975/04/28",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1292.7814754494987
+ },
+ {
+  "date": "1975/05/01",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1176.7224171650987
+ },
+ {
+  "date": "1975/05/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1301.060486136211
+ },
+ {
+  "date": "1975/05/02",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1116.142539111626
+ },
+ {
+  "date": "1975/05/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1224.9447768676105
+ },
+ {
+  "date": "1975/05/02",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1006.0675664517662
+ },
+ {
+  "date": "1975/05/02",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1301.5383870307346
+ },
+ {
+  "date": "1975/05/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1277.9905701035345
+ },
+ {
+  "date": "1975/05/02",
+  "wrestler": "Super Destroyer",
+  "elo": 923.5448713973624
+ },
+ {
+  "date": "1975/05/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1306.8099073997867
+ },
+ {
+  "date": "1975/05/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1226.784427493239
+ },
+ {
+  "date": "1975/05/03",
+  "wrestler": "Kintaro Oki",
+  "elo": 1080.7756769343773
+ },
+ {
+  "date": "1975/05/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1313.743738573341
+ },
+ {
+  "date": "1975/05/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1231.1613714734635
+ },
+ {
+  "date": "1975/05/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1310.4422532396106
+ },
+ {
+  "date": "1975/05/05",
+  "wrestler": "Sangre Fria",
+  "elo": 995.2304927156807
+ },
+ {
+  "date": "1975/05/05",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1321.1577566589574
+ },
+ {
+  "date": "1975/05/05",
+  "wrestler": "Masa Saito",
+  "elo": 926.8270082666979
+ },
+ {
+  "date": "1975/05/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1284.6829288500414
+ },
+ {
+  "date": "1975/05/06",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1320.3869585893253
+ },
+ {
+  "date": "1975/05/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1311.2130513092427
+ },
+ {
+  "date": "1975/05/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1232.86745449908
+ },
+ {
+  "date": "1975/05/07",
+  "wrestler": "Super Destroyer",
+  "elo": 904.1551321051764
+ },
+ {
+  "date": "1975/05/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1316.0604861322893
+ },
+ {
+  "date": "1975/05/08",
+  "wrestler": "Don Arakawa",
+  "elo": 979.2570974391356
+ },
+ {
+  "date": "1975/05/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1243.2389057795122
+ },
+ {
+  "date": "1975/05/08",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 991.692270791598
+ },
+ {
+  "date": "1975/05/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1323.2481339623735
+ },
+ {
+  "date": "1975/05/09",
+  "wrestler": "Kintaro Oki",
+  "elo": 1057.1585169230898
+ },
+ {
+  "date": "1975/05/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1296.4915088556852
+ },
+ {
+  "date": "1975/05/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1244.7744982460217
+ },
+ {
+  "date": "1975/05/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1210.9196208545206
+ },
+ {
+  "date": "1975/05/12",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1183.8522938946282
+ },
+ {
+  "date": "1975/05/13",
+  "wrestler": "Sangre Fria",
+  "elo": 968.5626450751467
+ },
+ {
+  "date": "1975/05/13",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1327.0539204994589
+ },
+ {
+  "date": "1975/05/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1220.9122516700404
+ },
+ {
+  "date": "1975/05/15",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1222.592743033211
+ },
+ {
+  "date": "1975/05/15",
+  "wrestler": "Super Destroyer",
+  "elo": 988.0377771276832
+ },
+ {
+  "date": "1975/05/15",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1306.0832592438321
+ },
+ {
+  "date": "1975/05/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1273.413005619779
+ },
+ {
+  "date": "1975/05/15",
+  "wrestler": "Antonio Inoki",
+  "elo": 1346.3266371982797
+ },
+ {
+  "date": "1975/05/16",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 888.1146677198597
+ },
+ {
+  "date": "1975/05/16",
+  "wrestler": "Don Arakawa",
+  "elo": 1082.834700510874
+ },
+ {
+  "date": "1975/05/16",
+  "wrestler": "Ivan Gomes",
+  "elo": 1010.6617157255885
+ },
+ {
+  "date": "1975/05/16",
+  "wrestler": "Sangre Fria",
+  "elo": 898.7188393060491
+ },
+ {
+  "date": "1975/05/16",
+  "wrestler": "Osamu Kido",
+  "elo": 1111.6193261245821
+ },
+ {
+  "date": "1975/05/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1259.5925560386
+ },
+ {
+  "date": "1975/05/16",
+  "wrestler": "Kintaro Oki",
+  "elo": 1084.7994160854475
+ },
+ {
+  "date": "1975/05/16",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1283.9661219059008
+ },
+ {
+  "date": "1975/05/16",
+  "wrestler": "Antonio Inoki",
+  "elo": 1384.1704417938945
+ },
+ {
+  "date": "1975/05/16",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1217.3892516099877
+ },
+ {
+  "date": "1975/05/30",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1267.1259051287911
+ },
+ {
+  "date": "1975/05/30",
+  "wrestler": "Andre The Giant",
+  "elo": 1033.6804335542195
+ },
+ {
+  "date": "1975/05/31",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1224.016458963309
+ },
+ {
+  "date": "1975/05/31",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 914.9424526334157
+ },
+ {
+  "date": "1975/05/31",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 880.8257562530617
+ },
+ {
+  "date": "1975/05/31",
+  "wrestler": "Andre The Giant",
+  "elo": 1049.6366107032102
+ },
+ {
+  "date": "1975/05/31",
+  "wrestler": "Antonio Inoki",
+  "elo": 1389.1067335657676
+ },
+ {
+  "date": "1975/06/01",
+  "wrestler": "Andre The Giant",
+  "elo": 1105.145364508412
+ },
+ {
+  "date": "1975/06/01",
+  "wrestler": "Greg Valentine",
+  "elo": 981.6728022228929
+ },
+ {
+  "date": "1975/06/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1268.7561549271534
+ },
+ {
+  "date": "1975/06/02",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1250.2274095299506
+ },
+ {
+  "date": "1975/06/02",
+  "wrestler": "Greg Valentine",
+  "elo": 1049.266784618255
+ },
+ {
+  "date": "1975/06/02",
+  "wrestler": "Professional",
+  "elo": 990.377388459696
+ },
+ {
+  "date": "1975/06/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1393.9180393359197
+ },
+ {
+  "date": "1975/06/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1277.1279058432149
+ },
+ {
+  "date": "1975/06/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1215.3551721180272
+ },
+ {
+  "date": "1975/06/03",
+  "wrestler": "Andre The Giant",
+  "elo": 1174.8898393322588
+ },
+ {
+  "date": "1975/06/04",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1176.1049144210008
+ },
+ {
+  "date": "1975/06/04",
+  "wrestler": "Professional",
+  "elo": 1147.3784192478022
+ },
+ {
+  "date": "1975/06/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1269.9765207879054
+ },
+ {
+  "date": "1975/06/05",
+  "wrestler": "Andre The Giant",
+  "elo": 1189.192609442878
+ },
+ {
+  "date": "1975/06/06",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 877.3298530044111
+ },
+ {
+  "date": "1975/06/06",
+  "wrestler": "Andre The Giant",
+  "elo": 1199.9063797441092
+ },
+ {
+  "date": "1975/06/06",
+  "wrestler": "The Professional",
+  "elo": 973.3751704081787
+ },
+ {
+  "date": "1975/06/06",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1202.729744012822
+ },
+ {
+  "date": "1975/06/07",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 910.8821329435369
+ },
+ {
+  "date": "1975/06/07",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1026.991019578376
+ },
+ {
+  "date": "1975/06/07",
+  "wrestler": "Andre The Giant",
+  "elo": 1210.7916413848225
+ },
+ {
+  "date": "1975/06/07",
+  "wrestler": "Greg Valentine",
+  "elo": 1037.177180031316
+ },
+ {
+  "date": "1975/06/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1399.9628416293892
+ },
+ {
+  "date": "1975/06/09",
+  "wrestler": "Greg Valentine",
+  "elo": 1016.4278306147615
+ },
+ {
+  "date": "1975/06/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1280.3511954961828
+ },
+ {
+  "date": "1975/06/09",
+  "wrestler": "The Professional",
+  "elo": 957.5696958487504
+ },
+ {
+  "date": "1975/06/09",
+  "wrestler": "Antonio Inoki",
+  "elo": 1403.9142102692463
+ },
+ {
+  "date": "1975/06/10",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 874.1320879997498
+ },
+ {
+  "date": "1975/06/10",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1172.4338524495136
+ },
+ {
+  "date": "1975/06/10",
+  "wrestler": "Andre The Giant",
+  "elo": 1225.4078478345984
+ },
+ {
+  "date": "1975/06/10",
+  "wrestler": "Masked Gladiator",
+  "elo": 991.0935973116241
+ },
+ {
+  "date": "1975/06/10",
+  "wrestler": "Antonio Inoki",
+  "elo": 1408.3674116134343
+ },
+ {
+  "date": "1975/06/12",
+  "wrestler": "Professional",
+  "elo": 1129.1712387299556
+ },
+ {
+  "date": "1975/06/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1417.4710018723576
+ },
+ {
+  "date": "1975/06/13",
+  "wrestler": "Masked Gladiator",
+  "elo": 945.4455859457751
+ },
+ {
+  "date": "1975/06/13",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1214.1417468542843
+ },
+ {
+  "date": "1975/06/14",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1020.9430069671176
+ },
+ {
+  "date": "1975/06/14",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 871.2982149845823
+ },
+ {
+  "date": "1975/06/14",
+  "wrestler": "Andre The Giant",
+  "elo": 1234.2897334610243
+ },
+ {
+  "date": "1975/06/14",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1287.0663888909812
+ },
+ {
+  "date": "1975/06/15",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1190.5898880726952
+ },
+ {
+  "date": "1975/06/15",
+  "wrestler": "Andre The Giant",
+  "elo": 1257.8415922426134
+ },
+ {
+  "date": "1975/06/15",
+  "wrestler": "Greg Valentine",
+  "elo": 1007.3864276639245
+ },
+ {
+  "date": "1975/06/15",
+  "wrestler": "Antonio Inoki",
+  "elo": 1421.9917033477761
+ },
+ {
+  "date": "1975/06/16",
+  "wrestler": "Greg Valentine",
+  "elo": 981.5522269041157
+ },
+ {
+  "date": "1975/06/16",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1216.424088832504
+ },
+ {
+  "date": "1975/06/17",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1224.4791437560395
+ },
+ {
+  "date": "1975/06/17",
+  "wrestler": "The Professional",
+  "elo": 931.4740148151329
+ },
+ {
+  "date": "1975/06/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1293.5903091493856
+ },
+ {
+  "date": "1975/06/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1298.2310636823652
+ },
+ {
+  "date": "1975/06/19",
+  "wrestler": "Greg Valentine",
+  "elo": 966.8691714204796
+ },
+ {
+  "date": "1975/06/19",
+  "wrestler": "Antonio Inoki",
+  "elo": 1425.6624672186852
+ },
+ {
+  "date": "1975/06/20",
+  "wrestler": "Greg Valentine",
+  "elo": 929.8718827939412
+ },
+ {
+  "date": "1975/06/20",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1233.7284659126742
+ },
+ {
+  "date": "1975/06/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1302.3392364048807
+ },
+ {
+  "date": "1975/06/22",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1192.8415221775801
+ },
+ {
+  "date": "1975/06/22",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1257.4977467052493
+ },
+ {
+  "date": "1975/06/22",
+  "wrestler": "Masked Gladiator",
+  "elo": 933.5893296658335
+ },
+ {
+  "date": "1975/06/22",
+  "wrestler": "Antonio Inoki",
+  "elo": 1428.6265312886705
+ },
+ {
+  "date": "1975/06/23",
+  "wrestler": "The Professional",
+  "elo": 910.3233389667931
+ },
+ {
+  "date": "1975/06/23",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1307.6269053669657
+ },
+ {
+  "date": "1975/06/23",
+  "wrestler": "Greg Valentine",
+  "elo": 919.1513379940436
+ },
+ {
+  "date": "1975/06/23",
+  "wrestler": "Antonio Inoki",
+  "elo": 1431.306667488645
+ },
+ {
+  "date": "1975/06/24",
+  "wrestler": "Professional",
+  "elo": 1114.2301791812797
+ },
+ {
+  "date": "1975/06/24",
+  "wrestler": "Antonio Inoki",
+  "elo": 1438.7771972629828
+ },
+ {
+  "date": "1975/06/25",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1262.1651517316036
+ },
+ {
+  "date": "1975/06/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1274.6553757272436
+ },
+ {
+  "date": "1975/06/25",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1258.7845814570244
+ },
+ {
+  "date": "1975/06/26",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1245.68962224261
+ },
+ {
+  "date": "1975/06/26",
+  "wrestler": "Antonio Inoki",
+  "elo": 1451.872156477397
+ },
+ {
+  "date": "1975/07/04",
+  "wrestler": "Gene Lewis",
+  "elo": 982.9352243011205
+ },
+ {
+  "date": "1975/07/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1283.1877635766834
+ },
+ {
+  "date": "1975/07/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1455.3252654768187
+ },
+ {
+  "date": "1975/07/05",
+  "wrestler": "Brute Bernard",
+  "elo": 914.710613147934
+ },
+ {
+  "date": "1975/07/05",
+  "wrestler": "Antonio Inoki",
+  "elo": 1457.5636061296473
+ },
+ {
+  "date": "1975/07/06",
+  "wrestler": "Ali Baba",
+  "elo": 981.893430202743
+ },
+ {
+  "date": "1975/07/06",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1271.218436630232
+ },
+ {
+  "date": "1975/07/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1291.1095378783177
+ },
+ {
+  "date": "1975/07/09",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1229.8917410472816
+ },
+ {
+  "date": "1975/07/09",
+  "wrestler": "Hans Schmidt",
+  "elo": 1082.6533911659008
+ },
+ {
+  "date": "1975/07/09",
+  "wrestler": "Ali Baba",
+  "elo": 953.0325811233242
+ },
+ {
+  "date": "1975/07/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1298.3247501481724
+ },
+ {
+  "date": "1975/07/10",
+  "wrestler": "Ali Baba",
+  "elo": 942.6444379030655
+ },
+ {
+  "date": "1975/07/10",
+  "wrestler": "Antonio Inoki",
+  "elo": 1460.160641934712
+ },
+ {
+  "date": "1975/07/12",
+  "wrestler": "Gene Lewis",
+  "elo": 944.0529232242593
+ },
+ {
+  "date": "1975/07/12",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1239.6123163164968
+ },
+ {
+  "date": "1975/07/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1462.8407882292533
+ },
+ {
+  "date": "1975/07/13",
+  "wrestler": "Brute Bernard",
+  "elo": 888.0088528234793
+ },
+ {
+  "date": "1975/07/13",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1246.2877563976106
+ },
+ {
+  "date": "1975/07/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1284.5334639901525
+ },
+ {
+  "date": "1975/07/13",
+  "wrestler": "Hans Schmidt",
+  "elo": 1110.2359634819404
+ },
+ {
+  "date": "1975/07/15",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1254.0004470229119
+ },
+ {
+  "date": "1975/07/18",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1260.3734298222016
+ },
+ {
+  "date": "1975/07/18",
+  "wrestler": "Hans Schmidt",
+  "elo": 1098.624572770529
+ },
+ {
+  "date": "1975/07/18",
+  "wrestler": "Antonio Inoki",
+  "elo": 1468.646483584959
+ },
+ {
+  "date": "1975/07/19",
+  "wrestler": "Gene Lewis",
+  "elo": 919.3587246265097
+ },
+ {
+  "date": "1975/07/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1290.70701363959
+ },
+ {
+  "date": "1975/07/19",
+  "wrestler": "Antonio Inoki",
+  "elo": 1470.4148579311102
+ },
+ {
+  "date": "1975/07/23",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1249.5084970521423
+ },
+ {
+  "date": "1975/07/23",
+  "wrestler": "Hans Schmidt",
+  "elo": 1120.3544383106475
+ },
+ {
+  "date": "1975/07/23",
+  "wrestler": "Ali Baba",
+  "elo": 918.8795389265974
+ },
+ {
+  "date": "1975/07/23",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1296.6482383837072
+ },
+ {
+  "date": "1975/07/24",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1205.056562273828
+ },
+ {
+  "date": "1975/07/24",
+  "wrestler": "Brute Bernard",
+  "elo": 1065.816591936737
+ },
+ {
+  "date": "1975/07/24",
+  "wrestler": "Antonio Inoki",
+  "elo": 1472.098432747999
+ },
+ {
+  "date": "1975/07/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1300.8246872571697
+ },
+ {
+  "date": "1975/07/26",
+  "wrestler": "Brute Bernard",
+  "elo": 1057.0201474303108
+ },
+ {
+  "date": "1975/07/26",
+  "wrestler": "Antonio Inoki",
+  "elo": 1476.496655001212
+ },
+ {
+  "date": "1975/07/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1304.5634671555579
+ },
+ {
+  "date": "1975/07/28",
+  "wrestler": "Antonio Inoki",
+  "elo": 1477.8099299509358
+ },
+ {
+  "date": "1975/07/29",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1210.606464144744
+ },
+ {
+  "date": "1975/07/29",
+  "wrestler": "Ali Baba",
+  "elo": 911.1767668713915
+ },
+ {
+  "date": "1975/07/29",
+  "wrestler": "Antonio Inoki",
+  "elo": 1479.7356229647373
+ },
+ {
+  "date": "1975/07/30",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1215.4158242632893
+ },
+ {
+  "date": "1975/08/22",
+  "wrestler": "Johnny Powers",
+  "elo": 977.5569786953056
+ },
+ {
+  "date": "1975/08/22",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1226.6373349156365
+ },
+ {
+  "date": "1975/08/25",
+  "wrestler": "Jerry Brown",
+  "elo": 978.6613067828583
+ },
+ {
+  "date": "1975/08/25",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1237.3066815242073
+ },
+ {
+  "date": "1975/08/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1311.9456172005007
+ },
+ {
+  "date": "1975/08/27",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1246.7987809975186
+ },
+ {
+  "date": "1975/08/27",
+  "wrestler": "Johnny Powers",
+  "elo": 952.0936542699404
+ },
+ {
+  "date": "1975/08/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1318.311448306842
+ },
+ {
+  "date": "1975/08/29",
+  "wrestler": "Jacques Rougeau",
+  "elo": 986.2041201666625
+ },
+ {
+  "date": "1975/08/29",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1325.2093882235108
+ },
+ {
+  "date": "1975/08/30",
+  "wrestler": "Jerry Brown",
+  "elo": 954.7132334848186
+ },
+ {
+  "date": "1975/08/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1331.1964065480208
+ },
+ {
+  "date": "1975/08/31",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1230.919285728122
+ },
+ {
+  "date": "1975/08/31",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1049.7221012442487
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 959.2683526384205
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Ivan Gomes",
+  "elo": 1049.2529501472393
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Shoji Kai",
+  "elo": 944.6463360420819
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1199.2868475465798
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 793.438441502698
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1027.3762225483363
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "John Harris",
+  "elo": 1050.0
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 967.9327111126271
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Raymond Rougeau",
+  "elo": 1053.0102958544906
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1096.2196643106636
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1311.264010829063
+ },
+ {
+  "date": "1975/09/02",
+  "wrestler": "Johnny Powers",
+  "elo": 1031.823237145772
+ },
+ {
+  "date": "1975/09/03",
+  "wrestler": "Johnny Powers",
+  "elo": 1007.702820046639
+ },
+ {
+  "date": "1975/09/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1242.9794942776887
+ },
+ {
+  "date": "1975/09/05",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1233.0055510602544
+ },
+ {
+  "date": "1975/09/05",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1116.1675507455323
+ },
+ {
+  "date": "1975/09/06",
+  "wrestler": "Jerry Brown",
+  "elo": 931.9526510710575
+ },
+ {
+  "date": "1975/09/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1316.9541564325032
+ },
+ {
+  "date": "1975/09/09",
+  "wrestler": "Jerry Brown",
+  "elo": 912.292455611379
+ },
+ {
+  "date": "1975/09/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1321.869205297423
+ },
+ {
+  "date": "1975/09/10",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1224.901591543447
+ },
+ {
+  "date": "1975/09/10",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1132.3754697791471
+ },
+ {
+  "date": "1975/09/13",
+  "wrestler": "Buddy Roberts",
+  "elo": 986.4458810755114
+ },
+ {
+  "date": "1975/09/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1328.6462647596672
+ },
+ {
+  "date": "1975/09/17",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1107.9561395188807
+ },
+ {
+  "date": "1975/09/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1340.8559298898003
+ },
+ {
+  "date": "1975/09/19",
+  "wrestler": "Jerry Brown",
+  "elo": 896.6517496772744
+ },
+ {
+  "date": "1975/09/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1344.7661063733265
+ },
+ {
+  "date": "1975/09/19",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1097.4304695957237
+ },
+ {
+  "date": "1975/09/19",
+  "wrestler": "Antonio Inoki",
+  "elo": 1484.9984579263157
+ },
+ {
+  "date": "1975/09/20",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1210.011101333519
+ },
+ {
+  "date": "1975/09/20",
+  "wrestler": "Buddy Roberts",
+  "elo": 1046.007841915223
+ },
+ {
+  "date": "1975/09/20",
+  "wrestler": "Antonio Inoki",
+  "elo": 1487.1632671066486
+ },
+ {
+  "date": "1975/09/21",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1349.1671881382074
+ },
+ {
+  "date": "1975/09/21",
+  "wrestler": "Jerry Brown",
+  "elo": 890.1880144042284
+ },
+ {
+  "date": "1975/09/21",
+  "wrestler": "Antonio Inoki",
+  "elo": 1488.7792009249101
+ },
+ {
+  "date": "1975/09/22",
+  "wrestler": "Antonio Inoki",
+  "elo": 1490.612804711298
+ },
+ {
+  "date": "1975/09/23",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1217.6960418471897
+ },
+ {
+  "date": "1975/09/23",
+  "wrestler": "Jerry Brown",
+  "elo": 876.8924521919672
+ },
+ {
+  "date": "1975/09/23",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1352.4910786912726
+ },
+ {
+  "date": "1975/09/25",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1078.7095471772013
+ },
+ {
+  "date": "1975/09/25",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1361.8515399005337
+ },
+ {
+  "date": "1975/09/25",
+  "wrestler": "Buddy Roberts",
+  "elo": 1038.8277695937304
+ },
+ {
+  "date": "1975/09/25",
+  "wrestler": "Antonio Inoki",
+  "elo": 1494.2028408720441
+ },
+ {
+  "date": "1975/09/26",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1047.7085049777581
+ },
+ {
+  "date": "1975/09/26",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1233.1965629469112
+ },
+ {
+  "date": "1975/09/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1364.836456904058
+ },
+ {
+  "date": "1975/09/27",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1195.5075479853901
+ },
+ {
+  "date": "1975/09/27",
+  "wrestler": "Buddy Roberts",
+  "elo": 1114.2057995167722
+ },
+ {
+  "date": "1975/09/27",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1040.6005801638694
+ },
+ {
+  "date": "1975/09/27",
+  "wrestler": "Antonio Inoki",
+  "elo": 1497.7568032789886
+ },
+ {
+  "date": "1975/09/28",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1208.8840238664854
+ },
+ {
+  "date": "1975/09/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1317.6788969540933
+ },
+ {
+  "date": "1975/09/28",
+  "wrestler": "Jerry Brown",
+  "elo": 1065.522691991826
+ },
+ {
+  "date": "1975/09/29",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1320.7535931051298
+ },
+ {
+  "date": "1975/09/29",
+  "wrestler": "Buddy Roberts",
+  "elo": 1104.3014426455788
+ },
+ {
+  "date": "1975/09/29",
+  "wrestler": "Antonio Inoki",
+  "elo": 1502.7089817145854
+ },
+ {
+  "date": "1975/09/30",
+  "wrestler": "Jerry Brown",
+  "elo": 1046.8166811243557
+ },
+ {
+  "date": "1975/09/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1330.1065985388648
+ },
+ {
+  "date": "1975/10/01",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1197.6408354139342
+ },
+ {
+  "date": "1975/10/01",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1063.086957068972
+ },
+ {
+  "date": "1975/10/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1290.8162045479532
+ },
+ {
+  "date": "1975/10/01",
+  "wrestler": "Buddy Roberts",
+  "elo": 1182.8822306274021
+ },
+ {
+  "date": "1975/10/02",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1208.5005257504765
+ },
+ {
+  "date": "1975/10/04",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1055.7133547245235
+ },
+ {
+  "date": "1975/10/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1506.3957828868097
+ },
+ {
+  "date": "1975/10/06",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1197.6393877488235
+ },
+ {
+  "date": "1975/10/06",
+  "wrestler": "Jerry Brown",
+  "elo": 1068.5389571276617
+ },
+ {
+  "date": "1975/10/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1293.7741663334614
+ },
+ {
+  "date": "1975/10/09",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1208.335034473787
+ },
+ {
+  "date": "1975/10/09",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1094.8284404239082
+ },
+ {
+  "date": "1975/10/09",
+  "wrestler": "Lou Thesz",
+  "elo": 994.8585341897608
+ },
+ {
+  "date": "1975/10/09",
+  "wrestler": "Antonio Inoki",
+  "elo": 1508.9665157919292
+ },
+ {
+  "date": "1975/10/24",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1221.9136078481567
+ },
+ {
+  "date": "1975/10/25",
+  "wrestler": "Antonio Inoki",
+  "elo": 1511.5014007168672
+ },
+ {
+  "date": "1975/10/26",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1207.566245995701
+ },
+ {
+  "date": "1975/10/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1300.6811157175318
+ },
+ {
+  "date": "1975/10/27",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1169.1859015237803
+ },
+ {
+  "date": "1975/10/27",
+  "wrestler": "Bearcat Wright",
+  "elo": 1076.7606889438412
+ },
+ {
+  "date": "1975/10/27",
+  "wrestler": "Raul Castillo",
+  "elo": 984.9522344222898
+ },
+ {
+  "date": "1975/10/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1308.204998506387
+ },
+ {
+  "date": "1975/10/28",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1191.0657094236324
+ },
+ {
+  "date": "1975/10/28",
+  "wrestler": "Bearcat Wright",
+  "elo": 1119.1928589150461
+ },
+ {
+  "date": "1975/10/28",
+  "wrestler": "Antonio Inoki",
+  "elo": 1490.2853157312647
+ },
+ {
+  "date": "1975/10/29",
+  "wrestler": "Antonio Inoki",
+  "elo": 1491.1108829825205
+ },
+ {
+  "date": "1975/10/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1270.8043628417636
+ },
+ {
+  "date": "1975/10/30",
+  "wrestler": "Bearcat Wright",
+  "elo": 1193.9941302442928
+ },
+ {
+  "date": "1975/10/31",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1116.0422727448404
+ },
+ {
+  "date": "1975/10/31",
+  "wrestler": "Mr. X",
+  "elo": 1075.023436678792
+ },
+ {
+  "date": "1975/10/31",
+  "wrestler": "Bearcat Wright",
+  "elo": 1228.6821877408604
+ },
+ {
+  "date": "1975/10/31",
+  "wrestler": "Antonio Inoki",
+  "elo": 1473.7668542342367
+ },
+ {
+  "date": "1975/11/01",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1138.8594084739618
+ },
+ {
+  "date": "1975/11/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1281.8728758290504
+ },
+ {
+  "date": "1975/11/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1477.376520033323
+ },
+ {
+  "date": "1975/11/03",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1151.5054470790162
+ },
+ {
+  "date": "1975/11/03",
+  "wrestler": "Bearcat Wright",
+  "elo": 1222.3591684383332
+ },
+ {
+  "date": "1975/11/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1285.8964605906576
+ },
+ {
+  "date": "1975/11/04",
+  "wrestler": "Mr. X",
+  "elo": 1066.0438547441956
+ },
+ {
+  "date": "1975/11/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1481.8663110006212
+ },
+ {
+  "date": "1975/11/06",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1183.8069993462286
+ },
+ {
+  "date": "1975/11/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1289.5118660026235
+ },
+ {
+  "date": "1975/11/07",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1195.2391732606345
+ },
+ {
+  "date": "1975/11/07",
+  "wrestler": "Bearcat Wright",
+  "elo": 1202.1319083269364
+ },
+ {
+  "date": "1975/11/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1309.7391261140203
+ },
+ {
+  "date": "1975/11/07",
+  "wrestler": "Mr. X",
+  "elo": 1057.6781611066842
+ },
+ {
+  "date": "1975/11/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1486.049157819377
+ },
+ {
+  "date": "1975/11/08",
+  "wrestler": "Raul Castillo",
+  "elo": 939.0300314919963
+ },
+ {
+  "date": "1975/11/08",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1218.2002747257814
+ },
+ {
+  "date": "1975/11/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1488.7788873140748
+ },
+ {
+  "date": "1975/11/10",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1228.3097049135574
+ },
+ {
+  "date": "1975/11/11",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1226.429617428393
+ },
+ {
+  "date": "1975/11/11",
+  "wrestler": "Bearcat Wright",
+  "elo": 1204.0119958121008
+ },
+ {
+  "date": "1975/11/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1312.3372348368962
+ },
+ {
+  "date": "1975/11/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1490.8079425777305
+ },
+ {
+  "date": "1975/11/13",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1230.2785155044396
+ },
+ {
+  "date": "1975/11/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1296.7152942938017
+ },
+ {
+  "date": "1975/11/13",
+  "wrestler": "Mr. X",
+  "elo": 1088.9220421928733
+ },
+ {
+  "date": "1975/11/14",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1237.8611433387946
+ },
+ {
+  "date": "1975/11/16",
+  "wrestler": "Antonio Inoki",
+  "elo": 1492.4289426044536
+ },
+ {
+  "date": "1975/11/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1299.1382667010973
+ },
+ {
+  "date": "1975/11/20",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1241.026509431324
+ },
+ {
+  "date": "1975/11/20",
+  "wrestler": "Bearcat Wright",
+  "elo": 1196.025650338627
+ },
+ {
+  "date": "1975/11/20",
+  "wrestler": "Antonio Inoki",
+  "elo": 1500.4152880779275
+ },
+ {
+  "date": "1975/11/21",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1237.8064241281536
+ },
+ {
+  "date": "1975/11/21",
+  "wrestler": "Bearcat Wright",
+  "elo": 1202.465820944968
+ },
+ {
+  "date": "1975/11/22",
+  "wrestler": "Mr. X",
+  "elo": 1059.1263823790046
+ },
+ {
+  "date": "1975/11/22",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1252.704254035088
+ },
+ {
+  "date": "1975/11/22",
+  "wrestler": "Bearcat Wright",
+  "elo": 1184.2478366450828
+ },
+ {
+  "date": "1975/11/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1317.3562510009826
+ },
+ {
+  "date": "1975/11/23",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1237.1683516378032
+ },
+ {
+  "date": "1975/11/23",
+  "wrestler": "Ivan Koloff",
+  "elo": 1031.0718047945697
+ },
+ {
+  "date": "1975/11/23",
+  "wrestler": "Antonio Inoki",
+  "elo": 1501.897130659342
+ },
+ {
+  "date": "1975/11/24",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1219.0763761512196
+ },
+ {
+  "date": "1975/11/24",
+  "wrestler": "Greg Valentine",
+  "elo": 991.5192399403778
+ },
+ {
+  "date": "1975/11/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1319.2683111823799
+ },
+ {
+  "date": "1975/11/25",
+  "wrestler": "Antonio Inoki",
+  "elo": 1502.5461953336676
+ },
+ {
+  "date": "1975/11/27",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1222.1721270801302
+ },
+ {
+  "date": "1975/11/28",
+  "wrestler": "Bearcat Wright",
+  "elo": 1152.7563403727697
+ },
+ {
+  "date": "1975/11/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1335.0140593185363
+ },
+ {
+  "date": "1975/11/30",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1217.2426769568553
+ },
+ {
+  "date": "1975/11/30",
+  "wrestler": "Bearcat Wright",
+  "elo": 1162.6152406193191
+ },
+ {
+  "date": "1975/11/30",
+  "wrestler": "Greg Valentine",
+  "elo": 981.4932601505931
+ },
+ {
+  "date": "1975/11/30",
+  "wrestler": "Antonio Inoki",
+  "elo": 1505.0526902811139
+ },
+ {
+  "date": "1975/12/01",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1179.9968092180138
+ },
+ {
+  "date": "1975/12/01",
+  "wrestler": "Ivan Koloff",
+  "elo": 1105.5635402722528
+ },
+ {
+  "date": "1975/12/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1336.5424676223015
+ },
+ {
+  "date": "1975/12/02",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1154.1797056716296
+ },
+ {
+  "date": "1975/12/02",
+  "wrestler": "Greg Valentine",
+  "elo": 1033.1274672433617
+ },
+ {
+  "date": "1975/12/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1506.4495417963567
+ },
+ {
+  "date": "1975/12/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1293.9663132265548
+ },
+ {
+  "date": "1975/12/03",
+  "wrestler": "Greg Valentine",
+  "elo": 1118.279776034855
+ },
+ {
+  "date": "1975/12/04",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1083.3416924130731
+ },
+ {
+  "date": "1975/12/04",
+  "wrestler": "Bill Robinson",
+  "elo": 1070.8380132585564
+ },
+ {
+  "date": "1975/12/05",
+  "wrestler": "Greg Valentine",
+  "elo": 1063.268661533543
+ },
+ {
+  "date": "1975/12/05",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1138.3528069143852
+ },
+ {
+  "date": "1975/12/06",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1157.0358687330724
+ },
+ {
+  "date": "1975/12/06",
+  "wrestler": "Greg Valentine",
+  "elo": 1056.0337633308702
+ },
+ {
+  "date": "1975/12/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1510.0669908976931
+ },
+ {
+  "date": "1975/12/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1510.6165393097936
+ },
+ {
+  "date": "1975/12/08",
+  "wrestler": "Bearcat Wright",
+  "elo": 1111.812373474939
+ },
+ {
+  "date": "1975/12/08",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1207.8387358774526
+ },
+ {
+  "date": "1975/12/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1295.8000413192017
+ },
+ {
+  "date": "1975/12/09",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1210.6653751290974
+ },
+ {
+  "date": "1975/12/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1299.2822345594718
+ },
+ {
+  "date": "1975/12/10",
+  "wrestler": "Bearcat Wright",
+  "elo": 1102.6644132473236
+ },
+ {
+  "date": "1975/12/10",
+  "wrestler": "Antonio Inoki",
+  "elo": 1515.1905194236012
+ },
+ {
+  "date": "1975/12/11",
+  "wrestler": "Makoto Arakawa",
+  "elo": 1017.6983621793695
+ },
+ {
+  "date": "1975/12/11",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 978.624073376354
+ },
+ {
+  "date": "1975/12/11",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1071.4206255553113
+ },
+ {
+  "date": "1975/12/11",
+  "wrestler": "Ivan Gomes",
+  "elo": 1060.2027125839552
+ },
+ {
+  "date": "1975/12/11",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1162.5383549932183
+ },
+ {
+  "date": "1975/12/11",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 976.6251594249727
+ },
+ {
+  "date": "1975/12/11",
+  "wrestler": "Bearcat Wright",
+  "elo": 1126.4752524496878
+ },
+ {
+  "date": "1975/12/11",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1213.2827144013945
+ },
+ {
+  "date": "1975/12/11",
+  "wrestler": "Bill Robinson",
+  "elo": 1113.6482496203603
+ },
+ {
+  "date": "1975/12/11",
+  "wrestler": "Antonio Inoki",
+  "elo": 1493.7854012426992
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

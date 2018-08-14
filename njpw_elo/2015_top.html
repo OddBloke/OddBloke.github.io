@@ -1,0 +1,1960 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2015/01/04",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 997.3174176669996
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "Tiger Mask",
+  "elo": 997.3906401211143
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "Togi Makabe",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 950.0
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "Kenny Omega",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "Tetsuya Naito",
+  "elo": 950.0
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "AJ Styles",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "Kota Ibushi",
+  "elo": 950.0
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "Kazuchika Okada",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "2015/01/04",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2015/01/05",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1097.3114954286843
+ },
+ {
+  "date": "2015/01/13",
+  "wrestler": "Angel de Oro",
+  "elo": 1000.0
+ },
+ {
+  "date": "2015/01/17",
+  "wrestler": "Angel de Oro",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/01/18",
+  "wrestler": "Volador Jr.",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/01/18",
+  "wrestler": "Mephisto",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/01/18",
+  "wrestler": "Ultimo Guerrero",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/01/19",
+  "wrestler": "Mistico",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/01/19",
+  "wrestler": "Mascara Dorada",
+  "elo": 950.0
+ },
+ {
+  "date": "2015/01/19",
+  "wrestler": "La Sombra",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/01/30",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1049.6260145948283
+ },
+ {
+  "date": "2015/02/11",
+  "wrestler": "Kota Ibushi",
+  "elo": 1064.2926234816764
+ },
+ {
+  "date": "2015/02/11",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 878.012999960577
+ },
+ {
+  "date": "2015/02/11",
+  "wrestler": "Kenny Omega",
+  "elo": 1085.9935000197115
+ },
+ {
+  "date": "2015/02/11",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 879.4445279696466
+ },
+ {
+  "date": "2015/02/11",
+  "wrestler": "AJ Styles",
+  "elo": 1086.2524286799726
+ },
+ {
+  "date": "2015/02/14",
+  "wrestler": "Chase Owens",
+  "elo": 963.6491873366344
+ },
+ {
+  "date": "2015/02/14",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1133.66230809205
+ },
+ {
+  "date": "2015/02/14",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2015/02/14",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1029.4392521002542
+ },
+ {
+  "date": "2015/02/14",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1072.690309773198
+ },
+ {
+  "date": "2015/03/05",
+  "wrestler": "Togi Makabe",
+  "elo": 1020.1345803358083
+ },
+ {
+  "date": "2015/03/05",
+  "wrestler": "Hirooki Goto",
+  "elo": 1023.1601534263517
+ },
+ {
+  "date": "2015/03/05",
+  "wrestler": "Doc Gallows",
+  "elo": 959.1482680475054
+ },
+ {
+  "date": "2015/03/05",
+  "wrestler": "Kota Ibushi",
+  "elo": 1105.144355434171
+ },
+ {
+  "date": "2015/03/05",
+  "wrestler": "Karl Anderson",
+  "elo": 942.8536882591618
+ },
+ {
+  "date": "2015/03/05",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1064.2926234816764
+ },
+ {
+  "date": "2015/03/05",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 812.814562976897
+ },
+ {
+  "date": "2015/03/05",
+  "wrestler": "Toru Yano",
+  "elo": 1033.3149824963748
+ },
+ {
+  "date": "2015/03/05",
+  "wrestler": "Kazuchika Okada",
+  "elo": 845.5505737293305
+ },
+ {
+  "date": "2015/03/05",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1039.2373668029368
+ },
+ {
+  "date": "2015/03/08",
+  "wrestler": "Togi Makabe",
+  "elo": 1074.3687933504114
+ },
+ {
+  "date": "2015/03/08",
+  "wrestler": "Toru Yano",
+  "elo": 993.5072593060726
+ },
+ {
+  "date": "2015/03/08",
+  "wrestler": "Kota Ibushi",
+  "elo": 1144.9520786244732
+ },
+ {
+  "date": "2015/03/08",
+  "wrestler": "Bad Luck Fale",
+  "elo": 992.8368704510615
+ },
+ {
+  "date": "2015/03/08",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1110.6931198335517
+ },
+ {
+  "date": "2015/03/08",
+  "wrestler": "Hirooki Goto",
+  "elo": 1056.1428706700156
+ },
+ {
+  "date": "2015/03/09",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1040.058896361356
+ },
+ {
+  "date": "2015/03/13",
+  "wrestler": "KUSHIDA",
+  "elo": 1036.5730159102907
+ },
+ {
+  "date": "2015/03/15",
+  "wrestler": "Togi Makabe",
+  "elo": 1021.7482755814439
+ },
+ {
+  "date": "2015/03/15",
+  "wrestler": "Hirooki Goto",
+  "elo": 1070.250928931683
+ },
+ {
+  "date": "2015/03/15",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1065.6074632700222
+ },
+ {
+  "date": "2015/03/15",
+  "wrestler": "Kota Ibushi",
+  "elo": 1228.550194695303
+ },
+ {
+  "date": "2015/03/21",
+  "wrestler": "Rocky Romero",
+  "elo": 1027.4553517966563
+ },
+ {
+  "date": "2015/03/21",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 989.9393190859694
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Tiger Mask",
+  "elo": 934.7180088287653
+ },
+ {
+  "date": "2015/03/22",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1164.9986237382243
+ },
+ {
+  "date": "2015/04/05",
+  "wrestler": "Mascara Dorada",
+  "elo": 887.2584404122293
+ },
+ {
+  "date": "2015/04/05",
+  "wrestler": "Kenny Omega",
+  "elo": 1117.3642798135968
+ },
+ {
+  "date": "2015/04/05",
+  "wrestler": "Bad Luck Fale",
+  "elo": 852.8137638510947
+ },
+ {
+  "date": "2015/04/05",
+  "wrestler": "Kazuchika Okada",
+  "elo": 985.5736803292973
+ },
+ {
+  "date": "2015/04/05",
+  "wrestler": "Kota Ibushi",
+  "elo": 1193.8475941198435
+ },
+ {
+  "date": "2015/04/05",
+  "wrestler": "AJ Styles",
+  "elo": 1155.6576298308917
+ },
+ {
+  "date": "2015/04/17",
+  "wrestler": "Tiger Mask",
+  "elo": 1013.3510008889084
+ },
+ {
+  "date": "2015/04/27",
+  "wrestler": "Mascara Dorada",
+  "elo": 913.1798945985896
+ },
+ {
+  "date": "2015/04/29",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1092.8909587575426
+ },
+ {
+  "date": "2015/04/29",
+  "wrestler": "Steve Anthony",
+  "elo": 1072.1076649806816
+ },
+ {
+  "date": "2015/04/29",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1092.834206741598
+ },
+ {
+  "date": "2015/04/29",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 978.3326123604473
+ },
+ {
+  "date": "2015/04/29",
+  "wrestler": "Togi Makabe",
+  "elo": 1072.8549153212507
+ },
+ {
+  "date": "2015/05/03",
+  "wrestler": "Kenny Omega",
+  "elo": 1157.7894640808452
+ },
+ {
+  "date": "2015/05/03",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1022.3392604189949
+ },
+ {
+  "date": "2015/05/03",
+  "wrestler": "Hirooki Goto",
+  "elo": 1120.601978285886
+ },
+ {
+  "date": "2015/05/05",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1065.1512372315356
+ },
+ {
+  "date": "2015/05/06",
+  "wrestler": "KUSHIDA",
+  "elo": 1056.956227205611
+ },
+ {
+  "date": "2015/05/12",
+  "wrestler": "KUSHIDA",
+  "elo": 998.832212351132
+ },
+ {
+  "date": "2015/05/12",
+  "wrestler": "Jay Lethal",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/05/12",
+  "wrestler": "Michael Elgin",
+  "elo": 959.3310268739622
+ },
+ {
+  "date": "2015/05/12",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1106.27643639606
+ },
+ {
+  "date": "2015/05/12",
+  "wrestler": "AJ Styles",
+  "elo": 1184.644180268802
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "J. Diesel",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "Adam Page",
+  "elo": 1042.8536882591618
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "KUSHIDA",
+  "elo": 887.5115928836856
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "Michael Elgin",
+  "elo": 1070.6516463414087
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1007.707176225676
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1148.1952747652124
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "Jay Lethal",
+  "elo": 1041.0046147880641
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1083.096438337687
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1048.4805880265392
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 973.6344181516394
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "Bobby Fish",
+  "elo": 950.0
+ },
+ {
+  "date": "2015/05/13",
+  "wrestler": "Jay Briscoe",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/05/15",
+  "wrestler": "Dalton Castle",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/05/15",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 991.580473735843
+ },
+ {
+  "date": "2015/05/15",
+  "wrestler": "KUSHIDA",
+  "elo": 920.0496663410362
+ },
+ {
+  "date": "2015/05/15",
+  "wrestler": "Cedric Alexander",
+  "elo": 947.9250780319829
+ },
+ {
+  "date": "2015/05/15",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1089.7235242653314
+ },
+ {
+  "date": "2015/05/15",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1128.6703797610971
+ },
+ {
+  "date": "2015/05/15",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1083.24079225067
+ },
+ {
+  "date": "2015/05/15",
+  "wrestler": "Jay Lethal",
+  "elo": 1105.9590973026066
+ },
+ {
+  "date": "2015/05/15",
+  "wrestler": "Michael Elgin",
+  "elo": 1007.0416607064714
+ },
+ {
+  "date": "2015/05/15",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1100.854389421514
+ },
+ {
+  "date": "2015/05/16",
+  "wrestler": "KUSHIDA",
+  "elo": 1042.6634667177873
+ },
+ {
+  "date": "2015/05/16",
+  "wrestler": "Silas Young",
+  "elo": 1031.406251067766
+ },
+ {
+  "date": "2015/05/16",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1016.7256366081846
+ },
+ {
+  "date": "2015/05/16",
+  "wrestler": "Dalton Castle",
+  "elo": 1004.748605578459
+ },
+ {
+  "date": "2015/05/16",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1128.347832759228
+ },
+ {
+  "date": "2015/05/16",
+  "wrestler": "Cheeseburger",
+  "elo": 1000.0
+ },
+ {
+  "date": "2015/05/16",
+  "wrestler": "Bob Evans",
+  "elo": 1000.0
+ },
+ {
+  "date": "2015/05/16",
+  "wrestler": "Cedric Alexander",
+  "elo": 1076.4874980548097
+ },
+ {
+  "date": "2015/05/16",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1158.2171577093125
+ },
+ {
+  "date": "2015/05/16",
+  "wrestler": "Michael Elgin",
+  "elo": 1063.1925499648692
+ },
+ {
+  "date": "2015/05/22",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1175.8343022044546
+ },
+ {
+  "date": "2015/05/22",
+  "wrestler": "Tiger Mask",
+  "elo": 1061.4305825845315
+ },
+ {
+  "date": "2015/05/22",
+  "wrestler": "Chase Owens",
+  "elo": 888.0035382962161
+ },
+ {
+  "date": "2015/05/22",
+  "wrestler": "Rocky Romero",
+  "elo": 966.4896950631596
+ },
+ {
+  "date": "2015/05/22",
+  "wrestler": "Bobby Fish",
+  "elo": 1071.9313134669933
+ },
+ {
+  "date": "2015/05/22",
+  "wrestler": "Beretta",
+  "elo": 952.405154913068
+ },
+ {
+  "date": "2015/05/22",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1064.3204816951165
+ },
+ {
+  "date": "2015/05/22",
+  "wrestler": "Mascara Dorada",
+  "elo": 848.8135811492293
+ },
+ {
+  "date": "2015/05/22",
+  "wrestler": "KUSHIDA",
+  "elo": 1074.8466234424675
+ },
+ {
+  "date": "2015/05/22",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1005.0317068213017
+ },
+ {
+  "date": "2015/05/23",
+  "wrestler": "Rocky Romero",
+  "elo": 1092.2888483155937
+ },
+ {
+  "date": "2015/05/23",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1066.7257976656642
+ },
+ {
+  "date": "2015/05/23",
+  "wrestler": "KUSHIDA",
+  "elo": 1007.8591154476028
+ },
+ {
+  "date": "2015/05/25",
+  "wrestler": "Chase Owens",
+  "elo": 806.3303932188045
+ },
+ {
+  "date": "2015/05/25",
+  "wrestler": "Beretta",
+  "elo": 1034.0782999904795
+ },
+ {
+  "date": "2015/05/25",
+  "wrestler": "Mascara Dorada",
+  "elo": 977.505232256012
+ },
+ {
+  "date": "2015/05/25",
+  "wrestler": "Bobby Fish",
+  "elo": 1020.4205967833321
+ },
+ {
+  "date": "2015/05/25",
+  "wrestler": "Tiger Mask",
+  "elo": 1112.9412992681926
+ },
+ {
+  "date": "2015/05/25",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1110.3154507963545
+ },
+ {
+  "date": "2015/05/25",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1129.8393331032166
+ },
+ {
+  "date": "2015/05/26",
+  "wrestler": "KUSHIDA",
+  "elo": 1033.4766617241114
+ },
+ {
+  "date": "2015/05/26",
+  "wrestler": "Rocky Romero",
+  "elo": 1141.368865917094
+ },
+ {
+  "date": "2015/05/26",
+  "wrestler": "Beretta",
+  "elo": 988.7628727344243
+ },
+ {
+  "date": "2015/05/26",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1112.0412249217195
+ },
+ {
+  "date": "2015/05/27",
+  "wrestler": "Bobby Fish",
+  "elo": 1066.811403954501
+ },
+ {
+  "date": "2015/05/27",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1164.6203751788557
+ },
+ {
+  "date": "2015/05/27",
+  "wrestler": "Tiger Mask",
+  "elo": 1044.3812051652835
+ },
+ {
+  "date": "2015/05/27",
+  "wrestler": "Mascara Dorada",
+  "elo": 1114.62542046183
+ },
+ {
+  "date": "2015/05/27",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1025.121701177733
+ },
+ {
+  "date": "2015/05/27",
+  "wrestler": "Chase Owens",
+  "elo": 976.7178924560474
+ },
+ {
+  "date": "2015/05/29",
+  "wrestler": "Chase Owens",
+  "elo": 1079.3445067703478
+ },
+ {
+  "date": "2015/05/29",
+  "wrestler": "Beretta",
+  "elo": 1118.1852732987154
+ },
+ {
+  "date": "2015/05/29",
+  "wrestler": "Tiger Mask",
+  "elo": 1007.9872508841045
+ },
+ {
+  "date": "2015/05/29",
+  "wrestler": "Rocky Romero",
+  "elo": 1177.762820198273
+ },
+ {
+  "date": "2015/05/30",
+  "wrestler": "Mascara Dorada",
+  "elo": 1137.4014773527906
+ },
+ {
+  "date": "2015/05/30",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1084.1943754945635
+ },
+ {
+  "date": "2015/05/30",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1107.1108681181645
+ },
+ {
+  "date": "2015/05/30",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1169.5507319824108
+ },
+ {
+  "date": "2015/05/30",
+  "wrestler": "Bobby Fish",
+  "elo": 1012.028815235981
+ },
+ {
+  "date": "2015/05/30",
+  "wrestler": "KUSHIDA",
+  "elo": 1088.2592504426314
+ },
+ {
+  "date": "2015/05/31",
+  "wrestler": "Chase Owens",
+  "elo": 1122.2621836050184
+ },
+ {
+  "date": "2015/05/31",
+  "wrestler": "Beretta",
+  "elo": 1063.3091371625567
+ },
+ {
+  "date": "2015/05/31",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1139.0705116307222
+ },
+ {
+  "date": "2015/05/31",
+  "wrestler": "Tiger Mask",
+  "elo": 969.3380660395167
+ },
+ {
+  "date": "2015/05/31",
+  "wrestler": "KUSHIDA",
+  "elo": 1126.9084352872192
+ },
+ {
+  "date": "2015/06/02",
+  "wrestler": "Chase Owens",
+  "elo": 1133.2650309231217
+ },
+ {
+  "date": "2015/06/02",
+  "wrestler": "Rocky Romero",
+  "elo": 1185.044167733066
+ },
+ {
+  "date": "2015/06/02",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1185.6851985026974
+ },
+ {
+  "date": "2015/06/02",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1146.108666441252
+ },
+ {
+  "date": "2015/06/02",
+  "wrestler": "Mascara Dorada",
+  "elo": 1070.1032841965662
+ },
+ {
+  "date": "2015/06/02",
+  "wrestler": "Bobby Fish",
+  "elo": 1079.3270083922057
+ },
+ {
+  "date": "2015/06/03",
+  "wrestler": "Tiger Mask",
+  "elo": 1026.0737742484641
+ },
+ {
+  "date": "2015/06/03",
+  "wrestler": "Beretta",
+  "elo": 1102.484241941438
+ },
+ {
+  "date": "2015/06/03",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1095.7389394421493
+ },
+ {
+  "date": "2015/06/03",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1229.0167706912703
+ },
+ {
+  "date": "2015/06/03",
+  "wrestler": "Rocky Romero",
+  "elo": 1126.7549814006638
+ },
+ {
+  "date": "2015/06/03",
+  "wrestler": "KUSHIDA",
+  "elo": 1185.1976216196213
+ },
+ {
+  "date": "2015/06/04",
+  "wrestler": "Bobby Fish",
+  "elo": 1090.6171485637876
+ },
+ {
+  "date": "2015/06/04",
+  "wrestler": "Chase Owens",
+  "elo": 1085.112537156614
+ },
+ {
+  "date": "2015/06/04",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1194.2611602077595
+ },
+ {
+  "date": "2015/06/04",
+  "wrestler": "Mascara Dorada",
+  "elo": 1121.3717994374301
+ },
+ {
+  "date": "2015/06/05",
+  "wrestler": "KUSHIDA",
+  "elo": 1192.8152449548961
+ },
+ {
+  "date": "2015/06/05",
+  "wrestler": "Beretta",
+  "elo": 1116.61811339982
+ },
+ {
+  "date": "2015/06/05",
+  "wrestler": "Tiger Mask",
+  "elo": 1039.256783414975
+ },
+ {
+  "date": "2015/06/05",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1139.5172802059913
+ },
+ {
+  "date": "2015/06/05",
+  "wrestler": "Rocky Romero",
+  "elo": 1075.9803412289275
+ },
+ {
+  "date": "2015/06/05",
+  "wrestler": "Mascara Dorada",
+  "elo": 1172.1464396091665
+ },
+ {
+  "date": "2015/06/05",
+  "wrestler": "Bobby Fish",
+  "elo": 1131.6535421241344
+ },
+ {
+  "date": "2015/06/05",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1210.4424829050129
+ },
+ {
+  "date": "2015/06/05",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1194.2161634683043
+ },
+ {
+  "date": "2015/06/05",
+  "wrestler": "Chase Owens",
+  "elo": 1154.713751602546
+ },
+ {
+  "date": "2015/06/07",
+  "wrestler": "Chase Owens",
+  "elo": 1088.683923586805
+ },
+ {
+  "date": "2015/06/07",
+  "wrestler": "Tiger Mask",
+  "elo": 1105.286611430716
+ },
+ {
+  "date": "2015/06/07",
+  "wrestler": "Mascara Dorada",
+  "elo": 1200.1959270045031
+ },
+ {
+  "date": "2015/06/07",
+  "wrestler": "Beretta",
+  "elo": 1068.7805357940683
+ },
+ {
+  "date": "2015/06/07",
+  "wrestler": "Bobby Fish",
+  "elo": 1179.4911197298861
+ },
+ {
+  "date": "2015/06/07",
+  "wrestler": "Rocky Romero",
+  "elo": 1113.3959175544364
+ },
+ {
+  "date": "2015/06/07",
+  "wrestler": "Kyle O'Reilly",
+  "elo": 1184.175188356508
+ },
+ {
+  "date": "2015/06/07",
+  "wrestler": "KUSHIDA",
+  "elo": 1245.349834051906
+ },
+ {
+  "date": "2015/06/20",
+  "wrestler": "Andruew Tang",
+  "elo": 1050.0
+ },
+ {
+  "date": "2015/06/27",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1126.737151633541
+ },
+ {
+  "date": "2015/06/28",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1195.9474578491975
+ },
+ {
+  "date": "2015/06/28",
+  "wrestler": "Tiger Mask",
+  "elo": 1119.851024985056
+ },
+ {
+  "date": "2015/06/28",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1145.8757761050401
+ },
+ {
+  "date": "2015/06/28",
+  "wrestler": "Mascara Dorada",
+  "elo": 1202.8544009542056
+ },
+ {
+  "date": "2015/07/05",
+  "wrestler": "Kenny Omega",
+  "elo": 1120.1302448244444
+ },
+ {
+  "date": "2015/07/05",
+  "wrestler": "KUSHIDA",
+  "elo": 1264.1794436801065
+ },
+ {
+  "date": "2015/07/05",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 904.8864014664557
+ },
+ {
+  "date": "2015/07/05",
+  "wrestler": "Togi Makabe",
+  "elo": 1109.5780207682465
+ },
+ {
+  "date": "2015/07/05",
+  "wrestler": "Toru Yano",
+  "elo": 923.4572258818778
+ },
+ {
+  "date": "2015/07/05",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1135.8794061336114
+ },
+ {
+  "date": "2015/07/05",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1102.824949789086
+ },
+ {
+  "date": "2015/07/05",
+  "wrestler": "Hirooki Goto",
+  "elo": 1175.9941862061123
+ },
+ {
+  "date": "2015/07/05",
+  "wrestler": "AJ Styles",
+  "elo": 1126.38700595695
+ },
+ {
+  "date": "2015/07/05",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1184.9943259453933
+ },
+ {
+  "date": "2015/07/20",
+  "wrestler": "Doc Gallows",
+  "elo": 895.8333279120203
+ },
+ {
+  "date": "2015/07/20",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1124.4916768093406
+ },
+ {
+  "date": "2015/07/20",
+  "wrestler": "Toru Yano",
+  "elo": 872.429740987844
+ },
+ {
+  "date": "2015/07/20",
+  "wrestler": "Togi Makabe",
+  "elo": 1135.0917632152634
+ },
+ {
+  "date": "2015/07/20",
+  "wrestler": "Bad Luck Fale",
+  "elo": 810.8641482617245
+ },
+ {
+  "date": "2015/07/20",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1104.2156000453551
+ },
+ {
+  "date": "2015/07/20",
+  "wrestler": "AJ Styles",
+  "elo": 1154.0464777008665
+ },
+ {
+  "date": "2015/07/20",
+  "wrestler": "Kota Ibushi",
+  "elo": 1135.5818585576562
+ },
+ {
+  "date": "2015/07/20",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1194.1451416957987
+ },
+ {
+  "date": "2015/07/23",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 944.5096862678342
+ },
+ {
+  "date": "2015/07/23",
+  "wrestler": "Hirooki Goto",
+  "elo": 1202.1164779404962
+ },
+ {
+  "date": "2015/07/23",
+  "wrestler": "Michael Elgin",
+  "elo": 1030.0367612551147
+ },
+ {
+  "date": "2015/07/23",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1218.1501146551477
+ },
+ {
+  "date": "2015/07/23",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1031.3030440943162
+ },
+ {
+  "date": "2015/07/23",
+  "wrestler": "Karl Anderson",
+  "elo": 1085.8974996487016
+ },
+ {
+  "date": "2015/07/24",
+  "wrestler": "Doc Gallows",
+  "elo": 855.6348517861276
+ },
+ {
+  "date": "2015/07/24",
+  "wrestler": "Kota Ibushi",
+  "elo": 1155.6810966206026
+ },
+ {
+  "date": "2015/07/24",
+  "wrestler": "Togi Makabe",
+  "elo": 1048.4875969278733
+ },
+ {
+  "date": "2015/07/24",
+  "wrestler": "Bad Luck Fale",
+  "elo": 984.0724808365051
+ },
+ {
+  "date": "2015/07/24",
+  "wrestler": "Toru Yano",
+  "elo": 839.4195443405283
+ },
+ {
+  "date": "2015/07/24",
+  "wrestler": "AJ Styles",
+  "elo": 1170.5515760245244
+ },
+ {
+  "date": "2015/07/24",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1028.2238207579358
+ },
+ {
+  "date": "2015/07/24",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1084.3834474086075
+ },
+ {
+  "date": "2015/07/24",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1234.2533710965317
+ },
+ {
+  "date": "2015/07/25",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1044.117978441649
+ },
+ {
+  "date": "2015/07/25",
+  "wrestler": "Michael Elgin",
+  "elo": 938.7702267852803
+ },
+ {
+  "date": "2015/07/25",
+  "wrestler": "Hirooki Goto",
+  "elo": 1169.0524031958926
+ },
+ {
+  "date": "2015/07/25",
+  "wrestler": "Karl Anderson",
+  "elo": 1152.0256491379087
+ },
+ {
+  "date": "2015/07/25",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1057.5935782484055
+ },
+ {
+  "date": "2015/07/25",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1220.1098043475736
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Doc Gallows",
+  "elo": 791.0054359597664
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1048.7018966628664
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1004.0048724131589
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Toru Yano",
+  "elo": 1000.1766943314256
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Togi Makabe",
+  "elo": 999.5738009619586
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "AJ Styles",
+  "elo": 1118.4128478299508
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Kota Ibushi",
+  "elo": 1207.8198248151762
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1195.9521130842547
+ },
+ {
+  "date": "2015/07/26",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1104.8263367824895
+ },
+ {
+  "date": "2015/07/28",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 991.1304422911732
+ },
+ {
+  "date": "2015/07/28",
+  "wrestler": "Michael Elgin",
+  "elo": 1071.696498699745
+ },
+ {
+  "date": "2015/07/28",
+  "wrestler": "Hirooki Goto",
+  "elo": 1173.9708195796848
+ },
+ {
+  "date": "2015/07/28",
+  "wrestler": "Karl Anderson",
+  "elo": 1086.9772690533127
+ },
+ {
+  "date": "2015/07/28",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1109.166358526245
+ },
+ {
+  "date": "2015/07/28",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1224.3066279171048
+ },
+ {
+  "date": "2015/07/29",
+  "wrestler": "Toru Yano",
+  "elo": 923.2515982536627
+ },
+ {
+  "date": "2015/07/29",
+  "wrestler": "Doc Gallows",
+  "elo": 944.8556281152921
+ },
+ {
+  "date": "2015/07/29",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 953.3672245432622
+ },
+ {
+  "date": "2015/07/29",
+  "wrestler": "Togi Makabe",
+  "elo": 1100.849096701752
+ },
+ {
+  "date": "2015/07/29",
+  "wrestler": "Kota Ibushi",
+  "elo": 1175.6267423697143
+ },
+ {
+  "date": "2015/07/29",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1125.9449205983924
+ },
+ {
+  "date": "2015/07/29",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1118.7090891487287
+ },
+ {
+  "date": "2015/07/29",
+  "wrestler": "AJ Styles",
+  "elo": 1066.4585877740685
+ },
+ {
+  "date": "2015/07/29",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1156.7805968383718
+ },
+ {
+  "date": "2015/08/01",
+  "wrestler": "Karl Anderson",
+  "elo": 1097.3417012394277
+ },
+ {
+  "date": "2015/08/01",
+  "wrestler": "Michael Elgin",
+  "elo": 1079.5824223341954
+ },
+ {
+  "date": "2015/08/01",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1042.8043333080964
+ },
+ {
+  "date": "2015/08/01",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1123.8544927274704
+ },
+ {
+  "date": "2015/08/01",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1195.7098055779202
+ },
+ {
+  "date": "2015/08/01",
+  "wrestler": "Hirooki Goto",
+  "elo": 1231.164464258054
+ },
+ {
+  "date": "2015/08/02",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 909.8377247702572
+ },
+ {
+  "date": "2015/08/02",
+  "wrestler": "Kota Ibushi",
+  "elo": 1197.391492256217
+ },
+ {
+  "date": "2015/08/02",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1075.9438201304467
+ },
+ {
+  "date": "2015/08/02",
+  "wrestler": "Doc Gallows",
+  "elo": 878.493311383359
+ },
+ {
+  "date": "2015/08/02",
+  "wrestler": "AJ Styles",
+  "elo": 1099.639746140035
+ },
+ {
+  "date": "2015/08/02",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1098.8002272970878
+ },
+ {
+  "date": "2015/08/02",
+  "wrestler": "Togi Makabe",
+  "elo": 1158.829466243036
+ },
+ {
+  "date": "2015/08/02",
+  "wrestler": "Toru Yano",
+  "elo": 875.7646962885731
+ },
+ {
+  "date": "2015/08/02",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1149.6883715809372
+ },
+ {
+  "date": "2015/08/04",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1200.3091016363085
+ },
+ {
+  "date": "2015/08/04",
+  "wrestler": "Michael Elgin",
+  "elo": 1117.2423659958529
+ },
+ {
+  "date": "2015/08/04",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1054.4912599400795
+ },
+ {
+  "date": "2015/08/04",
+  "wrestler": "Karl Anderson",
+  "elo": 1061.1314982557326
+ },
+ {
+  "date": "2015/08/04",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1231.9200085616153
+ },
+ {
+  "date": "2015/08/04",
+  "wrestler": "Hirooki Goto",
+  "elo": 1198.6794066294103
+ },
+ {
+  "date": "2015/08/04",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1188.824607984758
+ },
+ {
+  "date": "2015/08/05",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 854.3091322642983
+ },
+ {
+  "date": "2015/08/05",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1103.7081163834262
+ },
+ {
+  "date": "2015/08/05",
+  "wrestler": "Toru Yano",
+  "elo": 1050.549564661586
+ },
+ {
+  "date": "2015/08/05",
+  "wrestler": "Doc Gallows",
+  "elo": 843.7962348618074
+ },
+ {
+  "date": "2015/08/05",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1167.036909841713
+ },
+ {
+  "date": "2015/08/05",
+  "wrestler": "Togi Makabe",
+  "elo": 1100.392842334296
+ },
+ {
+  "date": "2015/08/05",
+  "wrestler": "AJ Styles",
+  "elo": 1158.076370048775
+ },
+ {
+  "date": "2015/08/05",
+  "wrestler": "Kota Ibushi",
+  "elo": 1133.5720279106877
+ },
+ {
+  "date": "2015/08/05",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1162.619691642617
+ },
+ {
+  "date": "2015/08/07",
+  "wrestler": "Michael Elgin",
+  "elo": 1124.250322465246
+ },
+ {
+  "date": "2015/08/07",
+  "wrestler": "Karl Anderson",
+  "elo": 1066.3214208226645
+ },
+ {
+  "date": "2015/08/07",
+  "wrestler": "Hirooki Goto",
+  "elo": 1207.8121019459948
+ },
+ {
+  "date": "2015/08/07",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1206.0971735270698
+ },
+ {
+  "date": "2015/08/07",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1028.0150410971376
+ },
+ {
+  "date": "2015/08/07",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1245.1581179830864
+ },
+ {
+  "date": "2015/08/08",
+  "wrestler": "Kota Ibushi",
+  "elo": 1079.2848187720833
+ },
+ {
+  "date": "2015/08/08",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1157.9953255220305
+ },
+ {
+  "date": "2015/08/08",
+  "wrestler": "Toru Yano",
+  "elo": 1016.1407266190041
+ },
+ {
+  "date": "2015/08/08",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1197.028529685199
+ },
+ {
+  "date": "2015/08/08",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 824.6649848700914
+ },
+ {
+  "date": "2015/08/08",
+  "wrestler": "AJ Styles",
+  "elo": 1172.8984437458785
+ },
+ {
+  "date": "2015/08/08",
+  "wrestler": "Doc Gallows",
+  "elo": 806.6227267902868
+ },
+ {
+  "date": "2015/08/08",
+  "wrestler": "Togi Makabe",
+  "elo": 1118.9795963700562
+ },
+ {
+  "date": "2015/08/08",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1217.233867093652
+ },
+ {
+  "date": "2015/08/09",
+  "wrestler": "Michael Elgin",
+  "elo": 1065.9900862538352
+ },
+ {
+  "date": "2015/08/09",
+  "wrestler": "Karl Anderson",
+  "elo": 1124.5816570340753
+ },
+ {
+  "date": "2015/08/09",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1250.6638464762257
+ },
+ {
+  "date": "2015/08/09",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1207.1918818732677
+ },
+ {
+  "date": "2015/08/09",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1001.8033560615147
+ },
+ {
+  "date": "2015/08/09",
+  "wrestler": "Hirooki Goto",
+  "elo": 1220.9179444638062
+ },
+ {
+  "date": "2015/08/11",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1106.5863032567643
+ },
+ {
+  "date": "2015/08/11",
+  "wrestler": "Doc Gallows",
+  "elo": 987.5071796471562
+ },
+ {
+  "date": "2015/08/11",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 993.5038364687856
+ },
+ {
+  "date": "2015/08/11",
+  "wrestler": "Kota Ibushi",
+  "elo": 1020.2964005707515
+ },
+ {
+  "date": "2015/08/11",
+  "wrestler": "Toru Yano",
+  "elo": 1075.1291448203358
+ },
+ {
+  "date": "2015/08/11",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1110.1387422073954
+ },
+ {
+  "date": "2015/08/11",
+  "wrestler": "AJ Styles",
+  "elo": 1220.7550270605136
+ },
+ {
+  "date": "2015/08/11",
+  "wrestler": "Togi Makabe",
+  "elo": 1082.7542561136838
+ },
+ {
+  "date": "2015/08/11",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1235.3465372218382
+ },
+ {
+  "date": "2015/08/12",
+  "wrestler": "Karl Anderson",
+  "elo": 1142.494677888236
+ },
+ {
+  "date": "2015/08/12",
+  "wrestler": "Michael Elgin",
+  "elo": 1036.9169866836517
+ },
+ {
+  "date": "2015/08/12",
+  "wrestler": "Hirooki Goto",
+  "elo": 1235.4544942488978
+ },
+ {
+  "date": "2015/08/12",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1209.0960447950745
+ },
+ {
+  "date": "2015/08/12",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1253.9426551143167
+ },
+ {
+  "date": "2015/08/12",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 908.4109251953881
+ },
+ {
+  "date": "2015/08/14",
+  "wrestler": "Doc Gallows",
+  "elo": 1100.749958335868
+ },
+ {
+  "date": "2015/08/14",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1055.117439632917
+ },
+ {
+  "date": "2015/08/14",
+  "wrestler": "Toru Yano",
+  "elo": 1130.1504473948141
+ },
+ {
+  "date": "2015/08/14",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1040.8637393809252
+ },
+ {
+  "date": "2015/08/14",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1124.9489642204637
+ },
+ {
+  "date": "2015/08/14",
+  "wrestler": "Togi Makabe",
+  "elo": 1023.8614376099736
+ },
+ {
+  "date": "2015/08/14",
+  "wrestler": "Kota Ibushi",
+  "elo": 1079.1892190744618
+ },
+ {
+  "date": "2015/08/14",
+  "wrestler": "AJ Styles",
+  "elo": 1196.804353750965
+ },
+ {
+  "date": "2015/08/14",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1259.2972105313868
+ },
+ {
+  "date": "2015/08/15",
+  "wrestler": "Michael Elgin",
+  "elo": 969.223079066998
+ },
+ {
+  "date": "2015/08/15",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1043.7987404286955
+ },
+ {
+  "date": "2015/08/15",
+  "wrestler": "Hirooki Goto",
+  "elo": 1188.770430051318
+ },
+ {
+  "date": "2015/08/15",
+  "wrestler": "Karl Anderson",
+  "elo": 1047.7072119981467
+ },
+ {
+  "date": "2015/08/15",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1225.7334853886073
+ },
+ {
+  "date": "2015/08/15",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1237.305214520784
+ },
+ {
+  "date": "2015/08/16",
+  "wrestler": "Michael Elgin",
+  "elo": 1068.0301588431066
+ },
+ {
+  "date": "2015/08/16",
+  "wrestler": "KUSHIDA",
+  "elo": 1273.1470789644425
+ },
+ {
+  "date": "2015/08/16",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1213.8855557811012
+ },
+ {
+  "date": "2015/08/16",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1282.7168692710695
+ },
+ {
+  "date": "2015/09/22",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1212.9378875750535
+ },
+ {
+  "date": "2015/09/23",
+  "wrestler": "Steve Anthony",
+  "elo": 1028.9355631051462
+ },
+ {
+  "date": "2015/09/23",
+  "wrestler": "Tiger Mask",
+  "elo": 1163.0231268605914
+ },
+ {
+  "date": "2015/09/23",
+  "wrestler": "KUSHIDA",
+  "elo": 1237.7973104951802
+ },
+ {
+  "date": "2015/09/23",
+  "wrestler": "Kenny Omega",
+  "elo": 1190.8297817629689
+ },
+ {
+  "date": "2015/09/23",
+  "wrestler": "Kota Ibushi",
+  "elo": 1021.2935417576997
+ },
+ {
+  "date": "2015/09/23",
+  "wrestler": "Togi Makabe",
+  "elo": 1081.7571149267358
+ },
+ {
+  "date": "2015/09/27",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1081.7984846428367
+ },
+ {
+  "date": "2015/09/27",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1033.8715602196953
+ },
+ {
+  "date": "2015/09/27",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1293.3398089776804
+ },
+ {
+  "date": "2015/09/27",
+  "wrestler": "Hirooki Goto",
+  "elo": 1142.3785047898157
+ },
+ {
+  "date": "2015/09/27",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1237.0815184118524
+ },
+ {
+  "date": "2015/10/12",
+  "wrestler": "Kenny Omega",
+  "elo": 1215.831802349302
+ },
+ {
+  "date": "2015/10/12",
+  "wrestler": "Togi Makabe",
+  "elo": 1026.3160969011947
+ },
+ {
+  "date": "2015/10/12",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1099.2397584542364
+ },
+ {
+  "date": "2015/10/12",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1058.964862726347
+ },
+ {
+  "date": "2015/10/12",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1304.7566199359253
+ },
+ {
+  "date": "2015/10/12",
+  "wrestler": "AJ Styles",
+  "elo": 1150.9579957997817
+ },
+ {
+  "date": "2015/10/12",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1248.6566643641988
+ },
+ {
+  "date": "2015/10/18",
+  "wrestler": "KUSHIDA",
+  "elo": 1238.8187470426556
+ },
+ {
+  "date": "2015/10/18",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1213.4428391184708
+ },
+ {
+  "date": "2015/11/07",
+  "wrestler": "Hirooki Goto",
+  "elo": 1172.9634354308935
+ },
+ {
+  "date": "2015/11/07",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1115.1169878232606
+ },
+ {
+  "date": "2015/11/07",
+  "wrestler": "Karl Anderson",
+  "elo": 1022.5477593331838
+ },
+ {
+  "date": "2015/11/07",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1249.6612447443338
+ },
+ {
+  "date": "2015/11/30",
+  "wrestler": "Michael Elgin",
+  "elo": 1070.2996981182462
+ },
+ {
+  "date": "2015/12/09",
+  "wrestler": "Mascara Dorada",
+  "elo": 1203.369595576939
+ },
+ {
+  "date": "2015/12/16",
+  "wrestler": "Juice Robinson",
+  "elo": 1002.3779566199948
+ },
+ {
+  "date": "2015/12/16",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1225.0959953770916
+ },
+ {
+  "date": "2015/12/16",
+  "wrestler": "KUSHIDA",
+  "elo": 1240.129812297724
+ },
+ {
+  "date": "2015/12/18",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1098.3414765675964
+ },
+ {
+  "date": "2015/12/18",
+  "wrestler": "Tiger Mask",
+  "elo": 1210.5574263980352
+ },
+ {
+  "date": "2015/12/18",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1201.8606675339133
+ },
+ {
+  "date": "2015/12/18",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1272.896572587512
+ },
+ {
+  "date": "2015/12/19",
+  "wrestler": "Mascara Dorada",
+  "elo": 1165.2061144223094
+ },
+ {
+  "date": "2015/12/19",
+  "wrestler": "BUSHI",
+  "elo": 1076.3269623092592
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

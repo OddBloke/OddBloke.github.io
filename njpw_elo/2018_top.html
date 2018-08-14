@@ -1,0 +1,2020 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2018/01/04",
+  "wrestler": "BUSHI",
+  "elo": 998.75
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Cheeseburger",
+  "elo": 998.7589781385861
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 998.7940009913823
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 998.8109724745927
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Yoshinobu Kanemaru",
+  "elo": 998.8152394377377
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Yuji Nagata",
+  "elo": 799.4486793614333
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1021.0643078531589
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Cody",
+  "elo": 950.0
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Kota Ibushi",
+  "elo": 1050.0
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Minoru Suzuki",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Hirooki Goto",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Marty Scurll",
+  "elo": 1089.3322500032853
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 991.9224550621833
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "KUSHIDA",
+  "elo": 992.1158417067296
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Will Ospreay",
+  "elo": 1026.6294532278018
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Jay White",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Chris Jericho",
+  "elo": 964.0064999802885
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Kenny Omega",
+  "elo": 1135.9935000197115
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Tetsuya Naito",
+  "elo": 975.9746926647958
+ },
+ {
+  "date": "2018/01/04",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1212.012653667602
+ },
+ {
+  "date": "2018/01/05",
+  "wrestler": "Jay White",
+  "elo": 989.6251181972556
+ },
+ {
+  "date": "2018/01/12",
+  "wrestler": "Disturbio",
+  "elo": 950.0
+ },
+ {
+  "date": "2018/01/12",
+  "wrestler": "Drone",
+  "elo": 1050.0
+ },
+ {
+  "date": "2018/01/14",
+  "wrestler": "Disturbio",
+  "elo": 864.2926234816763
+ },
+ {
+  "date": "2018/01/15",
+  "wrestler": "Drone",
+  "elo": 1092.8536882591618
+ },
+ {
+  "date": "2018/01/17",
+  "wrestler": "Disturbio",
+  "elo": 1011.5935645862213
+ },
+ {
+  "date": "2018/01/19",
+  "wrestler": "OKUMURA",
+  "elo": 1050.0
+ },
+ {
+  "date": "2018/01/19",
+  "wrestler": "El Cuatrero",
+  "elo": 1050.0
+ },
+ {
+  "date": "2018/01/19",
+  "wrestler": "El Soberano Jr.",
+  "elo": 1050.0
+ },
+ {
+  "date": "2018/01/19",
+  "wrestler": "Niebla Roja",
+  "elo": 1050.0
+ },
+ {
+  "date": "2018/01/21",
+  "wrestler": "Volador Jr.",
+  "elo": 1050.0
+ },
+ {
+  "date": "2018/01/22",
+  "wrestler": "Rush",
+  "elo": 1023.9658820661633
+ },
+ {
+  "date": "2018/01/27",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 800.0
+ },
+ {
+  "date": "2018/01/27",
+  "wrestler": "Minoru Suzuki",
+  "elo": 903.8987706591831
+ },
+ {
+  "date": "2018/01/28",
+  "wrestler": "Juice Robinson",
+  "elo": 1014.9724059729982
+ },
+ {
+  "date": "2018/01/28",
+  "wrestler": "Kenny Omega",
+  "elo": 1066.0930022666191
+ },
+ {
+  "date": "2018/01/28",
+  "wrestler": "Jay White",
+  "elo": 1129.4261137034403
+ },
+ {
+  "date": "2018/02/05",
+  "wrestler": "Jay White",
+  "elo": 1161.461309996575
+ },
+ {
+  "date": "2018/02/06",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1017.5144056849159
+ },
+ {
+  "date": "2018/02/10",
+  "wrestler": "Yuji Nagata",
+  "elo": 844.6616600915008
+ },
+ {
+  "date": "2018/02/10",
+  "wrestler": "BUSHI",
+  "elo": 1099.109777368452
+ },
+ {
+  "date": "2018/02/10",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 892.2476117090813
+ },
+ {
+  "date": "2018/02/10",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1082.5380534303072
+ },
+ {
+  "date": "2018/02/10",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 901.8788360219668
+ },
+ {
+  "date": "2018/02/10",
+  "wrestler": "Will Ospreay",
+  "elo": 1071.65126274791
+ },
+ {
+  "date": "2018/02/10",
+  "wrestler": "EVIL",
+  "elo": 953.4520191492525
+ },
+ {
+  "date": "2018/02/10",
+  "wrestler": "Hirooki Goto",
+  "elo": 1070.5732881859517
+ },
+ {
+  "date": "2018/02/10",
+  "wrestler": "SANADA",
+  "elo": 977.2141489184492
+ },
+ {
+  "date": "2018/02/10",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1223.4055792083775
+ },
+ {
+  "date": "2018/02/16",
+  "wrestler": "Yuji Nagata",
+  "elo": 986.3170243889845
+ },
+ {
+  "date": "2018/02/16",
+  "wrestler": "Cody",
+  "elo": 1064.2926234816764
+ },
+ {
+  "date": "2018/02/16",
+  "wrestler": "Jay White",
+  "elo": 1189.7650219790685
+ },
+ {
+  "date": "2018/02/17",
+  "wrestler": "Lance Archer",
+  "elo": 1045.935755212403
+ },
+ {
+  "date": "2018/02/17",
+  "wrestler": "Yuji Nagata",
+  "elo": 1050.7501153296892
+ },
+ {
+  "date": "2018/02/17",
+  "wrestler": "Jay White",
+  "elo": 1214.8821481984644
+ },
+ {
+  "date": "2018/02/17",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1030.8744557376049
+ },
+ {
+  "date": "2018/02/18",
+  "wrestler": "KUSHIDA",
+  "elo": 1078.0313121234917
+ },
+ {
+  "date": "2018/02/18",
+  "wrestler": "Yuji Nagata",
+  "elo": 1093.4980912984556
+ },
+ {
+  "date": "2018/02/18",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1049.8239591479019
+ },
+ {
+  "date": "2018/02/19",
+  "wrestler": "Lance Archer",
+  "elo": 1073.6994878116052
+ },
+ {
+  "date": "2018/02/19",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1076.442923200648
+ },
+ {
+  "date": "2018/02/19",
+  "wrestler": "Will Ospreay",
+  "elo": 1059.2539519091924
+ },
+ {
+  "date": "2018/02/19",
+  "wrestler": "Cody",
+  "elo": 1086.9028673085177
+ },
+ {
+  "date": "2018/02/23",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 892.8180750515928
+ },
+ {
+  "date": "2018/02/23",
+  "wrestler": "KUSHIDA",
+  "elo": 1063.0819867901455
+ },
+ {
+  "date": "2018/02/23",
+  "wrestler": "Flip Gordon",
+  "elo": 1024.01008630372
+ },
+ {
+  "date": "2018/02/23",
+  "wrestler": "Beer City Bruiser",
+  "elo": 960.0188959969987
+ },
+ {
+  "date": "2018/02/23",
+  "wrestler": "Hirooki Goto",
+  "elo": 1110.554392188953
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Beer City Bruiser",
+  "elo": 1003.7278861999123
+ },
+ {
+  "date": "2018/02/24",
+  "wrestler": "Dalton Castle",
+  "elo": 1025.133871551764
+ },
+ {
+  "date": "2018/03/06",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 816.2268061675076
+ },
+ {
+  "date": "2018/03/06",
+  "wrestler": "SANADA",
+  "elo": 1053.234954460023
+ },
+ {
+  "date": "2018/03/06",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1120.878395183219
+ },
+ {
+  "date": "2018/03/06",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1093.3625613697598
+ },
+ {
+  "date": "2018/03/06",
+  "wrestler": "Will Ospreay",
+  "elo": 1031.2634486269874
+ },
+ {
+  "date": "2018/03/06",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1237.40083084948
+ },
+ {
+  "date": "2018/03/09",
+  "wrestler": "Juice Robinson",
+  "elo": 1068.00416911009
+ },
+ {
+  "date": "2018/03/09",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 995.2236317626066
+ },
+ {
+  "date": "2018/03/10",
+  "wrestler": "Lance Archer",
+  "elo": 1013.2495482475485
+ },
+ {
+  "date": "2018/03/10",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 943.4389043511338
+ },
+ {
+  "date": "2018/03/11",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 774.9121734110645
+ },
+ {
+  "date": "2018/03/11",
+  "wrestler": "Kota Ibushi",
+  "elo": 1070.6573163782216
+ },
+ {
+  "date": "2018/03/11",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1054.1520930933173
+ },
+ {
+  "date": "2018/03/11",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1066.7263020899018
+ },
+ {
+  "date": "2018/03/12",
+  "wrestler": "Toru Yano",
+  "elo": 1050.0
+ },
+ {
+  "date": "2018/03/12",
+  "wrestler": "SANADA",
+  "elo": 1095.6332247296352
+ },
+ {
+  "date": "2018/03/14",
+  "wrestler": "Juice Robinson",
+  "elo": 1118.6320376983501
+ },
+ {
+  "date": "2018/03/14",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1075.8993053882095
+ },
+ {
+  "date": "2018/03/15",
+  "wrestler": "Toru Yano",
+  "elo": 1006.52964446484
+ },
+ {
+  "date": "2018/03/15",
+  "wrestler": "SANADA",
+  "elo": 1139.1035802647953
+ },
+ {
+  "date": "2018/03/15",
+  "wrestler": "Kota Ibushi",
+  "elo": 1020.0916220858326
+ },
+ {
+  "date": "2018/03/15",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1117.2919963822908
+ },
+ {
+  "date": "2018/03/16",
+  "wrestler": "Juice Robinson",
+  "elo": 1062.5131271025784
+ },
+ {
+  "date": "2018/03/16",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1132.0182159839812
+ },
+ {
+  "date": "2018/03/18",
+  "wrestler": "SANADA",
+  "elo": 1085.9687582341771
+ },
+ {
+  "date": "2018/03/18",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1170.426818412909
+ },
+ {
+  "date": "2018/03/21",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1087.5232506835184
+ },
+ {
+  "date": "2018/03/21",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1214.9217837133717
+ },
+ {
+  "date": "2018/03/25",
+  "wrestler": "Will Ospreay",
+  "elo": 1076.602736934713
+ },
+ {
+  "date": "2018/03/25",
+  "wrestler": "Jay White",
+  "elo": 1226.1304180497007
+ },
+ {
+  "date": "2018/03/30",
+  "wrestler": "Yuji Nagata",
+  "elo": 1122.8238862920587
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Marty Scurll",
+  "elo": 1037.5011450857094
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Will Ospreay",
+  "elo": 1128.4338418522889
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1191.5370279603371
+ },
+ {
+  "date": "2018/04/01",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1260.7855866025145
+ },
+ {
+  "date": "2018/04/13",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1054.5620018854165
+ },
+ {
+  "date": "2018/04/14",
+  "wrestler": "Yuji Nagata",
+  "elo": 1142.8277693294724
+ },
+ {
+  "date": "2018/04/24",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1026.9497304595004
+ },
+ {
+  "date": "2018/04/24",
+  "wrestler": "Jay White",
+  "elo": 1234.000773931148
+ },
+ {
+  "date": "2018/04/27",
+  "wrestler": "Juice Robinson",
+  "elo": 1019.3830927984607
+ },
+ {
+  "date": "2018/04/27",
+  "wrestler": "Hirooki Goto",
+  "elo": 1153.6844264930708
+ },
+ {
+  "date": "2018/04/29",
+  "wrestler": "BUSHI",
+  "elo": 1146.9763614498675
+ },
+ {
+  "date": "2018/04/29",
+  "wrestler": "Yoshinobu Kanemaru",
+  "elo": 869.2193814529027
+ },
+ {
+  "date": "2018/04/29",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1022.4139330364278
+ },
+ {
+  "date": "2018/04/29",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1037.7435569320319
+ },
+ {
+  "date": "2018/04/29",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1109.7710975310451
+ },
+ {
+  "date": "2018/05/03",
+  "wrestler": "Kota Ibushi",
+  "elo": 979.5897449922699
+ },
+ {
+  "date": "2018/05/03",
+  "wrestler": "Cody",
+  "elo": 1127.4047444020803
+ },
+ {
+  "date": "2018/05/03",
+  "wrestler": "Kenny Omega",
+  "elo": 1103.6132363299282
+ },
+ {
+  "date": "2018/05/04",
+  "wrestler": "KUSHIDA",
+  "elo": 1022.3775049359236
+ },
+ {
+  "date": "2018/05/04",
+  "wrestler": "Will Ospreay",
+  "elo": 1169.1383237065106
+ },
+ {
+  "date": "2018/05/04",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1060.5775292130643
+ },
+ {
+  "date": "2018/05/04",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1274.2584473377417
+ },
+ {
+  "date": "2018/05/06",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1040.0679860146038
+ },
+ {
+  "date": "2018/05/09",
+  "wrestler": "Cheeseburger",
+  "elo": 1099.116171424238
+ },
+ {
+  "date": "2018/05/09",
+  "wrestler": "Jay White",
+  "elo": 1213.5228085009085
+ },
+ {
+  "date": "2018/05/11",
+  "wrestler": "Jay White",
+  "elo": 1224.8394418014473
+ },
+ {
+  "date": "2018/05/11",
+  "wrestler": "Cheeseburger",
+  "elo": 1128.862439091551
+ },
+ {
+  "date": "2018/05/11",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1144.4792352526276
+ },
+ {
+  "date": "2018/05/11",
+  "wrestler": "Silas Young",
+  "elo": 1036.3207826097996
+ },
+ {
+  "date": "2018/05/11",
+  "wrestler": "Cody",
+  "elo": 1149.4609689337524
+ },
+ {
+  "date": "2018/05/12",
+  "wrestler": "EVIL",
+  "elo": 1066.770016258633
+ },
+ {
+  "date": "2018/05/12",
+  "wrestler": "SANADA",
+  "elo": 1076.828011456869
+ },
+ {
+  "date": "2018/05/12",
+  "wrestler": "Marty Scurll",
+  "elo": 1061.3406702485372
+ },
+ {
+  "date": "2018/05/12",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 989.9238922839849
+ },
+ {
+  "date": "2018/05/12",
+  "wrestler": "Cody",
+  "elo": 1181.9510096861952
+ },
+ {
+  "date": "2018/05/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1086.0812662237693
+ },
+ {
+  "date": "2018/05/15",
+  "wrestler": "Daisuke Sekimoto",
+  "elo": 1035.6568056796261
+ },
+ {
+  "date": "2018/05/15",
+  "wrestler": "Yuji Nagata",
+  "elo": 1155.0293790647756
+ },
+ {
+  "date": "2018/05/18",
+  "wrestler": "Yoshinobu Kanemaru",
+  "elo": 804.8786257208127
+ },
+ {
+  "date": "2018/05/18",
+  "wrestler": "Flip Gordon",
+  "elo": 970.5602472024742
+ },
+ {
+  "date": "2018/05/18",
+  "wrestler": "ACH",
+  "elo": 1053.449839101246
+ },
+ {
+  "date": "2018/05/18",
+  "wrestler": "BUSHI",
+  "elo": 1077.002280018872
+ },
+ {
+  "date": "2018/05/18",
+  "wrestler": "YOH",
+  "elo": 1069.9740814309955
+ },
+ {
+  "date": "2018/05/18",
+  "wrestler": "Will Ospreay",
+  "elo": 1096.5539111939688
+ },
+ {
+  "date": "2018/05/18",
+  "wrestler": "Taiji Ishimori",
+  "elo": 1072.5844125125418
+ },
+ {
+  "date": "2018/05/19",
+  "wrestler": "SHO",
+  "elo": 950.0
+ },
+ {
+  "date": "2018/05/19",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 989.5415350515477
+ },
+ {
+  "date": "2018/05/19",
+  "wrestler": "KUSHIDA",
+  "elo": 969.1615688124091
+ },
+ {
+  "date": "2018/05/19",
+  "wrestler": "Chris Sabin",
+  "elo": 1053.2159361235147
+ },
+ {
+  "date": "2018/05/19",
+  "wrestler": "Marty Scurll",
+  "elo": 1001.2053170810582
+ },
+ {
+  "date": "2018/05/19",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1110.1945986189428
+ },
+ {
+  "date": "2018/05/20",
+  "wrestler": "YOH",
+  "elo": 1018.9914862227687
+ },
+ {
+  "date": "2018/05/20",
+  "wrestler": "Yoshinobu Kanemaru",
+  "elo": 749.2519688882488
+ },
+ {
+  "date": "2018/05/20",
+  "wrestler": "Flip Gordon",
+  "elo": 1026.186904035038
+ },
+ {
+  "date": "2018/05/20",
+  "wrestler": "BUSHI",
+  "elo": 1026.3665320412647
+ },
+ {
+  "date": "2018/05/20",
+  "wrestler": "Taiji Ishimori",
+  "elo": 1123.220160490149
+ },
+ {
+  "date": "2018/05/20",
+  "wrestler": "ACH",
+  "elo": 1009.6213825415898
+ },
+ {
+  "date": "2018/05/20",
+  "wrestler": "Will Ospreay",
+  "elo": 1140.382367753625
+ },
+ {
+  "date": "2018/05/22",
+  "wrestler": "Chris Sabin",
+  "elo": 988.784058895348
+ },
+ {
+  "date": "2018/05/22",
+  "wrestler": "SHO",
+  "elo": 1078.8637544563333
+ },
+ {
+  "date": "2018/05/22",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 906.7693402030469
+ },
+ {
+  "date": "2018/05/22",
+  "wrestler": "Marty Scurll",
+  "elo": 946.6068821008884
+ },
+ {
+  "date": "2018/05/22",
+  "wrestler": "KUSHIDA",
+  "elo": 1078.3584387727487
+ },
+ {
+  "date": "2018/05/22",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1056.852429233531
+ },
+ {
+  "date": "2018/05/24",
+  "wrestler": "BUSHI",
+  "elo": 988.7344898418993
+ },
+ {
+  "date": "2018/05/24",
+  "wrestler": "ACH",
+  "elo": 927.8817374271604
+ },
+ {
+  "date": "2018/05/24",
+  "wrestler": "Yoshinobu Kanemaru",
+  "elo": 912.7312591171076
+ },
+ {
+  "date": "2018/05/24",
+  "wrestler": "Taiji Ishimori",
+  "elo": 1059.608039135326
+ },
+ {
+  "date": "2018/05/24",
+  "wrestler": "Flip Gordon",
+  "elo": 1089.799025389861
+ },
+ {
+  "date": "2018/05/24",
+  "wrestler": "YOH",
+  "elo": 985.7832551804015
+ },
+ {
+  "date": "2018/05/24",
+  "wrestler": "Will Ospreay",
+  "elo": 1173.590598795992
+ },
+ {
+  "date": "2018/05/25",
+  "wrestler": "Chris Sabin",
+  "elo": 876.7037753718062
+ },
+ {
+  "date": "2018/05/25",
+  "wrestler": "Marty Scurll",
+  "elo": 1058.6871656244302
+ },
+ {
+  "date": "2018/05/25",
+  "wrestler": "KUSHIDA",
+  "elo": 1005.4941852729517
+ },
+ {
+  "date": "2018/05/25",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1052.497847202641
+ },
+ {
+  "date": "2018/05/25",
+  "wrestler": "SHO",
+  "elo": 1137.61110294589
+ },
+ {
+  "date": "2018/05/25",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1011.8059215707208
+ },
+ {
+  "date": "2018/05/26",
+  "wrestler": "Flip Gordon",
+  "elo": 1148.6225909788018
+ },
+ {
+  "date": "2018/05/26",
+  "wrestler": "YOH",
+  "elo": 869.2704494617607
+ },
+ {
+  "date": "2018/05/26",
+  "wrestler": "ACH",
+  "elo": 1044.3945431458012
+ },
+ {
+  "date": "2018/05/26",
+  "wrestler": "Taiji Ishimori",
+  "elo": 989.6460029951147
+ },
+ {
+  "date": "2018/05/26",
+  "wrestler": "Yoshinobu Kanemaru",
+  "elo": 1052.65533139753
+ },
+ {
+  "date": "2018/05/26",
+  "wrestler": "Will Ospreay",
+  "elo": 1099.2429407423679
+ },
+ {
+  "date": "2018/05/26",
+  "wrestler": "BUSHI",
+  "elo": 1137.4298059491475
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Marty Scurll",
+  "elo": 1111.9699237416937
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Chris Sabin",
+  "elo": 1040.0728579353436
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "SHO",
+  "elo": 1069.464308176184
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "KUSHIDA",
+  "elo": 1073.6409800426577
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 996.668438560343
+ },
+ {
+  "date": "2018/05/27",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1067.6353302130187
+ },
+ {
+  "date": "2018/05/29",
+  "wrestler": "Taiji Ishimori",
+  "elo": 1118.5294295429799
+ },
+ {
+  "date": "2018/05/29",
+  "wrestler": "ACH",
+  "elo": 1007.4722996907672
+ },
+ {
+  "date": "2018/05/29",
+  "wrestler": "BUSHI",
+  "elo": 1174.3520494041816
+ },
+ {
+  "date": "2018/05/29",
+  "wrestler": "Flip Gordon",
+  "elo": 1065.3081234105957
+ },
+ {
+  "date": "2018/05/29",
+  "wrestler": "YOH",
+  "elo": 1035.8993845981727
+ },
+ {
+  "date": "2018/05/29",
+  "wrestler": "Yoshinobu Kanemaru",
+  "elo": 1009.3199317122918
+ },
+ {
+  "date": "2018/05/29",
+  "wrestler": "Will Ospreay",
+  "elo": 1142.578340427606
+ },
+ {
+  "date": "2018/05/30",
+  "wrestler": "Marty Scurll",
+  "elo": 1153.8086950978477
+ },
+ {
+  "date": "2018/05/30",
+  "wrestler": "SHO",
+  "elo": 1009.1387968184604
+ },
+ {
+  "date": "2018/05/30",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1117.3194612757902
+ },
+ {
+  "date": "2018/05/30",
+  "wrestler": "Chris Sabin",
+  "elo": 994.0311163486751
+ },
+ {
+  "date": "2018/05/30",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1113.6770717996872
+ },
+ {
+  "date": "2018/05/30",
+  "wrestler": "KUSHIDA",
+  "elo": 1117.1453525014615
+ },
+ {
+  "date": "2018/05/31",
+  "wrestler": "Flip Gordon",
+  "elo": 1030.505065108284
+ },
+ {
+  "date": "2018/05/31",
+  "wrestler": "BUSHI",
+  "elo": 1209.1551077064933
+ },
+ {
+  "date": "2018/05/31",
+  "wrestler": "ACH",
+  "elo": 972.931735183466
+ },
+ {
+  "date": "2018/05/31",
+  "wrestler": "Taiji Ishimori",
+  "elo": 1153.0699940502811
+ },
+ {
+  "date": "2018/05/31",
+  "wrestler": "Will Ospreay",
+  "elo": 1176.7260722494564
+ },
+ {
+  "date": "2018/05/31",
+  "wrestler": "Yoshinobu Kanemaru",
+  "elo": 963.1375777398163
+ },
+ {
+  "date": "2018/05/31",
+  "wrestler": "YOH",
+  "elo": 1082.0817385706482
+ },
+ {
+  "date": "2018/06/02",
+  "wrestler": "Chris Sabin",
+  "elo": 1091.3586587254083
+ },
+ {
+  "date": "2018/06/02",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1072.5514617123501
+ },
+ {
+  "date": "2018/06/02",
+  "wrestler": "Marty Scurll",
+  "elo": 1198.5766946612878
+ },
+ {
+  "date": "2018/06/02",
+  "wrestler": "SHO",
+  "elo": 973.7449274455439
+ },
+ {
+  "date": "2018/06/02",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1149.0709411726036
+ },
+ {
+  "date": "2018/06/02",
+  "wrestler": "KUSHIDA",
+  "elo": 1152.5790127636765
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "ACH",
+  "elo": 1079.0877664389675
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "BUSHI",
+  "elo": 1168.9180801868915
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Yoshinobu Kanemaru",
+  "elo": 1124.0856878182233
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Chris Sabin",
+  "elo": 1038.6547260270354
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1125.255394410723
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Flip Gordon",
+  "elo": 1000.3877106730682
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Will Ospreay",
+  "elo": 1206.8434266846723
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "YOH",
+  "elo": 1042.1579416395411
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Taiji Ishimori",
+  "elo": 1192.9937909813882
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Marty Scurll",
+  "elo": 1120.0903686022737
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "SHO",
+  "elo": 1130.717579563572
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "KUSHIDA",
+  "elo": 1102.0741778351533
+ },
+ {
+  "date": "2018/06/03",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1199.5757761011268
+ },
+ {
+  "date": "2018/06/04",
+  "wrestler": "Taiji Ishimori",
+  "elo": 1143.9409014814573
+ },
+ {
+  "date": "2018/06/04",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1248.6286656010577
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Hirooki Goto",
+  "elo": 1136.653098677947
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Will Ospreay",
+  "elo": 1184.8357031561054
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1270.6363891296246
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1070.6157625814287
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Chris Jericho",
+  "elo": 1111.733445322686
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1237.880103096523
+ },
+ {
+  "date": "2018/06/09",
+  "wrestler": "Kenny Omega",
+  "elo": 1176.3699248123658
+ },
+ {
+  "date": "2018/06/13",
+  "wrestler": "Yuji Nagata",
+  "elo": 1170.252993828377
+ },
+ {
+  "date": "2018/06/17",
+  "wrestler": "Hirooki Goto",
+  "elo": 1174.236659355557
+ },
+ {
+  "date": "2018/06/18",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1279.8746801742732
+ },
+ {
+  "date": "2018/06/29",
+  "wrestler": "Chasyn Rance",
+  "elo": 1050.0
+ },
+ {
+  "date": "2018/07/07",
+  "wrestler": "Hirooki Goto",
+  "elo": 1203.7813769607733
+ },
+ {
+  "date": "2018/07/07",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 1283.8016674737485
+ },
+ {
+  "date": "2018/07/07",
+  "wrestler": "Jay White",
+  "elo": 1186.567779316066
+ },
+ {
+  "date": "2018/07/07",
+  "wrestler": "Juice Robinson",
+  "elo": 1095.9264177692232
+ },
+ {
+  "date": "2018/07/07",
+  "wrestler": "Cody",
+  "elo": 1131.147896086667
+ },
+ {
+  "date": "2018/07/07",
+  "wrestler": "Kenny Omega",
+  "elo": 1227.173038411894
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 672.3938362751993
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "EVIL",
+  "elo": 1008.8051579720926
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Minoru Suzuki",
+  "elo": 991.0249066650848
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1107.2961794800115
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1209.2144972816536
+ },
+ {
+  "date": "2018/07/14",
+  "wrestler": "Jay White",
+  "elo": 1243.8989909458048
+ },
+ {
+  "date": "2018/07/15",
+  "wrestler": "Toru Yano",
+  "elo": 959.4649519821114
+ },
+ {
+  "date": "2018/07/15",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1074.014422942229
+ },
+ {
+  "date": "2018/07/15",
+  "wrestler": "Juice Robinson",
+  "elo": 1032.4619051286766
+ },
+ {
+  "date": "2018/07/15",
+  "wrestler": "Tama Tonga",
+  "elo": 1063.4645126405467
+ },
+ {
+  "date": "2018/07/15",
+  "wrestler": "SANADA",
+  "elo": 1044.326142545829
+ },
+ {
+  "date": "2018/07/15",
+  "wrestler": "Hirooki Goto",
+  "elo": 1220.0323114162934
+ },
+ {
+  "date": "2018/07/15",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1114.3295003751275
+ },
+ {
+  "date": "2018/07/15",
+  "wrestler": "Kota Ibushi",
+  "elo": 1134.0048001626892
+ },
+ {
+  "date": "2018/07/15",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1041.7356978130135
+ },
+ {
+  "date": "2018/07/15",
+  "wrestler": "Kenny Omega",
+  "elo": 1241.6130707961015
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 647.1881261761162
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "EVIL",
+  "elo": 1021.4080130216342
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "Minoru Suzuki",
+  "elo": 857.1977337165021
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1164.8318966659297
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1076.0008646355336
+ },
+ {
+  "date": "2018/07/16",
+  "wrestler": "Jay White",
+  "elo": 1259.5466483680436
+ },
+ {
+  "date": "2018/07/19",
+  "wrestler": "Tama Tonga",
+  "elo": 1010.7130621490672
+ },
+ {
+  "date": "2018/07/19",
+  "wrestler": "SANADA",
+  "elo": 1097.0775930373086
+ },
+ {
+  "date": "2018/07/19",
+  "wrestler": "Toru Yano",
+  "elo": 901.303721692526
+ },
+ {
+  "date": "2018/07/19",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1143.4101155199203
+ },
+ {
+  "date": "2018/07/19",
+  "wrestler": "Juice Robinson",
+  "elo": 996.6727658450736
+ },
+ {
+  "date": "2018/07/19",
+  "wrestler": "Kota Ibushi",
+  "elo": 1169.7939394462921
+ },
+ {
+  "date": "2018/07/19",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1019.3824601870384
+ },
+ {
+  "date": "2018/07/19",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1096.3676605682042
+ },
+ {
+  "date": "2018/07/19",
+  "wrestler": "Hirooki Goto",
+  "elo": 1196.5831778748095
+ },
+ {
+  "date": "2018/07/19",
+  "wrestler": "Kenny Omega",
+  "elo": 1265.0622043375854
+ },
+ {
+  "date": "2018/07/20",
+  "wrestler": "Jay White",
+  "elo": 1274.1397785678737
+ },
+ {
+  "date": "2018/07/20",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 601.2094198204818
+ },
+ {
+  "date": "2018/07/20",
+  "wrestler": "Minoru Suzuki",
+  "elo": 903.1764400721364
+ },
+ {
+  "date": "2018/07/20",
+  "wrestler": "EVIL",
+  "elo": 1068.690508848473
+ },
+ {
+  "date": "2018/07/20",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1119.0905673644963
+ },
+ {
+  "date": "2018/07/20",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1182.7613300560251
+ },
+ {
+  "date": "2018/07/21",
+  "wrestler": "Kota Ibushi",
+  "elo": 1087.3668740818023
+ },
+ {
+  "date": "2018/07/21",
+  "wrestler": "Toru Yano",
+  "elo": 1066.1578524215056
+ },
+ {
+  "date": "2018/07/21",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1086.7815764612958
+ },
+ {
+  "date": "2018/07/21",
+  "wrestler": "SANADA",
+  "elo": 1153.706132095933
+ },
+ {
+  "date": "2018/07/21",
+  "wrestler": "Juice Robinson",
+  "elo": 924.6048207531353
+ },
+ {
+  "date": "2018/07/21",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1132.4016331141734
+ },
+ {
+  "date": "2018/07/21",
+  "wrestler": "Tama Tonga",
+  "elo": 991.9297414660119
+ },
+ {
+  "date": "2018/07/21",
+  "wrestler": "Kenny Omega",
+  "elo": 1274.4538646791132
+ },
+ {
+  "date": "2018/07/21",
+  "wrestler": "Hirooki Goto",
+  "elo": 1123.0849570986268
+ },
+ {
+  "date": "2018/07/21",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1092.8806809632213
+ },
+ {
+  "date": "2018/07/22",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 789.0253051385805
+ },
+ {
+  "date": "2018/07/22",
+  "wrestler": "EVIL",
+  "elo": 1106.817661806693
+ },
+ {
+  "date": "2018/07/22",
+  "wrestler": "Jay White",
+  "elo": 1229.4247774491737
+ },
+ {
+  "date": "2018/07/22",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1082.0364445469365
+ },
+ {
+  "date": "2018/07/22",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1137.8724178813247
+ },
+ {
+  "date": "2018/07/22",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1204.013166091774
+ },
+ {
+  "date": "2018/07/26",
+  "wrestler": "Toru Yano",
+  "elo": 1024.2777867952461
+ },
+ {
+  "date": "2018/07/26",
+  "wrestler": "Hirooki Goto",
+  "elo": 1164.9650227248862
+ },
+ {
+  "date": "2018/07/26",
+  "wrestler": "Tama Tonga",
+  "elo": 930.2928643757622
+ },
+ {
+  "date": "2018/07/26",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1163.2200716592981
+ },
+ {
+  "date": "2018/07/26",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1042.0030394200496
+ },
+ {
+  "date": "2018/07/26",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1137.6592180044674
+ },
+ {
+  "date": "2018/07/26",
+  "wrestler": "Juice Robinson",
+  "elo": 901.0544312586326
+ },
+ {
+  "date": "2018/07/26",
+  "wrestler": "Kenny Omega",
+  "elo": 1280.3414620527387
+ },
+ {
+  "date": "2018/07/26",
+  "wrestler": "Kota Ibushi",
+  "elo": 1046.7995068112405
+ },
+ {
+  "date": "2018/07/26",
+  "wrestler": "SANADA",
+  "elo": 1194.273499366495
+ },
+ {
+  "date": "2018/07/27",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1118.0883664636774
+ },
+ {
+  "date": "2018/07/27",
+  "wrestler": "EVIL",
+  "elo": 1123.4788383400653
+ },
+ {
+  "date": "2018/07/27",
+  "wrestler": "Jay White",
+  "elo": 1186.227993382252
+ },
+ {
+  "date": "2018/07/27",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1159.3549475017605
+ },
+ {
+  "date": "2018/07/27",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 772.2201120774802
+ },
+ {
+  "date": "2018/07/27",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1208.214464357049
+ },
+ {
+  "date": "2018/07/28",
+  "wrestler": "Tama Tonga",
+  "elo": 883.7731767061707
+ },
+ {
+  "date": "2018/07/28",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1160.9190618392631
+ },
+ {
+  "date": "2018/07/28",
+  "wrestler": "Toru Yano",
+  "elo": 957.2524626025129
+ },
+ {
+  "date": "2018/07/28",
+  "wrestler": "Juice Robinson",
+  "elo": 1035.105079644099
+ },
+ {
+  "date": "2018/07/28",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 992.693262715922
+ },
+ {
+  "date": "2018/07/28",
+  "wrestler": "Kota Ibushi",
+  "elo": 1096.1092835153681
+ },
+ {
+  "date": "2018/07/28",
+  "wrestler": "Hirooki Goto",
+  "elo": 1114.713906191813
+ },
+ {
+  "date": "2018/07/28",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1213.4711881923713
+ },
+ {
+  "date": "2018/07/28",
+  "wrestler": "SANADA",
+  "elo": 1156.412376253839
+ },
+ {
+  "date": "2018/07/28",
+  "wrestler": "Kenny Omega",
+  "elo": 1299.2720236090665
+ },
+ {
+  "date": "2018/07/30",
+  "wrestler": "Jay White",
+  "elo": 1195.6875189466916
+ },
+ {
+  "date": "2018/07/30",
+  "wrestler": "EVIL",
+  "elo": 1072.703149317648
+ },
+ {
+  "date": "2018/07/30",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1168.8640554860947
+ },
+ {
+  "date": "2018/07/30",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 752.7765476282092
+ },
+ {
+  "date": "2018/07/30",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1169.076729726396
+ },
+ {
+  "date": "2018/07/30",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1215.8434251339215
+ },
+ {
+  "date": "2018/08/01",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 862.3317340853107
+ },
+ {
+  "date": "2018/08/01",
+  "wrestler": "Tama Tonga",
+  "elo": 1014.134705336782
+ },
+ {
+  "date": "2018/08/01",
+  "wrestler": "SANADA",
+  "elo": 1089.6312803181786
+ },
+ {
+  "date": "2018/08/01",
+  "wrestler": "Juice Robinson",
+  "elo": 1101.8861755797595
+ },
+ {
+  "date": "2018/08/01",
+  "wrestler": "Toru Yano",
+  "elo": 920.0130770357629
+ },
+ {
+  "date": "2018/08/01",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1222.7810345840587
+ },
+ {
+  "date": "2018/08/01",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1129.8399568208765
+ },
+ {
+  "date": "2018/08/01",
+  "wrestler": "Kenny Omega",
+  "elo": 1314.8115761182598
+ },
+ {
+  "date": "2018/08/01",
+  "wrestler": "Hirooki Goto",
+  "elo": 1062.039041939822
+ },
+ {
+  "date": "2018/08/01",
+  "wrestler": "Kota Ibushi",
+  "elo": 1148.7841477673592
+ },
+ {
+  "date": "2018/08/02",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 738.2858818885838
+ },
+ {
+  "date": "2018/08/02",
+  "wrestler": "Jay White",
+  "elo": 1202.9328518165044
+ },
+ {
+  "date": "2018/08/02",
+  "wrestler": "EVIL",
+  "elo": 1036.2273265025528
+ },
+ {
+  "date": "2018/08/02",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1205.5525525414912
+ },
+ {
+  "date": "2018/08/02",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1125.5840246259766
+ },
+ {
+  "date": "2018/08/02",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1237.4834405639806
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Toru Yano",
+  "elo": 865.2917742419223
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "SANADA",
+  "elo": 1116.9919317150989
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Tama Tonga",
+  "elo": 970.9853364073401
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Hirooki Goto",
+  "elo": 1105.1884108692639
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Juice Robinson",
+  "elo": 1055.9003899408094
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1175.8257424598266
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Kenny Omega",
+  "elo": 1268.2534568970868
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1048.564210970003
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1192.5356036330822
+ },
+ {
+  "date": "2018/08/04",
+  "wrestler": "Kota Ibushi",
+  "elo": 1209.2750096693119
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 906.1623668568398
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1045.9743486429818
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "Jay White",
+  "elo": 1205.6993301359228
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1219.276126195043
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "EVIL",
+  "elo": 1012.3337555929234
+ },
+ {
+  "date": "2018/08/05",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1249.4302260187953
+ },
+ {
+  "date": "2018/08/08",
+  "wrestler": "Juice Robinson",
+  "elo": 1004.8447857963
+ },
+ {
+  "date": "2018/08/08",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1099.6198151145122
+ },
+ {
+  "date": "2018/08/08",
+  "wrestler": "Hirooki Goto",
+  "elo": 1065.2161530681756
+ },
+ {
+  "date": "2018/08/08",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1215.798000260915
+ },
+ {
+  "date": "2018/08/08",
+  "wrestler": "Kota Ibushi",
+  "elo": 1169.3922305211772
+ },
+ {
+  "date": "2018/08/08",
+  "wrestler": "Tama Tonga",
+  "elo": 1130.5164529998783
+ },
+ {
+  "date": "2018/08/08",
+  "wrestler": "Kenny Omega",
+  "elo": 1222.7289514221554
+ },
+ {
+  "date": "2018/08/08",
+  "wrestler": "Toru Yano",
+  "elo": 1047.389796141648
+ },
+ {
+  "date": "2018/08/08",
+  "wrestler": "SANADA",
+  "elo": 1077.6953942977989
+ },
+ {
+  "date": "2018/08/08",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1231.8321410503822
+ },
+ {
+  "date": "2018/08/10",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 1044.905898961155
+ },
+ {
+  "date": "2018/08/10",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1081.391689769162
+ },
+ {
+  "date": "2018/08/10",
+  "wrestler": "Jay White",
+  "elo": 1168.0639843224126
+ },
+ {
+  "date": "2018/08/10",
+  "wrestler": "EVIL",
+  "elo": 1087.6044472199437
+ },
+ {
+  "date": "2018/08/10",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1247.265895728635
+ },
+ {
+  "date": "2018/08/10",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1221.4404564852032
+ },
+ {
+  "date": "2018/08/11",
+  "wrestler": "Tama Tonga",
+  "elo": 1068.7767258968627
+ },
+ {
+  "date": "2018/08/11",
+  "wrestler": "Toru Yano",
+  "elo": 1109.1295232446637
+ },
+ {
+  "date": "2018/08/11",
+  "wrestler": "Hirooki Goto",
+  "elo": 1006.6144133642135
+ },
+ {
+  "date": "2018/08/11",
+  "wrestler": "Juice Robinson",
+  "elo": 1063.4465255002622
+ },
+ {
+  "date": "2018/08/11",
+  "wrestler": "SANADA",
+  "elo": 1030.8463907075088
+ },
+ {
+  "date": "2018/08/11",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1146.4688187048023
+ },
+ {
+  "date": "2018/08/11",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1205.6792102718775
+ },
+ {
+  "date": "2018/08/11",
+  "wrestler": "Zack Sabre Jr.",
+  "elo": 1241.9509310394196
+ },
+ {
+  "date": "2018/08/11",
+  "wrestler": "Kenny Omega",
+  "elo": 1193.920933451961
+ },
+ {
+  "date": "2018/08/11",
+  "wrestler": "Kota Ibushi",
+  "elo": 1227.0082664615659
+ },
+ {
+  "date": "2018/08/12",
+  "wrestler": "Kota Ibushi",
+  "elo": 1201.6076646216045
+ },
+ {
+  "date": "2018/08/12",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1246.8410583251646
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4290 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1984/01/01",
+  "wrestler": "Buddy Rose",
+  "elo": 1050.0
+ },
+ {
+  "date": "1984/01/01",
+  "wrestler": "Black Tiger",
+  "elo": 950.0
+ },
+ {
+  "date": "1984/01/01",
+  "wrestler": "The Cobra",
+  "elo": 1050.0
+ },
+ {
+  "date": "1984/01/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1000.0
+ },
+ {
+  "date": "1984/01/01",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1000.0
+ },
+ {
+  "date": "1984/01/01",
+  "wrestler": "Dusty Rhodes",
+  "elo": 1000.0
+ },
+ {
+  "date": "1984/01/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1000.0
+ },
+ {
+  "date": "1984/01/03",
+  "wrestler": "Haruka Eigen",
+  "elo": 1050.0
+ },
+ {
+  "date": "1984/01/03",
+  "wrestler": "Rusher Kimura",
+  "elo": 1000.0
+ },
+ {
+  "date": "1984/01/03",
+  "wrestler": "Dusty Rhodes",
+  "elo": 1000.0
+ },
+ {
+  "date": "1984/01/05",
+  "wrestler": "Haruka Eigen",
+  "elo": 1098.9717080798239
+ },
+ {
+  "date": "1984/01/05",
+  "wrestler": "Kengo Kimura",
+  "elo": 1000.0
+ },
+ {
+  "date": "1984/01/05",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1000.0
+ },
+ {
+  "date": "1984/01/05",
+  "wrestler": "Black Tiger",
+  "elo": 864.2926234816763
+ },
+ {
+  "date": "1984/01/05",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1042.8536882591618
+ },
+ {
+  "date": "1984/01/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1048.9717080798239
+ },
+ {
+  "date": "1984/01/06",
+  "wrestler": "Dynamite Kid",
+  "elo": 1050.0
+ },
+ {
+  "date": "1984/01/06",
+  "wrestler": "The Cobra",
+  "elo": 1051.0282919201761
+ },
+ {
+  "date": "1984/01/07",
+  "wrestler": "Dusty Rhodes",
+  "elo": 1061.4935544108657
+ },
+ {
+  "date": "1984/01/07",
+  "wrestler": "Black Tiger",
+  "elo": 973.0823493652358
+ },
+ {
+  "date": "1984/01/07",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 950.0
+ },
+ {
+  "date": "1984/01/08",
+  "wrestler": "The Cobra",
+  "elo": 1068.9019388094137
+ },
+ {
+  "date": "1984/01/08",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1088.6437386652085
+ },
+ {
+  "date": "1984/01/08",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 942.8536882591618
+ },
+ {
+  "date": "1984/01/08",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1064.2926234816764
+ },
+ {
+  "date": "1984/01/09",
+  "wrestler": "The Cobra",
+  "elo": 1055.4516863131075
+ },
+ {
+  "date": "1984/01/09",
+  "wrestler": "Black Tiger",
+  "elo": 999.9828543578482
+ },
+ {
+  "date": "1984/01/09",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1005.144355434171
+ },
+ {
+  "date": "1984/01/09",
+  "wrestler": "Kengo Kimura",
+  "elo": 1059.1482680475053
+ },
+ {
+  "date": "1984/01/09",
+  "wrestler": "Dynamite Kid",
+  "elo": 1065.1255183274095
+ },
+ {
+  "date": "1984/01/10",
+  "wrestler": "Buddy Rose",
+  "elo": 992.8536882591618
+ },
+ {
+  "date": "1984/01/10",
+  "wrestler": "Rusher Kimura",
+  "elo": 1057.1463117408382
+ },
+ {
+  "date": "1984/01/10",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1115.3501978179597
+ },
+ {
+  "date": "1984/01/10",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 954.4040772736175
+ },
+ {
+  "date": "1984/01/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1050.7402781605533
+ },
+ {
+  "date": "1984/01/11",
+  "wrestler": "Haruka Eigen",
+  "elo": 1137.774589821247
+ },
+ {
+  "date": "1984/01/11",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 883.6705388525446
+ },
+ {
+  "date": "1984/01/11",
+  "wrestler": "Kengo Kimura",
+  "elo": 1094.5150372580417
+ },
+ {
+  "date": "1984/01/11",
+  "wrestler": "Black Tiger",
+  "elo": 1061.7032451011746
+ },
+ {
+  "date": "1984/01/13",
+  "wrestler": "Black Tiger",
+  "elo": 1048.5012293844848
+ },
+ {
+  "date": "1984/01/13",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 815.9553257888175
+ },
+ {
+  "date": "1984/01/13",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1033.8576065318637
+ },
+ {
+  "date": "1984/01/13",
+  "wrestler": "The Cobra",
+  "elo": 1093.5305272343153
+ },
+ {
+  "date": "1984/01/13",
+  "wrestler": "Dynamite Kid",
+  "elo": 1063.8295254406503
+ },
+ {
+  "date": "1984/01/14",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1068.850912366795
+ },
+ {
+  "date": "1984/01/14",
+  "wrestler": "Black Tiger",
+  "elo": 1049.7836007222618
+ },
+ {
+  "date": "1984/01/14",
+  "wrestler": "Rusher Kimura",
+  "elo": 977.1125321870227
+ },
+ {
+  "date": "1984/01/14",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 976.0228848964487
+ },
+ {
+  "date": "1984/01/15",
+  "wrestler": "Haruka Eigen",
+  "elo": 1068.0496927304737
+ },
+ {
+  "date": "1984/01/15",
+  "wrestler": "Buddy Rose",
+  "elo": 1132.3034824407086
+ },
+ {
+  "date": "1984/01/15",
+  "wrestler": "The Cobra",
+  "elo": 1116.365427538266
+ },
+ {
+  "date": "1984/01/15",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 896.9991684046361
+ },
+ {
+  "date": "1984/01/16",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1132.0624711005917
+ },
+ {
+  "date": "1984/01/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1029.9544482665453
+ },
+ {
+  "date": "1984/01/16",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 938.5708281926522
+ },
+ {
+  "date": "1984/01/18",
+  "wrestler": "Black Tiger",
+  "elo": 1112.1938280685704
+ },
+ {
+  "date": "1984/01/18",
+  "wrestler": "The Cobra",
+  "elo": 1099.4677652113658
+ },
+ {
+  "date": "1984/01/18",
+  "wrestler": "Dynamite Kid",
+  "elo": 1079.5127896617673
+ },
+ {
+  "date": "1984/01/18",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 849.6187413071679
+ },
+ {
+  "date": "1984/01/18",
+  "wrestler": "Rusher Kimura",
+  "elo": 1066.064619072507
+ },
+ {
+  "date": "1984/01/19",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1152.3954889833103
+ },
+ {
+  "date": "1984/01/19",
+  "wrestler": "Black Tiger",
+  "elo": 1057.5044708395758
+ },
+ {
+  "date": "1984/01/19",
+  "wrestler": "Dynamite Kid",
+  "elo": 1134.202146890762
+ },
+ {
+  "date": "1984/01/19",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1008.6261569831001
+ },
+ {
+  "date": "1984/01/20",
+  "wrestler": "Haruka Eigen",
+  "elo": 1111.2213279396715
+ },
+ {
+  "date": "1984/01/20",
+  "wrestler": "Osamu Kido",
+  "elo": 1109.6108520276862
+ },
+ {
+  "date": "1984/01/20",
+  "wrestler": "Kengo Kimura",
+  "elo": 1032.400416407026
+ },
+ {
+  "date": "1984/01/20",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1070.740777834116
+ },
+ {
+  "date": "1984/01/21",
+  "wrestler": "Haruka Eigen",
+  "elo": 1064.251575666391
+ },
+ {
+  "date": "1984/01/21",
+  "wrestler": "Buddy Rose",
+  "elo": 1179.273234713989
+ },
+ {
+  "date": "1984/01/21",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1014.8979684675746
+ },
+ {
+  "date": "1984/01/21",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1085.7972576330867
+ },
+ {
+  "date": "1984/01/23",
+  "wrestler": "Black Tiger",
+  "elo": 1106.4033723041593
+ },
+ {
+  "date": "1984/01/23",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 967.6237745185111
+ },
+ {
+  "date": "1984/01/23",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1081.1318004809273
+ },
+ {
+  "date": "1984/01/24",
+  "wrestler": "Rusher Kimura",
+  "elo": 1052.2651507000237
+ },
+ {
+  "date": "1984/01/24",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 995.2227112634778
+ },
+ {
+  "date": "1984/01/25",
+  "wrestler": "Bad News Allen",
+  "elo": 964.5021533744305
+ },
+ {
+  "date": "1984/01/25",
+  "wrestler": "Haruka Eigen",
+  "elo": 1004.4462048549049
+ },
+ {
+  "date": "1984/01/25",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1114.8334528864502
+ },
+ {
+  "date": "1984/01/26",
+  "wrestler": "The Cobra",
+  "elo": 1118.9003744146269
+ },
+ {
+  "date": "1984/01/26",
+  "wrestler": "Black Tiger",
+  "elo": 1148.4911480361948
+ },
+ {
+  "date": "1984/01/26",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1159.1895571099697
+ },
+ {
+  "date": "1984/01/27",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1123.9798351458346
+ },
+ {
+  "date": "1984/01/27",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1187.1688271699686
+ },
+ {
+  "date": "1984/01/27",
+  "wrestler": "Dynamite Kid",
+  "elo": 1082.0014675187688
+ },
+ {
+  "date": "1984/01/27",
+  "wrestler": "The Cobra",
+  "elo": 1171.10105378662
+ },
+ {
+  "date": "1984/01/27",
+  "wrestler": "Bad News Allen",
+  "elo": 915.3262605335943
+ },
+ {
+  "date": "1984/01/27",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1183.7775035303878
+ },
+ {
+  "date": "1984/01/28",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1071.8207615351284
+ },
+ {
+  "date": "1984/01/28",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1120.0392940372546
+ },
+ {
+  "date": "1984/01/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1149.5354671262198
+ },
+ {
+  "date": "1984/01/30",
+  "wrestler": "Dynamite Kid",
+  "elo": 1121.6297132568068
+ },
+ {
+  "date": "1984/01/30",
+  "wrestler": "Haruka Eigen",
+  "elo": 953.8063794685627
+ },
+ {
+  "date": "1984/01/30",
+  "wrestler": "Mike Sharpe",
+  "elo": 1050.6398253863422
+ },
+ {
+  "date": "1984/01/30",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1011.6296725160706
+ },
+ {
+  "date": "1984/01/30",
+  "wrestler": "Hulk Hogan",
+  "elo": 1060.191089019058
+ },
+ {
+  "date": "1984/02/01",
+  "wrestler": "Black Tiger",
+  "elo": 1191.6342714234295
+ },
+ {
+  "date": "1984/02/01",
+  "wrestler": "The Cobra",
+  "elo": 1191.1904757289428
+ },
+ {
+  "date": "1984/02/01",
+  "wrestler": "Kengo Kimura",
+  "elo": 986.3913079703198
+ },
+ {
+  "date": "1984/02/01",
+  "wrestler": "Hulk Hogan",
+  "elo": 1106.200197455764
+ },
+ {
+  "date": "1984/02/02",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1202.5567194848945
+ },
+ {
+  "date": "1984/02/02",
+  "wrestler": "Rusher Kimura",
+  "elo": 1106.2013086769996
+ },
+ {
+  "date": "1984/02/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1120.1516765095919
+ },
+ {
+  "date": "1984/02/02",
+  "wrestler": "Bad News Allen",
+  "elo": 974.0938417668501
+ },
+ {
+  "date": "1984/02/03",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1171.8366285542725
+ },
+ {
+  "date": "1984/02/03",
+  "wrestler": "Dynamite Kid",
+  "elo": 1183.0698951180511
+ },
+ {
+  "date": "1984/02/04",
+  "wrestler": "Osamu Kido",
+  "elo": 1140.2317261105973
+ },
+ {
+  "date": "1984/02/04",
+  "wrestler": "Haruka Eigen",
+  "elo": 1096.835819533938
+ },
+ {
+  "date": "1984/02/04",
+  "wrestler": "Black Tiger",
+  "elo": 1171.3747141228532
+ },
+ {
+  "date": "1984/02/05",
+  "wrestler": "Bad News Allen",
+  "elo": 913.819587163302
+ },
+ {
+  "date": "1984/02/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1150.288803811366
+ },
+ {
+  "date": "1984/02/06",
+  "wrestler": "Haruka Eigen",
+  "elo": 1126.5018691165137
+ },
+ {
+  "date": "1984/02/06",
+  "wrestler": "Black Tiger",
+  "elo": 1178.348743587026
+ },
+ {
+  "date": "1984/02/06",
+  "wrestler": "Dynamite Kid",
+  "elo": 1199.7534263335726
+ },
+ {
+  "date": "1984/02/06",
+  "wrestler": "The Cobra",
+  "elo": 1188.4081105551456
+ },
+ {
+  "date": "1984/02/06",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1174.6189937280697
+ },
+ {
+  "date": "1984/02/07",
+  "wrestler": "Kengo Kimura",
+  "elo": 1014.4442745582937
+ },
+ {
+  "date": "1984/02/07",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 963.658755423867
+ },
+ {
+  "date": "1984/02/07",
+  "wrestler": "The Cobra",
+  "elo": 1144.974872370271
+ },
+ {
+  "date": "1984/02/07",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1129.929149008895
+ },
+ {
+  "date": "1984/02/07",
+  "wrestler": "Dynamite Kid",
+  "elo": 1267.151576226326
+ },
+ {
+  "date": "1984/02/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 964.824729727768
+ },
+ {
+  "date": "1984/02/07",
+  "wrestler": "Rusher Kimura",
+  "elo": 1141.3765789492315
+ },
+ {
+  "date": "1984/02/07",
+  "wrestler": "Bad News Allen",
+  "elo": 838.1277966310415
+ },
+ {
+  "date": "1984/02/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1037.8458952661301
+ },
+ {
+  "date": "1984/02/08",
+  "wrestler": "Haruka Eigen",
+  "elo": 1078.6412050045005
+ },
+ {
+  "date": "1984/02/08",
+  "wrestler": "Rusher Kimura",
+  "elo": 1189.2372430612447
+ },
+ {
+  "date": "1984/02/08",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1090.1516876778503
+ },
+ {
+  "date": "1984/02/08",
+  "wrestler": "Bad News Allen",
+  "elo": 905.78409156701
+ },
+ {
+  "date": "1984/02/09",
+  "wrestler": "The Cobra",
+  "elo": 1138.550283445682
+ },
+ {
+  "date": "1984/02/09",
+  "wrestler": "Rusher Kimura",
+  "elo": 1127.5097018497145
+ },
+ {
+  "date": "1984/02/09",
+  "wrestler": "Hulk Hogan",
+  "elo": 1167.9277386672943
+ },
+ {
+  "date": "1984/02/12",
+  "wrestler": "Black Tiger",
+  "elo": 1118.1549945401446
+ },
+ {
+  "date": "1984/02/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1091.678651828744
+ },
+ {
+  "date": "1984/02/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1198.8418780932193
+ },
+ {
+  "date": "1984/02/12",
+  "wrestler": "Riki Choshu",
+  "elo": 965.5203675534326
+ },
+ {
+  "date": "1984/02/12",
+  "wrestler": "Mike Sharpe",
+  "elo": 988.5352001461433
+ },
+ {
+  "date": "1984/02/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1089.0339802081658
+ },
+ {
+  "date": "1984/02/12",
+  "wrestler": "Bad News Allen",
+  "elo": 842.0639067602614
+ },
+ {
+  "date": "1984/02/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1069.7059876695043
+ },
+ {
+  "date": "1984/02/13",
+  "wrestler": "Black Tiger",
+  "elo": 1133.6126118736804
+ },
+ {
+  "date": "1984/02/13",
+  "wrestler": "Bad News Allen",
+  "elo": 1015.3270771206205
+ },
+ {
+  "date": "1984/02/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1171.8009696665774
+ },
+ {
+  "date": "1984/02/13",
+  "wrestler": "Mike Sharpe",
+  "elo": 1042.617016999427
+ },
+ {
+  "date": "1984/02/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1076.4942581995879
+ },
+ {
+  "date": "1984/03/02",
+  "wrestler": "Jim Neidhart",
+  "elo": 1055.3048056949763
+ },
+ {
+  "date": "1984/03/02",
+  "wrestler": "Riki Choshu",
+  "elo": 1001.7495364392466
+ },
+ {
+  "date": "1984/03/02",
+  "wrestler": "Wild Samoan",
+  "elo": 960.8339172483523
+ },
+ {
+  "date": "1984/03/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1115.6603409512356
+ },
+ {
+  "date": "1984/03/03",
+  "wrestler": "Haruka Eigen",
+  "elo": 1096.1361409265244
+ },
+ {
+  "date": "1984/03/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1041.458905437878
+ },
+ {
+  "date": "1984/03/03",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1140.3714340687163
+ },
+ {
+  "date": "1984/03/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1099.6042583686997
+ },
+ {
+  "date": "1984/03/03",
+  "wrestler": "Adrian Adonis",
+  "elo": 1016.0560825825359
+ },
+ {
+  "date": "1984/03/04",
+  "wrestler": "Haruka Eigen",
+  "elo": 1032.6436399359682
+ },
+ {
+  "date": "1984/03/04",
+  "wrestler": "Wild Samoan",
+  "elo": 1099.1773410209476
+ },
+ {
+  "date": "1984/03/04",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1123.20732881193
+ },
+ {
+  "date": "1984/03/04",
+  "wrestler": "Adrian Adonis",
+  "elo": 1033.220187839322
+ },
+ {
+  "date": "1984/03/05",
+  "wrestler": "Haruka Eigen",
+  "elo": 1089.857169961093
+ },
+ {
+  "date": "1984/03/05",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1091.6276526746976
+ },
+ {
+  "date": "1984/03/05",
+  "wrestler": "Adrian Adonis",
+  "elo": 1089.808044594036
+ },
+ {
+  "date": "1984/03/07",
+  "wrestler": "Bobby Duncum",
+  "elo": 1036.004043547022
+ },
+ {
+  "date": "1984/03/07",
+  "wrestler": "Wild Samoan",
+  "elo": 1052.6300305306781
+ },
+ {
+  "date": "1984/03/07",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1169.7546393021994
+ },
+ {
+  "date": "1984/03/07",
+  "wrestler": "Osamu Kido",
+  "elo": 993.4504364812968
+ },
+ {
+  "date": "1984/03/07",
+  "wrestler": "Jim Neidhart",
+  "elo": 1103.3132746515573
+ },
+ {
+  "date": "1984/03/08",
+  "wrestler": "Wild Samoan",
+  "elo": 1104.3563623061298
+ },
+ {
+  "date": "1984/03/08",
+  "wrestler": "Haruka Eigen",
+  "elo": 1041.7926914290401
+ },
+ {
+  "date": "1984/03/08",
+  "wrestler": "Jim Neidhart",
+  "elo": 1151.3777531836101
+ },
+ {
+  "date": "1984/03/08",
+  "wrestler": "Bobby Duncum",
+  "elo": 1084.0870877833167
+ },
+ {
+  "date": "1984/03/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1148.9126080902263
+ },
+ {
+  "date": "1984/03/08",
+  "wrestler": "Dick Murdoch",
+  "elo": 1022.8883615763513
+ },
+ {
+  "date": "1984/03/09",
+  "wrestler": "Bobby Duncum",
+  "elo": 1107.0450705422645
+ },
+ {
+  "date": "1984/03/09",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1167.1124563190958
+ },
+ {
+  "date": "1984/03/09",
+  "wrestler": "Jim Neidhart",
+  "elo": 1154.0199361667137
+ },
+ {
+  "date": "1984/03/10",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1146.454512328178
+ },
+ {
+  "date": "1984/03/10",
+  "wrestler": "Kengo Kimura",
+  "elo": 1035.1022185492116
+ },
+ {
+  "date": "1984/03/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1135.58500068994
+ },
+ {
+  "date": "1984/03/11",
+  "wrestler": "Haruka Eigen",
+  "elo": 1045.3773832610127
+ },
+ {
+  "date": "1984/03/11",
+  "wrestler": "Osamu Kido",
+  "elo": 936.6344283735336
+ },
+ {
+  "date": "1984/03/11",
+  "wrestler": "Jim Neidhart",
+  "elo": 1182.4279402205952
+ },
+ {
+  "date": "1984/03/11",
+  "wrestler": "Wild Samoan",
+  "elo": 1060.3852968613323
+ },
+ {
+  "date": "1984/03/11",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1190.4255777729754
+ },
+ {
+  "date": "1984/03/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1129.0350254839732
+ },
+ {
+  "date": "1984/03/11",
+  "wrestler": "Adrian Adonis",
+  "elo": 1096.3580198000027
+ },
+ {
+  "date": "1984/03/12",
+  "wrestler": "Osamu Kido",
+  "elo": 972.4833317806119
+ },
+ {
+  "date": "1984/03/12",
+  "wrestler": "Wild Samoan",
+  "elo": 1085.9580827542156
+ },
+ {
+  "date": "1984/03/12",
+  "wrestler": "Adrian Adonis",
+  "elo": 1130.4309121052231
+ },
+ {
+  "date": "1984/03/12",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1116.276807417443
+ },
+ {
+  "date": "1984/03/13",
+  "wrestler": "Osamu Kido",
+  "elo": 1032.0889302144874
+ },
+ {
+  "date": "1984/03/13",
+  "wrestler": "Wild Samoan",
+  "elo": 1040.3102562217782
+ },
+ {
+  "date": "1984/03/13",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1161.9246339498804
+ },
+ {
+  "date": "1984/03/13",
+  "wrestler": "Kengo Kimura",
+  "elo": 998.4869127525644
+ },
+ {
+  "date": "1984/03/13",
+  "wrestler": "Adrian Adonis",
+  "elo": 1167.0462179018702
+ },
+ {
+  "date": "1984/03/15",
+  "wrestler": "Haruka Eigen",
+  "elo": 994.6482167600242
+ },
+ {
+  "date": "1984/03/15",
+  "wrestler": "Wild Samoan",
+  "elo": 1091.0394227227666
+ },
+ {
+  "date": "1984/03/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1151.519877276835
+ },
+ {
+  "date": "1984/03/15",
+  "wrestler": "Adrian Adonis",
+  "elo": 1164.4389487152616
+ },
+ {
+  "date": "1984/03/16",
+  "wrestler": "Bobby Duncum",
+  "elo": 1119.2365294992799
+ },
+ {
+  "date": "1984/03/16",
+  "wrestler": "Wild Samoan",
+  "elo": 1127.0119101376001
+ },
+ {
+  "date": "1984/03/16",
+  "wrestler": "Adrian Adonis",
+  "elo": 1118.1717669289894
+ },
+ {
+  "date": "1984/03/16",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1236.6927595592476
+ },
+ {
+  "date": "1984/03/17",
+  "wrestler": "Wild Samoan",
+  "elo": 1143.1313442225999
+ },
+ {
+  "date": "1984/03/17",
+  "wrestler": "Bobby Duncum",
+  "elo": 1075.349113715963
+ },
+ {
+  "date": "1984/03/17",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1205.8120497331972
+ },
+ {
+  "date": "1984/03/19",
+  "wrestler": "Wild Samoan",
+  "elo": 1183.29753316047
+ },
+ {
+  "date": "1984/03/19",
+  "wrestler": "Bobby Duncum",
+  "elo": 1004.246224500321
+ },
+ {
+  "date": "1984/03/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1133.8101783032364
+ },
+ {
+  "date": "1984/03/19",
+  "wrestler": "Dick Murdoch",
+  "elo": 1040.5980605499499
+ },
+ {
+  "date": "1984/03/20",
+  "wrestler": "Bobby Duncum",
+  "elo": 934.5745700026836
+ },
+ {
+  "date": "1984/03/20",
+  "wrestler": "Haruka Eigen",
+  "elo": 944.1719835494214
+ },
+ {
+  "date": "1984/03/20",
+  "wrestler": "Wild Samoan",
+  "elo": 1208.5356497657715
+ },
+ {
+  "date": "1984/03/20",
+  "wrestler": "Kengo Kimura",
+  "elo": 1080.4829450969291
+ },
+ {
+  "date": "1984/03/21",
+  "wrestler": "Wild Samoan",
+  "elo": 1174.717245569458
+ },
+ {
+  "date": "1984/03/21",
+  "wrestler": "Kengo Kimura",
+  "elo": 1148.119753489556
+ },
+ {
+  "date": "1984/03/21",
+  "wrestler": "Riki Choshu",
+  "elo": 1060.2144707194054
+ },
+ {
+  "date": "1984/03/21",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1204.1849283889474
+ },
+ {
+  "date": "1984/03/21",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1194.0506878245737
+ },
+ {
+  "date": "1984/03/22",
+  "wrestler": "Wild Samoan",
+  "elo": 1183.4593594118253
+ },
+ {
+  "date": "1984/03/22",
+  "wrestler": "Bobby Duncum",
+  "elo": 1029.5771179552503
+ },
+ {
+  "date": "1984/03/22",
+  "wrestler": "Osamu Kido",
+  "elo": 1058.4073600622464
+ },
+ {
+  "date": "1984/03/30",
+  "wrestler": "Bruce Hart",
+  "elo": 1054.8390497540656
+ },
+ {
+  "date": "1984/03/30",
+  "wrestler": "Hercules Ayala",
+  "elo": 976.4116627148248
+ },
+ {
+  "date": "1984/03/30",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1215.979097031535
+ },
+ {
+  "date": "1984/03/30",
+  "wrestler": "Kengo Kimura",
+  "elo": 1078.007566161147
+ },
+ {
+  "date": "1984/03/30",
+  "wrestler": "Iron Mike Sharpe",
+  "elo": 1070.112187328409
+ },
+ {
+  "date": "1984/03/31",
+  "wrestler": "Bruce Hart",
+  "elo": 1066.821438950994
+ },
+ {
+  "date": "1984/03/31",
+  "wrestler": "Hercules Ayala",
+  "elo": 1034.726756485972
+ },
+ {
+  "date": "1984/03/31",
+  "wrestler": "Osamu Kido",
+  "elo": 1000.0801626768532
+ },
+ {
+  "date": "1984/03/31",
+  "wrestler": "Masked Superstar",
+  "elo": 1058.3271973853932
+ },
+ {
+  "date": "1984/04/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 835.3810842078374
+ },
+ {
+  "date": "1984/04/01",
+  "wrestler": "Norio Honaga",
+  "elo": 764.5749726503275
+ },
+ {
+  "date": "1984/04/01",
+  "wrestler": "Bruce Hart",
+  "elo": 1084.5339526258304
+ },
+ {
+  "date": "1984/04/01",
+  "wrestler": "Iron Mike Sharpe",
+  "elo": 1110.5275178881066
+ },
+ {
+  "date": "1984/04/02",
+  "wrestler": "Bruce Hart",
+  "elo": 1127.0530920009758
+ },
+ {
+  "date": "1984/04/02",
+  "wrestler": "Hercules Ayala",
+  "elo": 1079.6184849446338
+ },
+ {
+  "date": "1984/04/02",
+  "wrestler": "Don Muraco",
+  "elo": 950.0115363363414
+ },
+ {
+  "date": "1984/04/02",
+  "wrestler": "Osamu Kido",
+  "elo": 1050.0686263405119
+ },
+ {
+  "date": "1984/04/03",
+  "wrestler": "Bruce Hart",
+  "elo": 1056.9358809889504
+ },
+ {
+  "date": "1984/04/03",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1199.8712315662824
+ },
+ {
+  "date": "1984/04/03",
+  "wrestler": "Don Muraco",
+  "elo": 1014.4429981973518
+ },
+ {
+  "date": "1984/04/04",
+  "wrestler": "Bruce Hart",
+  "elo": 1068.6375316341691
+ },
+ {
+  "date": "1984/04/04",
+  "wrestler": "Haruka Eigen",
+  "elo": 801.3314708732639
+ },
+ {
+  "date": "1984/04/04",
+  "wrestler": "Iron Mike Sharpe",
+  "elo": 1127.5523245553932
+ },
+ {
+  "date": "1984/04/04",
+  "wrestler": "Masked Superstar",
+  "elo": 1094.8440959549573
+ },
+ {
+  "date": "1984/04/05",
+  "wrestler": "Norio Honaga",
+  "elo": 820.2625435557873
+ },
+ {
+  "date": "1984/04/05",
+  "wrestler": "Hercules Ayala",
+  "elo": 1088.8450211023785
+ },
+ {
+  "date": "1984/04/05",
+  "wrestler": "Bruce Hart",
+  "elo": 1091.7940381825852
+ },
+ {
+  "date": "1984/04/05",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1171.4904653463482
+ },
+ {
+  "date": "1984/04/05",
+  "wrestler": "Antonio Inoki",
+  "elo": 1138.3491564432022
+ },
+ {
+  "date": "1984/04/06",
+  "wrestler": "Norio Honaga",
+  "elo": 818.4461048324794
+ },
+ {
+  "date": "1984/04/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1006.4768962586116
+ },
+ {
+  "date": "1984/04/06",
+  "wrestler": "Masked Superstar",
+  "elo": 1138.4358260368574
+ },
+ {
+  "date": "1984/04/06",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1087.9443784698306
+ },
+ {
+  "date": "1984/04/07",
+  "wrestler": "Bruce Hart",
+  "elo": 1029.7568976328578
+ },
+ {
+  "date": "1984/04/07",
+  "wrestler": "Osamu Kido",
+  "elo": 1068.514036808339
+ },
+ {
+  "date": "1984/04/07",
+  "wrestler": "Iron Mike Sharpe",
+  "elo": 1141.8011087463203
+ },
+ {
+  "date": "1984/04/07",
+  "wrestler": "Haruka Eigen",
+  "elo": 776.2135129832183
+ },
+ {
+  "date": "1984/04/07",
+  "wrestler": "Masked Superstar",
+  "elo": 1150.9948049818802
+ },
+ {
+  "date": "1984/04/08",
+  "wrestler": "Bruce Hart",
+  "elo": 1041.584461310026
+ },
+ {
+  "date": "1984/04/08",
+  "wrestler": "Don Muraco",
+  "elo": 970.992197794498
+ },
+ {
+  "date": "1984/04/08",
+  "wrestler": "Riki Choshu",
+  "elo": 1103.6652711222591
+ },
+ {
+  "date": "1984/04/10",
+  "wrestler": "Hercules Ayala",
+  "elo": 1128.8791733177013
+ },
+ {
+  "date": "1984/04/10",
+  "wrestler": "Bruce Hart",
+  "elo": 988.8179510339062
+ },
+ {
+  "date": "1984/04/10",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1142.8833846343437
+ },
+ {
+  "date": "1984/04/10",
+  "wrestler": "Masked Superstar",
+  "elo": 1207.982651913819
+ },
+ {
+  "date": "1984/04/11",
+  "wrestler": "Bruce Hart",
+  "elo": 1021.2038492846393
+ },
+ {
+  "date": "1984/04/11",
+  "wrestler": "Norio Honaga",
+  "elo": 790.4945514241501
+ },
+ {
+  "date": "1984/04/11",
+  "wrestler": "Don Muraco",
+  "elo": 1095.069335090444
+ },
+ {
+  "date": "1984/04/12",
+  "wrestler": "Bruce Hart",
+  "elo": 1066.412851652519
+ },
+ {
+  "date": "1984/04/12",
+  "wrestler": "Haruka Eigen",
+  "elo": 752.9979188567315
+ },
+ {
+  "date": "1984/04/12",
+  "wrestler": "Hercules Ayala",
+  "elo": 1140.4869703809447
+ },
+ {
+  "date": "1984/04/12",
+  "wrestler": "Masked Superstar",
+  "elo": 1228.7172989673886
+ },
+ {
+  "date": "1984/04/13",
+  "wrestler": "Norio Honaga",
+  "elo": 756.5702873613719
+ },
+ {
+  "date": "1984/04/13",
+  "wrestler": "Bruce Hart",
+  "elo": 1083.374983683908
+ },
+ {
+  "date": "1984/04/13",
+  "wrestler": "Hercules Ayala",
+  "elo": 1157.6249145067293
+ },
+ {
+  "date": "1984/04/13",
+  "wrestler": "Don Muraco",
+  "elo": 1121.4888494516174
+ },
+ {
+  "date": "1984/04/14",
+  "wrestler": "Norio Honaga",
+  "elo": 795.6204658970296
+ },
+ {
+  "date": "1984/04/14",
+  "wrestler": "Bruce Hart",
+  "elo": 1036.7195991890806
+ },
+ {
+  "date": "1984/04/14",
+  "wrestler": "Don Muraco",
+  "elo": 1171.1488294390836
+ },
+ {
+  "date": "1984/04/14",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1147.138532575092
+ },
+ {
+  "date": "1984/04/14",
+  "wrestler": "Masked Superstar",
+  "elo": 1222.0531218314609
+ },
+ {
+  "date": "1984/04/15",
+  "wrestler": "Bruce Hart",
+  "elo": 1060.2993899957917
+ },
+ {
+  "date": "1984/04/15",
+  "wrestler": "Kengo Kimura",
+  "elo": 1091.0995326760449
+ },
+ {
+  "date": "1984/04/15",
+  "wrestler": "Don Muraco",
+  "elo": 1158.0568629241857
+ },
+ {
+  "date": "1984/04/17",
+  "wrestler": "Bruce Hart",
+  "elo": 1063.0743527493632
+ },
+ {
+  "date": "1984/04/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1148.7092895803125
+ },
+ {
+  "date": "1984/04/17",
+  "wrestler": "Don Muraco",
+  "elo": 1156.486105918965
+ },
+ {
+  "date": "1984/04/17",
+  "wrestler": "Iron Mike Sharpe",
+  "elo": 1099.2642499721123
+ },
+ {
+  "date": "1984/04/17",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1236.5875465987817
+ },
+ {
+  "date": "1984/04/17",
+  "wrestler": "Masked Superstar",
+  "elo": 1191.1440230102357
+ },
+ {
+  "date": "1984/04/17",
+  "wrestler": "Antonio Inoki",
+  "elo": 1200.1673540856525
+ },
+ {
+  "date": "1984/04/18",
+  "wrestler": "Iron Mike Sharpe",
+  "elo": 1113.3599332404442
+ },
+ {
+  "date": "1984/04/18",
+  "wrestler": "Bruce Hart",
+  "elo": 992.287317179724
+ },
+ {
+  "date": "1984/04/18",
+  "wrestler": "Don Muraco",
+  "elo": 1104.5295165904504
+ },
+ {
+  "date": "1984/04/18",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1194.8399739628583
+ },
+ {
+  "date": "1984/04/19",
+  "wrestler": "Norio Honaga",
+  "elo": 746.8659126795039
+ },
+ {
+  "date": "1984/04/19",
+  "wrestler": "Bruce Hart",
+  "elo": 1041.0418703972498
+ },
+ {
+  "date": "1984/04/19",
+  "wrestler": "Haruka Eigen",
+  "elo": 729.6480251098591
+ },
+ {
+  "date": "1984/04/19",
+  "wrestler": "Don Muraco",
+  "elo": 1116.2044634638867
+ },
+ {
+  "date": "1984/05/11",
+  "wrestler": "Ken Patera",
+  "elo": 950.0
+ },
+ {
+  "date": "1984/05/11",
+  "wrestler": "Andre The Giant",
+  "elo": 1050.0
+ },
+ {
+  "date": "1984/05/11",
+  "wrestler": "Antonio Inoki",
+  "elo": 1172.8541627557581
+ },
+ {
+  "date": "1984/05/11",
+  "wrestler": "Hulk Hogan",
+  "elo": 1222.554121327083
+ },
+ {
+  "date": "1984/05/12",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1180.3389331226697
+ },
+ {
+  "date": "1984/05/12",
+  "wrestler": "Kengo Kimura",
+  "elo": 1105.6005735162335
+ },
+ {
+  "date": "1984/05/12",
+  "wrestler": "Otto Wanz",
+  "elo": 966.3794798800932
+ },
+ {
+  "date": "1984/05/12",
+  "wrestler": "Adrian Adonis",
+  "elo": 1151.7922870488962
+ },
+ {
+  "date": "1984/05/12",
+  "wrestler": "John Quinn",
+  "elo": 979.6069524497241
+ },
+ {
+  "date": "1984/05/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1246.7840703739198
+ },
+ {
+  "date": "1984/05/13",
+  "wrestler": "John Quinn",
+  "elo": 924.7675325355726
+ },
+ {
+  "date": "1984/05/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1176.1289995373884
+ },
+ {
+  "date": "1984/05/13",
+  "wrestler": "Riki Choshu",
+  "elo": 1139.1741388476014
+ },
+ {
+  "date": "1984/05/13",
+  "wrestler": "Dick Murdoch",
+  "elo": 1008.7622446190494
+ },
+ {
+  "date": "1984/05/13",
+  "wrestler": "Antonio Inoki",
+  "elo": 1204.6899786866586
+ },
+ {
+  "date": "1984/05/14",
+  "wrestler": "Osamu Kido",
+  "elo": 1002.0906005016844
+ },
+ {
+  "date": "1984/05/14",
+  "wrestler": "Ken Patera",
+  "elo": 1082.846872613309
+ },
+ {
+  "date": "1984/05/14",
+  "wrestler": "John Quinn",
+  "elo": 859.3283923088215
+ },
+ {
+  "date": "1984/05/14",
+  "wrestler": "Andre The Giant",
+  "elo": 1082.7195701133755
+ },
+ {
+  "date": "1984/05/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1256.512421472304
+ },
+ {
+  "date": "1984/05/15",
+  "wrestler": "John Quinn",
+  "elo": 960.7578509150309
+ },
+ {
+  "date": "1984/05/15",
+  "wrestler": "Otto Wanz",
+  "elo": 876.0261518168445
+ },
+ {
+  "date": "1984/05/15",
+  "wrestler": "Masa Saito",
+  "elo": 1045.1766640316243
+ },
+ {
+  "date": "1984/05/15",
+  "wrestler": "Riki Choshu",
+  "elo": 1100.9483067452172
+ },
+ {
+  "date": "1984/05/15",
+  "wrestler": "Hulk Hogan",
+  "elo": 1241.6670373782752
+ },
+ {
+  "date": "1984/05/15",
+  "wrestler": "Antonio Inoki",
+  "elo": 1214.718798996754
+ },
+ {
+  "date": "1984/05/16",
+  "wrestler": "Otto Wanz",
+  "elo": 1009.4879031496359
+ },
+ {
+  "date": "1984/05/16",
+  "wrestler": "Dick Murdoch",
+  "elo": 1004.7101181600196
+ },
+ {
+  "date": "1984/05/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1113.0010939578226
+ },
+ {
+  "date": "1984/05/16",
+  "wrestler": "Andre The Giant",
+  "elo": 1145.8474756929413
+ },
+ {
+  "date": "1984/05/16",
+  "wrestler": "Riki Choshu",
+  "elo": 1058.2135543439065
+ },
+ {
+  "date": "1984/05/16",
+  "wrestler": "Adrian Adonis",
+  "elo": 1194.527039450207
+ },
+ {
+  "date": "1984/05/17",
+  "wrestler": "Osamu Kido",
+  "elo": 977.2616004222825
+ },
+ {
+  "date": "1984/05/17",
+  "wrestler": "Adrian Adonis",
+  "elo": 1219.356039529609
+ },
+ {
+  "date": "1984/05/17",
+  "wrestler": "Ken Patera",
+  "elo": 1021.7879110046509
+ },
+ {
+  "date": "1984/05/17",
+  "wrestler": "Dick Murdoch",
+  "elo": 1065.7690797686776
+ },
+ {
+  "date": "1984/05/17",
+  "wrestler": "Masa Saito",
+  "elo": 1009.2720777955152
+ },
+ {
+  "date": "1984/05/17",
+  "wrestler": "Andre The Giant",
+  "elo": 1181.7520619290506
+ },
+ {
+  "date": "1984/05/18",
+  "wrestler": "John Quinn",
+  "elo": 1117.733337845141
+ },
+ {
+  "date": "1984/05/18",
+  "wrestler": "Osamu Kido",
+  "elo": 890.0075980490386
+ },
+ {
+  "date": "1984/05/18",
+  "wrestler": "Ken Patera",
+  "elo": 1065.4149121912728
+ },
+ {
+  "date": "1984/05/18",
+  "wrestler": "Otto Wanz",
+  "elo": 997.4785707524695
+ },
+ {
+  "date": "1984/05/18",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1226.2144970047416
+ },
+ {
+  "date": "1984/05/18",
+  "wrestler": "Andre The Giant",
+  "elo": 1242.3479108641752
+ },
+ {
+  "date": "1984/05/18",
+  "wrestler": "Riki Choshu",
+  "elo": 1029.327337292015
+ },
+ {
+  "date": "1984/05/18",
+  "wrestler": "Antonio Inoki",
+  "elo": 1229.1619075226997
+ },
+ {
+  "date": "1984/05/19",
+  "wrestler": "Masked Superstar",
+  "elo": 1195.1951586683192
+ },
+ {
+  "date": "1984/05/19",
+  "wrestler": "Adrian Adonis",
+  "elo": 1217.3304717005672
+ },
+ {
+  "date": "1984/05/20",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1025.4911734622378
+ },
+ {
+  "date": "1984/05/20",
+  "wrestler": "John Quinn",
+  "elo": 1078.6998807648504
+ },
+ {
+  "date": "1984/05/20",
+  "wrestler": "Masked Superstar",
+  "elo": 1234.2286157486099
+ },
+ {
+  "date": "1984/05/20",
+  "wrestler": "Ken Patera",
+  "elo": 1010.2400890917736
+ },
+ {
+  "date": "1984/05/20",
+  "wrestler": "Riki Choshu",
+  "elo": 1084.5021603915143
+ },
+ {
+  "date": "1984/05/21",
+  "wrestler": "John Quinn",
+  "elo": 1026.8398476537338
+ },
+ {
+  "date": "1984/05/21",
+  "wrestler": "Dick Murdoch",
+  "elo": 1117.629112879794
+ },
+ {
+  "date": "1984/05/21",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1097.289083421829
+ },
+ {
+  "date": "1984/05/21",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1136.9028550843852
+ },
+ {
+  "date": "1984/05/21",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1247.9325360238838
+ },
+ {
+  "date": "1984/05/21",
+  "wrestler": "Masked Superstar",
+  "elo": 1208.8640626277481
+ },
+ {
+  "date": "1984/05/21",
+  "wrestler": "Antonio Inoki",
+  "elo": 1254.5264606435614
+ },
+ {
+  "date": "1984/05/23",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1144.8641694440785
+ },
+ {
+  "date": "1984/05/23",
+  "wrestler": "Otto Wanz",
+  "elo": 959.223019035155
+ },
+ {
+  "date": "1984/05/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1257.4964239532126
+ },
+ {
+  "date": "1984/05/23",
+  "wrestler": "Andre The Giant",
+  "elo": 1259.176283312198
+ },
+ {
+  "date": "1984/05/24",
+  "wrestler": "John Quinn",
+  "elo": 1039.7863261785515
+ },
+ {
+  "date": "1984/05/24",
+  "wrestler": "Kengo Kimura",
+  "elo": 1035.698964835055
+ },
+ {
+  "date": "1984/05/24",
+  "wrestler": "Otto Wanz",
+  "elo": 1099.0262363975119
+ },
+ {
+  "date": "1984/05/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1069.0350949676056
+ },
+ {
+  "date": "1984/05/24",
+  "wrestler": "Andre The Giant",
+  "elo": 1273.3032775393096
+ },
+ {
+  "date": "1984/05/24",
+  "wrestler": "Adrian Adonis",
+  "elo": 1185.3470291359326
+ },
+ {
+  "date": "1984/05/24",
+  "wrestler": "Dick Murdoch",
+  "elo": 1181.5959980090631
+ },
+ {
+  "date": "1984/05/25",
+  "wrestler": "Adrian Adonis",
+  "elo": 1190.240053053786
+ },
+ {
+  "date": "1984/05/25",
+  "wrestler": "Masa Saito",
+  "elo": 963.6521748271098
+ },
+ {
+  "date": "1984/05/25",
+  "wrestler": "John Quinn",
+  "elo": 1085.406229146957
+ },
+ {
+  "date": "1984/05/25",
+  "wrestler": "Otto Wanz",
+  "elo": 1036.5199430690911
+ },
+ {
+  "date": "1984/05/25",
+  "wrestler": "Ken Patera",
+  "elo": 1072.7463824201943
+ },
+ {
+  "date": "1984/05/25",
+  "wrestler": "Masked Superstar",
+  "elo": 1175.2790552646318
+ },
+ {
+  "date": "1984/05/25",
+  "wrestler": "Riki Choshu",
+  "elo": 1151.6721751177472
+ },
+ {
+  "date": "1984/05/27",
+  "wrestler": "Norio Honaga",
+  "elo": 818.5345691258331
+ },
+ {
+  "date": "1984/05/27",
+  "wrestler": "Ken Patera",
+  "elo": 1047.082393943172
+ },
+ {
+  "date": "1984/05/27",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1270.3284181917236
+ },
+ {
+  "date": "1984/05/27",
+  "wrestler": "Masked Superstar",
+  "elo": 1139.0231154754965
+ },
+ {
+  "date": "1984/05/27",
+  "wrestler": "Andre The Giant",
+  "elo": 1291.4312474338772
+ },
+ {
+  "date": "1984/05/27",
+  "wrestler": "Masa Saito",
+  "elo": 932.0846753697015
+ },
+ {
+  "date": "1984/05/27",
+  "wrestler": "Antonio Inoki",
+  "elo": 1262.4183355079135
+ },
+ {
+  "date": "1984/05/28",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 977.0778081097008
+ },
+ {
+  "date": "1984/05/28",
+  "wrestler": "Otto Wanz",
+  "elo": 1084.9333084216282
+ },
+ {
+  "date": "1984/05/28",
+  "wrestler": "John Quinn",
+  "elo": 1050.0512534368909
+ },
+ {
+  "date": "1984/05/28",
+  "wrestler": "Adrian Adonis",
+  "elo": 1225.595028763852
+ },
+ {
+  "date": "1984/05/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1264.0788957779998
+ },
+ {
+  "date": "1984/05/28",
+  "wrestler": "Dick Murdoch",
+  "elo": 1194.0950428365109
+ },
+ {
+  "date": "1984/05/29",
+  "wrestler": "Osamu Kido",
+  "elo": 950.8819079850111
+ },
+ {
+  "date": "1984/05/29",
+  "wrestler": "John Quinn",
+  "elo": 1005.0543856307943
+ },
+ {
+  "date": "1984/05/29",
+  "wrestler": "Otto Wanz",
+  "elo": 1129.9301762277248
+ },
+ {
+  "date": "1984/05/29",
+  "wrestler": "Masa Saito",
+  "elo": 1074.833822489076
+ },
+ {
+  "date": "1984/05/29",
+  "wrestler": "Ken Patera",
+  "elo": 1024.6313675588183
+ },
+ {
+  "date": "1984/05/29",
+  "wrestler": "Antonio Inoki",
+  "elo": 1273.6438487000903
+ },
+ {
+  "date": "1984/05/30",
+  "wrestler": "Adrian Adonis",
+  "elo": 1239.8399574274977
+ },
+ {
+  "date": "1984/05/30",
+  "wrestler": "Haruka Eigen",
+  "elo": 719.4346534292082
+ },
+ {
+  "date": "1984/05/30",
+  "wrestler": "John Quinn",
+  "elo": 957.8687618907371
+ },
+ {
+  "date": "1984/05/30",
+  "wrestler": "Ken Patera",
+  "elo": 1071.8169912988756
+ },
+ {
+  "date": "1984/05/30",
+  "wrestler": "Otto Wanz",
+  "elo": 1083.0550234116276
+ },
+ {
+  "date": "1984/05/30",
+  "wrestler": "Riki Choshu",
+  "elo": 1198.5473279338444
+ },
+ {
+  "date": "1984/05/31",
+  "wrestler": "Kengo Kimura",
+  "elo": 992.472156889333
+ },
+ {
+  "date": "1984/05/31",
+  "wrestler": "Otto Wanz",
+  "elo": 1126.2818313573496
+ },
+ {
+  "date": "1984/05/31",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1272.884343362172
+ },
+ {
+  "date": "1984/05/31",
+  "wrestler": "Masa Saito",
+  "elo": 1091.3531178711523
+ },
+ {
+  "date": "1984/05/31",
+  "wrestler": "Dick Murdoch",
+  "elo": 1177.5757474544346
+ },
+ {
+  "date": "1984/06/01",
+  "wrestler": "Otto Wanz",
+  "elo": 1146.7351584862204
+ },
+ {
+  "date": "1984/06/01",
+  "wrestler": "Masked Superstar",
+  "elo": 1178.5395695272316
+ },
+ {
+  "date": "1984/06/01",
+  "wrestler": "Riki Choshu",
+  "elo": 1161.6047921130069
+ },
+ {
+  "date": "1984/06/01",
+  "wrestler": "Andre The Giant",
+  "elo": 1309.902515344296
+ },
+ {
+  "date": "1984/06/01",
+  "wrestler": "Adrian Adonis",
+  "elo": 1217.2646965732365
+ },
+ {
+  "date": "1984/06/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1296.2191095543512
+ },
+ {
+  "date": "1984/06/02",
+  "wrestler": "Norio Honaga",
+  "elo": 871.6233277557692
+ },
+ {
+  "date": "1984/06/02",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1084.504039420025
+ },
+ {
+  "date": "1984/06/02",
+  "wrestler": "Ken Patera",
+  "elo": 1132.177121322929
+ },
+ {
+  "date": "1984/06/02",
+  "wrestler": "Otto Wanz",
+  "elo": 1101.1618554472866
+ },
+ {
+  "date": "1984/06/02",
+  "wrestler": "Dick Murdoch",
+  "elo": 1223.1490504933686
+ },
+ {
+  "date": "1984/06/02",
+  "wrestler": "Masa Saito",
+  "elo": 1076.9885980805966
+ },
+ {
+  "date": "1984/06/04",
+  "wrestler": "Otto Wanz",
+  "elo": 1108.4793209121087
+ },
+ {
+  "date": "1984/06/04",
+  "wrestler": "John Quinn",
+  "elo": 1058.718683899746
+ },
+ {
+  "date": "1984/06/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1260.1139426897457
+ },
+ {
+  "date": "1984/06/04",
+  "wrestler": "Masa Saito",
+  "elo": 1102.5293994254494
+ },
+ {
+  "date": "1984/06/05",
+  "wrestler": "Ken Patera",
+  "elo": 1094.1831343718366
+ },
+ {
+  "date": "1984/06/05",
+  "wrestler": "Adrian Adonis",
+  "elo": 1236.2616900487826
+ },
+ {
+  "date": "1984/06/05",
+  "wrestler": "Otto Wanz",
+  "elo": 1079.013762403368
+ },
+ {
+  "date": "1984/06/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1274.846721944116
+ },
+ {
+  "date": "1984/06/05",
+  "wrestler": "Dick Murdoch",
+  "elo": 1193.7663299791761
+ },
+ {
+  "date": "1984/06/05",
+  "wrestler": "Riki Choshu",
+  "elo": 1220.370233141392
+ },
+ {
+  "date": "1984/06/05",
+  "wrestler": "John Quinn",
+  "elo": 1038.4108140494607
+ },
+ {
+  "date": "1984/06/05",
+  "wrestler": "Antonio Inoki",
+  "elo": 1306.373044479494
+ },
+ {
+  "date": "1984/06/06",
+  "wrestler": "Norio Honaga",
+  "elo": 806.3364022970815
+ },
+ {
+  "date": "1984/06/06",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1001.3748896909011
+ },
+ {
+  "date": "1984/06/06",
+  "wrestler": "Otto Wanz",
+  "elo": 1058.0829763319284
+ },
+ {
+  "date": "1984/06/06",
+  "wrestler": "Andre The Giant",
+  "elo": 1320.3679083800157
+ },
+ {
+  "date": "1984/06/06",
+  "wrestler": "Ken Patera",
+  "elo": 1045.384027470487
+ },
+ {
+  "date": "1984/06/06",
+  "wrestler": "Masa Saito",
+  "elo": 1151.328506326799
+ },
+ {
+  "date": "1984/06/07",
+  "wrestler": "Osamu Kido",
+  "elo": 1008.9508236568968
+ },
+ {
+  "date": "1984/06/07",
+  "wrestler": "John Quinn",
+  "elo": 1012.4391649220797
+ },
+ {
+  "date": "1984/06/07",
+  "wrestler": "Riki Choshu",
+  "elo": 1233.3560577050823
+ },
+ {
+  "date": "1984/06/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1252.1090175454094
+ },
+ {
+  "date": "1984/06/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1329.1107488782006
+ },
+ {
+  "date": "1984/06/08",
+  "wrestler": "John Quinn",
+  "elo": 1029.4856732593212
+ },
+ {
+  "date": "1984/06/08",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 959.4641329648307
+ },
+ {
+  "date": "1984/06/08",
+  "wrestler": "Otto Wanz",
+  "elo": 1099.993733057999
+ },
+ {
+  "date": "1984/06/08",
+  "wrestler": "Masked Superstar",
+  "elo": 1110.263134299731
+ },
+ {
+  "date": "1984/06/08",
+  "wrestler": "Ken Patera",
+  "elo": 1113.6604626979874
+ },
+ {
+  "date": "1984/06/08",
+  "wrestler": "Adrian Adonis",
+  "elo": 1217.198108742653
+ },
+ {
+  "date": "1984/06/08",
+  "wrestler": "Andre The Giant",
+  "elo": 1339.4314896861454
+ },
+ {
+  "date": "1984/06/09",
+  "wrestler": "Norio Honaga",
+  "elo": 814.397093821948
+ },
+ {
+  "date": "1984/06/09",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1032.2793491821137
+ },
+ {
+  "date": "1984/06/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1121.259785205517
+ },
+ {
+  "date": "1984/06/09",
+  "wrestler": "Otto Wanz",
+  "elo": 1089.9838476142243
+ },
+ {
+  "date": "1984/06/09",
+  "wrestler": "John Quinn",
+  "elo": 1039.4955587030959
+ },
+ {
+  "date": "1984/06/09",
+  "wrestler": "Adrian Adonis",
+  "elo": 1187.5143923704047
+ },
+ {
+  "date": "1984/06/09",
+  "wrestler": "Masa Saito",
+  "elo": 1210.6959390712955
+ },
+ {
+  "date": "1984/06/10",
+  "wrestler": "Norio Honaga",
+  "elo": 836.6930652176212
+ },
+ {
+  "date": "1984/06/10",
+  "wrestler": "John Quinn",
+  "elo": 1092.8362458525205
+ },
+ {
+  "date": "1984/06/10",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 994.8512447161748
+ },
+ {
+  "date": "1984/06/10",
+  "wrestler": "Otto Wanz",
+  "elo": 1042.898961836228
+ },
+ {
+  "date": "1984/06/10",
+  "wrestler": "Masked Superstar",
+  "elo": 1157.3480200777274
+ },
+ {
+  "date": "1984/06/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1225.7609424939503
+ },
+ {
+  "date": "1984/06/10",
+  "wrestler": "Riki Choshu",
+  "elo": 1259.7041327565414
+ },
+ {
+  "date": "1984/06/11",
+  "wrestler": "Norio Honaga",
+  "elo": 740.719549963617
+ },
+ {
+  "date": "1984/06/11",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 927.773889660851
+ },
+ {
+  "date": "1984/06/11",
+  "wrestler": "Ken Patera",
+  "elo": 1147.1991402256494
+ },
+ {
+  "date": "1984/06/11",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1053.978635818366
+ },
+ {
+  "date": "1984/06/11",
+  "wrestler": "Dick Murdoch",
+  "elo": 1172.0670433429239
+ },
+ {
+  "date": "1984/06/11",
+  "wrestler": "Adrian Adonis",
+  "elo": 1142.9963873904264
+ },
+ {
+  "date": "1984/06/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1248.0199449839395
+ },
+ {
+  "date": "1984/06/11",
+  "wrestler": "Andre The Giant",
+  "elo": 1313.6890710493062
+ },
+ {
+  "date": "1984/06/11",
+  "wrestler": "Antonio Inoki",
+  "elo": 1354.8531675150398
+ },
+ {
+  "date": "1984/06/12",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1002.3846828532427
+ },
+ {
+  "date": "1984/06/12",
+  "wrestler": "Otto Wanz",
+  "elo": 1094.4929148013512
+ },
+ {
+  "date": "1984/06/12",
+  "wrestler": "Riki Choshu",
+  "elo": 1256.2009135694798
+ },
+ {
+  "date": "1984/06/12",
+  "wrestler": "Masa Saito",
+  "elo": 1214.199158258357
+ },
+ {
+  "date": "1984/06/13",
+  "wrestler": "Osamu Kido",
+  "elo": 1070.0130087254097
+ },
+ {
+  "date": "1984/06/13",
+  "wrestler": "Dick Murdoch",
+  "elo": 1141.3895833797847
+ },
+ {
+  "date": "1984/06/13",
+  "wrestler": "Andre The Giant",
+  "elo": 1329.0278010308757
+ },
+ {
+  "date": "1984/06/13",
+  "wrestler": "Otto Wanz",
+  "elo": 1076.231772788526
+ },
+ {
+  "date": "1984/06/13",
+  "wrestler": "Antonio Inoki",
+  "elo": 1363.9837385214523
+ },
+ {
+  "date": "1984/06/14",
+  "wrestler": "Hulk Hogan",
+  "elo": 1238.8633146767522
+ },
+ {
+  "date": "1984/06/14",
+  "wrestler": "Antonio Inoki",
+  "elo": 1366.7874612229753
+ },
+ {
+  "date": "1984/06/29",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 846.1832467763498
+ },
+ {
+  "date": "1984/06/29",
+  "wrestler": "Kengo Kimura",
+  "elo": 1074.062799773834
+ },
+ {
+  "date": "1984/06/29",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1130.5779232831405
+ },
+ {
+  "date": "1984/06/29",
+  "wrestler": "The Cobra",
+  "elo": 1156.2561785246924
+ },
+ {
+  "date": "1984/06/29",
+  "wrestler": "Dynamite Kid",
+  "elo": 1258.2986286868208
+ },
+ {
+  "date": "1984/06/29",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 952.0415047929225
+ },
+ {
+  "date": "1984/06/29",
+  "wrestler": "David Schultz",
+  "elo": 1050.34317806032
+ },
+ {
+  "date": "1984/06/30",
+  "wrestler": "Rick Oliver",
+  "elo": 971.0843220330019
+ },
+ {
+  "date": "1984/06/30",
+  "wrestler": "The Cobra",
+  "elo": 1185.1718564916905
+ },
+ {
+  "date": "1984/06/30",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 799.0013848161116
+ },
+ {
+  "date": "1984/06/30",
+  "wrestler": "David Schultz",
+  "elo": 1073.9341090404391
+ },
+ {
+  "date": "1984/07/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 874.8319596068641
+ },
+ {
+  "date": "1984/07/01",
+  "wrestler": "Norio Honaga",
+  "elo": 721.867429874161
+ },
+ {
+  "date": "1984/07/01",
+  "wrestler": "Osamu Kido",
+  "elo": 1010.0715309453525
+ },
+ {
+  "date": "1984/07/01",
+  "wrestler": "Hiro Matsuda",
+  "elo": 1059.9414777800573
+ },
+ {
+  "date": "1984/07/02",
+  "wrestler": "Norio Honaga",
+  "elo": 815.1354905877563
+ },
+ {
+  "date": "1984/07/02",
+  "wrestler": "Haruka Eigen",
+  "elo": 922.8845879312071
+ },
+ {
+  "date": "1984/07/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1154.4847568054988
+ },
+ {
+  "date": "1984/07/03",
+  "wrestler": "Hiro Matsuda",
+  "elo": 1004.5132573788401
+ },
+ {
+  "date": "1984/07/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1143.0959145272502
+ },
+ {
+  "date": "1984/07/03",
+  "wrestler": "David Schultz",
+  "elo": 1085.3229513186877
+ },
+ {
+  "date": "1984/07/04",
+  "wrestler": "Osamu Kido",
+  "elo": 969.6554273170334
+ },
+ {
+  "date": "1984/07/04",
+  "wrestler": "Bad News Allen",
+  "elo": 982.9281063201994
+ },
+ {
+  "date": "1984/07/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1175.4948853276712
+ },
+ {
+  "date": "1984/07/05",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1182.9009636525684
+ },
+ {
+  "date": "1984/07/05",
+  "wrestler": "Dynamite Kid",
+  "elo": 1253.113082570441
+ },
+ {
+  "date": "1984/07/05",
+  "wrestler": "The Cobra",
+  "elo": 1195.54294872445
+ },
+ {
+  "date": "1984/07/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1288.5063446089757
+ },
+ {
+  "date": "1984/07/05",
+  "wrestler": "Riki Choshu",
+  "elo": 1231.7672347756295
+ },
+ {
+  "date": "1984/07/08",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 943.8570064605339
+ },
+ {
+  "date": "1984/07/08",
+  "wrestler": "Kengo Kimura",
+  "elo": 1011.2402083002593
+ },
+ {
+  "date": "1984/07/08",
+  "wrestler": "Bad News Allen",
+  "elo": 1108.573289267349
+ },
+ {
+  "date": "1984/07/08",
+  "wrestler": "Riki Choshu",
+  "elo": 1246.8420152664728
+ },
+ {
+  "date": "1984/07/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1162.80182555558
+ },
+ {
+  "date": "1984/07/09",
+  "wrestler": "David Schultz",
+  "elo": 1098.0160110907789
+ },
+ {
+  "date": "1984/07/10",
+  "wrestler": "Osamu Kido",
+  "elo": 870.0666939573409
+ },
+ {
+  "date": "1984/07/10",
+  "wrestler": "Rick Oliver",
+  "elo": 1070.6730553926943
+ },
+ {
+  "date": "1984/07/10",
+  "wrestler": "The Cobra",
+  "elo": 1177.1111067921124
+ },
+ {
+  "date": "1984/07/10",
+  "wrestler": "David Schultz",
+  "elo": 1034.8756018000718
+ },
+ {
+  "date": "1984/07/10",
+  "wrestler": "Hiro Matsuda",
+  "elo": 1067.6536666695474
+ },
+ {
+  "date": "1984/07/12",
+  "wrestler": "Norio Honaga",
+  "elo": 779.3083532809659
+ },
+ {
+  "date": "1984/07/12",
+  "wrestler": "Kengo Kimura",
+  "elo": 1049.3126145047884
+ },
+ {
+  "date": "1984/07/12",
+  "wrestler": "David Schultz",
+  "elo": 1103.0739070893333
+ },
+ {
+  "date": "1984/07/13",
+  "wrestler": "Norio Honaga",
+  "elo": 842.9699391553029
+ },
+ {
+  "date": "1984/07/13",
+  "wrestler": "Osamu Kido",
+  "elo": 940.2741308343859
+ },
+ {
+  "date": "1984/07/13",
+  "wrestler": "Rick Oliver",
+  "elo": 1033.629198997749
+ },
+ {
+  "date": "1984/07/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1199.8456819505254
+ },
+ {
+  "date": "1984/07/14",
+  "wrestler": "Hiro Matsuda",
+  "elo": 1122.1820595029624
+ },
+ {
+  "date": "1984/07/14",
+  "wrestler": "Rick Oliver",
+  "elo": 1014.8922014381872
+ },
+ {
+  "date": "1984/07/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1297.8748433887567
+ },
+ {
+  "date": "1984/07/15",
+  "wrestler": "Norio Honaga",
+  "elo": 796.2395525855726
+ },
+ {
+  "date": "1984/07/15",
+  "wrestler": "Kengo Kimura",
+  "elo": 1072.6778077896536
+ },
+ {
+  "date": "1984/07/15",
+  "wrestler": "The Cobra",
+  "elo": 1203.9065024434713
+ },
+ {
+  "date": "1984/07/15",
+  "wrestler": "Hiro Matsuda",
+  "elo": 1069.4349445374792
+ },
+ {
+  "date": "1984/07/15",
+  "wrestler": "David Schultz",
+  "elo": 1155.8210220548165
+ },
+ {
+  "date": "1984/07/16",
+  "wrestler": "Kengo Kimura",
+  "elo": 1072.2111358050004
+ },
+ {
+  "date": "1984/07/16",
+  "wrestler": "Hiro Matsuda",
+  "elo": 1069.9016165221324
+ },
+ {
+  "date": "1984/07/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1119.2105254063306
+ },
+ {
+  "date": "1984/07/16",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1113.311817881312
+ },
+ {
+  "date": "1984/07/17",
+  "wrestler": "Rick Oliver",
+  "elo": 1021.0494576759064
+ },
+ {
+  "date": "1984/07/17",
+  "wrestler": "Norio Honaga",
+  "elo": 766.7616192638338
+ },
+ {
+  "date": "1984/07/17",
+  "wrestler": "Hiro Matsuda",
+  "elo": 1091.9562906487515
+ },
+ {
+  "date": "1984/07/18",
+  "wrestler": "Osamu Kido",
+  "elo": 1050.442282446868
+ },
+ {
+  "date": "1984/07/18",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1123.1946941697506
+ },
+ {
+  "date": "1984/07/18",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1173.0180873641298
+ },
+ {
+  "date": "1984/07/18",
+  "wrestler": "David Schultz",
+  "elo": 1191.9061216446455
+ },
+ {
+  "date": "1984/07/19",
+  "wrestler": "Osamu Kido",
+  "elo": 1055.1870390368615
+ },
+ {
+  "date": "1984/07/19",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1202.3692542883705
+ },
+ {
+  "date": "1984/07/19",
+  "wrestler": "Dynamite Kid",
+  "elo": 1257.9633244452032
+ },
+ {
+  "date": "1984/07/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1129.5222208518771
+ },
+ {
+  "date": "1984/07/19",
+  "wrestler": "David Schultz",
+  "elo": 1181.594426199099
+ },
+ {
+  "date": "1984/07/20",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1037.1395143609764
+ },
+ {
+  "date": "1984/07/20",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1181.3357738816128
+ },
+ {
+  "date": "1984/07/20",
+  "wrestler": "Dynamite Kid",
+  "elo": 1278.9968048519609
+ },
+ {
+  "date": "1984/07/20",
+  "wrestler": "Riki Choshu",
+  "elo": 1225.487939801625
+ },
+ {
+  "date": "1984/07/20",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1319.2289188536045
+ },
+ {
+  "date": "1984/07/21",
+  "wrestler": "Hiro Matsuda",
+  "elo": 1095.5370882797101
+ },
+ {
+  "date": "1984/07/21",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1006.8077568570096
+ },
+ {
+  "date": "1984/07/21",
+  "wrestler": "David Schultz",
+  "elo": 1211.9261837030658
+ },
+ {
+  "date": "1984/07/23",
+  "wrestler": "Rick Oliver",
+  "elo": 975.9465016453327
+ },
+ {
+  "date": "1984/07/23",
+  "wrestler": "Osamu Kido",
+  "elo": 1100.2899950674353
+ },
+ {
+  "date": "1984/07/23",
+  "wrestler": "Kengo Kimura",
+  "elo": 1078.464396550378
+ },
+ {
+  "date": "1984/07/24",
+  "wrestler": "Norio Honaga",
+  "elo": 723.6334259111525
+ },
+ {
+  "date": "1984/07/24",
+  "wrestler": "Osamu Kido",
+  "elo": 1100.5076696338165
+ },
+ {
+  "date": "1984/07/24",
+  "wrestler": "Kengo Kimura",
+  "elo": 1046.7790031388563
+ },
+ {
+  "date": "1984/07/24",
+  "wrestler": "David Schultz",
+  "elo": 1227.7688804088268
+ },
+ {
+  "date": "1984/07/25",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1312.7957575681635
+ },
+ {
+  "date": "1984/07/25",
+  "wrestler": "David Schultz",
+  "elo": 1234.2020416942678
+ },
+ {
+  "date": "1984/07/26",
+  "wrestler": "Osamu Kido",
+  "elo": 1103.788957353189
+ },
+ {
+  "date": "1984/07/26",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1134.5794010915952
+ },
+ {
+  "date": "1984/07/26",
+  "wrestler": "The Cobra",
+  "elo": 1227.28468883848
+ },
+ {
+  "date": "1984/07/26",
+  "wrestler": "Dynamite Kid",
+  "elo": 1256.421191982358
+ },
+ {
+  "date": "1984/07/26",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1335.3713704377662
+ },
+ {
+  "date": "1984/07/27",
+  "wrestler": "Osamu Kido",
+  "elo": 1071.7224714216527
+ },
+ {
+  "date": "1984/07/27",
+  "wrestler": "David Schultz",
+  "elo": 1250.235284660036
+ },
+ {
+  "date": "1984/07/28",
+  "wrestler": "The Cobra",
+  "elo": 1244.9796778496218
+ },
+ {
+  "date": "1984/07/29",
+  "wrestler": "Norio Honaga",
+  "elo": 746.5041416277408
+ },
+ {
+  "date": "1984/07/29",
+  "wrestler": "The Cobra",
+  "elo": 1237.2927310693162
+ },
+ {
+  "date": "1984/07/29",
+  "wrestler": "Davey Boy Smith",
+  "elo": 1149.953294652206
+ },
+ {
+  "date": "1984/07/30",
+  "wrestler": "Norio Honaga",
+  "elo": 726.9206993402237
+ },
+ {
+  "date": "1984/07/30",
+  "wrestler": "David Schultz",
+  "elo": 1214.7854688738253
+ },
+ {
+  "date": "1984/07/30",
+  "wrestler": "Hiro Matsuda",
+  "elo": 1166.436719852132
+ },
+ {
+  "date": "1984/07/31",
+  "wrestler": "Osamu Kido",
+  "elo": 1080.3279539703829
+ },
+ {
+  "date": "1984/07/31",
+  "wrestler": "Haruka Eigen",
+  "elo": 838.0393898029325
+ },
+ {
+  "date": "1984/07/31",
+  "wrestler": "Rick Oliver",
+  "elo": 1060.7916997736072
+ },
+ {
+  "date": "1984/07/31",
+  "wrestler": "Kengo Kimura",
+  "elo": 1019.2335702585128
+ },
+ {
+  "date": "1984/07/31",
+  "wrestler": "David Schultz",
+  "elo": 1228.558185313997
+ },
+ {
+  "date": "1984/08/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 995.7799959392423
+ },
+ {
+  "date": "1984/08/01",
+  "wrestler": "Norio Honaga",
+  "elo": 712.1651571494137
+ },
+ {
+  "date": "1984/08/01",
+  "wrestler": "Hiro Matsuda",
+  "elo": 1173.814490947537
+ },
+ {
+  "date": "1984/08/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1078.611717226591
+ },
+ {
+  "date": "1984/08/01",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1174.1051977950367
+ },
+ {
+  "date": "1984/08/02",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1212.8473534831717
+ },
+ {
+  "date": "1984/08/02",
+  "wrestler": "David Schultz",
+  "elo": 1211.0106867643033
+ },
+ {
+  "date": "1984/08/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1352.91886898746
+ },
+ {
+  "date": "1984/08/02",
+  "wrestler": "The Cobra",
+  "elo": 1225.0192501812467
+ },
+ {
+  "date": "1984/08/02",
+  "wrestler": "Riki Choshu",
+  "elo": 1210.1294622599773
+ },
+ {
+  "date": "1984/08/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1382.145938764623
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Norio Honaga",
+  "elo": 696.633832256132
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 971.0480641199922
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Bad News Allen",
+  "elo": 1144.3329820043666
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Osamu Kido",
+  "elo": 1129.584793455817
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Kengo Kimura",
+  "elo": 994.530847927524
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1225.198714648666
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Riki Choshu",
+  "elo": 1224.699881195283
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Roger Smith",
+  "elo": 988.4071499687769
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1358.7152940030714
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Billy Crusher",
+  "elo": 990.0232344671404
+ },
+ {
+  "date": "1984/08/05",
+  "wrestler": "Antonio Inoki",
+  "elo": 1387.1343215310528
+ },
+ {
+  "date": "1984/08/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1058.2313823890677
+ },
+ {
+  "date": "1984/08/06",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1113.754886253491
+ },
+ {
+  "date": "1984/08/06",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1244.8580677348791
+ },
+ {
+  "date": "1984/08/06",
+  "wrestler": "Kengo Kimura",
+  "elo": 1103.7438241148172
+ },
+ {
+  "date": "1984/08/10",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1046.4598509457953
+ },
+ {
+  "date": "1984/08/10",
+  "wrestler": "Roger Smith",
+  "elo": 1122.997220584168
+ },
+ {
+  "date": "1984/08/10",
+  "wrestler": "Kengo Kimura",
+  "elo": 1059.5586438177538
+ },
+ {
+  "date": "1984/08/10",
+  "wrestler": "Bad News Allen",
+  "elo": 1188.51816230143
+ },
+ {
+  "date": "1984/08/10",
+  "wrestler": "Billy Crusher",
+  "elo": 971.5646651793297
+ },
+ {
+  "date": "1984/08/10",
+  "wrestler": "Antonio Inoki",
+  "elo": 1391.7489638530055
+ },
+ {
+  "date": "1984/08/12",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 998.3440261382176
+ },
+ {
+  "date": "1984/08/12",
+  "wrestler": "Kengo Kimura",
+  "elo": 1107.6744686253314
+ },
+ {
+  "date": "1984/08/12",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1260.669086248014
+ },
+ {
+  "date": "1984/08/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1026.14905605047
+ },
+ {
+  "date": "1984/08/12",
+  "wrestler": "Bad News Allen",
+  "elo": 1220.6004886400276
+ },
+ {
+  "date": "1984/08/12",
+  "wrestler": "Roger Smith",
+  "elo": 1105.446081700384
+ },
+ {
+  "date": "1984/08/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1400.5245332948975
+ },
+ {
+  "date": "1984/08/15",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1225.188125033923
+ },
+ {
+  "date": "1984/08/15",
+  "wrestler": "Roger Smith",
+  "elo": 1176.408004128566
+ },
+ {
+  "date": "1984/08/15",
+  "wrestler": "Riki Choshu",
+  "elo": 1209.1449588710277
+ },
+ {
+  "date": "1984/08/15",
+  "wrestler": "Billy Crusher",
+  "elo": 1033.7843544763512
+ },
+ {
+  "date": "1984/08/15",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1361.8286810317916
+ },
+ {
+  "date": "1984/08/15",
+  "wrestler": "Bad News Allen",
+  "elo": 1207.5017138700164
+ },
+ {
+  "date": "1984/08/15",
+  "wrestler": "Antonio Inoki",
+  "elo": 1413.6233080649088
+ },
+ {
+  "date": "1984/08/24",
+  "wrestler": "Osamu Kido",
+  "elo": 1038.9674516066652
+ },
+ {
+  "date": "1984/08/24",
+  "wrestler": "Kengo Kimura",
+  "elo": 1116.31043511678
+ },
+ {
+  "date": "1984/08/24",
+  "wrestler": "Tony St. Clair",
+  "elo": 1059.8366291145794
+ },
+ {
+  "date": "1984/08/24",
+  "wrestler": "Riki Choshu",
+  "elo": 1195.683754521435
+ },
+ {
+  "date": "1984/08/24",
+  "wrestler": "Bob Backlund",
+  "elo": 1026.9224086991853
+ },
+ {
+  "date": "1984/08/25",
+  "wrestler": "Norio Honaga",
+  "elo": 735.6859639072072
+ },
+ {
+  "date": "1984/08/25",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1235.9276532142007
+ },
+ {
+  "date": "1984/08/26",
+  "wrestler": "Norio Honaga",
+  "elo": 616.3019023941317
+ },
+ {
+  "date": "1984/08/26",
+  "wrestler": "Osamu Kido",
+  "elo": 1079.2466455592173
+ },
+ {
+  "date": "1984/08/26",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1121.2228820621108
+ },
+ {
+  "date": "1984/08/26",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1197.4735889615908
+ },
+ {
+  "date": "1984/08/26",
+  "wrestler": "Bob Backlund",
+  "elo": 1103.8305372044051
+ },
+ {
+  "date": "1984/08/27",
+  "wrestler": "Norio Honaga",
+  "elo": 685.8635680406303
+ },
+ {
+  "date": "1984/08/27",
+  "wrestler": "Haruka Eigen",
+  "elo": 948.0843833079974
+ },
+ {
+  "date": "1984/08/27",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1221.3213952772132
+ },
+ {
+  "date": "1984/08/27",
+  "wrestler": "Kengo Kimura",
+  "elo": 1064.5152054670725
+ },
+ {
+  "date": "1984/08/27",
+  "wrestler": "Bob Backlund",
+  "elo": 1155.6257668541125
+ },
+ {
+  "date": "1984/08/28",
+  "wrestler": "Haruka Eigen",
+  "elo": 961.398484674686
+ },
+ {
+  "date": "1984/08/28",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1054.4525668334852
+ },
+ {
+  "date": "1984/08/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1117.4877664994779
+ },
+ {
+  "date": "1984/08/29",
+  "wrestler": "Haruka Eigen",
+  "elo": 1061.319467469231
+ },
+ {
+  "date": "1984/08/29",
+  "wrestler": "Roger Smith",
+  "elo": 1150.8175952133838
+ },
+ {
+  "date": "1984/08/29",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1374.6238854893827
+ },
+ {
+  "date": "1984/08/30",
+  "wrestler": "Norio Honaga",
+  "elo": 771.0812679374601
+ },
+ {
+  "date": "1984/08/30",
+  "wrestler": "Haruka Eigen",
+  "elo": 1078.4237109176302
+ },
+ {
+  "date": "1984/08/30",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1018.6145071235258
+ },
+ {
+  "date": "1984/08/30",
+  "wrestler": "Bob Backlund",
+  "elo": 1191.463826564072
+ },
+ {
+  "date": "1984/08/31",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1082.0010891352927
+ },
+ {
+  "date": "1984/08/31",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1239.0647339593058
+ },
+ {
+  "date": "1984/08/31",
+  "wrestler": "Riki Choshu",
+  "elo": 1231.0207405508017
+ },
+ {
+  "date": "1984/08/31",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1362.5433794892947
+ },
+ {
+  "date": "1984/08/31",
+  "wrestler": "Bob Backlund",
+  "elo": 1215.6248385642477
+ },
+ {
+  "date": "1984/09/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 1050.024079653043
+ },
+ {
+  "date": "1984/09/01",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1253.2645495915995
+ },
+ {
+  "date": "1984/09/01",
+  "wrestler": "Kengo Kimura",
+  "elo": 1113.2002991096829
+ },
+ {
+  "date": "1984/09/02",
+  "wrestler": "Tony St. Clair",
+  "elo": 1044.9373176805814
+ },
+ {
+  "date": "1984/09/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1369.9930352062938
+ },
+ {
+  "date": "1984/09/03",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 994.2736618209168
+ },
+ {
+  "date": "1984/09/03",
+  "wrestler": "Bob Backlund",
+  "elo": 1227.7952612155523
+ },
+ {
+  "date": "1984/09/04",
+  "wrestler": "Haruka Eigen",
+  "elo": 1055.0423719572614
+ },
+ {
+  "date": "1984/09/04",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1260.4185079521103
+ },
+ {
+  "date": "1984/09/05",
+  "wrestler": "Haruka Eigen",
+  "elo": 1059.4729447647892
+ },
+ {
+  "date": "1984/09/05",
+  "wrestler": "Norio Honaga",
+  "elo": 736.8212776440608
+ },
+ {
+  "date": "1984/09/05",
+  "wrestler": "Tony St. Clair",
+  "elo": 1062.067312827281
+ },
+ {
+  "date": "1984/09/07",
+  "wrestler": "Norio Honaga",
+  "elo": 678.2568334495909
+ },
+ {
+  "date": "1984/09/07",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1271.5916312164693
+ },
+ {
+  "date": "1984/09/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1354.5792146782455
+ },
+ {
+  "date": "1984/09/07",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1150.8669350933512
+ },
+ {
+  "date": "1984/09/07",
+  "wrestler": "Riki Choshu",
+  "elo": 1191.4798478539976
+ },
+ {
+  "date": "1984/09/07",
+  "wrestler": "Greg Valentine",
+  "elo": 1079.0817853936082
+ },
+ {
+  "date": "1984/09/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1417.854933499606
+ },
+ {
+  "date": "1984/09/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1338.0773564058234
+ },
+ {
+  "date": "1984/09/08",
+  "wrestler": "Greg Valentine",
+  "elo": 1112.0855019384524
+ },
+ {
+  "date": "1984/09/09",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1282.0256803573532
+ },
+ {
+  "date": "1984/09/09",
+  "wrestler": "Riki Choshu",
+  "elo": 1135.6616558131934
+ },
+ {
+  "date": "1984/09/09",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1206.6851271341554
+ },
+ {
+  "date": "1984/09/10",
+  "wrestler": "Haruka Eigen",
+  "elo": 1029.4755399056307
+ },
+ {
+  "date": "1984/09/10",
+  "wrestler": "Abdullah The Butcher",
+  "elo": 1221.6838295637347
+ },
+ {
+  "date": "1984/09/10",
+  "wrestler": "Greg Valentine",
+  "elo": 1141.1808810857021
+ },
+ {
+  "date": "1984/09/11",
+  "wrestler": "Haruka Eigen",
+  "elo": 1052.6431780161317
+ },
+ {
+  "date": "1984/09/11",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1291.0497889384833
+ },
+ {
+  "date": "1984/09/11",
+  "wrestler": "Riki Choshu",
+  "elo": 1176.4805892276738
+ },
+ {
+  "date": "1984/09/12",
+  "wrestler": "Haruka Eigen",
+  "elo": 1003.999087513146
+ },
+ {
+  "date": "1984/09/12",
+  "wrestler": "Tony St. Clair",
+  "elo": 1110.7114033302669
+ },
+ {
+  "date": "1984/09/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1040.4363249395108
+ },
+ {
+  "date": "1984/09/12",
+  "wrestler": "Greg Valentine",
+  "elo": 1182.745645281484
+ },
+ {
+  "date": "1984/09/13",
+  "wrestler": "Norio Honaga",
+  "elo": 792.1148064914626
+ },
+ {
+  "date": "1984/09/13",
+  "wrestler": "Haruka Eigen",
+  "elo": 957.7789212490444
+ },
+ {
+  "date": "1984/09/13",
+  "wrestler": "Roger Smith",
+  "elo": 1169.837936136004
+ },
+ {
+  "date": "1984/09/14",
+  "wrestler": "Haruka Eigen",
+  "elo": 912.2166092059585
+ },
+ {
+  "date": "1984/09/14",
+  "wrestler": "Roger Smith",
+  "elo": 1192.619092157547
+ },
+ {
+  "date": "1984/09/15",
+  "wrestler": "Haruka Eigen",
+  "elo": 1022.7631456812452
+ },
+ {
+  "date": "1984/09/15",
+  "wrestler": "Kengo Kimura",
+  "elo": 1096.7239118922714
+ },
+ {
+  "date": "1984/09/15",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1027.2264362557398
+ },
+ {
+  "date": "1984/09/15",
+  "wrestler": "Roger Smith",
+  "elo": 1122.0191137885738
+ },
+ {
+  "date": "1984/09/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1111.0363033084839
+ },
+ {
+  "date": "1984/09/16",
+  "wrestler": "Norio Honaga",
+  "elo": 905.3724319403142
+ },
+ {
+  "date": "1984/09/16",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1297.7999615651775
+ },
+ {
+  "date": "1984/09/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1145.7265216601804
+ },
+ {
+  "date": "1984/09/17",
+  "wrestler": "Haruka Eigen",
+  "elo": 1066.9116431493292
+ },
+ {
+  "date": "1984/09/17",
+  "wrestler": "Roger Smith",
+  "elo": 1108.7060602467143
+ },
+ {
+  "date": "1984/09/17",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1040.5394897975993
+ },
+ {
+  "date": "1984/09/18",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1140.4189206718115
+ },
+ {
+  "date": "1984/09/18",
+  "wrestler": "Roger Smith",
+  "elo": 1114.0136612350832
+ },
+ {
+  "date": "1984/09/19",
+  "wrestler": "Haruka Eigen",
+  "elo": 1094.6066094096689
+ },
+ {
+  "date": "1984/09/19",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1303.4939432511503
+ },
+ {
+  "date": "1984/09/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1183.0694249385413
+ },
+ {
+  "date": "1984/09/20",
+  "wrestler": "Norio Honaga",
+  "elo": 1022.7696279544177
+ },
+ {
+  "date": "1984/09/20",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1096.9213252714096
+ },
+ {
+  "date": "1984/09/20",
+  "wrestler": "Kengo Kimura",
+  "elo": 1139.5215492774814
+ },
+ {
+  "date": "1984/09/20",
+  "wrestler": "Greg Valentine",
+  "elo": 1153.720460525306
+ },
+ {
+  "date": "1984/09/20",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1352.5899487839124
+ },
+ {
+  "date": "1984/09/20",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 991.7235600418182
+ },
+ {
+  "date": "1984/09/20",
+  "wrestler": "Antonio Inoki",
+  "elo": 1421.9931534786967
+ },
+ {
+  "date": "1984/10/05",
+  "wrestler": "Black Tiger",
+  "elo": 1152.2926469040738
+ },
+ {
+  "date": "1984/10/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1136.5797295319928
+ },
+ {
+  "date": "1984/10/05",
+  "wrestler": "Bad News Allen",
+  "elo": 1230.7465615732906
+ },
+ {
+  "date": "1984/10/05",
+  "wrestler": "Shunji Takano",
+  "elo": 1065.0229818178161
+ },
+ {
+  "date": "1984/10/05",
+  "wrestler": "The Cobra",
+  "elo": 1205.428428386127
+ },
+ {
+  "date": "1984/10/07",
+  "wrestler": "Brian Blair",
+  "elo": 950.0
+ },
+ {
+  "date": "1984/10/07",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1050.0
+ },
+ {
+  "date": "1984/10/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1067.8779013377894
+ },
+ {
+  "date": "1984/10/07",
+  "wrestler": "Bob Orton",
+  "elo": 1068.7018281942035
+ },
+ {
+  "date": "1984/10/08",
+  "wrestler": "Black Tiger",
+  "elo": 1155.2322472847031
+ },
+ {
+  "date": "1984/10/08",
+  "wrestler": "Brian Blair",
+  "elo": 1038.166143411304
+ },
+ {
+  "date": "1984/10/08",
+  "wrestler": "The Cobra",
+  "elo": 1210.886170547527
+ },
+ {
+  "date": "1984/10/08",
+  "wrestler": "Bad News Allen",
+  "elo": 1193.7996157338482
+ },
+ {
+  "date": "1984/10/08",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1123.893891678885
+ },
+ {
+  "date": "1984/10/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1341.8983278977992
+ },
+ {
+  "date": "1984/10/10",
+  "wrestler": "Bad News Allen",
+  "elo": 1215.1828575060747
+ },
+ {
+  "date": "1984/10/12",
+  "wrestler": "Bob Orton",
+  "elo": 1026.578459997896
+ },
+ {
+  "date": "1984/10/12",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1166.0172598751924
+ },
+ {
+  "date": "1984/10/12",
+  "wrestler": "The Cobra",
+  "elo": 1206.9154527074536
+ },
+ {
+  "date": "1984/10/12",
+  "wrestler": "Black Tiger",
+  "elo": 1163.1736829648496
+ },
+ {
+  "date": "1984/10/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1087.8917097533492
+ },
+ {
+  "date": "1984/10/15",
+  "wrestler": "Bad News Allen",
+  "elo": 1205.1759532982946
+ },
+ {
+  "date": "1984/10/17",
+  "wrestler": "Black Tiger",
+  "elo": 1175.2860248598986
+ },
+ {
+  "date": "1984/10/17",
+  "wrestler": "The Cobra",
+  "elo": 1222.4926715234087
+ },
+ {
+  "date": "1984/10/17",
+  "wrestler": "Bob Orton",
+  "elo": 1045.8730289923465
+ },
+ {
+  "date": "1984/10/19",
+  "wrestler": "Bad News Allen",
+  "elo": 1207.7638029046457
+ },
+ {
+  "date": "1984/10/19",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1324.5951244739424
+ },
+ {
+  "date": "1984/10/19",
+  "wrestler": "Bob Orton",
+  "elo": 1080.4794358400602
+ },
+ {
+  "date": "1984/10/19",
+  "wrestler": "Black Tiger",
+  "elo": 1132.03810815636
+ },
+ {
+  "date": "1984/10/19",
+  "wrestler": "The Cobra",
+  "elo": 1244.116629875178
+ },
+ {
+  "date": "1984/10/22",
+  "wrestler": "Black Tiger",
+  "elo": 1141.4854879855934
+ },
+ {
+  "date": "1984/10/22",
+  "wrestler": "Bad News Allen",
+  "elo": 1173.034137336639
+ },
+ {
+  "date": "1984/10/22",
+  "wrestler": "Shunji Takano",
+  "elo": 1134.4823129538293
+ },
+ {
+  "date": "1984/10/22",
+  "wrestler": "The Cobra",
+  "elo": 1256.6308333604716
+ },
+ {
+  "date": "1984/10/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1086.8251595981699
+ },
+ {
+  "date": "1984/10/22",
+  "wrestler": "Bob Orton",
+  "elo": 1081.5459859952396
+ },
+ {
+  "date": "1984/10/26",
+  "wrestler": "Brian Blair",
+  "elo": 1057.2065717980622
+ },
+ {
+  "date": "1984/10/26",
+  "wrestler": "Black Tiger",
+  "elo": 1149.6264701621271
+ },
+ {
+  "date": "1984/10/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1098.9831321707031
+ },
+ {
+  "date": "1984/10/26",
+  "wrestler": "Bad News Allen",
+  "elo": 1160.8761647641059
+ },
+ {
+  "date": "1984/10/26",
+  "wrestler": "The Cobra",
+  "elo": 1268.222790305866
+ },
+ {
+  "date": "1984/10/26",
+  "wrestler": "Antonio Inoki",
+  "elo": 1426.4299810139266
+ },
+ {
+  "date": "1984/10/28",
+  "wrestler": "Black Tiger",
+  "elo": 1151.8845283120547
+ },
+ {
+  "date": "1984/10/28",
+  "wrestler": "The Cobra",
+  "elo": 1278.2737291042329
+ },
+ {
+  "date": "1984/10/28",
+  "wrestler": "Bad News Allen",
+  "elo": 1102.0620822479018
+ },
+ {
+  "date": "1984/10/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1157.7972146869072
+ },
+ {
+  "date": "1984/10/30",
+  "wrestler": "Black Tiger",
+  "elo": 1154.0581046595944
+ },
+ {
+  "date": "1984/10/30",
+  "wrestler": "Bad News Allen",
+  "elo": 1110.5792493241129
+ },
+ {
+  "date": "1984/10/30",
+  "wrestler": "The Cobra",
+  "elo": 1288.496166206091
+ },
+ {
+  "date": "1984/11/01",
+  "wrestler": "Brian Blair",
+  "elo": 1075.2813822722246
+ },
+ {
+  "date": "1984/11/01",
+  "wrestler": "Kengo Kimura",
+  "elo": 1171.4993768833647
+ },
+ {
+  "date": "1984/11/01",
+  "wrestler": "Black Tiger",
+  "elo": 1122.4942325342306
+ },
+ {
+  "date": "1984/11/01",
+  "wrestler": "The Cobra",
+  "elo": 1304.278102268773
+ },
+ {
+  "date": "1984/11/01",
+  "wrestler": "Bob Orton",
+  "elo": 1061.7501418446495
+ },
+ {
+  "date": "1984/11/01",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1334.4930465492373
+ },
+ {
+  "date": "1984/11/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1430.384654267131
+ },
+ {
+  "date": "1984/11/16",
+  "wrestler": "Shunji Takano",
+  "elo": 1168.8110589919
+ },
+ {
+  "date": "1984/11/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1136.5308968579805
+ },
+ {
+  "date": "1984/11/16",
+  "wrestler": "Kerry Brown",
+  "elo": 1021.2663178289268
+ },
+ {
+  "date": "1984/11/17",
+  "wrestler": "Shunji Takano",
+  "elo": 1148.7682796297665
+ },
+ {
+  "date": "1984/11/17",
+  "wrestler": "Kerry Brown",
+  "elo": 1041.3090971910601
+ },
+ {
+  "date": "1984/11/18",
+  "wrestler": "Shunji Takano",
+  "elo": 1130.4821302948847
+ },
+ {
+  "date": "1984/11/18",
+  "wrestler": "Wild Samoan",
+  "elo": 1189.4191242477666
+ },
+ {
+  "date": "1984/11/18",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1171.4986368494165
+ },
+ {
+  "date": "1984/11/20",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1171.2352095067258
+ },
+ {
+  "date": "1984/11/20",
+  "wrestler": "Kerry Brown",
+  "elo": 1009.2145727020339
+ },
+ {
+  "date": "1984/11/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1203.5931613384425
+ },
+ {
+  "date": "1984/11/21",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1142.5009823652176
+ },
+ {
+  "date": "1984/11/21",
+  "wrestler": "Andre The Giant",
+  "elo": 1343.3949146016298
+ },
+ {
+  "date": "1984/11/22",
+  "wrestler": "Kerry Brown",
+  "elo": 1058.4585883103948
+ },
+ {
+  "date": "1984/11/23",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1022.1065775814968
+ },
+ {
+  "date": "1984/11/23",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1148.1041321476614
+ },
+ {
+  "date": "1984/11/23",
+  "wrestler": "Wild Samoan",
+  "elo": 1136.8425496349314
+ },
+ {
+  "date": "1984/11/23",
+  "wrestler": "Kengo Kimura",
+  "elo": 1224.0759514961999
+ },
+ {
+  "date": "1984/11/24",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1042.1439208830184
+ },
+ {
+  "date": "1984/11/24",
+  "wrestler": "Wild Samoan",
+  "elo": 1088.4626542983062
+ },
+ {
+  "date": "1984/11/24",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1196.4840274842866
+ },
+ {
+  "date": "1984/11/24",
+  "wrestler": "Kerry Brown",
+  "elo": 1028.20944334742
+ },
+ {
+  "date": "1984/11/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1218.71773381993
+ },
+ {
+  "date": "1984/11/26",
+  "wrestler": "Kerry Brown",
+  "elo": 1003.7471348887049
+ },
+ {
+  "date": "1984/11/26",
+  "wrestler": "Kengo Kimura",
+  "elo": 1236.3071057255574
+ },
+ {
+  "date": "1984/11/27",
+  "wrestler": "Kerry Brown",
+  "elo": 1058.0612127155646
+ },
+ {
+  "date": "1984/11/27",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1166.4501895025687
+ },
+ {
+  "date": "1984/11/27",
+  "wrestler": "Andre The Giant",
+  "elo": 1358.4118335924888
+ },
+ {
+  "date": "1984/11/29",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1203.2607437477675
+ },
+ {
+  "date": "1984/11/29",
+  "wrestler": "Andre The Giant",
+  "elo": 1373.8688236646512
+ },
+ {
+  "date": "1984/11/30",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1194.1747775578265
+ },
+ {
+  "date": "1984/11/30",
+  "wrestler": "Dick Murdoch",
+  "elo": 1100.2006160103062
+ },
+ {
+  "date": "1984/11/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1223.8552274325068
+ },
+ {
+  "date": "1984/11/30",
+  "wrestler": "Kengo Kimura",
+  "elo": 1204.7497666163947
+ },
+ {
+  "date": "1984/11/30",
+  "wrestler": "Adrian Adonis",
+  "elo": 1206.1110656087521
+ },
+ {
+  "date": "1984/12/01",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1059.064828207968
+ },
+ {
+  "date": "1984/12/01",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1197.6993569537094
+ },
+ {
+  "date": "1984/12/01",
+  "wrestler": "Wild Samoan",
+  "elo": 1057.017351348611
+ },
+ {
+  "date": "1984/12/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1239.5778789073543
+ },
+ {
+  "date": "1984/12/02",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1116.4098163327892
+ },
+ {
+  "date": "1984/12/02",
+  "wrestler": "Wild Samoan",
+  "elo": 1026.2246944583794
+ },
+ {
+  "date": "1984/12/02",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1228.492013843941
+ },
+ {
+  "date": "1984/12/02",
+  "wrestler": "Kerry Brown",
+  "elo": 1032.0405314846378
+ },
+ {
+  "date": "1984/12/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1252.5882195228178
+ },
+ {
+  "date": "1984/12/03",
+  "wrestler": "Wild Samoan",
+  "elo": 1039.7424471260356
+ },
+ {
+  "date": "1984/12/03",
+  "wrestler": "Kerry Brown",
+  "elo": 1047.1262670494555
+ },
+ {
+  "date": "1984/12/05",
+  "wrestler": "Kerry Brown",
+  "elo": 1053.625372484754
+ },
+ {
+  "date": "1984/12/05",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1162.917969988146
+ },
+ {
+  "date": "1984/12/06",
+  "wrestler": "Kerry Brown",
+  "elo": 1068.0548238272077
+ },
+ {
+  "date": "1984/12/06",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1200.596555592855
+ },
+ {
+  "date": "1984/12/06",
+  "wrestler": "Adrian Adonis",
+  "elo": 1231.1825138349975
+ },
+ {
+  "date": "1984/12/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1317.7495669177436
+ },
+ {
+  "date": "1984/12/06",
+  "wrestler": "Dick Murdoch",
+  "elo": 1128.6280490745157
+ },
+ {
+  "date": "1984/12/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1427.4923174402572
+ },
+ {
+  "date": "1984/12/06",
+  "wrestler": "Kengo Kimura",
+  "elo": 1203.412024194364
+ },
+ {
+  "date": "1984/12/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1250.977031947818
+ },
+ {
+  "date": "1984/12/06",
+  "wrestler": "Andre The Giant",
+  "elo": 1387.1853555601315
+ },
+ {
+  "date": "1984/12/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1424.604940481117
+ },
+ {
+  "date": "1984/12/08",
+  "wrestler": "Andre The Giant",
+  "elo": 1390.0727325192718
+ },
+ {
+  "date": "1984/12/09",
+  "wrestler": "Tiger Toguchi",
+  "elo": 1212.4770593984344
+ },
+ {
+  "date": "1984/12/09",
+  "wrestler": "Adrian Adonis",
+  "elo": 1212.2857362013915
+ },
+ {
+  "date": "1984/12/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1336.6463445513496
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

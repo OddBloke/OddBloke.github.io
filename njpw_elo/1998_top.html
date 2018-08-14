@@ -1,0 +1,1520 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1998/01/04",
+  "wrestler": "Kendo Kashin",
+  "elo": 900.0
+ },
+ {
+  "date": "1998/01/04",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 700.0
+ },
+ {
+  "date": "1998/01/04",
+  "wrestler": "Riki Choshu",
+  "elo": 1062.534147356323
+ },
+ {
+  "date": "1998/01/04",
+  "wrestler": "Takashi Iizuka",
+  "elo": 957.2318383217918
+ },
+ {
+  "date": "1998/01/04",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 942.5089485285356
+ },
+ {
+  "date": "1998/01/04",
+  "wrestler": "Naoya Ogawa",
+  "elo": 950.0
+ },
+ {
+  "date": "1998/01/04",
+  "wrestler": "Don Frye",
+  "elo": 1050.0
+ },
+ {
+  "date": "1998/01/04",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "1998/01/04",
+  "wrestler": "Masahiro Chono",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "1998/01/04",
+  "wrestler": "Great Muta",
+  "elo": 950.0
+ },
+ {
+  "date": "1998/01/04",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1050.0
+ },
+ {
+  "date": "1998/01/26",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1017.2832681129001
+ },
+ {
+  "date": "1998/01/27",
+  "wrestler": "El Samurai",
+  "elo": 1053.4520191492525
+ },
+ {
+  "date": "1998/02/03",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 826.9674231520866
+ },
+ {
+  "date": "1998/02/03",
+  "wrestler": "El Samurai",
+  "elo": 1089.2464846223609
+ },
+ {
+  "date": "1998/02/06",
+  "wrestler": "Kengo Kimura",
+  "elo": 1050.0
+ },
+ {
+  "date": "1998/02/06",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 773.0238935868481
+ },
+ {
+  "date": "1998/02/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1026.9717647826192
+ },
+ {
+  "date": "1998/02/07",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1045.2254561559178
+ },
+ {
+  "date": "1998/02/07",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1069.1682327450542
+ },
+ {
+  "date": "1998/02/08",
+  "wrestler": "Kendo Kashin",
+  "elo": 985.4911599474796
+ },
+ {
+  "date": "1998/02/08",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1057.2799752126266
+ },
+ {
+  "date": "1998/02/08",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 845.5505737293305
+ },
+ {
+  "date": "1998/02/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1039.2373668029368
+ },
+ {
+  "date": "1998/02/11",
+  "wrestler": "El Samurai",
+  "elo": 1120.4728272864158
+ },
+ {
+  "date": "1998/02/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1059.824052985795
+ },
+ {
+  "date": "1998/02/13",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 804.5113083567685
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 748.383355169031
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1015.0979557211323
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "nWo Sting",
+  "elo": 920.2300945876493
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Satoshi Kojima",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Curt Hennig",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 942.8536882591618
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Great Muta",
+  "elo": 1064.2926234816764
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Don Frye",
+  "elo": 985.9935000197115
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Naoya Ogawa",
+  "elo": 1078.012999960577
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Big Titan",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Masahiro Chono",
+  "elo": 822.2480859758458
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 975.2518730830762
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1009.3435780784754
+ },
+ {
+  "date": "1998/02/15",
+  "wrestler": "Scott Norton",
+  "elo": 1059.8246546665787
+ },
+ {
+  "date": "1998/03/03",
+  "wrestler": "Hiroyoshi Kotsubo",
+  "elo": 950.0
+ },
+ {
+  "date": "1998/03/03",
+  "wrestler": "Nobuyuki Kurashima",
+  "elo": 950.0
+ },
+ {
+  "date": "1998/03/06",
+  "wrestler": "El Samurai",
+  "elo": 1051.969143299954
+ },
+ {
+  "date": "1998/03/06",
+  "wrestler": "Kendo Kashin",
+  "elo": 1122.498527920403
+ },
+ {
+  "date": "1998/03/06",
+  "wrestler": "Big Titan",
+  "elo": 1052.0735378563304
+ },
+ {
+  "date": "1998/03/07",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1053.503953356601
+ },
+ {
+  "date": "1998/03/08",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1082.3629338883763
+ },
+ {
+  "date": "1998/03/09",
+  "wrestler": "Kendo Kashin",
+  "elo": 1129.6021502646474
+ },
+ {
+  "date": "1998/03/09",
+  "wrestler": "nWo Sting",
+  "elo": 829.3343601230248
+ },
+ {
+  "date": "1998/03/09",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1042.845119794216
+ },
+ {
+  "date": "1998/03/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1074.8348611738961
+ },
+ {
+  "date": "1998/03/13",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1066.8559214784245
+ },
+ {
+  "date": "1998/03/13",
+  "wrestler": "nWo Sting",
+  "elo": 955.176882258257
+ },
+ {
+  "date": "1998/03/14",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1007.3516013040838
+ },
+ {
+  "date": "1998/03/14",
+  "wrestler": "Hiro Saito",
+  "elo": 1059.5043201743408
+ },
+ {
+  "date": "1998/03/14",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1017.5402053184222
+ },
+ {
+  "date": "1998/03/14",
+  "wrestler": "Kendo Kashin",
+  "elo": 1169.341920158852
+ },
+ {
+  "date": "1998/03/17",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1015.2397801374508
+ },
+ {
+  "date": "1998/03/18",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1046.6954098721928
+ },
+ {
+  "date": "1998/03/20",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1035.7327470146993
+ },
+ {
+  "date": "1998/03/21",
+  "wrestler": "El Samurai",
+  "elo": 1070.0745471448981
+ },
+ {
+  "date": "1998/03/21",
+  "wrestler": "Kendo Kashin",
+  "elo": 1187.8778776350273
+ },
+ {
+  "date": "1998/03/22",
+  "wrestler": "Brian Johnston",
+  "elo": 1050.0
+ },
+ {
+  "date": "1998/03/22",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 855.2069049947213
+ },
+ {
+  "date": "1998/03/22",
+  "wrestler": "Don Frye",
+  "elo": 1073.640283284152
+ },
+ {
+  "date": "1998/03/22",
+  "wrestler": "Naoya Ogawa",
+  "elo": 1116.9709781337183
+ },
+ {
+  "date": "1998/03/22",
+  "wrestler": "Kendo Kashin",
+  "elo": 1195.8839372854989
+ },
+ {
+  "date": "1998/03/23",
+  "wrestler": "Kendo Kashin",
+  "elo": 1203.1527702955727
+ },
+ {
+  "date": "1998/03/24",
+  "wrestler": "El Samurai",
+  "elo": 1017.1887981627127
+ },
+ {
+  "date": "1998/03/24",
+  "wrestler": "Kengo Kimura",
+  "elo": 1102.8857489821853
+ },
+ {
+  "date": "1998/04/04",
+  "wrestler": "Brian Johnston",
+  "elo": 1009.5202788658934
+ },
+ {
+  "date": "1998/04/04",
+  "wrestler": "Naoya Ogawa",
+  "elo": 1095.6180390680793
+ },
+ {
+  "date": "1998/04/04",
+  "wrestler": "Don Frye",
+  "elo": 1066.908273859603
+ },
+ {
+  "date": "1998/04/04",
+  "wrestler": "Kendo Kashin",
+  "elo": 1165.9374608807439
+ },
+ {
+  "date": "1998/04/04",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1091.9708241480798
+ },
+ {
+  "date": "1998/04/04",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 963.6350552484204
+ },
+ {
+  "date": "1998/04/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1084.9458896329918
+ },
+ {
+  "date": "1998/04/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1068.5646696242945
+ },
+ {
+  "date": "1998/04/14",
+  "wrestler": "El Samurai",
+  "elo": 1026.97987531344
+ },
+ {
+  "date": "1998/04/16",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1062.238732391953
+ },
+ {
+  "date": "1998/04/20",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 991.33635443597
+ },
+ {
+  "date": "1998/04/20",
+  "wrestler": "Osamu Kido",
+  "elo": 1119.2312537526254
+ },
+ {
+  "date": "1998/04/21",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 970.3991707523135
+ },
+ {
+  "date": "1998/04/21",
+  "wrestler": "Big Titan",
+  "elo": 1096.772322825149
+ },
+ {
+  "date": "1998/04/23",
+  "wrestler": "El Samurai",
+  "elo": 963.5401737770833
+ },
+ {
+  "date": "1998/04/23",
+  "wrestler": "Hiro Saito",
+  "elo": 1018.0160345649897
+ },
+ {
+  "date": "1998/04/23",
+  "wrestler": "Osamu Kido",
+  "elo": 1160.7195393619766
+ },
+ {
+  "date": "1998/04/25",
+  "wrestler": "Kendo Kashin",
+  "elo": 1171.8833125228946
+ },
+ {
+  "date": "1998/04/26",
+  "wrestler": "Hiro Saito",
+  "elo": 1031.6072357964592
+ },
+ {
+  "date": "1998/04/30",
+  "wrestler": "Hiro Saito",
+  "elo": 1086.8274189895217
+ },
+ {
+  "date": "1998/04/30",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1024.9419586381994
+ },
+ {
+  "date": "1998/04/30",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1110.7067061666023
+ },
+ {
+  "date": "1998/05/15",
+  "wrestler": "Hiroyoshi Kotsubo",
+  "elo": 1064.2926234816764
+ },
+ {
+  "date": "1998/05/15",
+  "wrestler": "Nobuyuki Kurashima",
+  "elo": 864.2926234816763
+ },
+ {
+  "date": "1998/05/15",
+  "wrestler": "Alexander Otsuka",
+  "elo": 1042.8536882591618
+ },
+ {
+  "date": "1998/05/16",
+  "wrestler": "Kaz Hayashi",
+  "elo": 1050.0
+ },
+ {
+  "date": "1998/05/16",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1057.1143133625299
+ },
+ {
+  "date": "1998/05/17",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1079.4946166114898
+ },
+ {
+  "date": "1998/05/17",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1077.9540877389202
+ },
+ {
+  "date": "1998/05/17",
+  "wrestler": "Satoshi Kojima",
+  "elo": 682.1818782839711
+ },
+ {
+  "date": "1998/05/18",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1093.587697899007
+ },
+ {
+  "date": "1998/05/18",
+  "wrestler": "Kendo Kashin",
+  "elo": 1182.1901397128431
+ },
+ {
+  "date": "1998/05/19",
+  "wrestler": "El Samurai",
+  "elo": 831.2730310906186
+ },
+ {
+  "date": "1998/05/21",
+  "wrestler": "El Samurai",
+  "elo": 1002.2417923755512
+ },
+ {
+  "date": "1998/05/22",
+  "wrestler": "Kaz Hayashi",
+  "elo": 1082.8558867286747
+ },
+ {
+  "date": "1998/05/22",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1124.48493196148
+ },
+ {
+  "date": "1998/05/23",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 644.2690638024378
+ },
+ {
+  "date": "1998/05/23",
+  "wrestler": "Kendo Kashin",
+  "elo": 1099.5992996426758
+ },
+ {
+  "date": "1998/05/24",
+  "wrestler": "Kaz Hayashi",
+  "elo": 997.4130196875474
+ },
+ {
+  "date": "1998/05/24",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1070.0501471294529
+ },
+ {
+  "date": "1998/05/24",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1148.0224827310342
+ },
+ {
+  "date": "1998/05/25",
+  "wrestler": "El Samurai",
+  "elo": 1027.4798331660124
+ },
+ {
+  "date": "1998/05/25",
+  "wrestler": "Kendo Kashin",
+  "elo": 1124.3485357163195
+ },
+ {
+  "date": "1998/05/26",
+  "wrestler": "Kendo Kashin",
+  "elo": 1147.6625387504807
+ },
+ {
+  "date": "1998/05/26",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 633.5050303887027
+ },
+ {
+  "date": "1998/05/28",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1187.825813056564
+ },
+ {
+  "date": "1998/05/29",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1100.3057833402636
+ },
+ {
+  "date": "1998/05/30",
+  "wrestler": "Kendo Kashin",
+  "elo": 1077.2940799967296
+ },
+ {
+  "date": "1998/05/30",
+  "wrestler": "Kaz Hayashi",
+  "elo": 1138.1499371950495
+ },
+ {
+  "date": "1998/05/30",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1116.2599927614776
+ },
+ {
+  "date": "1998/05/30",
+  "wrestler": "El Samurai",
+  "elo": 1099.0456534610987
+ },
+ {
+  "date": "1998/05/31",
+  "wrestler": "Kaz Hayashi",
+  "elo": 1083.957904844623
+ },
+ {
+  "date": "1998/06/01",
+  "wrestler": "El Samurai",
+  "elo": 1049.2269999330988
+ },
+ {
+  "date": "1998/06/01",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1150.1244368682635
+ },
+ {
+  "date": "1998/06/03",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 815.885678890121
+ },
+ {
+  "date": "1998/06/03",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1101.9972553536086
+ },
+ {
+  "date": "1998/06/04",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 901.9001172336916
+ },
+ {
+  "date": "1998/06/04",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1136.0582750158865
+ },
+ {
+  "date": "1998/06/05",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 745.9298633869145
+ },
+ {
+  "date": "1998/06/05",
+  "wrestler": "Satoshi Kojima",
+  "elo": 838.1521321307482
+ },
+ {
+  "date": "1998/06/05",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1076.480724363942
+ },
+ {
+  "date": "1998/06/05",
+  "wrestler": "Don Frye",
+  "elo": 1100.6913049223629
+ },
+ {
+  "date": "1998/06/05",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1015.5019101408501
+ },
+ {
+  "date": "1998/06/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1131.6827118840947
+ },
+ {
+  "date": "1998/06/24",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 700.2140478346556
+ },
+ {
+  "date": "1998/06/24",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1002.9476538740506
+ },
+ {
+  "date": "1998/06/24",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1164.0527596440243
+ },
+ {
+  "date": "1998/06/25",
+  "wrestler": "Scott Norton",
+  "elo": 1117.0686102258655
+ },
+ {
+  "date": "1998/06/26",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 679.7305425139134
+ },
+ {
+  "date": "1998/06/26",
+  "wrestler": "Kendo Kashin",
+  "elo": 1087.5358326571006
+ },
+ {
+  "date": "1998/06/27",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 701.5677420096033
+ },
+ {
+  "date": "1998/06/28",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1108.5944823999403
+ },
+ {
+  "date": "1998/06/28",
+  "wrestler": "Kendo Kashin",
+  "elo": 1054.6262887794628
+ },
+ {
+  "date": "1998/06/30",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1087.7235460925547
+ },
+ {
+  "date": "1998/06/30",
+  "wrestler": "Satoshi Kojima",
+  "elo": 999.1835643842285
+ },
+ {
+  "date": "1998/07/01",
+  "wrestler": "Kendo Kashin",
+  "elo": 1055.68445420841
+ },
+ {
+  "date": "1998/07/02",
+  "wrestler": "nWo Sting",
+  "elo": 1063.4821643594814
+ },
+ {
+  "date": "1998/07/02",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1107.217884025736
+ },
+ {
+  "date": "1998/07/02",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1173.0948683797658
+ },
+ {
+  "date": "1998/07/03",
+  "wrestler": "El Samurai",
+  "elo": 1050.2900662941424
+ },
+ {
+  "date": "1998/07/04",
+  "wrestler": "El Samurai",
+  "elo": 1015.6677642046174
+ },
+ {
+  "date": "1998/07/04",
+  "wrestler": "Osamu Kido",
+  "elo": 1195.3418414515018
+ },
+ {
+  "date": "1998/07/06",
+  "wrestler": "Hiro Saito",
+  "elo": 1092.452846108544
+ },
+ {
+  "date": "1998/07/07",
+  "wrestler": "El Samurai",
+  "elo": 978.5461913002665
+ },
+ {
+  "date": "1998/07/07",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1144.339456930087
+ },
+ {
+  "date": "1998/07/09",
+  "wrestler": "Kendo Kashin",
+  "elo": 1056.515357863646
+ },
+ {
+  "date": "1998/07/09",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1038.4041050424669
+ },
+ {
+  "date": "1998/07/09",
+  "wrestler": "Hiro Saito",
+  "elo": 1141.7722871586318
+ },
+ {
+  "date": "1998/07/10",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1148.1969804065668
+ },
+ {
+  "date": "1998/07/11",
+  "wrestler": "El Samurai",
+  "elo": 981.100730704239
+ },
+ {
+  "date": "1998/07/11",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 871.7458148808547
+ },
+ {
+  "date": "1998/07/12",
+  "wrestler": "Kendo Kashin",
+  "elo": 1057.322659609862
+ },
+ {
+  "date": "1998/07/12",
+  "wrestler": "El Samurai",
+  "elo": 998.9879524527383
+ },
+ {
+  "date": "1998/07/14",
+  "wrestler": "Kendo Kashin",
+  "elo": 1020.1102380751735
+ },
+ {
+  "date": "1998/07/14",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1185.4094019412555
+ },
+ {
+  "date": "1998/07/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1154.6017576498969
+ },
+ {
+  "date": "1998/07/15",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1214.8828531472739
+ },
+ {
+  "date": "1998/07/15",
+  "wrestler": "Kendo Kashin",
+  "elo": 1056.8741745245136
+ },
+ {
+  "date": "1998/07/15",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1232.0561642849643
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Big Titan",
+  "elo": 1040.5448500067614
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1064.9254983974395
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1105.7047857484038
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1023.7894445086914
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1047.4027187093238
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1069.7444209371672
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1024.9215784201806
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1024.7277934283698
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Masahiro Chono",
+  "elo": 989.981463918987
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Great Muta",
+  "elo": 1005.144355434171
+ },
+ {
+  "date": "1998/07/31",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1059.1482680475053
+ },
+ {
+  "date": "1998/08/01",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1121.3054638326817
+ },
+ {
+  "date": "1998/08/01",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 973.9523710987764
+ },
+ {
+  "date": "1998/08/01",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1074.7586518300957
+ },
+ {
+  "date": "1998/08/01",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1039.6405746005223
+ },
+ {
+  "date": "1998/08/01",
+  "wrestler": "Masahiro Chono",
+  "elo": 1122.1098862147496
+ },
+ {
+  "date": "1998/08/01",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1007.4585912679894
+ },
+ {
+  "date": "1998/08/01",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1099.0923954888397
+ },
+ {
+  "date": "1998/08/02",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 807.8104984918037
+ },
+ {
+  "date": "1998/08/02",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1034.915312068576
+ },
+ {
+  "date": "1998/08/02",
+  "wrestler": "Masahiro Chono",
+  "elo": 1065.337375678848
+ },
+ {
+  "date": "1998/08/02",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1084.5142985821328
+ },
+ {
+  "date": "1998/08/02",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1068.1130948557616
+ },
+ {
+  "date": "1998/08/02",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1199.3016282496242
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "El Samurai",
+  "elo": 915.4964757320773
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "Kendo Kashin",
+  "elo": 1098.619912884844
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1060.633413984939
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1192.4660572707169
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "The Great Sasuke",
+  "elo": 1079.180214028495
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "Don Frye",
+  "elo": 1033.2202594350817
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1108.8944620733387
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1124.1944381295507
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1082.565781388063
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1019.1102301550674
+ },
+ {
+  "date": "1998/08/08",
+  "wrestler": "Masahiro Chono",
+  "elo": 1115.971566460948
+ },
+ {
+  "date": "1998/09/10",
+  "wrestler": "The Great Sasuke",
+  "elo": 1044.929147241539
+ },
+ {
+  "date": "1998/09/10",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1226.7171240576727
+ },
+ {
+  "date": "1998/09/11",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 776.880588412067
+ },
+ {
+  "date": "1998/09/11",
+  "wrestler": "Kengo Kimura",
+  "elo": 1118.3507040220536
+ },
+ {
+  "date": "1998/09/12",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 987.9020442486953
+ },
+ {
+  "date": "1998/09/12",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1085.4173728623475
+ },
+ {
+  "date": "1998/09/12",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 760.3806235569808
+ },
+ {
+  "date": "1998/09/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1203.5918238790448
+ },
+ {
+  "date": "1998/09/13",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 733.6968444119277
+ },
+ {
+  "date": "1998/09/13",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1098.759262434874
+ },
+ {
+  "date": "1998/09/13",
+  "wrestler": "Osamu Kido",
+  "elo": 1205.765443116489
+ },
+ {
+  "date": "1998/09/13",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1109.147587477993
+ },
+ {
+  "date": "1998/09/14",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 812.2214239097469
+ },
+ {
+  "date": "1998/09/14",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1117.2436400201782
+ },
+ {
+  "date": "1998/09/14",
+  "wrestler": "El Samurai",
+  "elo": 1040.5319068337394
+ },
+ {
+  "date": "1998/09/14",
+  "wrestler": "Kendo Kashin",
+  "elo": 1066.2623290966783
+ },
+ {
+  "date": "1998/09/14",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1242.8959159517556
+ },
+ {
+  "date": "1998/09/16",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 816.8179310948233
+ },
+ {
+  "date": "1998/09/16",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 807.0200851509246
+ },
+ {
+  "date": "1998/09/19",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 858.0904460729748
+ },
+ {
+  "date": "1998/09/19",
+  "wrestler": "Osamu Kido",
+  "elo": 1174.530130921942
+ },
+ {
+  "date": "1998/09/19",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1179.7142644092721
+ },
+ {
+  "date": "1998/09/19",
+  "wrestler": "Kendo Kashin",
+  "elo": 1136.1254682360777
+ },
+ {
+  "date": "1998/09/20",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 827.9970392507156
+ },
+ {
+  "date": "1998/09/21",
+  "wrestler": "El Samurai",
+  "elo": 1109.2682780033952
+ },
+ {
+  "date": "1998/09/21",
+  "wrestler": "Kengo Kimura",
+  "elo": 1076.365840208186
+ },
+ {
+  "date": "1998/09/21",
+  "wrestler": "Osamu Kido",
+  "elo": 1216.5149947358095
+ },
+ {
+  "date": "1998/09/21",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1062.1012889014087
+ },
+ {
+  "date": "1998/09/22",
+  "wrestler": "Osamu Kido",
+  "elo": 1217.001821656527
+ },
+ {
+  "date": "1998/09/23",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 777.9536269871307
+ },
+ {
+  "date": "1998/09/23",
+  "wrestler": "Kaz Hayashi",
+  "elo": 1055.3585090027093
+ },
+ {
+  "date": "1998/09/23",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1257.1956138727123
+ },
+ {
+  "date": "1998/09/23",
+  "wrestler": "Great Muta",
+  "elo": 971.6365769196389
+ },
+ {
+  "date": "1998/09/23",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1157.702216644083
+ },
+ {
+  "date": "1998/09/23",
+  "wrestler": "Scott Norton",
+  "elo": 1139.3464604176406
+ },
+ {
+  "date": "1998/10/09",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 808.5282979044568
+ },
+ {
+  "date": "1998/10/09",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1219.7500384838386
+ },
+ {
+  "date": "1998/10/09",
+  "wrestler": "Hiro Saito",
+  "elo": 1155.3305280677207
+ },
+ {
+  "date": "1998/10/10",
+  "wrestler": "nWo Sting",
+  "elo": 1105.5885023548735
+ },
+ {
+  "date": "1998/10/10",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 752.0788412283607
+ },
+ {
+  "date": "1998/10/10",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1122.084980357378
+ },
+ {
+  "date": "1998/10/11",
+  "wrestler": "El Samurai",
+  "elo": 1024.3117124266876
+ },
+ {
+  "date": "1998/10/11",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 978.441429057872
+ },
+ {
+  "date": "1998/10/11",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 881.1134192931198
+ },
+ {
+  "date": "1998/10/14",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 883.9689459546807
+ },
+ {
+  "date": "1998/10/16",
+  "wrestler": "Junji Hirata",
+  "elo": 1049.4440842510733
+ },
+ {
+  "date": "1998/10/17",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1000.4759045261119
+ },
+ {
+  "date": "1998/10/18",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1182.0039797882764
+ },
+ {
+  "date": "1998/10/18",
+  "wrestler": "El Samurai",
+  "elo": 1099.8038298178121
+ },
+ {
+  "date": "1998/10/18",
+  "wrestler": "SASUKE",
+  "elo": 1065.146048390367
+ },
+ {
+  "date": "1998/10/18",
+  "wrestler": "Don Frye",
+  "elo": 1059.813545419982
+ },
+ {
+  "date": "1998/10/20",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 974.201968012154
+ },
+ {
+  "date": "1998/10/20",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1205.98820092323
+ },
+ {
+  "date": "1998/10/21",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 985.6596724895315
+ },
+ {
+  "date": "1998/10/21",
+  "wrestler": "El Samurai",
+  "elo": 1103.4319753271177
+ },
+ {
+  "date": "1998/10/22",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1211.0155031033187
+ },
+ {
+  "date": "1998/10/24",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1092.1784178494008
+ },
+ {
+  "date": "1998/10/24",
+  "wrestler": "El Samurai",
+  "elo": 1074.2204869923864
+ },
+ {
+  "date": "1998/10/24",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1271.801358040078
+ },
+ {
+  "date": "1998/10/26",
+  "wrestler": "Kengo Kimura",
+  "elo": 1045.5675370306178
+ },
+ {
+  "date": "1998/10/26",
+  "wrestler": "Osamu Kido",
+  "elo": 1232.400973245311
+ },
+ {
+  "date": "1998/10/27",
+  "wrestler": "El Samurai",
+  "elo": 1075.264352342843
+ },
+ {
+  "date": "1998/10/30",
+  "wrestler": "Kendo Kashin",
+  "elo": 1079.8344947140677
+ },
+ {
+  "date": "1998/10/30",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1148.469391371411
+ },
+ {
+  "date": "1998/10/30",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1275.432538611825
+ },
+ {
+  "date": "1998/10/30",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1105.0630660152485
+ },
+ {
+  "date": "1998/10/30",
+  "wrestler": "Scott Norton",
+  "elo": 1191.985611046475
+ },
+ {
+  "date": "1998/11/16",
+  "wrestler": "El Samurai",
+  "elo": 1078.0763161906225
+ },
+ {
+  "date": "1998/11/18",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1060.7483613248742
+ },
+ {
+  "date": "1998/11/21",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1000.1029596030465
+ },
+ {
+  "date": "1998/11/21",
+  "wrestler": "Hiro Saito",
+  "elo": 1163.1567314663027
+ },
+ {
+  "date": "1998/11/22",
+  "wrestler": "Hiro Saito",
+  "elo": 1175.0217852678875
+ },
+ {
+  "date": "1998/11/25",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1082.1827210965944
+ },
+ {
+  "date": "1998/11/27",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1211.648491959662
+ },
+ {
+  "date": "1998/12/01",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1001.7087181351234
+ },
+ {
+  "date": "1998/12/02",
+  "wrestler": "El Samurai",
+  "elo": 1081.5635955357232
+ },
+ {
+  "date": "1998/12/04",
+  "wrestler": "Don Frye",
+  "elo": 1083.3827640508998
+ },
+ {
+  "date": "1998/12/04",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1282.596206131521
+ },
+ {
+  "date": "1998/12/04",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1047.4787305988996
+ },
+ {
+  "date": "1998/12/04",
+  "wrestler": "Scott Norton",
+  "elo": 1226.6896015441698
+ },
+ {
+  "date": "1998/12/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1066.3628170812647
+ },
+ {
+  "date": "1998/12/08",
+  "wrestler": "Meiko Satomura",
+  "elo": 1000.0
+ },
+ {
+  "date": "1998/12/08",
+  "wrestler": "Chikayo Nagashima",
+  "elo": 1000.0
+ },
+ {
+  "date": "1998/12/08",
+  "wrestler": "Ikuto Hidaka",
+  "elo": 1050.0
+ },
+ {
+  "date": "1998/12/08",
+  "wrestler": "Hiroyoshi Kotsubo",
+  "elo": 1097.4947192923612
+ },
+ {
+  "date": "1998/12/08",
+  "wrestler": "Nobuyuki Kurashima",
+  "elo": 1001.4801213461443
+ },
+ {
+  "date": "1998/12/23",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1052.6131649002193
+ },
+ {
+  "date": "1998/12/23",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1175.6426916115372
+ },
+ {
+  "date": "1998/12/23",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1119.4903312951487
+ },
+ {
+  "date": "1998/12/23",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1122.724074765157
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4000 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2000/01/04",
+  "wrestler": "Satoshi Kojima",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Chris Benoit",
+  "elo": 700.0
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 900.0
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Koji Kanemoto",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 950.0
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1050.0
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Yuji Nagata",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Don Frye",
+  "elo": 950.0
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Scott Norton",
+  "elo": 1050.0
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Randy Savage",
+  "elo": 950.0
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Rick Steiner",
+  "elo": 1050.0
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Great Muta",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Masahiro Chono",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 950.0
+ },
+ {
+  "date": "2000/01/04",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1050.0
+ },
+ {
+  "date": "2000/02/01",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "2000/02/01",
+  "wrestler": "Black Cat",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "2000/02/01",
+  "wrestler": "Brian Johnston",
+  "elo": 957.1463117408382
+ },
+ {
+  "date": "2000/02/01",
+  "wrestler": "Scott Norton",
+  "elo": 1092.8536882591618
+ },
+ {
+  "date": "2000/02/01",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 878.012999960577
+ },
+ {
+  "date": "2000/02/01",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1085.9935000197115
+ },
+ {
+  "date": "2000/02/02",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 713.2639819406502
+ },
+ {
+  "date": "2000/02/02",
+  "wrestler": "Wataru Inoue",
+  "elo": 1019.3427016944706
+ },
+ {
+  "date": "2000/02/04",
+  "wrestler": "Minoru Tanaka",
+  "elo": 953.4520191492525
+ },
+ {
+  "date": "2000/02/04",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1070.5732881859517
+ },
+ {
+  "date": "2000/02/04",
+  "wrestler": "Hiro Saito",
+  "elo": 950.0
+ },
+ {
+  "date": "2000/02/04",
+  "wrestler": "AKIRA",
+  "elo": 1050.0
+ },
+ {
+  "date": "2000/02/04",
+  "wrestler": "Super J",
+  "elo": 963.0534101698356
+ },
+ {
+  "date": "2000/02/04",
+  "wrestler": "Scott Norton",
+  "elo": 1129.8002780893262
+ },
+ {
+  "date": "2000/02/04",
+  "wrestler": "Satoshi Kojima",
+  "elo": 703.4879195769973
+ },
+ {
+  "date": "2000/02/04",
+  "wrestler": "Don Frye",
+  "elo": 998.4614657525942
+ },
+ {
+  "date": "2000/02/04",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 814.8417938696841
+ },
+ {
+  "date": "2000/02/04",
+  "wrestler": "Masahiro Chono",
+  "elo": 1037.1075914599076
+ },
+ {
+  "date": "2000/02/05",
+  "wrestler": "Wataru Inoue",
+  "elo": 941.3947111317591
+ },
+ {
+  "date": "2000/02/05",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 955.8959811254231
+ },
+ {
+  "date": "2000/02/05",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 637.7225995867939
+ },
+ {
+  "date": "2000/02/05",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 875.5413823538563
+ },
+ {
+  "date": "2000/02/05",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 798.97807604875
+ },
+ {
+  "date": "2000/02/05",
+  "wrestler": "Yuji Nagata",
+  "elo": 1030.9843092414185
+ },
+ {
+  "date": "2000/02/05",
+  "wrestler": "Don Frye",
+  "elo": 923.1353682412016
+ },
+ {
+  "date": "2000/02/05",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1123.6565487754078
+ },
+ {
+  "date": "2000/02/07",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 851.7246020957996
+ },
+ {
+  "date": "2000/02/07",
+  "wrestler": "Wataru Inoue",
+  "elo": 1045.5660901613826
+ },
+ {
+  "date": "2000/02/07",
+  "wrestler": "Masakazu Fukuda",
+  "elo": 950.0
+ },
+ {
+  "date": "2000/02/07",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1050.0
+ },
+ {
+  "date": "2000/02/08",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 696.8946034610326
+ },
+ {
+  "date": "2000/02/08",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 792.5525982215609
+ },
+ {
+  "date": "2000/02/08",
+  "wrestler": "Togi Makabe",
+  "elo": 751.9493853295916
+ },
+ {
+  "date": "2000/02/08",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1024.0253073352042
+ },
+ {
+  "date": "2000/02/11",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 754.7508108981276
+ },
+ {
+  "date": "2000/02/11",
+  "wrestler": "Wataru Inoue",
+  "elo": 1064.4669838230993
+ },
+ {
+  "date": "2000/02/11",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 612.6093324177298
+ },
+ {
+  "date": "2000/02/11",
+  "wrestler": "Togi Makabe",
+  "elo": 836.2346563728945
+ },
+ {
+  "date": "2000/02/11",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 773.0550433908214
+ },
+ {
+  "date": "2000/02/11",
+  "wrestler": "Scott Norton",
+  "elo": 1142.7617944182905
+ },
+ {
+  "date": "2000/02/12",
+  "wrestler": "Wataru Inoue",
+  "elo": 971.3737386709706
+ },
+ {
+  "date": "2000/02/12",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 798.7958227219872
+ },
+ {
+  "date": "2000/02/12",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 705.6947470769294
+ },
+ {
+  "date": "2000/02/12",
+  "wrestler": "Masakazu Fukuda",
+  "elo": 999.0560638211982
+ },
+ {
+  "date": "2000/02/14",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 631.8679058767565
+ },
+ {
+  "date": "2000/02/14",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 872.6226639221601
+ },
+ {
+  "date": "2000/02/14",
+  "wrestler": "Wataru Inoue",
+  "elo": 834.3272746789373
+ },
+ {
+  "date": "2000/02/14",
+  "wrestler": "Togi Makabe",
+  "elo": 973.2811203649278
+ },
+ {
+  "date": "2000/02/15",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 761.6447860458779
+ },
+ {
+  "date": "2000/02/15",
+  "wrestler": "Wataru Inoue",
+  "elo": 945.3051525552194
+ },
+ {
+  "date": "2000/02/15",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 607.2896833965037
+ },
+ {
+  "date": "2000/02/15",
+  "wrestler": "Togi Makabe",
+  "elo": 997.8593428451805
+ },
+ {
+  "date": "2000/02/15",
+  "wrestler": "El Samurai",
+  "elo": 953.4520191492525
+ },
+ {
+  "date": "2000/02/15",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1070.5732881859517
+ },
+ {
+  "date": "2000/02/15",
+  "wrestler": "Masakazu Fukuda",
+  "elo": 899.3277498244832
+ },
+ {
+  "date": "2000/02/15",
+  "wrestler": "Kengo Kimura",
+  "elo": 1049.8641569983574
+ },
+ {
+  "date": "2000/02/16",
+  "wrestler": "Wataru Inoue",
+  "elo": 770.308142973752
+ },
+ {
+  "date": "2000/02/16",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 782.2866929779711
+ },
+ {
+  "date": "2000/02/16",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 720.7889333058203
+ },
+ {
+  "date": "2000/02/16",
+  "wrestler": "Togi Makabe",
+  "elo": 1038.7151955852382
+ },
+ {
+  "date": "2000/02/17",
+  "wrestler": "Wataru Inoue",
+  "elo": 735.1484026770277
+ },
+ {
+  "date": "2000/02/17",
+  "wrestler": "Togi Makabe",
+  "elo": 1056.2950657336005
+ },
+ {
+  "date": "2000/02/17",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 668.0849034160645
+ },
+ {
+  "date": "2000/02/17",
+  "wrestler": "Masakazu Fukuda",
+  "elo": 952.031779714239
+ },
+ {
+  "date": "2000/02/19",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 650.5515487867016
+ },
+ {
+  "date": "2000/02/19",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 799.8200476073341
+ },
+ {
+  "date": "2000/02/19",
+  "wrestler": "Togi Makabe",
+  "elo": 982.4003832080547
+ },
+ {
+  "date": "2000/02/19",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1023.3307474049479
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Hiro Saito",
+  "elo": 809.3229993056343
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Takashi Iizuka",
+  "elo": 940.6770006943657
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Tadao Yasuda",
+  "elo": 987.7422045302401
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Super J",
+  "elo": 1087.5690011093554
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Junji Hirata",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 756.8156697164818
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1045.6174724769633
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Koji Kanemoto",
+  "elo": 721.4646591275871
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "AKIRA",
+  "elo": 1065.2423631010022
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 981.3561683223041
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Satoshi Kojima",
+  "elo": 881.9221593042924
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Yuji Nagata",
+  "elo": 965.9436158462861
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Don Frye",
+  "elo": 1053.2167550314664
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 773.7878983155668
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1070.5269477770587
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Scott Norton",
+  "elo": 1054.9674732739727
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 975.5886422886356
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Masahiro Chono",
+  "elo": 1142.8628153015768
+ },
+ {
+  "date": "2000/02/20",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1089.6769389954104
+ },
+ {
+  "date": "2000/03/03",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 591.0526929949219
+ },
+ {
+  "date": "2000/03/03",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 859.3189033991138
+ },
+ {
+  "date": "2000/03/03",
+  "wrestler": "Wataru Inoue",
+  "elo": 690.5557662022492
+ },
+ {
+  "date": "2000/03/03",
+  "wrestler": "Masakazu Fukuda",
+  "elo": 996.6244161890174
+ },
+ {
+  "date": "2000/03/03",
+  "wrestler": "Togi Makabe",
+  "elo": 894.1268903530028
+ },
+ {
+  "date": "2000/03/03",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1067.467493832474
+ },
+ {
+  "date": "2000/03/04",
+  "wrestler": "Minoru Tanaka",
+  "elo": 827.0023796962788
+ },
+ {
+  "date": "2000/03/04",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 985.7685428520874
+ },
+ {
+  "date": "2000/03/04",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 575.7740242874594
+ },
+ {
+  "date": "2000/03/04",
+  "wrestler": "Black Cat",
+  "elo": 1031.6646416889355
+ },
+ {
+  "date": "2000/03/05",
+  "wrestler": "Wataru Inoue",
+  "elo": 558.6705891324691
+ },
+ {
+  "date": "2000/03/05",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 707.6592013572395
+ },
+ {
+  "date": "2000/03/05",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 909.7038426034176
+ },
+ {
+  "date": "2000/03/05",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1108.6056383102866
+ },
+ {
+  "date": "2000/03/05",
+  "wrestler": "Mike Enos",
+  "elo": 921.3798097469895
+ },
+ {
+  "date": "2000/03/05",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 931.0282788215878
+ },
+ {
+  "date": "2000/03/06",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 757.3260961805111
+ },
+ {
+  "date": "2000/03/06",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 860.036947780146
+ },
+ {
+  "date": "2000/03/06",
+  "wrestler": "Togi Makabe",
+  "elo": 748.1544444645011
+ },
+ {
+  "date": "2000/03/06",
+  "wrestler": "Koji Kanemoto",
+  "elo": 867.4371050160887
+ },
+ {
+  "date": "2000/03/07",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 690.0317676452013
+ },
+ {
+  "date": "2000/03/07",
+  "wrestler": "Wataru Inoue",
+  "elo": 728.6757692674138
+ },
+ {
+  "date": "2000/03/07",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 654.6868956395787
+ },
+ {
+  "date": "2000/03/07",
+  "wrestler": "Togi Makabe",
+  "elo": 850.7936450054335
+ },
+ {
+  "date": "2000/03/10",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 575.6664145861096
+ },
+ {
+  "date": "2000/03/10",
+  "wrestler": "Wataru Inoue",
+  "elo": 807.6962503208829
+ },
+ {
+  "date": "2000/03/10",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 633.2607936572258
+ },
+ {
+  "date": "2000/03/10",
+  "wrestler": "Togi Makabe",
+  "elo": 907.564618993409
+ },
+ {
+  "date": "2000/03/10",
+  "wrestler": "El Samurai",
+  "elo": 861.4662545277413
+ },
+ {
+  "date": "2000/03/10",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1073.3419329438152
+ },
+ {
+  "date": "2000/03/11",
+  "wrestler": "Wataru Inoue",
+  "elo": 661.3222408829182
+ },
+ {
+  "date": "2000/03/11",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 779.6348030951905
+ },
+ {
+  "date": "2000/03/11",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 549.8828161784304
+ },
+ {
+  "date": "2000/03/11",
+  "wrestler": "Togi Makabe",
+  "elo": 933.3482174010882
+ },
+ {
+  "date": "2000/03/12",
+  "wrestler": "Wataru Inoue",
+  "elo": 530.3038894046344
+ },
+ {
+  "date": "2000/03/12",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 680.9011676567142
+ },
+ {
+  "date": "2000/03/12",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 721.1998688915647
+ },
+ {
+  "date": "2000/03/12",
+  "wrestler": "Togi Makabe",
+  "elo": 991.7831516047139
+ },
+ {
+  "date": "2000/03/13",
+  "wrestler": "Wataru Inoue",
+  "elo": 480.31413756796894
+ },
+ {
+  "date": "2000/03/13",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 771.1896207282302
+ },
+ {
+  "date": "2000/03/13",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 652.2763363795742
+ },
+ {
+  "date": "2000/03/13",
+  "wrestler": "Togi Makabe",
+  "elo": 1020.4079828818539
+ },
+ {
+  "date": "2000/03/15",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 506.46293984862325
+ },
+ {
+  "date": "2000/03/15",
+  "wrestler": "Wataru Inoue",
+  "elo": 626.1275340989199
+ },
+ {
+  "date": "2000/03/15",
+  "wrestler": "Tadao Yasuda",
+  "elo": 905.4342030779018
+ },
+ {
+  "date": "2000/03/15",
+  "wrestler": "Kengo Kimura",
+  "elo": 1091.0181577245266
+ },
+ {
+  "date": "2000/03/16",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 470.68503624124935
+ },
+ {
+  "date": "2000/03/16",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 806.9675243356041
+ },
+ {
+  "date": "2000/03/16",
+  "wrestler": "Wataru Inoue",
+  "elo": 585.1075314303309
+ },
+ {
+  "date": "2000/03/16",
+  "wrestler": "El Samurai",
+  "elo": 902.4862571963303
+ },
+ {
+  "date": "2000/03/17",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 650.5753973196728
+ },
+ {
+  "date": "2000/03/17",
+  "wrestler": "Wataru Inoue",
+  "elo": 741.4996584462623
+ },
+ {
+  "date": "2000/03/17",
+  "wrestler": "Togi Makabe",
+  "elo": 982.8348503526283
+ },
+ {
+  "date": "2000/03/17",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1146.1787708395123
+ },
+ {
+  "date": "2000/03/18",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 502.97799457150023
+ },
+ {
+  "date": "2000/03/18",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 618.2824389894218
+ },
+ {
+  "date": "2000/03/19",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 434.9982573146519
+ },
+ {
+  "date": "2000/03/19",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 686.2621762462702
+ },
+ {
+  "date": "2000/03/19",
+  "wrestler": "Wataru Inoue",
+  "elo": 701.5937409900463
+ },
+ {
+  "date": "2000/03/19",
+  "wrestler": "Togi Makabe",
+  "elo": 1022.7407678088443
+ },
+ {
+  "date": "2000/03/19",
+  "wrestler": "Shinjiro Otani",
+  "elo": 765.6559041951307
+ },
+ {
+  "date": "2000/03/19",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1090.5139808462498
+ },
+ {
+  "date": "2000/03/19",
+  "wrestler": "Satoshi Kojima",
+  "elo": 835.4822460741033
+ },
+ {
+  "date": "2000/03/19",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1112.896895610505
+ },
+ {
+  "date": "2000/03/20",
+  "wrestler": "Wataru Inoue",
+  "elo": 597.1838239857299
+ },
+ {
+  "date": "2000/03/20",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 790.6720932505866
+ },
+ {
+  "date": "2000/03/20",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1035.167002406846
+ },
+ {
+  "date": "2000/03/20",
+  "wrestler": "Don Frye",
+  "elo": 1108.5637334708701
+ },
+ {
+  "date": "2000/03/24",
+  "wrestler": "Wataru Inoue",
+  "elo": 553.6221941365465
+ },
+ {
+  "date": "2000/03/24",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 478.55988716383536
+ },
+ {
+  "date": "2000/03/24",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 750.7031326219541
+ },
+ {
+  "date": "2000/03/24",
+  "wrestler": "Black Cat",
+  "elo": 1051.6491220032517
+ },
+ {
+  "date": "2000/03/25",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 470.2030649667896
+ },
+ {
+  "date": "2000/03/25",
+  "wrestler": "Togi Makabe",
+  "elo": 1026.9191789073673
+ },
+ {
+  "date": "2000/03/25",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 664.7974553348928
+ },
+ {
+  "date": "2000/03/25",
+  "wrestler": "Kendo Kashin",
+  "elo": 885.9056772870613
+ },
+ {
+  "date": "2000/03/25",
+  "wrestler": "Wataru Inoue",
+  "elo": 508.0547569578413
+ },
+ {
+  "date": "2000/03/25",
+  "wrestler": "Shinjiro Otani",
+  "elo": 811.2233413738359
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Kendo Kashin",
+  "elo": 808.5434015761284
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Yuji Nagata",
+  "elo": 1043.305891557219
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Scott Norton",
+  "elo": 1007.2051658902654
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1118.2892551607658
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Koji Kanemoto",
+  "elo": 827.4928227428941
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Don Frye",
+  "elo": 1128.5358746074673
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 736.021218557231
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 995.0070602643568
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Shinjiro Otani",
+  "elo": 718.194290803292
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Satoshi Kojima",
+  "elo": 928.5112966446471
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Kazunari Murakami",
+  "elo": 941.5447429581528
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1057.58751477806
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Great Muta",
+  "elo": 879.8212309824692
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Masahiro Chono",
+  "elo": 1164.9648534779444
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 996.1702619536815
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1151.8936360636696
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 882.6032566548425
+ },
+ {
+  "date": "2000/04/07",
+  "wrestler": "Naoya Ogawa",
+  "elo": 1046.4926928168966
+ },
+ {
+  "date": "2000/04/14",
+  "wrestler": "Wataru Inoue",
+  "elo": 397.2030640006151
+ },
+ {
+  "date": "2000/04/14",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 581.0547579240158
+ },
+ {
+  "date": "2000/04/14",
+  "wrestler": "Masakazu Fukuda",
+  "elo": 822.4172269361483
+ },
+ {
+  "date": "2000/04/14",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 839.004644587762
+ },
+ {
+  "date": "2000/04/14",
+  "wrestler": "Black Cat",
+  "elo": 994.2704899902905
+ },
+ {
+  "date": "2000/04/14",
+  "wrestler": "Chuck Palumbo",
+  "elo": 1057.3786320129614
+ },
+ {
+  "date": "2000/04/15",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 653.5813800241402
+ },
+ {
+  "date": "2000/04/15",
+  "wrestler": "Wataru Inoue",
+  "elo": 582.6263285642368
+ },
+ {
+  "date": "2000/04/15",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 531.3029780492932
+ },
+ {
+  "date": "2000/04/15",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 822.806823265544
+ },
+ {
+  "date": "2000/04/15",
+  "wrestler": "Black Cat",
+  "elo": 868.4507338970111
+ },
+ {
+  "date": "2000/04/15",
+  "wrestler": "El Samurai",
+  "elo": 1028.3060132896096
+ },
+ {
+  "date": "2000/04/16",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 499.8317040133769
+ },
+ {
+  "date": "2000/04/16",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 854.2780973014603
+ },
+ {
+  "date": "2000/04/16",
+  "wrestler": "Wataru Inoue",
+  "elo": 568.2422176228803
+ },
+ {
+  "date": "2000/04/16",
+  "wrestler": "Togi Makabe",
+  "elo": 1034.1112343780455
+ },
+ {
+  "date": "2000/04/18",
+  "wrestler": "Wataru Inoue",
+  "elo": 538.077065731404
+ },
+ {
+  "date": "2000/04/18",
+  "wrestler": "Black Cat",
+  "elo": 898.6158857884874
+ },
+ {
+  "date": "2000/04/18",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 491.0063629488479
+ },
+ {
+  "date": "2000/04/18",
+  "wrestler": "Togi Makabe",
+  "elo": 1038.52390491031
+ },
+ {
+  "date": "2000/04/20",
+  "wrestler": "Wataru Inoue",
+  "elo": 424.6113154163153
+ },
+ {
+  "date": "2000/04/20",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 604.4721132639366
+ },
+ {
+  "date": "2000/04/20",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 605.6770259722986
+ },
+ {
+  "date": "2000/04/20",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 902.182451353302
+ },
+ {
+  "date": "2000/04/21",
+  "wrestler": "Masakazu Fukuda",
+  "elo": 666.7984457958948
+ },
+ {
+  "date": "2000/04/21",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 760.0908944041901
+ },
+ {
+  "date": "2000/04/21",
+  "wrestler": "Wataru Inoue",
+  "elo": 372.4699486525683
+ },
+ {
+  "date": "2000/04/21",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 657.8183927360456
+ },
+ {
+  "date": "2000/04/21",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 949.4488787124427
+ },
+ {
+  "date": "2000/04/21",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1097.272504528796
+ },
+ {
+  "date": "2000/04/22",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 586.433032920715
+ },
+ {
+  "date": "2000/04/22",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 831.4762542195206
+ },
+ {
+  "date": "2000/04/22",
+  "wrestler": "Wataru Inoue",
+  "elo": 363.4201510518317
+ },
+ {
+  "date": "2000/04/22",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 911.2322489540386
+ },
+ {
+  "date": "2000/04/23",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 754.0369730871153
+ },
+ {
+  "date": "2000/04/23",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 988.6715300864439
+ },
+ {
+  "date": "2000/04/23",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 572.6367773735922
+ },
+ {
+  "date": "2000/04/23",
+  "wrestler": "Togi Makabe",
+  "elo": 1045.4220326838713
+ },
+ {
+  "date": "2000/04/25",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 722.54756146127
+ },
+ {
+  "date": "2000/04/25",
+  "wrestler": "Togi Makabe",
+  "elo": 1061.1667384967939
+ },
+ {
+  "date": "2000/04/25",
+  "wrestler": "Black Cat",
+  "elo": 823.9706888506392
+ },
+ {
+  "date": "2000/04/25",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1063.316727024292
+ },
+ {
+  "date": "2000/04/25",
+  "wrestler": "Minoru Tanaka",
+  "elo": 721.6944520273191
+ },
+ {
+  "date": "2000/04/25",
+  "wrestler": "Kendo Kashin",
+  "elo": 913.8513292450881
+ },
+ {
+  "date": "2000/04/26",
+  "wrestler": "Wataru Inoue",
+  "elo": 340.95703195993724
+ },
+ {
+  "date": "2000/04/26",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 745.0106805531644
+ },
+ {
+  "date": "2000/04/26",
+  "wrestler": "Dan Devine",
+  "elo": 939.2373668029368
+ },
+ {
+  "date": "2000/04/26",
+  "wrestler": "Junji Hirata",
+  "elo": 1045.5505737293306
+ },
+ {
+  "date": "2000/04/27",
+  "wrestler": "Masakazu Fukuda",
+  "elo": 648.0736272914916
+ },
+ {
+  "date": "2000/04/27",
+  "wrestler": "Togi Makabe",
+  "elo": 1014.4824887696797
+ },
+ {
+  "date": "2000/04/27",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 414.34783589810354
+ },
+ {
+  "date": "2000/04/27",
+  "wrestler": "Wataru Inoue",
+  "elo": 499.24597343542587
+ },
+ {
+  "date": "2000/04/27",
+  "wrestler": "El Samurai",
+  "elo": 1084.3526722689255
+ },
+ {
+  "date": "2000/04/28",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 570.9544180840566
+ },
+ {
+  "date": "2000/04/28",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 588.4040983672114
+ },
+ {
+  "date": "2000/04/28",
+  "wrestler": "Togi Makabe",
+  "elo": 930.1203540944883
+ },
+ {
+  "date": "2000/04/28",
+  "wrestler": "Minoru Tanaka",
+  "elo": 890.4187213777018
+ },
+ {
+  "date": "2000/04/29",
+  "wrestler": "Masakazu Fukuda",
+  "elo": 507.67860939459564
+ },
+ {
+  "date": "2000/04/29",
+  "wrestler": "Wataru Inoue",
+  "elo": 520.1249984308027
+ },
+ {
+  "date": "2000/04/29",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 690.4704109855757
+ },
+ {
+  "date": "2000/04/29",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 563.8634575243802
+ },
+ {
+  "date": "2000/04/29",
+  "wrestler": "Togi Makabe",
+  "elo": 954.6609949373195
+ },
+ {
+  "date": "2000/04/30",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 498.7721950934589
+ },
+ {
+  "date": "2000/04/30",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 755.561673416497
+ },
+ {
+  "date": "2000/04/30",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 998.170507326965
+ },
+ {
+  "date": "2000/04/30",
+  "wrestler": "Togi Makabe",
+  "elo": 1084.9534343319735
+ },
+ {
+  "date": "2000/05/05",
+  "wrestler": "Togi Makabe",
+  "elo": 1022.717778824037
+ },
+ {
+  "date": "2000/05/05",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1122.641818342838
+ },
+ {
+  "date": "2000/05/05",
+  "wrestler": "Takashi Iizuka",
+  "elo": 998.6776120491294
+ },
+ {
+  "date": "2000/05/05",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1112.8268657222181
+ },
+ {
+  "date": "2000/05/05",
+  "wrestler": "Satoshi Kojima",
+  "elo": 778.157771740892
+ },
+ {
+  "date": "2000/05/05",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 886.3747434609861
+ },
+ {
+  "date": "2000/05/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 972.1037549958365
+ },
+ {
+  "date": "2000/05/05",
+  "wrestler": "Masahiro Chono",
+  "elo": 1192.8610984821078
+ },
+ {
+  "date": "2000/05/05",
+  "wrestler": "Great Muta",
+  "elo": 845.2687493595656
+ },
+ {
+  "date": "2000/05/05",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1169.1698768751214
+ },
+ {
+  "date": "2000/05/19",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 592.7015923061857
+ },
+ {
+  "date": "2000/05/19",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 661.6322762037702
+ },
+ {
+  "date": "2000/05/19",
+  "wrestler": "Togi Makabe",
+  "elo": 979.1224032042279
+ },
+ {
+  "date": "2000/05/19",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1111.0628694522832
+ },
+ {
+  "date": "2000/05/21",
+  "wrestler": "Minoru Fujita",
+  "elo": 950.0
+ },
+ {
+  "date": "2000/05/21",
+  "wrestler": "Kid Romeo",
+  "elo": 1050.0
+ },
+ {
+  "date": "2000/05/21",
+  "wrestler": "El Samurai",
+  "elo": 1002.9165069268763
+ },
+ {
+  "date": "2000/05/21",
+  "wrestler": "Koji Kanemoto",
+  "elo": 990.3651534269925
+ },
+ {
+  "date": "2000/05/23",
+  "wrestler": "Minoru Tanaka",
+  "elo": 744.545710591355
+ },
+ {
+  "date": "2000/05/23",
+  "wrestler": "Shinjiro Otani",
+  "elo": 864.0673015896388
+ },
+ {
+  "date": "2000/05/24",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 472.11099855888165
+ },
+ {
+  "date": "2000/05/24",
+  "wrestler": "Wataru Inoue",
+  "elo": 640.7155921781068
+ },
+ {
+  "date": "2000/05/24",
+  "wrestler": "Kid Romeo",
+  "elo": 981.3515520821228
+ },
+ {
+  "date": "2000/05/24",
+  "wrestler": "Kendo Kashin",
+  "elo": 1051.1482250808424
+ },
+ {
+  "date": "2000/05/24",
+  "wrestler": "Togi Makabe",
+  "elo": 885.9602099159068
+ },
+ {
+  "date": "2000/05/24",
+  "wrestler": "El Samurai",
+  "elo": 1049.497603571037
+ },
+ {
+  "date": "2000/05/24",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1055.5223073569962
+ },
+ {
+  "date": "2000/05/24",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1132.9166340208128
+ },
+ {
+  "date": "2000/05/26",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 417.1574607819159
+ },
+ {
+  "date": "2000/05/26",
+  "wrestler": "Wataru Inoue",
+  "elo": 695.6691299550725
+ },
+ {
+  "date": "2000/05/26",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 634.2327096640023
+ },
+ {
+  "date": "2000/05/26",
+  "wrestler": "Kid Romeo",
+  "elo": 1008.7511186218907
+ },
+ {
+  "date": "2000/05/26",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1091.1423246455538
+ },
+ {
+  "date": "2000/05/26",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1166.0993156462418
+ },
+ {
+  "date": "2000/05/26",
+  "wrestler": "Kendo Kashin",
+  "elo": 965.7654227033033
+ },
+ {
+  "date": "2000/05/26",
+  "wrestler": "Minoru Tanaka",
+  "elo": 915.3113153464332
+ },
+ {
+  "date": "2000/05/27",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 399.6135912147348
+ },
+ {
+  "date": "2000/05/27",
+  "wrestler": "Black Cat",
+  "elo": 841.5145584178204
+ },
+ {
+  "date": "2000/05/27",
+  "wrestler": "Wataru Inoue",
+  "elo": 645.5487042579562
+ },
+ {
+  "date": "2000/05/27",
+  "wrestler": "Togi Makabe",
+  "elo": 936.0806356130232
+ },
+ {
+  "date": "2000/05/27",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1092.7658602089577
+ },
+ {
+  "date": "2000/05/27",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1137.0320643015607
+ },
+ {
+  "date": "2000/05/28",
+  "wrestler": "Minoru Fujita",
+  "elo": 854.5345415876423
+ },
+ {
+  "date": "2000/05/28",
+  "wrestler": "Kendo Kashin",
+  "elo": 1061.230881115661
+ },
+ {
+  "date": "2000/05/28",
+  "wrestler": "Togi Makabe",
+  "elo": 888.2296764837209
+ },
+ {
+  "date": "2000/05/28",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1160.9575438662118
+ },
+ {
+  "date": "2000/05/28",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 791.8550006771776
+ },
+ {
+  "date": "2000/05/28",
+  "wrestler": "Tadao Yasuda",
+  "elo": 999.9539458617103
+ },
+ {
+  "date": "2000/05/29",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 360.5467893985851
+ },
+ {
+  "date": "2000/05/29",
+  "wrestler": "Wataru Inoue",
+  "elo": 684.615506074106
+ },
+ {
+  "date": "2000/05/29",
+  "wrestler": "Kid Romeo",
+  "elo": 939.0550385654432
+ },
+ {
+  "date": "2000/05/29",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1003.4594617025336
+ },
+ {
+  "date": "2000/05/30",
+  "wrestler": "Wataru Inoue",
+  "elo": 511.42840393074255
+ },
+ {
+  "date": "2000/05/30",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 533.7338915419484
+ },
+ {
+  "date": "2000/05/30",
+  "wrestler": "Minoru Fujita",
+  "elo": 771.8512301686584
+ },
+ {
+  "date": "2000/05/30",
+  "wrestler": "Minoru Tanaka",
+  "elo": 997.994626765417
+ },
+ {
+  "date": "2000/05/30",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1014.8629237215125
+ },
+ {
+  "date": "2000/05/30",
+  "wrestler": "Togi Makabe",
+  "elo": 1040.7884783318034
+ },
+ {
+  "date": "2000/05/30",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1013.6951197346725
+ },
+ {
+  "date": "2000/05/30",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1154.6540533445418
+ },
+ {
+  "date": "2000/06/01",
+  "wrestler": "Kid Romeo",
+  "elo": 867.5271651181336
+ },
+ {
+  "date": "2000/06/01",
+  "wrestler": "Togi Makabe",
+  "elo": 1076.5524150554581
+ },
+ {
+  "date": "2000/06/01",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 520.8107464032809
+ },
+ {
+  "date": "2000/06/01",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1010.9177719040846
+ },
+ {
+  "date": "2000/06/01",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 969.8308097141928
+ },
+ {
+  "date": "2000/06/01",
+  "wrestler": "El Samurai",
+  "elo": 1094.5297175783567
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Kid Romeo",
+  "elo": 803.9096689676403
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Katsumi Usuda",
+  "elo": 1031.8087480752465
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1089.3201399102472
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Gran Hamada",
+  "elo": 1071.6374039559646
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Minoru Fujita",
+  "elo": 730.1265800646142
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1024.3217867545557
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Osamu Nishimura",
+  "elo": 745.8455822209303
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1026.2581727749064
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 773.7686842974114
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Masahiro Chono",
+  "elo": 1201.9042566719909
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Yuji Nagata",
+  "elo": 1005.9233631900989
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1170.299162387933
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1075.5596644689792
+ },
+ {
+  "date": "2000/06/02",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1211.899467566908
+ },
+ {
+  "date": "2000/06/03",
+  "wrestler": "Kid Romeo",
+  "elo": 757.3163196199149
+ },
+ {
+  "date": "2000/06/03",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1034.2144465779472
+ },
+ {
+  "date": "2000/06/03",
+  "wrestler": "Katsumi Usuda",
+  "elo": 980.7314544782037
+ },
+ {
+  "date": "2000/06/03",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1075.3990803515985
+ },
+ {
+  "date": "2000/06/03",
+  "wrestler": "El Samurai",
+  "elo": 1041.2400081043015
+ },
+ {
+  "date": "2000/06/03",
+  "wrestler": "Gran Hamada",
+  "elo": 1124.9271134300197
+ },
+ {
+  "date": "2000/06/05",
+  "wrestler": "Katsumi Usuda",
+  "elo": 903.4951608209992
+ },
+ {
+  "date": "2000/06/05",
+  "wrestler": "Kendo Kashin",
+  "elo": 1099.8490279442633
+ },
+ {
+  "date": "2000/06/05",
+  "wrestler": "Gran Hamada",
+  "elo": 1053.9802222408337
+ },
+ {
+  "date": "2000/06/05",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1111.7245920925648
+ },
+ {
+  "date": "2000/06/05",
+  "wrestler": "El Samurai",
+  "elo": 998.6012855802403
+ },
+ {
+  "date": "2000/06/05",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1135.404582733019
+ },
+ {
+  "date": "2000/06/06",
+  "wrestler": "Minoru Tanaka",
+  "elo": 966.2425475603513
+ },
+ {
+  "date": "2000/06/06",
+  "wrestler": "Katsumi Usuda",
+  "elo": 1039.438958856191
+ },
+ {
+  "date": "2000/06/06",
+  "wrestler": "Togi Makabe",
+  "elo": 1023.3085780094373
+ },
+ {
+  "date": "2000/06/06",
+  "wrestler": "Gran Hamada",
+  "elo": 1107.2240592868545
+ },
+ {
+  "date": "2000/06/07",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1042.5399379920032
+ },
+ {
+  "date": "2000/06/07",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1158.5047940108088
+ },
+ {
+  "date": "2000/06/07",
+  "wrestler": "Kendo Kashin",
+  "elo": 1046.336194599942
+ },
+ {
+  "date": "2000/06/07",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1128.9119136959198
+ },
+ {
+  "date": "2000/06/08",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 510.3067291028898
+ },
+ {
+  "date": "2000/06/08",
+  "wrestler": "Togi Makabe",
+  "elo": 1028.5605866596327
+ },
+ {
+  "date": "2000/06/08",
+  "wrestler": "Katsumi Usuda",
+  "elo": 953.8625416872143
+ },
+ {
+  "date": "2000/06/08",
+  "wrestler": "Minoru Fujita",
+  "elo": 901.2794144025678
+ },
+ {
+  "date": "2000/06/08",
+  "wrestler": "Gran Hamada",
+  "elo": 1061.2706924468846
+ },
+ {
+  "date": "2000/06/08",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1181.357949572989
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Minoru Fujita",
+  "elo": 836.3584441431775
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Togi Makabe",
+  "elo": 1061.0210717893278
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Kid Romeo",
+  "elo": 739.2472665289504
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1167.5393205562912
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Katsumi Usuda",
+  "elo": 866.6686845054024
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "El Samurai",
+  "elo": 1085.7951427620521
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Koji Kanemoto",
+  "elo": 993.0862414935533
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Kendo Kashin",
+  "elo": 1095.789891098392
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Gran Hamada",
+  "elo": 997.9261604943592
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1092.931611465402
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1086.4026950999655
+ },
+ {
+  "date": "2000/06/09",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1223.8671681689434
+ },
+ {
+  "date": "2000/06/25",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 410.62957194847104
+ },
+ {
+  "date": "2000/06/25",
+  "wrestler": "Wataru Inoue",
+  "elo": 611.1055610851613
+ },
+ {
+  "date": "2000/06/25",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 934.1864861746812
+ },
+ {
+  "date": "2000/06/25",
+  "wrestler": "Satoshi Kojima",
+  "elo": 937.1750388608747
+ },
+ {
+  "date": "2000/06/27",
+  "wrestler": "Wataru Inoue",
+  "elo": 459.0562191764317
+ },
+ {
+  "date": "2000/06/27",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 562.6789138572007
+ },
+ {
+  "date": "2000/06/27",
+  "wrestler": "Togi Makabe",
+  "elo": 1015.6004979893564
+ },
+ {
+  "date": "2000/06/27",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1138.3521852653735
+ },
+ {
+  "date": "2000/06/28",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 541.5980735222723
+ },
+ {
+  "date": "2000/06/28",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 955.2673265096096
+ },
+ {
+  "date": "2000/06/28",
+  "wrestler": "Tadao Yasuda",
+  "elo": 842.7187596586781
+ },
+ {
+  "date": "2000/06/28",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 931.0038705004436
+ },
+ {
+  "date": "2000/06/29",
+  "wrestler": "Wataru Inoue",
+  "elo": 451.2510727093754
+ },
+ {
+  "date": "2000/06/29",
+  "wrestler": "Togi Makabe",
+  "elo": 1019.5030712228845
+ },
+ {
+  "date": "2000/06/29",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 533.2699558310246
+ },
+ {
+  "date": "2000/06/29",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1090.5667539455894
+ },
+ {
+  "date": "2000/06/29",
+  "wrestler": "Tadao Yasuda",
+  "elo": 774.0253465259672
+ },
+ {
+  "date": "2000/06/29",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1023.9607396423205
+ },
+ {
+  "date": "2000/06/30",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 410.09199189413977
+ },
+ {
+  "date": "2000/06/30",
+  "wrestler": "Wataru Inoue",
+  "elo": 574.4290366462603
+ },
+ {
+  "date": "2000/06/30",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 845.9280744166288
+ },
+ {
+  "date": "2000/06/30",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1037.0251814134065
+ },
+ {
+  "date": "2000/07/01",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 404.27519418657715
+ },
+ {
+  "date": "2000/07/01",
+  "wrestler": "Togi Makabe",
+  "elo": 1022.4114700766658
+ },
+ {
+  "date": "2000/07/01",
+  "wrestler": "Wataru Inoue",
+  "elo": 558.5381584751595
+ },
+ {
+  "date": "2000/07/01",
+  "wrestler": "Negro Casas",
+  "elo": 1007.9454390855503
+ },
+ {
+  "date": "2000/07/01",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 971.3672820908839
+ },
+ {
+  "date": "2000/07/01",
+  "wrestler": "Yuji Nagata",
+  "elo": 1058.5168207415354
+ },
+ {
+  "date": "2000/07/02",
+  "wrestler": "Wataru Inoue",
+  "elo": 416.8423324232585
+ },
+ {
+  "date": "2000/07/02",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 545.9710202384782
+ },
+ {
+  "date": "2000/07/02",
+  "wrestler": "Togi Makabe",
+  "elo": 965.1180209681766
+ },
+ {
+  "date": "2000/07/02",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1085.9541803078623
+ },
+ {
+  "date": "2000/07/02",
+  "wrestler": "Negro Casas",
+  "elo": 985.553067614305
+ },
+ {
+  "date": "2000/07/02",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1235.0633539045662
+ },
+ {
+  "date": "2000/07/03",
+  "wrestler": "Wataru Inoue",
+  "elo": 408.6722377134363
+ },
+ {
+  "date": "2000/07/03",
+  "wrestler": "Togi Makabe",
+  "elo": 973.2881156779987
+ },
+ {
+  "date": "2000/07/03",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 537.4110463757736
+ },
+ {
+  "date": "2000/07/03",
+  "wrestler": "El Samurai",
+  "elo": 1090.0751296934045
+ },
+ {
+  "date": "2000/07/03",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1106.9040449424847
+ },
+ {
+  "date": "2000/07/03",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1218.04917078999
+ },
+ {
+  "date": "2000/07/04",
+  "wrestler": "Wataru Inoue",
+  "elo": 344.118639927407
+ },
+ {
+  "date": "2000/07/04",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 601.9646441618029
+ },
+ {
+  "date": "2000/07/04",
+  "wrestler": "Togi Makabe",
+  "elo": 878.9803145811558
+ },
+ {
+  "date": "2000/07/04",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1087.394042590396
+ },
+ {
+  "date": "2000/07/04",
+  "wrestler": "Negro Casas",
+  "elo": 916.2582507602978
+ },
+ {
+  "date": "2000/07/04",
+  "wrestler": "Kendo Kashin",
+  "elo": 1130.4372995253955
+ },
+ {
+  "date": "2000/07/06",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 573.8181460164714
+ },
+ {
+  "date": "2000/07/06",
+  "wrestler": "Negro Casas",
+  "elo": 944.4047489056293
+ },
+ {
+  "date": "2000/07/06",
+  "wrestler": "Wataru Inoue",
+  "elo": 341.4255486824682
+ },
+ {
+  "date": "2000/07/06",
+  "wrestler": "El Samurai",
+  "elo": 1091.421675315874
+ },
+ {
+  "date": "2000/07/06",
+  "wrestler": "Togi Makabe",
+  "elo": 833.3222219728946
+ },
+ {
+  "date": "2000/07/06",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1113.39580024972
+ },
+ {
+  "date": "2000/07/08",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 537.1485002885654
+ },
+ {
+  "date": "2000/07/08",
+  "wrestler": "Togi Makabe",
+  "elo": 869.9918677008005
+ },
+ {
+  "date": "2000/07/08",
+  "wrestler": "Wataru Inoue",
+  "elo": 339.1026475285703
+ },
+ {
+  "date": "2000/07/08",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1114.557250826669
+ },
+ {
+  "date": "2000/07/09",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 385.6109725778673
+ },
+ {
+  "date": "2000/07/09",
+  "wrestler": "Wataru Inoue",
+  "elo": 490.6401752392684
+ },
+ {
+  "date": "2000/07/09",
+  "wrestler": "Tadao Yasuda",
+  "elo": 717.8115436177452
+ },
+ {
+  "date": "2000/07/09",
+  "wrestler": "Satoshi Kojima",
+  "elo": 993.3888417690966
+ },
+ {
+  "date": "2000/07/09",
+  "wrestler": "Osamu Nishimura",
+  "elo": 717.47245569618
+ },
+ {
+  "date": "2000/07/09",
+  "wrestler": "Yuji Nagata",
+  "elo": 1072.7033840039105
+ },
+ {
+  "date": "2000/07/10",
+  "wrestler": "Wataru Inoue",
+  "elo": 476.9671592950089
+ },
+ {
+  "date": "2000/07/10",
+  "wrestler": "Negro Casas",
+  "elo": 958.0777648498887
+ },
+ {
+  "date": "2000/07/10",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 382.9005418804778
+ },
+ {
+  "date": "2000/07/10",
+  "wrestler": "Kendo Kashin",
+  "elo": 1131.7925148740903
+ },
+ {
+  "date": "2000/07/10",
+  "wrestler": "Togi Makabe",
+  "elo": 848.2020409644449
+ },
+ {
+  "date": "2000/07/10",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1240.510810588655
+ },
+ {
+  "date": "2000/07/11",
+  "wrestler": "Negro Casas",
+  "elo": 765.1170075242167
+ },
+ {
+  "date": "2000/07/11",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 575.8612992061499
+ },
+ {
+  "date": "2000/07/11",
+  "wrestler": "Wataru Inoue",
+  "elo": 455.8566972781024
+ },
+ {
+  "date": "2000/07/11",
+  "wrestler": "Togi Makabe",
+  "elo": 869.3125029813514
+ },
+ {
+  "date": "2000/07/11",
+  "wrestler": "Dan Devine",
+  "elo": 782.8639065880097
+ },
+ {
+  "date": "2000/07/11",
+  "wrestler": "Osamu Nishimura",
+  "elo": 873.8459159111071
+ },
+ {
+  "date": "2000/07/12",
+  "wrestler": "Wataru Inoue",
+  "elo": 389.085760489309
+ },
+ {
+  "date": "2000/07/12",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 642.6322359949432
+ },
+ {
+  "date": "2000/07/12",
+  "wrestler": "Togi Makabe",
+  "elo": 744.9316787595665
+ },
+ {
+  "date": "2000/07/12",
+  "wrestler": "Dan Devine",
+  "elo": 907.2447308097946
+ },
+ {
+  "date": "2000/07/12",
+  "wrestler": "Negro Casas",
+  "elo": 738.0637375036416
+ },
+ {
+  "date": "2000/07/12",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1100.9206776006836
+ },
+ {
+  "date": "2000/07/15",
+  "wrestler": "El Samurai",
+  "elo": 1044.7462398323123
+ },
+ {
+  "date": "2000/07/15",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1161.2326863102305
+ },
+ {
+  "date": "2000/07/15",
+  "wrestler": "Rob Rage",
+  "elo": 960.7056586058338
+ },
+ {
+  "date": "2000/07/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1114.8540058631454
+ },
+ {
+  "date": "2000/07/16",
+  "wrestler": "Wataru Inoue",
+  "elo": 366.24320860023823
+ },
+ {
+  "date": "2000/07/16",
+  "wrestler": "Togi Makabe",
+  "elo": 767.7742306486373
+ },
+ {
+  "date": "2000/07/16",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 606.8350181775719
+ },
+ {
+  "date": "2000/07/16",
+  "wrestler": "Dan Devine",
+  "elo": 943.041948627166
+ },
+ {
+  "date": "2000/07/16",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1010.9498688273289
+ },
+ {
+  "date": "2000/07/16",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1231.0868270830288
+ },
+ {
+  "date": "2000/07/18",
+  "wrestler": "Wataru Inoue",
+  "elo": 348.2065400589898
+ },
+ {
+  "date": "2000/07/18",
+  "wrestler": "Togi Makabe",
+  "elo": 785.8108991898857
+ },
+ {
+  "date": "2000/07/18",
+  "wrestler": "Negro Casas",
+  "elo": 708.8408336714834
+ },
+ {
+  "date": "2000/07/18",
+  "wrestler": "El Samurai",
+  "elo": 1059.3576917483915
+ },
+ {
+  "date": "2000/07/18",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 595.8384889978229
+ },
+ {
+  "date": "2000/07/18",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1106.418942190558
+ },
+ {
+  "date": "2000/07/19",
+  "wrestler": "Wataru Inoue",
+  "elo": 309.4458817844481
+ },
+ {
+  "date": "2000/07/19",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 634.5991472723646
+ },
+ {
+  "date": "2000/07/19",
+  "wrestler": "Dan Devine",
+  "elo": 785.9918523345857
+ },
+ {
+  "date": "2000/07/19",
+  "wrestler": "Tadao Yasuda",
+  "elo": 874.8616399103255
+ },
+ {
+  "date": "2000/07/19",
+  "wrestler": "Togi Makabe",
+  "elo": 710.6207094063219
+ },
+ {
+  "date": "2000/07/19",
+  "wrestler": "Osamu Nishimura",
+  "elo": 949.0361056946709
+ },
+ {
+  "date": "2000/07/20",
+  "wrestler": "Dan Devine",
+  "elo": 742.9890421189119
+ },
+ {
+  "date": "2000/07/20",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1032.4512739351658
+ },
+ {
+  "date": "2000/07/20",
+  "wrestler": "Osamu Nishimura",
+  "elo": 851.3699867439412
+ },
+ {
+  "date": "2000/07/20",
+  "wrestler": "Brian Johnston",
+  "elo": 1054.812430691568
+ },
+ {
+  "date": "2000/07/20",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1066.7925515817496
+ },
+ {
+  "date": "2000/07/20",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1255.7507870621782
+ },
+ {
+  "date": "2000/07/20",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1204.707587466944
+ },
+ {
+  "date": "2000/07/20",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1238.2787071829928
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 556.1372783632869
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Togi Makabe",
+  "elo": 789.0825783153996
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "AKIRA",
+  "elo": 1025.611120952877
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1177.9834274134987
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1030.1657040649284
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Junji Hirata",
+  "elo": 1101.3390499722648
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1047.7571504828916
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1104.2792641846297
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1117.4567763506127
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1226.595542446753
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Atsushi Onita",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "2000/07/30",
+  "wrestler": "Riki Choshu",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 956.4890281262211
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Osamu Nishimura",
+  "elo": 998.7233386213558
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Osamu Kido",
+  "elo": 975.0185153225569
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Hiro Saito",
+  "elo": 859.2859686605204
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 825.8211445275641
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1231.622274919019
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 992.6433600282803
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1144.0871780915152
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Brian Johnston",
+  "elo": 1029.0072065376296
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1251.1813192599618
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1010.9855087439978
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1082.0652156126582
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1226.906944504751
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Masahiro Chono",
+  "elo": 1230.748099229418
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1063.7101141509104
+ },
+ {
+  "date": "2000/08/07",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1158.0479366547197
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1193.2454836613056
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Junji Hirata",
+  "elo": 1168.6619716591554
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Hiro Saito",
+  "elo": 804.5882385384533
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Brian Johnston",
+  "elo": 1056.3560715986632
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Osamu Nishimura",
+  "elo": 864.5103645426257
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1009.0746139890557
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 908.765249688542
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1181.9098258735592
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Osamu Kido",
+  "elo": 880.3009985337223
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1088.1063585579313
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 989.0612783055387
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1242.5843901382486
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1030.7182657170122
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Yuji Nagata",
+  "elo": 1124.0503338995566
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 952.1401012943086
+ },
+ {
+  "date": "2000/08/08",
+  "wrestler": "Masahiro Chono",
+  "elo": 1240.873913912911
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Junji Hirata",
+  "elo": 1090.9943641255943
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1107.4753163614307
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Brian Johnston",
+  "elo": 1010.9126280708431
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1133.5498020857515
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Tadao Yasuda",
+  "elo": 982.080465112618
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1208.903974749997
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1229.7334055682898
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Hiro Saito",
+  "elo": 890.3798933051419
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 850.6230878176
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1092.7811950863813
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 769.6283795898049
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1045.254043243298
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1209.3713869149249
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Yuji Nagata",
+  "elo": 1190.4763403462039
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Masahiro Chono",
+  "elo": 1209.084280279505
+ },
+ {
+  "date": "2000/08/09",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1207.6664453583269
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1131.1469453747795
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1169.5738546479568
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Osamu Kido",
+  "elo": 816.2178108637961
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Brian Johnston",
+  "elo": 1042.9542219058062
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 786.7517379418875
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1045.9518149883304
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 733.2313138376759
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1048.9167985930767
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1174.5731718155669
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Junji Hirata",
+  "elo": 1157.1809112111143
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Osamu Nishimura",
+  "elo": 822.1477968481825
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1113.962478933603
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1015.0155518171243
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Yuji Nagata",
+  "elo": 1220.7148317723775
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1097.048635869774
+ },
+ {
+  "date": "2000/08/11",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1247.9839886762786
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1070.3802367506607
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Hiro Saito",
+  "elo": 943.7166915433685
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1118.3559782048578
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1187.3641389854886
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1005.6162096573509
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1154.2980842645825
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1163.7744396202506
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1002.6659373671671
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Yuji Nagata",
+  "elo": 1173.5643865078769
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 921.8330948956788
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Osamu Kido",
+  "elo": 800.8408518898772
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1251.8282284197583
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Junji Hirata",
+  "elo": 1114.595331621016
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Masahiro Chono",
+  "elo": 1230.3770700745542
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1020.4953394715662
+ },
+ {
+  "date": "2000/08/12",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1223.58211647568
+ },
+ {
+  "date": "2000/08/13",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 514.6662055123312
+ },
+ {
+  "date": "2000/08/13",
+  "wrestler": "Togi Makabe",
+  "elo": 830.5536511663553
+ },
+ {
+  "date": "2000/08/13",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1195.0077109020299
+ },
+ {
+  "date": "2000/08/13",
+  "wrestler": "Yuji Nagata",
+  "elo": 1207.2306784534444
+ },
+ {
+  "date": "2000/08/13",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1112.4110205400475
+ },
+ {
+  "date": "2000/08/13",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1210.5063916191098
+ },
+ {
+  "date": "2000/08/13",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1297.2412934865197
+ },
+ {
+  "date": "2000/08/13",
+  "wrestler": "Masahiro Chono",
+  "elo": 1203.6016359352013
+ },
+ {
+  "date": "2000/09/09",
+  "wrestler": "Togi Makabe",
+  "elo": 807.8232063131601
+ },
+ {
+  "date": "2000/09/09",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1198.729361412086
+ },
+ {
+  "date": "2000/09/09",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1125.4374166077619
+ },
+ {
+  "date": "2000/09/09",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1232.5746106392073
+ },
+ {
+  "date": "2000/09/10",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 460.9497735182102
+ },
+ {
+  "date": "2000/09/10",
+  "wrestler": "Wataru Inoue",
+  "elo": 482.7288179302402
+ },
+ {
+  "date": "2000/09/10",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 723.783866629326
+ },
+ {
+  "date": "2000/09/10",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 984.8009662082403
+ },
+ {
+  "date": "2000/09/10",
+  "wrestler": "Tadao Yasuda",
+  "elo": 984.3085226701947
+ },
+ {
+  "date": "2000/09/10",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1243.2284541327854
+ },
+ {
+  "date": "2000/09/11",
+  "wrestler": "Wataru Inoue",
+  "elo": 376.4685027214525
+ },
+ {
+  "date": "2000/09/11",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 567.2100887269979
+ },
+ {
+  "date": "2000/09/11",
+  "wrestler": "Togi Makabe",
+  "elo": 786.5956490277633
+ },
+ {
+  "date": "2000/09/11",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1188.5972060561971
+ },
+ {
+  "date": "2000/09/11",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 714.2094184269066
+ },
+ {
+  "date": "2000/09/11",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1245.6220661833902
+ },
+ {
+  "date": "2000/09/12",
+  "wrestler": "Hiro Saito",
+  "elo": 785.842094812497
+ },
+ {
+  "date": "2000/09/12",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 872.0840151577781
+ },
+ {
+  "date": "2000/09/12",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1085.8935893695186
+ },
+ {
+  "date": "2000/09/12",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1261.85326060106
+ },
+ {
+  "date": "2000/09/13",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 523.114550848929
+ },
+ {
+  "date": "2000/09/13",
+  "wrestler": "Togi Makabe",
+  "elo": 830.6911869058323
+ },
+ {
+  "date": "2000/09/13",
+  "wrestler": "El Samurai",
+  "elo": 1007.6888597691171
+ },
+ {
+  "date": "2000/09/13",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1099.4259824621658
+ },
+ {
+  "date": "2000/09/13",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1154.5105923817343
+ },
+ {
+  "date": "2000/09/13",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1282.1018198612076
+ },
+ {
+  "date": "2000/09/13",
+  "wrestler": "Kendo Kashin",
+  "elo": 1091.3080597985381
+ },
+ {
+  "date": "2000/09/13",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1239.2138164876383
+ },
+ {
+  "date": "2000/09/15",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 383.2463180461847
+ },
+ {
+  "date": "2000/09/15",
+  "wrestler": "Wataru Inoue",
+  "elo": 516.3367355241968
+ },
+ {
+  "date": "2000/09/15",
+  "wrestler": "El Samurai",
+  "elo": 929.4940945679198
+ },
+ {
+  "date": "2000/09/15",
+  "wrestler": "Hiro Saito",
+  "elo": 942.2316252148917
+ },
+ {
+  "date": "2000/09/15",
+  "wrestler": "Tadao Yasuda",
+  "elo": 826.8208154467711
+ },
+ {
+  "date": "2000/09/15",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 914.3033769399053
+ },
+ {
+  "date": "2000/09/15",
+  "wrestler": "Brian Johnston",
+  "elo": 1022.7993727986614
+ },
+ {
+  "date": "2000/09/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1292.17924441478
+ },
+ {
+  "date": "2000/09/16",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1048.5703141688184
+ },
+ {
+  "date": "2000/09/16",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1303.0842057057012
+ },
+ {
+  "date": "2000/09/17",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 374.98425309956974
+ },
+ {
+  "date": "2000/09/17",
+  "wrestler": "El Samurai",
+  "elo": 937.7561595145347
+ },
+ {
+  "date": "2000/09/17",
+  "wrestler": "Tadao Yasuda",
+  "elo": 794.7760403188768
+ },
+ {
+  "date": "2000/09/17",
+  "wrestler": "Junji Hirata",
+  "elo": 1130.617719184963
+ },
+ {
+  "date": "2000/09/17",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 818.9200916949649
+ },
+ {
+  "date": "2000/09/17",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1075.152275900225
+ },
+ {
+  "date": "2000/09/17",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 895.0254982216461
+ },
+ {
+  "date": "2000/09/17",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1307.9036753852658
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 951.6313009467113
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1020.3313337045523
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Super Delfin",
+  "elo": 952.1595672206917
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1062.8559845964328
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1100.7794787897908
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Don Frye",
+  "elo": 1182.266988199411
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1068.5235250212343
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1254.665045208104
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Scott Norton",
+  "elo": 956.1684077890491
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Steve Williams",
+  "elo": 1051.0367581012163
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1254.892617642425
+ },
+ {
+  "date": "2000/10/09",
+  "wrestler": "Toshiaki Kawada",
+  "elo": 1084.6973516881897
+ },
+ {
+  "date": "2000/10/12",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 830.2288267697153
+ },
+ {
+  "date": "2000/10/12",
+  "wrestler": "Brian Johnston",
+  "elo": 1055.1977085246267
+ },
+ {
+  "date": "2000/10/12",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 941.3048219008897
+ },
+ {
+  "date": "2000/10/12",
+  "wrestler": "Yuji Nagata",
+  "elo": 1218.104714530282
+ },
+ {
+  "date": "2000/10/13",
+  "wrestler": "Wataru Inoue",
+  "elo": 377.7576702687758
+ },
+ {
+  "date": "2000/10/13",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 513.5633183549907
+ },
+ {
+  "date": "2000/10/13",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1120.5660885064162
+ },
+ {
+  "date": "2000/10/13",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1235.570438106072
+ },
+ {
+  "date": "2000/10/14",
+  "wrestler": "Wataru Inoue",
+  "elo": 364.023589166698
+ },
+ {
+  "date": "2000/10/14",
+  "wrestler": "Togi Makabe",
+  "elo": 844.4252680079102
+ },
+ {
+  "date": "2000/10/14",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 497.55600461259417
+ },
+ {
+  "date": "2000/10/14",
+  "wrestler": "El Samurai",
+  "elo": 953.7634732569312
+ },
+ {
+  "date": "2000/10/15",
+  "wrestler": "Wataru Inoue",
+  "elo": 300.67040202224644
+ },
+ {
+  "date": "2000/10/15",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 560.9091917570457
+ },
+ {
+  "date": "2000/10/18",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1063.132078060389
+ },
+ {
+  "date": "2000/10/18",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1125.9575354672616
+ },
+ {
+  "date": "2000/10/18",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1032.3387797037565
+ },
+ {
+  "date": "2000/10/18",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1168.2509128042304
+ },
+ {
+  "date": "2000/10/18",
+  "wrestler": "Brian Johnston",
+  "elo": 1022.710476260381
+ },
+ {
+  "date": "2000/10/18",
+  "wrestler": "Don Frye",
+  "elo": 1214.7542204636566
+ },
+ {
+  "date": "2000/10/19",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 528.1992392327286
+ },
+ {
+  "date": "2000/10/19",
+  "wrestler": "Togi Makabe",
+  "elo": 877.1352205322273
+ },
+ {
+  "date": "2000/10/19",
+  "wrestler": "Wataru Inoue",
+  "elo": 296.1174155430585
+ },
+ {
+  "date": "2000/10/19",
+  "wrestler": "El Samurai",
+  "elo": 958.3164597361192
+ },
+ {
+  "date": "2000/10/20",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 998.4894490300537
+ },
+ {
+  "date": "2000/10/20",
+  "wrestler": "El Samurai",
+  "elo": 1087.6017177967897
+ },
+ {
+  "date": "2000/10/20",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1217.113278582709
+ },
+ {
+  "date": "2000/10/20",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1137.9595178472227
+ },
+ {
+  "date": "2000/10/20",
+  "wrestler": "Osamu Nishimura",
+  "elo": 926.5000000544394
+ },
+ {
+  "date": "2000/10/20",
+  "wrestler": "Osamu Kido",
+  "elo": 953.1727265153327
+ },
+ {
+  "date": "2000/10/20",
+  "wrestler": "T2000 Machine",
+  "elo": 950.0
+ },
+ {
+  "date": "2000/10/20",
+  "wrestler": "Super Strong Machine",
+  "elo": 1050.0
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 369.8339414277991
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "Wataru Inoue",
+  "elo": 454.4827133479879
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "Togi Makabe",
+  "elo": 838.5882385887907
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1145.2310264389798
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "El Samurai",
+  "elo": 1057.695683310204
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1250.523455349365
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 924.586861125216
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "Kendo Kashin",
+  "elo": 1128.259353750957
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1179.578036042851
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "AKIRA",
+  "elo": 1100.681606032593
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1098.8346348170255
+ },
+ {
+  "date": "2000/10/21",
+  "wrestler": "Don Frye",
+  "elo": 1234.3166619787553
+ },
+ {
+  "date": "2000/10/22",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 805.2266696390592
+ },
+ {
+  "date": "2000/10/22",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1180.7519913695585
+ },
+ {
+  "date": "2000/10/24",
+  "wrestler": "Wataru Inoue",
+  "elo": 330.58973899926787
+ },
+ {
+  "date": "2000/10/24",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 493.72691577651915
+ },
+ {
+  "date": "2000/10/25",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 469.57339866799396
+ },
+ {
+  "date": "2000/10/25",
+  "wrestler": "Togi Makabe",
+  "elo": 862.7417556973159
+ },
+ {
+  "date": "2000/10/25",
+  "wrestler": "El Samurai",
+  "elo": 1017.7132507686604
+ },
+ {
+  "date": "2000/10/25",
+  "wrestler": "Kendo Kashin",
+  "elo": 1168.2417862925006
+ },
+ {
+  "date": "2000/10/25",
+  "wrestler": "AKIRA",
+  "elo": 1050.415808012143
+ },
+ {
+  "date": "2000/10/25",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1149.1004328374754
+ },
+ {
+  "date": "2000/10/25",
+  "wrestler": "Osamu Nishimura",
+  "elo": 831.0248338866897
+ },
+ {
+  "date": "2000/10/25",
+  "wrestler": "Hiro Saito",
+  "elo": 1037.7067913826413
+ },
+ {
+  "date": "2000/10/27",
+  "wrestler": "Wataru Inoue",
+  "elo": 268.5869564336966
+ },
+ {
+  "date": "2000/10/27",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 531.5761812335652
+ },
+ {
+  "date": "2000/10/29",
+  "wrestler": "Kendo Kashin",
+  "elo": 1101.9067435604502
+ },
+ {
+  "date": "2000/10/29",
+  "wrestler": "AKIRA",
+  "elo": 1116.7508507441935
+ },
+ {
+  "date": "2000/10/29",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1098.5436035159285
+ },
+ {
+  "date": "2000/10/29",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1195.7878557605268
+ },
+ {
+  "date": "2000/10/29",
+  "wrestler": "T2000 Machine",
+  "elo": 878.012999960577
+ },
+ {
+  "date": "2000/10/29",
+  "wrestler": "Super Strong Machine",
+  "elo": 1085.9935000197115
+ },
+ {
+  "date": "2000/10/29",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1139.6483247012254
+ },
+ {
+  "date": "2000/10/29",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1270.4883110201777
+ },
+ {
+  "date": "2000/10/29",
+  "wrestler": "Yuji Nagata",
+  "elo": 1195.7419684982733
+ },
+ {
+  "date": "2000/10/29",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1277.255363674434
+ },
+ {
+  "date": "2000/11/17",
+  "wrestler": "Wataru Inoue",
+  "elo": 232.51428544762797
+ },
+ {
+  "date": "2000/11/17",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 567.6488522196339
+ },
+ {
+  "date": "2000/11/17",
+  "wrestler": "Togi Makabe",
+  "elo": 728.6221352727291
+ },
+ {
+  "date": "2000/11/17",
+  "wrestler": "Kid Romeo",
+  "elo": 873.3668869535371
+ },
+ {
+  "date": "2000/11/18",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 529.5386408606112
+ },
+ {
+  "date": "2000/11/18",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 857.0303030539876
+ },
+ {
+  "date": "2000/11/18",
+  "wrestler": "Wataru Inoue",
+  "elo": 231.1818510832153
+ },
+ {
+  "date": "2000/11/18",
+  "wrestler": "Kendo Kashin",
+  "elo": 1102.5729607426565
+ },
+ {
+  "date": "2000/11/19",
+  "wrestler": "Togi Makabe",
+  "elo": 696.7807883030991
+ },
+ {
+  "date": "2000/11/19",
+  "wrestler": "El Samurai",
+  "elo": 1033.6339242534755
+ },
+ {
+  "date": "2000/11/22",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 474.27198116542934
+ },
+ {
+  "date": "2000/11/22",
+  "wrestler": "Togi Makabe",
+  "elo": 752.047447998281
+ },
+ {
+  "date": "2000/11/22",
+  "wrestler": "Kid Romeo",
+  "elo": 854.9093146391612
+ },
+ {
+  "date": "2000/11/22",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1275.1027040987717
+ },
+ {
+  "date": "2000/11/23",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 313.8561770736884
+ },
+ {
+  "date": "2000/11/23",
+  "wrestler": "Wataru Inoue",
+  "elo": 391.59765517495623
+ },
+ {
+  "date": "2000/11/23",
+  "wrestler": "Togi Makabe",
+  "elo": 732.6509238025384
+ },
+ {
+  "date": "2000/11/23",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1149.3465867990967
+ },
+ {
+  "date": "2000/11/23",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 739.3014170285024
+ },
+ {
+  "date": "2000/11/23",
+  "wrestler": "Tadao Yasuda",
+  "elo": 912.5049263443619
+ },
+ {
+  "date": "2000/11/24",
+  "wrestler": "Hiro Saito",
+  "elo": 970.4302396149371
+ },
+ {
+  "date": "2000/11/24",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1047.0580298797704
+ },
+ {
+  "date": "2000/11/24",
+  "wrestler": "Osamu Nishimura",
+  "elo": 807.4598624162057
+ },
+ {
+  "date": "2000/11/24",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1192.5344771048005
+ },
+ {
+  "date": "2000/11/24",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 732.0005552471072
+ },
+ {
+  "date": "2000/11/24",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1309.7288908306145
+ },
+ {
+  "date": "2000/11/26",
+  "wrestler": "Togi Makabe",
+  "elo": 692.0871228674805
+ },
+ {
+  "date": "2000/11/26",
+  "wrestler": "Hiro Saito",
+  "elo": 1010.994040549995
+ },
+ {
+  "date": "2000/11/27",
+  "wrestler": "Wataru Inoue",
+  "elo": 389.0790856997073
+ },
+ {
+  "date": "2000/11/27",
+  "wrestler": "Tatsuhito Takaiwa",
+  "elo": 1150.6058715367212
+ },
+ {
+  "date": "2000/11/27",
+  "wrestler": "Togi Makabe",
+  "elo": 674.8786813231163
+ },
+ {
+  "date": "2000/11/27",
+  "wrestler": "Kendo Kashin",
+  "elo": 1111.1771815148386
+ },
+ {
+  "date": "2000/11/28",
+  "wrestler": "Wataru Inoue",
+  "elo": 267.76027025426333
+ },
+ {
+  "date": "2000/11/28",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 435.1749925191324
+ },
+ {
+  "date": "2000/11/28",
+  "wrestler": "Kid Romeo",
+  "elo": 802.2467878070155
+ },
+ {
+  "date": "2000/11/28",
+  "wrestler": "El Samurai",
+  "elo": 1059.9651876695482
+ },
+ {
+  "date": "2000/11/30",
+  "wrestler": "Kid Romeo",
+  "elo": 623.8140514574054
+ },
+ {
+  "date": "2000/11/30",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 613.6077288687425
+ },
+ {
+  "date": "2000/12/01",
+  "wrestler": "Wataru Inoue",
+  "elo": 343.72704643448736
+ },
+ {
+  "date": "2000/12/01",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 537.6409526885184
+ },
+ {
+  "date": "2000/12/02",
+  "wrestler": "Kid Romeo",
+  "elo": 457.06766967722785
+ },
+ {
+  "date": "2000/12/02",
+  "wrestler": "Wataru Inoue",
+  "elo": 510.473428214665
+ },
+ {
+  "date": "2000/12/02",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 528.2164907021047
+ },
+ {
+  "date": "2000/12/02",
+  "wrestler": "El Samurai",
+  "elo": 1064.677418662755
+ },
+ {
+  "date": "2000/12/10",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 423.11406175419455
+ },
+ {
+  "date": "2000/12/10",
+  "wrestler": "Wataru Inoue",
+  "elo": 615.5758571625751
+ },
+ {
+  "date": "2000/12/10",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1133.846538424693
+ },
+ {
+  "date": "2000/12/10",
+  "wrestler": "Kendo Kashin",
+  "elo": 1173.1184988506723
+ },
+ {
+  "date": "2000/12/10",
+  "wrestler": "Tadao Yasuda",
+  "elo": 967.1711719538554
+ },
+ {
+  "date": "2000/12/10",
+  "wrestler": "Osamu Nishimura",
+  "elo": 967.2335782680358
+ },
+ {
+  "date": "2000/12/10",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 792.8336467801126
+ },
+ {
+  "date": "2000/12/10",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1280.3536193891707
+ },
+ {
+  "date": "2000/12/10",
+  "wrestler": "AKIRA",
+  "elo": 1088.082503633779
+ },
+ {
+  "date": "2000/12/10",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1289.436877653979
+ },
+ {
+  "date": "2000/12/14",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1073.7415583699142
+ },
+ {
+  "date": "2000/12/14",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1231.2039392749339
+ },
+ {
+  "date": "2000/12/14",
+  "wrestler": "Kendo Kashin",
+  "elo": 1083.1918980994126
+ },
+ {
+  "date": "2000/12/14",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 972.6868482826321
+ },
+ {
+  "date": "2000/12/14",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 701.8545244245586
+ },
+ {
+  "date": "2000/12/14",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1047.4117951150308
+ },
+ {
+  "date": "2000/12/14",
+  "wrestler": "Osamu Nishimura",
+  "elo": 942.7893252850743
+ },
+ {
+  "date": "2000/12/14",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1315.8399540763548
+ },
+ {
+  "date": "2000/12/14",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1059.7898846264486
+ },
+ {
+  "date": "2000/12/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1099.7446085432002
+ },
+ {
+  "date": "2000/12/23",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 935.8467550231143
+ },
+ {
+  "date": "2000/12/23",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1240.4139625898133
+ },
+ {
+  "date": "2000/12/23",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 690.8461318515624
+ },
+ {
+  "date": "2000/12/23",
+  "wrestler": "Yuji Nagata",
+  "elo": 1201.2461647847713
+ },
+ {
+  "date": "2000/12/23",
+  "wrestler": "Tadao Yasuda",
+  "elo": 926.3557096082687
+ },
+ {
+  "date": "2000/12/23",
+  "wrestler": "Masahiro Chono",
+  "elo": 1213.805501521598
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

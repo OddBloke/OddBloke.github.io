@@ -1,0 +1,2305 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2003/01/04",
+  "wrestler": "Osamu Nishimura",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2003/01/04",
+  "wrestler": "Togi Makabe",
+  "elo": 700.0
+ },
+ {
+  "date": "2003/01/04",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1079.6614996528172
+ },
+ {
+  "date": "2003/01/04",
+  "wrestler": "Hiro Saito",
+  "elo": 987.5
+ },
+ {
+  "date": "2003/01/04",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 794.3158672508788
+ },
+ {
+  "date": "2003/01/04",
+  "wrestler": "Makai #1",
+  "elo": 1018.1841327491212
+ },
+ {
+  "date": "2003/01/04",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1050.0
+ },
+ {
+  "date": "2003/01/04",
+  "wrestler": "Josh Barnett",
+  "elo": 924.0253073352042
+ },
+ {
+  "date": "2003/01/04",
+  "wrestler": "Yuji Nagata",
+  "elo": 951.9493853295916
+ },
+ {
+  "date": "2003/01/30",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 798.662367516827
+ },
+ {
+  "date": "2003/01/30",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 997.4565928536304
+ },
+ {
+  "date": "2003/01/30",
+  "wrestler": "Mike Barton",
+  "elo": 997.4813392331462
+ },
+ {
+  "date": "2003/01/30",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1076.678227116605
+ },
+ {
+  "date": "2003/01/30",
+  "wrestler": "Togi Makabe",
+  "elo": 699.2079166498908
+ },
+ {
+  "date": "2003/01/30",
+  "wrestler": "Tadao Yasuda",
+  "elo": 997.53835042687
+ },
+ {
+  "date": "2003/01/30",
+  "wrestler": "Osamu Nishimura",
+  "elo": 974.9577721013352
+ },
+ {
+  "date": "2003/02/02",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 947.4495857629934
+ },
+ {
+  "date": "2003/02/02",
+  "wrestler": "Osamu Nishimura",
+  "elo": 868.345089969089
+ },
+ {
+  "date": "2003/02/02",
+  "wrestler": "Yuji Nagata",
+  "elo": 1058.5620674618378
+ },
+ {
+  "date": "2003/02/04",
+  "wrestler": "Josh Barnett",
+  "elo": 1045.5505737293306
+ },
+ {
+  "date": "2003/02/06",
+  "wrestler": "Koji Kanemoto",
+  "elo": 951.4215544289902
+ },
+ {
+  "date": "2003/02/07",
+  "wrestler": "Blue Wolf",
+  "elo": 1050.146830382839
+ },
+ {
+  "date": "2003/02/07",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 874.9581303994073
+ },
+ {
+  "date": "2003/02/07",
+  "wrestler": "Josh Barnett",
+  "elo": 1081.7963014111237
+ },
+ {
+  "date": "2003/02/09",
+  "wrestler": "AKIRA",
+  "elo": 1057.5947685963063
+ },
+ {
+  "date": "2003/02/11",
+  "wrestler": "Blue Wolf",
+  "elo": 1086.2367505014945
+ },
+ {
+  "date": "2003/02/11",
+  "wrestler": "Masahito Kakihara",
+  "elo": 961.5586662092313
+ },
+ {
+  "date": "2003/02/11",
+  "wrestler": "Josh Barnett",
+  "elo": 1120.2376352018925
+ },
+ {
+  "date": "2003/02/12",
+  "wrestler": "Hiro Saito",
+  "elo": 923.9486125994832
+ },
+ {
+  "date": "2003/02/12",
+  "wrestler": "Josh Barnett",
+  "elo": 1152.013328902151
+ },
+ {
+  "date": "2003/02/15",
+  "wrestler": "Josh Barnett",
+  "elo": 1166.1922639571492
+ },
+ {
+  "date": "2003/02/16",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 751.4128646690248
+ },
+ {
+  "date": "2003/02/16",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1046.0437281846057
+ },
+ {
+  "date": "2003/02/16",
+  "wrestler": "Togi Makabe",
+  "elo": 871.8923598336735
+ },
+ {
+  "date": "2003/02/16",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1004.5231633283299
+ },
+ {
+  "date": "2003/02/16",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 950.0
+ },
+ {
+  "date": "2003/02/16",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1050.0
+ },
+ {
+  "date": "2003/02/16",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1022.8464495104872
+ },
+ {
+  "date": "2003/02/16",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1103.8317776061178
+ },
+ {
+  "date": "2003/03/06",
+  "wrestler": "Masahito Kakihara",
+  "elo": 872.5780421539821
+ },
+ {
+  "date": "2003/03/06",
+  "wrestler": "Makai #5",
+  "elo": 1044.4903120276247
+ },
+ {
+  "date": "2003/03/06",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 684.7634654787903
+ },
+ {
+  "date": "2003/03/06",
+  "wrestler": "Togi Makabe",
+  "elo": 938.541759023908
+ },
+ {
+  "date": "2003/03/06",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1131.7709352200845
+ },
+ {
+  "date": "2003/03/08",
+  "wrestler": "Blue Wolf",
+  "elo": 1115.5351913424283
+ },
+ {
+  "date": "2003/03/08",
+  "wrestler": "Yuji Nagata",
+  "elo": 1105.0070415401306
+ },
+ {
+  "date": "2003/03/08",
+  "wrestler": "Makai #1",
+  "elo": 983.9720698221603
+ },
+ {
+  "date": "2003/03/08",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1165.9829981470455
+ },
+ {
+  "date": "2003/03/09",
+  "wrestler": "Blue Wolf",
+  "elo": 1049.4952638799532
+ },
+ {
+  "date": "2003/03/09",
+  "wrestler": "Takashi Iizuka",
+  "elo": 802.1814386273851
+ },
+ {
+  "date": "2003/03/09",
+  "wrestler": "Makai #5",
+  "elo": 1043.3995927139322
+ },
+ {
+  "date": "2003/03/09",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1054.4486937130876
+ },
+ {
+  "date": "2003/03/09",
+  "wrestler": "Yuji Nagata",
+  "elo": 1096.6020760116487
+ },
+ {
+  "date": "2003/03/11",
+  "wrestler": "Togi Makabe",
+  "elo": 1052.5045572233116
+ },
+ {
+  "date": "2003/03/12",
+  "wrestler": "Masahito Kakihara",
+  "elo": 723.2358228196864
+ },
+ {
+  "date": "2003/03/12",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 834.105684813086
+ },
+ {
+  "date": "2003/03/12",
+  "wrestler": "Togi Makabe",
+  "elo": 972.8795850370254
+ },
+ {
+  "date": "2003/03/14",
+  "wrestler": "Blue Wolf",
+  "elo": 1076.8824094228066
+ },
+ {
+  "date": "2003/03/14",
+  "wrestler": "Masahito Kakihara",
+  "elo": 663.9545781797858
+ },
+ {
+  "date": "2003/03/16",
+  "wrestler": "American Dragon",
+  "elo": 1032.21380135299
+ },
+ {
+  "date": "2003/03/17",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 872.5660892983755
+ },
+ {
+  "date": "2003/03/18",
+  "wrestler": "Blue Wolf",
+  "elo": 1085.8318811839306
+ },
+ {
+  "date": "2003/03/18",
+  "wrestler": "Masahito Kakihara",
+  "elo": 829.482100408591
+ },
+ {
+  "date": "2003/03/20",
+  "wrestler": "Jado",
+  "elo": 1016.6234281816118
+ },
+ {
+  "date": "2003/03/20",
+  "wrestler": "Masahito Kakihara",
+  "elo": 768.5610200035476
+ },
+ {
+  "date": "2003/03/20",
+  "wrestler": "Togi Makabe",
+  "elo": 1033.8006654420687
+ },
+ {
+  "date": "2003/03/21",
+  "wrestler": "Masahito Kakihara",
+  "elo": 877.6066723915625
+ },
+ {
+  "date": "2003/03/21",
+  "wrestler": "Blue Wolf",
+  "elo": 1036.915687991234
+ },
+ {
+  "date": "2003/03/21",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 813.3104102332421
+ },
+ {
+  "date": "2003/03/21",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1052.474289043054
+ },
+ {
+  "date": "2003/03/21",
+  "wrestler": "Makai #5",
+  "elo": 963.3633141713408
+ },
+ {
+  "date": "2003/03/21",
+  "wrestler": "Takashi Iizuka",
+  "elo": 962.2539957125678
+ },
+ {
+  "date": "2003/03/21",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 967.5243073276968
+ },
+ {
+  "date": "2003/03/21",
+  "wrestler": "Togi Makabe",
+  "elo": 954.3340354441613
+ },
+ {
+  "date": "2003/03/22",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 946.3795881877759
+ },
+ {
+  "date": "2003/03/23",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1073.0756265281532
+ },
+ {
+  "date": "2003/03/23",
+  "wrestler": "AKIRA",
+  "elo": 992.773726654644
+ },
+ {
+  "date": "2003/03/23",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1081.0636383123149
+ },
+ {
+  "date": "2003/03/23",
+  "wrestler": "Scott Norton",
+  "elo": 972.2214899237179
+ },
+ {
+  "date": "2003/03/23",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1193.7615082233276
+ },
+ {
+  "date": "2003/03/29",
+  "wrestler": "Togi Makabe",
+  "elo": 1035.0664487082838
+ },
+ {
+  "date": "2003/04/18",
+  "wrestler": "Blue Wolf",
+  "elo": 1015.5413596556449
+ },
+ {
+  "date": "2003/04/18",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1003.5039697319046
+ },
+ {
+  "date": "2003/04/18",
+  "wrestler": "Togi Makabe",
+  "elo": 1090.1685756162597
+ },
+ {
+  "date": "2003/04/18",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1097.4622506001617
+ },
+ {
+  "date": "2003/04/21",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1063.1951687994317
+ },
+ {
+  "date": "2003/04/21",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1013.3844274606261
+ },
+ {
+  "date": "2003/04/23",
+  "wrestler": "Togi Makabe",
+  "elo": 1041.2180656559804
+ },
+ {
+  "date": "2003/04/23",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1146.412760560441
+ },
+ {
+  "date": "2003/04/23",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1019.6048245674823
+ },
+ {
+  "date": "2003/04/23",
+  "wrestler": "Tiger Mask",
+  "elo": 1061.4588137448327
+ },
+ {
+  "date": "2003/04/23",
+  "wrestler": "Tadao Yasuda",
+  "elo": 925.3028289092072
+ },
+ {
+  "date": "2003/04/23",
+  "wrestler": "Yuji Nagata",
+  "elo": 1132.71983677048
+ },
+ {
+  "date": "2003/04/26",
+  "wrestler": "Makai #1",
+  "elo": 887.8583917739874
+ },
+ {
+  "date": "2003/04/26",
+  "wrestler": "Mike Barton",
+  "elo": 1093.595017281319
+ },
+ {
+  "date": "2003/04/26",
+  "wrestler": "Togi Makabe",
+  "elo": 1079.417532873169
+ },
+ {
+  "date": "2003/04/28",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1013.8214935964535
+ },
+ {
+  "date": "2003/04/28",
+  "wrestler": "Yuji Nagata",
+  "elo": 1171.3726322170805
+ },
+ {
+  "date": "2003/05/02",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1072.725732735304
+ },
+ {
+  "date": "2003/05/02",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1114.8983629779707
+ },
+ {
+  "date": "2003/05/02",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1004.1996378101453
+ },
+ {
+  "date": "2003/05/02",
+  "wrestler": "Ken Shamrock",
+  "elo": 1058.9955309892864
+ },
+ {
+  "date": "2003/05/02",
+  "wrestler": "Kazunari Murakami",
+  "elo": 992.8536882591618
+ },
+ {
+  "date": "2003/05/02",
+  "wrestler": "Enson Inoue",
+  "elo": 1057.1463117408382
+ },
+ {
+  "date": "2003/05/02",
+  "wrestler": "Kenta Kobashi",
+  "elo": 1033.5456560364098
+ },
+ {
+  "date": "2003/05/02",
+  "wrestler": "Yuji Nagata",
+  "elo": 1124.5901979959895
+ },
+ {
+  "date": "2003/05/02",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1240.5439424444187
+ },
+ {
+  "date": "2003/05/23",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1040.5800285816683
+ },
+ {
+  "date": "2003/05/23",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1028.546232330141
+ },
+ {
+  "date": "2003/05/23",
+  "wrestler": "Tiger Mask",
+  "elo": 1110.77538752106
+ },
+ {
+  "date": "2003/05/23",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1050.0
+ },
+ {
+  "date": "2003/05/24",
+  "wrestler": "Stampede Kid",
+  "elo": 965.4227564243748
+ },
+ {
+  "date": "2003/05/24",
+  "wrestler": "Tiger Mask",
+  "elo": 1145.3526310966854
+ },
+ {
+  "date": "2003/05/24",
+  "wrestler": "Masahito Kakihara",
+  "elo": 811.4459473150995
+ },
+ {
+  "date": "2003/05/24",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1033.0803625382314
+ },
+ {
+  "date": "2003/05/24",
+  "wrestler": "Takashi Sugiura",
+  "elo": 975.144050012629
+ },
+ {
+  "date": "2003/05/25",
+  "wrestler": "Takashi Sugiura",
+  "elo": 880.2139283146782
+ },
+ {
+  "date": "2003/05/25",
+  "wrestler": "AKIRA",
+  "elo": 1087.7038483525946
+ },
+ {
+  "date": "2003/05/25",
+  "wrestler": "Koji Kanemoto",
+  "elo": 967.8481268797339
+ },
+ {
+  "date": "2003/05/26",
+  "wrestler": "Stampede Kid",
+  "elo": 973.8110439462835
+ },
+ {
+  "date": "2003/05/26",
+  "wrestler": "Koji Kanemoto",
+  "elo": 881.7952818897832
+ },
+ {
+  "date": "2003/05/26",
+  "wrestler": "Jado",
+  "elo": 1059.649850676587
+ },
+ {
+  "date": "2003/05/26",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1000.0341402228438
+ },
+ {
+  "date": "2003/05/26",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1086.8250183385364
+ },
+ {
+  "date": "2003/05/27",
+  "wrestler": "Jado",
+  "elo": 997.5420131825441
+ },
+ {
+  "date": "2003/05/27",
+  "wrestler": "Stampede Kid",
+  "elo": 1098.0267189343692
+ },
+ {
+  "date": "2003/05/27",
+  "wrestler": "AKIRA",
+  "elo": 1098.317740643506
+ },
+ {
+  "date": "2003/05/30",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1049.8316997261797
+ },
+ {
+  "date": "2003/05/30",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 992.8585011339031
+ },
+ {
+  "date": "2003/05/30",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1057.1756390889407
+ },
+ {
+  "date": "2003/05/30",
+  "wrestler": "Tiger Mask",
+  "elo": 1063.340670198185
+ },
+ {
+  "date": "2003/05/30",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1045.8192036867838
+ },
+ {
+  "date": "2003/05/31",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1024.2517189068994
+ },
+ {
+  "date": "2003/05/31",
+  "wrestler": "Jado",
+  "elo": 1122.688612045818
+ },
+ {
+  "date": "2003/05/31",
+  "wrestler": "AKIRA",
+  "elo": 1039.1352271427997
+ },
+ {
+  "date": "2003/05/31",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1087.4875369439142
+ },
+ {
+  "date": "2003/06/01",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1043.9744932329363
+ },
+ {
+  "date": "2003/06/01",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1098.6344297655914
+ },
+ {
+  "date": "2003/06/01",
+  "wrestler": "Masayuki Naruse",
+  "elo": 979.8534558238491
+ },
+ {
+  "date": "2003/06/01",
+  "wrestler": "Tiger Mask",
+  "elo": 1107.7389332812354
+ },
+ {
+  "date": "2003/06/01",
+  "wrestler": "Masahito Kakihara",
+  "elo": 770.24443018392
+ },
+ {
+  "date": "2003/06/01",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1066.4199622523736
+ },
+ {
+  "date": "2003/06/02",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1069.7013156966032
+ },
+ {
+  "date": "2003/06/02",
+  "wrestler": "Jado",
+  "elo": 1056.7444231952597
+ },
+ {
+  "date": "2003/06/02",
+  "wrestler": "Stampede Kid",
+  "elo": 1011.1869348083951
+ },
+ {
+  "date": "2003/06/02",
+  "wrestler": "Masahito Kakihara",
+  "elo": 943.9239984358683
+ },
+ {
+  "date": "2003/06/02",
+  "wrestler": "AKIRA",
+  "elo": 1067.6587045953333
+ },
+ {
+  "date": "2003/06/04",
+  "wrestler": "Hiro Saito",
+  "elo": 931.5761832870626
+ },
+ {
+  "date": "2003/06/04",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1112.3074883371346
+ },
+ {
+  "date": "2003/06/04",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1079.6659647890997
+ },
+ {
+  "date": "2003/06/05",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1081.1907478227067
+ },
+ {
+  "date": "2003/06/05",
+  "wrestler": "Jado",
+  "elo": 1014.0308750528657
+ },
+ {
+  "date": "2003/06/05",
+  "wrestler": "Tiger Mask",
+  "elo": 1150.4524814236295
+ },
+ {
+  "date": "2003/06/05",
+  "wrestler": "Stampede Kid",
+  "elo": 969.0693153948025
+ },
+ {
+  "date": "2003/06/05",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1108.5375816659662
+ },
+ {
+  "date": "2003/06/06",
+  "wrestler": "Stampede Kid",
+  "elo": 872.1722440927265
+ },
+ {
+  "date": "2003/06/06",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1076.7505271259251
+ },
+ {
+  "date": "2003/06/06",
+  "wrestler": "AKIRA",
+  "elo": 1105.1346452860696
+ },
+ {
+  "date": "2003/06/06",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1143.1373247295799
+ },
+ {
+  "date": "2003/06/07",
+  "wrestler": "Jado",
+  "elo": 973.5773497867833
+ },
+ {
+  "date": "2003/06/07",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1121.644273088789
+ },
+ {
+  "date": "2003/06/07",
+  "wrestler": "Stampede Kid",
+  "elo": 1008.8845794980621
+ },
+ {
+  "date": "2003/06/07",
+  "wrestler": "Togi Makabe",
+  "elo": 1106.1529642452933
+ },
+ {
+  "date": "2003/06/08",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1031.312330884231
+ },
+ {
+  "date": "2003/06/08",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1153.9757779076604
+ },
+ {
+  "date": "2003/06/08",
+  "wrestler": "Tiger Mask",
+  "elo": 1096.3161220412646
+ },
+ {
+  "date": "2003/06/08",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1175.780632471154
+ },
+ {
+  "date": "2003/06/08",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1087.6900063010155
+ },
+ {
+  "date": "2003/06/08",
+  "wrestler": "AKIRA",
+  "elo": 1160.581963714634
+ },
+ {
+  "date": "2003/06/10",
+  "wrestler": "Tadao Yasuda",
+  "elo": 864.6255855677098
+ },
+ {
+  "date": "2003/06/10",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1100.039937367352
+ },
+ {
+  "date": "2003/06/10",
+  "wrestler": "Kazunari Murakami",
+  "elo": 911.1502243541727
+ },
+ {
+  "date": "2003/06/10",
+  "wrestler": "Enson Inoue",
+  "elo": 1097.9980436933329
+ },
+ {
+  "date": "2003/06/10",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1082.231121718133
+ },
+ {
+  "date": "2003/06/10",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1256.8775630743376
+ },
+ {
+  "date": "2003/06/11",
+  "wrestler": "AKIRA",
+  "elo": 1112.7678338194046
+ },
+ {
+  "date": "2003/06/11",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1246.7569548119377
+ },
+ {
+  "date": "2003/06/11",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1068.2754513594052
+ },
+ {
+  "date": "2003/06/11",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1151.6834299942807
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Blue Wolf",
+  "elo": 959.3392359272988
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Scott Norton",
+  "elo": 1084.62573738041
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Masayuki Naruse",
+  "elo": 952.202791984841
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Minoru Suzuki",
+  "elo": 958.2190777987798
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Tadao Yasuda",
+  "elo": 823.2352837416382
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Enson Inoue",
+  "elo": 1118.6931946063687
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Yuji Nagata",
+  "elo": 1037.9618359141064
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1089.1452989879185
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Tiger Mask",
+  "elo": 1132.7996091573027
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 920.8051037740219
+ },
+ {
+  "date": "2003/06/13",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1264.1762871308322
+ },
+ {
+  "date": "2003/07/04",
+  "wrestler": "Jado",
+  "elo": 1034.1659862534495
+ },
+ {
+  "date": "2003/07/04",
+  "wrestler": "Blue Wolf",
+  "elo": 896.166151327676
+ },
+ {
+  "date": "2003/07/04",
+  "wrestler": "Mike Barton",
+  "elo": 1125.1815595811306
+ },
+ {
+  "date": "2003/07/05",
+  "wrestler": "Blue Wolf",
+  "elo": 967.2902199390583
+ },
+ {
+  "date": "2003/07/06",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1213.8389900093875
+ },
+ {
+  "date": "2003/07/06",
+  "wrestler": "Tiger Mask",
+  "elo": 1198.6355387624033
+ },
+ {
+  "date": "2003/07/11",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1041.66239067701
+ },
+ {
+  "date": "2003/07/13",
+  "wrestler": "Tadao Yasuda",
+  "elo": 808.5914581138577
+ },
+ {
+  "date": "2003/07/13",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1267.8372435377773
+ },
+ {
+  "date": "2003/07/15",
+  "wrestler": "Blue Wolf",
+  "elo": 970.5324471520679
+ },
+ {
+  "date": "2003/07/15",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 843.4456613456595
+ },
+ {
+  "date": "2003/07/15",
+  "wrestler": "Josh Barnett",
+  "elo": 1181.948498484023
+ },
+ {
+  "date": "2003/07/16",
+  "wrestler": "Hiro Saito",
+  "elo": 935.4718189363557
+ },
+ {
+  "date": "2003/07/16",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 983.321920632299
+ },
+ {
+  "date": "2003/07/16",
+  "wrestler": "Tiger Mask",
+  "elo": 1221.1338248811448
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1076.4021558286129
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1108.7816261301155
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Togi Makabe",
+  "elo": 1050.505043879095
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Mike Barton",
+  "elo": 1071.569691569097
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1153.6518053793857
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Tiger Mask",
+  "elo": 1232.071470606879
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1025.3317074994002
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Heat",
+  "elo": 1062.3582988016153
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 818.0269211882733
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1013.9284069399213
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1108.7896821068907
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Scott Norton",
+  "elo": 1048.2764251481399
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Josh Barnett",
+  "elo": 1218.2978107162933
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Enson Inoue",
+  "elo": 1057.279698129514
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Yuji Nagata",
+  "elo": 1099.3753323909611
+ },
+ {
+  "date": "2003/07/21",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1246.2569860731378
+ },
+ {
+  "date": "2003/07/23",
+  "wrestler": "Mike Barton",
+  "elo": 1098.707332598402
+ },
+ {
+  "date": "2003/07/24",
+  "wrestler": "Hiro Saito",
+  "elo": 944.6710533586688
+ },
+ {
+  "date": "2003/07/24",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1182.8766074793466
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Masayuki Naruse",
+  "elo": 916.6557045324397
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Josh Barnett",
+  "elo": 1227.1845825793937
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 941.4996436594128
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Yuji Nagata",
+  "elo": 1152.6821298484401
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1055.9656368733256
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1141.9693442214837
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1099.3195275162507
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1199.9824332563794
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Tadao Yasuda",
+  "elo": 993.6896693808912
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1020.6132411123306
+ },
+ {
+  "date": "2003/08/10",
+  "wrestler": "Jun Akiyama",
+  "elo": 1061.6178806058024
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1189.7988105756056
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Josh Barnett",
+  "elo": 1251.2247620131757
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 876.6541932370907
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Tadao Yasuda",
+  "elo": 838.4520405784576
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 975.683373945072
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1100.895504040584
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Jun Akiyama",
+  "elo": 1017.0223871429386
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1143.9150209791146
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1181.425745963902
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Yuji Nagata",
+  "elo": 1109.447445158407
+ },
+ {
+  "date": "2003/08/11",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1243.2171179464126
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Masayuki Naruse",
+  "elo": 992.3568647326977
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Josh Barnett",
+  "elo": 1256.507382967147
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1040.5745403381986
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 855.0305006971503
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1248.6230410813978
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1071.4345909765032
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1120.6442339502948
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Yuji Nagata",
+  "elo": 1026.812469355487
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1003.7219921842972
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1109.3870511041598
+ },
+ {
+  "date": "2003/08/12",
+  "wrestler": "Jun Akiyama",
+  "elo": 1089.061082002681
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Blue Wolf",
+  "elo": 938.2079187819584
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Josh Barnett",
+  "elo": 1264.5885150596744
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Tadao Yasuda",
+  "elo": 933.5408836871816
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 995.3927176913814
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1053.9468741473295
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1126.8747679333335
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1259.6341486589383
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Yuji Nagata",
+  "elo": 1034.1178297596875
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 997.5073656339
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Jun Akiyama",
+  "elo": 1132.1282567069795
+ },
+ {
+  "date": "2003/08/14",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1166.02484081738
+ },
+ {
+  "date": "2003/08/15",
+  "wrestler": "Blue Wolf",
+  "elo": 947.0664121612166
+ },
+ {
+  "date": "2003/08/15",
+  "wrestler": "Tadao Yasuda",
+  "elo": 854.3627151943738
+ },
+ {
+  "date": "2003/08/15",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1059.0725217705065
+ },
+ {
+  "date": "2003/08/15",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1133.1118579595538
+ },
+ {
+  "date": "2003/08/15",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 906.492772522713
+ },
+ {
+  "date": "2003/08/15",
+  "wrestler": "Yuji Nagata",
+  "elo": 1078.5678023440219
+ },
+ {
+  "date": "2003/08/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1019.5390546182925
+ },
+ {
+  "date": "2003/08/15",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1200.432660346417
+ },
+ {
+  "date": "2003/08/15",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1272.2342648531724
+ },
+ {
+  "date": "2003/08/15",
+  "wrestler": "Jun Akiyama",
+  "elo": 1119.5856652130624
+ },
+ {
+  "date": "2003/08/16",
+  "wrestler": "Yuji Nagata",
+  "elo": 1073.2056105535555
+ },
+ {
+  "date": "2003/08/16",
+  "wrestler": "Jun Akiyama",
+  "elo": 1170.1941560524872
+ },
+ {
+  "date": "2003/08/16",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1242.1400415517282
+ },
+ {
+  "date": "2003/08/16",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1230.526883647861
+ },
+ {
+  "date": "2003/08/17",
+  "wrestler": "Heat",
+  "elo": 1086.0370387998732
+ },
+ {
+  "date": "2003/08/17",
+  "wrestler": "Jun Akiyama",
+  "elo": 1128.7904995309902
+ },
+ {
+  "date": "2003/08/17",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1251.2287119086095
+ },
+ {
+  "date": "2003/08/24",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 910.74922681431
+ },
+ {
+  "date": "2003/08/24",
+  "wrestler": "Togi Makabe",
+  "elo": 1066.7266905191063
+ },
+ {
+  "date": "2003/08/24",
+  "wrestler": "Makai #1",
+  "elo": 1013.2699244113945
+ },
+ {
+  "date": "2003/08/24",
+  "wrestler": "Tadao Yasuda",
+  "elo": 942.1407876945043
+ },
+ {
+  "date": "2003/08/24",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1119.9642478301187
+ },
+ {
+  "date": "2003/08/24",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1113.8090559784232
+ },
+ {
+  "date": "2003/08/24",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1059.857881935313
+ },
+ {
+  "date": "2003/08/28",
+  "wrestler": "Blue Wolf",
+  "elo": 874.9413093768791
+ },
+ {
+  "date": "2003/08/28",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 851.022694956091
+ },
+ {
+  "date": "2003/08/28",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1088.935787699616
+ },
+ {
+  "date": "2003/08/28",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1158.178965336042
+ },
+ {
+  "date": "2003/08/28",
+  "wrestler": "Kazunari Murakami",
+  "elo": 964.735773865563
+ },
+ {
+  "date": "2003/08/28",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1068.7316876926507
+ },
+ {
+  "date": "2003/08/28",
+  "wrestler": "Togi Makabe",
+  "elo": 1041.0354551540665
+ },
+ {
+  "date": "2003/08/28",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1264.0743295911295
+ },
+ {
+  "date": "2003/08/28",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1254.8748459026428
+ },
+ {
+  "date": "2003/09/03",
+  "wrestler": "Makai #5",
+  "elo": 1086.0116645906066
+ },
+ {
+  "date": "2003/09/04",
+  "wrestler": "Tiger Mask",
+  "elo": 1242.4806373557335
+ },
+ {
+  "date": "2003/09/04",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1117.6838351805673
+ },
+ {
+  "date": "2003/09/04",
+  "wrestler": "Tadao Yasuda",
+  "elo": 958.6947554310585
+ },
+ {
+  "date": "2003/09/05",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1060.6510621417704
+ },
+ {
+  "date": "2003/09/08",
+  "wrestler": "Hiro Saito",
+  "elo": 996.7348949451575
+ },
+ {
+  "date": "2003/09/09",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1121.0904967146728
+ },
+ {
+  "date": "2003/09/09",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1076.037646225394
+ },
+ {
+  "date": "2003/09/09",
+  "wrestler": "Hiro Saito",
+  "elo": 984.8016024647737
+ },
+ {
+  "date": "2003/09/09",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 972.2940587507301
+ },
+ {
+  "date": "2003/09/11",
+  "wrestler": "Hiro Saito",
+  "elo": 987.0652078452125
+ },
+ {
+  "date": "2003/09/11",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1090.2765358245206
+ },
+ {
+  "date": "2003/09/11",
+  "wrestler": "Yuji Nagata",
+  "elo": 1058.4878134500498
+ },
+ {
+  "date": "2003/09/14",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1031.4520749287688
+ },
+ {
+  "date": "2003/09/14",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1158.3946272750484
+ },
+ {
+  "date": "2003/09/14",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1142.5696795002063
+ },
+ {
+  "date": "2003/09/14",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1087.5870110155581
+ },
+ {
+  "date": "2003/09/14",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1279.1227416736342
+ },
+ {
+  "date": "2003/09/15",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1054.3370921535704
+ },
+ {
+  "date": "2003/09/15",
+  "wrestler": "Ryota Chikuzen",
+  "elo": 1066.7534045611023
+ },
+ {
+  "date": "2003/09/15",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1128.7627180603122
+ },
+ {
+  "date": "2003/09/21",
+  "wrestler": "Togi Makabe",
+  "elo": 980.2282283363179
+ },
+ {
+  "date": "2003/09/21",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1086.3502275010603
+ },
+ {
+  "date": "2003/09/21",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1108.1913709841067
+ },
+ {
+  "date": "2003/09/21",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1272.0640001606926
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Heat",
+  "elo": 1083.1957518162567
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1022.9454524721127
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1073.680942998589
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1051.7936552266913
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1029.0914613650468
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Tiger Mask",
+  "elo": 1238.7391389600941
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Jado",
+  "elo": 1056.9454198306878
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Blue Wolf",
+  "elo": 1028.4834164950416
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1021.0238524746131
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1094.518625881064
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1114.5894241089666
+ },
+ {
+  "date": "2003/10/13",
+  "wrestler": "Hulk Hogan",
+  "elo": 1054.3275010032137
+ },
+ {
+  "date": "2003/10/15",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1081.0297332055923
+ },
+ {
+  "date": "2003/10/15",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1108.3635910311668
+ },
+ {
+  "date": "2003/10/15",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1208.2100015799235
+ },
+ {
+  "date": "2003/10/15",
+  "wrestler": "Togi Makabe",
+  "elo": 1004.4634909557531
+ },
+ {
+  "date": "2003/10/16",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1118.6615608968293
+ },
+ {
+  "date": "2003/10/17",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1101.3039889116399
+ },
+ {
+  "date": "2003/10/17",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1189.1184655845793
+ },
+ {
+  "date": "2003/10/17",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1066.4805725817105
+ },
+ {
+  "date": "2003/10/17",
+  "wrestler": "Togi Makabe",
+  "elo": 1038.104187574979
+ },
+ {
+  "date": "2003/10/18",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1063.66877431601
+ },
+ {
+  "date": "2003/10/18",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1159.1120207770632
+ },
+ {
+  "date": "2003/10/18",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1121.1576750461381
+ },
+ {
+  "date": "2003/10/18",
+  "wrestler": "Yuji Nagata",
+  "elo": 1126.448603988491
+ },
+ {
+  "date": "2003/10/20",
+  "wrestler": "Togi Makabe",
+  "elo": 1074.4832951763256
+ },
+ {
+  "date": "2003/10/20",
+  "wrestler": "Mike Barton",
+  "elo": 1092.0937228917405
+ },
+ {
+  "date": "2003/10/20",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1282.9441074052174
+ },
+ {
+  "date": "2003/10/21",
+  "wrestler": "Enson Inoue",
+  "elo": 1082.4761838578142
+ },
+ {
+  "date": "2003/10/21",
+  "wrestler": "Osamu Nishimura",
+  "elo": 971.300390124179
+ },
+ {
+  "date": "2003/10/21",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1072.6689148225469
+ },
+ {
+  "date": "2003/10/21",
+  "wrestler": "Togi Makabe",
+  "elo": 1050.9420842199038
+ },
+ {
+  "date": "2003/10/21",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1290.893347151845
+ },
+ {
+  "date": "2003/10/21",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1121.4722714286445
+ },
+ {
+  "date": "2003/10/21",
+  "wrestler": "Yuji Nagata",
+  "elo": 1119.4403662171424
+ },
+ {
+  "date": "2003/10/21",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1297.2427918082337
+ },
+ {
+  "date": "2003/10/22",
+  "wrestler": "Togi Makabe",
+  "elo": 1008.1394066877741
+ },
+ {
+  "date": "2003/10/22",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1144.1066664437697
+ },
+ {
+  "date": "2003/10/22",
+  "wrestler": "Blue Wolf",
+  "elo": 1020.0169806415307
+ },
+ {
+  "date": "2003/10/22",
+  "wrestler": "Yuji Nagata",
+  "elo": 1112.9538332617144
+ },
+ {
+  "date": "2003/10/22",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1313.8382193289644
+ },
+ {
+  "date": "2003/10/22",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 849.380236244299
+ },
+ {
+  "date": "2003/10/23",
+  "wrestler": "Hiro Saito",
+  "elo": 1041.8796670802394
+ },
+ {
+  "date": "2003/10/23",
+  "wrestler": "Osamu Nishimura",
+  "elo": 960.1208355699782
+ },
+ {
+  "date": "2003/10/23",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1075.2585440812968
+ },
+ {
+  "date": "2003/10/23",
+  "wrestler": "Togi Makabe",
+  "elo": 1034.3369529851986
+ },
+ {
+  "date": "2003/10/25",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1154.1393422087624
+ },
+ {
+  "date": "2003/10/26",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1063.2006539262707
+ },
+ {
+  "date": "2003/10/26",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1336.6920459407502
+ },
+ {
+  "date": "2003/10/26",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1076.5981201505156
+ },
+ {
+  "date": "2003/10/26",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1203.6715756726858
+ },
+ {
+  "date": "2003/10/26",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1114.600955173893
+ },
+ {
+  "date": "2003/10/26",
+  "wrestler": "Blue Wolf",
+  "elo": 984.2162516706287
+ },
+ {
+  "date": "2003/10/26",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1157.2730003995464
+ },
+ {
+  "date": "2003/10/26",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 813.4069175295821
+ },
+ {
+  "date": "2003/10/26",
+  "wrestler": "Yuji Nagata",
+  "elo": 1130.9404926190728
+ },
+ {
+  "date": "2003/10/26",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1279.4662746712138
+ },
+ {
+  "date": "2003/10/28",
+  "wrestler": "Togi Makabe",
+  "elo": 1079.4114939572319
+ },
+ {
+  "date": "2003/10/28",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1072.027110924848
+ },
+ {
+  "date": "2003/10/28",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1344.648566879659
+ },
+ {
+  "date": "2003/10/30",
+  "wrestler": "Jado",
+  "elo": 1071.4930100343222
+ },
+ {
+  "date": "2003/10/31",
+  "wrestler": "Blue Wolf",
+  "elo": 975.0579675288689
+ },
+ {
+  "date": "2003/10/31",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1142.3329251087066
+ },
+ {
+  "date": "2003/10/31",
+  "wrestler": "Togi Makabe",
+  "elo": 1103.5098533898315
+ },
+ {
+  "date": "2003/11/01",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1096.9043133946484
+ },
+ {
+  "date": "2003/11/01",
+  "wrestler": "Togi Makabe",
+  "elo": 1160.7448822039455
+ },
+ {
+  "date": "2003/11/02",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1085.7233684727448
+ },
+ {
+  "date": "2003/11/03",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1029.5427272763172
+ },
+ {
+  "date": "2003/11/03",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1158.7391708961648
+ },
+ {
+  "date": "2003/11/03",
+  "wrestler": "Montanha Silva",
+  "elo": 1052.2764428358919
+ },
+ {
+  "date": "2003/11/03",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1173.5132831255642
+ },
+ {
+  "date": "2003/11/03",
+  "wrestler": "Yuji Nagata",
+  "elo": 1191.2570777133158
+ },
+ {
+  "date": "2003/11/03",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1315.012588202771
+ },
+ {
+  "date": "2003/11/03",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1309.1022533481018
+ },
+ {
+  "date": "2003/11/24",
+  "wrestler": "Togi Makabe",
+  "elo": 1086.3061189322204
+ },
+ {
+  "date": "2003/11/24",
+  "wrestler": "Blue Wolf",
+  "elo": 1123.9354940723188
+ },
+ {
+  "date": "2003/11/24",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1028.1772712068098
+ },
+ {
+  "date": "2003/11/24",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1097.5749199456554
+ },
+ {
+  "date": "2003/11/26",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1043.550454377172
+ },
+ {
+  "date": "2003/11/26",
+  "wrestler": "Hiro Saito",
+  "elo": 1056.2163199994234
+ },
+ {
+  "date": "2003/11/27",
+  "wrestler": "American Dragon",
+  "elo": 1044.5376001429556
+ },
+ {
+  "date": "2003/11/28",
+  "wrestler": "Hiro Saito",
+  "elo": 1002.1899139852392
+ },
+ {
+  "date": "2003/11/28",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1082.203677220994
+ },
+ {
+  "date": "2003/11/29",
+  "wrestler": "Blue Wolf",
+  "elo": 1068.45839364006
+ },
+ {
+  "date": "2003/11/29",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1141.2004689050036
+ },
+ {
+  "date": "2003/11/29",
+  "wrestler": "Josh Barnett",
+  "elo": 1225.7651876664252
+ },
+ {
+  "date": "2003/11/29",
+  "wrestler": "Scott Norton",
+  "elo": 1125.923079934638
+ },
+ {
+  "date": "2003/11/29",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1071.9921102800515
+ },
+ {
+  "date": "2003/11/29",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1320.3655111486082
+ },
+ {
+  "date": "2003/11/30",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1032.794038605054
+ },
+ {
+  "date": "2003/11/30",
+  "wrestler": "Togi Makabe",
+  "elo": 1135.7157575481604
+ },
+ {
+  "date": "2003/11/30",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1177.9592560468793
+ },
+ {
+  "date": "2003/11/30",
+  "wrestler": "Josh Barnett",
+  "elo": 1229.898705844571
+ },
+ {
+  "date": "2003/11/30",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1327.7293448587102
+ },
+ {
+  "date": "2003/11/30",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1089.9731130482116
+ },
+ {
+  "date": "2003/11/30",
+  "wrestler": "Scott Norton",
+  "elo": 1178.282891995133
+ },
+ {
+  "date": "2003/12/06",
+  "wrestler": "American Dragon",
+  "elo": 1051.125172938832
+ },
+ {
+  "date": "2003/12/06",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1100.2074637452333
+ },
+ {
+  "date": "2003/12/07",
+  "wrestler": "Heat",
+  "elo": 1117.2769227477572
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "American Dragon",
+  "elo": 1070.7164024217998
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1082.297441430396
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Tiger Mask",
+  "elo": 1192.716887352061
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 997.4959239617154
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Heat",
+  "elo": 1082.9397195180413
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Josh Barnett",
+  "elo": 1247.067307459429
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1063.7514534034658
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Blue Wolf",
+  "elo": 1033.7149952049433
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1212.702654481996
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1141.0026978074827
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Scott Norton",
+  "elo": 1204.1114433181995
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Yuji Nagata",
+  "elo": 1128.0926365903092
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1160.739361068662
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1115.7313436801662
+ },
+ {
+  "date": "2003/12/08",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1340.463907471129
+ },
+ {
+  "date": "2003/12/09",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1033.963838844606
+ },
+ {
+  "date": "2003/12/09",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1227.5964617614259
+ },
+ {
+  "date": "2003/12/09",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1149.6660972679429
+ },
+ {
+  "date": "2003/12/09",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1296.5603902983873
+ },
+ {
+  "date": "2003/12/09",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1173.109992652682
+ },
+ {
+  "date": "2003/12/11",
+  "wrestler": "Togi Makabe",
+  "elo": 1166.4691211892577
+ },
+ {
+  "date": "2003/12/12",
+  "wrestler": "Togi Makabe",
+  "elo": 1167.6076177480252
+ },
+ {
+  "date": "2003/12/14",
+  "wrestler": "Blue Wolf",
+  "elo": 1069.641101215611
+ },
+ {
+  "date": "2003/12/14",
+  "wrestler": "Togi Makabe",
+  "elo": 1137.6335118883812
+ },
+ {
+  "date": "2003/12/14",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1329.9996411325928
+ },
+ {
+  "date": "2003/12/14",
+  "wrestler": "Jado",
+  "elo": 1023.1397281771982
+ },
+ {
+  "date": "2003/12/14",
+  "wrestler": "Heat",
+  "elo": 1131.2930013751652
+ },
+ {
+  "date": "2003/12/23",
+  "wrestler": "Heat",
+  "elo": 1155.0988510567556
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

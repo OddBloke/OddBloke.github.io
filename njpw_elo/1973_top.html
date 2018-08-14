@@ -1,0 +1,5930 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1973/01/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 950.0
+ },
+ {
+  "date": "1973/01/11",
+  "wrestler": "Shoji Kai",
+  "elo": 1050.0
+ },
+ {
+  "date": "1973/01/11",
+  "wrestler": "Osamu Kido",
+  "elo": 950.0
+ },
+ {
+  "date": "1973/01/11",
+  "wrestler": "Art Domingo",
+  "elo": 1050.0
+ },
+ {
+  "date": "1973/01/11",
+  "wrestler": "Geoff Portz",
+  "elo": 950.0
+ },
+ {
+  "date": "1973/01/11",
+  "wrestler": "Toyonobori",
+  "elo": 1050.0
+ },
+ {
+  "date": "1973/01/11",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 950.0
+ },
+ {
+  "date": "1973/01/11",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1050.0
+ },
+ {
+  "date": "1973/01/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1078.012999960577
+ },
+ {
+  "date": "1973/01/16",
+  "wrestler": "Shoji Kai",
+  "elo": 1085.9935000197115
+ },
+ {
+  "date": "1973/01/16",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 864.2926234816763
+ },
+ {
+  "date": "1973/01/16",
+  "wrestler": "Tony Charles",
+  "elo": 1042.8536882591618
+ },
+ {
+  "date": "1973/01/16",
+  "wrestler": "Art Domingo",
+  "elo": 1000.0
+ },
+ {
+  "date": "1973/01/16",
+  "wrestler": "Toyonobori",
+  "elo": 1100.0
+ },
+ {
+  "date": "1973/01/16",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 942.8536882591618
+ },
+ {
+  "date": "1973/01/16",
+  "wrestler": "Geoff Portz",
+  "elo": 1064.2926234816764
+ },
+ {
+  "date": "1973/01/20",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1059.1098374581368
+ },
+ {
+  "date": "1973/01/20",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 900.3442232171751
+ },
+ {
+  "date": "1973/01/20",
+  "wrestler": "Shoji Kai",
+  "elo": 1023.8647080827351
+ },
+ {
+  "date": "1973/01/20",
+  "wrestler": "Art Domingo",
+  "elo": 1062.1287919369765
+ },
+ {
+  "date": "1973/01/20",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1007.1463117408382
+ },
+ {
+  "date": "1973/01/20",
+  "wrestler": "Toyonobori",
+  "elo": 1142.8536882591618
+ },
+ {
+  "date": "1973/01/20",
+  "wrestler": "Osamu Kido",
+  "elo": 876.1068203396712
+ },
+ {
+  "date": "1973/01/20",
+  "wrestler": "Tony Charles",
+  "elo": 1079.8002780893262
+ },
+ {
+  "date": "1973/01/21",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1014.3788606930946
+ },
+ {
+  "date": "1973/01/21",
+  "wrestler": "Osamu Kido",
+  "elo": 880.5189462399369
+ },
+ {
+  "date": "1973/01/21",
+  "wrestler": "Shoji Kai",
+  "elo": 1107.2803643771326
+ },
+ {
+  "date": "1973/01/21",
+  "wrestler": "Geoff Portz",
+  "elo": 1068.846114944782
+ },
+ {
+  "date": "1973/01/21",
+  "wrestler": "Art Domingo",
+  "elo": 1064.9678511511179
+ },
+ {
+  "date": "1973/01/21",
+  "wrestler": "Toyonobori",
+  "elo": 1221.0956542236752
+ },
+ {
+  "date": "1973/01/21",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 830.1513189503307
+ },
+ {
+  "date": "1973/01/21",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1042.2427638742604
+ },
+ {
+  "date": "1973/01/21",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 859.154979600488
+ },
+ {
+  "date": "1973/01/21",
+  "wrestler": "The Tiger",
+  "elo": 1041.8493543293368
+ },
+ {
+  "date": "1973/01/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 977.4386828265453
+ },
+ {
+  "date": "1973/01/22",
+  "wrestler": "Shoji Kai",
+  "elo": 1144.2205422436818
+ },
+ {
+  "date": "1973/01/22",
+  "wrestler": "Art Domingo",
+  "elo": 985.526903249777
+ },
+ {
+  "date": "1973/01/22",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 989.0332147530124
+ },
+ {
+  "date": "1973/01/22",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1015.9258222098118
+ },
+ {
+  "date": "1973/01/22",
+  "wrestler": "Toyonobori",
+  "elo": 1234.2541250558995
+ },
+ {
+  "date": "1973/01/22",
+  "wrestler": "Osamu Kido",
+  "elo": 832.3171432269976
+ },
+ {
+  "date": "1973/01/22",
+  "wrestler": "Tony Charles",
+  "elo": 1103.9011795957958
+ },
+ {
+  "date": "1973/01/24",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1008.5840447420115
+ },
+ {
+  "date": "1973/01/24",
+  "wrestler": "Shoji Kai",
+  "elo": 1180.9245651072742
+ },
+ {
+  "date": "1973/01/24",
+  "wrestler": "Art Domingo",
+  "elo": 886.5360665644394
+ },
+ {
+  "date": "1973/01/24",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1088.0240514383502
+ },
+ {
+  "date": "1973/01/24",
+  "wrestler": "Geoff Portz",
+  "elo": 1041.0011527171548
+ },
+ {
+  "date": "1973/01/24",
+  "wrestler": "Toyonobori",
+  "elo": 1248.176606169713
+ },
+ {
+  "date": "1973/01/24",
+  "wrestler": "Osamu Kido",
+  "elo": 780.738078181869
+ },
+ {
+  "date": "1973/01/24",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1041.7153547323762
+ },
+ {
+  "date": "1973/01/27",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 981.5337391383823
+ },
+ {
+  "date": "1973/01/27",
+  "wrestler": "Shoji Kai",
+  "elo": 1207.9748707109034
+ },
+ {
+  "date": "1973/01/27",
+  "wrestler": "Osamu Kido",
+  "elo": 744.1990914035493
+ },
+ {
+  "date": "1973/01/27",
+  "wrestler": "Geoff Portz",
+  "elo": 1059.2706461063146
+ },
+ {
+  "date": "1973/01/27",
+  "wrestler": "Art Domingo",
+  "elo": 864.3598026434998
+ },
+ {
+  "date": "1973/01/27",
+  "wrestler": "Toyonobori",
+  "elo": 1253.7206721499479
+ },
+ {
+  "date": "1973/01/27",
+  "wrestler": "The Tiger",
+  "elo": 985.8557068226356
+ },
+ {
+  "date": "1973/01/27",
+  "wrestler": "Antonio Inoki",
+  "elo": 1055.993647506701
+ },
+ {
+  "date": "1973/01/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1108.7278267481627
+ },
+ {
+  "date": "1973/01/28",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1094.5186645031051
+ },
+ {
+  "date": "1973/01/28",
+  "wrestler": "Art Domingo",
+  "elo": 840.0535191206044
+ },
+ {
+  "date": "1973/01/28",
+  "wrestler": "Shoji Kai",
+  "elo": 1214.0514415916273
+ },
+ {
+  "date": "1973/01/28",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1018.9287606368946
+ },
+ {
+  "date": "1973/01/28",
+  "wrestler": "Toyonobori",
+  "elo": 1265.1139691976887
+ },
+ {
+  "date": "1973/01/28",
+  "wrestler": "Osamu Kido",
+  "elo": 721.8018520296899
+ },
+ {
+  "date": "1973/01/28",
+  "wrestler": "Tony Charles",
+  "elo": 1115.0997992827256
+ },
+ {
+  "date": "1973/01/30",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1059.5350918692748
+ },
+ {
+  "date": "1973/01/30",
+  "wrestler": "Shoji Kai",
+  "elo": 1215.5643115139849
+ },
+ {
+  "date": "1973/01/30",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1013.2918003813867
+ },
+ {
+  "date": "1973/01/30",
+  "wrestler": "Art Domingo",
+  "elo": 1002.5072473640413
+ },
+ {
+  "date": "1973/01/30",
+  "wrestler": "Geoff Portz",
+  "elo": 1035.8539429469506
+ },
+ {
+  "date": "1973/01/30",
+  "wrestler": "Toyonobori",
+  "elo": 1276.8223207773706
+ },
+ {
+  "date": "1973/01/30",
+  "wrestler": "Osamu Kido",
+  "elo": 691.1794831877182
+ },
+ {
+  "date": "1973/01/30",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1034.2399450578805
+ },
+ {
+  "date": "1973/02/01",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1066.3679156045196
+ },
+ {
+  "date": "1973/02/01",
+  "wrestler": "Shoji Kai",
+  "elo": 1230.2285704190208
+ },
+ {
+  "date": "1973/02/01",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 805.6756022770377
+ },
+ {
+  "date": "1973/02/01",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1060.9796337196055
+ },
+ {
+  "date": "1973/02/01",
+  "wrestler": "Art Domingo",
+  "elo": 985.4147294997363
+ },
+ {
+  "date": "1973/02/01",
+  "wrestler": "Toyonobori",
+  "elo": 1285.3685797095231
+ },
+ {
+  "date": "1973/02/01",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 959.3516158649218
+ },
+ {
+  "date": "1973/02/01",
+  "wrestler": "The Tiger",
+  "elo": 1093.7360758555653
+ },
+ {
+  "date": "1973/02/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 976.7102023963939
+ },
+ {
+  "date": "1973/02/03",
+  "wrestler": "Osamu Kido",
+  "elo": 870.4949096039695
+ },
+ {
+  "date": "1973/02/03",
+  "wrestler": "Shoji Kai",
+  "elo": 1190.0460966002202
+ },
+ {
+  "date": "1973/02/03",
+  "wrestler": "Art Domingo",
+  "elo": 1146.1446247749393
+ },
+ {
+  "date": "1973/02/03",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1039.4228864982838
+ },
+ {
+  "date": "1973/02/03",
+  "wrestler": "Toyonobori",
+  "elo": 1296.146953320184
+ },
+ {
+  "date": "1973/02/03",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 763.6785096055681
+ },
+ {
+  "date": "1973/02/03",
+  "wrestler": "Geoff Portz",
+  "elo": 1056.8524892826854
+ },
+ {
+  "date": "1973/02/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 931.4059764661048
+ },
+ {
+  "date": "1973/02/05",
+  "wrestler": "Shoji Kai",
+  "elo": 1212.6982095653648
+ },
+ {
+  "date": "1973/02/05",
+  "wrestler": "Art Domingo",
+  "elo": 1071.5848986259334
+ },
+ {
+  "date": "1973/02/05",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1108.4710681629338
+ },
+ {
+  "date": "1973/02/05",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1020.8472325374762
+ },
+ {
+  "date": "1973/02/05",
+  "wrestler": "Toyonobori",
+  "elo": 1305.4347803005878
+ },
+ {
+  "date": "1973/02/05",
+  "wrestler": "Osamu Kido",
+  "elo": 827.157543861986
+ },
+ {
+  "date": "1973/02/05",
+  "wrestler": "The Tiger",
+  "elo": 1115.404758726557
+ },
+ {
+  "date": "1973/02/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1068.7789860991682
+ },
+ {
+  "date": "1973/02/07",
+  "wrestler": "Shoji Kai",
+  "elo": 1213.8895703935425
+ },
+ {
+  "date": "1973/02/07",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1046.121710754789
+ },
+ {
+  "date": "1973/02/07",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1083.1965899456209
+ },
+ {
+  "date": "1973/02/07",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 740.3517149827161
+ },
+ {
+  "date": "1973/02/07",
+  "wrestler": "The Tiger",
+  "elo": 1127.068156037983
+ },
+ {
+  "date": "1973/02/07",
+  "wrestler": "Art Domingo",
+  "elo": 1050.9348167180895
+ },
+ {
+  "date": "1973/02/07",
+  "wrestler": "Toyonobori",
+  "elo": 1315.75982125451
+ },
+ {
+  "date": "1973/02/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1123.4262206379003
+ },
+ {
+  "date": "1973/02/09",
+  "wrestler": "Shoji Kai",
+  "elo": 1215.0416971608265
+ },
+ {
+  "date": "1973/02/09",
+  "wrestler": "Art Domingo",
+  "elo": 1000.2421993970954
+ },
+ {
+  "date": "1973/02/09",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1096.8143280757831
+ },
+ {
+  "date": "1973/02/09",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1062.4248817023908
+ },
+ {
+  "date": "1973/02/09",
+  "wrestler": "Toyonobori",
+  "elo": 1326.145675376125
+ },
+ {
+  "date": "1973/02/09",
+  "wrestler": "Osamu Kido",
+  "elo": 795.1387445167395
+ },
+ {
+  "date": "1973/02/09",
+  "wrestler": "Tony Charles",
+  "elo": 1131.1091989553488
+ },
+ {
+  "date": "1973/02/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1127.1485705451444
+ },
+ {
+  "date": "1973/02/11",
+  "wrestler": "Shoji Kai",
+  "elo": 1228.2796437199272
+ },
+ {
+  "date": "1973/02/11",
+  "wrestler": "Osamu Kido",
+  "elo": 759.7916275815585
+ },
+ {
+  "date": "1973/02/11",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1080.0984401699814
+ },
+ {
+  "date": "1973/02/11",
+  "wrestler": "Art Domingo",
+  "elo": 986.957889594951
+ },
+ {
+  "date": "1973/02/11",
+  "wrestler": "Toyonobori",
+  "elo": 1332.7878302771971
+ },
+ {
+  "date": "1973/02/11",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 721.2711387634225
+ },
+ {
+  "date": "1973/02/11",
+  "wrestler": "Tony Charles",
+  "elo": 1140.6494870649956
+ },
+ {
+  "date": "1973/02/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1167.492176464896
+ },
+ {
+  "date": "1973/02/12",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1100.952928160448
+ },
+ {
+  "date": "1973/02/12",
+  "wrestler": "Shoji Kai",
+  "elo": 1188.256740838535
+ },
+ {
+  "date": "1973/02/12",
+  "wrestler": "Art Domingo",
+  "elo": 1147.0495011205194
+ },
+ {
+  "date": "1973/02/12",
+  "wrestler": "Geoff Portz",
+  "elo": 1039.891738867342
+ },
+ {
+  "date": "1973/02/12",
+  "wrestler": "Toyonobori",
+  "elo": 1341.268205484869
+ },
+ {
+  "date": "1973/02/12",
+  "wrestler": "Osamu Kido",
+  "elo": 739.7045103717604
+ },
+ {
+  "date": "1973/02/12",
+  "wrestler": "Tony Charles",
+  "elo": 1150.6930456698947
+ },
+ {
+  "date": "1973/02/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1170.1595301456737
+ },
+ {
+  "date": "1973/02/13",
+  "wrestler": "Shoji Kai",
+  "elo": 1216.2890406876775
+ },
+ {
+  "date": "1973/02/13",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 698.7735486440092
+ },
+ {
+  "date": "1973/02/13",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1091.347235229688
+ },
+ {
+  "date": "1973/02/13",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1054.7041495733235
+ },
+ {
+  "date": "1973/02/13",
+  "wrestler": "The Tiger",
+  "elo": 1173.3169346251075
+ },
+ {
+  "date": "1973/02/13",
+  "wrestler": "Art Domingo",
+  "elo": 1122.4114924117266
+ },
+ {
+  "date": "1973/02/13",
+  "wrestler": "Toyonobori",
+  "elo": 1353.5872098392654
+ },
+ {
+  "date": "1973/02/15",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1077.9017492020146
+ },
+ {
+  "date": "1973/02/15",
+  "wrestler": "Osamu Kido",
+  "elo": 924.2200722590787
+ },
+ {
+  "date": "1973/02/15",
+  "wrestler": "Shoji Kai",
+  "elo": 1184.693737204555
+ },
+ {
+  "date": "1973/02/15",
+  "wrestler": "Art Domingo",
+  "elo": 1185.6020993779716
+ },
+ {
+  "date": "1973/02/15",
+  "wrestler": "Geoff Portz",
+  "elo": 1025.7768013912878
+ },
+ {
+  "date": "1973/02/15",
+  "wrestler": "Toyonobori",
+  "elo": 1360.6446785772923
+ },
+ {
+  "date": "1973/02/15",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1009.9580476183309
+ },
+ {
+  "date": "1973/02/15",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1136.0933371846809
+ },
+ {
+  "date": "1973/02/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1122.3944848644244
+ },
+ {
+  "date": "1973/02/16",
+  "wrestler": "Shoji Kai",
+  "elo": 1186.8749334224913
+ },
+ {
+  "date": "1973/02/16",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 684.9646163626247
+ },
+ {
+  "date": "1973/02/16",
+  "wrestler": "Tony Charles",
+  "elo": 1157.5975118105869
+ },
+ {
+  "date": "1973/02/16",
+  "wrestler": "Art Domingo",
+  "elo": 1158.8576306872822
+ },
+ {
+  "date": "1973/02/16",
+  "wrestler": "Toyonobori",
+  "elo": 1374.016912922637
+ },
+ {
+  "date": "1973/02/16",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 981.8754733545961
+ },
+ {
+  "date": "1973/02/16",
+  "wrestler": "The Tiger",
+  "elo": 1201.399508888842
+ },
+ {
+  "date": "1973/02/20",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1125.4130674709447
+ },
+ {
+  "date": "1973/02/20",
+  "wrestler": "Shoji Kai",
+  "elo": 1214.4596554450702
+ },
+ {
+  "date": "1973/02/20",
+  "wrestler": "Art Domingo",
+  "elo": 1079.4335143434469
+ },
+ {
+  "date": "1973/02/20",
+  "wrestler": "Osamu Kido",
+  "elo": 1083.0683049467493
+ },
+ {
+  "date": "1973/02/20",
+  "wrestler": "Bruno Bekkar",
+  "elo": 1115.8248600325576
+ },
+ {
+  "date": "1973/02/20",
+  "wrestler": "Toyonobori",
+  "elo": 1384.1511514986987
+ },
+ {
+  "date": "1973/02/20",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 937.8073293987287
+ },
+ {
+  "date": "1973/02/20",
+  "wrestler": "The Tiger",
+  "elo": 1212.416544877809
+ },
+ {
+  "date": "1973/03/30",
+  "wrestler": "Shoji Kai",
+  "elo": 1225.729141719263
+ },
+ {
+  "date": "1973/03/30",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1058.1097557017465
+ },
+ {
+  "date": "1973/03/30",
+  "wrestler": "Professor van Zyl",
+  "elo": 1067.3033117691982
+ },
+ {
+  "date": "1973/03/30",
+  "wrestler": "Osamu Kido",
+  "elo": 1021.3365127294395
+ },
+ {
+  "date": "1973/03/30",
+  "wrestler": "Arpad Weber",
+  "elo": 1061.7317922173097
+ },
+ {
+  "date": "1973/03/30",
+  "wrestler": "Jozsef Molnar",
+  "elo": 941.1441424758206
+ },
+ {
+  "date": "1973/03/30",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1055.5190444470877
+ },
+ {
+  "date": "1973/04/01",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1062.0131865707315
+ },
+ {
+  "date": "1973/04/01",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1094.4708602828139
+ },
+ {
+  "date": "1973/04/01",
+  "wrestler": "Shoji Kai",
+  "elo": 1189.733345245135
+ },
+ {
+  "date": "1973/04/01",
+  "wrestler": "Arpad Weber",
+  "elo": 1133.7233851655653
+ },
+ {
+  "date": "1973/04/01",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 647.7183918597167
+ },
+ {
+  "date": "1973/04/01",
+  "wrestler": "Jozsef Molnar",
+  "elo": 978.3903669787286
+ },
+ {
+  "date": "1973/04/01",
+  "wrestler": "Cyclone Soto",
+  "elo": 950.0
+ },
+ {
+  "date": "1973/04/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1050.0
+ },
+ {
+  "date": "1973/04/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1090.2008734665358
+ },
+ {
+  "date": "1973/04/02",
+  "wrestler": "Shoji Kai",
+  "elo": 1221.9175689757908
+ },
+ {
+  "date": "1973/04/02",
+  "wrestler": "Arpad Weber",
+  "elo": 1039.4684086245338
+ },
+ {
+  "date": "1973/04/02",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 836.2283449417798
+ },
+ {
+  "date": "1973/04/02",
+  "wrestler": "Osamu Kido",
+  "elo": 961.2122365400593
+ },
+ {
+  "date": "1973/04/02",
+  "wrestler": "Cyclone Soto",
+  "elo": 1070.2485523787605
+ },
+ {
+  "date": "1973/04/02",
+  "wrestler": "Professor van Zyl",
+  "elo": 1015.6762948816207
+ },
+ {
+  "date": "1973/04/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1107.6206643942785
+ },
+ {
+  "date": "1973/04/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1040.8153430288658
+ },
+ {
+  "date": "1973/04/05",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1143.856390720484
+ },
+ {
+  "date": "1973/04/05",
+  "wrestler": "Shoji Kai",
+  "elo": 1184.8763106113443
+ },
+ {
+  "date": "1973/04/05",
+  "wrestler": "Arpad Weber",
+  "elo": 1113.550925353427
+ },
+ {
+  "date": "1973/04/05",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 783.7272000229058
+ },
+ {
+  "date": "1973/04/05",
+  "wrestler": "Professor van Zyl",
+  "elo": 1041.9268673410577
+ },
+ {
+  "date": "1973/04/05",
+  "wrestler": "Cyclone Soto",
+  "elo": 1017.3378461672198
+ },
+ {
+  "date": "1973/04/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1102.9107062115406
+ },
+ {
+  "date": "1973/04/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1010.4356434902595
+ },
+ {
+  "date": "1973/04/06",
+  "wrestler": "Shoji Kai",
+  "elo": 1215.2560101499505
+ },
+ {
+  "date": "1973/04/06",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1148.662973680454
+ },
+ {
+  "date": "1973/04/06",
+  "wrestler": "Arpad Weber",
+  "elo": 1157.7551053806867
+ },
+ {
+  "date": "1973/04/06",
+  "wrestler": "Osamu Kido",
+  "elo": 866.1524749872738
+ },
+ {
+  "date": "1973/04/06",
+  "wrestler": "Jozsef Molnar",
+  "elo": 1073.450128531514
+ },
+ {
+  "date": "1973/04/06",
+  "wrestler": "Professor van Zyl",
+  "elo": 1000.6141141325323
+ },
+ {
+  "date": "1973/04/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1144.223459420066
+ },
+ {
+  "date": "1973/04/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1004.2849210223803
+ },
+ {
+  "date": "1973/04/07",
+  "wrestler": "Shoji Kai",
+  "elo": 1216.7910697625778
+ },
+ {
+  "date": "1973/04/07",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1078.5593387541305
+ },
+ {
+  "date": "1973/04/07",
+  "wrestler": "Professor van Zyl",
+  "elo": 1070.7177490588556
+ },
+ {
+  "date": "1973/04/07",
+  "wrestler": "Arpad Weber",
+  "elo": 1068.1595027699263
+ },
+ {
+  "date": "1973/04/07",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 962.9184052444265
+ },
+ {
+  "date": "1973/04/07",
+  "wrestler": "Cyclone Soto",
+  "elo": 980.0458338604989
+ },
+ {
+  "date": "1973/04/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1144.9126767009996
+ },
+ {
+  "date": "1973/04/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 963.6218706584364
+ },
+ {
+  "date": "1973/04/09",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1114.7148699116392
+ },
+ {
+  "date": "1973/04/09",
+  "wrestler": "Shoji Kai",
+  "elo": 1181.858694977887
+ },
+ {
+  "date": "1973/04/09",
+  "wrestler": "Professor van Zyl",
+  "elo": 1140.582498628237
+ },
+ {
+  "date": "1973/04/09",
+  "wrestler": "Osamu Kido",
+  "elo": 818.5223649820388
+ },
+ {
+  "date": "1973/04/09",
+  "wrestler": "Arpad Weber",
+  "elo": 1091.974557772544
+ },
+ {
+  "date": "1973/04/09",
+  "wrestler": "Cyclone Soto",
+  "elo": 924.0708600576313
+ },
+ {
+  "date": "1973/04/09",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1172.2109463215
+ },
+ {
+  "date": "1973/04/12",
+  "wrestler": "Shoji Kai",
+  "elo": 1191.214549632782
+ },
+ {
+  "date": "1973/04/12",
+  "wrestler": "Osamu Kido",
+  "elo": 883.3120789684856
+ },
+ {
+  "date": "1973/04/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 898.9710633960382
+ },
+ {
+  "date": "1973/04/12",
+  "wrestler": "Arpad Weber",
+  "elo": 1124.299961403743
+ },
+ {
+  "date": "1973/04/12",
+  "wrestler": "Jozsef Molnar",
+  "elo": 1008.059108720384
+ },
+ {
+  "date": "1973/04/12",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1093.7004448666867
+ },
+ {
+  "date": "1973/04/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1066.8167089173128
+ },
+ {
+  "date": "1973/04/12",
+  "wrestler": "Cyclone Soto",
+  "elo": 1080.2627956250046
+ },
+ {
+  "date": "1973/04/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 854.1507127460634
+ },
+ {
+  "date": "1973/04/14",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1137.1250452366266
+ },
+ {
+  "date": "1973/04/14",
+  "wrestler": "Shoji Kai",
+  "elo": 1133.979159811428
+ },
+ {
+  "date": "1973/04/14",
+  "wrestler": "Professor van Zyl",
+  "elo": 1197.8178884495912
+ },
+ {
+  "date": "1973/04/14",
+  "wrestler": "Osamu Kido",
+  "elo": 843.3422593237485
+ },
+ {
+  "date": "1973/04/14",
+  "wrestler": "Arpad Weber",
+  "elo": 1144.2848712261116
+ },
+ {
+  "date": "1973/04/14",
+  "wrestler": "Cyclone Soto",
+  "elo": 1043.1946880414293
+ },
+ {
+  "date": "1973/04/14",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1209.2790539050752
+ },
+ {
+  "date": "1973/04/15",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 936.7040912196887
+ },
+ {
+  "date": "1973/04/15",
+  "wrestler": "Shoji Kai",
+  "elo": 1168.9938355596905
+ },
+ {
+  "date": "1973/04/15",
+  "wrestler": "Osamu Kido",
+  "elo": 787.492319961979
+ },
+ {
+  "date": "1973/04/15",
+  "wrestler": "Jozsef Molnar",
+  "elo": 1035.9840784012688
+ },
+ {
+  "date": "1973/04/15",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1073.9273676626701
+ },
+ {
+  "date": "1973/04/15",
+  "wrestler": "Cyclone Soto",
+  "elo": 1106.3923656153859
+ },
+ {
+  "date": "1973/04/15",
+  "wrestler": "Professor van Zyl",
+  "elo": 1129.8106731443738
+ },
+ {
+  "date": "1973/04/15",
+  "wrestler": "Antonio Inoki",
+  "elo": 1134.8239242225302
+ },
+ {
+  "date": "1973/04/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 796.2165971487507
+ },
+ {
+  "date": "1973/04/16",
+  "wrestler": "Osamu Kido",
+  "elo": 927.9798140329171
+ },
+ {
+  "date": "1973/04/16",
+  "wrestler": "Shoji Kai",
+  "elo": 1175.6537874242224
+ },
+ {
+  "date": "1973/04/16",
+  "wrestler": "Arpad Weber",
+  "elo": 1173.6175859615107
+ },
+ {
+  "date": "1973/04/16",
+  "wrestler": "Jozsef Molnar",
+  "elo": 994.2145601176152
+ },
+ {
+  "date": "1973/04/16",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1135.4699631503402
+ },
+ {
+  "date": "1973/04/16",
+  "wrestler": "Cyclone Soto",
+  "elo": 1070.780795919907
+ },
+ {
+  "date": "1973/04/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1227.0848387528147
+ },
+ {
+  "date": "1973/04/17",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 930.7013235365876
+ },
+ {
+  "date": "1973/04/17",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1159.2234568740278
+ },
+ {
+  "date": "1973/04/17",
+  "wrestler": "Shoji Kai",
+  "elo": 1125.3607578332437
+ },
+ {
+  "date": "1973/04/17",
+  "wrestler": "Arpad Weber",
+  "elo": 1223.9106155524894
+ },
+ {
+  "date": "1973/04/17",
+  "wrestler": "Osamu Kido",
+  "elo": 866.9131682456675
+ },
+ {
+  "date": "1973/04/17",
+  "wrestler": "Cyclone Soto",
+  "elo": 1101.3141188135316
+ },
+ {
+  "date": "1973/04/17",
+  "wrestler": "Jozsef Molnar",
+  "elo": 932.6114223560228
+ },
+ {
+  "date": "1973/04/17",
+  "wrestler": "Antonio Inoki",
+  "elo": 1165.6254931033263
+ },
+ {
+  "date": "1973/04/18",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1040.7374593433512
+ },
+ {
+  "date": "1973/04/18",
+  "wrestler": "Shoji Kai",
+  "elo": 1141.422955824816
+ },
+ {
+  "date": "1973/04/18",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1086.7200989766343
+ },
+ {
+  "date": "1973/04/18",
+  "wrestler": "Arpad Weber",
+  "elo": 1230.1447224248805
+ },
+ {
+  "date": "1973/04/18",
+  "wrestler": "Jozsef Molnar",
+  "elo": 889.9291464702163
+ },
+ {
+  "date": "1973/04/18",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1180.564594816931
+ },
+ {
+  "date": "1973/04/18",
+  "wrestler": "Jan Wilkens",
+  "elo": 972.1801840548476
+ },
+ {
+  "date": "1973/04/18",
+  "wrestler": "Antonio Inoki",
+  "elo": 1193.4453090484787
+ },
+ {
+  "date": "1973/04/19",
+  "wrestler": "Shoji Kai",
+  "elo": 1149.0273034682427
+ },
+ {
+  "date": "1973/04/19",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1103.2944850507552
+ },
+ {
+  "date": "1973/04/19",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1015.5815787213091
+ },
+ {
+  "date": "1973/04/19",
+  "wrestler": "Arpad Weber",
+  "elo": 1242.7226627359016
+ },
+ {
+  "date": "1973/04/19",
+  "wrestler": "Professor van Zyl",
+  "elo": 1047.8548152429603
+ },
+ {
+  "date": "1973/04/19",
+  "wrestler": "Osamu Kido",
+  "elo": 1030.8248840484944
+ },
+ {
+  "date": "1973/04/19",
+  "wrestler": "Cyclone Soto",
+  "elo": 1064.2705873094665
+ },
+ {
+  "date": "1973/04/19",
+  "wrestler": "Antonio Inoki",
+  "elo": 1230.488840552544
+ },
+ {
+  "date": "1973/04/20",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 983.8941838525318
+ },
+ {
+  "date": "1973/04/20",
+  "wrestler": "Shoji Kai",
+  "elo": 1180.71469833702
+ },
+ {
+  "date": "1973/04/20",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1122.5706717930286
+ },
+ {
+  "date": "1973/04/20",
+  "wrestler": "Arpad Weber",
+  "elo": 1245.0844066428813
+ },
+ {
+  "date": "1973/04/20",
+  "wrestler": "Professor van Zyl",
+  "elo": 1016.0756452566202
+ },
+ {
+  "date": "1973/04/20",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1212.3437648032711
+ },
+ {
+  "date": "1973/04/20",
+  "wrestler": "Jozsef Molnar",
+  "elo": 828.396259309214
+ },
+ {
+  "date": "1973/04/20",
+  "wrestler": "Osamu Kido",
+  "elo": 1061.5913276289955
+ },
+ {
+  "date": "1973/04/21",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1047.881724923901
+ },
+ {
+  "date": "1973/04/21",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1216.9757300260842
+ },
+ {
+  "date": "1973/04/21",
+  "wrestler": "Arpad Weber",
+  "elo": 1215.5049118209508
+ },
+ {
+  "date": "1973/04/21",
+  "wrestler": "Shoji Kai",
+  "elo": 1239.873687980881
+ },
+ {
+  "date": "1973/04/21",
+  "wrestler": "Osamu Kido",
+  "elo": 1011.9768964485963
+ },
+ {
+  "date": "1973/04/21",
+  "wrestler": "Cyclone Soto",
+  "elo": 1113.8850184898656
+ },
+ {
+  "date": "1973/04/21",
+  "wrestler": "Professor van Zyl",
+  "elo": 993.5320030450204
+ },
+ {
+  "date": "1973/04/21",
+  "wrestler": "Antonio Inoki",
+  "elo": 1241.760661658344
+ },
+ {
+  "date": "1973/04/22",
+  "wrestler": "Shoji Kai",
+  "elo": 1243.5052489399693
+ },
+ {
+  "date": "1973/04/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1008.4677578544033
+ },
+ {
+  "date": "1973/04/22",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1161.9846388625263
+ },
+ {
+  "date": "1973/04/22",
+  "wrestler": "Arpad Weber",
+  "elo": 1220.9472286477092
+ },
+ {
+  "date": "1973/04/22",
+  "wrestler": "Jozsef Molnar",
+  "elo": 776.811015268819
+ },
+ {
+  "date": "1973/04/22",
+  "wrestler": "Osamu Kido",
+  "elo": 1037.7695184687939
+ },
+ {
+  "date": "1973/04/22",
+  "wrestler": "Cyclone Soto",
+  "elo": 1079.6227993410628
+ },
+ {
+  "date": "1973/04/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1244.2159483272162
+ },
+ {
+  "date": "1973/04/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1029.90957187613
+ },
+ {
+  "date": "1973/04/23",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1165.6139561795985
+ },
+ {
+  "date": "1973/04/23",
+  "wrestler": "Professor van Zyl",
+  "elo": 954.8785692578281
+ },
+ {
+  "date": "1973/04/23",
+  "wrestler": "Antonio Inoki",
+  "elo": 1251.424020105142
+ },
+ {
+  "date": "1973/04/24",
+  "wrestler": "Shoji Kai",
+  "elo": 1244.6098361508236
+ },
+ {
+  "date": "1973/04/24",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1173.5580972389148
+ },
+ {
+  "date": "1973/04/24",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1004.9299824999969
+ },
+ {
+  "date": "1973/04/24",
+  "wrestler": "Arpad Weber",
+  "elo": 1233.4370233357758
+ },
+ {
+  "date": "1973/04/24",
+  "wrestler": "Jozsef Molnar",
+  "elo": 762.106426689163
+ },
+ {
+  "date": "1973/04/24",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1220.6518771709982
+ },
+ {
+  "date": "1973/04/24",
+  "wrestler": "Cyclone Soto",
+  "elo": 1051.6834954873518
+ },
+ {
+  "date": "1973/04/24",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1258.1856002540717
+ },
+ {
+  "date": "1973/05/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 984.824394801045
+ },
+ {
+  "date": "1973/05/04",
+  "wrestler": "Shoji Kai",
+  "elo": 1254.6626300002995
+ },
+ {
+  "date": "1973/05/04",
+  "wrestler": "Steve Rickard",
+  "elo": 973.0877798565494
+ },
+ {
+  "date": "1973/05/04",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1200.4703173823652
+ },
+ {
+  "date": "1973/05/04",
+  "wrestler": "Robert Bruce",
+  "elo": 981.5512612308007
+ },
+ {
+  "date": "1973/05/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1267.4099696386713
+ },
+ {
+  "date": "1973/05/04",
+  "wrestler": "Red Pimpernel",
+  "elo": 980.9584557855387
+ },
+ {
+  "date": "1973/05/04",
+  "wrestler": "Antonio Inoki",
+  "elo": 1260.9447922123727
+ },
+ {
+  "date": "1973/05/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1021.1231726776347
+ },
+ {
+  "date": "1973/05/05",
+  "wrestler": "Shoji Kai",
+  "elo": 1259.0968077618068
+ },
+ {
+  "date": "1973/05/05",
+  "wrestler": "Rudi Saturski",
+  "elo": 976.0240758461794
+ },
+ {
+  "date": "1973/05/05",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1212.4582794592754
+ },
+ {
+  "date": "1973/05/05",
+  "wrestler": "Osamu Kido",
+  "elo": 979.7489378434672
+ },
+ {
+  "date": "1973/05/05",
+  "wrestler": "Robert Bruce",
+  "elo": 1097.5924224814542
+ },
+ {
+  "date": "1973/05/05",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1181.6132479174587
+ },
+ {
+  "date": "1973/05/05",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1078.0772585070788
+ },
+ {
+  "date": "1973/05/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1039.627610442312
+ },
+ {
+  "date": "1973/05/06",
+  "wrestler": "Shoji Kai",
+  "elo": 1260.8856008501964
+ },
+ {
+  "date": "1973/05/06",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1105.0561978684418
+ },
+ {
+  "date": "1973/05/06",
+  "wrestler": "Rudi Saturski",
+  "elo": 1129.1381759442131
+ },
+ {
+  "date": "1973/05/06",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1172.8945944073346
+ },
+ {
+  "date": "1973/05/06",
+  "wrestler": "Red Pimpernel",
+  "elo": 1139.213195993302
+ },
+ {
+  "date": "1973/05/06",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1052.9132970133164
+ },
+ {
+  "date": "1973/05/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1279.9919503855524
+ },
+ {
+  "date": "1973/05/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1017.764531690538
+ },
+ {
+  "date": "1973/05/07",
+  "wrestler": "Shoji Kai",
+  "elo": 1271.8171402260834
+ },
+ {
+  "date": "1973/05/07",
+  "wrestler": "Rudi Saturski",
+  "elo": 1058.8730803289006
+ },
+ {
+  "date": "1973/05/07",
+  "wrestler": "Osamu Kido",
+  "elo": 1120.2791290740922
+ },
+ {
+  "date": "1973/05/07",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1053.982239451282
+ },
+ {
+  "date": "1973/05/07",
+  "wrestler": "Robert Bruce",
+  "elo": 1148.6663808986139
+ },
+ {
+  "date": "1973/05/07",
+  "wrestler": "Steve Rickard",
+  "elo": 941.0557820617864
+ },
+ {
+  "date": "1973/05/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1268.9527916610634
+ },
+ {
+  "date": "1973/05/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1025.8287570072723
+ },
+ {
+  "date": "1973/05/08",
+  "wrestler": "Shoji Kai",
+  "elo": 1274.7862216788155
+ },
+ {
+  "date": "1973/05/08",
+  "wrestler": "Robert Bruce",
+  "elo": 1174.8550380818938
+ },
+ {
+  "date": "1973/05/08",
+  "wrestler": "Steve Rickard",
+  "elo": 899.3749433298716
+ },
+ {
+  "date": "1973/05/08",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1193.735013773292
+ },
+ {
+  "date": "1973/05/08",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 996.2754870742738
+ },
+ {
+  "date": "1973/05/08",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1057.7067523770083
+ },
+ {
+  "date": "1973/05/08",
+  "wrestler": "Red Pimpernel",
+  "elo": 1108.4324064626205
+ },
+ {
+  "date": "1973/05/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1295.3823451508931
+ },
+ {
+  "date": "1973/05/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 960.5665725403481
+ },
+ {
+  "date": "1973/05/09",
+  "wrestler": "Rudi Saturski",
+  "elo": 1036.4798497557445
+ },
+ {
+  "date": "1973/05/09",
+  "wrestler": "Shoji Kai",
+  "elo": 1285.9828369653937
+ },
+ {
+  "date": "1973/05/09",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1124.51053428627
+ },
+ {
+  "date": "1973/05/09",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1122.1377765003383
+ },
+ {
+  "date": "1973/05/09",
+  "wrestler": "Osamu Kido",
+  "elo": 1061.3703519267
+ },
+ {
+  "date": "1973/05/09",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1116.6155295244005
+ },
+ {
+  "date": "1973/05/09",
+  "wrestler": "Robert Bruce",
+  "elo": 1138.075124675284
+ },
+ {
+  "date": "1973/05/09",
+  "wrestler": "Antonio Inoki",
+  "elo": 1287.3427483643684
+ },
+ {
+  "date": "1973/05/15",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1023.5588042241828
+ },
+ {
+  "date": "1973/05/15",
+  "wrestler": "Shoji Kai",
+  "elo": 1250.9395353520406
+ },
+ {
+  "date": "1973/05/15",
+  "wrestler": "Robert Bruce",
+  "elo": 1208.1617279019906
+ },
+ {
+  "date": "1973/05/15",
+  "wrestler": "Rudi Saturski",
+  "elo": 980.7196645906832
+ },
+ {
+  "date": "1973/05/15",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1107.7958574043964
+ },
+ {
+  "date": "1973/05/15",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1073.3745472901314
+ },
+ {
+  "date": "1973/05/15",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1167.751516520539
+ },
+ {
+  "date": "1973/05/15",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1095.1900416669275
+ },
+ {
+  "date": "1973/05/15",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1308.8562125675985
+ },
+ {
+  "date": "1973/05/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1028.178705739465
+ },
+ {
+  "date": "1973/05/16",
+  "wrestler": "Shoji Kai",
+  "elo": 1252.6316698295989
+ },
+ {
+  "date": "1973/05/16",
+  "wrestler": "Rudi Saturski",
+  "elo": 903.5246471758796
+ },
+ {
+  "date": "1973/05/16",
+  "wrestler": "Osamu Kido",
+  "elo": 1099.967860634102
+ },
+ {
+  "date": "1973/05/16",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1071.8508642256613
+ },
+ {
+  "date": "1973/05/16",
+  "wrestler": "Robert Bruce",
+  "elo": 1226.1342244913583
+ },
+ {
+  "date": "1973/05/16",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1191.8975598650911
+ },
+ {
+  "date": "1973/05/16",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1070.3305449158702
+ },
+ {
+  "date": "1973/05/16",
+  "wrestler": "Antonio Inoki",
+  "elo": 1299.772496739897
+ },
+ {
+  "date": "1973/05/17",
+  "wrestler": "Shoji Kai",
+  "elo": 1259.0734675598446
+ },
+ {
+  "date": "1973/05/17",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 960.9716151191494
+ },
+ {
+  "date": "1973/05/17",
+  "wrestler": "Rudi Saturski",
+  "elo": 1037.9388284165107
+ },
+ {
+  "date": "1973/05/17",
+  "wrestler": "Robert Bruce",
+  "elo": 1190.7997932905403
+ },
+ {
+  "date": "1973/05/17",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1144.0434096917672
+ },
+ {
+  "date": "1973/05/17",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1038.4707845049156
+ },
+ {
+  "date": "1973/05/17",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1225.2776395858368
+ },
+ {
+  "date": "1973/05/17",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1050.11802057852
+ },
+ {
+  "date": "1973/05/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1318.9624747362736
+ },
+ {
+  "date": "1973/05/19",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1042.1638085573306
+ },
+ {
+  "date": "1973/05/19",
+  "wrestler": "Rudi Saturski",
+  "elo": 1016.0636170704162
+ },
+ {
+  "date": "1973/05/19",
+  "wrestler": "Shoji Kai",
+  "elo": 1270.011073232892
+ },
+ {
+  "date": "1973/05/19",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1063.691670544376
+ },
+ {
+  "date": "1973/05/19",
+  "wrestler": "Steve Rickard",
+  "elo": 1060.078421624654
+ },
+ {
+  "date": "1973/05/19",
+  "wrestler": "Osamu Kido",
+  "elo": 1062.7497377812829
+ },
+ {
+  "date": "1973/05/19",
+  "wrestler": "Robert Bruce",
+  "elo": 1228.0179161433593
+ },
+ {
+  "date": "1973/05/19",
+  "wrestler": "Red Pimpernel",
+  "elo": 1083.4854278591788
+ },
+ {
+  "date": "1973/05/19",
+  "wrestler": "Antonio Inoki",
+  "elo": 1312.245986041618
+ },
+ {
+  "date": "1973/05/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1020.9417901202281
+ },
+ {
+  "date": "1973/05/23",
+  "wrestler": "Shoji Kai",
+  "elo": 1280.6220824514432
+ },
+ {
+  "date": "1973/05/23",
+  "wrestler": "Osamu Kido",
+  "elo": 1010.9326880889632
+ },
+ {
+  "date": "1973/05/23",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1101.9350702708396
+ },
+ {
+  "date": "1973/05/23",
+  "wrestler": "Steve Rickard",
+  "elo": 1006.9728355937028
+ },
+ {
+  "date": "1973/05/23",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1091.5763705358668
+ },
+ {
+  "date": "1973/05/23",
+  "wrestler": "Robert Bruce",
+  "elo": 1208.9626076873287
+ },
+ {
+  "date": "1973/05/23",
+  "wrestler": "Antonio Inoki",
+  "elo": 1331.3012944976485
+ },
+ {
+  "date": "1973/05/25",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1076.1351484236022
+ },
+ {
+  "date": "1973/05/25",
+  "wrestler": "Rudi Saturski",
+  "elo": 998.1604372875444
+ },
+ {
+  "date": "1973/05/25",
+  "wrestler": "Shoji Kai",
+  "elo": 1289.5736723428793
+ },
+ {
+  "date": "1973/05/25",
+  "wrestler": "Osamu Kido",
+  "elo": 960.3628441801285
+ },
+ {
+  "date": "1973/05/25",
+  "wrestler": "Steve Rickard",
+  "elo": 1057.5426795025376
+ },
+ {
+  "date": "1973/05/25",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1046.4535231798259
+ },
+ {
+  "date": "1973/05/25",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1119.1732176353896
+ },
+ {
+  "date": "1973/05/25",
+  "wrestler": "Antonio Inoki",
+  "elo": 1298.90059085634
+ },
+ {
+  "date": "1973/05/25",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1257.6783432271454
+ },
+ {
+  "date": "1973/05/26",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1053.4933848739004
+ },
+ {
+  "date": "1973/05/26",
+  "wrestler": "Shoji Kai",
+  "elo": 1300.8945541177302
+ },
+ {
+  "date": "1973/05/26",
+  "wrestler": "Rudi Saturski",
+  "elo": 1055.7619466247313
+ },
+ {
+  "date": "1973/05/26",
+  "wrestler": "Steve Rickard",
+  "elo": 1016.3201550579373
+ },
+ {
+  "date": "1973/05/26",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1160.3957420799898
+ },
+ {
+  "date": "1973/05/26",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1057.8548605801939
+ },
+ {
+  "date": "1973/05/26",
+  "wrestler": "Robert Bruce",
+  "elo": 1225.8233626651652
+ },
+ {
+  "date": "1973/05/26",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1027.5025988648417
+ },
+ {
+  "date": "1973/05/26",
+  "wrestler": "Antonio Inoki",
+  "elo": 1308.376053013832
+ },
+ {
+  "date": "1973/05/27",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1056.3036525423195
+ },
+ {
+  "date": "1973/05/27",
+  "wrestler": "Shoji Kai",
+  "elo": 1301.5426479795492
+ },
+ {
+  "date": "1973/05/27",
+  "wrestler": "Rudi Saturski",
+  "elo": 1101.9544069428287
+ },
+ {
+  "date": "1973/05/27",
+  "wrestler": "Robert Bruce",
+  "elo": 1196.1703404657205
+ },
+ {
+  "date": "1973/05/27",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1219.7017864788788
+ },
+ {
+  "date": "1973/05/27",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 967.9589138441983
+ },
+ {
+  "date": "1973/05/27",
+  "wrestler": "Osamu Kido",
+  "elo": 1079.4502142214153
+ },
+ {
+  "date": "1973/05/27",
+  "wrestler": "Steve Rickard",
+  "elo": 1001.4161403060538
+ },
+ {
+  "date": "1973/05/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1326.4144821122154
+ },
+ {
+  "date": "1973/05/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1084.8586549094268
+ },
+ {
+  "date": "1973/05/28",
+  "wrestler": "Rudi Saturski",
+  "elo": 1077.8858079789488
+ },
+ {
+  "date": "1973/05/28",
+  "wrestler": "Shoji Kai",
+  "elo": 1313.576947461489
+ },
+ {
+  "date": "1973/05/28",
+  "wrestler": "Osamu Kido",
+  "elo": 1030.030902034792
+ },
+ {
+  "date": "1973/05/28",
+  "wrestler": "Red Pimpernel",
+  "elo": 1132.904740045802
+ },
+ {
+  "date": "1973/05/28",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1033.8110010367677
+ },
+ {
+  "date": "1973/05/28",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1269.7002729988585
+ },
+ {
+  "date": "1973/05/28",
+  "wrestler": "Steve Rickard",
+  "elo": 986.824600897539
+ },
+ {
+  "date": "1973/05/28",
+  "wrestler": "Antonio Inoki",
+  "elo": 1315.6718227180893
+ },
+ {
+  "date": "1973/05/30",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1063.720341620791
+ },
+ {
+  "date": "1973/05/30",
+  "wrestler": "Shoji Kai",
+  "elo": 1324.146104105807
+ },
+ {
+  "date": "1973/05/30",
+  "wrestler": "Steve Rickard",
+  "elo": 900.2665261584249
+ },
+ {
+  "date": "1973/05/30",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1077.0900384063248
+ },
+ {
+  "date": "1973/05/30",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1185.028647371015
+ },
+ {
+  "date": "1973/05/30",
+  "wrestler": "Rudi Saturski",
+  "elo": 1147.2320861946762
+ },
+ {
+  "date": "1973/05/30",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1081.1674384254359
+ },
+ {
+  "date": "1973/05/30",
+  "wrestler": "Robert Bruce",
+  "elo": 1123.9307874224812
+ },
+ {
+  "date": "1973/05/30",
+  "wrestler": "Osamu Kido",
+  "elo": 1102.2704550780313
+ },
+ {
+  "date": "1973/05/31",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 998.9834743977657
+ },
+ {
+  "date": "1973/05/31",
+  "wrestler": "Shoji Kai",
+  "elo": 1324.872485368895
+ },
+ {
+  "date": "1973/05/31",
+  "wrestler": "Rudi Saturski",
+  "elo": 1172.3544542352804
+ },
+ {
+  "date": "1973/05/31",
+  "wrestler": "Robert Bruce",
+  "elo": 1082.6339469162076
+ },
+ {
+  "date": "1973/05/31",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1226.3254878772887
+ },
+ {
+  "date": "1973/05/31",
+  "wrestler": "Osamu Kido",
+  "elo": 1056.6676936758877
+ },
+ {
+  "date": "1973/05/31",
+  "wrestler": "Red Pimpernel",
+  "elo": 1178.5075014479457
+ },
+ {
+  "date": "1973/05/31",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1060.5790238069515
+ },
+ {
+  "date": "1973/05/31",
+  "wrestler": "Antonio Inoki",
+  "elo": 1325.9660300273315
+ },
+ {
+  "date": "1973/06/04",
+  "wrestler": "Shoji Kai",
+  "elo": 1329.0162408384829
+ },
+ {
+  "date": "1973/06/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 871.3111379043053
+ },
+ {
+  "date": "1973/06/04",
+  "wrestler": "Steve Rickard",
+  "elo": 1027.9388626518853
+ },
+ {
+  "date": "1973/06/04",
+  "wrestler": "Rudi Saturski",
+  "elo": 1106.2949617166455
+ },
+ {
+  "date": "1973/06/04",
+  "wrestler": "Osamu Kido",
+  "elo": 1122.7271861945226
+ },
+ {
+  "date": "1973/06/04",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1197.9062693032722
+ },
+ {
+  "date": "1973/06/04",
+  "wrestler": "Red Pimpernel",
+  "elo": 1235.3459385959786
+ },
+ {
+  "date": "1973/06/04",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1042.7836332288769
+ },
+ {
+  "date": "1973/06/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1335.3121774012527
+ },
+ {
+  "date": "1973/06/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 914.4774090266781
+ },
+ {
+  "date": "1973/06/06",
+  "wrestler": "Shoji Kai",
+  "elo": 1332.1775317122956
+ },
+ {
+  "date": "1973/06/06",
+  "wrestler": "Rudi Saturski",
+  "elo": 1110.8541040702207
+ },
+ {
+  "date": "1973/06/06",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1020.0634284697765
+ },
+ {
+  "date": "1973/06/06",
+  "wrestler": "Steve Rickard",
+  "elo": 1084.9654725884336
+ },
+ {
+  "date": "1973/06/06",
+  "wrestler": "Osamu Kido",
+  "elo": 1066.9827813102343
+ },
+ {
+  "date": "1973/06/06",
+  "wrestler": "Robert Bruce",
+  "elo": 1138.378351800496
+ },
+ {
+  "date": "1973/06/06",
+  "wrestler": "Red Pimpernel",
+  "elo": 1216.7226279004935
+ },
+ {
+  "date": "1973/06/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1344.5893407228166
+ },
+ {
+  "date": "1973/06/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1066.912623716038
+ },
+ {
+  "date": "1973/06/08",
+  "wrestler": "Shoji Kai",
+  "elo": 1332.7874704928238
+ },
+ {
+  "date": "1973/06/08",
+  "wrestler": "Beautiful Beauregarde",
+  "elo": 1028.8431947701172
+ },
+ {
+  "date": "1973/06/08",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1013.7336487534519
+ },
+ {
+  "date": "1973/06/08",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1226.9562537786971
+ },
+ {
+  "date": "1973/06/08",
+  "wrestler": "Robert Bruce",
+  "elo": 1071.9804834289257
+ },
+ {
+  "date": "1973/06/08",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1086.4612968413467
+ },
+ {
+  "date": "1973/06/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1305.6463555294129
+ },
+ {
+  "date": "1973/06/08",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1299.3660948706984
+ },
+ {
+  "date": "1973/06/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1081.8420021069974
+ },
+ {
+  "date": "1973/06/09",
+  "wrestler": "Rudi Saturski",
+  "elo": 1089.057368085742
+ },
+ {
+  "date": "1973/06/09",
+  "wrestler": "Shoji Kai",
+  "elo": 1343.6858384850632
+ },
+ {
+  "date": "1973/06/09",
+  "wrestler": "Robert Bruce",
+  "elo": 1088.0990240143865
+ },
+ {
+  "date": "1973/06/09",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 974.0497605604794
+ },
+ {
+  "date": "1973/06/09",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1126.1451850343192
+ },
+ {
+  "date": "1973/06/09",
+  "wrestler": "Osamu Kido",
+  "elo": 1037.29002779857
+ },
+ {
+  "date": "1973/06/09",
+  "wrestler": "Red Pimpernel",
+  "elo": 1231.5690046563257
+ },
+ {
+  "date": "1973/06/09",
+  "wrestler": "Beautiful Beauregarde",
+  "elo": 1004.6190607424979
+ },
+ {
+  "date": "1973/06/09",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1239.0683207925067
+ },
+ {
+  "date": "1973/06/13",
+  "wrestler": "Shoji Kai",
+  "elo": 1346.1719098171868
+ },
+ {
+  "date": "1973/06/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1032.8802274869263
+ },
+ {
+  "date": "1973/06/13",
+  "wrestler": "Rudi Saturski",
+  "elo": 1138.019142705813
+ },
+ {
+  "date": "1973/06/13",
+  "wrestler": "Beautiful Beauregarde",
+  "elo": 959.3069813325303
+ },
+ {
+  "date": "1973/06/13",
+  "wrestler": "Osamu Kido",
+  "elo": 1082.6021072085377
+ },
+ {
+  "date": "1973/06/13",
+  "wrestler": "Steve Rickard",
+  "elo": 1055.7943454452989
+ },
+ {
+  "date": "1973/06/13",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1253.6538843640742
+ },
+ {
+  "date": "1973/06/13",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 1017.8576977689949
+ },
+ {
+  "date": "1973/06/13",
+  "wrestler": "Robert Bruce",
+  "elo": 1043.5525255882324
+ },
+ {
+  "date": "1973/06/13",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1170.6916834604733
+ },
+ {
+  "date": "1973/06/14",
+  "wrestler": "Shoji Kai",
+  "elo": 1346.8494228399031
+ },
+ {
+  "date": "1973/06/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 984.4156117679617
+ },
+ {
+  "date": "1973/06/14",
+  "wrestler": "Robert Bruce",
+  "elo": 1092.017141307197
+ },
+ {
+  "date": "1973/06/14",
+  "wrestler": "Rudi Saturski",
+  "elo": 1092.7072877783355
+ },
+ {
+  "date": "1973/06/14",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1216.0035383879508
+ },
+ {
+  "date": "1973/06/14",
+  "wrestler": "Steve Rickard",
+  "elo": 1067.777674292199
+ },
+ {
+  "date": "1973/06/14",
+  "wrestler": "Wolfgang Saturski",
+  "elo": 977.0687915217919
+ },
+ {
+  "date": "1973/06/14",
+  "wrestler": "Osamu Kido",
+  "elo": 1123.3910134557407
+ },
+ {
+  "date": "1973/06/14",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1277.6019154095845
+ },
+ {
+  "date": "1973/06/14",
+  "wrestler": "Antonio Inoki",
+  "elo": 1366.3535201839304
+ },
+ {
+  "date": "1973/07/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 962.3292259477965
+ },
+ {
+  "date": "1973/07/06",
+  "wrestler": "Shoji Kai",
+  "elo": 1352.3710192949445
+ },
+ {
+  "date": "1973/07/06",
+  "wrestler": "Cisco Grimaldo",
+  "elo": 977.615811413472
+ },
+ {
+  "date": "1973/07/06",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1227.1956326812149
+ },
+ {
+  "date": "1973/07/06",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1213.0761102079912
+ },
+ {
+  "date": "1973/07/06",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1081.155548312166
+ },
+ {
+  "date": "1973/07/06",
+  "wrestler": "John L. Sullivan",
+  "elo": 985.3139742688859
+ },
+ {
+  "date": "1973/07/06",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1312.98936839497
+ },
+ {
+  "date": "1973/07/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1005.3138377031792
+ },
+ {
+  "date": "1973/07/07",
+  "wrestler": "Shoji Kai",
+  "elo": 1352.9050433217071
+ },
+ {
+  "date": "1973/07/07",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1187.1470145037247
+ },
+ {
+  "date": "1973/07/07",
+  "wrestler": "John L. Sullivan",
+  "elo": 1145.508446978847
+ },
+ {
+  "date": "1973/07/07",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1103.5676262551297
+ },
+ {
+  "date": "1973/07/07",
+  "wrestler": "Osamu Kido",
+  "elo": 1056.3443623578237
+ },
+ {
+  "date": "1973/07/07",
+  "wrestler": "Sean Regan",
+  "elo": 1067.046651097917
+ },
+ {
+  "date": "1973/07/07",
+  "wrestler": "Dennis Hall",
+  "elo": 985.8357163579044
+ },
+ {
+  "date": "1973/07/07",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1320.0715102160177
+ },
+ {
+  "date": "1973/07/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1058.2151972319064
+ },
+ {
+  "date": "1973/07/08",
+  "wrestler": "Dennis Hall",
+  "elo": 938.0601267711507
+ },
+ {
+  "date": "1973/07/08",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1211.0348092971014
+ },
+ {
+  "date": "1973/07/08",
+  "wrestler": "Shoji Kai",
+  "elo": 1312.518742583206
+ },
+ {
+  "date": "1973/07/08",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1184.340227732132
+ },
+ {
+  "date": "1973/07/08",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1178.1463934834296
+ },
+ {
+  "date": "1973/07/08",
+  "wrestler": "Sean Regan",
+  "elo": 1136.90608454704
+ },
+ {
+  "date": "1973/07/08",
+  "wrestler": "John L. Sullivan",
+  "elo": 1123.6047354377552
+ },
+ {
+  "date": "1973/07/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1377.3053759544762
+ },
+ {
+  "date": "1973/07/12",
+  "wrestler": "Shoji Kai",
+  "elo": 1316.6684403806896
+ },
+ {
+  "date": "1973/07/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1025.6086339143135
+ },
+ {
+  "date": "1973/07/12",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1216.9467910497249
+ },
+ {
+  "date": "1973/07/12",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1120.3610665171398
+ },
+ {
+  "date": "1973/07/12",
+  "wrestler": "John L. Sullivan",
+  "elo": 1181.390062404045
+ },
+ {
+  "date": "1973/07/12",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1180.7803101935308
+ },
+ {
+  "date": "1973/07/12",
+  "wrestler": "Sean Regan",
+  "elo": 1197.4150827541814
+ },
+ {
+  "date": "1973/07/12",
+  "wrestler": "Cisco Grimaldo",
+  "elo": 953.1666651399813
+ },
+ {
+  "date": "1973/07/12",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1326.1837967843903
+ },
+ {
+  "date": "1973/07/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1036.4850542724496
+ },
+ {
+  "date": "1973/07/13",
+  "wrestler": "Shoji Kai",
+  "elo": 1324.2561027019954
+ },
+ {
+  "date": "1973/07/13",
+  "wrestler": "Osamu Kido",
+  "elo": 991.9175298451293
+ },
+ {
+  "date": "1973/07/13",
+  "wrestler": "Cisco Grimaldo",
+  "elo": 1082.0203301653703
+ },
+ {
+  "date": "1973/07/13",
+  "wrestler": "Dennis Hall",
+  "elo": 886.1923890510782
+ },
+ {
+  "date": "1973/07/13",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1146.294935377176
+ },
+ {
+  "date": "1973/07/13",
+  "wrestler": "John L. Sullivan",
+  "elo": 1156.9329449757518
+ },
+ {
+  "date": "1973/07/13",
+  "wrestler": "Antonio Inoki",
+  "elo": 1389.5339346686228
+ },
+ {
+  "date": "1973/07/14",
+  "wrestler": "Cisco Grimaldo",
+  "elo": 1045.8622167716833
+ },
+ {
+  "date": "1973/07/14",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1216.9384235872178
+ },
+ {
+  "date": "1973/07/14",
+  "wrestler": "Osamu Kido",
+  "elo": 948.9285621854744
+ },
+ {
+  "date": "1973/07/14",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1227.6940329646386
+ },
+ {
+  "date": "1973/07/14",
+  "wrestler": "John L. Sullivan",
+  "elo": 1173.6993655371186
+ },
+ {
+  "date": "1973/07/14",
+  "wrestler": "Sean Regan",
+  "elo": 1165.1420467338946
+ },
+ {
+  "date": "1973/07/14",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1342.3203147945337
+ },
+ {
+  "date": "1973/07/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1083.9303233913831
+ },
+ {
+  "date": "1973/07/16",
+  "wrestler": "Shoji Kai",
+  "elo": 1292.481445337545
+ },
+ {
+  "date": "1973/07/16",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1259.468690329089
+ },
+ {
+  "date": "1973/07/16",
+  "wrestler": "Dennis Hall",
+  "elo": 849.6257980782975
+ },
+ {
+  "date": "1973/07/16",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1164.5782308635662
+ },
+ {
+  "date": "1973/07/16",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1178.0838380214004
+ },
+ {
+  "date": "1973/07/16",
+  "wrestler": "Lonnie Mayne",
+  "elo": 1077.7091711316345
+ },
+ {
+  "date": "1973/07/16",
+  "wrestler": "Sean Regan",
+  "elo": 1143.5855858821974
+ },
+ {
+  "date": "1973/07/16",
+  "wrestler": "Antonio Inoki",
+  "elo": 1400.3121650944713
+ },
+ {
+  "date": "1973/07/20",
+  "wrestler": "Shoji Kai",
+  "elo": 1246.1051820415535
+ },
+ {
+  "date": "1973/07/20",
+  "wrestler": "Dennis Hall",
+  "elo": 1035.1308512622636
+ },
+ {
+  "date": "1973/07/20",
+  "wrestler": "Cisco Grimaldo",
+  "elo": 1012.3115789186058
+ },
+ {
+  "date": "1973/07/20",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1198.1288687166436
+ },
+ {
+  "date": "1973/07/20",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1216.6369736301422
+ },
+ {
+  "date": "1973/07/20",
+  "wrestler": "Osamu Kido",
+  "elo": 1120.255428981262
+ },
+ {
+  "date": "1973/07/20",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1301.269676396842
+ },
+ {
+  "date": "1973/07/20",
+  "wrestler": "Lonnie Mayne",
+  "elo": 1159.810447927018
+ },
+ {
+  "date": "1973/07/22",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1213.1528396076235
+ },
+ {
+  "date": "1973/07/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1052.1507628621323
+ },
+ {
+  "date": "1973/07/22",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1232.5267538947676
+ },
+ {
+  "date": "1973/07/22",
+  "wrestler": "Shoji Kai",
+  "elo": 1215.9693022192657
+ },
+ {
+  "date": "1973/07/22",
+  "wrestler": "John L. Sullivan",
+  "elo": 1233.9711251816943
+ },
+ {
+  "date": "1973/07/22",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1123.135392490629
+ },
+ {
+  "date": "1973/07/22",
+  "wrestler": "Sean Regan",
+  "elo": 1198.5340314129687
+ },
+ {
+  "date": "1973/07/22",
+  "wrestler": "Dennis Hall",
+  "elo": 1017.3609925878845
+ },
+ {
+  "date": "1973/07/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1310.1546057340315
+ },
+ {
+  "date": "1973/07/23",
+  "wrestler": "Shoji Kai",
+  "elo": 1221.8855447218295
+ },
+ {
+  "date": "1973/07/23",
+  "wrestler": "Dennis Hall",
+  "elo": 982.1296656880919
+ },
+ {
+  "date": "1973/07/23",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1158.3667193904218
+ },
+ {
+  "date": "1973/07/23",
+  "wrestler": "Osamu Kido",
+  "elo": 1081.3338037640847
+ },
+ {
+  "date": "1973/07/23",
+  "wrestler": "Sean Regan",
+  "elo": 1237.455656630146
+ },
+ {
+  "date": "1973/07/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 996.4424399189963
+ },
+ {
+  "date": "1973/07/23",
+  "wrestler": "Cisco Grimaldo",
+  "elo": 1068.0199018617418
+ },
+ {
+  "date": "1973/07/23",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1218.7413356756485
+ },
+ {
+  "date": "1973/07/23",
+  "wrestler": "Antonio Inoki",
+  "elo": 1414.0975833135903
+ },
+ {
+  "date": "1973/07/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 953.5338163801143
+ },
+ {
+  "date": "1973/07/28",
+  "wrestler": "Shoji Kai",
+  "elo": 1232.61270060655
+ },
+ {
+  "date": "1973/07/28",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1223.908700455556
+ },
+ {
+  "date": "1973/07/28",
+  "wrestler": "Dennis Hall",
+  "elo": 940.2936999146798
+ },
+ {
+  "date": "1973/07/28",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1223.6118310509764
+ },
+ {
+  "date": "1973/07/28",
+  "wrestler": "Osamu Kido",
+  "elo": 1042.4392764669772
+ },
+ {
+  "date": "1973/07/28",
+  "wrestler": "Lonnie Mayne",
+  "elo": 1198.7049752241255
+ },
+ {
+  "date": "1973/07/28",
+  "wrestler": "John L. Sullivan",
+  "elo": 1214.3667673273017
+ },
+ {
+  "date": "1973/07/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1329.7589635884242
+ },
+ {
+  "date": "1973/07/29",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1017.5717952102656
+ },
+ {
+  "date": "1973/07/29",
+  "wrestler": "Shoji Kai",
+  "elo": 1190.4494595112408
+ },
+ {
+  "date": "1973/07/29",
+  "wrestler": "Dennis Hall",
+  "elo": 1108.9466642959173
+ },
+ {
+  "date": "1973/07/29",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1198.6331925165762
+ },
+ {
+  "date": "1973/07/29",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1248.8873389899563
+ },
+ {
+  "date": "1973/07/29",
+  "wrestler": "Cisco Grimaldo",
+  "elo": 1030.736504435937
+ },
+ {
+  "date": "1973/07/29",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1195.6501168162267
+ },
+ {
+  "date": "1973/07/29",
+  "wrestler": "Osamu Kido",
+  "elo": 1017.8864274044711
+ },
+ {
+  "date": "1973/07/29",
+  "wrestler": "Sean Regan",
+  "elo": 1249.732081161399
+ },
+ {
+  "date": "1973/07/31",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1039.515920666069
+ },
+ {
+  "date": "1973/07/31",
+  "wrestler": "Shoji Kai",
+  "elo": 1180.0455562911357
+ },
+ {
+  "date": "1973/07/31",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1259.669535006088
+ },
+ {
+  "date": "1973/07/31",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1150.8958894354016
+ },
+ {
+  "date": "1973/07/31",
+  "wrestler": "John L. Sullivan",
+  "elo": 1238.235418867889
+ },
+ {
+  "date": "1973/07/31",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1153.3708791799595
+ },
+ {
+  "date": "1973/07/31",
+  "wrestler": "Sean Regan",
+  "elo": 1270.8716999795327
+ },
+ {
+  "date": "1973/07/31",
+  "wrestler": "Cisco Grimaldo",
+  "elo": 1020.8223873804977
+ },
+ {
+  "date": "1973/07/31",
+  "wrestler": "Antonio Inoki",
+  "elo": 1419.05464184131
+ },
+ {
+  "date": "1973/08/01",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1042.8210969819033
+ },
+ {
+  "date": "1973/08/01",
+  "wrestler": "Shoji Kai",
+  "elo": 1170.361137856191
+ },
+ {
+  "date": "1973/08/01",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1269.7189082851914
+ },
+ {
+  "date": "1973/08/01",
+  "wrestler": "Dennis Hall",
+  "elo": 1065.3052085153734
+ },
+ {
+  "date": "1973/08/01",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1197.0123349605035
+ },
+ {
+  "date": "1973/08/01",
+  "wrestler": "Osamu Kido",
+  "elo": 991.7883121401014
+ },
+ {
+  "date": "1973/08/01",
+  "wrestler": "Lonnie Mayne",
+  "elo": 1224.8030904884952
+ },
+ {
+  "date": "1973/08/01",
+  "wrestler": "John L. Sullivan",
+  "elo": 1219.6728470087962
+ },
+ {
+  "date": "1973/08/01",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1348.321535447517
+ },
+ {
+  "date": "1973/08/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 958.8025284732335
+ },
+ {
+  "date": "1973/08/02",
+  "wrestler": "Dennis Hall",
+  "elo": 1004.8804009361629
+ },
+ {
+  "date": "1973/08/02",
+  "wrestler": "Osamu Kido",
+  "elo": 1112.6379272985223
+ },
+ {
+  "date": "1973/08/02",
+  "wrestler": "Shoji Kai",
+  "elo": 1134.435319869309
+ },
+ {
+  "date": "1973/08/02",
+  "wrestler": "Sean Regan",
+  "elo": 1288.8346089729735
+ },
+ {
+  "date": "1973/08/02",
+  "wrestler": "John L. Sullivan",
+  "elo": 1207.6276848056527
+ },
+ {
+  "date": "1973/08/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1431.0998040444533
+ },
+ {
+  "date": "1973/08/02",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1117.3589827151536
+ },
+ {
+  "date": "1973/08/02",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1286.4873616453156
+ },
+ {
+  "date": "1973/08/07",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 871.9875935845819
+ },
+ {
+  "date": "1973/08/07",
+  "wrestler": "Dennis Hall",
+  "elo": 1048.2878683804888
+ },
+ {
+  "date": "1973/08/07",
+  "wrestler": "Shoji Kai",
+  "elo": 1127.0952864403732
+ },
+ {
+  "date": "1973/08/07",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1294.2920890245614
+ },
+ {
+  "date": "1973/08/07",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1148.539531415601
+ },
+ {
+  "date": "1973/08/07",
+  "wrestler": "John L. Sullivan",
+  "elo": 1231.864086578104
+ },
+ {
+  "date": "1973/08/07",
+  "wrestler": "Osamu Kido",
+  "elo": 1086.0234164250166
+ },
+ {
+  "date": "1973/08/07",
+  "wrestler": "Sean Regan",
+  "elo": 1302.1418644097264
+ },
+ {
+  "date": "1973/08/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 887.4059179688738
+ },
+ {
+  "date": "1973/08/11",
+  "wrestler": "Shoji Kai",
+  "elo": 1167.8997352066742
+ },
+ {
+  "date": "1973/08/11",
+  "wrestler": "John L. Sullivan",
+  "elo": 1240.0648428192449
+ },
+ {
+  "date": "1973/08/11",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1119.3088384799216
+ },
+ {
+  "date": "1973/08/11",
+  "wrestler": "Sean Regan",
+  "elo": 1316.757210877566
+ },
+ {
+  "date": "1973/08/11",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1090.8271863533068
+ },
+ {
+  "date": "1973/08/11",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1307.5579872054848
+ },
+ {
+  "date": "1973/08/12",
+  "wrestler": "Shoji Kai",
+  "elo": 1170.6452615982053
+ },
+ {
+  "date": "1973/08/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 871.830471368961
+ },
+ {
+  "date": "1973/08/12",
+  "wrestler": "Sean Regan",
+  "elo": 1320.651072527544
+ },
+ {
+  "date": "1973/08/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1056.8449833801294
+ },
+ {
+  "date": "1973/08/12",
+  "wrestler": "John L. Sullivan",
+  "elo": 1254.6540593416885
+ },
+ {
+  "date": "1973/08/12",
+  "wrestler": "Dennis Hall",
+  "elo": 1004.3793594127239
+ },
+ {
+  "date": "1973/08/12",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1134.7356953210717
+ },
+ {
+  "date": "1973/08/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 934.0446817037059
+ },
+ {
+  "date": "1973/08/13",
+  "wrestler": "Shoji Kai",
+  "elo": 1171.757727560507
+ },
+ {
+  "date": "1973/08/13",
+  "wrestler": "Sean Regan",
+  "elo": 1326.0181662987852
+ },
+ {
+  "date": "1973/08/13",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1094.0272325684969
+ },
+ {
+  "date": "1973/08/13",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1320.1987901611972
+ },
+ {
+  "date": "1973/08/13",
+  "wrestler": "Dennis Hall",
+  "elo": 992.2463063635875
+ },
+ {
+  "date": "1973/08/13",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1354.388061972085
+ },
+ {
+  "date": "1973/08/14",
+  "wrestler": "Shoji Kai",
+  "elo": 1191.7837662051697
+ },
+ {
+  "date": "1973/08/14",
+  "wrestler": "Dennis Hall",
+  "elo": 998.2628213198532
+ },
+ {
+  "date": "1973/08/14",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1282.9916699798907
+ },
+ {
+  "date": "1973/08/14",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1209.1499356836846
+ },
+ {
+  "date": "1973/08/14",
+  "wrestler": "Osamu Kido",
+  "elo": 1039.3289228412873
+ },
+ {
+  "date": "1973/08/14",
+  "wrestler": "Sean Regan",
+  "elo": 1334.7761965682062
+ },
+ {
+  "date": "1973/08/14",
+  "wrestler": "John L. Sullivan",
+  "elo": 1236.6396674759324
+ },
+ {
+  "date": "1973/08/14",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1372.4024538378412
+ },
+ {
+  "date": "1973/08/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1021.7649814910258
+ },
+ {
+  "date": "1973/08/16",
+  "wrestler": "Shoji Kai",
+  "elo": 1182.505890081618
+ },
+ {
+  "date": "1973/08/16",
+  "wrestler": "Tarzan Jacobs",
+  "elo": 1292.6867000113011
+ },
+ {
+  "date": "1973/08/16",
+  "wrestler": "John L. Sullivan",
+  "elo": 1201.9178418988565
+ },
+ {
+  "date": "1973/08/16",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1163.4708837226485
+ },
+ {
+  "date": "1973/08/16",
+  "wrestler": "Lonnie Mayne",
+  "elo": 1209.827778789641
+ },
+ {
+  "date": "1973/08/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1387.3777655366955
+ },
+ {
+  "date": "1973/08/16",
+  "wrestler": "Sean Regan",
+  "elo": 1316.5349522660842
+ },
+ {
+  "date": "1973/08/16",
+  "wrestler": "Antonio Inoki",
+  "elo": 1449.3410483465752
+ },
+ {
+  "date": "1973/09/02",
+  "wrestler": "Clayton Thomson",
+  "elo": 955.6358354832121
+ },
+ {
+  "date": "1973/09/02",
+  "wrestler": "Osamu Kido",
+  "elo": 1083.6930873580752
+ },
+ {
+  "date": "1973/09/02",
+  "wrestler": "Earl Maynard",
+  "elo": 976.9229172648002
+ },
+ {
+  "date": "1973/09/02",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1220.6884770512845
+ },
+ {
+  "date": "1973/09/02",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1091.54043919532
+ },
+ {
+  "date": "1973/09/02",
+  "wrestler": "Wayne Bridges",
+  "elo": 1071.9304445273285
+ },
+ {
+  "date": "1973/09/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 962.3615134846973
+ },
+ {
+  "date": "1973/09/03",
+  "wrestler": "Clayton Thomson",
+  "elo": 1074.442771495869
+ },
+ {
+  "date": "1973/09/03",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1028.6633128390426
+ },
+ {
+  "date": "1973/09/03",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1062.8771263562774
+ },
+ {
+  "date": "1973/09/03",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1181.6480447837669
+ },
+ {
+  "date": "1973/09/03",
+  "wrestler": "El Santo",
+  "elo": 1078.080864535035
+ },
+ {
+  "date": "1973/09/03",
+  "wrestler": "Wayne Bridges",
+  "elo": 1057.9373153163306
+ },
+ {
+  "date": "1973/09/03",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1394.3743301421944
+ },
+ {
+  "date": "1973/09/05",
+  "wrestler": "El Santo",
+  "elo": 1001.0263493594605
+ },
+ {
+  "date": "1973/09/05",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 866.5501701680024
+ },
+ {
+  "date": "1973/09/05",
+  "wrestler": "Earl Maynard",
+  "elo": 1072.734260581495
+ },
+ {
+  "date": "1973/09/05",
+  "wrestler": "Shoji Kai",
+  "elo": 1117.4371683639547
+ },
+ {
+  "date": "1973/09/05",
+  "wrestler": "Clayton Thomson",
+  "elo": 1139.5114932135323
+ },
+ {
+  "date": "1973/09/05",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1112.75398510357
+ },
+ {
+  "date": "1973/09/05",
+  "wrestler": "Osamu Kido",
+  "elo": 1021.8763677411514
+ },
+ {
+  "date": "1973/09/05",
+  "wrestler": "Johnny Powers",
+  "elo": 1061.8167196169238
+ },
+ {
+  "date": "1973/09/06",
+  "wrestler": "Clayton Thomson",
+  "elo": 1141.470741168159
+ },
+ {
+  "date": "1973/09/06",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 803.431905078022
+ },
+ {
+  "date": "1973/09/06",
+  "wrestler": "El Santo",
+  "elo": 1032.5854819044507
+ },
+ {
+  "date": "1973/09/06",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 982.8662392034324
+ },
+ {
+  "date": "1973/09/06",
+  "wrestler": "Wayne Bridges",
+  "elo": 1103.7343889519407
+ },
+ {
+  "date": "1973/09/06",
+  "wrestler": "Osamu Kido",
+  "elo": 977.7496123407717
+ },
+ {
+  "date": "1973/09/06",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1107.0038817566572
+ },
+ {
+  "date": "1973/09/06",
+  "wrestler": "Johnny Powers",
+  "elo": 1106.0760174534423
+ },
+ {
+  "date": "1973/09/06",
+  "wrestler": "Earl Maynard",
+  "elo": 1062.467437582757
+ },
+ {
+  "date": "1973/09/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1454.4744598459442
+ },
+ {
+  "date": "1973/09/07",
+  "wrestler": "Clayton Thomson",
+  "elo": 1172.7189307884548
+ },
+ {
+  "date": "1973/09/07",
+  "wrestler": "Shoji Kai",
+  "elo": 1065.4662017257692
+ },
+ {
+  "date": "1973/09/07",
+  "wrestler": "Wayne Bridges",
+  "elo": 1155.7053555901261
+ },
+ {
+  "date": "1973/09/07",
+  "wrestler": "El Santo",
+  "elo": 975.4787535761737
+ },
+ {
+  "date": "1973/09/07",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1097.0796958599863
+ },
+ {
+  "date": "1973/09/07",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1061.9265542578719
+ },
+ {
+  "date": "1973/09/07",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1157.8313126023552
+ },
+ {
+  "date": "1973/09/07",
+  "wrestler": "Johnny Powers",
+  "elo": 1094.213796801649
+ },
+ {
+  "date": "1973/09/07",
+  "wrestler": "Antonio Inoki",
+  "elo": 1460.405570171841
+ },
+ {
+  "date": "1973/09/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 749.2645498890672
+ },
+ {
+  "date": "1973/09/08",
+  "wrestler": "El Santo",
+  "elo": 1029.6461087651287
+ },
+ {
+  "date": "1973/09/08",
+  "wrestler": "Clayton Thomson",
+  "elo": 1198.5039300753447
+ },
+ {
+  "date": "1973/09/08",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1123.5108656877735
+ },
+ {
+  "date": "1973/09/08",
+  "wrestler": "Earl Maynard",
+  "elo": 1092.3713857831788
+ },
+ {
+  "date": "1973/09/08",
+  "wrestler": "Osamu Kido",
+  "elo": 910.0691297119195
+ },
+ {
+  "date": "1973/09/08",
+  "wrestler": "Johnny Powers",
+  "elo": 1128.0540381160752
+ },
+ {
+  "date": "1973/09/08",
+  "wrestler": "Wayne Bridges",
+  "elo": 1140.9509590021175
+ },
+ {
+  "date": "1973/09/08",
+  "wrestler": "Antonio Inoki",
+  "elo": 1467.7827684658453
+ },
+ {
+  "date": "1973/09/09",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 735.2559595378725
+ },
+ {
+  "date": "1973/09/09",
+  "wrestler": "Clayton Thomson",
+  "elo": 1205.5082252509421
+ },
+ {
+  "date": "1973/09/09",
+  "wrestler": "Wayne Bridges",
+  "elo": 1157.0896425560093
+ },
+ {
+  "date": "1973/09/09",
+  "wrestler": "Shoji Kai",
+  "elo": 1017.8907381899656
+ },
+ {
+  "date": "1973/09/09",
+  "wrestler": "El Santo",
+  "elo": 963.0863443565382
+ },
+ {
+  "date": "1973/09/09",
+  "wrestler": "Osamu Kido",
+  "elo": 1043.1886585291004
+ },
+ {
+  "date": "1973/09/09",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1033.4613868920148
+ },
+ {
+  "date": "1973/09/09",
+  "wrestler": "Victor Rivera",
+  "elo": 1063.6183089679714
+ },
+ {
+  "date": "1973/09/10",
+  "wrestler": "Clayton Thomson",
+  "elo": 1168.1834023945585
+ },
+ {
+  "date": "1973/09/10",
+  "wrestler": "Shoji Kai",
+  "elo": 1092.5403839027329
+ },
+ {
+  "date": "1973/09/10",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1051.9358460125013
+ },
+ {
+  "date": "1973/09/10",
+  "wrestler": "El Santo",
+  "elo": 1106.2363837070823
+ },
+ {
+  "date": "1973/09/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 712.5608562193216
+ },
+ {
+  "date": "1973/09/10",
+  "wrestler": "Earl Maynard",
+  "elo": 1103.7189374424543
+ },
+ {
+  "date": "1973/09/10",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 996.7476910258825
+ },
+ {
+  "date": "1973/09/10",
+  "wrestler": "Johnny Powers",
+  "elo": 1164.7677339822076
+ },
+ {
+  "date": "1973/09/10",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1137.4341034044742
+ },
+ {
+  "date": "1973/09/10",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1404.572934741135
+ },
+ {
+  "date": "1973/09/13",
+  "wrestler": "Clayton Thomson",
+  "elo": 1192.0084725843037
+ },
+ {
+  "date": "1973/09/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 697.3215085204668
+ },
+ {
+  "date": "1973/09/13",
+  "wrestler": "Osamu Kido",
+  "elo": 1009.0172902979417
+ },
+ {
+  "date": "1973/09/13",
+  "wrestler": "Wayne Bridges",
+  "elo": 1191.2610107871678
+ },
+ {
+  "date": "1973/09/13",
+  "wrestler": "Earl Maynard",
+  "elo": 1120.2473688994698
+ },
+ {
+  "date": "1973/09/13",
+  "wrestler": "El Santo",
+  "elo": 1040.981370461726
+ },
+ {
+  "date": "1973/09/13",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1127.2577175165948
+ },
+ {
+  "date": "1973/09/13",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1003.6164542442821
+ },
+ {
+  "date": "1973/09/13",
+  "wrestler": "Victor Rivera",
+  "elo": 1111.9377007361907
+ },
+ {
+  "date": "1973/09/15",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 673.0207302435763
+ },
+ {
+  "date": "1973/09/15",
+  "wrestler": "El Santo",
+  "elo": 1053.1317596001713
+ },
+ {
+  "date": "1973/09/15",
+  "wrestler": "Shoji Kai",
+  "elo": 1151.243477775767
+ },
+ {
+  "date": "1973/09/15",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1086.3657353621577
+ },
+ {
+  "date": "1973/09/15",
+  "wrestler": "Wayne Bridges",
+  "elo": 1232.152992941605
+ },
+ {
+  "date": "1973/09/15",
+  "wrestler": "Osamu Kido",
+  "elo": 980.0417364208247
+ },
+ {
+  "date": "1973/09/15",
+  "wrestler": "Johnny Powers",
+  "elo": 1193.7432878593245
+ },
+ {
+  "date": "1973/09/15",
+  "wrestler": "Earl Maynard",
+  "elo": 1108.3331080550265
+ },
+ {
+  "date": "1973/09/15",
+  "wrestler": "Antonio Inoki",
+  "elo": 1473.739898888067
+ },
+ {
+  "date": "1973/09/16",
+  "wrestler": "Shoji Kai",
+  "elo": 1166.0501383493358
+ },
+ {
+  "date": "1973/09/16",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 665.3265599670956
+ },
+ {
+  "date": "1973/09/16",
+  "wrestler": "Wayne Bridges",
+  "elo": 1234.076535510725
+ },
+ {
+  "date": "1973/09/16",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1066.4637176813512
+ },
+ {
+  "date": "1973/09/16",
+  "wrestler": "Clayton Thomson",
+  "elo": 1114.7989744625297
+ },
+ {
+  "date": "1973/09/16",
+  "wrestler": "Osamu Kido",
+  "elo": 1134.4607326643725
+ },
+ {
+  "date": "1973/09/16",
+  "wrestler": "El Santo",
+  "elo": 1071.0998415650038
+ },
+ {
+  "date": "1973/09/16",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1119.7482037175496
+ },
+ {
+  "date": "1973/09/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1413.4158845845973
+ },
+ {
+  "date": "1973/09/17",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 651.3354351716577
+ },
+ {
+  "date": "1973/09/17",
+  "wrestler": "Clayton Thomson",
+  "elo": 1121.7945368602486
+ },
+ {
+  "date": "1973/09/17",
+  "wrestler": "El Santo",
+  "elo": 1020.4326893028117
+ },
+ {
+  "date": "1973/09/17",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1117.1308699435433
+ },
+ {
+  "date": "1973/09/17",
+  "wrestler": "Osamu Kido",
+  "elo": 1080.7077372648541
+ },
+ {
+  "date": "1973/09/17",
+  "wrestler": "Earl Maynard",
+  "elo": 1162.0861034545449
+ },
+ {
+  "date": "1973/09/17",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1130.5721490050535
+ },
+ {
+  "date": "1973/09/17",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1367.6521373625017
+ },
+ {
+  "date": "1973/09/17",
+  "wrestler": "Johnny Valentine",
+  "elo": 1091.5274944441912
+ },
+ {
+  "date": "1973/09/19",
+  "wrestler": "Clayton Thomson",
+  "elo": 1124.8855077398698
+ },
+ {
+  "date": "1973/09/19",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 629.9914940607614
+ },
+ {
+  "date": "1973/09/19",
+  "wrestler": "El Santo",
+  "elo": 1031.1046598582598
+ },
+ {
+  "date": "1973/09/19",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1078.638757922975
+ },
+ {
+  "date": "1973/09/19",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1169.0642610256218
+ },
+ {
+  "date": "1973/09/19",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1040.0392060174254
+ },
+ {
+  "date": "1973/09/19",
+  "wrestler": "Victor Rivera",
+  "elo": 1158.264230080923
+ },
+ {
+  "date": "1973/09/19",
+  "wrestler": "Wayne Bridges",
+  "elo": 1218.240928778391
+ },
+ {
+  "date": "1973/09/19",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1383.4877440948358
+ },
+ {
+  "date": "1973/09/21",
+  "wrestler": "Clayton Thomson",
+  "elo": 1080.7820087256857
+ },
+ {
+  "date": "1973/09/21",
+  "wrestler": "Shoji Kai",
+  "elo": 1210.15363736352
+ },
+ {
+  "date": "1973/09/21",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 623.4458129602125
+ },
+ {
+  "date": "1973/09/21",
+  "wrestler": "Wayne Bridges",
+  "elo": 1219.8773490535282
+ },
+ {
+  "date": "1973/09/21",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1192.989991376331
+ },
+ {
+  "date": "1973/09/21",
+  "wrestler": "El Santo",
+  "elo": 963.6862531461131
+ },
+ {
+  "date": "1973/09/21",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 995.5713857952246
+ },
+ {
+  "date": "1973/09/21",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1123.1065781451757
+ },
+ {
+  "date": "1973/09/21",
+  "wrestler": "Osamu Kido",
+  "elo": 1042.209456205813
+ },
+ {
+  "date": "1973/09/21",
+  "wrestler": "Earl Maynard",
+  "elo": 1200.584384513586
+ },
+ {
+  "date": "1973/09/22",
+  "wrestler": "Shoji Kai",
+  "elo": 1179.0179452513082
+ },
+ {
+  "date": "1973/09/22",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1185.377962369599
+ },
+ {
+  "date": "1973/09/22",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1114.0721797023837
+ },
+ {
+  "date": "1973/09/22",
+  "wrestler": "El Santo",
+  "elo": 1121.521876494008
+ },
+ {
+  "date": "1973/09/22",
+  "wrestler": "Clayton Thomson",
+  "elo": 1018.7593101141721
+ },
+ {
+  "date": "1973/09/22",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1119.616783018252
+ },
+ {
+  "date": "1973/09/22",
+  "wrestler": "Johnny Valentine",
+  "elo": 1134.1123535912168
+ },
+ {
+  "date": "1973/09/22",
+  "wrestler": "Earl Maynard",
+  "elo": 1187.6507274694914
+ },
+ {
+  "date": "1973/09/22",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1396.4214011389304
+ },
+ {
+  "date": "1973/09/23",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 604.8131342306028
+ },
+ {
+  "date": "1973/09/23",
+  "wrestler": "Clayton Thomson",
+  "elo": 1028.0756494789769
+ },
+ {
+  "date": "1973/09/23",
+  "wrestler": "Shoji Kai",
+  "elo": 1199.7963140603001
+ },
+ {
+  "date": "1973/09/23",
+  "wrestler": "Wayne Bridges",
+  "elo": 1230.73114498467
+ },
+ {
+  "date": "1973/09/23",
+  "wrestler": "Osamu Kido",
+  "elo": 1005.1352715850644
+ },
+ {
+  "date": "1973/09/23",
+  "wrestler": "Johnny Valentine",
+  "elo": 1171.1865382119654
+ },
+ {
+  "date": "1973/09/23",
+  "wrestler": "Earl Maynard",
+  "elo": 1171.4973717371338
+ },
+ {
+  "date": "1973/09/23",
+  "wrestler": "Antonio Inoki",
+  "elo": 1481.816576754246
+ },
+ {
+  "date": "1973/09/25",
+  "wrestler": "Clayton Thomson",
+  "elo": 1066.8925377673288
+ },
+ {
+  "date": "1973/09/25",
+  "wrestler": "El Santo",
+  "elo": 1055.372116925748
+ },
+ {
+  "date": "1973/09/25",
+  "wrestler": "Osamu Kido",
+  "elo": 1071.2850311533243
+ },
+ {
+  "date": "1973/09/25",
+  "wrestler": "Wayne Bridges",
+  "elo": 1197.6387163121697
+ },
+ {
+  "date": "1973/09/25",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1180.2570370473843
+ },
+ {
+  "date": "1973/09/25",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1206.2259623007537
+ },
+ {
+  "date": "1973/09/25",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1076.9842415931053
+ },
+ {
+  "date": "1973/09/25",
+  "wrestler": "Johnny Valentine",
+  "elo": 1213.819079637112
+ },
+ {
+  "date": "1973/09/26",
+  "wrestler": "Earl Maynard",
+  "elo": 1190.6910476152127
+ },
+ {
+  "date": "1973/09/26",
+  "wrestler": "Shoji Kai",
+  "elo": 1130.1318079315229
+ },
+ {
+  "date": "1973/09/26",
+  "wrestler": "El Santo",
+  "elo": 1125.0366230545253
+ },
+ {
+  "date": "1973/09/26",
+  "wrestler": "Clayton Thomson",
+  "elo": 1017.5246347024599
+ },
+ {
+  "date": "1973/09/26",
+  "wrestler": "Osamu Kido",
+  "elo": 1120.6529342181932
+ },
+ {
+  "date": "1973/09/26",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1043.6819189665323
+ },
+ {
+  "date": "1973/09/26",
+  "wrestler": "Wayne Bridges",
+  "elo": 1230.9410389387426
+ },
+ {
+  "date": "1973/09/26",
+  "wrestler": "Johnny Valentine",
+  "elo": 1221.2983673757467
+ },
+ {
+  "date": "1973/09/26",
+  "wrestler": "Antonio Inoki",
+  "elo": 1483.6829187653464
+ },
+ {
+  "date": "1973/09/27",
+  "wrestler": "Earl Maynard",
+  "elo": 1191.852728698259
+ },
+ {
+  "date": "1973/09/27",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 587.8051304537145
+ },
+ {
+  "date": "1973/09/27",
+  "wrestler": "Clayton Thomson",
+  "elo": 1026.0286365909042
+ },
+ {
+  "date": "1973/09/27",
+  "wrestler": "Wayne Bridges",
+  "elo": 1236.8560152967427
+ },
+ {
+  "date": "1973/09/27",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1075.3110215109305
+ },
+ {
+  "date": "1973/09/27",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1197.8070908034642
+ },
+ {
+  "date": "1973/09/27",
+  "wrestler": "Antonio Inoki",
+  "elo": 1492.1017902626359
+ },
+ {
+  "date": "1973/09/28",
+  "wrestler": "Shoji Kai",
+  "elo": 1065.582971268443
+ },
+ {
+  "date": "1973/09/28",
+  "wrestler": "Clayton Thomson",
+  "elo": 1090.577473253984
+ },
+ {
+  "date": "1973/09/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 583.1474558831874
+ },
+ {
+  "date": "1973/09/28",
+  "wrestler": "Wayne Bridges",
+  "elo": 1238.0204339393745
+ },
+ {
+  "date": "1973/09/28",
+  "wrestler": "Earl Maynard",
+  "elo": 1125.6829796610466
+ },
+ {
+  "date": "1973/09/28",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1141.4807705481428
+ },
+ {
+  "date": "1973/09/28",
+  "wrestler": "El Santo",
+  "elo": 1114.2526241503522
+ },
+ {
+  "date": "1973/09/28",
+  "wrestler": "Antonio Inoki",
+  "elo": 1497.4937897147224
+ },
+ {
+  "date": "1973/09/28",
+  "wrestler": "Johnny Valentine",
+  "elo": 1207.9306693537476
+ },
+ {
+  "date": "1973/09/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1409.7890991609295
+ },
+ {
+  "date": "1973/09/29",
+  "wrestler": "Clayton Thomson",
+  "elo": 1107.402026356278
+ },
+ {
+  "date": "1973/09/29",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1217.6196300390527
+ },
+ {
+  "date": "1973/09/29",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 727.7715305657932
+ },
+ {
+  "date": "1973/09/29",
+  "wrestler": "Osamu Kido",
+  "elo": 1076.0445897485286
+ },
+ {
+  "date": "1973/09/29",
+  "wrestler": "Victor Rivera",
+  "elo": 1202.8725745505876
+ },
+ {
+  "date": "1973/09/29",
+  "wrestler": "Earl Maynard",
+  "elo": 1115.1590079281848
+ },
+ {
+  "date": "1973/09/29",
+  "wrestler": "Antonio Inoki",
+  "elo": 1502.7557755811533
+ },
+ {
+  "date": "1973/10/02",
+  "wrestler": "Clayton Thomson",
+  "elo": 1108.8935426172056
+ },
+ {
+  "date": "1973/10/02",
+  "wrestler": "El Santo",
+  "elo": 1138.389787374728
+ },
+ {
+  "date": "1973/10/02",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1189.9414911565782
+ },
+ {
+  "date": "1973/10/02",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1235.613314812333
+ },
+ {
+  "date": "1973/10/02",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1087.6999950174627
+ },
+ {
+  "date": "1973/10/02",
+  "wrestler": "Earl Maynard",
+  "elo": 1168.939783458865
+ },
+ {
+  "date": "1973/10/02",
+  "wrestler": "Antonio Inoki",
+  "elo": 1503.0394613406188
+ },
+ {
+  "date": "1973/10/03",
+  "wrestler": "Shoji Kai",
+  "elo": 1081.721824765059
+ },
+ {
+  "date": "1973/10/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 707.7118731039399
+ },
+ {
+  "date": "1973/10/03",
+  "wrestler": "Clayton Thomson",
+  "elo": 1118.9233713481324
+ },
+ {
+  "date": "1973/10/03",
+  "wrestler": "El Santo",
+  "elo": 1102.0272576860536
+ },
+ {
+  "date": "1973/10/03",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1253.7945796566703
+ },
+ {
+  "date": "1973/10/03",
+  "wrestler": "Wayne Bridges",
+  "elo": 1202.1422567936831
+ },
+ {
+  "date": "1973/10/03",
+  "wrestler": "Osamu Kido",
+  "elo": 1147.8009440399112
+ },
+ {
+  "date": "1973/10/04",
+  "wrestler": "Shoji Kai",
+  "elo": 992.1271856082873
+ },
+ {
+  "date": "1973/10/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 886.9011514174831
+ },
+ {
+  "date": "1973/10/04",
+  "wrestler": "Clayton Thomson",
+  "elo": 1139.3172250722196
+ },
+ {
+  "date": "1973/10/04",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1195.6614772437545
+ },
+ {
+  "date": "1973/10/04",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1256.6714026211357
+ },
+ {
+  "date": "1973/10/04",
+  "wrestler": "El Santo",
+  "elo": 1049.9665667849533
+ },
+ {
+  "date": "1973/10/04",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1139.760685918563
+ },
+ {
+  "date": "1973/10/04",
+  "wrestler": "Earl Maynard",
+  "elo": 1148.9421153387175
+ },
+ {
+  "date": "1973/10/04",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1419.7879332210032
+ },
+ {
+  "date": "1973/10/08",
+  "wrestler": "Shoji Kai",
+  "elo": 996.8490994484262
+ },
+ {
+  "date": "1973/10/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 973.923581870464
+ },
+ {
+  "date": "1973/10/08",
+  "wrestler": "Clayton Thomson",
+  "elo": 1149.8165274514824
+ },
+ {
+  "date": "1973/10/08",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1154.3523648101807
+ },
+ {
+  "date": "1973/10/08",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1277.3259588379226
+ },
+ {
+  "date": "1973/10/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1157.3171778173773
+ },
+ {
+  "date": "1973/10/08",
+  "wrestler": "Earl Maynard",
+  "elo": 1155.651919554244
+ },
+ {
+  "date": "1973/10/08",
+  "wrestler": "Wayne Bridges",
+  "elo": 1191.0320639236354
+ },
+ {
+  "date": "1973/10/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1430.898126091051
+ },
+ {
+  "date": "1973/10/10",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 979.0168394017652
+ },
+ {
+  "date": "1973/10/10",
+  "wrestler": "Shoji Kai",
+  "elo": 938.2363895839154
+ },
+ {
+  "date": "1973/10/10",
+  "wrestler": "Clayton Thomson",
+  "elo": 1179.1228823837378
+ },
+ {
+  "date": "1973/10/10",
+  "wrestler": "Earl Maynard",
+  "elo": 1161.671779663417
+ },
+ {
+  "date": "1973/10/10",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1148.7458516570862
+ },
+ {
+  "date": "1973/10/10",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1237.960463007405
+ },
+ {
+  "date": "1973/10/10",
+  "wrestler": "El Santo",
+  "elo": 1128.6975584459883
+ },
+ {
+  "date": "1973/10/10",
+  "wrestler": "Wayne Bridges",
+  "elo": 1176.7989156108351
+ },
+ {
+  "date": "1973/10/10",
+  "wrestler": "Antonio Inoki",
+  "elo": 1510.1560354970188
+ },
+ {
+  "date": "1973/10/11",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1041.5734024379046
+ },
+ {
+  "date": "1973/10/11",
+  "wrestler": "Shoji Kai",
+  "elo": 982.471601373456
+ },
+ {
+  "date": "1973/10/11",
+  "wrestler": "Clayton Thomson",
+  "elo": 1184.0850358469088
+ },
+ {
+  "date": "1973/10/11",
+  "wrestler": "Wayne Bridges",
+  "elo": 1135.5109624893817
+ },
+ {
+  "date": "1973/10/11",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1258.6044395681317
+ },
+ {
+  "date": "1973/10/11",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1095.8638683506995
+ },
+ {
+  "date": "1973/10/11",
+  "wrestler": "El Santo",
+  "elo": 1181.579541752375
+ },
+ {
+  "date": "1973/10/11",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1137.44104646348
+ },
+ {
+  "date": "1973/10/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1439.3537852644013
+ },
+ {
+  "date": "1973/10/12",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 983.1490713937168
+ },
+ {
+  "date": "1973/10/12",
+  "wrestler": "Shoji Kai",
+  "elo": 1099.3202634618317
+ },
+ {
+  "date": "1973/10/12",
+  "wrestler": "Clayton Thomson",
+  "elo": 1192.970397888959
+ },
+ {
+  "date": "1973/10/12",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1081.4860090365196
+ },
+ {
+  "date": "1973/10/12",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1151.81890577766
+ },
+ {
+  "date": "1973/10/12",
+  "wrestler": "El Santo",
+  "elo": 1128.0935716332278
+ },
+ {
+  "date": "1973/10/12",
+  "wrestler": "Osamu Kido",
+  "elo": 1210.8031479365245
+ },
+ {
+  "date": "1973/10/12",
+  "wrestler": "Victor Rivera",
+  "elo": 1195.5884027716656
+ },
+ {
+  "date": "1973/10/12",
+  "wrestler": "Antonio Inoki",
+  "elo": 1517.4402072759408
+ },
+ {
+  "date": "1973/10/14",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1026.8866412652508
+ },
+ {
+  "date": "1973/10/14",
+  "wrestler": "Clayton Thomson",
+  "elo": 1193.6844115868796
+ },
+ {
+  "date": "1973/10/14",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1259.5353998157016
+ },
+ {
+  "date": "1973/10/14",
+  "wrestler": "Bobby Bold Eagle",
+  "elo": 1049.2819383636663
+ },
+ {
+  "date": "1973/10/14",
+  "wrestler": "Osamu Kido",
+  "elo": 1226.905183272951
+ },
+ {
+  "date": "1973/10/14",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1108.0847301993385
+ },
+ {
+  "date": "1973/10/14",
+  "wrestler": "Victor Rivera",
+  "elo": 1239.322578349987
+ },
+ {
+  "date": "1973/10/26",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 935.4137601676636
+ },
+ {
+  "date": "1973/10/26",
+  "wrestler": "Shoji Kai",
+  "elo": 1109.3507820616594
+ },
+ {
+  "date": "1973/10/26",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1078.5971591127466
+ },
+ {
+  "date": "1973/10/26",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1274.2791853589977
+ },
+ {
+  "date": "1973/10/26",
+  "wrestler": "Terry Rudge",
+  "elo": 1020.2404375185891
+ },
+ {
+  "date": "1973/10/26",
+  "wrestler": "Dave Ruhl",
+  "elo": 978.6871759052501
+ },
+ {
+  "date": "1973/10/26",
+  "wrestler": "Osamu Kido",
+  "elo": 1237.561595320326
+ },
+ {
+  "date": "1973/10/26",
+  "wrestler": "Haruka Eigen",
+  "elo": 950.0
+ },
+ {
+  "date": "1973/10/26",
+  "wrestler": "David Morgan",
+  "elo": 1050.0
+ },
+ {
+  "date": "1973/10/27",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 952.5034013078365
+ },
+ {
+  "date": "1973/10/27",
+  "wrestler": "Shoji Kai",
+  "elo": 1019.0260836328116
+ },
+ {
+  "date": "1973/10/27",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1232.826908169231
+ },
+ {
+  "date": "1973/10/27",
+  "wrestler": "Bill White",
+  "elo": 1082.904554379533
+ },
+ {
+  "date": "1973/10/27",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1054.467122378812
+ },
+ {
+  "date": "1973/10/27",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1289.6669337765518
+ },
+ {
+  "date": "1973/10/27",
+  "wrestler": "David Morgan",
+  "elo": 1040.389749268796
+ },
+ {
+  "date": "1973/10/27",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1444.1589106300032
+ },
+ {
+  "date": "1973/10/30",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1239.3056751247643
+ },
+ {
+  "date": "1973/10/30",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 877.2730508119778
+ },
+ {
+  "date": "1973/10/30",
+  "wrestler": "David Morgan",
+  "elo": 1078.0049245167254
+ },
+ {
+  "date": "1973/10/30",
+  "wrestler": "Terry Rudge",
+  "elo": 997.9877491389384
+ },
+ {
+  "date": "1973/10/30",
+  "wrestler": "Osamu Kido",
+  "elo": 1248.6879395101514
+ },
+ {
+  "date": "1973/10/30",
+  "wrestler": "Haruka Eigen",
+  "elo": 864.2926234816763
+ },
+ {
+  "date": "1973/10/30",
+  "wrestler": "Ray Glenn",
+  "elo": 1042.8536882591618
+ },
+ {
+  "date": "1973/10/30",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1275.1045004209168
+ },
+ {
+  "date": "1973/10/30",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1458.7213439856382
+ },
+ {
+  "date": "1973/11/01",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 824.268001940826
+ },
+ {
+  "date": "1973/11/01",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1080.969646814388
+ },
+ {
+  "date": "1973/11/01",
+  "wrestler": "Terry Rudge",
+  "elo": 861.3004009335809
+ },
+ {
+  "date": "1973/11/01",
+  "wrestler": "Haruka Eigen",
+  "elo": 1000.9799716870339
+ },
+ {
+  "date": "1973/11/01",
+  "wrestler": "David Morgan",
+  "elo": 1050.7659262488396
+ },
+ {
+  "date": "1973/11/01",
+  "wrestler": "Osamu Kido",
+  "elo": 1262.3074386440944
+ },
+ {
+  "date": "1973/11/01",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1279.6719774493174
+ },
+ {
+  "date": "1973/11/01",
+  "wrestler": "Jacques Rougeau",
+  "elo": 995.1599092879925
+ },
+ {
+  "date": "1973/11/01",
+  "wrestler": "Antonio Inoki",
+  "elo": 1519.8602526319446
+ },
+ {
+  "date": "1973/11/02",
+  "wrestler": "Haruka Eigen",
+  "elo": 1031.4619657795336
+ },
+ {
+  "date": "1973/11/02",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1240.820971254296
+ },
+ {
+  "date": "1973/11/02",
+  "wrestler": "Shoji Kai",
+  "elo": 973.581149521845
+ },
+ {
+  "date": "1973/11/02",
+  "wrestler": "David Morgan",
+  "elo": 1096.2108603598062
+ },
+ {
+  "date": "1973/11/02",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 734.8866010999723
+ },
+ {
+  "date": "1973/11/02",
+  "wrestler": "Terry Rudge",
+  "elo": 950.6818017744347
+ },
+ {
+  "date": "1973/11/02",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1056.8077242507777
+ },
+ {
+  "date": "1973/11/02",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1291.7529387311226
+ },
+ {
+  "date": "1973/11/02",
+  "wrestler": "Bill White",
+  "elo": 1072.5957597751185
+ },
+ {
+  "date": "1973/11/02",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1463.8757412878454
+ },
+ {
+  "date": "1973/11/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 805.899134155418
+ },
+ {
+  "date": "1973/11/03",
+  "wrestler": "Shoji Kai",
+  "elo": 1026.677595836364
+ },
+ {
+  "date": "1973/11/03",
+  "wrestler": "Terry Rudge",
+  "elo": 919.001640569445
+ },
+ {
+  "date": "1973/11/03",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1248.7410115555433
+ },
+ {
+  "date": "1973/11/03",
+  "wrestler": "David Morgan",
+  "elo": 1040.564480674755
+ },
+ {
+  "date": "1973/11/03",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1112.454103935829
+ },
+ {
+  "date": "1973/11/03",
+  "wrestler": "Haruka Eigen",
+  "elo": 976.2566088782344
+ },
+ {
+  "date": "1973/11/03",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1105.5706230905907
+ },
+ {
+  "date": "1973/11/03",
+  "wrestler": "Ray Glenn",
+  "elo": 1036.8216590278134
+ },
+ {
+  "date": "1973/11/03",
+  "wrestler": "Antonio Inoki",
+  "elo": 1522.876267247619
+ },
+ {
+  "date": "1973/11/08",
+  "wrestler": "Shoji Kai",
+  "elo": 948.5878673188537
+ },
+ {
+  "date": "1973/11/08",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 962.0785911904386
+ },
+ {
+  "date": "1973/11/08",
+  "wrestler": "Dave Morgan",
+  "elo": 981.9055722645334
+ },
+ {
+  "date": "1973/11/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1271.3546525118277
+ },
+ {
+  "date": "1973/11/08",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1037.1741033182188
+ },
+ {
+  "date": "1973/11/08",
+  "wrestler": "Terry Rudge",
+  "elo": 1069.5616418046652
+ },
+ {
+  "date": "1973/11/08",
+  "wrestler": "Haruka Eigen",
+  "elo": 893.5141796371927
+ },
+ {
+  "date": "1973/11/08",
+  "wrestler": "Ray Glenn",
+  "elo": 1078.1928736483344
+ },
+ {
+  "date": "1973/11/11",
+  "wrestler": "Shoji Kai",
+  "elo": 1017.8594792865748
+ },
+ {
+  "date": "1973/11/11",
+  "wrestler": "David Morgan",
+  "elo": 1017.3877793554846
+ },
+ {
+  "date": "1973/11/11",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1260.3293622151787
+ },
+ {
+  "date": "1973/11/11",
+  "wrestler": "Terry Rudge",
+  "elo": 996.1929328808336
+ },
+ {
+  "date": "1973/11/11",
+  "wrestler": "Haruka Eigen",
+  "elo": 1040.251597484856
+ },
+ {
+  "date": "1973/11/11",
+  "wrestler": "Osamu Kido",
+  "elo": 1235.2553995710364
+ },
+ {
+  "date": "1973/11/11",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1177.7691289721733
+ },
+ {
+  "date": "1973/11/11",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1278.2154167699782
+ },
+ {
+  "date": "1973/11/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1477.4132632489898
+ },
+ {
+  "date": "1973/11/13",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1264.2167153122557
+ },
+ {
+  "date": "1973/11/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 877.8647276488294
+ },
+ {
+  "date": "1973/11/13",
+  "wrestler": "David Morgan",
+  "elo": 1059.494711126289
+ },
+ {
+  "date": "1973/11/13",
+  "wrestler": "Terry Rudge",
+  "elo": 955.867459774612
+ },
+ {
+  "date": "1973/11/13",
+  "wrestler": "Osamu Kido",
+  "elo": 1245.3367678475918
+ },
+ {
+  "date": "1973/11/13",
+  "wrestler": "Haruka Eigen",
+  "elo": 1019.9868637928989
+ },
+ {
+  "date": "1973/11/13",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1288.3477836159566
+ },
+ {
+  "date": "1973/11/13",
+  "wrestler": "Ray Glenn",
+  "elo": 1071.0158096774182
+ },
+ {
+  "date": "1973/11/13",
+  "wrestler": "Antonio Inoki",
+  "elo": 1526.464799233077
+ },
+ {
+  "date": "1973/11/14",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1058.9583594583876
+ },
+ {
+  "date": "1973/11/14",
+  "wrestler": "Terry Rudge",
+  "elo": 1006.7296569637772
+ },
+ {
+  "date": "1973/11/14",
+  "wrestler": "David Morgan",
+  "elo": 1003.8334549630332
+ },
+ {
+  "date": "1973/11/14",
+  "wrestler": "Haruka Eigen",
+  "elo": 1075.6481199561547
+ },
+ {
+  "date": "1973/11/14",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1240.9502985667268
+ },
+ {
+  "date": "1973/11/14",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1311.6142003614855
+ },
+ {
+  "date": "1973/11/14",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1162.6448954741393
+ },
+ {
+  "date": "1973/11/14",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1484.975379998007
+ },
+ {
+  "date": "1973/11/16",
+  "wrestler": "David Morgan",
+  "elo": 961.7006613750224
+ },
+ {
+  "date": "1973/11/16",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1101.0911530463984
+ },
+ {
+  "date": "1973/11/16",
+  "wrestler": "Osamu Kido",
+  "elo": 1208.7497335049206
+ },
+ {
+  "date": "1973/11/16",
+  "wrestler": "Ray Glenn",
+  "elo": 1144.1898783627605
+ },
+ {
+  "date": "1973/11/16",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1149.121858971198
+ },
+ {
+  "date": "1973/11/16",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1491.7368982494777
+ },
+ {
+  "date": "1973/11/16",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1300.3643471697992
+ },
+ {
+  "date": "1973/11/16",
+  "wrestler": "Antonio Inoki",
+  "elo": 1537.7146524247632
+ },
+ {
+  "date": "1973/11/17",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1244.0927349167762
+ },
+ {
+  "date": "1973/11/17",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 813.3428652600925
+ },
+ {
+  "date": "1973/11/17",
+  "wrestler": "Terry Rudge",
+  "elo": 1038.9905881581456
+ },
+ {
+  "date": "1973/11/17",
+  "wrestler": "David Morgan",
+  "elo": 893.3699602905642
+ },
+ {
+  "date": "1973/11/17",
+  "wrestler": "Haruka Eigen",
+  "elo": 1109.8134704983838
+ },
+ {
+  "date": "1973/11/17",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1057.9596278381566
+ },
+ {
+  "date": "1973/11/17",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1192.2533841794398
+ },
+ {
+  "date": "1973/11/17",
+  "wrestler": "Bill White",
+  "elo": 1066.163980395635
+ },
+ {
+  "date": "1973/11/17",
+  "wrestler": "Antonio Inoki",
+  "elo": 1540.930542114505
+ },
+ {
+  "date": "1973/11/19",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 797.8826566013644
+ },
+ {
+  "date": "1973/11/19",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1247.9577870814583
+ },
+ {
+  "date": "1973/11/19",
+  "wrestler": "David Morgan",
+  "elo": 917.6475331661135
+ },
+ {
+  "date": "1973/11/19",
+  "wrestler": "Ray Glenn",
+  "elo": 1089.2587964839556
+ },
+ {
+  "date": "1973/11/19",
+  "wrestler": "Haruka Eigen",
+  "elo": 1164.7445523771887
+ },
+ {
+  "date": "1973/11/19",
+  "wrestler": "Osamu Kido",
+  "elo": 1199.5071087241995
+ },
+ {
+  "date": "1973/11/19",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1310.6677799568079
+ },
+ {
+  "date": "1973/11/19",
+  "wrestler": "Bill White",
+  "elo": 1060.0584472139833
+ },
+ {
+  "date": "1973/11/19",
+  "wrestler": "Antonio Inoki",
+  "elo": 1543.983308705331
+ },
+ {
+  "date": "1973/11/21",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 886.4293633102914
+ },
+ {
+  "date": "1973/11/21",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1005.2324728090771
+ },
+ {
+  "date": "1973/11/21",
+  "wrestler": "Terry Rudge",
+  "elo": 1091.717743187225
+ },
+ {
+  "date": "1973/11/21",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1227.4217628950937
+ },
+ {
+  "date": "1973/11/21",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1331.2038041431724
+ },
+ {
+  "date": "1973/11/21",
+  "wrestler": "Bill White",
+  "elo": 1052.3663828271285
+ },
+ {
+  "date": "1973/11/21",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1495.582930442905
+ },
+ {
+  "date": "1973/11/22",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 819.3504406505056
+ },
+ {
+  "date": "1973/11/22",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1038.77193413897
+ },
+ {
+  "date": "1973/11/22",
+  "wrestler": "David Morgan",
+  "elo": 944.6130500487823
+ },
+ {
+  "date": "1973/11/22",
+  "wrestler": "Terry Rudge",
+  "elo": 1060.3110758402559
+ },
+ {
+  "date": "1973/11/22",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1243.1250965685783
+ },
+ {
+  "date": "1973/11/22",
+  "wrestler": "Haruka Eigen",
+  "elo": 1137.0210096268884
+ },
+ {
+  "date": "1973/11/22",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1345.0655755183227
+ },
+ {
+  "date": "1973/11/22",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1180.590204851266
+ },
+ {
+  "date": "1973/11/22",
+  "wrestler": "Antonio Inoki",
+  "elo": 1549.8148983694177
+ },
+ {
+  "date": "1973/11/24",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 775.2620124437981
+ },
+ {
+  "date": "1973/11/24",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1060.8161482423238
+ },
+ {
+  "date": "1973/11/24",
+  "wrestler": "David Morgan",
+  "elo": 965.1197911186111
+ },
+ {
+  "date": "1973/11/24",
+  "wrestler": "Terry Rudge",
+  "elo": 1034.4338987066112
+ },
+ {
+  "date": "1973/11/24",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1256.0636851354006
+ },
+ {
+  "date": "1973/11/24",
+  "wrestler": "Haruka Eigen",
+  "elo": 1113.8307798750527
+ },
+ {
+  "date": "1973/11/24",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1356.6606903942406
+ },
+ {
+  "date": "1973/11/24",
+  "wrestler": "Ray Glenn",
+  "elo": 1082.6671279607112
+ },
+ {
+  "date": "1973/11/24",
+  "wrestler": "Antonio Inoki",
+  "elo": 1553.1107326310398
+ },
+ {
+  "date": "1973/11/25",
+  "wrestler": "Haruka Eigen",
+  "elo": 1121.0162993498213
+ },
+ {
+  "date": "1973/11/25",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1027.4011586371626
+ },
+ {
+  "date": "1973/11/25",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1214.0051944564273
+ },
+ {
+  "date": "1973/11/25",
+  "wrestler": "Osamu Kido",
+  "elo": 1170.6974968947436
+ },
+ {
+  "date": "1973/11/25",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1371.0654963089687
+ },
+ {
+  "date": "1973/11/25",
+  "wrestler": "Terry Rudge",
+  "elo": 1029.6264898031498
+ },
+ {
+  "date": "1973/11/25",
+  "wrestler": "Antonio Inoki",
+  "elo": 1555.5144370827704
+ },
+ {
+  "date": "1973/11/26",
+  "wrestler": "Haruka Eigen",
+  "elo": 1126.6549242434735
+ },
+ {
+  "date": "1973/11/26",
+  "wrestler": "Terry Rudge",
+  "elo": 1008.2684519283861
+ },
+ {
+  "date": "1973/11/26",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1266.7427040727825
+ },
+ {
+  "date": "1973/11/26",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1024.3636301045665
+ },
+ {
+  "date": "1973/11/26",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 774.4907051284056
+ },
+ {
+  "date": "1973/11/26",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1374.8743321569573
+ },
+ {
+  "date": "1973/11/26",
+  "wrestler": "Ray Glenn",
+  "elo": 1074.1722722964753
+ },
+ {
+  "date": "1973/11/26",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1499.8303582750232
+ },
+ {
+  "date": "1973/11/27",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1268.1780459644522
+ },
+ {
+  "date": "1973/11/27",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 972.0490033143873
+ },
+ {
+  "date": "1973/11/27",
+  "wrestler": "Terry Rudge",
+  "elo": 1060.5830787185653
+ },
+ {
+  "date": "1973/11/27",
+  "wrestler": "Osamu Kido",
+  "elo": 1107.1530953715323
+ },
+ {
+  "date": "1973/11/27",
+  "wrestler": "Ray Glenn",
+  "elo": 1137.7166738196865
+ },
+ {
+  "date": "1973/11/27",
+  "wrestler": "Haruka Eigen",
+  "elo": 1107.3273770686912
+ },
+ {
+  "date": "1973/11/27",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1384.5381057443483
+ },
+ {
+  "date": "1973/11/28",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 763.4703239449899
+ },
+ {
+  "date": "1973/11/28",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1270.933141260306
+ },
+ {
+  "date": "1973/11/28",
+  "wrestler": "Terry Rudge",
+  "elo": 1017.2698264319154
+ },
+ {
+  "date": "1973/11/28",
+  "wrestler": "Haruka Eigen",
+  "elo": 1150.6406293553412
+ },
+ {
+  "date": "1973/11/28",
+  "wrestler": "Osamu Kido",
+  "elo": 1072.063200619497
+ },
+ {
+  "date": "1973/11/28",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1231.550141832445
+ },
+ {
+  "date": "1973/11/28",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1367.5423840914302
+ },
+ {
+  "date": "1973/11/28",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1516.8260799279412
+ },
+ {
+  "date": "1973/11/30",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 854.4523367177175
+ },
+ {
+  "date": "1973/11/30",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1271.8429466735172
+ },
+ {
+  "date": "1973/11/30",
+  "wrestler": "Terry Rudge",
+  "elo": 975.0904960151194
+ },
+ {
+  "date": "1973/11/30",
+  "wrestler": "Osamu Kido",
+  "elo": 1114.2425310362928
+ },
+ {
+  "date": "1973/12/02",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1229.3995300449876
+ },
+ {
+  "date": "1973/12/02",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1141.8226698285055
+ },
+ {
+  "date": "1973/12/02",
+  "wrestler": "Ray Glenn",
+  "elo": 1084.3436041264256
+ },
+ {
+  "date": "1973/12/02",
+  "wrestler": "Osamu Kido",
+  "elo": 1167.6156007295538
+ },
+ {
+  "date": "1973/12/02",
+  "wrestler": "Haruka Eigen",
+  "elo": 1106.8119724631315
+ },
+ {
+  "date": "1973/12/02",
+  "wrestler": "Johnny Powers",
+  "elo": 1237.5719447515341
+ },
+ {
+  "date": "1973/12/03",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 816.5350247909965
+ },
+ {
+  "date": "1973/12/03",
+  "wrestler": "Haruka Eigen",
+  "elo": 1125.770628426492
+ },
+ {
+  "date": "1973/12/03",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1231.1114348656217
+ },
+ {
+  "date": "1973/12/03",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1105.2635349945992
+ },
+ {
+  "date": "1973/12/03",
+  "wrestler": "Johnny Powers",
+  "elo": 1255.8515121684873
+ },
+ {
+  "date": "1973/12/03",
+  "wrestler": "Bill White",
+  "elo": 1047.1329687381055
+ },
+ {
+  "date": "1973/12/03",
+  "wrestler": "Antonio Inoki",
+  "elo": 1558.131144127282
+ },
+ {
+  "date": "1973/12/04",
+  "wrestler": "Shoji Kai",
+  "elo": 1024.0495511169877
+ },
+ {
+  "date": "1973/12/04",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 799.693337159958
+ },
+ {
+  "date": "1973/12/04",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1235.3218567733813
+ },
+ {
+  "date": "1973/12/04",
+  "wrestler": "Terry Rudge",
+  "elo": 915.9307339089576
+ },
+ {
+  "date": "1973/12/04",
+  "wrestler": "Haruka Eigen",
+  "elo": 1155.350509479573
+ },
+ {
+  "date": "1973/12/04",
+  "wrestler": "Osamu Kido",
+  "elo": 1130.0476334632876
+ },
+ {
+  "date": "1973/12/04",
+  "wrestler": "Johnny Powers",
+  "elo": 1274.6354958016204
+ },
+ {
+  "date": "1973/12/05",
+  "wrestler": "Shoji Kai",
+  "elo": 1047.8482604564674
+ },
+ {
+  "date": "1973/12/05",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1236.0572396892203
+ },
+ {
+  "date": "1973/12/05",
+  "wrestler": "Johnny Powers",
+  "elo": 1275.915288722926
+ },
+ {
+  "date": "1973/12/05",
+  "wrestler": "Ray Glenn",
+  "elo": 1076.6843384459628
+ },
+ {
+  "date": "1973/12/05",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1520.6557127681726
+ },
+ {
+  "date": "1973/12/06",
+  "wrestler": "Haruka Eigen",
+  "elo": 1160.174142271657
+ },
+ {
+  "date": "1973/12/06",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1213.9127409118316
+ },
+ {
+  "date": "1973/12/06",
+  "wrestler": "Johnny Powers",
+  "elo": 1298.0597875003148
+ },
+ {
+  "date": "1973/12/06",
+  "wrestler": "Ray Glenn",
+  "elo": 1070.7955704483634
+ },
+ {
+  "date": "1973/12/06",
+  "wrestler": "Antonio Inoki",
+  "elo": 1561.0755281260815
+ },
+ {
+  "date": "1973/12/07",
+  "wrestler": "Haruka Eigen",
+  "elo": 1161.994820577099
+ },
+ {
+  "date": "1973/12/07",
+  "wrestler": "Terry Rudge",
+  "elo": 865.6028304241966
+ },
+ {
+  "date": "1973/12/07",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1130.4274867369797
+ },
+ {
+  "date": "1973/12/07",
+  "wrestler": "Osamu Kido",
+  "elo": 1068.3367367411424
+ },
+ {
+  "date": "1973/12/07",
+  "wrestler": "Bill White",
+  "elo": 1108.8438654602508
+ },
+ {
+  "date": "1973/12/07",
+  "wrestler": "Ray Glenn",
+  "elo": 1040.3008396623577
+ },
+ {
+  "date": "1973/12/07",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1229.1601063048345
+ },
+ {
+  "date": "1973/12/08",
+  "wrestler": "Shoji Kai",
+  "elo": 1051.1988685182096
+ },
+ {
+  "date": "1973/12/08",
+  "wrestler": "Terry Rudge",
+  "elo": 818.1243877623397
+ },
+ {
+  "date": "1973/12/08",
+  "wrestler": "Osamu Kido",
+  "elo": 1092.0759580720708
+ },
+ {
+  "date": "1973/12/08",
+  "wrestler": "Haruka Eigen",
+  "elo": 1130.6328972755723
+ },
+ {
+  "date": "1973/12/08",
+  "wrestler": "Johnny Powers",
+  "elo": 1313.7407491510783
+ },
+ {
+  "date": "1973/12/08",
+  "wrestler": "Ray Glenn",
+  "elo": 1034.377139795661
+ },
+ {
+  "date": "1973/12/08",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1523.617562701521
+ },
+ {
+  "date": "1973/12/09",
+  "wrestler": "Osamu Kido",
+  "elo": 1033.8479333348162
+ },
+ {
+  "date": "1973/12/09",
+  "wrestler": "Ray Glenn",
+  "elo": 1092.6051645329155
+ },
+ {
+  "date": "1973/12/09",
+  "wrestler": "Terry Rudge",
+  "elo": 789.7284457973839
+ },
+ {
+  "date": "1973/12/09",
+  "wrestler": "Haruka Eigen",
+  "elo": 1144.8308682580503
+ },
+ {
+  "date": "1973/12/09",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1077.3253435450438
+ },
+ {
+  "date": "1973/12/09",
+  "wrestler": "Bill White",
+  "elo": 1161.9460086521867
+ },
+ {
+  "date": "1973/12/10",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1090.8472014468498
+ },
+ {
+  "date": "1973/12/10",
+  "wrestler": "Terry Rudge",
+  "elo": 750.3320444260229
+ },
+ {
+  "date": "1973/12/10",
+  "wrestler": "Osamu Kido",
+  "elo": 1053.5461340204968
+ },
+ {
+  "date": "1973/12/10",
+  "wrestler": "Johnny Powers",
+  "elo": 1304.037213695486
+ },
+ {
+  "date": "1973/12/10",
+  "wrestler": "Antonio Inoki",
+  "elo": 1570.7790635816739
+ },
+ {
+  "date": "1973/12/11",
+  "wrestler": "Shoji Kai",
+  "elo": 1058.9190021474762
+ },
+ {
+  "date": "1973/12/11",
+  "wrestler": "Terry Rudge",
+  "elo": 843.8941801753831
+ },
+ {
+  "date": "1973/12/11",
+  "wrestler": "Ray Glenn",
+  "elo": 1050.0649463353825
+ },
+ {
+  "date": "1973/12/11",
+  "wrestler": "Haruka Eigen",
+  "elo": 1187.3710864555833
+ },
+ {
+  "date": "1973/12/11",
+  "wrestler": "Johnny Powers",
+  "elo": 1293.0229618925332
+ },
+ {
+  "date": "1973/12/11",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1534.6318145044736
+ },
+ {
+  "date": "1973/12/13",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 762.039443979502
+ },
+ {
+  "date": "1973/12/13",
+  "wrestler": "Osamu Kido",
+  "elo": 1072.3730806107246
+ },
+ {
+  "date": "1973/12/13",
+  "wrestler": "Bill White",
+  "elo": 1121.5000022773606
+ },
+ {
+  "date": "1973/12/13",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1249.3831094922475
+ },
+ {
+  "date": "1973/12/13",
+  "wrestler": "Terry Rudge",
+  "elo": 819.5709095559545
+ },
+ {
+  "date": "1973/12/13",
+  "wrestler": "Haruka Eigen",
+  "elo": 1199.5327217652975
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>
