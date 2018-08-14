@@ -2,2631 +2,3683 @@
  {
   "date": "1986/01/03",
   "wrestler": "Black Tiger",
-  "elo": 950.0
+  "elo": 950.0,
+  "opponent": "The Cobra",
+  "result": "lost"
  },
  {
   "date": "1986/01/03",
   "wrestler": "The Cobra",
-  "elo": 1050.0
+  "elo": 1050.0,
+  "opponent": "Black Tiger",
+  "result": "won"
  },
  {
   "date": "1986/01/03",
   "wrestler": "Nobuhiko Takada",
-  "elo": 751.9493853295916
+  "elo": 950.0,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/01/03",
   "wrestler": "Akira Maeda",
-  "elo": 1024.0253073352042
+  "elo": 1050.0,
+  "opponent": "Nobuhiko Takada",
+  "result": "won"
  },
  {
   "date": "1986/01/03",
   "wrestler": "Jim Duggan",
-  "elo": 1000.0
+  "elo": 1000.0,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
  },
  {
   "date": "1986/01/03",
   "wrestler": "Antonio Inoki",
-  "elo": 1000.0
+  "elo": 1000.0,
+  "opponent": "Jim Duggan",
+  "result": "draw"
  },
  {
   "date": "1986/01/04",
   "wrestler": "Shiro Koshinaka",
-  "elo": 992.8536882591619
+  "elo": 992.8536882591619,
+  "opponent": "Black Tiger",
+  "result": "draw"
  },
  {
   "date": "1986/01/04",
   "wrestler": "Black Tiger",
-  "elo": 964.2926234816763
+  "elo": 964.2926234816763,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
  },
  {
   "date": "1986/01/04",
   "wrestler": "Akira Maeda",
-  "elo": 970.5732881859517
+  "elo": 992.8536882591618,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
  },
  {
   "date": "1986/01/04",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1053.4520191492525
+  "elo": 1057.1463117408382,
+  "opponent": "Akira Maeda",
+  "result": "won"
  },
  {
   "date": "1986/01/04",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1000.0
+  "elo": 1000.0,
+  "opponent": "Jim Duggan",
+  "result": "draw"
  },
  {
   "date": "1986/01/04",
   "wrestler": "Jim Duggan",
-  "elo": 1000.0
+  "elo": 1000.0,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
  },
  {
   "date": "1986/01/06",
   "wrestler": "Masahiro Chono",
-  "elo": 700.0
+  "elo": 950.0,
+  "opponent": "Hirokazu Hata",
+  "result": "lost"
  },
  {
   "date": "1986/01/06",
   "wrestler": "Hirokazu Hata",
-  "elo": 900.0
+  "elo": 1050.0,
+  "opponent": "Masahiro Chono",
+  "result": "won"
  },
  {
   "date": "1986/01/06",
   "wrestler": "Mike Miller",
-  "elo": 950.0
+  "elo": 950.0,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
  },
  {
   "date": "1986/01/06",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1050.0
+  "elo": 1050.0,
+  "opponent": "Mike Miller",
+  "result": "won"
  },
  {
   "date": "1986/01/06",
   "wrestler": "Keiichi Yamada",
-  "elo": 751.9493853295916
+  "elo": 950.0,
+  "opponent": "Shunji Kosugi",
+  "result": "lost"
  },
  {
   "date": "1986/01/06",
   "wrestler": "Shunji Kosugi",
-  "elo": 1024.0253073352042
+  "elo": 1050.0,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
  },
  {
   "date": "1986/01/06",
   "wrestler": "Nobuhiko Takada",
-  "elo": 713.2639819406502
+  "elo": 864.2926234816763,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
  },
  {
   "date": "1986/01/06",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 1019.3427016944706
+  "elo": 1042.8536882591618,
+  "opponent": "Nobuhiko Takada",
+  "result": "won"
  },
  {
   "date": "1986/01/10",
   "wrestler": "Akira Maeda",
-  "elo": 893.9853061984405
+  "elo": 911.1502243541727,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
  },
  {
   "date": "1986/01/10",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1091.746010143008
+  "elo": 1097.9980436933329,
+  "opponent": "Akira Maeda",
+  "result": "won"
  },
  {
   "date": "1986/01/14",
   "wrestler": "Tony St. Clair",
-  "elo": 950.0
+  "elo": 950.0,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/01/14",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1050.0
+  "elo": 1050.0,
+  "opponent": "Tony St. Clair",
+  "result": "won"
  },
  {
   "date": "1986/01/15",
   "wrestler": "Nobuhiko Takada",
-  "elo": 661.0461600534156
+  "elo": 777.69814534733,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/01/15",
   "wrestler": "Akira Maeda",
-  "elo": 946.2031280856751
+  "elo": 997.744702488519,
+  "opponent": "Nobuhiko Takada",
+  "result": "won"
  },
  {
   "date": "1986/01/17",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 930.6220352828597
+  "elo": 960.7064061343876,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/01/17",
   "wrestler": "Nobuhiko Takada",
-  "elo": 838.4874928766375
+  "elo": 941.9927095968782,
+  "opponent": "Kazuo Yamazaki",
+  "result": "won"
  },
  {
   "date": "1986/01/17",
   "wrestler": "Keiichi Yamada",
-  "elo": 706.4446107764307
+  "elo": 854.1114287366701,
+  "opponent": "Black Tiger",
+  "result": "lost"
  },
  {
   "date": "1986/01/17",
   "wrestler": "Black Tiger",
-  "elo": 1009.7973980348371
+  "elo": 1060.1811947450062,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
  },
  {
   "date": "1986/01/17",
   "wrestler": "Kendo Nagasaki",
-  "elo": 1000.0
+  "elo": 1000.0,
+  "opponent": "Jim Duggan",
+  "result": "draw"
  },
  {
   "date": "1986/01/17",
   "wrestler": "Jim Duggan",
-  "elo": 1000.0
+  "elo": 1000.0,
+  "opponent": "Kendo Nagasaki",
+  "result": "draw"
  },
  {
   "date": "1986/01/18",
   "wrestler": "Osamu Kido",
-  "elo": 942.3192925245577
+  "elo": 949.6754411566974,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/01/18",
   "wrestler": "Akira Maeda",
-  "elo": 1061.5645430365598
+  "elo": 1098.3938201751243,
+  "opponent": "Osamu Kido",
+  "result": "won"
  },
  {
   "date": "1986/01/24",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 866.6217682266952
+  "elo": 898.3839486184406,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/01/24",
   "wrestler": "Akira Maeda",
-  "elo": 1093.564676564642
+  "elo": 1129.5550489330979,
+  "opponent": "Kazuo Yamazaki",
+  "result": "won"
  },
  {
   "date": "1986/01/24",
   "wrestler": "Kevin von Erich",
-  "elo": 950.0
+  "elo": 950.0,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/01/24",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1050.0
+  "elo": 1050.0,
+  "opponent": "Kevin von Erich",
+  "result": "won"
  },
  {
   "date": "1986/01/26",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1042.0077348895288
+  "elo": 1052.5270142987167,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/01/26",
   "wrestler": "Akira Maeda",
-  "elo": 1143.3029518181213
+  "elo": 1175.026078327714,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
  },
  {
   "date": "1986/01/31",
   "wrestler": "Akira Maeda",
-  "elo": 1067.2250546008074
+  "elo": 1096.4893612520007,
+  "opponent": "Osamu Kido",
+  "result": "lost"
  },
  {
   "date": "1986/01/31",
   "wrestler": "Osamu Kido",
-  "elo": 1094.4750869591855
+  "elo": 1106.748875308124,
+  "opponent": "Akira Maeda",
+  "result": "won"
  },
  {
   "date": "1986/01/31",
   "wrestler": "Mad Maxx 1",
-  "elo": 950.0
+  "elo": 950.0,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/01/31",
   "wrestler": "Antonio Inoki",
-  "elo": 1050.0
+  "elo": 1050.0,
+  "opponent": "Mad Maxx 1",
+  "result": "won"
  },
  {
   "date": "1986/02/02",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 818.6978181106064
+  "elo": 849.9340646226357,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/02/02",
   "wrestler": "Akira Maeda",
-  "elo": 1091.1870296588518
+  "elo": 1120.7143032499032,
+  "opponent": "Kazuo Yamazaki",
+  "result": "won"
  },
  {
   "date": "1986/02/05",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1054.0750768178127
+  "elo": 1069.1942880428426,
+  "opponent": "Akira Maeda; Akira Maeda",
+  "result": "draw"
  },
  {
   "date": "1986/02/05",
   "wrestler": "Akira Maeda",
-  "elo": 1079.1196877305679
+  "elo": 1104.0470295057773,
+  "opponent": "Yoshiaki Fujiwara; Yoshiaki Fujiwara",
+  "result": "draw"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Akira Nogami",
-  "elo": 700.0
+  "elo": 950.0,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Shinya Hashimoto",
-  "elo": 900.0
+  "elo": 1050.0,
+  "opponent": "Akira Nogami",
+  "result": "won"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Masahiro Chono",
-  "elo": 661.6635345098917
+  "elo": 850.0,
+  "opponent": "Tony St. Clair",
+  "result": "lost"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Tony St. Clair",
-  "elo": 988.3364654901083
+  "elo": 1050.0,
+  "opponent": "Masahiro Chono",
+  "result": "won"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Kengo Kimura",
-  "elo": 942.8536882591618
+  "elo": 942.8536882591618,
+  "opponent": "Kevin von Erich",
+  "result": "lost"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Kevin von Erich",
-  "elo": 1064.2926234816764
+  "elo": 1064.2926234816764,
+  "opponent": "Kengo Kimura",
+  "result": "won"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Kerry von Erich",
-  "elo": 957.1463117408382
+  "elo": 957.1463117408382,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1092.8536882591618
+  "elo": 1092.8536882591618,
+  "opponent": "Kerry von Erich",
+  "result": "won"
  },
  {
   "date": "1986/02/06",
   "wrestler": "The Cobra",
-  "elo": 991.849354329337
+  "elo": 991.849354329337,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Shiro Koshinaka",
-  "elo": 1109.154979600488
+  "elo": 1109.154979600488,
+  "opponent": "The Cobra",
+  "result": "won"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1003.4886530131178
+  "elo": 1016.4348147514619,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/02/06",
   "wrestler": "Antonio Inoki",
-  "elo": 1100.586423804695
+  "elo": 1102.7594732913806,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
  },
  {
   "date": "1986/02/28",
   "wrestler": "Riki Bassan",
-  "elo": 961.1934125507446
+  "elo": 964.5414409232146,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/02/28",
   "wrestler": "Akira Maeda",
-  "elo": 1117.9262751798233
+  "elo": 1139.5055885825627,
+  "opponent": "Riki Bassan",
+  "result": "won"
  },
  {
   "date": "1986/03/03",
   "wrestler": "The Jackal",
-  "elo": 966.3479348216982
+  "elo": 969.06283908642,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/03/03",
   "wrestler": "Akira Maeda",
-  "elo": 1151.578340358125
+  "elo": 1170.4427494961426,
+  "opponent": "The Jackal",
+  "result": "won"
  },
  {
   "date": "1986/03/04",
   "wrestler": "Matt Borne",
-  "elo": 957.1463117408382
+  "elo": 957.1463117408382,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/03/04",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1092.8536882591618
+  "elo": 1092.8536882591618,
+  "opponent": "Matt Borne",
+  "result": "won"
  },
  {
   "date": "1986/03/12",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1079.8002780893262
+  "elo": 1079.8002780893262,
+  "opponent": "Billy Jack",
+  "result": "draw"
  },
  {
   "date": "1986/03/12",
   "wrestler": "Billy Jack",
-  "elo": 1013.0534101698356
+  "elo": 1013.0534101698356,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/03/13",
   "wrestler": "Nick Kiniski",
-  "elo": 970.527707608683
+  "elo": 972.7335813452452,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/03/13",
   "wrestler": "Akira Maeda",
-  "elo": 1181.050632749442
+  "elo": 1197.7091681508973,
+  "opponent": "Nick Kiniski",
+  "result": "won"
  },
  {
   "date": "1986/03/14",
   "wrestler": "Don Arakawa",
-  "elo": 1015.211445797988
+  "elo": 1015.211445797988,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
  },
  {
   "date": "1986/03/14",
   "wrestler": "Shiro Koshinaka",
-  "elo": 1093.9435338025
+  "elo": 1093.9435338025,
+  "opponent": "Don Arakawa",
+  "result": "draw"
  },
  {
   "date": "1986/03/14",
   "wrestler": "Billy Jack",
-  "elo": 975.3904937758042
+  "elo": 975.6837251093218,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/03/14",
   "wrestler": "Antonio Inoki",
-  "elo": 1138.2493401987265
+  "elo": 1140.1291583518944,
+  "opponent": "Billy Jack",
+  "result": "won"
  },
  {
   "date": "1986/03/15",
   "wrestler": "Matt Borne",
-  "elo": 913.9383949544577
+  "elo": 917.0981862586001,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/03/15",
   "wrestler": "Akira Maeda",
-  "elo": 1202.6545911426322
+  "elo": 1217.7332308920163,
+  "opponent": "Matt Borne",
+  "result": "won"
  },
  {
   "date": "1986/03/17",
   "wrestler": "Nick Kiniski",
-  "elo": 928.9015560413108
+  "elo": 933.4972216045601,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/03/17",
   "wrestler": "Akira Maeda",
-  "elo": 1213.0611290344752
+  "elo": 1227.5423208271875,
+  "opponent": "Nick Kiniski",
+  "result": "won"
  },
  {
   "date": "1986/03/20",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1065.2110626163849
+  "elo": 1065.249678723574,
+  "opponent": "Billy Jack",
+  "result": "draw"
  },
  {
   "date": "1986/03/20",
   "wrestler": "Billy Jack",
-  "elo": 1004.5689247216869
+  "elo": 1004.7849238408261,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/03/22",
   "wrestler": "Nick Kiniski",
-  "elo": 866.2382977395225
+  "elo": 869.699694017614,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/03/22",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1096.542691767279
+  "elo": 1097.1484425170472,
+  "opponent": "Nick Kiniski",
+  "result": "won"
  },
  {
   "date": "1986/03/24",
   "wrestler": "Nick Kiniski",
-  "elo": 842.3235450812095
+  "elo": 847.088677927005,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/03/24",
   "wrestler": "Akira Maeda",
-  "elo": 1219.0398171990535
+  "elo": 1233.1950748498398,
+  "opponent": "Nick Kiniski",
+  "result": "won"
  },
  {
   "date": "1986/03/26",
   "wrestler": "Masakatsu Funaki",
-  "elo": 728.012999960577
+  "elo": 957.1463117408382,
+  "opponent": "Hirokazu Hata",
+  "result": "lost"
  },
  {
   "date": "1986/03/26",
   "wrestler": "Hirokazu Hata",
-  "elo": 971.987000039423
+  "elo": 1092.8536882591618,
+  "opponent": "Yuji Funaki",
+  "result": "won"
  },
  {
   "date": "1986/03/26",
   "wrestler": "Yang Seung-Hi",
-  "elo": 950.6574832223191
+  "elo": 950.6885623612476,
+  "opponent": "Billy Jack",
+  "result": "lost"
  },
  {
   "date": "1986/03/26",
   "wrestler": "Billy Jack",
-  "elo": 1053.9114414993678
+  "elo": 1054.0963614795785,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
  },
  {
   "date": "1986/03/26",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 673.7050786250226
+  "elo": 930.1576460696655,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
  },
  {
   "date": "1986/03/26",
   "wrestler": "Keiichi Yamada",
-  "elo": 832.7395321514082
+  "elo": 993.7961365973391,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
  },
  {
   "date": "1986/04/11",
   "wrestler": "Andre The Giant",
-  "elo": 950.0
+  "elo": 950.0,
+  "opponent": "Umanosuke Ueda",
+  "result": "lost"
  },
  {
   "date": "1986/04/11",
   "wrestler": "Umanosuke Ueda",
-  "elo": 1050.0
+  "elo": 1050.0,
+  "opponent": "Andre The Giant",
+  "result": "won"
  },
  {
   "date": "1986/04/11",
   "wrestler": "Antonio Inoki",
-  "elo": 1069.341223552645
+  "elo": 1070.9896770422708,
+  "opponent": "The Masked Superstar",
+  "result": "lost"
  },
  {
   "date": "1986/04/11",
   "wrestler": "The Masked Superstar",
-  "elo": 1068.9081166460815
+  "elo": 1069.1394813096235,
+  "opponent": "Antonio Inoki",
+  "result": "won"
  },
  {
   "date": "1986/04/17",
   "wrestler": "Randy Colley",
-  "elo": 977.9180060220464
+  "elo": 979.288085511825,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/04/17",
   "wrestler": "Akira Maeda",
-  "elo": 1230.0808141880302
+  "elo": 1243.5510320939272,
+  "opponent": "Randy Colley",
+  "result": "won"
  },
  {
   "date": "1986/04/20",
   "wrestler": "Kenichi Oya",
-  "elo": 662.1622782051518
+  "elo": 929.6614996528172,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
  },
  {
   "date": "1986/04/20",
   "wrestler": "Masahiro Chono",
-  "elo": 799.5012563047399
+  "elo": 990.6770006943657,
+  "opponent": "Kenichi Oya",
+  "result": "won"
  },
  {
   "date": "1986/04/20",
   "wrestler": "Gestapo",
-  "elo": 978.9921388698641
+  "elo": 980.2499868298631,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/04/20",
   "wrestler": "Akira Maeda",
-  "elo": 1240.5847447530982
+  "elo": 1253.4260386789956,
+  "opponent": "Gestapo",
+  "result": "won"
  },
  {
   "date": "1986/04/21",
   "wrestler": "Kerry Brown",
-  "elo": 979.9779549919706
+  "elo": 981.1354816255684,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/04/21",
   "wrestler": "Akira Maeda",
-  "elo": 1250.5957672571128
+  "elo": 1262.8582978662114,
+  "opponent": "Kerry Brown",
+  "result": "won"
  },
  {
   "date": "1986/04/22",
   "wrestler": "Masked Superstar",
-  "elo": 1030.8848480085414
+  "elo": 1031.952520048224,
+  "opponent": "Akira Maeda",
+  "result": "draw"
  },
  {
   "date": "1986/04/22",
   "wrestler": "Akira Maeda",
-  "elo": 1235.1533432528422
+  "elo": 1246.8820378420994,
+  "opponent": "Masked Superstar",
+  "result": "draw"
  },
  {
   "date": "1986/04/24",
   "wrestler": "Randy Colley",
-  "elo": 940.8556454385898
+  "elo": 943.992502144923,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/04/24",
   "wrestler": "Akira Maeda",
-  "elo": 1244.4189333987063
+  "elo": 1255.705933683825,
+  "opponent": "Randy Colley",
+  "result": "won"
  },
  {
   "date": "1986/04/25",
   "wrestler": "Dick Murdoch",
-  "elo": 980.3290513503638
+  "elo": 981.3355368289521,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/04/25",
   "wrestler": "Akira Maeda",
-  "elo": 1254.2544077235243
+  "elo": 1265.0381652693488,
+  "opponent": "Dick Murdoch",
+  "result": "won"
  },
  {
   "date": "1986/04/25",
   "wrestler": "The Masked Superstar",
-  "elo": 1022.3487154176929
+  "elo": 1022.5469401757031,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/04/25",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1139.4130894875505
+  "elo": 1139.4462293930821,
+  "opponent": "The Masked Superstar",
+  "result": "won"
  },
  {
   "date": "1986/04/27",
   "wrestler": "Randy Colley",
-  "elo": 912.5843344019072
+  "elo": 916.7729791150326,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/04/27",
   "wrestler": "Akira Maeda",
-  "elo": 1261.322235482695
+  "elo": 1271.8430460268214,
+  "opponent": "Randy Colley",
+  "result": "won"
  },
  {
   "date": "1986/04/29",
   "wrestler": "Masakatsu Funaki",
-  "elo": 648.4410330758963
+  "elo": 869.4184240025453,
+  "opponent": "Naoki Sano",
+  "result": "lost"
  },
  {
   "date": "1986/04/29",
   "wrestler": "Naoki Sano",
-  "elo": 879.5719668846807
+  "elo": 1043.8639438691464,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
  },
  {
   "date": "1986/04/29",
   "wrestler": "Hirokazu Hata",
-  "elo": 833.9248339489706
+  "elo": 1028.9722690295885,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
  },
  {
   "date": "1986/04/29",
   "wrestler": "Keiichi Yamada",
-  "elo": 970.8016982418607
+  "elo": 1121.5589750564857,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
  },
  {
   "date": "1986/04/29",
   "wrestler": "Shinya Hashimoto",
-  "elo": 831.9962379590161
+  "elo": 995.0101892817025,
+  "opponent": "Don Arakawa",
+  "result": "lost"
  },
  {
   "date": "1986/04/29",
   "wrestler": "Don Arakawa",
-  "elo": 1049.2133268184798
+  "elo": 1070.2012565162854,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
  },
  {
   "date": "1986/04/29",
   "wrestler": "Andre The Giant",
-  "elo": 1021.4372734372101
+  "elo": 1022.8882331583621,
+  "opponent": "Akira Maeda",
+  "result": "draw"
  },
  {
   "date": "1986/04/29",
   "wrestler": "Akira Maeda",
-  "elo": 1243.4629171233926
+  "elo": 1253.620987737231,
+  "opponent": "Andre The Giant",
+  "result": "draw"
  },
  {
   "date": "1986/04/30",
   "wrestler": "Kerry Brown",
-  "elo": 943.9895807375178
+  "elo": 946.6509177782286,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/04/30",
   "wrestler": "Akira Maeda",
-  "elo": 1252.4600106870057
+  "elo": 1262.242128699066,
+  "opponent": "Kerry Brown",
+  "result": "won"
  },
  {
   "date": "1986/05/01",
   "wrestler": "Masahiro Chono",
-  "elo": 722.1479295620574
+  "elo": 905.8669605268439,
+  "opponent": "Naoki Sano",
+  "result": "lost"
  },
  {
   "date": "1986/05/01",
   "wrestler": "Naoki Sano",
-  "elo": 956.9252936273632
+  "elo": 1086.2689639529074,
+  "opponent": "Masahiro Chono",
+  "result": "won"
  },
  {
   "date": "1986/05/01",
   "wrestler": "Black Cat",
-  "elo": 937.6787773051117
+  "elo": 938.2466265290532,
+  "opponent": "Randy Colley",
+  "result": "lost"
  },
  {
   "date": "1986/05/01",
   "wrestler": "Randy Colley",
-  "elo": 1037.2267797916838
+  "elo": 1040.2797260569264,
+  "opponent": "Black Cat",
+  "result": "won"
  },
  {
   "date": "1986/05/01",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1042.8536882591618
+  "elo": 1042.8536882591618,
+  "opponent": "Canek",
+  "result": "draw"
  },
  {
   "date": "1986/05/01",
   "wrestler": "Canek",
-  "elo": 1007.1463117408381
+  "elo": 1007.1463117408381,
+  "opponent": "Kantaro Hoshino",
+  "result": "draw"
  },
  {
   "date": "1986/05/16",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1065.350735865213
+  "elo": 1065.380211267578,
+  "opponent": "Kerry von Erich",
+  "result": "lost"
  },
  {
   "date": "1986/05/16",
   "wrestler": "Kerry von Erich",
-  "elo": 1105.271018985513
+  "elo": 1105.2783479918462,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
  },
  {
   "date": "1986/05/16",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 944.8501061083708
+  "elo": 956.0011658752957,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
  },
  {
   "date": "1986/05/16",
   "wrestler": "Kengo Kimura",
-  "elo": 1060.1307820686557
+  "elo": 1063.7209860114942,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
  },
  {
   "date": "1986/05/17",
   "wrestler": "Akira Nogami",
-  "elo": 662.8837197937349
+  "elo": 887.3266988668868,
+  "opponent": "Naoki Sano",
+  "result": "lost"
  },
  {
   "date": "1986/05/17",
   "wrestler": "Naoki Sano",
-  "elo": 994.0415738336283
+  "elo": 1117.605614519464,
+  "opponent": "Akira Nogami",
+  "result": "won"
  },
  {
   "date": "1986/05/17",
   "wrestler": "Hirokazu Hata",
-  "elo": 778.3890995772446
+  "elo": 974.8124619164644,
+  "opponent": "Makoto Arakawa",
+  "result": "lost"
  },
  {
   "date": "1986/05/17",
   "wrestler": "Makoto Arakawa",
-  "elo": 1027.767867185863
+  "elo": 1054.159807113124,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
  },
  {
   "date": "1986/05/17",
   "wrestler": "Umanosuke Ueda",
-  "elo": 992.8536882591618
+  "elo": 992.8536882591618,
+  "opponent": "Klaus Wallas",
+  "result": "lost"
  },
  {
   "date": "1986/05/17",
   "wrestler": "Klaus Wallas",
-  "elo": 1057.1463117408382
+  "elo": 1057.1463117408382,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
  },
  {
   "date": "1986/05/17",
   "wrestler": "Akira Maeda",
-  "elo": 1211.095722763977
+  "elo": 1220.5228840991717,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
  },
  {
   "date": "1986/05/17",
   "wrestler": "Dick Murdoch",
-  "elo": 1145.786203042479
+  "elo": 1148.2125152285291,
+  "opponent": "Akira Maeda",
+  "result": "won"
  },
  {
   "date": "1986/05/18",
   "wrestler": "Masakatsu Funaki",
-  "elo": 596.8501846428471
+  "elo": 804.0703130894113,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
  },
  {
   "date": "1986/05/18",
   "wrestler": "Shinya Hashimoto",
-  "elo": 883.5870863920653
+  "elo": 1060.3583001948366,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
  },
  {
   "date": "1986/05/18",
   "wrestler": "Naoki Sano",
-  "elo": 877.9598840294983
+  "elo": 1043.8661023787972,
+  "opponent": "Black Cat",
+  "result": "lost"
  },
  {
   "date": "1986/05/18",
   "wrestler": "Black Cat",
-  "elo": 1053.7604671092417
+  "elo": 1085.725650810387,
+  "opponent": "Naoki Sano",
+  "result": "won"
  },
  {
   "date": "1986/05/18",
   "wrestler": "Keiichi Yamada",
-  "elo": 829.6205946768199
+  "elo": 1038.8720617586569,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
  },
  {
   "date": "1986/05/18",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 959.8789216756471
+  "elo": 1015.3078912182934,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
  },
  {
   "date": "1986/05/18",
   "wrestler": "Masked Superstar",
-  "elo": 979.5255677457278
+  "elo": 980.6483601814697,
+  "opponent": "Andre The Giant",
+  "result": "lost"
  },
  {
   "date": "1986/05/18",
   "wrestler": "Andre The Giant",
-  "elo": 1072.7965537000239
+  "elo": 1074.1923930251164,
+  "opponent": "Masked Superstar",
+  "result": "won"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Yoji Anjo",
-  "elo": 751.9493853295916
+  "elo": 950.0,
+  "opponent": "Tatsuo Nakano",
+  "result": "lost"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Tatsuo Nakano",
-  "elo": 1024.0253073352042
+  "elo": 1050.0,
+  "opponent": "Yoji Anjo",
+  "result": "won"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Masakatsu Funaki",
-  "elo": 544.8137528609826
+  "elo": 749.6058086016591,
+  "opponent": "Hirokazu Hata",
+  "result": "lost"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Hirokazu Hata",
-  "elo": 830.4255313591091
+  "elo": 1029.2769664042166,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Don Arakawa",
-  "elo": 992.177949488138
+  "elo": 1010.2337615018795,
+  "opponent": "Cuban Assassin",
+  "result": "lost"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Cuban Assassin",
-  "elo": 1057.0353773303418
+  "elo": 1059.9674950144058,
+  "opponent": "Don Arakawa",
+  "result": "won"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Kerry von Erich",
-  "elo": 1120.046299515688
+  "elo": 1121.2807413972273,
+  "opponent": "Akira Maeda",
+  "result": "draw"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Akira Maeda",
-  "elo": 1203.7080824988896
+  "elo": 1212.5216873964812,
+  "opponent": "Kerry von Erich",
+  "result": "draw"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Shiro Koshinaka",
-  "elo": 1012.629844432927
+  "elo": 1023.3712764155425,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1001.1148716157834
+  "elo": 1083.1372243707933,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Wild Samoan",
-  "elo": 959.2953626471482
+  "elo": 959.2994578291559,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/05/19",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1106.0553732180647
+  "elo": 1106.080753438422,
+  "opponent": "Wild Samoan",
+  "result": "won"
  },
  {
   "date": "1986/05/21",
   "wrestler": "Kenichi Oya",
-  "elo": 617.3526965533583
+  "elo": 861.397371990101,
+  "opponent": "Naoki Sano",
+  "result": "lost"
  },
  {
   "date": "1986/05/21",
   "wrestler": "Naoki Sano",
-  "elo": 922.7694656812918
+  "elo": 1077.9981662101554,
+  "opponent": "Kenichi Oya",
+  "result": "won"
  },
  {
   "date": "1986/05/21",
   "wrestler": "Black Cat",
-  "elo": 994.989689451848
+  "elo": 1025.0292990730059,
+  "opponent": "Don Arakawa",
+  "result": "lost"
  },
  {
   "date": "1986/05/21",
   "wrestler": "Don Arakawa",
-  "elo": 1109.7195048029255
+  "elo": 1070.9301132392604,
+  "opponent": "Black Cat",
+  "result": "won"
  },
  {
   "date": "1986/05/21",
   "wrestler": "Tony St. Clair",
-  "elo": 995.3172891184003
+  "elo": 1046.1753047620396,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
  },
  {
   "date": "1986/05/21",
   "wrestler": "Shiro Koshinaka",
-  "elo": 1009.139432618781
+  "elo": 1027.195971653503,
+  "opponent": "Tony St. Clair",
+  "result": "draw"
  },
  {
   "date": "1986/05/21",
   "wrestler": "Cuban Assassin",
-  "elo": 997.902540487831
+  "elo": 1000.4274082047623,
+  "opponent": "Umanosuke Ueda",
+  "result": "lost"
  },
  {
   "date": "1986/05/21",
   "wrestler": "Umanosuke Ueda",
-  "elo": 1111.1193619441835
+  "elo": 1111.9338618784489,
+  "opponent": "Cuban Assassin",
+  "result": "won"
  },
  {
   "date": "1986/05/21",
   "wrestler": "Klaus Wallas",
-  "elo": 1008.9005802679363
+  "elo": 1009.137478553468,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/05/21",
   "wrestler": "Antonio Inoki",
-  "elo": 1117.586955025547
+  "elo": 1118.998510229641,
+  "opponent": "Klaus Wallas",
+  "result": "won"
  },
  {
   "date": "1986/05/22",
   "wrestler": "Yoji Anjo",
-  "elo": 717.3974823692171
+  "elo": 878.012999960577,
+  "opponent": "Tatsuo Nakano",
+  "result": "lost"
  },
  {
   "date": "1986/05/22",
   "wrestler": "Tatsuo Nakano",
-  "elo": 1041.3012588153913
+  "elo": 1085.9935000197115,
+  "opponent": "Yoji Anjo",
+  "result": "won"
  },
  {
   "date": "1986/05/22",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 641.4115679653783
+  "elo": 854.1866692563452,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
  },
  {
   "date": "1986/05/22",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 992.1724323352914
+  "elo": 1053.2933796249536,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
  },
  {
   "date": "1986/05/22",
   "wrestler": "Umanosuke Ueda",
-  "elo": 1046.8191400875492
+  "elo": 1047.5573521914723,
+  "opponent": "Klaus Wallas",
+  "result": "lost"
  },
  {
   "date": "1986/05/22",
   "wrestler": "Klaus Wallas",
-  "elo": 1073.2008021245708
+  "elo": 1073.5139882404444,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
  },
  {
   "date": "1986/05/22",
   "wrestler": "The Cobra",
-  "elo": 927.1593160412419
+  "elo": 927.4699273002755,
+  "opponent": "Kerry von Erich",
+  "result": "lost"
  },
  {
   "date": "1986/05/22",
   "wrestler": "Kerry von Erich",
-  "elo": 1152.3913186597354
+  "elo": 1153.470454911758,
+  "opponent": "The Cobra",
+  "result": "won"
  },
  {
   "date": "1986/05/22",
   "wrestler": "Andre The Giant",
-  "elo": 1020.9746096712886
+  "elo": 1022.6858925436475,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
  },
  {
   "date": "1986/05/22",
   "wrestler": "Kengo Kimura",
-  "elo": 1111.952726097391
+  "elo": 1115.2274864929632,
+  "opponent": "Andre The Giant",
+  "result": "won"
  },
  {
   "date": "1986/05/23",
   "wrestler": "Kengo Kimura",
-  "elo": 1067.7461696896985
+  "elo": 1070.7089722598232,
+  "opponent": "Kerry von Erich",
+  "result": "lost"
  },
  {
   "date": "1986/05/23",
   "wrestler": "Kerry von Erich",
-  "elo": 1196.5978750674278
+  "elo": 1197.988969144898,
+  "opponent": "Kengo Kimura",
+  "result": "won"
  },
  {
   "date": "1986/05/23",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1080.3117073317044
+  "elo": 1080.9840574941597,
+  "opponent": "Masked Superstar",
+  "result": "draw"
  },
  {
   "date": "1986/05/23",
   "wrestler": "Masked Superstar",
-  "elo": 1011.9875366168767
+  "elo": 1012.9771302272447,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/05/24",
   "wrestler": "Tony St. Clair",
-  "elo": 919.3040468019746
+  "elo": 1001.1679933161134,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/05/24",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1118.3183284899173
+  "elo": 1125.9913689400857,
+  "opponent": "Tony St. Clair",
+  "result": "won"
  },
  {
   "date": "1986/05/25",
   "wrestler": "Klaus Wallas",
-  "elo": 1029.6574832387205
+  "elo": 1031.0091792219457,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/05/25",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1161.8616473757677
+  "elo": 1168.4961779585844,
+  "opponent": "Klaus Wallas",
+  "result": "won"
  },
  {
   "date": "1986/05/26",
   "wrestler": "Wild Samoan",
-  "elo": 908.3487993643628
+  "elo": 908.8804959388389,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
  },
  {
   "date": "1986/05/26",
   "wrestler": "Dick Murdoch",
-  "elo": 1171.2594846838717
+  "elo": 1173.4219961736876,
+  "opponent": "Wild Samoan",
+  "result": "won"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Akira Katayama",
-  "elo": 637.4198401795272
+  "elo": 919.1330991114135,
+  "opponent": "Masakatsu Funaki",
+  "result": "lost"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Masakatsu Funaki",
-  "elo": 707.3939126814554
+  "elo": 911.3396103788323,
+  "opponent": "Akira Katayama",
+  "result": "won"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Shinya Hashimoto",
-  "elo": 823.3158768083704
+  "elo": 1006.1446399898397,
+  "opponent": "Klaus Wallas",
+  "result": "lost"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Klaus Wallas",
-  "elo": 1059.793088030568
+  "elo": 1085.2228394269425,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Shiro Koshinaka",
-  "elo": 1007.9848107636498
+  "elo": 1035.1777089441166,
+  "opponent": "Nobuhiko Takada",
+  "result": "draw"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1002.2694934709147
+  "elo": 1075.1554870801797,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 966.4164898610574
+  "elo": 974.9623083551804,
+  "opponent": "Andre The Giant",
+  "result": "draw"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Andre The Giant",
-  "elo": 1010.1914177949453
+  "elo": 1013.2053213037051,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Kerry von Erich",
-  "elo": 1133.8549366348439
+  "elo": 1135.0624395506065,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1168.7983116506487
+  "elo": 1169.0072830327135,
+  "opponent": "Kerry von Erich",
+  "result": "won"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Kengo Kimura",
-  "elo": 1024.8700351911707
+  "elo": 1027.6139893293912,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/05/27",
   "wrestler": "Antonio Inoki",
-  "elo": 1160.4630895240748
+  "elo": 1162.093493160073,
+  "opponent": "Kengo Kimura",
+  "result": "won"
  },
  {
   "date": "1986/05/29",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1119.1524969973582
+  "elo": 1119.6425771339932,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
  },
  {
   "date": "1986/05/29",
   "wrestler": "Dick Murdoch",
-  "elo": 1220.9052993371622
+  "elo": 1222.786702072408,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
  },
  {
   "date": "1986/05/30",
   "wrestler": "Yoji Anjo",
-  "elo": 690.5625317763838
+  "elo": 831.6194010240494,
+  "opponent": "Tatsuo Nakano",
+  "result": "lost"
  },
  {
   "date": "1986/05/30",
   "wrestler": "Tatsuo Nakano",
-  "elo": 1054.7187341118079
+  "elo": 1109.1902994879754,
+  "opponent": "Yoji Anjo",
+  "result": "won"
  },
  {
   "date": "1986/05/30",
   "wrestler": "Antonio Inoki",
-  "elo": 1110.6643570908
+  "elo": 1113.0148092782986,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/05/30",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1211.6603798090425
+  "elo": 1217.5748618403588,
+  "opponent": "Antonio Inoki",
+  "result": "won"
  },
  {
   "date": "1986/05/31",
   "wrestler": "Wild Samoan",
-  "elo": 877.4616154724258
+  "elo": 879.2180227521388,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/05/31",
   "wrestler": "Akira Maeda",
-  "elo": 1211.4298784718737
+  "elo": 1219.9373056931563,
+  "opponent": "Wild Samoan",
+  "result": "won"
  },
  {
   "date": "1986/05/31",
   "wrestler": "Jimmy Snuka",
-  "elo": 1028.1022183466237
+  "elo": 1028.2868800955262,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
  },
  {
   "date": "1986/05/31",
   "wrestler": "Dick Murdoch",
-  "elo": 1206.8541901638503
+  "elo": 1208.6432620246449,
+  "opponent": "Jimmy Snuka",
+  "result": "draw"
  },
  {
   "date": "1986/06/02",
   "wrestler": "Dick Murdoch",
-  "elo": 1171.0894980700677
+  "elo": 1172.8170543334693,
+  "opponent": "Umanosuke Ueda",
+  "result": "lost"
  },
  {
   "date": "1986/06/02",
   "wrestler": "Umanosuke Ueda",
-  "elo": 1118.3485242751144
+  "elo": 1119.2097675738235,
+  "opponent": "Dick Murdoch",
+  "result": "won"
  },
  {
   "date": "1986/06/02",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1173.5960285096476
+  "elo": 1179.3594558742493,
+  "opponent": "Andre The Giant",
+  "result": "lost"
  },
  {
   "date": "1986/06/02",
   "wrestler": "Andre The Giant",
-  "elo": 1086.3201203937356
+  "elo": 1089.6361332359243,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
  },
  {
   "date": "1986/06/04",
   "wrestler": "Cuban Assassin",
-  "elo": 943.9940126974786
+  "elo": 973.3826825789874,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
  },
  {
   "date": "1986/06/04",
   "wrestler": "Dick Murdoch",
-  "elo": 1198.043761965244
+  "elo": 1199.8617799592441,
+  "opponent": "Cuban Assassin",
+  "result": "won"
  },
  {
   "date": "1986/06/06",
   "wrestler": "Umanosuke Ueda",
-  "elo": 1081.4324599138195
+  "elo": 1083.3126958059556,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/06/06",
   "wrestler": "Akira Maeda",
-  "elo": 1229.8879106525212
+  "elo": 1237.8858415770903,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
  },
  {
   "date": "1986/06/07",
   "wrestler": "Wild Samoan",
-  "elo": 854.2177308786088
+  "elo": 856.7020954035305,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/06/07",
   "wrestler": "Akira Maeda",
-  "elo": 1235.6988818009754
+  "elo": 1243.5148234142423,
+  "opponent": "Wild Samoan",
+  "result": "won"
  },
  {
   "date": "1986/06/08",
   "wrestler": "Cuban Assassin",
-  "elo": 912.5534140038551
+  "elo": 938.509786737735,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/06/08",
   "wrestler": "Akira Maeda",
-  "elo": 1243.5590314743813
+  "elo": 1252.2330473745553,
+  "opponent": "Cuban Assassin",
+  "result": "won"
  },
  {
   "date": "1986/06/10",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1019.8584003786028
+  "elo": 1027.8296575359136,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/06/10",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1146.8750732508747
+  "elo": 1152.9257812838828,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
  },
  {
   "date": "1986/06/12",
   "wrestler": "Kenichi Oya",
-  "elo": 542.7036137804008
+  "elo": 775.6737095734132,
+  "opponent": "Masakatsu Funaki",
+  "result": "lost"
  },
  {
   "date": "1986/06/12",
   "wrestler": "Masakatsu Funaki",
-  "elo": 782.0429954544129
+  "elo": 997.06327279552,
+  "opponent": "Kenichi Oya",
+  "result": "won"
  },
  {
   "date": "1986/06/12",
   "wrestler": "Masahiro Chono",
-  "elo": 652.341488764311
+  "elo": 839.9650936954372,
+  "opponent": "Hirokazu Hata",
+  "result": "lost"
  },
  {
   "date": "1986/06/12",
   "wrestler": "Hirokazu Hata",
-  "elo": 900.2319721568555
+  "elo": 1062.22789981992,
+  "opponent": "Masahiro Chono",
+  "result": "won"
  },
  {
   "date": "1986/06/12",
   "wrestler": "Shinya Hashimoto",
-  "elo": 748.4502160785705
+  "elo": 946.5323191228811,
+  "opponent": "Cuban Assassin",
+  "result": "lost"
  },
  {
   "date": "1986/06/12",
   "wrestler": "Cuban Assassin",
-  "elo": 987.419074733655
+  "elo": 1057.7344284716523,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
  },
  {
   "date": "1986/06/12",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1136.3281771337874
+  "elo": 1137.8485154572097,
+  "opponent": "Akira Maeda",
+  "result": "draw"
  },
  {
   "date": "1986/06/12",
   "wrestler": "Akira Maeda",
-  "elo": 1234.9711914061668
+  "elo": 1243.130078212947,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
  },
  {
   "date": "1986/06/12",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 982.6367835161153
+  "elo": 989.8489024259223,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/06/12",
   "wrestler": "Antonio Inoki",
-  "elo": 1147.8859739532875
+  "elo": 1150.9955643882897,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
  },
  {
   "date": "1986/06/14",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1130.0049351203702
+  "elo": 1135.6353000319384,
+  "opponent": "Kengo Kimura",
+  "result": "draw"
  },
  {
   "date": "1986/06/14",
   "wrestler": "Kengo Kimura",
-  "elo": 1041.7401733216752
+  "elo": 1044.9044705813355,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/06/15",
   "wrestler": "Jimmy Snuka",
-  "elo": 1004.7912291427596
+  "elo": 1005.7864308350679,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/06/15",
   "wrestler": "Akira Maeda",
-  "elo": 1246.6266860080989
+  "elo": 1254.380302843176,
+  "opponent": "Jimmy Snuka",
+  "result": "won"
  },
  {
   "date": "1986/06/17",
   "wrestler": "Masakatsu Funaki",
-  "elo": 736.6602130608146
+  "elo": 905.0952031956995,
+  "opponent": "Black Cat",
+  "result": "lost"
  },
  {
   "date": "1986/06/17",
   "wrestler": "Black Cat",
-  "elo": 1040.3724718454462
+  "elo": 1071.013333872916,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
  },
  {
   "date": "1986/06/17",
   "wrestler": "Keiichi Yamada",
-  "elo": 754.8751317607905
+  "elo": 983.4672108068322,
+  "opponent": "Tony St. Clair",
+  "result": "lost"
  },
  {
   "date": "1986/06/17",
   "wrestler": "Tony St. Clair",
-  "elo": 994.049509718004
+  "elo": 1056.572844267938,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
  },
  {
   "date": "1986/06/17",
   "wrestler": "Shiro Koshinaka",
-  "elo": 1005.7107964339225
+  "elo": 1037.7824034952132,
+  "opponent": "Kazuo Yamazaki",
+  "result": "draw"
  },
  {
   "date": "1986/06/17",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 996.720460994746
+  "elo": 1050.688685073857,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
  },
  {
   "date": "1986/06/17",
   "wrestler": "The Cobra",
-  "elo": 948.447157372468
+  "elo": 967.5894986438832,
+  "opponent": "Nobuhiko Takada",
+  "result": "draw"
  },
  {
   "date": "1986/06/17",
   "wrestler": "Nobuhiko Takada",
-  "elo": 991.6255728053017
+  "elo": 1055.0957014083758,
+  "opponent": "The Cobra",
+  "result": "draw"
  },
  {
   "date": "1986/06/17",
   "wrestler": "Andre The Giant",
-  "elo": 1045.088573672934
+  "elo": 1048.3757905509513,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/06/17",
   "wrestler": "Antonio Inoki",
-  "elo": 1189.117520674089
+  "elo": 1192.2559070732627,
+  "opponent": "Andre The Giant",
+  "result": "won"
  },
  {
   "date": "1986/06/18",
   "wrestler": "Akira Maeda",
-  "elo": 1218.1534716873373
+  "elo": 1225.4892637255011,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
  },
  {
   "date": "1986/06/18",
   "wrestler": "Dick Murdoch",
-  "elo": 1254.990190606767
+  "elo": 1257.643858194594,
+  "opponent": "Akira Maeda",
+  "result": "won"
  },
  {
   "date": "1986/06/19",
   "wrestler": "Masakatsu Funaki",
-  "elo": 640.0523467503097
+  "elo": 816.9655348473764,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
  },
  {
   "date": "1986/06/19",
   "wrestler": "Shinya Hashimoto",
-  "elo": 845.0580823890755
+  "elo": 1034.6619874712042,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
  },
  {
   "date": "1986/06/19",
   "wrestler": "Tony St. Clair",
-  "elo": 908.0048144925141
+  "elo": 1004.5995245145679,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
  },
  {
   "date": "1986/06/19",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1085.8760358719067
+  "elo": 1094.827008012532,
+  "opponent": "Tony St. Clair",
+  "result": "won"
  },
  {
   "date": "1986/06/19",
   "wrestler": "Klaus Wallas",
-  "elo": 998.8684054111586
+  "elo": 1021.8321009615079,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
  },
  {
   "date": "1986/06/19",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1104.4861487549342
+  "elo": 1116.6303793567918,
+  "opponent": "Klaus Wallas",
+  "result": "won"
  },
  {
   "date": "1986/06/19",
   "wrestler": "Dick Murdoch",
-  "elo": 1225.3062612566541
+  "elo": 1227.9935916202064,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/06/19",
   "wrestler": "Antonio Inoki",
-  "elo": 1248.4853793743148
+  "elo": 1251.5564402220382,
+  "opponent": "Dick Murdoch",
+  "result": "won"
  },
  {
   "date": "1986/06/20",
   "wrestler": "Kengo Kimura",
-  "elo": 1065.150009681478
+  "elo": 1068.780394383789,
+  "opponent": "Akira Maeda",
+  "result": "draw"
  },
  {
   "date": "1986/06/20",
   "wrestler": "Akira Maeda",
-  "elo": 1206.448553507436
+  "elo": 1213.5513018242743,
+  "opponent": "Kengo Kimura",
+  "result": "draw"
  },
  {
   "date": "1986/06/20",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1096.424058519914
+  "elo": 1101.7250362540626,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/06/20",
   "wrestler": "Antonio Inoki",
-  "elo": 1258.1580965608848
+  "elo": 1261.26453916032,
+  "opponent": "Seiji Sakaguchi; Dick Murdoch; Masked Superstar; Andre The Giant",
+  "result": "lost"
  },
  {
   "date": "1986/06/20",
   "wrestler": "Dick Murdoch",
-  "elo": 1203.1696811123145
+  "elo": 1205.89594899505,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/06/20",
   "wrestler": "Umanosuke Ueda",
-  "elo": 1026.2211485465634
+  "elo": 1028.3017491819578,
+  "opponent": "Andre The Giant",
+  "result": "lost"
  },
  {
   "date": "1986/06/20",
   "wrestler": "Andre The Giant",
-  "elo": 1175.8106650465127
+  "elo": 1178.8997197186266,
+  "opponent": "Umanosuke Ueda; Antonio Inoki",
+  "result": "won"
  },
  {
   "date": "1986/06/20",
   "wrestler": "Masked Superstar",
-  "elo": 994.9853591265494
+  "elo": 996.1534988351922,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/07/05",
   "wrestler": "Johnny Mantell",
-  "elo": 976.6457182792745
+  "elo": 977.3696053749392,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/07/05",
   "wrestler": "Akira Maeda",
-  "elo": 1218.1256943677986
+  "elo": 1224.8664991368048,
+  "opponent": "Johnny Mantell",
+  "result": "won"
  },
  {
   "date": "1986/07/09",
   "wrestler": "Johnny Mantell",
-  "elo": 936.7664173035882
+  "elo": 938.5846473130724,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/07/09",
   "wrestler": "Akira Maeda",
-  "elo": 1228.0955196117202
+  "elo": 1234.5627386522715,
+  "opponent": "Johnny Mantell",
+  "result": "won"
  },
  {
   "date": "1986/07/18",
   "wrestler": "Johnny Mantell",
-  "elo": 854.7681776056718
+  "elo": 856.0795652550606,
+  "opponent": "George Takano",
+  "result": "lost"
  },
  {
   "date": "1986/07/18",
   "wrestler": "George Takano",
-  "elo": 1040.9991198489583
+  "elo": 1041.252541029006,
+  "opponent": "Johnny Mantell",
+  "result": "won"
  },
  {
   "date": "1986/07/19",
   "wrestler": "Keiichi Yamada",
-  "elo": 714.119473847361
+  "elo": 903.7963418519305,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/07/19",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1032.3812307187313
+  "elo": 1094.9311358858267,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
  },
  {
   "date": "1986/07/20",
   "wrestler": "Kengo Kimura",
-  "elo": 1087.0193515388562
+  "elo": 1090.9787055535794,
+  "opponent": "Akira Maeda",
+  "result": "draw"
  },
  {
   "date": "1986/07/20",
   "wrestler": "Akira Maeda",
-  "elo": 1217.160848683031
+  "elo": 1223.4635830673762,
+  "opponent": "Kengo Kimura",
+  "result": "draw"
  },
  {
   "date": "1986/07/22",
   "wrestler": "Bad News Allen",
-  "elo": 769.2725578020626
+  "elo": 964.23495194449,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/07/22",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1111.7877796188827
+  "elo": 1137.4900843095725,
+  "opponent": "Bad News Allen",
+  "result": "won"
  },
  {
   "date": "1986/07/24",
   "wrestler": "Osamu Matsuda",
-  "elo": 656.9617248229163
+  "elo": 925.8528444122402,
+  "opponent": "Masakatsu Funaki",
+  "result": "lost"
  },
  {
   "date": "1986/07/24",
   "wrestler": "Masakatsu Funaki",
-  "elo": 783.0906219273934
+  "elo": 965.259846022896,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
  },
  {
   "date": "1986/07/24",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1096.2333090996572
+  "elo": 1118.6756849348724,
+  "opponent": "Hacksaw Higgins",
+  "result": "draw"
  },
  {
   "date": "1986/07/24",
   "wrestler": "Hacksaw Higgins",
-  "elo": 1015.5544705192256
+  "elo": 1018.8143993747002,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/07/25",
   "wrestler": "Alexis Smirnoff",
-  "elo": 981.5488790990954
+  "elo": 981.8164291507971,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/07/25",
   "wrestler": "Antonio Inoki",
-  "elo": 1267.3836570113372
+  "elo": 1270.3563245849216,
+  "opponent": "Alexis Smirnoff",
+  "result": "won"
  },
  {
   "date": "1986/07/27",
   "wrestler": "Johnny Mantell",
-  "elo": 832.6771384556902
+  "elo": 834.5468599866599,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/07/27",
   "wrestler": "Akira Maeda",
-  "elo": 1222.6836084705265
+  "elo": 1228.8467593844764,
+  "opponent": "Johnny Mantell",
+  "result": "won"
  },
  {
   "date": "1986/07/30",
   "wrestler": "Hacksaw Higgins",
-  "elo": 1042.2702436866293
+  "elo": 1045.8273649066703,
+  "opponent": "Akira Maeda",
+  "result": "draw"
  },
  {
   "date": "1986/07/30",
   "wrestler": "Akira Maeda",
-  "elo": 1209.3257218868246
+  "elo": 1215.3402766184913,
+  "opponent": "Hacksaw Higgins",
+  "result": "draw"
  },
  {
   "date": "1986/07/31",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1088.5292505555294
+  "elo": 1108.342947486395,
+  "opponent": "Hacksaw Higgins",
+  "result": "draw"
  },
  {
   "date": "1986/07/31",
   "wrestler": "Hacksaw Higgins",
-  "elo": 1049.974302230757
+  "elo": 1056.1601023551477,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/08/03",
   "wrestler": "Umanosuke Ueda",
-  "elo": 1000.3760395728467
+  "elo": 1002.8882741255445,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/08/03",
   "wrestler": "Akira Maeda",
-  "elo": 1222.248276373683
+  "elo": 1228.0470141466978,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
  },
  {
   "date": "1986/08/05",
   "wrestler": "Umanosuke Ueda",
-  "elo": 921.2863761327961
+  "elo": 947.3484510446629,
+  "opponent": "Bad News Allen",
+  "result": "lost"
  },
  {
   "date": "1986/08/05",
   "wrestler": "Bad News Allen",
-  "elo": 927.4518846821637
+  "elo": 1075.3145981062532,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
  },
  {
   "date": "1986/08/05",
   "wrestler": "Shiro Koshinaka",
-  "elo": 959.5414591459316
+  "elo": 995.9333882679664,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/08/05",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1078.5505680067222
+  "elo": 1136.7801511130735,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
  },
  {
   "date": "1986/08/05",
   "wrestler": "Steve Williams",
-  "elo": 982.3346079793109
+  "elo": 982.5821225831294,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/08/05",
   "wrestler": "Antonio Inoki",
-  "elo": 1276.2163530216817
+  "elo": 1279.065263293357,
+  "opponent": "Steve Williams",
+  "result": "won"
  },
  {
   "date": "1986/08/07",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 919.8470032563126
+  "elo": 1012.8307449512378,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/08/07",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1116.987296875939
+  "elo": 1174.6380912356926,
+  "opponent": "Kazuo Yamazaki",
+  "result": "won"
  },
  {
   "date": "1986/08/07",
   "wrestler": "Alexis Smirnoff",
-  "elo": 923.367404869894
+  "elo": 923.9320290355414,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/08/07",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1165.418914248388
+  "elo": 1166.7907155148375,
+  "opponent": "Alexis Smirnoff",
+  "result": "won"
  },
  {
   "date": "1986/08/29",
   "wrestler": "Black Tiger",
-  "elo": 974.7517808115584
+  "elo": 1026.0817745604688,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/08/29",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1152.0329140992176
+  "elo": 1208.73751142023,
+  "opponent": "Black Tiger",
+  "result": "won"
  },
  {
   "date": "1986/08/31",
   "wrestler": "Angel Of Death",
-  "elo": 962.471629487756
+  "elo": 965.1053257996653,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/08/31",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1126.0576210677734
+  "elo": 1143.2376216867297,
+  "opponent": "Angel Of Death",
+  "result": "won"
  },
  {
   "date": "1986/09/02",
   "wrestler": "Kevin Kelly",
-  "elo": 978.2341482133819
+  "elo": 978.7971987199074,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/09/02",
   "wrestler": "Akira Maeda",
-  "elo": 1233.131202266992
+  "elo": 1238.648414786744,
+  "opponent": "Kevin Kelly",
+  "result": "won"
  },
  {
   "date": "1986/09/05",
   "wrestler": "Jerry Grey",
-  "elo": 972.1562988861185
+  "elo": 972.3146739011064,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/09/05",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1193.2626153622696
+  "elo": 1194.4760416137312,
+  "opponent": "Jerry Grey",
+  "result": "won"
  },
  {
   "date": "1986/09/07",
   "wrestler": "Jerry Grey",
-  "elo": 935.739522197881
+  "elo": 936.8077351649857,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/09/07",
   "wrestler": "Akira Maeda",
-  "elo": 1242.2353964390513
+  "elo": 1247.5251494707743,
+  "opponent": "Jerry Grey",
+  "result": "won"
  },
  {
   "date": "1986/09/09",
   "wrestler": "Kevin Kelly",
-  "elo": 918.3870196665716
+  "elo": 922.8831833733103,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/09/09",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1155.9811853411786
+  "elo": 1171.194629360028,
+  "opponent": "Kevin Kelly",
+  "result": "won"
  },
  {
   "date": "1986/09/10",
   "wrestler": "Jerry Grey",
-  "elo": 906.4898007105082
+  "elo": 908.1596597695411,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/09/10",
   "wrestler": "Akira Maeda",
-  "elo": 1249.5478268108945
+  "elo": 1254.6871683196355,
+  "opponent": "Jerry Grey",
+  "result": "won"
  },
  {
   "date": "1986/09/11",
   "wrestler": "Kevin Kelly",
-  "elo": 877.7887430504171
+  "elo": 884.2446080572829,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/09/11",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1176.280323649256
+  "elo": 1190.5139170180419,
+  "opponent": "Kevin Kelly",
+  "result": "won"
  },
  {
   "date": "1986/09/12",
   "wrestler": "Black Tiger",
-  "elo": 870.3766930402352
+  "elo": 971.7539300619048,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
  },
  {
   "date": "1986/09/12",
   "wrestler": "Shiro Koshinaka",
-  "elo": 1063.916546917255
+  "elo": 1104.5890772650946,
+  "opponent": "Black Tiger",
+  "result": "won"
  },
  {
   "date": "1986/09/13",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1152.885431667483
+  "elo": 1165.5500473788827,
+  "opponent": "Jim Duggan",
+  "result": "draw"
  },
  {
   "date": "1986/09/13",
   "wrestler": "Jim Duggan",
-  "elo": 1023.3948919817727
+  "elo": 1024.9638696391592,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/09/15",
   "wrestler": "Kevin Kelly",
-  "elo": 856.735191242947
+  "elo": 863.0478698331071,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/09/15",
   "wrestler": "Akira Maeda",
-  "elo": 1254.8112147627621
+  "elo": 1259.9863528756794,
+  "opponent": "Kevin Kelly",
+  "result": "won"
  },
  {
   "date": "1986/09/16",
   "wrestler": "Bruiser Brody",
-  "elo": 1033.0620203139968
+  "elo": 1033.2914980085202,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
  },
  {
   "date": "1986/09/16",
   "wrestler": "Antonio Inoki",
-  "elo": 1259.6853428646834
+  "elo": 1262.419514289097,
+  "opponent": "Bruiser Brody",
+  "result": "draw"
  },
  {
   "date": "1986/09/19",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1089.6170229708555
+  "elo": 1176.4601120356522,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
  },
  {
   "date": "1986/09/19",
   "wrestler": "Shiro Koshinaka",
-  "elo": 1126.332438045617
+  "elo": 1169.14387603425,
+  "opponent": "Nobuhiko Takada",
+  "result": "won"
  },
  {
   "date": "1986/09/19",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1171.7138283967643
+  "elo": 1172.812095022614,
+  "opponent": "Bruiser Brody",
+  "result": "draw"
  },
  {
   "date": "1986/09/19",
   "wrestler": "Bruiser Brody",
-  "elo": 1054.610807279502
+  "elo": 1054.9554445996375,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
  },
  {
   "date": "1986/09/19",
   "wrestler": "Jim Duggan",
-  "elo": 1002.9740661695353
+  "elo": 1004.6518276132908,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/09/19",
   "wrestler": "Antonio Inoki",
-  "elo": 1269.8957557708022
+  "elo": 1272.575535302031,
+  "opponent": "Jim Duggan",
+  "result": "won"
  },
  {
   "date": "1986/09/20",
   "wrestler": "Jerry Grey",
-  "elo": 882.7560860328928
+  "elo": 884.8447769941299,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/09/20",
   "wrestler": "Akira Maeda",
-  "elo": 1260.744643432166
+  "elo": 1265.8150735695322,
+  "opponent": "Jerry Grey",
+  "result": "won"
  },
  {
   "date": "1986/09/23",
   "wrestler": "Shigeo Miyato",
-  "elo": 957.8101904549972
+  "elo": 965.2160581429898,
+  "opponent": "Tatsuo Nakano",
+  "result": "lost"
  },
  {
   "date": "1986/09/23",
   "wrestler": "Tatsuo Nakano",
-  "elo": 1096.9085436568107
+  "elo": 1143.9742413449856,
+  "opponent": "Shigeo Miyato",
+  "result": "won"
  },
  {
   "date": "1986/09/23",
   "wrestler": "Kenichi Oya",
-  "elo": 525.2645494644061
+  "elo": 722.1785180192746,
+  "opponent": "Yang Seung-Hi",
+  "result": "lost"
  },
  {
   "date": "1986/09/23",
   "wrestler": "Yang Seung-Hi",
-  "elo": 968.0965475383139
+  "elo": 1004.1837539153862,
+  "opponent": "Kenichi Oya",
+  "result": "won"
  },
  {
   "date": "1986/09/23",
   "wrestler": "Don Arakawa",
-  "elo": 1028.622973231815
+  "elo": 994.1369910910988,
+  "opponent": "Kevin Kelly",
+  "result": "lost"
  },
  {
   "date": "1986/09/23",
   "wrestler": "Kevin Kelly",
-  "elo": 1018.9282543851682
+  "elo": 1016.6341141294304,
+  "opponent": "Don Arakawa",
+  "result": "won"
  },
  {
   "date": "1986/09/23",
   "wrestler": "Jerry Grey",
-  "elo": 836.1324536408268
+  "elo": 853.3905188098865,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/09/23",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1112.9288391668883
+  "elo": 1192.1872411277739,
+  "opponent": "Jerry Grey",
+  "result": "won"
  },
  {
   "date": "1986/09/23",
   "wrestler": "Keiichi Yamada",
-  "elo": 695.000032302537
+  "elo": 858.3908028359024,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
  },
  {
   "date": "1986/09/23",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1114.0458695273462
+  "elo": 1139.3331488648057,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
  },
  {
   "date": "1986/09/24",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1132.5575774015463
+  "elo": 1143.919582548806,
+  "opponent": "Jim Duggan",
+  "result": "draw"
  },
  {
   "date": "1986/09/24",
   "wrestler": "Jim Duggan",
-  "elo": 1023.3019204354721
+  "elo": 1026.2822924433676,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/09/25",
   "wrestler": "Jerry Grey",
-  "elo": 820.160652270641
+  "elo": 836.3567928063655,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/09/25",
   "wrestler": "Akira Maeda",
-  "elo": 1264.7375937747124
+  "elo": 1270.0735050704125,
+  "opponent": "Jerry Grey",
+  "result": "won"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Masakatsu Funaki",
-  "elo": 700.7395425428775
+  "elo": 884.9738717603664,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Shinya Hashimoto",
-  "elo": 927.4091617735914
+  "elo": 1074.804974602469,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Masahiro Chono",
-  "elo": 549.196642050071
+  "elo": 744.05610759242,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 744.5564146796182
+  "elo": 950.0956553593625,
+  "opponent": "Masahiro Chono",
+  "result": "won"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Akira Nogami",
-  "elo": 641.1684150065073
+  "elo": 817.1359460145338,
+  "opponent": "Don Arakawa",
+  "result": "lost"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Don Arakawa",
-  "elo": 1039.4806256254287
+  "elo": 1064.3277439434519,
+  "opponent": "Akira Nogami",
+  "result": "won"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Kengo Kimura",
-  "elo": 1024.7517146599948
+  "elo": 1028.1770885766832,
+  "opponent": "Lance von Erich",
+  "result": "lost"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Lance von Erich",
-  "elo": 1062.2676368788614
+  "elo": 1062.8016169768962,
+  "opponent": "Kengo Kimura",
+  "result": "won"
  },
  {
   "date": "1986/10/09",
   "wrestler": "The Jackal",
-  "elo": 919.4158842244346
+  "elo": 921.7956974905808,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1195.179853695396
+  "elo": 1196.4456658205336,
+  "opponent": "The Jackal",
+  "result": "won"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Leon Spinks",
-  "elo": 982.5439539540534
+  "elo": 982.765111890968,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/10/09",
   "wrestler": "Antonio Inoki",
-  "elo": 1278.6237787937755
+  "elo": 1281.192979356547,
+  "opponent": "Leon Spinks",
+  "result": "won"
  },
  {
   "date": "1986/10/13",
   "wrestler": "Great Muta",
-  "elo": 975.4645787895478
+  "elo": 975.5992437517868,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/10/13",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1219.7152749058482
+  "elo": 1220.8464220687467,
+  "opponent": "Keiji Muto",
+  "result": "won"
  },
  {
   "date": "1986/10/13",
   "wrestler": "Steve Williams",
-  "elo": 1051.5869668762207
+  "elo": 1052.180631318834,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
  },
  {
   "date": "1986/10/13",
   "wrestler": "Antonio Inoki",
-  "elo": 1261.310689069548
+  "elo": 1263.7933521726209,
+  "opponent": "Steve Williams",
+  "result": "draw"
  },
  {
   "date": "1986/10/20",
   "wrestler": "Great Muta",
-  "elo": 936.0920665492605
+  "elo": 936.4078040251098,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/10/20",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1229.55840296592
+  "elo": 1230.644282000416,
+  "opponent": "Keiji Muto",
+  "result": "won"
  },
  {
   "date": "1986/10/23",
   "wrestler": "Steve Williams",
-  "elo": 1013.0330952177746
+  "elo": 1015.08442705153,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/10/23",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1171.1114490599923
+  "elo": 1181.0157868161098,
+  "opponent": "Steve Williams",
+  "result": "won"
  },
  {
   "date": "1986/10/25",
   "wrestler": "Bad News Allen",
-  "elo": 887.9716587850625
+  "elo": 1040.073653883381,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
  },
  {
   "date": "1986/10/25",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1190.851562008543
+  "elo": 1216.256731038982,
+  "opponent": "Bad News Allen",
+  "result": "won"
  },
  {
   "date": "1986/10/27",
   "wrestler": "The Jackal",
-  "elo": 824.2119928028429
+  "elo": 825.9989219066099,
+  "opponent": "Great Muta",
+  "result": "lost"
  },
  {
   "date": "1986/10/27",
   "wrestler": "Great Muta",
-  "elo": 1031.2959579708522
+  "elo": 1032.2045796090808,
+  "opponent": "The Jackal",
+  "result": "won"
  },
  {
   "date": "1986/10/27",
   "wrestler": "Konga The Barbarian",
-  "elo": 978.9421915269941
+  "elo": 979.0459140568425,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/10/27",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1240.087307202423
+  "elo": 1241.1213249719947,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
  },
  {
   "date": "1986/11/02",
   "wrestler": "Takashi Iizuka",
-  "elo": 657.2238152712785
+  "elo": 925.8716531402938,
+  "opponent": "Akira Nogami",
+  "result": "lost"
  },
  {
   "date": "1986/11/02",
   "wrestler": "Akira Nogami",
-  "elo": 783.9445997352288
+  "elo": 965.3926397339461,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
  },
  {
   "date": "1986/11/03",
   "wrestler": "Tatsuo Nakano",
-  "elo": 1005.7020250530111
+  "elo": 1058.1829919581833,
+  "opponent": "Yoji Anjo",
+  "result": "lost"
  },
  {
   "date": "1986/11/03",
   "wrestler": "Yoji Anjo",
-  "elo": 872.975568983983
+  "elo": 1003.201899797654,
+  "opponent": "Tatsuo Nakano",
+  "result": "won"
  },
  {
   "date": "1986/11/03",
   "wrestler": "Black Cat",
-  "elo": 973.6912914773528
+  "elo": 1012.7175898296998,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
  },
  {
   "date": "1986/11/03",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 1053.2093639924994
+  "elo": 1071.1264889944541,
+  "opponent": "Black Cat",
+  "result": "won"
  },
  {
   "date": "1986/11/03",
   "wrestler": "Steve DiSalvo",
-  "elo": 962.1128808921217
+  "elo": 963.3176437139446,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
  },
  {
   "date": "1986/11/03",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1123.763154979785
+  "elo": 1131.5093642985873,
+  "opponent": "Steve DiSalvo",
+  "result": "won"
  },
  {
   "date": "1986/11/03",
   "wrestler": "The Jackal",
-  "elo": 792.4849474987291
+  "elo": 797.7185916312525,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
  },
  {
   "date": "1986/11/03",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1129.909392179403
+  "elo": 1153.4733140024844,
+  "opponent": "The Jackal",
+  "result": "won"
  },
  {
   "date": "1986/11/03",
   "wrestler": "Konga The Barbarian",
-  "elo": 888.7229732506765
+  "elo": 889.3815901594611,
+  "opponent": "Steve Williams",
+  "result": "lost"
  },
  {
   "date": "1986/11/03",
   "wrestler": "Steve Williams",
-  "elo": 1058.1427043559333
+  "elo": 1059.9165890002207,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
  },
  {
   "date": "1986/11/14",
   "wrestler": "Osamu Matsuda",
-  "elo": 633.2784016513198
+  "elo": 862.1997104331516,
+  "opponent": "Tatsuo Nakano",
+  "result": "lost"
  },
  {
   "date": "1986/11/14",
   "wrestler": "Tatsuo Nakano",
-  "elo": 1017.5436866388093
+  "elo": 1090.0095589477276,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
  },
  {
   "date": "1986/11/14",
   "wrestler": "Yoji Anjo",
-  "elo": 727.0999230127945
+  "elo": 936.8151925654763,
+  "opponent": "Masakatsu Funaki",
+  "result": "lost"
  },
  {
   "date": "1986/11/14",
   "wrestler": "Masakatsu Funaki",
-  "elo": 846.615188514066
+  "elo": 1017.7472862247217,
+  "opponent": "Yoji Anjo",
+  "result": "won"
  },
  {
   "date": "1986/11/14",
   "wrestler": "Black Cat",
-  "elo": 892.8252702537941
+  "elo": 966.8148909468848,
+  "opponent": "George Takano",
+  "result": "lost"
  },
  {
   "date": "1986/11/14",
   "wrestler": "George Takano",
-  "elo": 1081.4321304607377
+  "elo": 1087.155239911821,
+  "opponent": "Black Cat",
+  "result": "won"
  },
  {
   "date": "1986/11/15",
   "wrestler": "Yoji Anjo",
-  "elo": 743.3166918969447
+  "elo": 945.0219438659765,
+  "opponent": "Akira Nogami",
+  "result": "draw"
  },
  {
   "date": "1986/11/15",
   "wrestler": "Akira Nogami",
-  "elo": 767.7278308510787
+  "elo": 957.1858884334459,
+  "opponent": "Yoji Anjo",
+  "result": "draw"
  },
  {
   "date": "1986/11/15",
   "wrestler": "Masahiro Chono",
-  "elo": 538.7790753834929
+  "elo": 717.6418664209066,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
  },
  {
   "date": "1986/11/15",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 1058.4181473257886
+  "elo": 1084.3336095802108,
+  "opponent": "Masahiro Chono",
+  "result": "won"
  },
  {
   "date": "1986/11/15",
   "wrestler": "Great Muta",
-  "elo": 977.4890030837472
+  "elo": 978.4100125962347,
+  "opponent": "Jimmy Snuka",
+  "result": "lost"
  },
  {
   "date": "1986/11/15",
   "wrestler": "Jimmy Snuka",
-  "elo": 1058.5981840298646
+  "elo": 1059.5809978479142,
+  "opponent": "Keiji Muto",
+  "result": "won"
  },
  {
   "date": "1986/11/15",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1237.4408231537225
+  "elo": 1238.595304718679,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
  },
  {
   "date": "1986/11/15",
   "wrestler": "Dick Murdoch",
-  "elo": 1205.816165161015
+  "elo": 1208.4219692483657,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
  },
  {
   "date": "1986/11/17",
   "wrestler": "Mr. Pogo",
-  "elo": 982.1119709236932
+  "elo": 982.558692346353,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/11/17",
   "wrestler": "Akira Maeda",
-  "elo": 1273.6816083128658
+  "elo": 1278.794158897236,
+  "opponent": "Mr. Pogo",
+  "result": "won"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Yoji Anjo",
-  "elo": 809.1172837888801
+  "elo": 984.4879501804041,
+  "opponent": "Tatsuo Nakano",
+  "result": "draw"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Tatsuo Nakano",
-  "elo": 984.6433906928415
+  "elo": 1070.2765557905136,
+  "opponent": "Yoji Anjo",
+  "result": "draw"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Shinya Hashimoto",
-  "elo": 779.1549646269692
+  "elo": 1007.5908735758749,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 892.8106118262405
+  "elo": 1084.5238574125506,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Kim Su Hong",
-  "elo": 953.9876304905904
+  "elo": 957.7316973474756,
+  "opponent": "Makoto Arakawa",
+  "result": "lost"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Makoto Arakawa",
-  "elo": 1073.7802366952726
+  "elo": 1096.4281097656485,
+  "opponent": "Kim Su Hong",
+  "result": "won"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Wild Samoan",
-  "elo": 817.4111918372629
+  "elo": 831.378703008707,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1131.3321086875612
+  "elo": 1204.8489373251855,
+  "opponent": "Wild Samoan",
+  "result": "won"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Jimmy Snuka",
-  "elo": 1003.7426359708713
+  "elo": 1005.0738796275426,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Kengo Kimura",
-  "elo": 1079.607262718988
+  "elo": 1082.684206797055,
+  "opponent": "Jimmy Snuka",
+  "result": "won"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Dick Murdoch",
-  "elo": 1175.4395095298623
+  "elo": 1179.5007352072748,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1190.6627034417088
+  "elo": 1211.3157820846661,
+  "opponent": "Dick Murdoch",
+  "result": "won"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Masked Superstar",
-  "elo": 959.4770064276822
+  "elo": 960.8655950293917,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/11/18",
   "wrestler": "Antonio Inoki",
-  "elo": 1270.187777244265
+  "elo": 1272.615328124071,
+  "opponent": "Masked Superstar",
+  "result": "won"
  },
  {
   "date": "1986/11/20",
   "wrestler": "Wild Samoan",
-  "elo": 803.9207824957906
+  "elo": 817.23271453896,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/11/20",
   "wrestler": "Akira Maeda",
-  "elo": 1277.054210648234
+  "elo": 1282.3306560146727,
+  "opponent": "Wild Samoan",
+  "result": "won"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Osamu Matsuda",
-  "elo": 570.1534844081926
+  "elo": 788.8775553332343,
+  "opponent": "Akira Nogami",
+  "result": "lost"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Akira Nogami",
-  "elo": 830.8527480942058
+  "elo": 1030.5080435333632,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Makoto Arakawa",
-  "elo": 1007.1928505530626
+  "elo": 1027.4648819952758,
+  "opponent": "Kim Su Hong",
+  "result": "lost"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Kim Su Hong",
-  "elo": 1087.1624027750104
+  "elo": 1095.6581528882211,
+  "opponent": "Makoto Arakawa",
+  "result": "won"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 828.8785144998265
+  "elo": 1029.5717631063314,
+  "opponent": "Shunji Kosugi",
+  "result": "lost"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Shunji Kosugi",
-  "elo": 1055.991355998411
+  "elo": 1104.9520943062191,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Shinya Hashimoto",
-  "elo": 755.8816011691665
+  "elo": 983.2762811275898,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1142.9687904164625
+  "elo": 1217.006233549328,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1057.1465856802097
+  "elo": 1064.076668480352,
+  "opponent": "Jimmy Snuka",
+  "result": "lost"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Jimmy Snuka",
-  "elo": 1070.3592052704466
+  "elo": 1072.5065754457778,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Mr. Pogo",
-  "elo": 935.8352311285655
+  "elo": 940.2895112768294,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1213.8010733392728
+  "elo": 1221.883077352047,
+  "opponent": "Mr. Pogo",
+  "result": "won"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Kendo Nagasaki",
-  "elo": 983.1297684267743
+  "elo": 983.5514584828395,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/11/21",
   "wrestler": "Akira Maeda",
-  "elo": 1285.4893264348468
+  "elo": 1290.5549267732529,
+  "opponent": "Kendo Nagasaki",
+  "result": "won"
  },
  {
   "date": "1986/11/22",
   "wrestler": "Kenichi Oya",
-  "elo": 495.8841079871231
+  "elo": 693.1914015150736,
+  "opponent": "Akira Nogami",
+  "result": "lost"
  },
  {
   "date": "1986/11/22",
   "wrestler": "Akira Nogami",
-  "elo": 860.2331895714888
+  "elo": 1045.0016017854637,
+  "opponent": "Kenichi Oya",
+  "result": "won"
  },
  {
   "date": "1986/11/22",
   "wrestler": "Black Cat",
-  "elo": 715.8782827674225
+  "elo": 805.2990901270153,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
  },
  {
   "date": "1986/11/22",
   "wrestler": "Masahiro Chono",
-  "elo": 715.7260628698646
+  "elo": 879.157667240776,
+  "opponent": "Black Cat",
+  "result": "won"
  },
  {
   "date": "1986/11/22",
   "wrestler": "Shinya Hashimoto",
-  "elo": 726.05812382399
+  "elo": 911.5694838121178,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
  },
  {
   "date": "1986/11/22",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 1073.3298859983768
+  "elo": 1120.1870082379467,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
  },
  {
   "date": "1986/11/22",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 800.7036963062629
+  "elo": 1004.2014667248711,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/11/22",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1157.0561995132443
+  "elo": 1229.6913817400582,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
  },
  {
   "date": "1986/11/22",
   "wrestler": "Jimmy Snuka",
-  "elo": 1046.315880759086
+  "elo": 1048.4926932874876,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
  },
  {
   "date": "1986/11/22",
   "wrestler": "Antonio Inoki",
-  "elo": 1282.2094394999453
+  "elo": 1284.6222692032163,
+  "opponent": "Jimmy Snuka",
+  "result": "won"
  },
  {
   "date": "1986/11/24",
   "wrestler": "Yoji Anjo",
-  "elo": 823.7243842221121
+  "elo": 1001.731167473947,
+  "opponent": "Akira Nogami",
+  "result": "draw"
  },
  {
   "date": "1986/11/24",
   "wrestler": "Akira Nogami",
-  "elo": 845.6260891382567
+  "elo": 1036.3799931386923,
+  "opponent": "Yoji Anjo",
+  "result": "draw"
  },
  {
   "date": "1986/11/24",
   "wrestler": "Kim Su Hong",
-  "elo": 1025.8528782831495
+  "elo": 1035.9684633373677,
+  "opponent": "Makoto Arakawa",
+  "result": "lost"
  },
  {
   "date": "1986/11/24",
   "wrestler": "Makoto Arakawa",
-  "elo": 1068.5023750449234
+  "elo": 1087.1545715461293,
+  "opponent": "Kim Su Hong",
+  "result": "won"
  },
  {
   "date": "1986/11/24",
   "wrestler": "George Takano",
-  "elo": 1026.3956346489083
+  "elo": 1031.6141056269466,
+  "opponent": "Jimmy Snuka",
+  "result": "lost"
  },
  {
   "date": "1986/11/24",
   "wrestler": "Jimmy Snuka",
-  "elo": 1101.3523765709153
+  "elo": 1104.0338275723618,
+  "opponent": "George Takano",
+  "result": "won"
  },
  {
   "date": "1986/11/24",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1154.1438998214728
+  "elo": 1196.5228846684329,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/11/24",
   "wrestler": "Akira Maeda",
-  "elo": 1303.8431575283819
+  "elo": 1310.288773143802,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
  },
  {
   "date": "1986/11/26",
   "wrestler": "Takashi Iizuka",
-  "elo": 606.6938977369874
+  "elo": 856.6476000990333,
+  "opponent": "Akira Nogami",
+  "result": "lost"
  },
  {
   "date": "1986/11/26",
   "wrestler": "Akira Nogami",
-  "elo": 896.1560066725477
+  "elo": 1070.9920196593225,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
  },
  {
   "date": "1986/11/26",
   "wrestler": "Kenichi Oya",
-  "elo": 488.74413520751455
+  "elo": 674.4269661743032,
+  "opponent": "Makoto Arakawa",
+  "result": "lost"
  },
  {
   "date": "1986/11/26",
   "wrestler": "Makoto Arakawa",
-  "elo": 1072.0723614347276
+  "elo": 1096.5367892165145,
+  "opponent": "Kenichi Oya",
+  "result": "won"
  },
  {
   "date": "1986/11/26",
   "wrestler": "Shinya Hashimoto",
-  "elo": 700.0194099502439
+  "elo": 862.1145177917624,
+  "opponent": "Shunji Kosugi",
+  "result": "lost"
  },
  {
   "date": "1986/11/26",
   "wrestler": "Shunji Kosugi",
-  "elo": 1069.0107129352841
+  "elo": 1129.6795773163967,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
  },
  {
   "date": "1986/11/26",
   "wrestler": "Masahiro Chono",
-  "elo": 701.1126090387818
+  "elo": 855.6890435685499,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
  },
  {
   "date": "1986/11/26",
   "wrestler": "Nobuhiko Takada",
-  "elo": 1164.3629264287856
+  "elo": 1235.5585376581148,
+  "opponent": "Masahiro Chono",
+  "result": "won"
  },
  {
   "date": "1986/11/26",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1228.1203301014302
+  "elo": 1229.3695686758438,
+  "opponent": "Jimmy Snuka",
+  "result": "draw"
  },
  {
   "date": "1986/11/26",
   "wrestler": "Jimmy Snuka",
-  "elo": 1119.9933626754996
+  "elo": 1122.4852996580323,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
  },
  {
   "date": "1986/11/27",
   "wrestler": "Dick Murdoch",
-  "elo": 1099.6808239632023
+  "elo": 1103.4116233731675,
+  "opponent": "Great Muta",
+  "result": "lost"
  },
  {
   "date": "1986/11/27",
   "wrestler": "Great Muta",
-  "elo": 1129.006374217067
+  "elo": 1130.5882362644495,
+  "opponent": "Dick Murdoch",
+  "result": "won"
  },
  {
   "date": "1986/11/28",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1146.3696079508713
+  "elo": 1183.4349398606735,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
  },
  {
   "date": "1986/11/28",
   "wrestler": "Dick Murdoch",
-  "elo": 1107.4551158338038
+  "elo": 1116.4995681809269,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/11/29",
   "wrestler": "Yoji Anjo",
-  "elo": 860.5090042456594
+  "elo": 996.4954840547309,
+  "opponent": "Shigeo Miyato",
+  "result": "draw"
  },
  {
   "date": "1986/11/29",
   "wrestler": "Shigeo Miyato",
-  "elo": 921.02557043145
+  "elo": 975.687424981422,
+  "opponent": "Yoji Anjo",
+  "result": "draw"
  },
  {
   "date": "1986/11/29",
   "wrestler": "Black Cat",
-  "elo": 693.0762512389421
+  "elo": 773.7871659486119,
+  "opponent": "Makoto Arakawa",
+  "result": "lost"
  },
  {
   "date": "1986/11/29",
   "wrestler": "Makoto Arakawa",
-  "elo": 1083.4733771989677
+  "elo": 1112.2927513057161,
+  "opponent": "Black Cat",
+  "result": "won"
  },
  {
   "date": "1986/11/29",
   "wrestler": "Jimmy Snuka",
-  "elo": 1071.29014841839
+  "elo": 1073.6511945955233,
+  "opponent": "Great Muta",
+  "result": "lost"
  },
  {
   "date": "1986/11/29",
   "wrestler": "Great Muta",
-  "elo": 1177.7095884741768
+  "elo": 1179.4223413269585,
+  "opponent": "Jimmy Snuka",
+  "result": "won"
  },
  {
   "date": "1986/11/29",
   "wrestler": "Masked Superstar",
-  "elo": 1035.2628903807556
+  "elo": 1037.2642226724433,
+  "opponent": "Akira Maeda",
+  "result": "draw"
  },
  {
   "date": "1986/11/29",
   "wrestler": "Akira Maeda",
-  "elo": 1284.8966865401135
+  "elo": 1291.1891162330392,
+  "opponent": "Masked Superstar",
+  "result": "draw"
  },
  {
   "date": "1986/11/29",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1219.7708048326128
+  "elo": 1221.522065875509,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
  },
  {
   "date": "1986/11/29",
   "wrestler": "Dick Murdoch",
-  "elo": 1124.1541663714386
+  "elo": 1132.1945737815963,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
  },
  {
   "date": "1986/12/01",
   "wrestler": "Wild Samoan",
-  "elo": 792.1131648860302
+  "elo": 804.9680673674361,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/12/01",
   "wrestler": "Akira Maeda",
-  "elo": 1287.8485909425535
+  "elo": 1294.2552780259202,
+  "opponent": "Wild Samoan",
+  "result": "won"
  },
  {
   "date": "1986/12/02",
   "wrestler": "Tonga Kid",
-  "elo": 983.9833490263065
+  "elo": 984.4732364706266,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/12/02",
   "wrestler": "Akira Maeda",
-  "elo": 1295.8569164294004
+  "elo": 1302.018659790607,
+  "opponent": "Tonga Kid",
+  "result": "won"
  },
  {
   "date": "1986/12/03",
   "wrestler": "Shinya Hashimoto",
-  "elo": 600.3340569024922
+  "elo": 760.2653284666295,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
  },
  {
   "date": "1986/12/03",
   "wrestler": "Masahiro Chono",
-  "elo": 800.7979620865335
+  "elo": 957.5382328936828,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
  },
  {
   "date": "1986/12/03",
   "wrestler": "Shunji Kosugi",
-  "elo": 1021.0908562805997
+  "elo": 1077.1794985784984,
+  "opponent": "Makoto Arakawa",
+  "result": "lost"
  },
  {
   "date": "1986/12/03",
   "wrestler": "Makoto Arakawa",
-  "elo": 1131.393233853652
+  "elo": 1164.7928300436145,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
  },
  {
   "date": "1986/12/03",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1009.1808843681267
+  "elo": 1015.4542048543567,
+  "opponent": "Jimmy Snuka",
+  "result": "lost"
  },
  {
   "date": "1986/12/03",
   "wrestler": "Jimmy Snuka",
-  "elo": 1119.2558497304728
+  "elo": 1122.2736582215186,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
  },
  {
   "date": "1986/12/03",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1130.903718705192
+  "elo": 1163.5583875330144,
+  "opponent": "Masked Superstar",
+  "result": "draw"
  },
  {
   "date": "1986/12/03",
   "wrestler": "Masked Superstar",
-  "elo": 1050.728779626435
+  "elo": 1057.1407750001024,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
  },
  {
   "date": "1986/12/03",
   "wrestler": "Dick Murdoch",
-  "elo": 1097.0313535521802
+  "elo": 1104.8574705686865,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/12/03",
   "wrestler": "Akira Maeda",
-  "elo": 1309.4183228390295
+  "elo": 1315.687211397062,
+  "opponent": "Dick Murdoch",
+  "result": "won"
  },
  {
   "date": "1986/12/07",
   "wrestler": "Masked Superstar",
-  "elo": 1032.3236459102322
+  "elo": 1038.7232666929017,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/12/07",
   "wrestler": "Akira Maeda",
-  "elo": 1318.620889697131
+  "elo": 1324.8959655506624,
+  "opponent": "Masked Superstar",
+  "result": "won"
  },
  {
   "date": "1986/12/08",
   "wrestler": "Akira Nogami",
-  "elo": 781.9928709161666
+  "elo": 1013.3889151564862,
+  "opponent": "Masakatsu Funaki",
+  "result": "lost"
  },
  {
   "date": "1986/12/08",
   "wrestler": "Masakatsu Funaki",
-  "elo": 960.7783242704472
+  "elo": 1075.350390727558,
+  "opponent": "Akira Nogami",
+  "result": "won"
  },
  {
   "date": "1986/12/08",
   "wrestler": "Tonga Kid",
-  "elo": 909.1470767151455
+  "elo": 921.662320472533,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
  },
  {
   "date": "1986/12/08",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 1110.7480221539572
+  "elo": 1151.5924662369935,
+  "opponent": "Tonga Kid",
+  "result": "won"
  },
  {
   "date": "1986/12/08",
   "wrestler": "Kantaro Hoshino",
-  "elo": 974.5123757756957
+  "elo": 980.360029661815,
+  "opponent": "Jimmy Snuka",
+  "result": "lost"
  },
  {
   "date": "1986/12/08",
   "wrestler": "Jimmy Snuka",
-  "elo": 1153.924358322904
+  "elo": 1157.3678334140604,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
  },
  {
   "date": "1986/12/09",
   "wrestler": "Shigeo Miyato",
-  "elo": 783.0162767213172
+  "elo": 886.4963934706881,
+  "opponent": "Akira Nogami",
+  "result": "lost"
  },
  {
   "date": "1986/12/09",
   "wrestler": "Akira Nogami",
-  "elo": 920.0021646262993
+  "elo": 1057.9844309118532,
+  "opponent": "Shigeo Miyato",
+  "result": "won"
  },
  {
   "date": "1986/12/09",
   "wrestler": "Masakatsu Funaki",
-  "elo": 879.2922940578192
+  "elo": 1019.7070243199082,
+  "opponent": "Kim Su Hong",
+  "result": "lost"
  },
  {
   "date": "1986/12/09",
   "wrestler": "Kim Su Hong",
-  "elo": 1066.5958933894635
+  "elo": 1091.6118297450175,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
  },
  {
   "date": "1986/12/09",
   "wrestler": "Shinya Hashimoto",
-  "elo": 552.3610779777733
+  "elo": 720.8355263919763,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
  },
  {
   "date": "1986/12/09",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 848.6766752309818
+  "elo": 1023.9163677621978,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
  },
  {
   "date": "1986/12/09",
   "wrestler": "Black Cat",
-  "elo": 676.5073559154185
+  "elo": 753.3802929551463,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
  },
  {
   "date": "1986/12/09",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 1119.032469815719
+  "elo": 1161.7959027337263,
+  "opponent": "Black Cat",
+  "result": "won"
  },
  {
   "date": "1986/12/09",
   "wrestler": "Tonga Kid",
-  "elo": 891.8467888114752
+  "elo": 903.7858436393185,
+  "opponent": "Akira Maeda",
+  "result": "lost"
  },
  {
   "date": "1986/12/09",
   "wrestler": "Akira Maeda",
-  "elo": 1322.9459616730485
+  "elo": 1329.365084758966,
+  "opponent": "Tonga Kid",
+  "result": "won"
  },
  {
   "date": "1986/12/10",
   "wrestler": "Akira Nogami",
-  "elo": 808.3382526108464
+  "elo": 1002.4980487118788,
+  "opponent": "Masakatsu Funaki",
+  "result": "lost"
  },
  {
   "date": "1986/12/10",
   "wrestler": "Masakatsu Funaki",
-  "elo": 990.9562060732719
+  "elo": 1075.1934065198827,
+  "opponent": "Akira Nogami",
+  "result": "won"
  },
  {
   "date": "1986/12/10",
   "wrestler": "Tonga Kid",
-  "elo": 838.2916295976656
+  "elo": 853.1305473156755,
+  "opponent": "Kim Su Hong",
+  "result": "lost"
  },
  {
   "date": "1986/12/10",
   "wrestler": "Kim Su Hong",
-  "elo": 1093.3734729963683
+  "elo": 1116.939477906839,
+  "opponent": "Tonga Kid",
+  "result": "won"
  },
  {
   "date": "1986/12/10",
   "wrestler": "Black Cat",
-  "elo": 664.4700537158014
+  "elo": 735.5743358873725,
+  "opponent": "Jimmy Snuka",
+  "result": "lost"
  },
  {
   "date": "1986/12/10",
   "wrestler": "Jimmy Snuka",
-  "elo": 1159.9430094227125
+  "elo": 1166.2708119479473,
+  "opponent": "Black Cat",
+  "result": "won"
  },
  {
   "date": "1986/12/10",
   "wrestler": "Kazuo Yamazaki",
-  "elo": 1070.0828651269835
+  "elo": 1112.8532034609673,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
  },
  {
   "date": "1986/12/10",
   "wrestler": "Shiro Koshinaka",
-  "elo": 1175.2820427343524
+  "elo": 1218.086575307009,
+  "opponent": "Kazuo Yamazaki",
+  "result": "won"
  },
  {
   "date": "1986/12/10",
   "wrestler": "Kengo Kimura",
-  "elo": 1048.750967037262
+  "elo": 1051.6648596742161,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
  },
  {
   "date": "1986/12/10",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1235.1989526734758
+  "elo": 1237.0317394369283,
+  "opponent": "Kengo Kimura",
+  "result": "won"
  },
  {
   "date": "1986/12/11",
   "wrestler": "Masakatsu Funaki",
-  "elo": 841.1053581845568
+  "elo": 1008.880324488968,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
  },
  {
   "date": "1986/12/11",
   "wrestler": "Masahiro Chono",
-  "elo": 950.6488099752486
+  "elo": 1090.1643969555123,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
  },
  {
   "date": "1986/12/11",
   "wrestler": "Shinya Hashimoto",
-  "elo": 521.6173949859616
+  "elo": 691.0914710048596,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
  },
  {
   "date": "1986/12/11",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 879.4203582227935
+  "elo": 1038.788395455756,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
  },
  {
   "date": "1986/12/11",
   "wrestler": "Tonga Kid",
-  "elo": 786.5340083207764
+  "elo": 809.9508253685829,
+  "opponent": "Shunji Kosugi",
+  "result": "lost"
  },
  {
   "date": "1986/12/11",
   "wrestler": "Shunji Kosugi",
-  "elo": 1046.9696669190444
+  "elo": 1098.7693595520448,
+  "opponent": "Tonga Kid",
+  "result": "won"
  },
  {
   "date": "1986/12/11",
   "wrestler": "Jimmy Snuka",
-  "elo": 1141.6177393253863
+  "elo": 1147.807502807074,
+  "opponent": "George Takano",
+  "result": "draw"
  },
  {
   "date": "1986/12/11",
   "wrestler": "George Takano",
-  "elo": 1044.7209047462345
+  "elo": 1050.07741476782,
+  "opponent": "Jimmy Snuka",
+  "result": "draw"
  }
 ]
