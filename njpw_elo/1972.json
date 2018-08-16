@@ -1,6 +1,7 @@
 [
  {
   "date": "1972/03/06",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 950.0,
   "opponent": "Ivan Kameroff",
@@ -8,6 +9,7 @@
  },
  {
   "date": "1972/03/06",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 1050.0,
   "opponent": "Osamu Kido",
@@ -15,6 +17,7 @@
  },
  {
   "date": "1972/03/06",
+  "wrestling_as": "Brooklyn Kid",
   "wrestler": "Brooklyn Kid",
   "elo": 950.0,
   "opponent": "Shoji Kai",
@@ -22,6 +25,7 @@
  },
  {
   "date": "1972/03/06",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1050.0,
   "opponent": "Brooklyn Kid",
@@ -29,6 +33,7 @@
  },
  {
   "date": "1972/03/06",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 1000.0,
   "opponent": "Inca Peruano",
@@ -36,6 +41,7 @@
  },
  {
   "date": "1972/03/06",
+  "wrestling_as": "Inca Peruano",
   "wrestler": "Inca Peruano",
   "elo": 1000.0,
   "opponent": "Katsuhisa Shibata",
@@ -43,6 +49,7 @@
  },
  {
   "date": "1972/03/06",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 950.0,
   "opponent": "Karl Gotch",
@@ -50,6 +57,7 @@
  },
  {
   "date": "1972/03/06",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
   "elo": 1050.0,
   "opponent": "Antonio Inoki",
@@ -57,6 +65,7 @@
  },
  {
   "date": "1972/03/10",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 942.8536882591618,
   "opponent": "Osamu Kido",
@@ -64,6 +73,7 @@
  },
  {
   "date": "1972/03/10",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1064.2926234816764,
   "opponent": "Tatsumi Fujinami",
@@ -71,6 +81,7 @@
  },
  {
   "date": "1972/03/10",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1000.0,
   "opponent": "Ivan Kameroff",
@@ -78,6 +89,7 @@
  },
  {
   "date": "1972/03/10",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 1100.0,
   "opponent": "Shoji Kai",
@@ -85,6 +97,7 @@
  },
  {
   "date": "1972/03/10",
+  "wrestling_as": "Jim Durango",
   "wrestler": "Jim Durango",
   "elo": 942.8536882591618,
   "opponent": "Antonio Inoki",
@@ -92,6 +105,7 @@
  },
  {
   "date": "1972/03/10",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1064.2926234816764,
   "opponent": "Jim Durango",
@@ -99,6 +113,7 @@
  },
  {
   "date": "1972/03/14",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 859.154979600488,
   "opponent": "Shoji Kai",
@@ -106,6 +121,7 @@
  },
  {
   "date": "1972/03/14",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1041.8493543293368,
   "opponent": "Tatsumi Fujinami",
@@ -113,6 +129,7 @@
  },
  {
   "date": "1972/03/14",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 1035.9935000197115,
   "opponent": "Katsuhisa Shibata",
@@ -120,6 +137,7 @@
  },
  {
   "date": "1972/03/14",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 1064.0064999802885,
   "opponent": "Ivan Kameroff",
@@ -127,6 +145,7 @@
  },
  {
   "date": "1972/03/14",
+  "wrestling_as": "Jim Durango",
   "wrestler": "Jim Durango",
   "elo": 872.7510302349706,
   "opponent": "Karl Gotch",
@@ -134,6 +153,7 @@
  },
  {
   "date": "1972/03/14",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
   "elo": 1085.0513290120955,
   "opponent": "Jim Durango",
@@ -141,6 +161,7 @@
  },
  {
   "date": "1972/03/14",
+  "wrestling_as": "Inca Peruano",
   "wrestler": "Inca Peruano",
   "elo": 959.1482680475054,
   "opponent": "Antonio Inoki",
@@ -148,6 +169,7 @@
  },
  {
   "date": "1972/03/14",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1105.144355434171,
   "opponent": "Inca Peruano",
@@ -155,13 +177,15 @@
  },
  {
   "date": "1972/03/16",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 930.7726627029446,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/03/16",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 997.6096541945989,
   "opponent": "Hiroaki Hamada",
@@ -169,6 +193,7 @@
  },
  {
   "date": "1972/03/16",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 990.0570888284478,
   "opponent": "Osamu Kido",
@@ -176,6 +201,7 @@
  },
  {
   "date": "1972/03/16",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1110.22903467294,
   "opponent": "Ivan Kameroff",
@@ -183,6 +209,7 @@
  },
  {
   "date": "1972/03/16",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 998.1642063695245,
   "opponent": "Brooklyn Kid",
@@ -190,6 +217,7 @@
  },
  {
   "date": "1972/03/16",
+  "wrestling_as": "Brooklyn Kid",
   "wrestler": "Brooklyn Kid",
   "elo": 1081.6845872215279,
   "opponent": "Katsuhisa Shibata",
@@ -197,6 +225,7 @@
  },
  {
   "date": "1972/03/16",
+  "wrestling_as": "Jim Durango",
   "wrestler": "Jim Durango",
   "elo": 831.1754126023659,
   "opponent": "Antonio Inoki",
@@ -204,6 +233,7 @@
  },
  {
   "date": "1972/03/16",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1125.9321642504733,
   "opponent": "Jim Durango",
@@ -211,13 +241,15 @@
  },
  {
   "date": "1972/03/18",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 849.7760513784276,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/03/18",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1078.6062655191158,
   "opponent": "Hiroaki Hamada",
@@ -225,6 +257,7 @@
  },
  {
   "date": "1972/03/18",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 892.3900814185187,
   "opponent": "Katsuhisa Shibata",
@@ -232,6 +265,7 @@
  },
  {
   "date": "1972/03/18",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 1095.8312137794537,
   "opponent": "Ivan Kameroff",
@@ -239,6 +273,7 @@
  },
  {
   "date": "1972/03/18",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 980.1675120563771,
   "opponent": "Inca Peruano",
@@ -246,6 +281,7 @@
  },
  {
   "date": "1972/03/18",
+  "wrestling_as": "Inca Peruano",
   "wrestler": "Inca Peruano",
   "elo": 1082.511952593425,
   "opponent": "Shoji Kai",
@@ -253,6 +289,7 @@
  },
  {
   "date": "1972/03/18",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 961.5434472850322,
   "opponent": "Brooklyn Kid",
@@ -260,6 +297,7 @@
  },
  {
   "date": "1972/03/18",
+  "wrestling_as": "Brooklyn Kid",
   "wrestler": "Brooklyn Kid",
   "elo": 1120.1411399364956,
   "opponent": "Kotetsu Yamamoto",
@@ -267,13 +305,15 @@
  },
  {
   "date": "1972/03/20",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 807.520900889766,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/03/20",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1099.7338407634466,
   "opponent": "Hiroaki Hamada",
@@ -281,6 +321,7 @@
  },
  {
   "date": "1972/03/20",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 855.4272903939301,
   "opponent": "Ivan Kameroff",
@@ -288,6 +329,7 @@
  },
  {
   "date": "1972/03/20",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 1017.1303030809656,
   "opponent": "Shoji Kai",
@@ -295,6 +337,7 @@
  },
  {
   "date": "1972/03/20",
+  "wrestling_as": "Inca Peruano",
   "wrestler": "Inca Peruano",
   "elo": 1038.7282939886782,
   "opponent": "Antonio Inoki",
@@ -302,6 +345,7 @@
  },
  {
   "date": "1972/03/20",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1169.71582285522,
   "opponent": "Inca Peruano",
@@ -309,13 +353,15 @@
  },
  {
   "date": "1972/03/23",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 776.1577230925307,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/03/23",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1115.4154296620643,
   "opponent": "Hiroaki Hamada",
@@ -323,6 +369,7 @@
  },
  {
   "date": "1972/03/23",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 980.2165682526643,
   "opponent": "Osamu Kido",
@@ -330,6 +377,7 @@
  },
  {
   "date": "1972/03/23",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1147.1427695012414,
   "opponent": "Ivan Kameroff",
@@ -337,6 +385,7 @@
  },
  {
   "date": "1972/03/23",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 1013.7261596415683,
   "opponent": "Jim Durango",
@@ -344,6 +393,7 @@
  },
  {
   "date": "1972/03/23",
+  "wrestling_as": "Jim Durango",
   "wrestler": "Jim Durango",
   "elo": 995.3855208781367,
   "opponent": "Katsuhisa Shibata",
@@ -351,6 +401,7 @@
  },
  {
   "date": "1972/03/23",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 883.4006353011525,
   "opponent": "Inca Peruano",
@@ -358,6 +409,7 @@
  },
  {
   "date": "1972/03/23",
+  "wrestling_as": "Inca Peruano",
   "wrestler": "Inca Peruano",
   "elo": 1077.799699980618,
   "opponent": "Kotetsu Yamamoto",
@@ -365,13 +417,15 @@
  },
  {
   "date": "1972/03/24",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 751.3107554675,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/03/24",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1127.8389134745796,
   "opponent": "Hiroaki Hamada",
@@ -379,6 +433,7 @@
  },
  {
   "date": "1972/03/24",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 845.7680817122606,
   "opponent": "Shoji Kai",
@@ -386,6 +441,7 @@
  },
  {
   "date": "1972/03/24",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 989.8757769343338,
   "opponent": "Ivan Kameroff",
@@ -393,6 +449,7 @@
  },
  {
   "date": "1972/03/24",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 978.578930883174,
   "opponent": "Brooklyn Kid",
@@ -400,6 +457,7 @@
  },
  {
   "date": "1972/03/24",
+  "wrestling_as": "Brooklyn Kid",
   "wrestler": "Brooklyn Kid",
   "elo": 1155.2883686948899,
   "opponent": "Katsuhisa Shibata",
@@ -407,6 +465,7 @@
  },
  {
   "date": "1972/03/24",
+  "wrestling_as": "Inca Peruano",
   "wrestler": "Inca Peruano",
   "elo": 1040.7272914443874,
   "opponent": "Antonio Inoki",
@@ -414,6 +473,7 @@
  },
  {
   "date": "1972/03/24",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1206.7882313914506,
   "opponent": "Inca Peruano",
@@ -421,13 +481,15 @@
  },
  {
   "date": "1972/03/25",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 730.7687680525792,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/03/25",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1138.10990718204,
   "opponent": "Hiroaki Hamada",
@@ -435,6 +497,7 @@
  },
  {
   "date": "1972/03/25",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 782.2349660746476,
   "opponent": "Katsuhisa Shibata",
@@ -442,6 +505,7 @@
  },
  {
   "date": "1972/03/25",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 1042.112046520787,
   "opponent": "Ivan Kameroff",
@@ -449,6 +513,7 @@
  },
  {
   "date": "1972/03/25",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1076.5936592231428,
   "opponent": "Jim Durango",
@@ -456,6 +521,7 @@
  },
  {
   "date": "1972/03/25",
+  "wrestling_as": "Jim Durango",
   "wrestler": "Jim Durango",
   "elo": 1136.483741434334,
   "opponent": "Osamu Kido",
@@ -463,6 +529,7 @@
  },
  {
   "date": "1972/03/25",
+  "wrestling_as": "Brooklyn Kid",
   "wrestler": "Brooklyn Kid",
   "elo": 1072.5798075115802,
   "opponent": "Kotetsu Yamamoto",
@@ -470,6 +537,7 @@
  },
  {
   "date": "1972/03/25",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 1048.8177576677722,
   "opponent": "Brooklyn Kid",
@@ -477,13 +545,15 @@
  },
  {
   "date": "1972/03/29",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 713.2734749832534,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/03/29",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1146.8575537167028,
   "opponent": "Hiroaki Hamada",
@@ -491,6 +561,7 @@
  },
  {
   "date": "1972/03/29",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 745.6295769895669,
   "opponent": "Katsuhisa Shibata",
@@ -498,6 +569,7 @@
  },
  {
   "date": "1972/03/29",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 1060.4147410633275,
   "opponent": "Ivan Kameroff",
@@ -505,6 +577,7 @@
  },
  {
   "date": "1972/03/29",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 929.7347902652209,
   "opponent": "Jim Durango",
@@ -512,6 +585,7 @@
  },
  {
   "date": "1972/03/29",
+  "wrestling_as": "Jim Durango",
   "wrestler": "Jim Durango",
   "elo": 1166.5542347688904,
   "opponent": "Shoji Kai",
@@ -519,6 +593,7 @@
  },
  {
   "date": "1972/03/29",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 997.6536563883758,
   "opponent": "Inca Peruano",
@@ -526,6 +601,7 @@
  },
  {
   "date": "1972/03/29",
+  "wrestling_as": "Inca Peruano",
   "wrestler": "Inca Peruano",
   "elo": 1091.8913927237838,
   "opponent": "Kotetsu Yamamoto",
@@ -533,6 +609,7 @@
  },
  {
   "date": "1972/03/30",
+  "wrestling_as": "Tetsuo Sekigawa",
   "wrestler": "Tetsuo Sekigawa",
   "elo": 969.9597102245033,
   "opponent": "Tatsumi Fujinami",
@@ -540,6 +617,7 @@
  },
  {
   "date": "1972/03/30",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1176.8978434921996,
   "opponent": "Tetsuo Sekigawa",
@@ -547,6 +625,7 @@
  },
  {
   "date": "1972/03/30",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 694.1598428269593,
   "opponent": "Shoji Kai",
@@ -554,6 +633,7 @@
  },
  {
   "date": "1972/03/30",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 981.2045244278285,
   "opponent": "Ivan Kameroff",
@@ -561,6 +641,7 @@
  },
  {
   "date": "1972/03/30",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1039.2582579098057,
   "opponent": "Jim Durango",
@@ -568,6 +649,7 @@
  },
  {
   "date": "1972/03/30",
+  "wrestling_as": "Jim Durango",
   "wrestler": "Jim Durango",
   "elo": 1203.8896360822275,
   "opponent": "Osamu Kido",
@@ -575,13 +657,15 @@
  },
  {
   "date": "1972/04/02",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 700.3059777468355,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/04/02",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1183.3815921104085,
   "opponent": "Hiroaki Hamada",
@@ -589,6 +673,7 @@
  },
  {
   "date": "1972/04/02",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 670.0352946429009,
   "opponent": "Osamu Kido",
@@ -596,6 +681,7 @@
  },
  {
   "date": "1972/04/02",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1051.3205320018349,
   "opponent": "Ivan Kameroff",
@@ -603,6 +689,7 @@
  },
  {
   "date": "1972/04/02",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 937.758399806747,
   "opponent": "Jim Durango",
@@ -610,6 +697,7 @@
  },
  {
   "date": "1972/04/02",
+  "wrestling_as": "Jim Durango",
   "wrestler": "Jim Durango",
   "elo": 1214.7511672374978,
   "opponent": "Shoji Kai",
@@ -617,6 +705,7 @@
  },
  {
   "date": "1972/04/02",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 918.8909253117055,
   "opponent": "Brooklyn Kid",
@@ -624,6 +713,7 @@
  },
  {
   "date": "1972/04/02",
+  "wrestling_as": "Brooklyn Kid",
   "wrestler": "Brooklyn Kid",
   "elo": 1111.9611730499153,
   "opponent": "Kotetsu Yamamoto",
@@ -631,13 +721,15 @@
  },
  {
   "date": "1972/04/04",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 688.6319383292271,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/04/04",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1189.2186118192128,
   "opponent": "Hiroaki Hamada",
@@ -645,6 +737,7 @@
  },
  {
   "date": "1972/04/04",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 634.7613161025065,
   "opponent": "Shoji Kai",
@@ -652,6 +745,7 @@
  },
  {
   "date": "1972/04/04",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 973.0323783471414,
   "opponent": "Ivan Kameroff",
@@ -659,6 +753,7 @@
  },
  {
   "date": "1972/04/04",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 1031.2713873452306,
   "opponent": "Jim Durango",
@@ -666,6 +761,7 @@
  },
  {
   "date": "1972/04/04",
+  "wrestling_as": "Jim Durango",
   "wrestler": "Jim Durango",
   "elo": 1229.3228440965463,
   "opponent": "Katsuhisa Shibata",
@@ -673,6 +769,7 @@
  },
  {
   "date": "1972/04/04",
+  "wrestling_as": "Inca Peruano",
   "wrestler": "Inca Peruano",
   "elo": 1028.9671223631765,
   "opponent": "Toyonobori",
@@ -680,6 +777,7 @@
  },
  {
   "date": "1972/04/04",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1062.9242703606074,
   "opponent": "Inca Peruano",
@@ -687,13 +785,15 @@
  },
  {
   "date": "1972/04/06",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 678.0178896268161,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/04/06",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1194.5256361704182,
   "opponent": "Hiroaki Hamada",
@@ -701,6 +801,7 @@
  },
  {
   "date": "1972/04/06",
+  "wrestling_as": "Ivan Kameroff",
   "wrestler": "Ivan Kameroff",
   "elo": 618.0948378006954,
   "opponent": "Osamu Kido",
@@ -708,6 +809,7 @@
  },
  {
   "date": "1972/04/06",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1059.6537711527405,
   "opponent": "Ivan Kameroff",
@@ -715,6 +817,7 @@
  },
  {
   "date": "1972/04/06",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 935.8055064182959,
   "opponent": "Jim Durango",
@@ -722,6 +825,7 @@
  },
  {
   "date": "1972/04/06",
+  "wrestling_as": "Jim Durango",
   "wrestler": "Jim Durango",
   "elo": 1238.6295620787578,
   "opponent": "Shoji Kai",
@@ -729,6 +833,7 @@
  },
  {
   "date": "1972/04/06",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 869.3689926416495,
   "opponent": "Brooklyn Kid",
@@ -736,6 +841,7 @@
  },
  {
   "date": "1972/04/06",
+  "wrestling_as": "Brooklyn Kid",
   "wrestler": "Brooklyn Kid",
   "elo": 1136.7221393849431,
   "opponent": "Kotetsu Yamamoto",
@@ -743,13 +849,15 @@
  },
  {
   "date": "1972/04/28",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 668.288143016341,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/04/28",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1199.3905094756558,
   "opponent": "Hiroaki Hamada",
@@ -757,6 +865,7 @@
  },
  {
   "date": "1972/04/28",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 854.0747425547875,
   "opponent": "John Heidman",
@@ -764,6 +873,7 @@
  },
  {
   "date": "1972/04/28",
+  "wrestling_as": "John Heidman",
   "wrestler": "John Heidman",
   "elo": 1040.8653819317542,
   "opponent": "Shoji Kai",
@@ -771,6 +881,7 @@
  },
  {
   "date": "1972/04/28",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1001.1522809227946,
   "opponent": "George Grant",
@@ -778,6 +889,7 @@
  },
  {
   "date": "1972/04/28",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 1058.501490229946,
   "opponent": "Osamu Kido",
@@ -785,6 +897,7 @@
  },
  {
   "date": "1972/04/28",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 976.7831862448204,
   "opponent": "Bob Boyer",
@@ -792,6 +905,7 @@
  },
  {
   "date": "1972/04/28",
+  "wrestling_as": "Bob Boyer",
   "wrestler": "Bob Boyer",
   "elo": 1054.4882011004102,
   "opponent": "Katsuhisa Shibata",
@@ -799,6 +913,7 @@
  },
  {
   "date": "1972/04/28",
+  "wrestling_as": "Tinker Todd",
   "wrestler": "Tinker Todd",
   "elo": 958.9578021586935,
   "opponent": "Toyonobori",
@@ -806,6 +921,7 @@
  },
  {
   "date": "1972/04/28",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1103.9664682019138,
   "opponent": "Tinker Todd",
@@ -813,13 +929,15 @@
  },
  {
   "date": "1972/05/02",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 659.3072229157033,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/05/02",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1203.8809695259747,
   "opponent": "Hiroaki Hamada",
@@ -827,6 +945,7 @@
  },
  {
   "date": "1972/05/02",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 899.8792678211523,
   "opponent": "George Grant",
@@ -834,6 +953,7 @@
  },
  {
   "date": "1972/05/02",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 1096.95344944178,
   "opponent": "Katsuhisa Shibata",
@@ -841,6 +961,7 @@
  },
  {
   "date": "1972/05/02",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 793.768346242209,
   "opponent": "Rugged Russian A",
@@ -848,6 +969,7 @@
  },
  {
   "date": "1972/05/02",
+  "wrestling_as": "Rugged Russian A",
   "wrestler": "Rugged Russian A",
   "elo": 1030.1531981562891,
   "opponent": "Shoji Kai",
@@ -855,6 +977,7 @@
  },
  {
   "date": "1972/05/02",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 964.5308271157709,
   "opponent": "Toyonobori",
@@ -862,6 +985,7 @@
  },
  {
   "date": "1972/05/02",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1139.435641086143,
   "opponent": "Rugged Russian B",
@@ -869,13 +993,15 @@
  },
  {
   "date": "1972/05/06",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 650.9684913881199,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/05/06",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1205.9656524078705,
   "opponent": "Hiroaki Hamada",
@@ -883,6 +1009,7 @@
  },
  {
   "date": "1972/05/06",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 964.6000742348672,
   "opponent": "George Grant",
@@ -890,6 +1017,7 @@
  },
  {
   "date": "1972/05/06",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 1133.5056561297074,
   "opponent": "Osamu Kido",
@@ -897,6 +1025,7 @@
  },
  {
   "date": "1972/05/06",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 739.3084802560346,
   "opponent": "Rugged Russian B",
@@ -904,6 +1033,7 @@
  },
  {
   "date": "1972/05/06",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 985.6615746092962,
   "opponent": "Shoji Kai; Toyonobori",
@@ -911,6 +1041,7 @@
  },
  {
   "date": "1972/05/06",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1172.764759578792,
   "opponent": "Rugged Russian B",
@@ -918,6 +1049,7 @@
  },
  {
   "date": "1972/05/06",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 794.5980250049812,
   "opponent": "Tinker Todd",
@@ -925,6 +1057,7 @@
  },
  {
   "date": "1972/05/06",
+  "wrestling_as": "Tinker Todd",
   "wrestler": "Tinker Todd",
   "elo": 1033.7287697953618,
   "opponent": "Kotetsu Yamamoto",
@@ -932,13 +1065,15 @@
  },
  {
   "date": "1972/05/09",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 643.0962707003898,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/05/09",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1207.933707579803,
   "opponent": "Hiroaki Hamada",
@@ -946,6 +1081,7 @@
  },
  {
   "date": "1972/05/09",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 720.5669374408067,
   "opponent": "George Grant",
@@ -953,6 +1089,7 @@
  },
  {
   "date": "1972/05/09",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 1142.8764275373214,
   "opponent": "Shoji Kai",
@@ -960,6 +1097,7 @@
  },
  {
   "date": "1972/05/09",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 870.6546467662484,
   "opponent": "Rugged Russian B",
@@ -967,6 +1105,7 @@
  },
  {
   "date": "1972/05/09",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 1005.8264064382217,
   "opponent": "Osamu Kido; Katsuhisa Shibata",
@@ -974,6 +1113,7 @@
  },
  {
   "date": "1972/05/09",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 1047.4404591005386,
   "opponent": "Rugged Russian B",
@@ -981,6 +1121,7 @@
  },
  {
   "date": "1972/05/09",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 757.9948902894829,
   "opponent": "Bob Boyer",
@@ -988,6 +1129,7 @@
  },
  {
   "date": "1972/05/09",
+  "wrestling_as": "Bob Boyer",
   "wrestler": "Bob Boyer",
   "elo": 1072.7897684581592,
   "opponent": "Kotetsu Yamamoto",
@@ -995,13 +1137,15 @@
  },
  {
   "date": "1972/05/10",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 635.6414193433512,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/05/10",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1209.7974204190627,
   "opponent": "Hiroaki Hamada",
@@ -1009,6 +1153,7 @@
  },
  {
   "date": "1972/05/10",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 697.2989819655111,
   "opponent": "Bob Boyer",
@@ -1016,6 +1161,7 @@
  },
  {
   "date": "1972/05/10",
+  "wrestling_as": "Bob Boyer",
   "wrestler": "Bob Boyer",
   "elo": 1084.4237461958069,
   "opponent": "Shoji Kai",
@@ -1023,6 +1169,7 @@
  },
  {
   "date": "1972/05/10",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 814.4232616807433,
   "opponent": "Tinker Todd",
@@ -1030,6 +1177,7 @@
  },
  {
   "date": "1972/05/10",
+  "wrestling_as": "Tinker Todd",
   "wrestler": "Tinker Todd",
   "elo": 1061.8444623381145,
   "opponent": "Osamu Kido",
@@ -1037,6 +1185,7 @@
  },
  {
   "date": "1972/05/10",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 825.1831321471275,
   "opponent": "John Heidman",
@@ -1044,6 +1193,7 @@
  },
  {
   "date": "1972/05/10",
+  "wrestling_as": "John Heidman",
   "wrestler": "John Heidman",
   "elo": 1007.271261002932,
   "opponent": "Kotetsu Yamamoto",
@@ -1051,6 +1201,7 @@
  },
  {
   "date": "1972/05/10",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 1097.1671252113379,
   "opponent": "Toyonobori",
@@ -1058,6 +1209,7 @@
  },
  {
   "date": "1972/05/10",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1218.4740619047757,
   "opponent": "George Grant",
@@ -1065,13 +1217,15 @@
  },
  {
   "date": "1972/05/11",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 628.5621427790967,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/05/11",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1211.5672395601264,
   "opponent": "Hiroaki Hamada",
@@ -1079,6 +1233,7 @@
  },
  {
   "date": "1972/05/11",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 779.1046139619514,
   "opponent": "George Grant",
@@ -1086,6 +1241,7 @@
  },
  {
   "date": "1972/05/11",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 1056.2643092131177,
   "opponent": "Shoji Kai",
@@ -1093,6 +1249,7 @@
  },
  {
   "date": "1972/05/11",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 775.6246794875022,
   "opponent": "Tinker Todd",
@@ -1100,6 +1257,7 @@
  },
  {
   "date": "1972/05/11",
+  "wrestling_as": "Tinker Todd",
   "wrestler": "Tinker Todd",
   "elo": 1081.243753434735,
   "opponent": "Osamu Kido",
@@ -1107,6 +1265,7 @@
  },
  {
   "date": "1972/05/11",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 778.1691883209169,
   "opponent": "Rugged Russian A",
@@ -1114,6 +1273,7 @@
  },
  {
   "date": "1972/05/11",
+  "wrestling_as": "Rugged Russian A",
   "wrestler": "Rugged Russian A",
   "elo": 1053.6601700693943,
   "opponent": "Kotetsu Yamamoto",
@@ -1121,6 +1281,7 @@
  },
  {
   "date": "1972/05/11",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 983.1048034882576,
   "opponent": "Toyonobori",
@@ -1128,6 +1289,7 @@
  },
  {
   "date": "1972/05/11",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1229.8348633797577,
   "opponent": "Rugged Russian B",
@@ -1135,6 +1297,7 @@
  },
  {
   "date": "1972/05/13",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1188.2521246040458,
   "opponent": "Hiroaki Hamada",
@@ -1142,13 +1305,15 @@
  },
  {
   "date": "1972/05/13",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 721.8226026034195,
   "opponent": "Tatsumi Fujinami",
   "result": "draw"
  },
  {
   "date": "1972/05/13",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 742.0423568358377,
   "opponent": "Rugged Russian A",
@@ -1156,6 +1321,7 @@
  },
  {
   "date": "1972/05/13",
+  "wrestling_as": "Rugged Russian A",
   "wrestler": "Rugged Russian A",
   "elo": 1070.4513313952266,
   "opponent": "Osamu Kido",
@@ -1163,6 +1329,7 @@
  },
  {
   "date": "1972/05/13",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 731.8895931419551,
   "opponent": "Rugged Russian B",
@@ -1170,6 +1337,7 @@
  },
  {
   "date": "1972/05/13",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 1030.3198243082538,
   "opponent": "Shoji Kai",
@@ -1177,6 +1345,7 @@
  },
  {
   "date": "1972/05/13",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 991.6852674204814,
   "opponent": "John Heidman",
@@ -1184,6 +1353,7 @@
  },
  {
   "date": "1972/05/13",
+  "wrestling_as": "John Heidman",
   "wrestler": "John Heidman",
   "elo": 1063.0264526829892,
   "opponent": "Katsuhisa Shibata",
@@ -1191,6 +1361,7 @@
  },
  {
   "date": "1972/05/13",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 1029.3534995068492,
   "opponent": "Toyonobori",
@@ -1198,6 +1369,7 @@
  },
  {
   "date": "1972/05/13",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1243.290268232892,
   "opponent": "George Grant",
@@ -1205,6 +1377,7 @@
  },
  {
   "date": "1972/05/14",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1144.6386488511507,
   "opponent": "Hiroaki Hamada",
@@ -1212,13 +1385,15 @@
  },
  {
   "date": "1972/05/14",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 809.0495541092096,
   "opponent": "Tatsumi Fujinami",
   "result": "draw"
  },
  {
   "date": "1972/05/14",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 717.5840292127199,
   "opponent": "Bob Boyer",
@@ -1226,6 +1401,7 @@
  },
  {
   "date": "1972/05/14",
+  "wrestling_as": "Bob Boyer",
   "wrestler": "Bob Boyer",
   "elo": 1096.6529100073658,
   "opponent": "Osamu Kido",
@@ -1233,6 +1409,7 @@
  },
  {
   "date": "1972/05/14",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 949.2969720138138,
   "opponent": "Kotetsu Yamamoto",
@@ -1240,6 +1417,7 @@
  },
  {
   "date": "1972/05/14",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 940.2148929097968,
   "opponent": "Rugged Russian B",
@@ -1247,6 +1425,7 @@
  },
  {
   "date": "1972/05/14",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 913.9753903853453,
   "opponent": "Rugged Russian A",
@@ -1254,6 +1433,7 @@
  },
  {
   "date": "1972/05/14",
+  "wrestling_as": "Rugged Russian A",
   "wrestler": "Rugged Russian A",
   "elo": 1109.3062699127947,
   "opponent": "Katsuhisa Shibata",
@@ -1261,13 +1441,15 @@
  },
  {
   "date": "1972/05/15",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 783.7393931110927,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/05/15",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1157.293729350209,
   "opponent": "Hiroaki Hamada",
@@ -1275,6 +1457,7 @@
  },
  {
   "date": "1972/05/15",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 687.4013878399393,
   "opponent": "Rugged Russian B",
@@ -1282,6 +1465,7 @@
  },
  {
   "date": "1972/05/15",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 993.7851773158296,
   "opponent": "Shoji Kai",
@@ -1289,6 +1473,7 @@
  },
  {
   "date": "1972/05/15",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 695.6359124941937,
   "opponent": "Tinker Todd",
@@ -1296,6 +1481,7 @@
  },
  {
   "date": "1972/05/15",
+  "wrestling_as": "Tinker Todd",
   "wrestler": "Tinker Todd",
   "elo": 1092.2178117939982,
   "opponent": "Osamu Kido",
@@ -1303,6 +1489,7 @@
  },
  {
   "date": "1972/05/15",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 885.3729617508718,
   "opponent": "Rugged Russian A",
@@ -1310,6 +1497,7 @@
  },
  {
   "date": "1972/05/15",
+  "wrestling_as": "Rugged Russian A",
   "wrestler": "Rugged Russian A",
   "elo": 1136.7272354922573,
   "opponent": "Kotetsu Yamamoto",
@@ -1317,6 +1505,7 @@
  },
  {
   "date": "1972/05/15",
+  "wrestling_as": "Bob Boyer",
   "wrestler": "Bob Boyer",
   "elo": 1066.5859745971093,
   "opponent": "Toyonobori",
@@ -1324,6 +1513,7 @@
  },
  {
   "date": "1972/05/15",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1258.3237359380203,
   "opponent": "Bob Boyer",
@@ -1331,13 +1521,15 @@
  },
  {
   "date": "1972/05/18",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 762.8797189937924,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/05/18",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1167.7235664088594,
   "opponent": "Hiroaki Hamada",
@@ -1345,6 +1537,7 @@
  },
  {
   "date": "1972/05/18",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 762.8899624402952,
   "opponent": "George Grant",
@@ -1352,6 +1545,7 @@
  },
  {
   "date": "1972/05/18",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 991.6092122066711,
   "opponent": "Shoji Kai",
@@ -1359,6 +1553,7 @@
  },
  {
   "date": "1972/05/18",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 681.0038261762089,
   "opponent": "Rugged Russian A",
@@ -1366,6 +1561,7 @@
  },
  {
   "date": "1972/05/18",
+  "wrestling_as": "Rugged Russian A",
   "wrestler": "Rugged Russian A",
   "elo": 1144.0432786512497,
   "opponent": "Osamu Kido",
@@ -1373,6 +1569,7 @@
  },
  {
   "date": "1972/05/18",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 861.2051073376699,
   "opponent": "Tinker Todd",
@@ -1380,6 +1577,7 @@
  },
  {
   "date": "1972/05/18",
+  "wrestling_as": "Tinker Todd",
   "wrestler": "Tinker Todd",
   "elo": 1118.602953317836,
   "opponent": "Katsuhisa Shibata",
@@ -1387,6 +1585,7 @@
  },
  {
   "date": "1972/05/18",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 957.975449078055,
   "opponent": "Toyonobori",
@@ -1394,6 +1593,7 @@
  },
  {
   "date": "1972/05/18",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1267.276167997464,
   "opponent": "Rugged Russian B",
@@ -1401,13 +1601,15 @@
  },
  {
   "date": "1972/05/19",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 745.1535567809254,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/05/19",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1176.5866475152927,
   "opponent": "Hiroaki Hamada",
@@ -1415,6 +1617,7 @@
  },
  {
   "date": "1972/05/19",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 713.7990011835813,
   "opponent": "Rugged Russian B",
@@ -1422,6 +1625,7 @@
  },
  {
   "date": "1972/05/19",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 1007.066410334769,
   "opponent": "Shoji Kai",
@@ -1429,6 +1633,7 @@
  },
  {
   "date": "1972/05/19",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 820.2731196722049,
   "opponent": "Osamu Kido",
@@ -1436,6 +1641,7 @@
  },
  {
   "date": "1972/05/19",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 852.3399187106752,
   "opponent": "George Grant",
@@ -1443,6 +1649,7 @@
  },
  {
   "date": "1972/05/19",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 824.1709844389471,
   "opponent": "Tinker Todd",
@@ -1450,6 +1657,7 @@
  },
  {
   "date": "1972/05/19",
+  "wrestling_as": "Tinker Todd",
   "wrestler": "Tinker Todd",
   "elo": 1137.1200147671973,
   "opponent": "Katsuhisa Shibata",
@@ -1457,6 +1665,7 @@
  },
  {
   "date": "1972/05/19",
+  "wrestling_as": "John Heidman",
   "wrestler": "John Heidman",
   "elo": 1039.4448367595023,
   "opponent": "Toyonobori",
@@ -1464,6 +1673,7 @@
  },
  {
   "date": "1972/05/19",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1279.0669759592074,
   "opponent": "John Heidman",
@@ -1471,13 +1681,15 @@
  },
  {
   "date": "1972/05/21",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 729.7493587425247,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/05/21",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1184.2887465344932,
   "opponent": "Hiroaki Hamada",
@@ -1485,6 +1697,7 @@
  },
  {
   "date": "1972/05/21",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 936.1634183171418,
   "opponent": "Osamu Kido",
@@ -1492,6 +1705,7 @@
  },
  {
   "date": "1972/05/21",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 994.1459027459294,
   "opponent": "Rugged Russian B",
@@ -1499,6 +1713,7 @@
  },
  {
   "date": "1972/05/21",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 697.7176262466799,
   "opponent": "Tinker Todd",
@@ -1506,6 +1721,7 @@
  },
  {
   "date": "1972/05/21",
+  "wrestling_as": "Tinker Todd",
   "wrestler": "Tinker Todd",
   "elo": 1145.160702235648,
   "opponent": "Shoji Kai",
@@ -1513,6 +1729,7 @@
  },
  {
   "date": "1972/05/21",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 848.5593700301608,
   "opponent": "Rugged Russian A",
@@ -1520,6 +1737,7 @@
  },
  {
   "date": "1972/05/21",
+  "wrestling_as": "Rugged Russian A",
   "wrestler": "Rugged Russian A",
   "elo": 1162.4500745116052,
   "opponent": "Kotetsu Yamamoto",
@@ -1527,6 +1745,7 @@
  },
  {
   "date": "1972/05/21",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 806.9643108663942,
   "opponent": "Toyonobori",
@@ -1534,6 +1753,7 @@
  },
  {
   "date": "1972/05/21",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1282.3941781606602,
   "opponent": "George Grant",
@@ -1541,13 +1761,15 @@
  },
  {
   "date": "1972/05/22",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 620.5559179583778,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/05/22",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 806.9110670308268,
   "opponent": "Hiroaki Hamada",
@@ -1555,6 +1777,7 @@
  },
  {
   "date": "1972/05/22",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1094.5175730551396,
   "opponent": "George Grant",
@@ -1562,6 +1785,7 @@
  },
  {
   "date": "1972/05/22",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 986.5066578251015,
   "opponent": "Tatsumi Fujinami",
@@ -1569,6 +1793,7 @@
  },
  {
   "date": "1972/05/22",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 935.0663677064888,
   "opponent": "Tinker Todd",
@@ -1576,6 +1801,7 @@
  },
  {
   "date": "1972/05/22",
+  "wrestling_as": "Tinker Todd",
   "wrestler": "Tinker Todd",
   "elo": 1174.7004697553682,
   "opponent": "Osamu Kido",
@@ -1583,6 +1809,7 @@
  },
  {
   "date": "1972/05/22",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 779.2564848883147,
   "opponent": "John Heidman",
@@ -1590,6 +1817,7 @@
  },
  {
   "date": "1972/05/22",
+  "wrestling_as": "John Heidman",
   "wrestler": "John Heidman",
   "elo": 1061.9020865348184,
   "opponent": "Katsuhisa Shibata",
@@ -1597,6 +1825,7 @@
  },
  {
   "date": "1972/05/22",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 912.176811529579,
   "opponent": "Toyonobori",
@@ -1604,6 +1833,7 @@
  },
  {
   "date": "1972/05/22",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1288.390829857551,
   "opponent": "Rugged Russian B",
@@ -1611,6 +1841,7 @@
  },
  {
   "date": "1972/05/24",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1050.6497225677635,
   "opponent": "Hiroaki Hamada",
@@ -1618,13 +1849,15 @@
  },
  {
   "date": "1972/05/24",
-  "wrestler": "Hiroaki Hamada",
+  "wrestling_as": "Hiroaki Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
   "elo": 708.2916189331299,
   "opponent": "Tatsumi Fujinami",
   "result": "draw"
  },
  {
   "date": "1972/05/24",
+  "wrestling_as": "Rugged Russian B",
   "wrestler": "Rugged Russian B",
   "elo": 782.7731528563311,
   "opponent": "Shoji Kai",
@@ -1632,6 +1865,7 @@
  },
  {
   "date": "1972/05/24",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 936.3147257040747,
   "opponent": "Rugged Russian B",
@@ -1639,6 +1873,7 @@
  },
  {
   "date": "1972/05/24",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 894.8467305745897,
   "opponent": "Tinker Todd",
@@ -1646,6 +1881,7 @@
  },
  {
   "date": "1972/05/24",
+  "wrestling_as": "Tinker Todd",
   "wrestler": "Tinker Todd",
   "elo": 1194.8102883213178,
   "opponent": "Osamu Kido",
@@ -1653,6 +1889,7 @@
  },
  {
   "date": "1972/05/24",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 820.3567322172048,
   "opponent": "Rugged Russian A",
@@ -1660,6 +1897,7 @@
  },
  {
   "date": "1972/05/24",
+  "wrestling_as": "Rugged Russian A",
   "wrestler": "Rugged Russian A",
   "elo": 1176.5513934180833,
   "opponent": "Kotetsu Yamamoto",
@@ -1667,6 +1905,7 @@
  },
  {
   "date": "1972/05/24",
+  "wrestling_as": "George Grant",
   "wrestler": "George Grant",
   "elo": 956.587757607284,
   "opponent": "Toyonobori",
@@ -1674,6 +1913,7 @@
  },
  {
   "date": "1972/05/24",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1295.8705549120052,
   "opponent": "George Grant",
@@ -1681,20 +1921,23 @@
  },
  {
   "date": "1972/06/13",
-  "wrestler": "Little Hamada",
-  "elo": 957.237879691121,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 683.8304136170821,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/06/13",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1093.4118428766426,
+  "elo": 1062.8803252257874,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/06/13",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 854.4422507345863,
   "opponent": "Jesse James",
@@ -1702,6 +1945,7 @@
  },
  {
   "date": "1972/06/13",
+  "wrestling_as": "Jesse James",
   "wrestler": "Jesse James",
   "elo": 1040.9362374847442,
   "opponent": "Shoji Kai",
@@ -1709,6 +1953,7 @@
  },
  {
   "date": "1972/06/13",
+  "wrestling_as": "Jim Grabmire",
   "wrestler": "Jim Grabmire",
   "elo": 984.5948018081995,
   "opponent": "Toyonobori",
@@ -1716,6 +1961,7 @@
  },
  {
   "date": "1972/06/13",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
   "elo": 1303.5731540079055,
   "opponent": "Jim Grabmire",
@@ -1723,34 +1969,39 @@
  },
  {
   "date": "1972/06/15",
-  "wrestler": "Little Hamada",
-  "elo": 828.4850594915022,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 629.3361742768458,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/06/15",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 983.1950709342051,
+  "elo": 908.9364900748226,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/06/15",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1035.916901641559,
+  "elo": 1009.726509768773,
   "opponent": "Jesse James",
   "result": "lost"
  },
  {
   "date": "1972/06/15",
+  "wrestling_as": "Jesse James",
   "wrestler": "Jesse James",
-  "elo": 1098.431178719828,
+  "elo": 1094.0900529417586,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/06/15",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 735.4290576762071,
   "opponent": "Eddie Sullivan",
@@ -1758,6 +2009,7 @@
  },
  {
   "date": "1972/06/15",
+  "wrestling_as": "Eddie Sullivan",
   "wrestler": "Eddie Sullivan",
   "elo": 1021.9137136060539,
   "opponent": "Katsuhisa Shibata",
@@ -1765,6 +2017,7 @@
  },
  {
   "date": "1972/06/15",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 767.8991093186411,
   "opponent": "Rip Tyler",
@@ -1772,6 +2025,7 @@
  },
  {
   "date": "1972/06/15",
+  "wrestling_as": "Rip Tyler",
   "wrestler": "Rip Tyler",
   "elo": 1026.228811449282,
   "opponent": "Kotetsu Yamamoto",
@@ -1779,20 +2033,23 @@
  },
  {
   "date": "1972/06/24",
-  "wrestler": "Little Hamada",
-  "elo": 781.9788284598856,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 609.2003741622524,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/06/24",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1059.1700171573673,
+  "elo": 1019.7944098260697,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/06/24",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 723.2690256802169,
   "opponent": "Jim Grabmire",
@@ -1800,6 +2057,7 @@
  },
  {
   "date": "1972/06/24",
+  "wrestling_as": "Jim Grabmire",
   "wrestler": "Jim Grabmire",
   "elo": 1029.2248854466236,
   "opponent": "Kotetsu Yamamoto",
@@ -1807,6 +2065,7 @@
  },
  {
   "date": "1972/06/24",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 703.8501505064723,
   "opponent": "Rip Tyler",
@@ -1814,6 +2073,7 @@
  },
  {
   "date": "1972/06/24",
+  "wrestling_as": "Rip Tyler",
   "wrestler": "Rip Tyler",
   "elo": 1042.0182650341494,
   "opponent": "Katsuhisa Shibata",
@@ -1821,34 +2081,39 @@
  },
  {
   "date": "1972/06/25",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1026.0291934230086,
+  "elo": 978.3937339400044,
   "opponent": "Little Hamada",
   "result": "draw"
  },
  {
   "date": "1972/06/25",
-  "wrestler": "Little Hamada",
-  "elo": 848.260475928603,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 692.001725934383,
   "opponent": "Tatsumi Fujinami",
   "result": "draw"
  },
  {
   "date": "1972/06/25",
+  "wrestling_as": "Jesse James",
   "wrestler": "Jesse James",
-  "elo": 1022.0818762252075,
+  "elo": 1018.1949570479932,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/06/25",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1047.5453355638308,
+  "elo": 1046.6369223621205,
   "opponent": "Jesse James",
   "result": "won"
  },
  {
   "date": "1972/06/25",
+  "wrestling_as": "Jim Grabmire",
   "wrestler": "Jim Grabmire",
   "elo": 942.5442963434427,
   "opponent": "Katsuhisa Shibata",
@@ -1856,6 +2121,7 @@
  },
  {
   "date": "1972/06/25",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
   "elo": 877.2113287128341,
   "opponent": "Jim Grabmire",
@@ -1863,279 +2129,319 @@
  },
  {
   "date": "1972/06/27",
-  "wrestler": "Little Hamada",
-  "elo": 785.2561503379967,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 647.4193384005112,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/06/27",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1046.1993965248114,
+  "elo": 953.5188776086944,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/06/27",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 982.878314644384,
+  "elo": 982.0894748143145,
   "opponent": "Jim Grabmire",
   "result": "lost"
  },
  {
   "date": "1972/06/27",
+  "wrestling_as": "Jim Grabmire",
   "wrestler": "Jim Grabmire",
-  "elo": 1071.8783381823364,
+  "elo": 1071.6391914390547,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/06/27",
+  "wrestling_as": "Jesse James",
   "wrestler": "Jesse James",
-  "elo": 1005.566822921342,
+  "elo": 1001.9860928078829,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/06/27",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1311.8306806598382,
+  "elo": 1311.6775861279607,
   "opponent": "Jesse James",
   "result": "won"
  },
  {
   "date": "1972/06/28",
-  "wrestler": "Little Hamada",
-  "elo": 745.2467635404394,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 621.5160667004409,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/06/28",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1046.0338868217873,
+  "elo": 1004.2970056400746,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/06/28",
+  "wrestling_as": "Jim Grabmire",
   "wrestler": "Jim Grabmire",
-  "elo": 983.7278736211342,
+  "elo": 983.5031140081961,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/06/28",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 899.5699548026212,
+  "elo": 899.5411805419341,
   "opponent": "Jim Grabmire",
   "result": "won"
  },
  {
   "date": "1972/06/28",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 889.3993253825263,
+  "elo": 887.809929736592,
   "opponent": "Jesse James",
   "result": "lost"
  },
  {
   "date": "1972/06/28",
+  "wrestling_as": "Jesse James",
   "wrestler": "Jesse James",
-  "elo": 1052.306317552271,
+  "elo": 1049.1258653467441,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/06/29",
-  "wrestler": "Little Hamada",
-  "elo": 715.1911709717176,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 595.7459896378923,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/06/29",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1061.2271928091723,
+  "elo": 979.288954671243,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/06/29",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 806.9435219816669,
+  "elo": 806.8845383355027,
   "opponent": "Jim Grabmire",
   "result": "lost"
  },
  {
   "date": "1972/06/29",
+  "wrestling_as": "Jim Grabmire",
   "wrestler": "Jim Grabmire",
-  "elo": 1053.9956803523014,
+  "elo": 1053.8299043855275,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/06/29",
+  "wrestling_as": "Jesse James",
   "wrestler": "Jesse James",
-  "elo": 1033.9732432233143,
+  "elo": 1031.0522686455167,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/06/29",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1320.9972178243165,
+  "elo": 1320.7143844785744,
   "opponent": "Jesse James",
   "result": "won"
  },
  {
   "date": "1972/07/02",
-  "wrestler": "Little Hamada",
-  "elo": 689.2708025955006,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 578.3615666713787,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/07/02",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1058.9940710098958,
+  "elo": 1012.9892171233315,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/07/02",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1007.3130592103944,
+  "elo": 894.0783684587973,
   "opponent": "Jesse James",
   "result": "lost"
  },
  {
   "date": "1972/07/02",
+  "wrestling_as": "Jesse James",
   "wrestler": "Jesse James",
-  "elo": 1087.8873768220922,
+  "elo": 1073.6575617517396,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/07/02",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 768.0784631883604,
+  "elo": 768.0002266321004,
   "opponent": "Jim Grabmire",
   "result": "lost"
  },
  {
   "date": "1972/07/02",
+  "wrestling_as": "Jim Grabmire",
   "wrestler": "Jim Grabmire",
-  "elo": 1073.4282097489547,
+  "elo": 1073.2720602372285,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/07/03",
-  "wrestler": "Little Hamada",
-  "elo": 661.6421648405718,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 550.4126262939134,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/07/03",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1021.1273780878588,
+  "elo": 922.0273088362626,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/07/03",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1013.1425928444801,
+  "elo": 971.6324243098256,
   "opponent": "Jesse James",
   "result": "lost"
  },
  {
   "date": "1972/07/03",
+  "wrestling_as": "Jesse James",
   "wrestler": "Jesse James",
-  "elo": 1133.738854987508,
+  "elo": 1115.0143545652454,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/07/03",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 837.9127943661958,
+  "elo": 836.6381990785532,
   "opponent": "Jim Grabmire",
   "result": "lost"
  },
  {
   "date": "1972/07/03",
+  "wrestling_as": "Jim Grabmire",
   "wrestler": "Jim Grabmire",
-  "elo": 1099.17147525712,
+  "elo": 1098.857925566248,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 964.29149354505,
+  "elo": 857.4511539992035,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1069.9784773872889,
+  "elo": 1036.2085791468849,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Jim Grabmire",
   "wrestler": "Jim Grabmire",
-  "elo": 1017.3555478124329,
+  "elo": 1016.959837473479,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1001.54464925557,
+  "elo": 1000.4343752640914,
   "opponent": "Jim Grabmire",
   "result": "won"
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Jesse James",
   "wrestler": "Jesse James",
-  "elo": 1108.349359567432,
+  "elo": 1091.582855681342,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1333.6919655343545,
+  "elo": 1332.430133920526,
   "opponent": "Jesse James",
   "result": "won"
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 763.7976751148725,
+  "elo": 763.7210361218873,
   "opponent": "Rip Tyler (winner), Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 892.0559967030629,
+  "elo": 892.0280446075944,
   "opponent": "Rip Tyler (winner), Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Rip Tyler",
   "wrestler": "Rip Tyler",
-  "elo": 1053.8130112071956,
+  "elo": 1053.810591478702,
   "opponent": "Katsuhisa Shibata, Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Eddie Sullivan",
   "wrestler": "Eddie Sullivan",
   "elo": 996.2633926536726,
   "opponent": "Antonio Inoki",
@@ -2143,6 +2449,7 @@
  },
  {
   "date": "1972/07/04",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1219.6133918676412,
   "opponent": "Eddie Sullivan",
@@ -2150,34 +2457,39 @@
  },
  {
   "date": "1972/07/24",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 893.8058728025372,
+  "elo": 804.7959554235531,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/07/24",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1105.2212877585453,
+  "elo": 1062.53617843471,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/07/24",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 987.2237130709171,
+  "elo": 987.1425477975841,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/07/24",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1340.0801089988959,
+  "elo": 1338.858860021734,
   "opponent": "Dick Dunn",
   "result": "won"
  },
  {
   "date": "1972/07/24",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
   "elo": 950.0,
   "opponent": "Koa Tiki",
@@ -2185,6 +2497,7 @@
  },
  {
   "date": "1972/07/24",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
   "elo": 1050.0,
   "opponent": "Harold Sakata",
@@ -2192,62 +2505,71 @@
  },
  {
   "date": "1972/07/27",
-  "wrestler": "Little Hamada",
-  "elo": 647.2031099146908,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 540.4465925701825,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/07/27",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1112.4408152214858,
+  "elo": 1067.5191952965756,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/07/27",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 958.473072060988,
+  "elo": 957.5194414490895,
   "opponent": "Koa Tiki",
   "result": "lost"
  },
  {
   "date": "1972/07/27",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 1093.071577194582,
+  "elo": 1092.9149338150019,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/07/27",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 945.6474041587778,
+  "elo": 945.5816240709458,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1972/07/27",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1230.007469095676,
+  "elo": 1230.0036227993007,
   "opponent": "Dick Dunn",
   "result": "won"
  },
  {
   "date": "1972/07/28",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 812.2065907463317,
+  "elo": 746.1250432035124,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/07/28",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1040.0723541171935,
+  "elo": 1016.1903536691302,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/07/28",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
   "elo": 864.2926234816763,
   "opponent": "Ernie Lassiter",
@@ -2255,6 +2577,7 @@
  },
  {
   "date": "1972/07/28",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
   "elo": 1042.8536882591618,
   "opponent": "Harold Sakata",
@@ -2262,4341 +2585,4961 @@
  },
  {
   "date": "1972/07/28",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 1006.1339749192607,
+  "elo": 1005.982562409794,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/07/28",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 937.6728796655152,
+  "elo": 937.5857789323029,
   "opponent": "Koa Tiki",
   "result": "won"
  },
  {
   "date": "1972/07/28",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 822.1622666923977,
+  "elo": 822.1416304672215,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/07/28",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1034.9468650053327,
+  "elo": 1034.9432070701864,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/07/31",
-  "wrestler": "Little Hamada",
-  "elo": 591.4195645477618,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 493.57913734506667,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/07/31",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 867.9901361132607,
+  "elo": 792.9924984286282,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/07/31",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 946.4071954158421,
+  "elo": 946.2646881805283,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/07/31",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1057.1264386723524,
+  "elo": 1057.0215273908343,
   "opponent": "Koa Tiki",
   "result": "won"
  },
  {
   "date": "1972/07/31",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 976.8084828900537,
+  "elo": 956.1665621319158,
   "opponent": "Dick Dunn",
   "result": "lost"
  },
  {
   "date": "1972/07/31",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1072.1751466130574,
+  "elo": 1065.6292071453747,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/08/01",
-  "wrestler": "Little Hamada",
-  "elo": 581.9275153841962,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 486.49136733971267,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/08/01",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1117.1868398032684,
+  "elo": 1071.0630802992525,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/01",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 812.0968668595858,
+  "elo": 811.9853113499045,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/08/01",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 956.472595248654,
+  "elo": 956.4210072978453,
   "opponent": "Koa Tiki",
   "result": "won"
  },
  {
   "date": "1972/08/01",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1020.2237929728844,
+  "elo": 1020.1319163700608,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/08/01",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1347.44164501512,
+  "elo": 1346.2645053717968,
   "opponent": "Bobby Cash",
   "result": "won"
  },
  {
   "date": "1972/08/01",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1005.0735794407417,
+  "elo": 1004.9837408421924,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/01",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1094.9065474907725,
+  "elo": 1094.8914748078037,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/08/05",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 829.5101730831133,
+  "elo": 759.4158200247589,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/08/05",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1136.426821318342,
+  "elo": 1087.8514195011871,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/08/05",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 964.6119689463422,
+  "elo": 963.6237539218696,
   "opponent": "Dick Dunn",
   "result": "lost"
  },
  {
   "date": "1972/08/05",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1112.6367571074568,
+  "elo": 1106.9891940656976,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/08/05",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 803.3231109165537,
+  "elo": 803.1599539522231,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/08/05",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1349.6350840008781,
+  "elo": 1348.4708447212172,
   "opponent": "Koa Tiki",
   "result": "won"
  },
  {
   "date": "1972/08/06",
-  "wrestler": "Little Hamada",
-  "elo": 563.252723687715,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 473.93991197768037,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/08/06",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 995.4832745865348,
+  "elo": 968.7180174939482,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/06",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 721.9871713820307,
+  "elo": 671.9402833670658,
   "opponent": "Koa Tiki",
   "result": "lost"
  },
  {
   "date": "1972/08/06",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 910.8461126176363,
+  "elo": 890.6354906099161,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/08/06",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 825.6599136652198,
+  "elo": 824.6364491697292,
   "opponent": "Dick Dunn",
   "result": "lost"
  },
  {
   "date": "1972/08/06",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1131.953112015685,
+  "elo": 1126.817281221671,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/08/06",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 874.6184704269978,
+  "elo": 874.5556680589992,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/06",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1061.1508553837125,
+  "elo": 1061.064585989484,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/08/07",
-  "wrestler": "Little Hamada",
-  "elo": 506.0060631493537,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 425.46782546280775,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/08/07",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 779.2338319203922,
+  "elo": 720.4123698819384,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/07",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 834.7359360926537,
+  "elo": 812.7385689106218,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/08/07",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1071.5934511115174,
+  "elo": 1046.6149391932427,
   "opponent": "Koa Tiki",
   "result": "won"
  },
  {
   "date": "1972/08/07",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 784.6684755231748,
+  "elo": 783.820551633484,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/07",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1081.646574454735,
+  "elo": 1081.4725347576066,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/08/07",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 909.3680978776591,
+  "elo": 907.4201482511663,
   "opponent": "Dick Dunn",
   "result": "lost"
  },
  {
   "date": "1972/08/07",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1159.5750475500267,
+  "elo": 1154.9190840570227,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/08/08",
-  "wrestler": "Little Hamada",
-  "elo": 500.83474802055713,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 421.146816031344,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/08/08",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1139.0124788827404,
+  "elo": 1090.011924216919,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/08",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 855.2533900421668,
+  "elo": 853.7075681845047,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/08",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1108.7039283724812,
+  "elo": 1108.3288247909375,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/08/08",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1024.943449121282,
+  "elo": 1003.518120750758,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/08",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1141.5565494810078,
+  "elo": 1137.9882932502883,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/08/08",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 824.9201175366976,
+  "elo": 803.9835062684288,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/08/08",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1352.089038639867,
+  "elo": 1350.6596103817656,
   "opponent": "Koa Tiki",
   "result": "won"
  },
  {
   "date": "1972/08/10",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 756.8453563088008,
+  "elo": 699.1234952789067,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/08/10",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1150.206716688536,
+  "elo": 1100.6563615184348,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/08/10",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1075.8169018803633,
+  "elo": 1071.5238478845513,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/08/10",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1042.1347617663248,
+  "elo": 1041.346140403942,
   "opponent": "Dick Dunn",
   "result": "won"
  },
  {
   "date": "1972/08/10",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 817.5286703034195,
+  "elo": 816.1886954112964,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/10",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1127.5662882418549,
+  "elo": 1127.0882611775417,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/08/10",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1313.557092453185,
+  "elo": 1312.0192160749546,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/10",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1218.620441854372,
+  "elo": 1215.2690818639103,
   "opponent": "Toyonobori",
   "result": "won"
  },
  {
   "date": "1972/08/11",
-  "wrestler": "Little Hamada",
-  "elo": 463.5590421925525,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 387.5550321900754,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/08/11",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 794.1210621368053,
+  "elo": 732.7152791201753,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/11",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 696.2022731233035,
+  "elo": 689.6174101857711,
   "opponent": "Koa Tiki",
   "result": "lost"
  },
  {
   "date": "1972/08/11",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 913.386319936569,
+  "elo": 898.1866477161417,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/08/11",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 989.2970452756691,
+  "elo": 970.5875499204332,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/11",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1163.2126920874675,
+  "elo": 1160.0188320078666,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/08/11",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1015.5527305032768,
+  "elo": 1014.4752104399919,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/11",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1231.911457485896,
+  "elo": 1228.7045468458853,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/08/14",
-  "wrestler": "Little Hamada",
-  "elo": 459.7907037998086,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 384.310342717633,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/08/14",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1152.090885884908,
+  "elo": 1102.278706254656,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/14",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 841.9729224360501,
+  "elo": 830.4608896926918,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/08/14",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1051.2594292535362,
+  "elo": 1048.3380894517168,
   "opponent": "Koa Tiki",
   "result": "won"
  },
  {
   "date": "1972/08/14",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 913.6971596852103,
+  "elo": 898.8487026628544,
   "opponent": "Dick Dunn",
   "result": "lost"
  },
  {
   "date": "1972/08/14",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1113.6168446755928,
+  "elo": 1107.3932715133406,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/08/17",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 727.2403650666697,
+  "elo": 677.1929964757353,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/08/17",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 980.5778567553459,
+  "elo": 954.3709853072944,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/08/17",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1066.457323818902,
+  "elo": 1019.5759018059183,
   "opponent": "Koa Tiki",
   "result": "lost"
  },
  {
   "date": "1972/08/17",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 1013.2400465680619,
+  "elo": 995.8664985901673,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/08/17",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 683.4691505019125,
+  "elo": 677.1150434093813,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/17",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1169.579253398163,
+  "elo": 1166.2700153960616,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/08/17",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 800.6697839607602,
+  "elo": 799.1631571975234,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/17",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1236.126179071561,
+  "elo": 1232.9609313993285,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/08/19",
-  "wrestler": "Little Hamada",
-  "elo": 424.4709709720528,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 353.0489801462488,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/08/19",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 762.5600978944256,
+  "elo": 708.4543590471195,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/19",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 772.3352941712571,
+  "elo": 770.161853937405,
   "opponent": "Dick Dunn",
   "result": "lost"
  },
  {
   "date": "1972/08/19",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1127.7840895703443,
+  "elo": 1121.8939231434,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/08/19",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1278.752003217689,
+  "elo": 1277.1064896067373,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/19",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1239.189431869155,
+  "elo": 1236.095468332496,
   "opponent": "Toyonobori",
   "result": "won"
  },
  {
   "date": "1972/08/20",
-  "wrestler": "Little Hamada",
-  "elo": 419.6246642991958,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 348.8276618922322,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/08/20",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1068.8804771553305,
+  "elo": 1021.6865609329266,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/20",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 669.0867369085468,
+  "elo": 662.768237403089,
   "opponent": "Dick Dunn",
   "result": "lost"
  },
  {
   "date": "1972/08/20",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1134.9752963670273,
+  "elo": 1129.067326146546,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/08/20",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1025.9431037526688,
+  "elo": 1023.0029712562357,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/20",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1251.8475946195888,
+  "elo": 1248.7630274302367,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/08/20",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 943.2213759135639,
+  "elo": 920.8777553609781,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/20",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1245.4652992820065,
+  "elo": 1241.3342388859076,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/08/23",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 686.950041610334,
+  "elo": 630.8602314411528,
   "opponent": "Little Hamada",
   "result": "draw"
  },
  {
   "date": "1972/08/23",
-  "wrestler": "Little Hamada",
-  "elo": 495.23472058328736,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 426.4217894981989,
   "opponent": "Tatsumi Fujinami",
   "result": "draw"
  },
  {
   "date": "1972/08/23",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 953.2977861857665,
+  "elo": 874.612027404884,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/08/23",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1063.1058966781545,
+  "elo": 1042.1322265462616,
   "opponent": "Koa Tiki",
   "result": "won"
  },
  {
   "date": "1972/08/23",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1069.7798872660724,
+  "elo": 1064.2605751333622,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/08/23",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1091.1385128536235,
+  "elo": 1087.8097222694196,
   "opponent": "Dick Dunn",
   "result": "won"
  },
  {
   "date": "1972/08/23",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 662.338034552034,
+  "elo": 656.1398815697676,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/23",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1253.534770208717,
+  "elo": 1250.420116388567,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/08/23",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 760.0157660314037,
+  "elo": 757.7114035194634,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/23",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1248.5451813169698,
+  "elo": 1244.4468514903929,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/08/24",
-  "wrestler": "Little Hamada",
-  "elo": 488.1353593562894,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 420.12702579027524,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/08/24",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1072.4301577688295,
+  "elo": 1024.8339427868884,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/24",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1038.0605773008467,
+  "elo": 1018.9669369378948,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/24",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1266.0574298973709,
+  "elo": 1262.0027611927505,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/08/24",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1062.358772027963,
+  "elo": 1058.9390980316264,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/24",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1262.9350517298,
+  "elo": 1258.8821636092894,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/08/24",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 926.6695274331063,
+  "elo": 856.6661625694283,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/08/24",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1285.409067905854,
+  "elo": 1281.5929558156013,
   "opponent": "Koa Tiki",
   "result": "won"
  },
  {
   "date": "1972/08/26",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 667.3386334712104,
+  "elo": 612.0968278841736,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/08/26",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1082.2358618383914,
+  "elo": 1034.215644565378,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/08/26",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 749.7129324682048,
+  "elo": 747.3096644467912,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/26",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1268.6331382881706,
+  "elo": 1264.6031959609186,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/08/26",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 656.2277391592315,
+  "elo": 650.1023151792884,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/26",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1264.4626255780006,
+  "elo": 1260.391555206909,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/08/26",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1013.4265939724297,
+  "elo": 1009.7048602670873,
   "opponent": "Dick Dunn",
   "result": "lost"
  },
  {
   "date": "1972/08/26",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1118.7120653216057,
+  "elo": 1113.4948128979013,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/08/27",
-  "wrestler": "Little Hamada",
-  "elo": 480.0393507203773,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 413.9565293574321,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/08/27",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1042.1085816188029,
+  "elo": 1022.0521851543164,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/27",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 661.252076988414,
+  "elo": 607.5287902555951,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/27",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1270.1547774088697,
+  "elo": 1265.7452053680631,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/08/27",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 621.4061350599317,
+  "elo": 603.4175075323488,
   "opponent": "Koa Tiki",
   "result": "lost"
  },
  {
   "date": "1972/08/27",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 961.4911315324061,
+  "elo": 903.3509702163678,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/08/27",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 994.3505957981591,
+  "elo": 990.5977997290514,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/27",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1274.0006246651358,
+  "elo": 1269.945085475927,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/08/27",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1029.3894216462304,
+  "elo": 1024.3276469955215,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/08/27",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 928.3582198189553,
+  "elo": 925.6439962515506,
   "opponent": "Dick Dunn",
   "result": "won"
  },
  {
   "date": "1972/08/28",
-  "wrestler": "Little Hamada",
-  "elo": 427.9305999481215,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 364.54219232140883,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/08/28",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 713.3608277606698,
+  "elo": 656.9431272916183,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/28",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 990.2789646348707,
+  "elo": 972.3796457545653,
   "opponent": "Dick Dunn",
   "result": "lost"
  },
  {
   "date": "1972/08/28",
+  "wrestling_as": "Dick Dunn",
   "wrestler": "Dick Dunn",
-  "elo": 1081.2190386301625,
+  "elo": 1074.0001863952725,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/08/28",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 934.6580747426395,
+  "elo": 882.9901150367916,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/08/28",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1292.1173321032957,
+  "elo": 1286.6831696104953,
   "opponent": "Koa Tiki",
   "result": "won"
  },
  {
   "date": "1972/08/29",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 691.992484965964,
+  "elo": 636.4799848957733,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/08/29",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1092.9200332357443,
+  "elo": 1044.4472157633004,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/08/29",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 957.6013783041594,
+  "elo": 941.8226863757719,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/29",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1282.1700212478136,
+  "elo": 1277.5843253206253,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/08/29",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 593.1143011076866,
+  "elo": 570.0817125621065,
   "opponent": "Koa Tiki",
   "result": "lost"
  },
  {
   "date": "1972/08/29",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 962.9499086948846,
+  "elo": 916.3259100070339,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/08/29",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 903.8275293182585,
+  "elo": 900.9024941779608,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/29",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1276.2874500340438,
+  "elo": 1271.9305808864606,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/08/30",
-  "wrestler": "Little Hamada",
-  "elo": 423.67255406999953,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 360.6276337849538,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/08/30",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1095.0490561748054,
+  "elo": 1046.4044950315279,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/08/30",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 571.8512614607992,
+  "elo": 546.0967386355566,
   "opponent": "Koa Tiki",
   "result": "lost"
  },
  {
   "date": "1972/08/30",
+  "wrestling_as": "Koa Tiki",
   "wrestler": "Koa Tiki",
-  "elo": 984.2129483417721,
+  "elo": 940.3108839335839,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/08/30",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 930.060871595894,
+  "elo": 915.8067358229455,
   "opponent": "Bobby Cash",
   "result": "lost"
  },
  {
   "date": "1972/08/30",
+  "wrestling_as": "Bobby Cash",
   "wrestler": "Bobby Cash",
-  "elo": 1283.1725767111102,
+  "elo": 1278.4345685246672,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/08/30",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 962.312776906915,
+  "elo": 958.4307696103078,
   "opponent": "Ernie Lassiter",
   "result": "lost"
  },
  {
   "date": "1972/08/30",
+  "wrestling_as": "Ernie Lassiter",
   "wrestler": "Ernie Lassiter",
-  "elo": 1290.1794759706245,
+  "elo": 1285.6260828503111,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/09/16",
-  "wrestler": "Little Hamada",
-  "elo": 419.5650635057999,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 356.84071659657735,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/09/16",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1097.1028014569051,
+  "elo": 1048.297953625716,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/09/16",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 949.9234024791613,
+  "elo": 939.5760503232334,
   "opponent": "John Tolley",
   "result": "draw"
  },
  {
   "date": "1972/09/16",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 990.0687345583664,
+  "elo": 988.115342749856,
   "opponent": "Osamu Kido",
   "result": "draw"
  },
  {
   "date": "1972/09/16",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 907.8375806116585,
+  "elo": 906.8314249258116,
   "opponent": "Harold Sakata",
   "result": "lost"
  },
  {
   "date": "1972/09/16",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 756.1761002374822,
+  "elo": 732.4338887839333,
   "opponent": "Pat Roach",
   "result": "won"
  },
  {
   "date": "1972/09/16",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 873.1176869584721,
+  "elo": 870.3385893682048,
   "opponent": "Wayne Bridges",
   "result": "lost"
  },
  {
   "date": "1972/09/16",
+  "wrestling_as": "Wayne Bridges",
   "wrestler": "Wayne Bridges",
-  "elo": 1044.5975449742214,
+  "elo": 1044.0460901210515,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/09/16",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 984.3111325761704,
+  "elo": 983.8929022312774,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/09/16",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1299.9617658152106,
+  "elo": 1294.7367184948566,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 903.4182796969501,
+  "elo": 902.4072400032048,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/09/19",
-  "wrestler": "Little Hamada",
-  "elo": 612.7285041118997,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 552.0262365901676,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1039.6036890212777,
+  "elo": 997.6860918253454,
   "opponent": "Wayne Bridges",
   "result": "lost"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "Wayne Bridges",
   "wrestler": "Wayne Bridges",
-  "elo": 1102.0966574098488,
+  "elo": 1094.657951921422,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 714.8840010729225,
+  "elo": 695.1006837883169,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1031.3608337229261,
+  "elo": 1025.4485477454725,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 837.8690301218998,
+  "elo": 830.1791953529522,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1019.89195296892,
+  "elo": 1016.2282798960928,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 830.822226134444,
+  "elo": 828.675945659138,
   "opponent": "Prince Kumali",
   "result": "lost"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 1036.5026515919074,
+  "elo": 1036.1132742594114,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 804.0720377112177,
+  "elo": 801.9060443590713,
   "opponent": "John Kowalski",
   "result": "lost"
  },
  {
   "date": "1972/09/19",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1053.3567818234246,
+  "elo": 1052.3254472404108,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 840.7242784495041,
+  "elo": 829.163310300597,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1070.9506896450007,
+  "elo": 1070.9300215279532,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 667.1593732035545,
+  "elo": 617.2209231590665,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1043.7773896041308,
+  "elo": 1035.078078613826,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 689.9385456046232,
+  "elo": 672.4182406799342,
   "opponent": "John Kowalski",
   "result": "lost"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1065.8295095575743,
+  "elo": 1063.6666687946022,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 789.530688481806,
+  "elo": 783.3645242907224,
   "opponent": "Prince Kumali",
   "result": "lost"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 1060.6718224119543,
+  "elo": 1059.5206097905261,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 759.2669211949318,
+  "elo": 756.8004714151673,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1042.294511227063,
+  "elo": 1038.7810663680448,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1257.512154416464,
+  "elo": 1252.4819428717983,
   "opponent": "Red Pimpernel",
   "result": "lost"
  },
  {
   "date": "1972/09/21",
+  "wrestling_as": "Red Pimpernel",
   "wrestler": "Red Pimpernel",
-  "elo": 1084.8992227974932,
+  "elo": 1084.5095512461166,
   "opponent": "Toyonobori",
   "result": "won"
  },
  {
   "date": "1972/09/25",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1017.048091532051,
+  "elo": 1015.7887477173463,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/09/25",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1097.6799877170804,
+  "elo": 1090.2193524244328,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/09/25",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 666.6863431006785,
+  "elo": 650.7723235515692,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/09/25",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1053.9206124790353,
+  "elo": 1049.6040249322273,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/09/25",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 755.6680848318176,
+  "elo": 750.1452272048243,
   "opponent": "John Kowalski",
   "result": "lost"
  },
  {
   "date": "1972/09/25",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1082.7608113825686,
+  "elo": 1080.2763173375513,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/09/25",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 776.0000887591802,
+  "elo": 774.34409786338,
   "opponent": "Sean Regan",
   "result": "lost"
  },
  {
   "date": "1972/09/25",
+  "wrestling_as": "Sean Regan",
   "wrestler": "Sean Regan",
-  "elo": 1027.4110686876318,
+  "elo": 1027.165923897879,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/09/25",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 1036.3129506949888,
+  "elo": 1034.74796133887,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/09/25",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1269.6915902749467,
+  "elo": 1264.8682670976264,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 959.7148799880504,
+  "elo": 957.0518994402408,
   "opponent": "Little Hamada",
   "result": "draw"
  },
  {
   "date": "1972/09/26",
-  "wrestler": "Little Hamada",
-  "elo": 693.298744135799,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 637.922437709686,
   "opponent": "Masanobu Kurisu",
   "result": "draw"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 650.4084693540494,
+  "elo": 604.2136508787044,
   "opponent": "John Kowalski",
   "result": "lost"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1091.136263307321,
+  "elo": 1086.7799534777323,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1005.4000889933889,
+  "elo": 997.599837871292,
   "opponent": "Harold Sakata",
   "result": "lost"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 851.2461405480616,
+  "elo": 836.0113526578509,
   "opponent": "John Tolley",
   "result": "won"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 952.8952914211815,
+  "elo": 951.0175442432817,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 922.5034033794323,
+  "elo": 917.606061396001,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 742.399268992024,
+  "elo": 740.3129386407506,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1070.7210223626134,
+  "elo": 1066.619604543542,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "Sean Regan",
   "wrestler": "Sean Regan",
-  "elo": 1003.6575144252,
+  "elo": 1003.4375174438164,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1972/09/26",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1241.884246226892,
+  "elo": 1241.867826026332,
   "opponent": "Sean Regan",
   "result": "won"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 787.5238387208449,
+  "elo": 778.2461597584571,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1043.6483113963807,
+  "elo": 1041.2473229884163,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/09/27",
-  "wrestler": "Little Hamada",
-  "elo": 664.8456485178224,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 615.5223716320359,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1019.6266368023772,
+  "elo": 1019.9999039489422,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 813.0611625667964,
+  "elo": 799.1936597647598,
   "opponent": "Wayne Bridges",
   "result": "lost"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "Wayne Bridges",
   "wrestler": "Wayne Bridges",
-  "elo": 1121.1891464004814,
+  "elo": 1113.0667983679675,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 831.2286484961087,
+  "elo": 827.1931240089881,
   "opponent": "Prince Kumali",
   "result": "lost"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 1044.1700463045051,
+  "elo": 1041.4304816302947,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 984.9930956665972,
+  "elo": 981.0072182690594,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 930.7227745869642,
+  "elo": 928.0252439641323,
   "opponent": "Pat Roach",
   "result": "won"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1064.786092866084,
+  "elo": 1060.377577554322,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/09/27",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1282.8666754955655,
+  "elo": 1278.0694550593316,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/09/28",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 996.686535006554,
+  "elo": 993.9976090966015,
   "opponent": "John Kowalski",
   "result": "lost"
  },
  {
   "date": "1972/09/28",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1111.7478692559105,
+  "elo": 1107.6272914461367,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/09/28",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 766.3766900640337,
+  "elo": 755.3785892173411,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/09/28",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1042.9688730537584,
+  "elo": 1041.9074392226516,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/09/28",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 772.8058643346747,
+  "elo": 768.7821585366622,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/09/28",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1043.4158798280312,
+  "elo": 1039.4181837413853,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/09/28",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 862.2624880841181,
+  "elo": 859.5540621629581,
   "opponent": "Prince Kumali",
   "result": "lost"
  },
  {
   "date": "1972/09/28",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 1078.4001895559281,
+  "elo": 1075.6660725308818,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/09/28",
+  "wrestling_as": "Sean Regan",
   "wrestler": "Sean Regan",
-  "elo": 983.41722420143,
+  "elo": 983.2161390153069,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1972/09/28",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1252.004391338777,
+  "elo": 1251.9785152405868,
   "opponent": "Sean Regan",
   "result": "won"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 653.6119825572738,
+  "elo": 634.5590985204935,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/09/29",
-  "wrestler": "Little Hamada",
-  "elo": 798.7575046813935,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 759.2094328699993,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 909.9294224682783,
+  "elo": 907.7004227150635,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1086.3474293228962,
+  "elo": 1085.0560324134208,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 634.7202452950513,
+  "elo": 591.7820081438279,
   "opponent": "Prince Kumali",
   "result": "lost"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 1086.2443015854271,
+  "elo": 1081.8818938983202,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1024.1911391668893,
+  "elo": 1020.0766380743095,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 947.9193245127167,
+  "elo": 943.8834652803166,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 958.4389739070216,
+  "elo": 954.582281342864,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 912.3530808340431,
+  "elo": 909.9847434377932,
   "opponent": "Pat Roach",
   "result": "won"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 795.7857099382544,
+  "elo": 793.7162958422698,
   "opponent": "Sean Regan",
   "result": "lost"
  },
  {
   "date": "1972/09/29",
+  "wrestling_as": "Sean Regan",
   "wrestler": "Sean Regan",
-  "elo": 1049.8940023472937,
+  "elo": 1049.0539053359953,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 548.1798560013927,
+  "elo": 522.3087014558681,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 740.1523718509324,
+  "elo": 704.0324052084533,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 739.0113338969599,
+  "elo": 729.3065084224401,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1100.0301074064332,
+  "elo": 1098.0920728108713,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 841.6800771053937,
+  "elo": 838.9622578581418,
   "opponent": "John Kowalski",
   "result": "lost"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1058.3158118483316,
+  "elo": 1054.4457205027702,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 850.9461980855599,
+  "elo": 846.9618591101412,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1055.4121003341784,
+  "elo": 1051.5038875130394,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 1013.1188198569866,
+  "elo": 1008.9825926836476,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1058.604044290924,
+  "elo": 1055.7833458671385,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 763.9478145185941,
+  "elo": 762.1363938875517,
   "opponent": "Red Pimpernel",
   "result": "lost"
  },
  {
   "date": "1972/10/03",
+  "wrestling_as": "Red Pimpernel",
   "wrestler": "Red Pimpernel",
-  "elo": 1100.8181705073234,
+  "elo": 1100.2995022234757,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 712.5403408107942,
+  "elo": 680.5494208886007,
   "opponent": "John Kowalski",
   "result": "lost"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1072.1218273684005,
+  "elo": 1066.1872126626965,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 719.0610984061674,
+  "elo": 709.5192851806812,
   "opponent": "Wayne Bridges",
   "result": "lost"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "Wayne Bridges",
   "wrestler": "Wayne Bridges",
-  "elo": 1131.1642641458777,
+  "elo": 1122.960409988847,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 804.8110726520094,
+  "elo": 802.2280511513014,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1118.4646096331253,
+  "elo": 1116.4591761642914,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 941.3395143669451,
+  "elo": 937.2210017122992,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 994.5048090656429,
+  "elo": 990.4850410528378,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1008.1446995535497,
+  "elo": 1005.1675134472657,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1105.8714450715527,
+  "elo": 1102.1197199329122,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
-  "elo": 1057.3847090862298,
+  "elo": 1057.3817280737203,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1972/10/04",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1265.8377013017098,
+  "elo": 1265.8133157097743,
   "opponent": "Karl Gotch",
   "result": "won"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 638.4907403178714,
+  "elo": 614.2064181268197,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 878.8606731449322,
+  "elo": 868.5710539130826,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 700.8224456458463,
+  "elo": 691.9870817882759,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1127.583936013286,
+  "elo": 1125.225277860494,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 879.320936453719,
+  "elo": 875.2734038932227,
   "opponent": "Prince Kumali",
   "result": "lost"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 1056.523386978869,
+  "elo": 1052.4326388719142,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 986.6264833299227,
+  "elo": 980.9886886268031,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 934.9385025955498,
+  "elo": 932.5334419593385,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 971.1739387631137,
+  "elo": 968.5259241350028,
   "opponent": "Red Pimpernel",
   "result": "lost"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "Red Pimpernel",
   "wrestler": "Red Pimpernel",
-  "elo": 1137.7889312977595,
+  "elo": 1136.9410915357385,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1048.9385923484815,
+  "elo": 1045.7167549753328,
   "opponent": "Karl Gotch",
   "result": "lost"
  },
  {
   "date": "1972/10/05",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
-  "elo": 1114.317561809301,
+  "elo": 1113.7846930312996,
   "opponent": "Pat Roach",
   "result": "won"
  },
  {
   "date": "1972/10/09",
-  "wrestler": "Little Hamada",
-  "elo": 655.6444243945548,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 619.7396846142831,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/10/09",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 781.6038206047101,
+  "elo": 753.6761663825359,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/10/09",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 840.6736666211484,
+  "elo": 836.9283528753449,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/10/09",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1146.9075709295712,
+  "elo": 1144.397803369433,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/10/09",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 893.1899779678618,
+  "elo": 890.3847522338658,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/10/09",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1087.9305727461076,
+  "elo": 1084.7873409259014,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/10/09",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 1014.7647624054598,
+  "elo": 1011.1712669842373,
   "opponent": "Karl Gotch",
   "result": "lost"
  },
  {
   "date": "1972/10/09",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
-  "elo": 1156.0761863827101,
+  "elo": 1155.0460649189765,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/09",
+  "wrestling_as": "Red Pimpernel",
   "wrestler": "Red Pimpernel",
-  "elo": 1105.4252438982512,
+  "elo": 1104.6810780091648,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1972/10/09",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1282.019545001464,
+  "elo": 1281.9433224730612,
   "opponent": "Red Pimpernel",
   "result": "won"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 734.60076427494,
+  "elo": 711.1291130954017,
   "opponent": "John Kowalski",
   "result": "lost"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1033.629539659693,
+  "elo": 1023.5357419139373,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 685.3286959171519,
+  "elo": 676.5452128160489,
   "opponent": "Wayne Bridges",
   "result": "lost"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "Wayne Bridges",
   "wrestler": "Wayne Bridges",
-  "elo": 1138.911139010225,
+  "elo": 1130.6813444749605,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1064.5175008541728,
+  "elo": 1061.3673596057356,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1043.6408132957292,
+  "elo": 1034.6319414404772,
   "opponent": "John Tolley",
   "result": "won"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 941.6166754909434,
+  "elo": 938.0060179779305,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 986.9698404501811,
+  "elo": 983.2588508879585,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "Red Pimpernel",
   "wrestler": "Red Pimpernel",
-  "elo": 1028.1885569765625,
+  "elo": 1027.2364696920956,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1047.6633518112392,
+  "elo": 1045.2739688680042,
   "opponent": "Red Pimpernel",
   "result": "won"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1248.3343191734657,
+  "elo": 1248.1977999577323,
   "opponent": "Karl Gotch",
   "result": "lost"
  },
  {
   "date": "1972/10/10",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
-  "elo": 1223.4466380387069,
+  "elo": 1222.5371099496344,
   "opponent": "Antonio Inoki",
   "result": "won"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 478.1605889227834,
+  "elo": 449.6389016266967,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/10/12",
-  "wrestler": "Little Hamada",
-  "elo": 725.6636914731641,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 692.4094844434545,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 708.5598996950215,
+  "elo": 687.6252338069114,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1077.537933144132,
+  "elo": 1073.1192992499807,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 992.2004738172957,
+  "elo": 983.0356126788672,
   "opponent": "John Kowalski",
   "result": "lost"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1085.0698791381265,
+  "elo": 1075.1320706755473,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 667.3929292799924,
+  "elo": 659.1325447131285,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1096.8984560646873,
+  "elo": 1093.4936749773617,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 854.59672313859,
+  "elo": 850.9576732163437,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1073.9897928025346,
+  "elo": 1070.3071956495453,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "Wayne Bridges",
   "wrestler": "Wayne Bridges",
-  "elo": 1108.5186015270758,
+  "elo": 1100.705201464094,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/10/12",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1298.06294423714,
+  "elo": 1293.0575265647649,
   "opponent": "Wayne Bridges",
   "result": "won"
  },
  {
   "date": "1972/10/13",
-  "wrestler": "Little Hamada",
-  "elo": 620.7447974177599,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 591.0325534479861,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 813.4787937504258,
+  "elo": 789.0021648023799,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 705.3876159564874,
+  "elo": 700.7471478579278,
   "opponent": "Harold Sakata",
   "result": "lost"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 816.602036462095,
+  "elo": 809.3430700715444,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1028.9425926692077,
+  "elo": 1024.6706919222033,
   "opponent": "Wayne Bridges",
   "result": "lost"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "Wayne Bridges",
   "wrestler": "Wayne Bridges",
-  "elo": 1153.5658016604027,
+  "elo": 1146.3417051914357,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1008.095870481754,
+  "elo": 1003.9237523604544,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1073.8226279203059,
+  "elo": 1070.9245357383911,
   "opponent": "John Tolley",
   "result": "won"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1062.38317025422,
+  "elo": 1052.9395073330277,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1309.4062986790932,
+  "elo": 1304.1538082360246,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1064.3453972099933,
+  "elo": 1061.2551952440758,
   "opponent": "Karl Gotch",
   "result": "lost"
  },
  {
   "date": "1972/10/13",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
-  "elo": 1239.7231674660538,
+  "elo": 1238.6563498162775,
   "opponent": "Pat Roach",
   "result": "won"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 760.8156126695598,
+  "elo": 739.6865346774317,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1044.8636548981617,
+  "elo": 1032.3512428038152,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 766.7412131863149,
+  "elo": 760.1443912243623,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1033.026282119644,
+  "elo": 1028.5230917840454,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 680.9162291396266,
+  "elo": 676.5527088912326,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1059.8990452196695,
+  "elo": 1057.3711883513517,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1022.4590829601213,
+  "elo": 1019.5333649382841,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1115.7089421701778,
+  "elo": 1112.6463660441827,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1042.9480244031781,
+  "elo": 1033.8793456526428,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1319.1238716046141,
+  "elo": 1313.6838890762172,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "Sean Regan",
   "wrestler": "Sean Regan",
-  "elo": 1024.7838202677326,
+  "elo": 1023.9191727515974,
   "opponent": "Karl Gotch",
   "result": "lost"
  },
  {
   "date": "1972/10/15",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
-  "elo": 1252.2782585058344,
+  "elo": 1251.2237161084765,
   "opponent": "Sean Regan",
   "result": "won"
  },
  {
   "date": "1972/10/16",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 445.31479588289716,
+  "elo": 417.94468899163576,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/10/16",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 793.661405709446,
+  "elo": 771.3807473124926,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/10/16",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 656.3540899252883,
+  "elo": 652.1683395639828,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/10/16",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1034.7401525672904,
+  "elo": 1031.7255496019088,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/16",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1026.0067639855445,
+  "elo": 1017.2299844899351,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/10/16",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1327.594501813431,
+  "elo": 1322.0085696575711,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/10/16",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1010.9652942476629,
+  "elo": 1006.8015478733845,
   "opponent": "Karl Gotch",
   "result": "lost"
  },
  {
   "date": "1972/10/16",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
-  "elo": 1263.308752441825,
+  "elo": 1262.084488063807,
   "opponent": "John Tolley",
   "result": "won"
  },
  {
   "date": "1972/10/17",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 391.9131997470178,
+  "elo": 364.01369608601783,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/10/17",
-  "wrestler": "Little Hamada",
-  "elo": 674.1463935536392,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 644.963546353604,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/10/17",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 815.2556235295403,
+  "elo": 808.1778259457691,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/10/17",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 938.120662167956,
+  "elo": 920.2548208069644,
   "opponent": "Masanobu Kurisu",
   "result": "won"
  },
  {
   "date": "1972/10/17",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 968.822708337017,
+  "elo": 966.2175907780698,
   "opponent": "Prince Kumali",
   "result": "lost"
  },
  {
   "date": "1972/10/17",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 838.5067636905932,
+  "elo": 834.4755347105465,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/10/17",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 983.7974139100241,
+  "elo": 981.0795550193234,
   "opponent": "Red Pimpernel",
   "result": "lost"
  },
  {
   "date": "1972/10/17",
+  "wrestling_as": "Red Pimpernel",
   "wrestler": "Red Pimpernel",
-  "elo": 1079.1312956338286,
+  "elo": 1077.882464274681,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/10/17",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1085.7583727480892,
+  "elo": 1082.9173406550512,
   "opponent": "Karl Gotch",
   "result": "lost"
  },
  {
   "date": "1972/10/17",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
-  "elo": 1278.2840371528691,
+  "elo": 1276.9490007583727,
   "opponent": "Pat Roach",
   "result": "won"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 359.00069313532794,
+  "elo": 330.8975560367187,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/10/18",
-  "wrestler": "Little Hamada",
-  "elo": 707.0589001653291,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 678.0796864029031,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 963.6219724830387,
+  "elo": 953.6256040836545,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1062.8902451729675,
+  "elo": 1047.4635816195255,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 965.8282395299302,
+  "elo": 960.4718308388447,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1090.0007096158945,
+  "elo": 1078.680959838355,
   "opponent": "John Tolley",
   "result": "won"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 747.2662772950952,
+  "elo": 740.6058888385861,
   "opponent": "Wayne Bridges",
   "result": "lost"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "Wayne Bridges",
   "wrestler": "Wayne Bridges",
-  "elo": 1163.3032696060127,
+  "elo": 1156.1109563843238,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 788.4176281880013,
+  "elo": 784.3343663595153,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1053.9871604205036,
+  "elo": 1049.741276097719,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1065.8514306811364,
+  "elo": 1062.7572691997848,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/10/18",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1337.5479728469072,
+  "elo": 1332.0886053852043,
   "opponent": "Pat Roach",
   "result": "won"
  },
  {
   "date": "1972/10/20",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 335.2352675221605,
+  "elo": 307.0263173700659,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/10/20",
-  "wrestler": "Little Hamada",
-  "elo": 730.8243257784966,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 701.950925069556,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/10/20",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1011.6092686545737,
+  "elo": 997.79136350827,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/10/20",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1105.2681369388974,
+  "elo": 1099.4134942089745,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/10/20",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 942.8022385020877,
+  "elo": 933.2880044106255,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/10/20",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1342.752906342145,
+  "elo": 1337.1730053034617,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/10/20",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1004.2576643111258,
+  "elo": 1001.2147583091137,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/10/20",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1106.9849466500452,
+  "elo": 1104.1645768006656,
   "opponent": "Pat Roach",
   "result": "won"
  },
  {
   "date": "1972/10/20",
+  "wrestling_as": "Sean Regan",
   "wrestler": "Sean Regan",
-  "elo": 1005.9258366710576,
+  "elo": 1005.0197205044531,
   "opponent": "Karl Gotch",
   "result": "lost"
  },
  {
   "date": "1972/10/20",
+  "wrestling_as": "Karl Gotch",
   "wrestler": "Karl Gotch",
-  "elo": 1287.7130289512065,
+  "elo": 1286.3987268819449,
   "opponent": "Sean Regan",
   "result": "won"
  },
  {
   "date": "1972/10/21",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 703.0075585216529,
+  "elo": 696.6053303788034,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/10/21",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1010.0869583033724,
+  "elo": 1004.4723892986274,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/10/21",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 882.8041139053838,
+  "elo": 872.8524601337434,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/10/21",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1119.9997719142464,
+  "elo": 1108.898731976796,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/10/21",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1051.5138226257322,
+  "elo": 1046.3188904567912,
   "opponent": "Red Pimpernel",
   "result": "lost"
  },
  {
   "date": "1972/10/21",
+  "wrestling_as": "Red Pimpernel",
   "wrestler": "Red Pimpernel",
-  "elo": 1132.8856099469938,
+  "elo": 1130.9770680268643,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/10/21",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 760.8608832807269,
+  "elo": 756.9498963616024,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/10/21",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1120.7633191036825,
+  "elo": 1117.8568117996222,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/21",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 991.7863480545188,
+  "elo": 988.5831481351577,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/10/21",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1348.9885644704484,
+  "elo": 1343.4888103904395,
   "opponent": "Pat Roach",
   "result": "won"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 316.6293741642958,
+  "elo": 288.35577854212795,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/10/22",
-  "wrestler": "Little Hamada",
-  "elo": 749.4302191363612,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 720.6214638974939,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 943.8777197954868,
+  "elo": 863.3049275121477,
   "opponent": "John Kowalski",
   "result": "lost"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 1018.2672116235577,
+  "elo": 1007.3388961298657,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 671.118048887936,
+  "elo": 665.2063434852296,
   "opponent": "Pat Roach",
   "result": "lost"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 1023.6758576882357,
+  "elo": 1019.9821350287315,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1076.199575755674,
+  "elo": 1065.6516033351645,
   "opponent": "Wayne Bridges",
   "result": "lost"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "Wayne Bridges",
   "wrestler": "Wayne Bridges",
-  "elo": 1207.103465764585,
+  "elo": 1199.3580850259552,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 714.4634537489161,
+  "elo": 710.8197931392986,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1015.2201378688278,
+  "elo": 1012.3476940003737,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "Sean Regan",
   "wrestler": "Sean Regan",
-  "elo": 986.0713739779411,
+  "elo": 985.2356583851371,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1972/10/22",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1258.261550520024,
+  "elo": 1258.0898310173902,
   "opponent": "Sean Regan",
   "result": "won"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 301.3367464058562,
+  "elo": 273.0195853483119,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/10/25",
-  "wrestler": "Little Hamada",
-  "elo": 764.7228468948008,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 735.9576570913099,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "John Kowalski",
   "wrestler": "John Kowalski",
-  "elo": 957.7223494775565,
+  "elo": 937.7218829387983,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1064.9674440874894,
+  "elo": 1002.5389538942825,
   "opponent": "John Kowalski",
   "result": "won"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1016.7984022871557,
+  "elo": 1006.9370912326463,
   "opponent": "John Tolley",
   "result": "lost"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "John Tolley",
   "wrestler": "John Tolley",
-  "elo": 1069.4881317718907,
+  "elo": 1063.1869014011456,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "Prince Kumali",
   "wrestler": "Prince Kumali",
-  "elo": 689.3386694981291,
+  "elo": 685.4981769495971,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1064.0762147511257,
+  "elo": 1058.979698551642,
   "opponent": "Prince Kumali",
   "result": "won"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "Pat Roach",
   "wrestler": "Pat Roach",
-  "elo": 987.2952012993445,
+  "elo": 983.7062977032195,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1157.1439754925739,
+  "elo": 1154.132649125134,
   "opponent": "Pat Roach",
   "result": "won"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "Harold Sakata",
   "wrestler": "Harold Sakata",
-  "elo": 662.3751775117559,
+  "elo": 656.3747947875914,
   "opponent": "Wayne Bridges",
   "result": "lost"
  },
  {
   "date": "1972/10/25",
+  "wrestling_as": "Wayne Bridges",
   "wrestler": "Wayne Bridges",
-  "elo": 1209.28918360863,
+  "elo": 1203.7738593747742,
   "opponent": "Harold Sakata",
   "result": "won"
  },
  {
   "date": "1972/11/12",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 288.35260646388514,
+  "elo": 260.0040973541944,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/11/12",
-  "wrestler": "Little Hamada",
-  "elo": 777.7069868367719,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 748.9731450854274,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/11/12",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 959.2420980405742,
+  "elo": 950.3653783327911,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/11/12",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1105.725346046915,
+  "elo": 1052.1735755614914,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/11/12",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 964.3827998873496,
+  "elo": 955.9388961982025,
   "opponent": "Greg Peterson",
   "result": "lost"
  },
  {
   "date": "1972/11/12",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1052.415602399806,
+  "elo": 1050.9981950344436,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/11/12",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1004.9580512731541,
+  "elo": 1000.5724416534989,
   "opponent": "Don Serrano",
   "result": "lost"
  },
  {
   "date": "1972/11/12",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1059.1181634779716,
+  "elo": 1058.407256898143,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/11/12",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1085.9547214711486,
+  "elo": 1083.3002319443426,
   "opponent": "Johnny Londos",
   "result": "lost"
  },
  {
   "date": "1972/11/12",
+  "wrestling_as": "Johnny Londos",
   "wrestler": "Johnny Londos",
-  "elo": 1071.1892540214253,
+  "elo": 1070.8324171807915,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 624.4461903862796,
+  "elo": 616.352521269347,
   "opponent": "Makoto Arakawa",
   "result": "lost"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 479.1620396071459,
+  "elo": 451.8294020306165,
   "opponent": "Masanobu Kurisu",
   "result": "won"
  },
  {
   "date": "1972/11/13",
-  "wrestler": "Little Hamada",
-  "elo": 751.4176000880793,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 719.246516382409,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1118.8700394212613,
+  "elo": 1067.0368899130006,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 894.1910405024249,
+  "elo": 887.8529720300926,
   "opponent": "Johnny Londos",
   "result": "lost"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Johnny Londos",
   "wrestler": "Johnny Londos",
-  "elo": 1106.2851337138877,
+  "elo": 1104.8753792648465,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 954.2445787696719,
+  "elo": 950.4900607519218,
   "opponent": "Karl von Stroheim",
   "result": "lost"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 1050.713472503482,
+  "elo": 1050.0823809015772,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1032.1002928331698,
+  "elo": 1029.7239622452141,
   "opponent": "Don Serrano",
   "result": "lost"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1112.9725921159504,
+  "elo": 1111.9835265972715,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1037.0630238557494,
+  "elo": 1035.3377297121926,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/13",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1356.6648537424767,
+  "elo": 1351.319043051565,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 559.447009946519,
+  "elo": 545.1313107824559,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/11/14",
-  "wrestler": "Little Hamada",
-  "elo": 816.4167805278399,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 790.4677268693001,
   "opponent": "Masanobu Kurisu",
   "result": "won"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 840.7346593564585,
+  "elo": 832.5645374463414,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1012.6984791865407,
+  "elo": 1005.6538129165423,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1057.3099137320212,
+  "elo": 1012.487630165511,
   "opponent": "Greg Peterson",
   "result": "lost"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1098.6231495449895,
+  "elo": 1089.8869894596821,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1041.5966791136943,
+  "elo": 1040.2834824697861,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1096.9964047741842,
+  "elo": 1093.8901490068927,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 1036.049432825951,
+  "elo": 1035.0754507738097,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1363.9968735812422,
+  "elo": 1358.8225081154487,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 978.0333582359164,
+  "elo": 975.3573754771273,
   "opponent": "Johnny Londos",
   "result": "lost"
  },
  {
   "date": "1972/11/14",
+  "wrestling_as": "Johnny Londos",
   "wrestler": "Johnny Londos",
-  "elo": 1143.471913346799,
+  "elo": 1141.865697788093,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 454.0630890500813,
+  "elo": 426.90474587050545,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/11/15",
-  "wrestler": "Little Hamada",
-  "elo": 841.5157310849046,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 815.3923830294112,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 796.0805338820995,
+  "elo": 780.1692264690433,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1079.6369764692006,
+  "elo": 1038.68528565416,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 974.8179481540265,
+  "elo": 967.5438893536032,
   "opponent": "Greg Peterson",
   "result": "lost"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1136.5036805775037,
+  "elo": 1127.9969130226214,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 985.4811303704463,
+  "elo": 984.3053705656137,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1082.6685952886744,
+  "elo": 1080.4940424534102,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1053.645158434019,
+  "elo": 1050.7508356661986,
   "opponent": "Johnny Londos",
   "result": "lost"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Johnny Londos",
   "wrestler": "Johnny Londos",
-  "elo": 1186.8231596869641,
+  "elo": 1185.0050111287871,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1028.0783346486355,
+  "elo": 1026.5031750577364,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/15",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1370.7560458137716,
+  "elo": 1365.7126618214736,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 636.858036303367,
+  "elo": 621.2457189674537,
   "opponent": "Masanobu Kurisu",
   "result": "lost"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 718.6695075252514,
+  "elo": 704.0548182840455,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 448.749345679344,
+  "elo": 421.16448728465605,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1082.2938481545693,
+  "elo": 1041.5554149470847,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1074.8004204820859,
+  "elo": 1067.0599285105445,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1115.348418529437,
+  "elo": 1111.6878201782754,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 877.886095425513,
+  "elo": 872.3644921625528,
   "opponent": "Karl von Stroheim",
   "result": "lost"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 1082.4129830989598,
+  "elo": 1079.484767756664,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 985.8704863640575,
+  "elo": 984.2111395922119,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1124.8764435732523,
+  "elo": 1122.7860779189346,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 884.3474548656224,
+  "elo": 882.4382231534406,
   "opponent": "Frank Morrell",
   "result": "lost"
  },
  {
   "date": "1972/11/16",
+  "wrestling_as": "Frank Morrell",
   "wrestler": "Frank Morrell",
-  "elo": 1046.842951685147,
+  "elo": 1046.4595761618434,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 652.6241586396632,
+  "elo": 635.0466704635226,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/11/18",
-  "wrestler": "Little Hamada",
-  "elo": 907.5610799704929,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 884.4005308499342,
   "opponent": "Masanobu Kurisu",
   "result": "won"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 596.8956127753605,
+  "elo": 583.1084257627273,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 917.8485189535195,
+  "elo": 910.5017853672792,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1031.2156244070711,
+  "elo": 995.2192307654389,
   "opponent": "Greg Peterson",
   "result": "lost"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1125.878644229584,
+  "elo": 1113.3961126921904,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1075.4917702437963,
+  "elo": 1072.0851338875855,
   "opponent": "Johnny Londos",
   "result": "lost"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Johnny Londos",
   "wrestler": "Johnny Londos",
-  "elo": 1226.6798079726047,
+  "elo": 1224.607697419477,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 857.4540203708432,
+  "elo": 855.728572176108,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1012.7639208588366,
+  "elo": 1010.9207905695446,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 1066.4345830481095,
+  "elo": 1063.3422247233602,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/18",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1378.7452458391967,
+  "elo": 1373.7839333381255,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/20",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 441.9895767394885,
+  "elo": 414.0812292940578,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/11/20",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1034.5955088769988,
+  "elo": 1002.3024887560371,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/11/20",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 568.2401970113464,
+  "elo": 553.1027061518005,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/11/20",
-  "wrestler": "Little Hamada",
-  "elo": 936.216495734507,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 914.406250460861,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/11/20",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 888.9329200850055,
+  "elo": 882.3291458315327,
   "opponent": "Johnny Londos",
   "result": "lost"
  },
  {
   "date": "1972/11/20",
+  "wrestling_as": "Johnny Londos",
   "wrestler": "Johnny Londos",
-  "elo": 1233.9087076897333,
+  "elo": 1231.6508573034137,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/11/20",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 1024.7666076553003,
+  "elo": 1021.8143756846456,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/11/20",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1166.5444189660616,
+  "elo": 1164.313926957649,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/20",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1106.9647858967303,
+  "elo": 1095.1373392945818,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/20",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1388.2021750056235,
+  "elo": 1382.9133200369297,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 433.42155432295385,
+  "elo": 415.09617595562327,
   "opponent": "Makoto Arakawa",
   "result": "lost"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 576.808219427881,
+  "elo": 552.0877594902349,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/11/21",
-  "wrestler": "Little Hamada",
-  "elo": 822.6905916358886,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 805.199861057562,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1002.458824183624,
+  "elo": 991.5355352348317,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 961.1039297828262,
+  "elo": 932.3771036756298,
   "opponent": "Don Serrano",
   "result": "lost"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1004.4371785591885,
+  "elo": 995.5793423369227,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1065.4559148747535,
+  "elo": 1054.9631499021302,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1208.0532899880384,
+  "elo": 1204.4881163501007,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 1013.7799365314779,
+  "elo": 1010.6954703231099,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1393.6955105675347,
+  "elo": 1388.4727727176976,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 990.8897078028384,
+  "elo": 989.0057522383073,
   "opponent": "Johnny Londos",
   "result": "lost"
  },
  {
   "date": "1972/11/21",
+  "wrestling_as": "Johnny Londos",
   "wrestler": "Johnny Londos",
-  "elo": 1244.8458142177324,
+  "elo": 1242.6083764690322,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 598.0053574948976,
+  "elo": 580.447695287114,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/11/22",
-  "wrestler": "Little Hamada",
-  "elo": 877.3093927806542,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 859.7988362339705,
   "opponent": "Masanobu Kurisu",
   "result": "won"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 424.2702447790058,
+  "elo": 405.4075449912846,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 970.2552393267742,
+  "elo": 942.0657346399685,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 961.426769283903,
+  "elo": 909.5913271965575,
   "opponent": "Greg Peterson",
   "result": "lost"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1106.4879697744743,
+  "elo": 1095.9352539212673,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 964.5225401189954,
+  "elo": 917.2503405242053,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1115.4064086839894,
+  "elo": 1111.249634793944,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 1003.6872646080593,
+  "elo": 1000.4905570487742,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1398.741846529244,
+  "elo": 1393.5752293548653,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1172.2198091059206,
+  "elo": 1168.8413272495538,
   "opponent": "Frank Morrell",
   "result": "lost"
  },
  {
   "date": "1972/11/22",
+  "wrestling_as": "Frank Morrell",
   "wrestler": "Frank Morrell",
-  "elo": 1118.5099134493823,
+  "elo": 1117.753154362937,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/11/23",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 862.3177801756756,
+  "elo": 811.7954114181304,
   "opponent": "Don Serrano",
   "result": "lost"
  },
  {
   "date": "1972/11/23",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1063.631529227223,
+  "elo": 1015.0462563026324,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/11/23",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1040.4399002807936,
+  "elo": 1031.0150007598108,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/11/23",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1122.9858467902,
+  "elo": 1118.8462585612203,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/11/23",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 994.358325810804,
+  "elo": 991.0652562403599,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/23",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1403.4063159278717,
+  "elo": 1398.2878797590724,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/23",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1083.2177026950865,
+  "elo": 1079.3016166024704,
   "opponent": "Johnny Londos",
   "result": "lost"
  },
  {
   "date": "1972/11/23",
+  "wrestling_as": "Johnny Londos",
   "wrestler": "Johnny Londos",
-  "elo": 1260.940167212184,
+  "elo": 1258.582385564769,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 365.55504859859093,
+  "elo": 345.28404827158266,
   "opponent": "Makoto Arakawa",
   "result": "lost"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 635.5234156082959,
+  "elo": 612.2112562099369,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 840.1506821805212,
+  "elo": 806.2345157404641,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 992.4223373219286,
+  "elo": 947.6266303176347,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/11/24",
-  "wrestler": "Little Hamada",
-  "elo": 821.0911265893874,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 805.4424081587429,
   "opponent": "Greg Peterson",
   "result": "lost"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1068.549033376427,
+  "elo": 1058.1932147974246,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 941.5028132890836,
+  "elo": 938.1906218354849,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1198.6475653667808,
+  "elo": 1195.2786444519913,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1051.2403942620433,
+  "elo": 1005.1259960839727,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1409.6018834104614,
+  "elo": 1403.2480098684023,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1038.27926311863,
+  "elo": 1034.8127552083029,
   "opponent": "Frank Morrell",
   "result": "lost"
  },
  {
   "date": "1972/11/24",
+  "wrestling_as": "Frank Morrell",
   "wrestler": "Frank Morrell",
-  "elo": 1163.4483530258387,
+  "elo": 1162.2420157571046,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/11/25",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 554.637617419534,
+  "elo": 537.4520154318694,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/11/25",
-  "wrestler": "Little Hamada",
-  "elo": 864.458866664751,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 848.4380880139875,
   "opponent": "Masanobu Kurisu",
   "result": "won"
  },
  {
   "date": "1972/11/25",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 588.4384696650537,
+  "elo": 562.8934469274244,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/11/25",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 887.2356281237634,
+  "elo": 855.5523250229766,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/11/25",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 913.9893227729115,
+  "elo": 878.417752775052,
   "opponent": "Greg Peterson",
   "result": "lost"
  },
  {
   "date": "1972/11/25",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1107.7655406509355,
+  "elo": 1092.797653568716,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/11/25",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 928.8442021140834,
+  "elo": 925.322801013067,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/25",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1412.7665362042114,
+  "elo": 1406.4649650740068,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/25",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1011.421095224744,
+  "elo": 970.9312225471452,
   "opponent": "Katsuhisa Shibata",
   "result": "lost"
  },
  {
   "date": "1972/11/25",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1162.8051458274992,
+  "elo": 1153.041032098048,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/11/27",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1032.4508747378932,
+  "elo": 1015.3446425993603,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/11/27",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1064.6186545989963,
+  "elo": 1033.3237747137632,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/11/27",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1124.0405387148207,
+  "elo": 1116.8394339321455,
   "opponent": "Don Serrano",
   "result": "lost"
  },
  {
   "date": "1972/11/27",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1086.028121876704,
+  "elo": 1127.809643586837,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1972/11/27",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 917.2236267682792,
+  "elo": 913.5258124560277,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/27",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1415.6716800406625,
+  "elo": 1409.4142122132666,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/27",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1005.5516611677037,
+  "elo": 1002.3709564255245,
   "opponent": "Frank Morrell",
   "result": "lost"
  },
  {
   "date": "1972/11/27",
+  "wrestling_as": "Frank Morrell",
   "wrestler": "Frank Morrell",
-  "elo": 1196.175954976765,
+  "elo": 1194.6838145398829,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/11/29",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1017.6958307160023,
+  "elo": 996.5957955504614,
   "opponent": "Don Serrano",
   "result": "lost"
  },
  {
   "date": "1972/11/29",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1132.950945759698,
+  "elo": 1164.5376227501388,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/11/29",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 870.5909324836663,
+  "elo": 866.1680920173674,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/11/29",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1147.3568858571273,
+  "elo": 1140.5182941514756,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/11/29",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1022.5295435698278,
+  "elo": 1005.9676309571444,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/11/29",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1420.6323456246953,
+  "elo": 1414.1027180343747,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/12/02",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1065.3965265719835,
+  "elo": 1092.75901170891,
   "opponent": "Osamu Kido",
   "result": "lost"
  },
  {
   "date": "1972/12/02",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1073.1060803554183,
+  "elo": 1074.1495674667533,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/12/02",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 947.7062056557087,
+  "elo": 860.7251010294517,
   "opponent": "Karl von Stroheim",
   "result": "lost"
  },
  {
   "date": "1972/12/02",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 1010.5701826042537,
+  "elo": 1002.038786538377,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/12/02",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1013.3479728954233,
+  "elo": 997.2563980746106,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/12/02",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1425.2231309618976,
+  "elo": 1418.4583344756415,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/12/02",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1126.563945199781,
+  "elo": 1117.7790871043255,
   "opponent": "Johnny Londos",
   "result": "lost"
  },
  {
   "date": "1972/12/02",
+  "wrestling_as": "Johnny Londos",
   "wrestler": "Johnny Londos",
-  "elo": 1279.060767526043,
+  "elo": 1276.2133580616303,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/12/03",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 954.012181304081,
+  "elo": 859.8647320502324,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/12/03",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1066.3777888383934,
+  "elo": 998.1167670538299,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/12/03",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1026.9775384310574,
+  "elo": 1049.5891585117179,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/12/03",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1185.7758739980534,
+  "elo": 1183.6881473486678,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/12/03",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 1002.1527358791277,
+  "elo": 993.699403776415,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/12/03",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1429.4318543244606,
+  "elo": 1422.6280258566226,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/12/03",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 1040.1118748811282,
+  "elo": 1040.831870536713,
   "opponent": "Frank Morrell",
   "result": "lost"
  },
  {
   "date": "1972/12/03",
+  "wrestling_as": "Frank Morrell",
   "wrestler": "Frank Morrell",
-  "elo": 1229.1701604510552,
+  "elo": 1228.0015114699231,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 464.3357075277538,
+  "elo": 444.76158783959283,
   "opponent": "Makoto Arakawa",
   "result": "lost"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 678.7403795568339,
+  "elo": 655.583874519701,
   "opponent": "Masanobu Kurisu",
   "result": "won"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 362.07685385580703,
+  "elo": 340.72438875702113,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1068.1168862097854,
+  "elo": 1002.6764265683914,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 825.41942307716,
+  "elo": 806.237419023072,
   "opponent": "Don Serrano",
   "result": "lost"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1057.8856409543591,
+  "elo": 1074.2466115116702,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 976.364796291102,
+  "elo": 943.5135804867518,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1211.563813586079,
+  "elo": 1208.7810589934993,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 941.8441497486705,
+  "elo": 852.323714512284,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1432.4738622133132,
+  "elo": 1424.5132802411097,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Katsuhisa Shibata",
   "wrestler": "Katsuhisa Shibata",
-  "elo": 1059.115011785468,
+  "elo": 1051.4500725639123,
   "opponent": "Ronnie Paul",
   "result": "lost"
  },
  {
   "date": "1972/12/06",
+  "wrestling_as": "Ronnie Paul",
   "wrestler": "Ronnie Paul",
-  "elo": 1067.4489334143132,
+  "elo": 1066.329014540413,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 334.25868670973153,
+  "elo": 312.65658138614504,
   "opponent": "Makoto Arakawa",
   "result": "lost"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 706.5585467029094,
+  "elo": 683.651681890577,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/12/07",
-  "wrestler": "Little Hamada",
-  "elo": 817.1727647449588,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 790.1280582902674,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1091.7599371696815,
+  "elo": 1031.8314414302515,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 757.7287694929969,
+  "elo": 719.4248663224506,
   "opponent": "Greg Peterson",
   "result": "lost"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1009.5348033328336,
+  "elo": 939.1362672129054,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1028.6639782030381,
+  "elo": 1042.6947233541337,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1226.1746449617394,
+  "elo": 1224.5570030722677,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 962.862697422558,
+  "elo": 931.7074846940841,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1435.849386930449,
+  "elo": 1427.4648041892765,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 994.0378953009695,
+  "elo": 994.4946314831418,
   "opponent": "Ronnie Paul",
   "result": "lost"
  },
  {
   "date": "1972/12/07",
+  "wrestling_as": "Ronnie Paul",
   "wrestler": "Ronnie Paul",
-  "elo": 1113.5229129944719,
+  "elo": 1112.6662535939843,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 313.26370258975646,
+  "elo": 291.5200422329657,
   "opponent": "Makoto Arakawa",
   "result": "lost"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 727.5535308228845,
+  "elo": 704.7882210437564,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 732.2196834735363,
+  "elo": 691.0146248340883,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1104.5144801794117,
+  "elo": 1046.0365621744327,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "1972/12/08",
-  "wrestler": "Little Hamada",
-  "elo": 767.4987757406873,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 730.5665550764746,
   "opponent": "Greg Peterson",
   "result": "lost"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1034.3717978349694,
+  "elo": 998.6977704266982,
   "opponent": "Little Hamada",
   "result": "won"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1004.3761349742497,
+  "elo": 1016.7123217888362,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1238.3185665761337,
+  "elo": 1237.5482038549164,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 950.5336283811293,
+  "elo": 920.810528131228,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1438.9316541908063,
+  "elo": 1430.1890433299905,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 952.9791274307142,
+  "elo": 953.129723325648,
   "opponent": "Frank Morrell",
   "result": "lost"
  },
  {
   "date": "1972/12/08",
+  "wrestling_as": "Frank Morrell",
   "wrestler": "Frank Morrell",
-  "elo": 1239.434852418619,
+  "elo": 1238.3427385092966,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Makoto Arakawa",
   "wrestler": "Makoto Arakawa",
-  "elo": 639.0003045747724,
+  "elo": 612.1942368299547,
   "opponent": "Little Hamada",
   "result": "lost"
  },
  {
   "date": "1972/12/11",
-  "wrestler": "Little Hamada",
-  "elo": 856.0520019887994,
+  "wrestling_as": "Little Hamada",
+  "wrestler": "Little Hamada / Hiroaki Hamada",
+  "elo": 823.1605392902763,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
-  "elo": 296.8067998012283,
+  "elo": 273.2900772524093,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 748.6765862620645,
+  "elo": 709.2445898146448,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
-  "elo": 1040.4896351235643,
+  "elo": 991.8264571658682,
   "opponent": "Don Serrano",
   "result": "lost"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 1068.4009800300971,
+  "elo": 1070.9224267974007,
   "opponent": "Shoji Kai",
   "result": "won"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Karl von Stroheim",
   "wrestler": "Karl von Stroheim",
-  "elo": 918.4904676843892,
+  "elo": 893.0025818094742,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1246.3293567503188,
+  "elo": 1244.5001904353549,
   "opponent": "Karl von Stroheim",
   "result": "won"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Greg Peterson",
   "wrestler": "Greg Peterson",
-  "elo": 1025.495502813957,
+  "elo": 983.2983335726522,
   "opponent": "Toyonobori",
   "result": "lost"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Toyonobori",
   "wrestler": "Toyonobori",
-  "elo": 1443.3698017013126,
+  "elo": 1434.038902543502,
   "opponent": "Greg Peterson",
   "result": "won"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 896.157098214371,
+  "elo": 896.0715370316992,
   "opponent": "Ronnie Paul",
   "result": "lost"
  },
  {
   "date": "1972/12/11",
+  "wrestling_as": "Ronnie Paul",
   "wrestler": "Ronnie Paul",
-  "elo": 1141.9339276026435,
+  "elo": 1141.1953467409587,
   "opponent": "Osamu Kido",
   "result": "won"
  }

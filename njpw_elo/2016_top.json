@@ -1,13 +1,7 @@
 [
  {
   "date": "2016/01/04",
-  "wrestler": "Captain New Japan",
-  "elo": 998.5294117647059,
-  "opponent": "Jado (winner), Cheeseburger, Hiro Saito, Hiroyoshi Tenzan, Jushin Thunder Liger, Kazushi Sakuraba, King Haku, Manabu Nakanishi, Mascara Dorada, Ryusuke Taguchi, Satoshi Kojima, Shiro Koshinaka, The Great Kabuki, Tiger Mask, YOSHI-HASHI, Yoshiaki Fujiwara, Yuji Nagata",
-  "result": "lost"
- },
- {
-  "date": "2016/01/04",
+  "wrestling_as": "Mascara Dorada",
   "wrestler": "Mascara Dorada",
   "elo": 998.5784585833708,
   "opponent": "Jado (winner), Captain New Japan, Cheeseburger, Hiro Saito, Hiroyoshi Tenzan, Jushin Thunder Liger, Kazushi Sakuraba, King Haku, Manabu Nakanishi, Ryusuke Taguchi, Satoshi Kojima, Shiro Koshinaka, The Great Kabuki, Tiger Mask, YOSHI-HASHI, Yoshiaki Fujiwara, Yuji Nagata",
@@ -15,6 +9,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 998.5844679855394,
   "opponent": "Jado (winner), Captain New Japan, Cheeseburger, Hiro Saito, Hiroyoshi Tenzan, Jushin Thunder Liger, Kazushi Sakuraba, King Haku, Manabu Nakanishi, Mascara Dorada, Satoshi Kojima, Shiro Koshinaka, The Great Kabuki, Tiger Mask, YOSHI-HASHI, Yoshiaki Fujiwara, Yuji Nagata",
@@ -22,6 +17,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 998.6257683857966,
   "opponent": "Jado (winner), Captain New Japan, Cheeseburger, Hiro Saito, Hiroyoshi Tenzan, Jushin Thunder Liger, Kazushi Sakuraba, King Haku, Manabu Nakanishi, Mascara Dorada, Ryusuke Taguchi, Satoshi Kojima, Shiro Koshinaka, The Great Kabuki, Tiger Mask, YOSHI-HASHI, Yoshiaki Fujiwara",
@@ -29,6 +25,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 950.0,
   "opponent": "Jay Lethal",
@@ -36,6 +33,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Jay Lethal",
   "wrestler": "Jay Lethal",
   "elo": 1050.0,
   "opponent": "Michael Elgin",
@@ -43,6 +41,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 950.0,
   "opponent": "KUSHIDA",
@@ -50,6 +49,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1050.0,
   "opponent": "Kenny Omega",
@@ -57,6 +57,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 950.0,
   "opponent": "Hirooki Goto",
@@ -64,6 +65,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1050.0,
   "opponent": "Tetsuya Naito",
@@ -71,6 +73,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 950.0,
   "opponent": "Katsuyori Shibata",
@@ -78,6 +81,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1050.0,
   "opponent": "Tomohiro Ishii",
@@ -85,6 +89,15 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1050.0,
+  "opponent": "AJ Styles",
+  "result": "won"
+ },
+ {
+  "date": "2016/01/04",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 950.0,
   "opponent": "Kazuchika Okada",
@@ -92,6 +105,7 @@
  },
  {
   "date": "2016/01/04",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1050.0,
   "opponent": "Hiroshi Tanahashi",
@@ -99,6 +113,7 @@
  },
  {
   "date": "2016/01/05",
+  "wrestling_as": "Jay Lethal",
   "wrestler": "Jay Lethal",
   "elo": 1092.8536882591618,
   "opponent": "Juice Robinson",
@@ -106,6 +121,7 @@
  },
  {
   "date": "2016/01/19",
+  "wrestling_as": "Okumura",
   "wrestler": "Okumura",
   "elo": 950.0,
   "opponent": "Panther",
@@ -113,6 +129,7 @@
  },
  {
   "date": "2016/01/19",
+  "wrestling_as": "Bobby Z",
   "wrestler": "Bobby Z",
   "elo": 950.0,
   "opponent": "Guerrero Maya Jr.",
@@ -120,6 +137,7 @@
  },
  {
   "date": "2016/01/20",
+  "wrestling_as": "Bobby Z",
   "wrestler": "Bobby Z",
   "elo": 1078.012999960577,
   "opponent": "Panther",
@@ -127,6 +145,7 @@
  },
  {
   "date": "2016/01/20",
+  "wrestling_as": "Okumura",
   "wrestler": "Okumura",
   "elo": 1078.012999960577,
   "opponent": "Guerrero Maya Jr.",
@@ -134,6 +153,7 @@
  },
  {
   "date": "2016/01/22",
+  "wrestling_as": "El Barbaro Cavernario",
   "wrestler": "El Barbaro Cavernario",
   "elo": 1050.0,
   "opponent": "Titan",
@@ -141,6 +161,7 @@
  },
  {
   "date": "2016/01/22",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 949.7954248868795,
   "opponent": "Mascara Dorada",
@@ -148,6 +169,7 @@
  },
  {
   "date": "2016/01/22",
+  "wrestling_as": "Mascara Dorada",
   "wrestler": "Mascara Dorada",
   "elo": 1098.9876088096119,
   "opponent": "BUSHI",
@@ -155,6 +177,7 @@
  },
  {
   "date": "2016/01/24",
+  "wrestling_as": "Kamaitachi",
   "wrestler": "Kamaitachi",
   "elo": 1057.1463117408382,
   "opponent": "Dragon Lee",
@@ -162,13 +185,15 @@
  },
  {
   "date": "2016/01/24",
-  "wrestler": "Mistico",
+  "wrestling_as": "Mistico",
+  "wrestler": "Mistico / Mistico II",
   "elo": 1050.0,
   "opponent": "Ultimo Guerrero",
   "result": "won"
  },
  {
   "date": "2016/01/24",
+  "wrestling_as": "Volador Jr.",
   "wrestler": "Volador Jr.",
   "elo": 1050.0,
   "opponent": "Mephisto",
@@ -176,6 +201,7 @@
  },
  {
   "date": "2016/01/30",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 949.8005547951032,
   "opponent": "YOSHI-HASHI",
@@ -183,6 +209,7 @@
  },
  {
   "date": "2016/02/04",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1025.6745495713913,
   "opponent": "Hirai Kawato",
@@ -190,6 +217,7 @@
  },
  {
   "date": "2016/02/08",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1050.032770701871,
   "opponent": "Teruaki Kanemitsu",
@@ -197,6 +225,7 @@
  },
  {
   "date": "2016/02/11",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1109.6166368768522,
   "opponent": "David Finlay",
@@ -204,6 +233,7 @@
  },
  {
   "date": "2016/02/11",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 878.012999960577,
   "opponent": "Katsuyori Shibata",
@@ -211,6 +241,7 @@
  },
  {
   "date": "2016/02/11",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1085.9935000197115,
   "opponent": "Tomohiro Ishii",
@@ -218,6 +249,7 @@
  },
  {
   "date": "2016/02/11",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1000.0,
   "opponent": "Kazuchika Okada",
@@ -225,6 +257,7 @@
  },
  {
   "date": "2016/02/11",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1100.0,
   "opponent": "Hirooki Goto",
@@ -232,6 +265,7 @@
  },
  {
   "date": "2016/02/14",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 877.8626767500723,
   "opponent": "KUSHIDA",
@@ -239,6 +273,7 @@
  },
  {
   "date": "2016/02/14",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1085.9663740684036,
   "opponent": "BUSHI",
@@ -246,6 +281,7 @@
  },
  {
   "date": "2016/02/14",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 850.0,
   "opponent": "Kenny Omega",
@@ -253,6 +289,7 @@
  },
  {
   "date": "2016/02/14",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1050.0,
   "opponent": "Hiroshi Tanahashi",
@@ -260,6 +297,7 @@
  },
  {
   "date": "2016/02/19",
+  "wrestling_as": "Delirious",
   "wrestler": "Delirious",
   "elo": 1050.0,
   "opponent": "Gedo",
@@ -267,6 +305,7 @@
  },
  {
   "date": "2016/02/19",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1123.8412562313852,
   "opponent": "Frankie Kazarian",
@@ -274,6 +313,7 @@
  },
  {
   "date": "2016/02/19",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1011.7486754145723,
   "opponent": "Roderick Strong",
@@ -281,6 +321,7 @@
  },
  {
   "date": "2016/02/20",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1152.2254697641404,
   "opponent": "David Finlay",
@@ -288,6 +329,7 @@
  },
  {
   "date": "2016/02/20",
+  "wrestling_as": "Dalton Castle",
   "wrestler": "Dalton Castle",
   "elo": 1044.5708555114597,
   "opponent": "Frankie Kazarian",
@@ -295,6 +337,7 @@
  },
  {
   "date": "2016/02/20",
+  "wrestling_as": "Jay Lethal",
   "wrestler": "Jay Lethal",
   "elo": 1129.8002780893262,
   "opponent": "Tomoaki Honma",
@@ -302,6 +345,7 @@
  },
  {
   "date": "2016/02/25",
+  "wrestling_as": "Maybach Taniguchi",
   "wrestler": "Maybach Taniguchi",
   "elo": 1050.0,
   "opponent": "Takumi Honjo",
@@ -309,6 +353,7 @@
  },
  {
   "date": "2016/02/25",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1098.9918885956317,
   "opponent": "Kaito Kiyomiya",
@@ -316,6 +361,7 @@
  },
  {
   "date": "2016/02/25",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1081.6203894041207,
   "opponent": "Yoshinari Ogawa",
@@ -323,6 +369,7 @@
  },
  {
   "date": "2016/02/25",
+  "wrestling_as": "Yoshinari Ogawa",
   "wrestler": "Yoshinari Ogawa",
   "elo": 1070.6050803600197,
   "opponent": "Jay White",
@@ -330,6 +377,7 @@
  },
  {
   "date": "2016/02/25",
+  "wrestling_as": "Quiet Storm",
   "wrestler": "Quiet Storm",
   "elo": 949.7945561690046,
   "opponent": "Manabu Nakanishi",
@@ -337,6 +385,7 @@
  },
  {
   "date": "2016/02/25",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1043.8639438691464,
   "opponent": "Juice Robinson",
@@ -344,6 +393,7 @@
  },
  {
   "date": "2016/02/25",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1099.0213019767598,
   "opponent": "Mitsuhiro Kitamiya",
@@ -351,6 +401,7 @@
  },
  {
   "date": "2016/03/03",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1050.0,
   "opponent": "Yujiro Takahashi",
@@ -358,6 +409,7 @@
  },
  {
   "date": "2016/03/03",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1063.8830007626102,
   "opponent": "Hiroyoshi Tenzan",
@@ -365,6 +417,7 @@
  },
  {
   "date": "2016/03/03",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 1050.0,
   "opponent": "Togi Makabe",
@@ -372,6 +425,7 @@
  },
  {
   "date": "2016/03/03",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1035.144697541587,
   "opponent": "Hirooki Goto",
@@ -379,6 +433,7 @@
  },
  {
   "date": "2016/03/03",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1063.8766044351728,
   "opponent": "Yuji Nagata",
@@ -386,6 +441,7 @@
  },
  {
   "date": "2016/03/03",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1090.4396492571473,
   "opponent": "YOSHI-HASHI",
@@ -393,6 +449,7 @@
  },
  {
   "date": "2016/03/03",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 951.6901261441726,
   "opponent": "Tomohiro Ishii",
@@ -400,6 +457,7 @@
  },
  {
   "date": "2016/03/03",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1060.0585492703997,
   "opponent": "EVIL",
@@ -407,6 +465,7 @@
  },
  {
   "date": "2016/03/03",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 790.6770006943657,
   "opponent": "Bad Luck Fale",
@@ -414,6 +473,7 @@
  },
  {
   "date": "2016/03/03",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 1029.6614996528172,
   "opponent": "Hiroshi Tanahashi",
@@ -421,6 +481,7 @@
  },
  {
   "date": "2016/03/04",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1115.1927448412332,
   "opponent": "David Finlay",
@@ -428,6 +489,7 @@
  },
  {
   "date": "2016/03/04",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1105.5034689347535,
   "opponent": "Satoshi Kojima",
@@ -435,6 +497,7 @@
  },
  {
   "date": "2016/03/04",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 1001.9959427041484,
   "opponent": "Hirooki Goto",
@@ -442,6 +505,7 @@
  },
  {
   "date": "2016/03/04",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1111.8806617310242,
   "opponent": "Tama Tonga",
@@ -449,6 +513,7 @@
  },
  {
   "date": "2016/03/04",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 984.5705045138997,
   "opponent": "Michael Elgin",
@@ -456,6 +521,7 @@
  },
  {
   "date": "2016/03/04",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1108.9739959015278,
   "opponent": "Bad Luck Fale",
@@ -463,6 +529,7 @@
  },
  {
   "date": "2016/03/04",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1014.4196311180145,
   "opponent": "Tetsuya Naito",
@@ -470,20 +537,15 @@
  },
  {
   "date": "2016/03/04",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1136.0785674095325,
   "opponent": "Tomohiro Ishii",
   "result": "won"
  },
  {
-  "date": "2016/03/08",
-  "wrestler": "Captain New Japan",
-  "elo": 1084.6516595988307,
-  "opponent": "Takumi Honjo",
-  "result": "won"
- },
- {
   "date": "2016/03/10",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1109.380224738153,
   "opponent": "Hirai Kawato",
@@ -491,6 +553,7 @@
  },
  {
   "date": "2016/03/12",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1147.5042768925107,
   "opponent": "David Finlay",
@@ -498,6 +561,7 @@
  },
  {
   "date": "2016/03/12",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1059.8922556627303,
   "opponent": "Tetsuya Naito",
@@ -505,6 +569,7 @@
  },
  {
   "date": "2016/03/12",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1228.7821065113906,
   "opponent": "Toru Yano; Hirooki Goto",
@@ -512,6 +577,7 @@
  },
  {
   "date": "2016/03/12",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1059.3922889807516,
   "opponent": "Hirooki Goto",
@@ -519,6 +585,7 @@
  },
  {
   "date": "2016/03/12",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1114.3700428219656,
   "opponent": "Michael Elgin; Tetsuya Naito",
@@ -526,6 +593,7 @@
  },
  {
   "date": "2016/03/19",
+  "wrestling_as": "Steve Anthony",
   "wrestler": "Steve Anthony",
   "elo": 1056.1397745814386,
   "opponent": "Tiger Mask",
@@ -533,6 +601,7 @@
  },
  {
   "date": "2016/03/19",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1076.1244336121972,
   "opponent": "Juice Robinson",
@@ -540,6 +609,7 @@
  },
  {
   "date": "2016/03/19",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1128.410831165048,
   "opponent": "Satoshi Kojima",
@@ -547,6 +617,7 @@
  },
  {
   "date": "2016/03/20",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1150.721427200242,
   "opponent": "Gedo",
@@ -554,6 +625,7 @@
  },
  {
   "date": "2016/03/20",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 869.5514663197425,
   "opponent": "Tomohiro Ishii",
@@ -561,6 +633,7 @@
  },
  {
   "date": "2016/03/20",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1055.4889610302296,
   "opponent": "EVIL",
@@ -568,6 +641,7 @@
  },
  {
   "date": "2016/03/27",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1100.927345832821,
   "opponent": "Cody Hall",
@@ -575,6 +649,7 @@
  },
  {
   "date": "2016/03/27",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1087.3740207555254,
   "opponent": "Kenny Omega",
@@ -582,6 +657,7 @@
  },
  {
   "date": "2016/03/27",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1136.2546897491825,
   "opponent": "Jay White",
@@ -589,6 +665,7 @@
  },
  {
   "date": "2016/03/27",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 933.5686750862951,
   "opponent": "Yujiro Takahashi",
@@ -596,6 +673,7 @@
  },
  {
   "date": "2016/03/27",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 1053.5821209746837,
   "opponent": "Tomoaki Honma",
@@ -603,6 +681,7 @@
  },
  {
   "date": "2016/03/27",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 944.5684933448898,
   "opponent": "Togi Makabe",
@@ -610,6 +689,7 @@
  },
  {
   "date": "2016/03/30",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1040.5367397919138,
   "opponent": "Ryusuke Taguchi",
@@ -617,6 +697,7 @@
  },
  {
   "date": "2016/03/30",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1156.2175057017646,
   "opponent": "Jay White",
@@ -624,6 +705,7 @@
  },
  {
   "date": "2016/04/01",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1074.124104605523,
   "opponent": "David Finlay",
@@ -631,6 +713,7 @@
  },
  {
   "date": "2016/04/10",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 970.4250702902561,
   "opponent": "KUSHIDA",
@@ -638,6 +721,7 @@
  },
  {
   "date": "2016/04/10",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1180.296356909986,
   "opponent": "Will Ospreay",
@@ -645,6 +729,7 @@
  },
  {
   "date": "2016/04/10",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1148.1430780324652,
   "opponent": "Hiroyoshi Tenzan",
@@ -652,6 +737,7 @@
  },
  {
   "date": "2016/04/10",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1067.7286490275606,
   "opponent": "Tetsuya Naito",
@@ -659,6 +745,7 @@
  },
  {
   "date": "2016/04/10",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1244.9177819976103,
   "opponent": "Kazuchika Okada",
@@ -666,6 +753,7 @@
  },
  {
   "date": "2016/04/17",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1164.2748571698955,
   "opponent": "Teruaki Kanemitsu",
@@ -673,6 +761,7 @@
  },
  {
   "date": "2016/04/24",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1096.1910286530415,
   "opponent": "David Finlay",
@@ -680,6 +769,7 @@
  },
  {
   "date": "2016/04/27",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 986.9664571635745,
   "opponent": "Hiroshi Tanahashi",
@@ -687,6 +777,7 @@
  },
  {
   "date": "2016/04/27",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1066.8000027085134,
   "opponent": "Bad Luck Fale",
@@ -694,6 +785,7 @@
  },
  {
   "date": "2016/04/27",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1055.9939104602101,
   "opponent": "Kenny Omega",
@@ -701,6 +793,7 @@
  },
  {
   "date": "2016/04/27",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1181.1881251217933,
   "opponent": "Michael Elgin",
@@ -708,6 +801,7 @@
  },
  {
   "date": "2016/04/28",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1104.7455937385982,
   "opponent": "Teruaki Kanemitsu",
@@ -715,6 +809,7 @@
  },
  {
   "date": "2016/05/03",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1082.4314194360213,
   "opponent": "Yuji Nagata",
@@ -722,6 +817,7 @@
  },
  {
   "date": "2016/05/03",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1100.8563561380308,
   "opponent": "Katsuyori Shibata",
@@ -729,6 +825,7 @@
  },
  {
   "date": "2016/05/03",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1216.871826202293,
   "opponent": "Jushin Thunder Liger",
@@ -736,6 +833,7 @@
  },
  {
   "date": "2016/05/03",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1034.0046650300533,
   "opponent": "EVIL",
@@ -743,6 +841,7 @@
  },
  {
   "date": "2016/05/03",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 1030.282221903567,
   "opponent": "Hirooki Goto",
@@ -750,6 +849,7 @@
  },
  {
   "date": "2016/05/03",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1108.1033294177173,
   "opponent": "SANADA",
@@ -757,6 +857,7 @@
  },
  {
   "date": "2016/05/03",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1030.335416800041,
   "opponent": "Tetsuya Naito",
@@ -764,6 +865,7 @@
  },
  {
   "date": "2016/05/03",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1257.4945541127047,
   "opponent": "Tomohiro Ishii",
@@ -771,6 +873,7 @@
  },
  {
   "date": "2016/05/08",
+  "wrestling_as": "Kelly Klein",
   "wrestler": "Kelly Klein",
   "elo": 1050.0,
   "opponent": "Mary Dobson",
@@ -778,6 +881,7 @@
  },
  {
   "date": "2016/05/08",
+  "wrestling_as": "ACH",
   "wrestler": "ACH",
   "elo": 992.7298841825203,
   "opponent": "Dalton Castle (winner), Adam Page, Roderick Strong",
@@ -785,6 +889,7 @@
  },
  {
   "date": "2016/05/08",
+  "wrestling_as": "Dalton Castle",
   "wrestler": "Dalton Castle",
   "elo": 1064.3811476493538,
   "opponent": "ACH, Adam Page, Roderick Strong",
@@ -792,6 +897,7 @@
  },
  {
   "date": "2016/05/08",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 981.4913366560975,
   "opponent": "Tetsuya Naito",
@@ -799,6 +905,7 @@
  },
  {
   "date": "2016/05/08",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1266.7488857846558,
   "opponent": "Kyle O'Reilly",
@@ -806,6 +913,7 @@
  },
  {
   "date": "2016/05/08",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 975.9808593512246,
   "opponent": "Bobby Fish",
@@ -813,6 +921,7 @@
  },
  {
   "date": "2016/05/08",
+  "wrestling_as": "Bobby Fish",
   "wrestler": "Bobby Fish",
   "elo": 1054.3545574488164,
   "opponent": "Tomohiro Ishii",
@@ -820,6 +929,7 @@
  },
  {
   "date": "2016/05/08",
+  "wrestling_as": "Colt Cabana",
   "wrestler": "Colt Cabana",
   "elo": 1017.856620730342,
   "opponent": "Jay Lethal",
@@ -827,6 +937,7 @@
  },
  {
   "date": "2016/05/08",
+  "wrestling_as": "Jay Lethal",
   "wrestler": "Jay Lethal",
   "elo": 1111.9436573589842,
   "opponent": "Colt Cabana",
@@ -834,6 +945,7 @@
  },
  {
   "date": "2016/05/09",
+  "wrestling_as": "Kamaitachi",
   "wrestler": "Kamaitachi",
   "elo": 1098.995666070175,
   "opponent": "Will Ferrara",
@@ -841,6 +953,7 @@
  },
  {
   "date": "2016/05/09",
+  "wrestling_as": "Dalton Castle",
   "wrestler": "Dalton Castle",
   "elo": 1035.0179029025833,
   "opponent": "KUSHIDA",
@@ -848,6 +961,7 @@
  },
  {
   "date": "2016/05/09",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1231.5534485756782,
   "opponent": "Dalton Castle",
@@ -855,6 +969,7 @@
  },
  {
   "date": "2016/05/09",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1082.8831311927993,
   "opponent": "Moose",
@@ -862,6 +977,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "ACH",
   "wrestler": "ACH",
   "elo": 1077.5957864283173,
   "opponent": "Lio Rush",
@@ -869,6 +985,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 965.0739827425963,
   "opponent": "Kazuchika Okada",
@@ -876,6 +993,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1143.029346675121,
   "opponent": "Matt Sydal",
@@ -883,6 +1001,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "Colt Cabana",
   "wrestler": "Colt Cabana",
   "elo": 1064.271373189353,
   "opponent": "Adam Page",
@@ -890,6 +1009,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "Donovan Dijak",
   "wrestler": "Donovan Dijak",
   "elo": 965.5747293481594,
   "opponent": "Jay Lethal",
@@ -897,6 +1017,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "Jay Lethal",
   "wrestler": "Jay Lethal",
   "elo": 1146.368928010825,
   "opponent": "Donovan Dijak",
@@ -904,6 +1025,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "Dalton Castle",
   "wrestler": "Dalton Castle",
   "elo": 1088.2269211079347,
   "opponent": "Gedo; Caprice Coleman, Cedric Alexander, Kamaitachi",
@@ -911,6 +1033,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1273.5824344688967,
   "opponent": "Moose",
@@ -918,6 +1041,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1191.134795349014,
   "opponent": "Kyle O'Reilly",
@@ -925,6 +1049,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 1143.1659495627541,
   "opponent": "KUSHIDA",
@@ -932,6 +1057,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "Kamaitachi",
   "wrestler": "Kamaitachi",
   "elo": 1090.193413099951,
   "opponent": "Dalton Castle (winner), Caprice Coleman, Cedric Alexander",
@@ -939,6 +1065,7 @@
  },
  {
   "date": "2016/05/11",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1115.666091505127,
   "opponent": "Will Ferrara",
@@ -946,6 +1073,7 @@
  },
  {
   "date": "2016/05/14",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1048.5134356034093,
   "opponent": "Dalton Castle (winner), Lio Rush, Moose",
@@ -953,6 +1081,7 @@
  },
  {
   "date": "2016/05/14",
+  "wrestling_as": "Dalton Castle",
   "wrestler": "Dalton Castle",
   "elo": 1103.522842554123,
   "opponent": "Lio Rush, Michael Elgin, Moose",
@@ -960,6 +1089,7 @@
  },
  {
   "date": "2016/05/14",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1216.1039073763968,
   "opponent": "Silas Young",
@@ -967,6 +1097,7 @@
  },
  {
   "date": "2016/05/14",
+  "wrestling_as": "Donovan Dijak",
   "wrestler": "Donovan Dijak",
   "elo": 1073.5629667408346,
   "opponent": "Cedric Alexander",
@@ -974,6 +1105,7 @@
  },
  {
   "date": "2016/05/14",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 893.5441468173008,
   "opponent": "Hiroshi Tanahashi",
@@ -981,6 +1113,7 @@
  },
  {
   "date": "2016/05/14",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1102.5649206711612,
   "opponent": "Matt Sydal",
@@ -988,6 +1121,7 @@
  },
  {
   "date": "2016/05/14",
+  "wrestling_as": "ACH",
   "wrestler": "ACH",
   "elo": 1053.1462549246708,
   "opponent": "Tetsuya Naito",
@@ -995,6 +1129,7 @@
  },
  {
   "date": "2016/05/14",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1285.80720022072,
   "opponent": "ACH",
@@ -1002,6 +1137,7 @@
  },
  {
   "date": "2016/05/19",
+  "wrestling_as": "Yoshinari Ogawa",
   "wrestler": "Yoshinari Ogawa",
   "elo": 1088.9138224279884,
   "opponent": "David Finlay",
@@ -1009,6 +1145,7 @@
  },
  {
   "date": "2016/05/19",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1040.1121783400008,
   "opponent": "Naomichi Marufuji",
@@ -1016,6 +1153,7 @@
  },
  {
   "date": "2016/05/19",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1064.6334153985974,
   "opponent": "Jay White",
@@ -1023,13 +1161,15 @@
  },
  {
   "date": "2016/05/21",
-  "wrestler": "Rocky Romero",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Rocky Romero / Black Tiger IV",
   "elo": 1021.4178479679961,
   "opponent": "David Finlay",
   "result": "won"
  },
  {
   "date": "2016/05/21",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 765.3574035652493,
   "opponent": "Gedo",
@@ -1037,6 +1177,7 @@
  },
  {
   "date": "2016/05/21",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 858.7703476847614,
   "opponent": "Ryusuke Taguchi",
@@ -1044,6 +1185,7 @@
  },
  {
   "date": "2016/05/21",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1181.6617567361652,
   "opponent": "Matt Sydal",
@@ -1051,6 +1193,7 @@
  },
  {
   "date": "2016/05/21",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1185.9313644774043,
   "opponent": "Kyle O'Reilly",
@@ -1058,6 +1201,7 @@
  },
  {
   "date": "2016/05/21",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 1203.5110353607395,
   "opponent": "KUSHIDA",
@@ -1065,6 +1209,7 @@
  },
  {
   "date": "2016/05/22",
+  "wrestling_as": "Bobby Fish",
   "wrestler": "Bobby Fish",
   "elo": 1003.453680468468,
   "opponent": "Jushin Thunder Liger",
@@ -1072,6 +1217,7 @@
  },
  {
   "date": "2016/05/22",
+  "wrestling_as": "Volador Jr.",
   "wrestler": "Volador Jr.",
   "elo": 992.8536882591618,
   "opponent": "Beretta",
@@ -1079,6 +1225,7 @@
  },
  {
   "date": "2016/05/22",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 878.9169185574074,
   "opponent": "Chase Owens",
@@ -1086,6 +1233,7 @@
  },
  {
   "date": "2016/05/23",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 691.614156595397,
   "opponent": "Matt Sydal",
@@ -1093,6 +1241,7 @@
  },
  {
   "date": "2016/05/23",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 932.5135946546137,
   "opponent": "BUSHI",
@@ -1100,6 +1249,7 @@
  },
  {
   "date": "2016/05/23",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 1212.7947091638418,
   "opponent": "Gedo",
@@ -1107,6 +1257,7 @@
  },
  {
   "date": "2016/05/23",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1188.6257649297588,
   "opponent": "David Finlay",
@@ -1114,6 +1265,7 @@
  },
  {
   "date": "2016/05/23",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1113.879898377177,
   "opponent": "Rocky Romero",
@@ -1121,13 +1273,15 @@
  },
  {
   "date": "2016/05/23",
-  "wrestler": "Rocky Romero",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Rocky Romero / Black Tiger IV",
   "elo": 1093.4693140682234,
   "opponent": "KUSHIDA",
   "result": "won"
  },
  {
   "date": "2016/05/24",
+  "wrestling_as": "Volador Jr.",
   "wrestler": "Volador Jr.",
   "elo": 1089.0246943057618,
   "opponent": "Tiger Mask",
@@ -1135,6 +1289,7 @@
  },
  {
   "date": "2016/05/24",
+  "wrestling_as": "Bobby Fish",
   "wrestler": "Bobby Fish",
   "elo": 960.8104427192617,
   "opponent": "Ricochet",
@@ -1142,6 +1297,7 @@
  },
  {
   "date": "2016/05/24",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 826.1437220866841,
   "opponent": "Beretta",
@@ -1149,6 +1305,7 @@
  },
  {
   "date": "2016/05/25",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 1025.9157129293071,
   "opponent": "Gedo",
@@ -1156,6 +1313,7 @@
  },
  {
   "date": "2016/05/25",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 682.1303952365311,
   "opponent": "Kyle O'Reilly",
@@ -1163,6 +1321,7 @@
  },
  {
   "date": "2016/05/25",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 1215.1656495035584,
   "opponent": "BUSHI",
@@ -1170,6 +1329,7 @@
  },
  {
   "date": "2016/05/25",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1123.1404918763162,
   "opponent": "David Finlay",
@@ -1177,13 +1337,15 @@
  },
  {
   "date": "2016/05/25",
-  "wrestler": "Rocky Romero",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Rocky Romero / Black Tiger IV",
   "elo": 1056.8309937910437,
   "opponent": "Ryusuke Taguchi",
   "result": "lost"
  },
  {
   "date": "2016/05/25",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1225.2640852069385,
   "opponent": "Rocky Romero",
@@ -1191,6 +1353,7 @@
  },
  {
   "date": "2016/05/27",
+  "wrestling_as": "Bobby Fish",
   "wrestler": "Bobby Fish",
   "elo": 1094.733576782623,
   "opponent": "Beretta",
@@ -1198,6 +1361,7 @@
  },
  {
   "date": "2016/05/27",
+  "wrestling_as": "Volador Jr.",
   "wrestler": "Volador Jr.",
   "elo": 1146.5044386300692,
   "opponent": "Jushin Thunder Liger",
@@ -1205,6 +1369,7 @@
  },
  {
   "date": "2016/05/27",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 991.4882130022326,
   "opponent": "Ricochet",
@@ -1212,13 +1377,15 @@
  },
  {
   "date": "2016/05/29",
-  "wrestler": "Rocky Romero",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Rocky Romero / Black Tiger IV",
   "elo": 967.1993490514335,
   "opponent": "BUSHI",
   "result": "lost"
  },
  {
   "date": "2016/05/29",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 861.3936847157515,
   "opponent": "Rocky Romero",
@@ -1226,6 +1393,7 @@
  },
  {
   "date": "2016/05/29",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 1177.7521173298958,
   "opponent": "Matt Sydal",
@@ -1233,6 +1401,7 @@
  },
  {
   "date": "2016/05/29",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 1100.7427772766325,
   "opponent": "Kyle O'Reilly",
@@ -1240,6 +1409,7 @@
  },
  {
   "date": "2016/05/29",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1193.1202638563689,
   "opponent": "KUSHIDA",
@@ -1247,6 +1417,7 @@
  },
  {
   "date": "2016/05/29",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1187.4281345774555,
   "opponent": "Ryusuke Taguchi",
@@ -1254,6 +1425,7 @@
  },
  {
   "date": "2016/05/30",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 898.7024350551026,
   "opponent": "Tiger Mask",
@@ -1261,6 +1433,7 @@
  },
  {
   "date": "2016/05/30",
+  "wrestling_as": "Volador Jr.",
   "wrestler": "Volador Jr.",
   "elo": 1089.1086692721153,
   "opponent": "Bobby Fish",
@@ -1268,6 +1441,7 @@
  },
  {
   "date": "2016/05/30",
+  "wrestling_as": "Bobby Fish",
   "wrestler": "Bobby Fish",
   "elo": 1152.129346140577,
   "opponent": "Volador Jr.",
@@ -1275,6 +1449,7 @@
  },
  {
   "date": "2016/05/31",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 952.787924001586,
   "opponent": "David Finlay",
@@ -1282,13 +1457,15 @@
  },
  {
   "date": "2016/05/31",
-  "wrestler": "Rocky Romero",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Rocky Romero / Black Tiger IV",
   "elo": 903.84890591621,
   "opponent": "Matt Sydal",
   "result": "lost"
  },
  {
   "date": "2016/05/31",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 1132.4179988442443,
   "opponent": "Rocky Romero",
@@ -1296,6 +1473,7 @@
  },
  {
   "date": "2016/05/31",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1192.6430355574596,
   "opponent": "Gedo",
@@ -1303,6 +1481,7 @@
  },
  {
   "date": "2016/05/31",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 1129.9623301112092,
   "opponent": "Ryusuke Taguchi",
@@ -1310,6 +1489,7 @@
  },
  {
   "date": "2016/05/31",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1240.9100510750554,
   "opponent": "Kyle O'Reilly",
@@ -1317,6 +1497,7 @@
  },
  {
   "date": "2016/06/02",
+  "wrestling_as": "Volador Jr.",
   "wrestler": "Volador Jr.",
   "elo": 1134.8328890856867,
   "opponent": "Chase Owens",
@@ -1324,6 +1505,7 @@
  },
  {
   "date": "2016/06/02",
+  "wrestling_as": "Bobby Fish",
   "wrestler": "Bobby Fish",
   "elo": 1070.9937876496883,
   "opponent": "Will Ospreay",
@@ -1331,6 +1513,7 @@
  },
  {
   "date": "2016/06/02",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 1060.9735520368797,
   "opponent": "Bobby Fish",
@@ -1338,6 +1521,7 @@
  },
  {
   "date": "2016/06/03",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 1139.5434818759495,
   "opponent": "David Finlay",
@@ -1345,13 +1529,15 @@
  },
  {
   "date": "2016/06/03",
-  "wrestler": "Rocky Romero",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Rocky Romero / Black Tiger IV",
   "elo": 945.7563356423158,
   "opponent": "Gedo",
   "result": "won"
  },
  {
   "date": "2016/06/03",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1198.907792000104,
   "opponent": "BUSHI",
@@ -1359,6 +1545,7 @@
  },
  {
   "date": "2016/06/03",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 1120.7969603013912,
   "opponent": "Ryusuke Taguchi",
@@ -1366,6 +1553,7 @@
  },
  {
   "date": "2016/06/03",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 1090.9993016599249,
   "opponent": "KUSHIDA",
@@ -1373,6 +1561,7 @@
  },
  {
   "date": "2016/06/03",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1234.061732741779,
   "opponent": "Matt Sydal",
@@ -1380,6 +1569,7 @@
  },
  {
   "date": "2016/06/05",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 1113.6635540378577,
   "opponent": "Jushin Thunder Liger",
@@ -1387,6 +1577,7 @@
  },
  {
   "date": "2016/06/05",
+  "wrestling_as": "Bobby Fish",
   "wrestler": "Bobby Fish",
   "elo": 1112.80855353534,
   "opponent": "Chase Owens",
@@ -1394,6 +1585,7 @@
  },
  {
   "date": "2016/06/05",
+  "wrestling_as": "Volador Jr.",
   "wrestler": "Volador Jr.",
   "elo": 1181.004321545842,
   "opponent": "Ricochet",
@@ -1401,6 +1593,7 @@
  },
  {
   "date": "2016/06/06",
+  "wrestling_as": "Bobby Fish",
   "wrestler": "Bobby Fish",
   "elo": 1152.6088392709787,
   "opponent": "Tiger Mask",
@@ -1408,6 +1601,7 @@
  },
  {
   "date": "2016/06/06",
+  "wrestling_as": "Volador Jr.",
   "wrestler": "Volador Jr.",
   "elo": 1121.432765465252,
   "opponent": "Will Ospreay",
@@ -1415,6 +1609,7 @@
  },
  {
   "date": "2016/06/06",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 1173.2351101184477,
   "opponent": "Volador Jr.",
@@ -1422,6 +1617,7 @@
  },
  {
   "date": "2016/06/06",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 1064.2276464038328,
   "opponent": "Rocky Romero",
@@ -1429,13 +1625,15 @@
  },
  {
   "date": "2016/06/06",
-  "wrestler": "Rocky Romero",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Rocky Romero / Black Tiger IV",
   "elo": 1096.3880065865492,
   "opponent": "Kyle O'Reilly",
   "result": "won"
  },
  {
   "date": "2016/06/06",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 1101.6144154211383,
   "opponent": "David Finlay",
@@ -1443,6 +1641,7 @@
  },
  {
   "date": "2016/06/06",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1202.578274522822,
   "opponent": "Gedo",
@@ -1450,6 +1649,7 @@
  },
  {
   "date": "2016/06/06",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1201.1886319062141,
   "opponent": "BUSHI",
@@ -1457,6 +1657,7 @@
  },
  {
   "date": "2016/06/06",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 1186.5431619725207,
   "opponent": "KUSHIDA",
@@ -1464,6 +1665,7 @@
  },
  {
   "date": "2016/06/07",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1052.4593811188101,
   "opponent": "David Finlay",
@@ -1471,6 +1673,7 @@
  },
  {
   "date": "2016/06/07",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1175.4718699865234,
   "opponent": "Will Ospreay",
@@ -1478,6 +1681,7 @@
  },
  {
   "date": "2016/06/07",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 1227.447919191045,
   "opponent": "Ryusuke Taguchi",
@@ -1485,6 +1689,7 @@
  },
  {
   "date": "2016/06/19",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 980.8179040348606,
   "opponent": "Hirooki Goto",
@@ -1492,6 +1697,7 @@
  },
  {
   "date": "2016/06/19",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1083.4689828987598,
   "opponent": "EVIL",
@@ -1499,6 +1705,7 @@
  },
  {
   "date": "2016/06/19",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 1200.5620012444367,
   "opponent": "KUSHIDA",
@@ -1506,6 +1713,7 @@
  },
  {
   "date": "2016/06/19",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1228.0745498528224,
   "opponent": "Will Ospreay",
@@ -1513,6 +1721,7 @@
  },
  {
   "date": "2016/06/19",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1048.207277480454,
   "opponent": "Katsuyori Shibata",
@@ -1520,6 +1729,7 @@
  },
  {
   "date": "2016/06/19",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1135.0804980935982,
   "opponent": "Yuji Nagata",
@@ -1527,6 +1737,7 @@
  },
  {
   "date": "2016/06/19",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1112.971674514906,
   "opponent": "Michael Elgin",
@@ -1534,6 +1745,7 @@
  },
  {
   "date": "2016/06/19",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1116.7298862102966,
   "opponent": "Kenny Omega",
@@ -1541,6 +1753,7 @@
  },
  {
   "date": "2016/06/19",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1251.0752736589009,
   "opponent": "Kazuchika Okada",
@@ -1548,6 +1761,7 @@
  },
  {
   "date": "2016/06/19",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1212.4931997987594,
   "opponent": "Tetsuya Naito",
@@ -1555,6 +1769,7 @@
  },
  {
   "date": "2016/06/24",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1180.7804479069835,
   "opponent": "David Finlay",
@@ -1562,6 +1777,7 @@
  },
  {
   "date": "2016/06/25",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 1109.0801235972726,
   "opponent": "David Finlay",
@@ -1569,6 +1785,7 @@
  },
  {
   "date": "2016/06/27",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1185.2638089553784,
   "opponent": "David Finlay",
@@ -1576,6 +1793,7 @@
  },
  {
   "date": "2016/07/03",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1148.040479209633,
   "opponent": "Tomoaki Honma",
@@ -1583,6 +1801,7 @@
  },
  {
   "date": "2016/07/09",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 1190.3808418910128,
   "opponent": "David Finlay",
@@ -1590,6 +1809,7 @@
  },
  {
   "date": "2016/07/18",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1033.0749242470395,
   "opponent": "Hiroyoshi Tenzan",
@@ -1597,6 +1817,7 @@
  },
  {
   "date": "2016/07/18",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 877.8696907717554,
   "opponent": "Togi Makabe",
@@ -1604,6 +1825,7 @@
  },
  {
   "date": "2016/07/18",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 914.0492062574868,
   "opponent": "Hirooki Goto",
@@ -1611,6 +1833,7 @@
  },
  {
   "date": "2016/07/18",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1119.9276083518037,
   "opponent": "Bad Luck Fale",
@@ -1618,6 +1841,7 @@
  },
  {
   "date": "2016/07/18",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1033.0813211583516,
   "opponent": "SANADA",
@@ -1625,6 +1849,7 @@
  },
  {
   "date": "2016/07/18",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1177.4527904553233,
   "opponent": "Naomichi Marufuji",
@@ -1632,6 +1857,7 @@
  },
  {
   "date": "2016/07/18",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1134.7142340854696,
   "opponent": "Kazuchika Okada",
@@ -1639,6 +1865,7 @@
  },
  {
   "date": "2016/07/20",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 1143.878454020101,
   "opponent": "Kaji Tomato",
@@ -1646,6 +1873,7 @@
  },
  {
   "date": "2016/07/20",
+  "wrestling_as": "Taichi",
   "wrestler": "Taichi",
   "elo": 1050.0,
   "opponent": "Yuma Aoyagi",
@@ -1653,6 +1881,7 @@
  },
  {
   "date": "2016/07/20",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 1210.12107995468,
   "opponent": "Titan",
@@ -1660,6 +1889,7 @@
  },
  {
   "date": "2016/07/20",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 1115.4313521174286,
   "opponent": "Yoshinobu Kanemaru",
@@ -1667,6 +1897,7 @@
  },
  {
   "date": "2016/07/20",
+  "wrestling_as": "Yoshinobu Kanemaru",
   "wrestler": "Yoshinobu Kanemaru",
   "elo": 1074.9494897735842,
   "opponent": "BUSHI",
@@ -1674,6 +1905,7 @@
  },
  {
   "date": "2016/07/20",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1210.87141641782,
   "opponent": "Daisuke Harada",
@@ -1681,6 +1913,7 @@
  },
  {
   "date": "2016/07/20",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1241.3997003949423,
   "opponent": "Taiji Ishimori",
@@ -1688,6 +1921,7 @@
  },
  {
   "date": "2016/07/22",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1007.5872311822213,
   "opponent": "Katsuhiko Nakajima",
@@ -1695,6 +1929,7 @@
  },
  {
   "date": "2016/07/22",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1096.1689683496554,
   "opponent": "Toru Yano",
@@ -1702,6 +1937,7 @@
  },
  {
   "date": "2016/07/22",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1052.5972312623533,
   "opponent": "YOSHI-HASHI",
@@ -1709,6 +1945,7 @@
  },
  {
   "date": "2016/07/22",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1048.1107697106638,
   "opponent": "EVIL",
@@ -1716,6 +1953,7 @@
  },
  {
   "date": "2016/07/22",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 1118.0561370341263,
   "opponent": "Michael Elgin",
@@ -1723,6 +1961,7 @@
  },
  {
   "date": "2016/07/22",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1212.9378987631362,
   "opponent": "Yuji Nagata",
@@ -1730,6 +1969,7 @@
  },
  {
   "date": "2016/07/22",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1124.482027271983,
   "opponent": "Tetsuya Naito",
@@ -1737,6 +1977,7 @@
  },
  {
   "date": "2016/07/22",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1058.6780070243287,
   "opponent": "Tomoaki Honma",
@@ -1744,6 +1985,7 @@
  },
  {
   "date": "2016/07/23",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 814.2622630475155,
   "opponent": "Hiroyoshi Tenzan",
@@ -1751,6 +1993,7 @@
  },
  {
   "date": "2016/07/23",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 995.320016973006,
   "opponent": "Hirooki Goto",
@@ -1758,6 +2001,7 @@
  },
  {
   "date": "2016/07/23",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1157.6825156258371,
   "opponent": "Tomohiro Ishii",
@@ -1765,6 +2009,7 @@
  },
  {
   "date": "2016/07/23",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1056.6356798519087,
   "opponent": "Bad Luck Fale",
@@ -1772,6 +2017,7 @@
  },
  {
   "date": "2016/07/23",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 1070.2063147246085,
   "opponent": "Naomichi Marufuji",
@@ -1779,6 +2025,7 @@
  },
  {
   "date": "2016/07/23",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1216.2948457618581,
   "opponent": "SANADA",
@@ -1786,6 +2033,7 @@
  },
  {
   "date": "2016/07/23",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 992.3450359014087,
   "opponent": "Togi Makabe",
@@ -1793,6 +2041,7 @@
  },
  {
   "date": "2016/07/24",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 1068.980791545539,
   "opponent": "Yuji Nagata",
@@ -1800,6 +2049,7 @@
  },
  {
   "date": "2016/07/24",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1173.5573727605704,
   "opponent": "EVIL",
@@ -1807,6 +2057,7 @@
  },
  {
   "date": "2016/07/24",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 964.0286954535534,
   "opponent": "Kenny Omega",
@@ -1814,6 +2065,7 @@
  },
  {
   "date": "2016/07/24",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1096.1557669910212,
   "opponent": "Toru Yano",
@@ -1821,6 +2073,7 @@
  },
  {
   "date": "2016/07/24",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1040.7944296220037,
   "opponent": "Katsuyori Shibata",
@@ -1828,6 +2081,7 @@
  },
  {
   "date": "2016/07/24",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1114.0525457519805,
   "opponent": "Katsuhiko Nakajima",
@@ -1835,6 +2089,7 @@
  },
  {
   "date": "2016/07/24",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1020.198575231679,
   "opponent": "Tetsuya Naito",
@@ -1842,6 +2097,7 @@
  },
  {
   "date": "2016/07/24",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1226.8939960026287,
   "opponent": "Michael Elgin",
@@ -1849,6 +2105,7 @@
  },
  {
   "date": "2016/07/25",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 1009.5931570803745,
   "opponent": "Tomohiro Ishii",
@@ -1856,6 +2113,7 @@
  },
  {
   "date": "2016/07/25",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1116.5463322614742,
   "opponent": "Bad Luck Fale",
@@ -1863,6 +2121,7 @@
  },
  {
   "date": "2016/07/25",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1104.5574822437093,
   "opponent": "Hiroyoshi Tenzan",
@@ -1870,6 +2129,7 @@
  },
  {
   "date": "2016/07/25",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 845.1510273025851,
   "opponent": "Tama Tonga",
@@ -1877,6 +2137,7 @@
  },
  {
   "date": "2016/07/25",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 961.456271646339,
   "opponent": "Hiroshi Tanahashi",
@@ -1884,6 +2145,7 @@
  },
  {
   "date": "2016/07/25",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1116.0383895845166,
   "opponent": "Kazuchika Okada",
@@ -1891,6 +2153,7 @@
  },
  {
   "date": "2016/07/25",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1237.1169087825183,
   "opponent": "Hirooki Goto",
@@ -1898,6 +2161,7 @@
  },
  {
   "date": "2016/07/27",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1204.7107878703657,
   "opponent": "YOSHI-HASHI",
@@ -1905,6 +2169,7 @@
  },
  {
   "date": "2016/07/27",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 1014.93332366576,
   "opponent": "Katsuhiko Nakajima",
@@ -1912,6 +2177,7 @@
  },
  {
   "date": "2016/07/27",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1094.8418975017828,
   "opponent": "EVIL",
@@ -1919,6 +2185,7 @@
  },
  {
   "date": "2016/07/27",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 927.9349279540406,
   "opponent": "Tetsuya Naito",
@@ -1926,6 +2193,7 @@
  },
  {
   "date": "2016/07/27",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1235.917437877507,
   "opponent": "Toru Yano",
@@ -1933,6 +2201,7 @@
  },
  {
   "date": "2016/07/27",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1146.1419127833533,
   "opponent": "Tomoaki Honma",
@@ -1940,6 +2209,7 @@
  },
  {
   "date": "2016/07/27",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1050.8650958041683,
   "opponent": "Michael Elgin",
@@ -1947,6 +2217,7 @@
  },
  {
   "date": "2016/07/27",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1083.3860251794913,
   "opponent": "Katsuyori Shibata",
@@ -1954,6 +2225,7 @@
  },
  {
   "date": "2016/07/28",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1052.686273928559,
   "opponent": "SANADA",
@@ -1961,6 +2233,7 @@
  },
  {
   "date": "2016/07/28",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1056.2821319864047,
   "opponent": "Tomohiro Ishii",
@@ -1968,6 +2241,7 @@
  },
  {
   "date": "2016/07/28",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1164.8216825187787,
   "opponent": "Naomichi Marufuji",
@@ -1975,6 +2249,7 @@
  },
  {
   "date": "2016/07/28",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 927.4902045955773,
   "opponent": "Kazuchika Okada",
@@ -1982,6 +2257,7 @@
  },
  {
   "date": "2016/07/28",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1245.6084255452088,
   "opponent": "Tama Tonga",
@@ -1989,6 +2265,7 @@
  },
  {
   "date": "2016/07/28",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 937.5499668642371,
   "opponent": "Hiroshi Tanahashi",
@@ -1996,6 +2273,7 @@
  },
  {
   "date": "2016/07/28",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 989.2374077348596,
   "opponent": "Bad Luck Fale",
@@ -2003,6 +2281,7 @@
  },
  {
   "date": "2016/07/30",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1211.7572872891471,
   "opponent": "David Finlay",
@@ -2010,6 +2289,7 @@
  },
  {
   "date": "2016/07/30",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1060.6853205548869,
   "opponent": "Tomoaki Honma",
@@ -2017,6 +2297,7 @@
  },
  {
   "date": "2016/07/30",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 963.4543353909492,
   "opponent": "YOSHI-HASHI",
@@ -2024,6 +2305,7 @@
  },
  {
   "date": "2016/07/30",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1172.0584787134349,
   "opponent": "Katsuhiko Nakajima",
@@ -2031,6 +2313,7 @@
  },
  {
   "date": "2016/07/30",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1160.1465158156443,
   "opponent": "Yuji Nagata",
@@ -2038,6 +2321,7 @@
  },
  {
   "date": "2016/07/30",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1087.2075671070206,
   "opponent": "Michael Elgin",
@@ -2045,6 +2329,7 @@
  },
  {
   "date": "2016/07/30",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1142.320370855824,
   "opponent": "Kenny Omega",
@@ -2052,6 +2337,7 @@
  },
  {
   "date": "2016/07/30",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1198.7328399134267,
   "opponent": "Katsuyori Shibata",
@@ -2059,6 +2345,7 @@
  },
  {
   "date": "2016/07/30",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1125.2342917323285,
   "opponent": "Tetsuya Naito",
@@ -2066,6 +2353,7 @@
  },
  {
   "date": "2016/07/31",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1085.1452963031625,
   "opponent": "Tama Tonga",
@@ -2073,6 +2361,7 @@
  },
  {
   "date": "2016/07/31",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 1086.8429770268099,
   "opponent": "Tomohiro Ishii",
@@ -2080,6 +2369,7 @@
  },
  {
   "date": "2016/07/31",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 1077.444728742973,
   "opponent": "SANADA",
@@ -2087,6 +2377,7 @@
  },
  {
   "date": "2016/07/31",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1126.2904972477495,
   "opponent": "Togi Makabe",
@@ -2094,6 +2385,7 @@
  },
  {
   "date": "2016/07/31",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1253.0491106350041,
   "opponent": "Hiroyoshi Tenzan",
@@ -2101,6 +2393,7 @@
  },
  {
   "date": "2016/07/31",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 993.6554193453367,
   "opponent": "Hiroshi Tanahashi",
@@ -2108,6 +2401,7 @@
  },
  {
   "date": "2016/07/31",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1107.2991169013044,
   "opponent": "Hirooki Goto",
@@ -2115,6 +2409,7 @@
  },
  {
   "date": "2016/08/01",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1095.6093912605074,
   "opponent": "YOSHI-HASHI",
@@ -2122,6 +2417,7 @@
  },
  {
   "date": "2016/08/01",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1117.7892416292088,
   "opponent": "Michael Elgin",
@@ -2129,6 +2425,7 @@
  },
  {
   "date": "2016/08/01",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1196.58960794005,
   "opponent": "Yuji Nagata",
@@ -2136,6 +2433,7 @@
  },
  {
   "date": "2016/08/01",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1066.0503720936163,
   "opponent": "Toru Yano",
@@ -2143,6 +2441,7 @@
  },
  {
   "date": "2016/08/01",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1119.8692401935991,
   "opponent": "Katsuyori Shibata",
@@ -2150,6 +2449,7 @@
  },
  {
   "date": "2016/08/01",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 897.6397415217873,
   "opponent": "Kenny Omega",
@@ -2157,6 +2457,7 @@
  },
  {
   "date": "2016/08/01",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1120.1148640416015,
   "opponent": "EVIL",
@@ -2164,6 +2465,7 @@
  },
  {
   "date": "2016/08/01",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1220.8153423210547,
   "opponent": "Tomoaki Honma",
@@ -2171,6 +2473,7 @@
  },
  {
   "date": "2016/08/03",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 1105.3888337202393,
   "opponent": "Hiroyoshi Tenzan",
@@ -2178,6 +2481,7 @@
  },
  {
   "date": "2016/08/03",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 1023.7448051944322,
   "opponent": "Hirooki Goto",
@@ -2185,6 +2489,7 @@
  },
  {
   "date": "2016/08/03",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1119.851763010092,
   "opponent": "Tama Tonga",
@@ -2192,6 +2497,7 @@
  },
  {
   "date": "2016/08/03",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1160.7172491355043,
   "opponent": "SANADA",
@@ -2199,6 +2505,7 @@
  },
  {
   "date": "2016/08/03",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1038.3291735096182,
   "opponent": "Hiroshi Tanahashi",
@@ -2206,6 +2513,7 @@
  },
  {
   "date": "2016/08/03",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1154.1152396948485,
   "opponent": "Tomohiro Ishii",
@@ -2213,6 +2521,7 @@
  },
  {
   "date": "2016/08/03",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1272.085199068832,
   "opponent": "Togi Makabe",
@@ -2220,6 +2529,7 @@
  },
  {
   "date": "2016/08/04",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1068.0885739086048,
   "opponent": "Toru Yano",
@@ -2227,6 +2537,7 @@
  },
  {
   "date": "2016/08/04",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1169.5699079142032,
   "opponent": "Yuji Nagata",
@@ -2234,6 +2545,7 @@
  },
  {
   "date": "2016/08/04",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1235.8344491659172,
   "opponent": "YOSHI-HASHI",
@@ -2241,6 +2553,7 @@
  },
  {
   "date": "2016/08/04",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 1008.5033002385535,
   "opponent": "Tomoaki Honma",
@@ -2248,6 +2561,7 @@
  },
  {
   "date": "2016/08/04",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1062.3965562215733,
   "opponent": "Katsuyori Shibata",
@@ -2255,6 +2569,7 @@
  },
  {
   "date": "2016/08/04",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1123.7686799136445,
   "opponent": "Kenny Omega",
@@ -2262,6 +2577,7 @@
  },
  {
   "date": "2016/08/04",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1062.8864608465738,
   "opponent": "Tetsuya Naito",
@@ -2269,6 +2585,7 @@
  },
  {
   "date": "2016/08/04",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1237.1768075280215,
   "opponent": "Katsuhiko Nakajima",
@@ -2276,6 +2593,7 @@
  },
  {
   "date": "2016/08/06",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 1067.4727734686794,
   "opponent": "SANADA",
@@ -2283,6 +2601,7 @@
  },
  {
   "date": "2016/08/06",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 1158.991429944985,
   "opponent": "Togi Makabe",
@@ -2290,6 +2609,7 @@
  },
  {
   "date": "2016/08/06",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1137.900207491991,
   "opponent": "Hiroyoshi Tenzan",
@@ -2297,6 +2617,7 @@
  },
  {
   "date": "2016/08/06",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1232.4146671846124,
   "opponent": "Tomohiro Ishii",
@@ -2304,6 +2625,7 @@
  },
  {
   "date": "2016/08/06",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1117.6702372780574,
   "opponent": "Kazuchika Okada",
@@ -2311,6 +2633,7 @@
  },
  {
   "date": "2016/08/06",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1109.7672579411421,
   "opponent": "Hiroshi Tanahashi",
@@ -2318,6 +2641,7 @@
  },
  {
   "date": "2016/08/06",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1205.0652308892106,
   "opponent": "Naomichi Marufuji",
@@ -2325,6 +2649,7 @@
  },
  {
   "date": "2016/08/07",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1206.1233179730245,
   "opponent": "Toru Yano",
@@ -2332,6 +2657,7 @@
  },
  {
   "date": "2016/08/07",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1228.9921702999884,
   "opponent": "Michael Elgin",
@@ -2339,6 +2665,7 @@
  },
  {
   "date": "2016/08/07",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1167.7048612872234,
   "opponent": "YOSHI-HASHI",
@@ -2346,6 +2673,7 @@
  },
  {
   "date": "2016/08/07",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1083.1276676939374,
   "opponent": "Tomoaki Honma",
@@ -2353,6 +2681,7 @@
  },
  {
   "date": "2016/08/07",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1017.269499995137,
   "opponent": "Kenny Omega",
@@ -2360,6 +2689,7 @@
  },
  {
   "date": "2016/08/07",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1113.215630135041,
   "opponent": "Yuji Nagata",
@@ -2367,6 +2697,7 @@
  },
  {
   "date": "2016/08/07",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 987.3606890180413,
   "opponent": "Tetsuya Naito",
@@ -2374,6 +2705,7 @@
  },
  {
   "date": "2016/08/07",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1247.7481131382776,
   "opponent": "EVIL",
@@ -2381,6 +2713,7 @@
  },
  {
   "date": "2016/08/08",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1086.6834947508441,
   "opponent": "David Finlay",
@@ -2388,6 +2721,7 @@
  },
  {
   "date": "2016/08/08",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 1023.5295501197166,
   "opponent": "Naomichi Marufuji",
@@ -2395,6 +2729,7 @@
  },
  {
   "date": "2016/08/08",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1153.710481290105,
   "opponent": "Tama Tonga",
@@ -2402,6 +2737,7 @@
  },
  {
   "date": "2016/08/08",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1039.1486565455634,
   "opponent": "SANADA",
@@ -2409,6 +2745,7 @@
  },
  {
   "date": "2016/08/08",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1210.0018585642126,
   "opponent": "Hiroyoshi Tenzan",
@@ -2416,6 +2753,7 @@
  },
  {
   "date": "2016/08/08",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1202.2087101112977,
   "opponent": "Bad Luck Fale",
@@ -2423,6 +2761,7 @@
  },
  {
   "date": "2016/08/08",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 1219.4033440916141,
   "opponent": "Kazuchika Okada",
@@ -2430,6 +2769,7 @@
  },
  {
   "date": "2016/08/08",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1179.205525734948,
   "opponent": "Togi Makabe",
@@ -2437,6 +2777,7 @@
  },
  {
   "date": "2016/08/10",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1212.5871624460729,
   "opponent": "David Finlay",
@@ -2444,6 +2785,7 @@
  },
  {
   "date": "2016/08/10",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1040.4943708701549,
   "opponent": "Kenny Omega",
@@ -2451,6 +2793,7 @@
  },
  {
   "date": "2016/08/10",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1159.4047540157303,
   "opponent": "Katsuhiko Nakajima",
@@ -2458,6 +2801,7 @@
  },
  {
   "date": "2016/08/10",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1188.955036102626,
   "opponent": "EVIL",
@@ -2465,6 +2809,7 @@
  },
  {
   "date": "2016/08/10",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 1147.50922580749,
   "opponent": "Toru Yano",
@@ -2472,6 +2817,7 @@
  },
  {
   "date": "2016/08/10",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1259.230047618248,
   "opponent": "YOSHI-HASHI",
@@ -2479,6 +2825,7 @@
  },
  {
   "date": "2016/08/10",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 987.6602604360651,
   "opponent": "Katsuyori Shibata",
@@ -2486,6 +2833,7 @@
  },
  {
   "date": "2016/08/10",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1197.3141008462953,
   "opponent": "Yuji Nagata",
@@ -2493,6 +2841,7 @@
  },
  {
   "date": "2016/08/10",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1210.173233511227,
   "opponent": "Tomoaki Honma",
@@ -2500,6 +2849,7 @@
  },
  {
   "date": "2016/08/12",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1088.6319058960507,
   "opponent": "Togi Makabe",
@@ -2507,6 +2857,7 @@
  },
  {
   "date": "2016/08/12",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 1181.6341108306851,
   "opponent": "Tama Tonga",
@@ -2514,6 +2865,7 @@
  },
  {
   "date": "2016/08/12",
+  "wrestling_as": "Tama Tonga",
   "wrestler": "Tama Tonga",
   "elo": 1099.0680166415746,
   "opponent": "Bad Luck Fale",
@@ -2521,6 +2873,7 @@
  },
  {
   "date": "2016/08/12",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1107.3729417070329,
   "opponent": "Hirooki Goto",
@@ -2528,6 +2881,7 @@
  },
  {
   "date": "2016/08/12",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1225.5430653180201,
   "opponent": "Naomichi Marufuji",
@@ -2535,6 +2889,7 @@
  },
  {
   "date": "2016/08/12",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1202.769378193412,
   "opponent": "Hiroshi Tanahashi",
@@ -2542,6 +2897,7 @@
  },
  {
   "date": "2016/08/12",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1209.4411904820984,
   "opponent": "Kazuchika Okada",
@@ -2549,6 +2905,7 @@
  },
  {
   "date": "2016/08/13",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 831.6989997105038,
   "opponent": "Tomoaki Honma",
@@ -2556,6 +2913,7 @@
  },
  {
   "date": "2016/08/13",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1215.7685852918428,
   "opponent": "YOSHI-HASHI",
@@ -2563,6 +2921,7 @@
  },
  {
   "date": "2016/08/13",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1140.1952984191323,
   "opponent": "EVIL",
@@ -2570,6 +2929,7 @@
  },
  {
   "date": "2016/08/13",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 1204.6280282346531,
   "opponent": "Katsuyori Shibata",
@@ -2577,6 +2937,7 @@
  },
  {
   "date": "2016/08/13",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1173.8500895446132,
   "opponent": "Katsuhiko Nakajima",
@@ -2584,6 +2945,7 @@
  },
  {
   "date": "2016/08/13",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 1113.1406588033822,
   "opponent": "Michael Elgin",
@@ -2591,6 +2953,7 @@
  },
  {
   "date": "2016/08/13",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1227.2383839025847,
   "opponent": "Kenny Omega",
@@ -2598,6 +2961,7 @@
  },
  {
   "date": "2016/08/13",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1223.388081447057,
   "opponent": "Tetsuya Naito",
@@ -2605,6 +2969,7 @@
  },
  {
   "date": "2016/08/14",
+  "wrestling_as": "Jay Lethal",
   "wrestler": "Jay Lethal",
   "elo": 1175.3276986075905,
   "opponent": "Satoshi Kojima",
@@ -2612,6 +2977,7 @@
  },
  {
   "date": "2016/08/14",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1200.3880037522215,
   "opponent": "Kenny Omega",
@@ -2619,6 +2985,7 @@
  },
  {
   "date": "2016/08/14",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1248.5431430128556,
   "opponent": "Hirooki Goto",
@@ -2626,6 +2993,7 @@
  },
  {
   "date": "2016/08/21",
+  "wrestling_as": "Taichi",
   "wrestler": "Taichi",
   "elo": 1072.6507856384887,
   "opponent": "Jushin Thunder Liger; KUSHIDA",
@@ -2633,6 +3001,7 @@
  },
  {
   "date": "2016/08/21",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1288.8789713384667,
   "opponent": "Kenou; Taichi; Yoshinobu Kanemaru",
@@ -2640,6 +3009,7 @@
  },
  {
   "date": "2016/08/21",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1178.1708480705909,
   "opponent": "Yoshinobu Kanemaru",
@@ -2647,6 +3017,7 @@
  },
  {
   "date": "2016/08/21",
+  "wrestling_as": "Yoshinobu Kanemaru",
   "wrestler": "Yoshinobu Kanemaru",
   "elo": 1181.979991994774,
   "opponent": "Ryusuke Taguchi; Matt Sydal; KUSHIDA",
@@ -2654,6 +3025,7 @@
  },
  {
   "date": "2016/08/21",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 1180.4114697142325,
   "opponent": "Matt Sydal",
@@ -2661,6 +3033,7 @@
  },
  {
   "date": "2016/08/21",
+  "wrestling_as": "Matt Sydal",
   "wrestler": "Matt Sydal",
   "elo": 1174.0565878978987,
   "opponent": "Will Ospreay; Yoshinobu Kanemaru",
@@ -2668,6 +3041,7 @@
  },
  {
   "date": "2016/09/01",
+  "wrestling_as": "Quiet Storm",
   "wrestler": "Quiet Storm",
   "elo": 1064.145098304178,
   "opponent": "Henare",
@@ -2675,6 +3049,7 @@
  },
  {
   "date": "2016/09/01",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1212.7251938950371,
   "opponent": "Hitoshi Kumano",
@@ -2682,6 +3057,7 @@
  },
  {
   "date": "2016/09/12",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 1215.7363594722003,
   "opponent": "Juice Robinson",
@@ -2689,6 +3065,7 @@
  },
  {
   "date": "2016/09/17",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 1097.3943733793944,
   "opponent": "Juice Robinson",
@@ -2696,6 +3073,7 @@
  },
  {
   "date": "2016/09/17",
+  "wrestling_as": "Bobby Fish",
   "wrestler": "Bobby Fish",
   "elo": 1100.8231469245031,
   "opponent": "Katsuyori Shibata",
@@ -2703,6 +3081,7 @@
  },
  {
   "date": "2016/09/17",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1191.9809907656079,
   "opponent": "Bobby Fish",
@@ -2710,6 +3089,7 @@
  },
  {
   "date": "2016/09/17",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1252.341336875636,
   "opponent": "BUSHI",
@@ -2717,6 +3097,7 @@
  },
  {
   "date": "2016/09/17",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 1188.50662104309,
   "opponent": "KUSHIDA",
@@ -2724,6 +3105,7 @@
  },
  {
   "date": "2016/09/22",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 1106.554806088665,
   "opponent": "Adam Cole",
@@ -2731,6 +3113,7 @@
  },
  {
   "date": "2016/09/22",
+  "wrestling_as": "Adam Cole",
   "wrestler": "Adam Cole",
   "elo": 1073.8566636255675,
   "opponent": "Will Ospreay",
@@ -2738,6 +3121,7 @@
  },
  {
   "date": "2016/09/22",
+  "wrestling_as": "Bad Luck Fale",
   "wrestler": "Bad Luck Fale",
   "elo": 1134.6719739675373,
   "opponent": "Kazuchika Okada",
@@ -2745,6 +3129,7 @@
  },
  {
   "date": "2016/09/22",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1226.250446624986,
   "opponent": "Bad Luck Fale",
@@ -2752,6 +3137,7 @@
  },
  {
   "date": "2016/09/22",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1257.6534554069478,
   "opponent": "YOSHI-HASHI",
@@ -2759,6 +3145,7 @@
  },
  {
   "date": "2016/09/25",
+  "wrestling_as": "Michael Elgin",
   "wrestler": "Michael Elgin",
   "elo": 1131.4733751354277,
   "opponent": "Tetsuya Naito",
@@ -2766,6 +3153,7 @@
  },
  {
   "date": "2016/09/25",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1248.4267411071776,
   "opponent": "Michael Elgin",
@@ -2773,6 +3161,7 @@
  },
  {
   "date": "2016/10/10",
+  "wrestling_as": "Kyle O'Reilly",
   "wrestler": "Kyle O'Reilly",
   "elo": 1060.6798704841967,
   "opponent": "Katsuyori Shibata",
@@ -2780,6 +3169,7 @@
  },
  {
   "date": "2016/10/10",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1228.6954936608056,
   "opponent": "Kyle O'Reilly",
@@ -2787,6 +3177,7 @@
  },
  {
   "date": "2016/10/10",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1179.4716711197304,
   "opponent": "Kenny Omega",
@@ -2794,6 +3185,7 @@
  },
  {
   "date": "2016/10/10",
+  "wrestling_as": "Kenny Omega",
   "wrestler": "Kenny Omega",
   "elo": 1278.569788039439,
   "opponent": "Hirooki Goto",
@@ -2801,6 +3193,7 @@
  },
  {
   "date": "2016/10/10",
+  "wrestling_as": "Naomichi Marufuji",
   "wrestler": "Naomichi Marufuji",
   "elo": 1073.843025712964,
   "opponent": "Kazuchika Okada",
@@ -2808,6 +3201,7 @@
  },
  {
   "date": "2016/10/10",
+  "wrestling_as": "Kazuchika Okada",
   "wrestler": "Kazuchika Okada",
   "elo": 1243.0154046220205,
   "opponent": "Naomichi Marufuji",
@@ -2815,13 +3209,15 @@
  },
  {
   "date": "2016/10/15",
+  "wrestling_as": "Yoshitatsu",
   "wrestler": "Yoshitatsu",
-  "elo": 1050.0,
+  "elo": 1061.9468790201033,
   "opponent": "BONE SOLDIER",
   "result": "won"
  },
  {
   "date": "2016/10/21",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 1132.6455482410015,
   "opponent": "David Finlay",
@@ -2829,13 +3225,15 @@
  },
  {
   "date": "2016/11/03",
+  "wrestling_as": "Yoshitatsu",
   "wrestler": "Yoshitatsu",
-  "elo": 1065.651472961604,
+  "elo": 1093.2203614471503,
   "opponent": "BONE SOLDIER",
   "result": "won"
  },
  {
   "date": "2016/11/05",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 1147.5911815867269,
   "opponent": "KUSHIDA",
@@ -2843,6 +3241,7 @@
  },
  {
   "date": "2016/11/05",
+  "wrestling_as": "KUSHIDA",
   "wrestler": "KUSHIDA",
   "elo": 1272.7990566038177,
   "opponent": "BUSHI",
@@ -2850,6 +3249,7 @@
  },
  {
   "date": "2016/11/05",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1202.7634411957354,
   "opponent": "EVIL",
@@ -2857,6 +3257,7 @@
  },
  {
   "date": "2016/11/05",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 1241.6684119372705,
   "opponent": "Katsuyori Shibata",
@@ -2864,6 +3265,7 @@
  },
  {
   "date": "2016/11/05",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1224.8421011291127,
   "opponent": "SANADA",
@@ -2871,6 +3273,7 @@
  },
  {
   "date": "2016/11/05",
+  "wrestling_as": "Jay Lethal",
   "wrestler": "Jay Lethal",
   "elo": 1135.694971845055,
   "opponent": "Tetsuya Naito",
@@ -2878,6 +3281,7 @@
  },
  {
   "date": "2016/11/05",
+  "wrestling_as": "Tetsuya Naito",
   "wrestler": "Tetsuya Naito",
   "elo": 1268.2431044884454,
   "opponent": "Jay Lethal",
@@ -2885,6 +3289,7 @@
  },
  {
   "date": "2016/11/10",
+  "wrestling_as": "Marty Scurll",
   "wrestler": "Marty Scurll",
   "elo": 1051.798394726717,
   "opponent": "Jushin Thunder Liger",
@@ -2892,6 +3297,7 @@
  },
  {
   "date": "2016/11/10",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 976.6757845883878,
   "opponent": "Pete Dunne",
@@ -2899,6 +3305,7 @@
  },
  {
   "date": "2016/11/10",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1026.1464232827952,
   "opponent": "Chris Hero",
@@ -2906,6 +3313,7 @@
  },
  {
   "date": "2016/11/10",
+  "wrestling_as": "BUSHI",
   "wrestler": "BUSHI",
   "elo": 1095.4416577593424,
   "opponent": "Will Ospreay",
@@ -2913,6 +3321,7 @@
  },
  {
   "date": "2016/11/10",
+  "wrestling_as": "Will Ospreay",
   "wrestler": "Will Ospreay",
   "elo": 1184.795072068386,
   "opponent": "BUSHI",
@@ -2920,6 +3329,7 @@
  },
  {
   "date": "2016/11/10",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1214.6315129654197,
   "opponent": "Zack Sabre Jr.",
@@ -2927,6 +3337,7 @@
  },
  {
   "date": "2016/11/11",
+  "wrestling_as": "Josh Bodom",
   "wrestler": "Josh Bodom",
   "elo": 1061.27470951048,
   "opponent": "Tomoaki Honma",
@@ -2934,6 +3345,7 @@
  },
  {
   "date": "2016/11/11",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1083.378966549658,
   "opponent": "Trent Seven",
@@ -2941,6 +3353,7 @@
  },
  {
   "date": "2016/11/11",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1062.3211704569546,
   "opponent": "Pete Dunne",
@@ -2948,6 +3361,7 @@
  },
  {
   "date": "2016/11/11",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1229.3337186010926,
   "opponent": "Chris Hero",
@@ -2955,6 +3369,7 @@
  },
  {
   "date": "2016/11/12",
+  "wrestling_as": "Strong Man",
   "wrestler": "Strong Man",
   "elo": 1050.0,
   "opponent": "Charlie Roberts",
@@ -2962,6 +3377,7 @@
  },
  {
   "date": "2016/11/12",
+  "wrestling_as": "Bobby Fish",
   "wrestler": "Bobby Fish",
   "elo": 1122.0945269807614,
   "opponent": "David Finlay",
@@ -2969,6 +3385,7 @@
  },
  {
   "date": "2016/11/12",
+  "wrestling_as": "Dalton Castle",
   "wrestler": "Dalton Castle",
   "elo": 1070.3054660279058,
   "opponent": "Hiroshi Tanahashi",
@@ -2976,6 +3393,7 @@
  },
  {
   "date": "2016/11/12",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1241.4507893922214,
   "opponent": "Dalton Castle",
@@ -2983,6 +3401,7 @@
  },
  {
   "date": "2016/11/12",
+  "wrestling_as": "Jay White",
   "wrestler": "Jay White",
   "elo": 1094.9667222967682,
   "opponent": "RJ Brewer",
@@ -2990,6 +3409,7 @@
  },
  {
   "date": "2016/11/15",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1207.825588745273,
   "opponent": "Tomoaki Honma",
@@ -2997,6 +3417,7 @@
  },
  {
   "date": "2016/11/15",
+  "wrestling_as": "EVIL",
   "wrestler": "EVIL",
   "elo": 1215.7812321082058,
   "opponent": "Katsuyori Shibata",
@@ -3004,6 +3425,7 @@
  },
  {
   "date": "2016/11/15",
+  "wrestling_as": "Katsuyori Shibata",
   "wrestler": "Katsuyori Shibata",
   "elo": 1255.2208984301574,
   "opponent": "EVIL",
@@ -3011,6 +3433,7 @@
  },
  {
   "date": "2016/12/16",
+  "wrestling_as": "Tomohiro Ishii",
   "wrestler": "Tomohiro Ishii",
   "elo": 1118.2781819301556,
   "opponent": "Chase Owens",
@@ -3018,6 +3441,7 @@
  },
  {
   "date": "2016/12/17",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1135.6231033092954,
   "opponent": "Manabu Nakanishi",

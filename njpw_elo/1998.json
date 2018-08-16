@@ -1,6 +1,7 @@
 [
  {
   "date": "1998/01/04",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 950.0,
   "opponent": "Kendo Kashin",
@@ -8,6 +9,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1050.0,
   "opponent": "Koji Kanemoto",
@@ -15,6 +17,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Ultimo Dragon",
   "wrestler": "Ultimo Dragon",
   "elo": 950.0,
   "opponent": "Shinjiro Otani",
@@ -22,6 +25,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1050.0,
   "opponent": "Ultimo Dragon",
@@ -29,6 +33,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 950.0,
   "opponent": "Yuji Nagata",
@@ -36,6 +41,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1050.0,
   "opponent": "Hiroyoshi Tenzan",
@@ -43,6 +49,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 950.0,
   "opponent": "Riki Choshu",
@@ -50,6 +57,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Riki Choshu",
   "wrestler": "Riki Choshu",
   "elo": 1103.1225159329229,
   "opponent": "Kazuyuki Fujita; Yutaka Yoshie; Tatsuhito Takaiwa; Takashi Iizuka; Jushin Thunder Liger",
@@ -57,6 +65,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 957.1463117408382,
   "opponent": "Riki Choshu",
@@ -64,13 +73,15 @@
  },
  {
   "date": "1998/01/04",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 963.0534101698356,
   "opponent": "Riki Choshu",
   "result": "lost"
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1067.856620730342,
   "opponent": "Riki Choshu",
@@ -78,6 +89,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 958.8211414260613,
   "opponent": "Riki Choshu",
@@ -85,6 +97,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Naoya Ogawa",
   "wrestler": "Naoya Ogawa",
   "elo": 950.0,
   "opponent": "Don Frye",
@@ -92,6 +105,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Don Frye",
   "wrestler": "Don Frye",
   "elo": 1050.0,
   "opponent": "Naoya Ogawa",
@@ -99,6 +113,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 950.0,
   "opponent": "Masahiro Chono",
@@ -106,6 +121,7 @@
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
   "elo": 1050.0,
   "opponent": "Shiro Koshinaka",
@@ -113,13 +129,15 @@
  },
  {
   "date": "1998/01/04",
-  "wrestler": "Great Muta",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
   "elo": 950.0,
   "opponent": "Kensuke Sasaki",
   "result": "lost"
  },
  {
   "date": "1998/01/04",
+  "wrestling_as": "Kensuke Sasaki",
   "wrestler": "Kensuke Sasaki",
   "elo": 1050.0,
   "opponent": "Keiji Muto",
@@ -127,13 +145,15 @@
  },
  {
   "date": "1998/01/26",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 950.0,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/01/26",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 1050.0,
   "opponent": "Shinya Makabe",
@@ -141,6 +161,7 @@
  },
  {
   "date": "1998/01/26",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 869.4184240025453,
   "opponent": "Kuniaki Kobayashi",
@@ -148,6 +169,7 @@
  },
  {
   "date": "1998/01/26",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1043.8639438691464,
   "opponent": "Yutaka Yoshie",
@@ -155,6 +177,7 @@
  },
  {
   "date": "1998/01/27",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 805.3277018729816,
   "opponent": "Akitoshi Saito",
@@ -162,6 +185,7 @@
  },
  {
   "date": "1998/01/27",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1032.045361064782,
   "opponent": "Yutaka Yoshie",
@@ -169,6 +193,7 @@
  },
  {
   "date": "1998/01/27",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 992.8536882591618,
   "opponent": "El Samurai",
@@ -176,6 +201,7 @@
  },
  {
   "date": "1998/01/27",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1057.1463117408382,
   "opponent": "Black Cat",
@@ -183,6 +209,7 @@
  },
  {
   "date": "1998/01/28",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 843.5743346758172,
   "opponent": "Yutaka Yoshie",
@@ -190,6 +217,7 @@
  },
  {
   "date": "1998/01/28",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 954.6070554563262,
   "opponent": "Black Cat",
@@ -197,13 +225,15 @@
  },
  {
   "date": "1998/01/30",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 820.2916535228674,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/01/30",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 973.2826811529499,
   "opponent": "Shinya Makabe",
@@ -211,6 +241,7 @@
  },
  {
   "date": "1998/01/30",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 867.5983595186091,
   "opponent": "Akira Nogami",
@@ -218,6 +249,7 @@
  },
  {
   "date": "1998/01/30",
+  "wrestling_as": "Akira Nogami",
   "wrestler": "Akira Nogami",
   "elo": 1043.5043479688586,
   "opponent": "Yutaka Yoshie",
@@ -225,13 +257,15 @@
  },
  {
   "date": "1998/01/31",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 761.6845725229695,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/01/31",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 1031.8897621528477,
   "opponent": "Shinya Makabe",
@@ -239,13 +273,15 @@
  },
  {
   "date": "1998/02/02",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 691.2585330262056,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/02/02",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 938.024399015373,
   "opponent": "Shinya Makabe",
@@ -253,6 +289,7 @@
  },
  {
   "date": "1998/02/02",
+  "wrestling_as": "Hayato Nanjyo",
   "wrestler": "Hayato Nanjyo",
   "elo": 950.0,
   "opponent": "Norio Honaga",
@@ -260,6 +297,7 @@
  },
  {
   "date": "1998/02/02",
+  "wrestling_as": "Norio Honaga",
   "wrestler": "Norio Honaga",
   "elo": 1050.0,
   "opponent": "Hayato Nanjyo",
@@ -267,6 +305,7 @@
  },
  {
   "date": "1998/02/03",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 841.4698896545112,
   "opponent": "Kazuyuki Fujita",
@@ -274,6 +313,7 @@
  },
  {
   "date": "1998/02/03",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1046.5545093608619,
   "opponent": "Yutaka Yoshie",
@@ -281,6 +321,7 @@
  },
  {
   "date": "1998/02/03",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 981.9121546347947,
   "opponent": "Akitoshi Saito",
@@ -288,6 +329,7 @@
  },
  {
   "date": "1998/02/03",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1082.022968582835,
   "opponent": "Black Cat",
@@ -295,6 +337,7 @@
  },
  {
   "date": "1998/02/03",
+  "wrestling_as": "Norio Honaga",
   "wrestler": "Norio Honaga",
   "elo": 1001.0282919201761,
   "opponent": "El Samurai",
@@ -302,6 +345,7 @@
  },
  {
   "date": "1998/02/03",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1106.118019820662,
   "opponent": "Norio Honaga",
@@ -309,13 +353,15 @@
  },
  {
   "date": "1998/02/04",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 659.6572494640246,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/02/04",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 1013.5134381969756,
   "opponent": "Shinya Makabe",
@@ -323,6 +369,7 @@
  },
  {
   "date": "1998/02/06",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 775.1026108686865,
   "opponent": "Tatsuhito Takaiwa",
@@ -330,13 +377,15 @@
  },
  {
   "date": "1998/02/06",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1029.4206889556604,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "1998/02/06",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 950.0,
   "opponent": "Kengo Kimura",
@@ -344,6 +393,7 @@
  },
  {
   "date": "1998/02/06",
+  "wrestling_as": "Kengo Kimura",
   "wrestler": "Kengo Kimura",
   "elo": 1050.0,
   "opponent": "Tadao Yasuda",
@@ -351,6 +401,7 @@
  },
  {
   "date": "1998/02/06",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 989.8945879446728,
   "opponent": "Osamu Kido",
@@ -358,6 +409,7 @@
  },
  {
   "date": "1998/02/06",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1056.659921416189,
   "opponent": "Kazuyuki Fujita",
@@ -365,6 +417,7 @@
  },
  {
   "date": "1998/02/07",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 745.9138562915313,
   "opponent": "Akitoshi Saito",
@@ -372,6 +425,7 @@
  },
  {
   "date": "1998/02/07",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1096.6173458714125,
   "opponent": "Yutaka Yoshie",
@@ -379,6 +433,7 @@
  },
  {
   "date": "1998/02/07",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 987.1714708583479,
   "opponent": "Jushin Thunder Liger",
@@ -386,6 +441,7 @@
  },
  {
   "date": "1998/02/07",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1084.4781997093655,
   "opponent": "Shinjiro Otani",
@@ -393,6 +449,7 @@
  },
  {
   "date": "1998/02/07",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 957.1463117408382,
   "opponent": "Kensuke Sasaki",
@@ -400,6 +457,7 @@
  },
  {
   "date": "1998/02/07",
+  "wrestling_as": "Kensuke Sasaki",
   "wrestler": "Kensuke Sasaki",
   "elo": 1092.8536882591618,
   "opponent": "Osamu Nishimura",
@@ -407,13 +465,15 @@
  },
  {
   "date": "1998/02/08",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 635.0737931013022,
   "opponent": "Norio Honaga",
   "result": "lost"
  },
  {
   "date": "1998/02/08",
+  "wrestling_as": "Norio Honaga",
   "wrestler": "Norio Honaga",
   "elo": 1013.3200201015374,
   "opponent": "Shinya Makabe",
@@ -421,6 +481,7 @@
  },
  {
   "date": "1998/02/08",
+  "wrestling_as": "Hayato Nanjyo",
   "wrestler": "Hayato Nanjyo",
   "elo": 872.4691023484785,
   "opponent": "Tatsuhito Takaiwa",
@@ -428,13 +489,15 @@
  },
  {
   "date": "1998/02/08",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1068.1861377814212,
   "opponent": "Hayato Nanjyo",
   "result": "won"
  },
  {
   "date": "1998/02/08",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 905.0604018007296,
   "opponent": "Kendo Kashin",
@@ -442,6 +505,7 @@
  },
  {
   "date": "1998/02/08",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1091.0555345288092,
   "opponent": "Shinjiro Otani",
@@ -449,6 +513,7 @@
  },
  {
   "date": "1998/02/08",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 886.8822373544405,
   "opponent": "Jushin Thunder Liger",
@@ -456,6 +521,7 @@
  },
  {
   "date": "1998/02/08",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1116.0370810321454,
   "opponent": "Koji Kanemoto",
@@ -463,6 +529,7 @@
  },
  {
   "date": "1998/02/08",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 864.2926234816763,
   "opponent": "Tatsumi Fujinami",
@@ -470,6 +537,7 @@
  },
  {
   "date": "1998/02/08",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1042.8536882591618,
   "opponent": "Shiro Koshinaka",
@@ -477,6 +545,7 @@
  },
  {
   "date": "1998/02/09",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 710.6192148627654,
   "opponent": "Black Cat",
@@ -484,6 +553,7 @@
  },
  {
   "date": "1998/02/09",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 1031.1607589113585,
   "opponent": "Yutaka Yoshie",
@@ -491,13 +561,15 @@
  },
  {
   "date": "1998/02/11",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 616.5162102433057,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/02/11",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 1040.4395503403566,
   "opponent": "Shinya Makabe",
@@ -505,6 +577,7 @@
  },
  {
   "date": "1998/02/11",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 670.3527027942017,
   "opponent": "Tadao Yasuda",
@@ -512,6 +585,7 @@
  },
  {
   "date": "1998/02/11",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 990.2665120685637,
   "opponent": "Yutaka Yoshie",
@@ -519,13 +593,15 @@
  },
  {
   "date": "1998/02/11",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1023.6233883523909,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "1998/02/11",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1150.6807692496923,
   "opponent": "Tatsuhito Takaiwa",
@@ -533,6 +609,7 @@
  },
  {
   "date": "1998/02/12",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 951.0573368021098,
   "opponent": "Yutaka Yoshie",
@@ -540,6 +617,7 @@
  },
  {
   "date": "1998/02/12",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 849.1171298706953,
   "opponent": "Black Cat",
@@ -547,6 +625,7 @@
  },
  {
   "date": "1998/02/12",
+  "wrestling_as": "Norio Honaga",
   "wrestler": "Norio Honaga",
   "elo": 969.5249822301238,
   "opponent": "Osamu Kido",
@@ -554,6 +633,7 @@
  },
  {
   "date": "1998/02/12",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1100.4549592876026,
   "opponent": "Norio Honaga",
@@ -561,13 +641,15 @@
  },
  {
   "date": "1998/02/13",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 595.6376034941272,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "1998/02/13",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1010.7731946938513,
   "opponent": "Shinya Makabe",
@@ -575,20 +657,23 @@
  },
  {
   "date": "1998/02/14",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 579.9488854604467,
   "opponent": "Tatsuhito Takaiwa",
   "result": "lost"
  },
  {
   "date": "1998/02/14",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1031.4677473692311,
   "opponent": "Shinya Makabe",
   "result": "won"
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 957.8254680517052,
   "opponent": "Tadao Yasuda",
@@ -596,6 +681,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1096.1619653528558,
   "opponent": "Kazuyuki Fujita",
@@ -603,6 +689,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 864.2926234816763,
   "opponent": "Manabu Nakanishi",
@@ -610,6 +697,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1042.8536882591618,
   "opponent": "Hiroyoshi Tenzan",
@@ -617,6 +705,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "nWo Sting",
   "wrestler": "nWo Sting",
   "elo": 943.8639438691465,
   "opponent": "Osamu Nishimura",
@@ -624,6 +713,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 1069.4184240025454,
   "opponent": "nWo Sting",
@@ -631,6 +721,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 950.0,
   "opponent": "Curt Hennig",
@@ -638,6 +729,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Curt Hennig",
   "wrestler": "Curt Hennig",
   "elo": 1050.0,
   "opponent": "Satoshi Kojima",
@@ -645,20 +737,23 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Kazuo Yamazaki",
   "wrestler": "Kazuo Yamazaki",
   "elo": 942.8536882591618,
-  "opponent": "Great Muta",
+  "opponent": "Keiji Muto",
   "result": "lost"
  },
  {
   "date": "1998/02/15",
-  "wrestler": "Great Muta",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
   "elo": 1064.2926234816764,
   "opponent": "Kazuo Yamazaki",
   "result": "won"
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Don Frye",
   "wrestler": "Don Frye",
   "elo": 985.9935000197115,
   "opponent": "Naoya Ogawa",
@@ -666,6 +761,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Naoya Ogawa",
   "wrestler": "Naoya Ogawa",
   "elo": 1078.012999960577,
   "opponent": "Don Frye",
@@ -673,6 +769,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Big Titan",
   "wrestler": "Big Titan",
   "elo": 950.0,
   "opponent": "Shinya Hashimoto",
@@ -680,6 +777,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Shinya Hashimoto",
   "wrestler": "Shinya Hashimoto",
   "elo": 1050.0,
   "opponent": "Big Titan",
@@ -687,6 +785,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
   "elo": 975.5589955884122,
   "opponent": "Shiro Koshinaka",
@@ -694,6 +793,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 1013.1746323048519,
   "opponent": "Masahiro Chono",
@@ -701,6 +801,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Kensuke Sasaki",
   "wrestler": "Kensuke Sasaki",
   "elo": 1029.8002780893262,
   "opponent": "Scott Norton",
@@ -708,6 +809,7 @@
  },
  {
   "date": "1998/02/15",
+  "wrestling_as": "Scott Norton",
   "wrestler": "Scott Norton",
   "elo": 1063.0534101698356,
   "opponent": "Kensuke Sasaki",
@@ -715,6 +817,7 @@
  },
  {
   "date": "1998/03/03",
+  "wrestling_as": "Hiroyoshi Kotsubo",
   "wrestler": "Hiroyoshi Kotsubo",
   "elo": 950.0,
   "opponent": "Kazuhiko Shoda",
@@ -722,6 +825,7 @@
  },
  {
   "date": "1998/03/03",
+  "wrestling_as": "Kazuhiko Shoda",
   "wrestler": "Kazuhiko Shoda",
   "elo": 1050.0,
   "opponent": "Hiroyoshi Kotsubo",
@@ -729,6 +833,7 @@
  },
  {
   "date": "1998/03/03",
+  "wrestling_as": "Nobuyuki Kurashima",
   "wrestler": "Nobuyuki Kurashima",
   "elo": 950.0,
   "opponent": "Masakazu Fukuda",
@@ -736,6 +841,7 @@
  },
  {
   "date": "1998/03/03",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 1050.0,
   "opponent": "Nobuyuki Kurashima",
@@ -743,13 +849,15 @@
  },
  {
   "date": "1998/03/06",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 544.9159429134706,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/03/06",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 884.1500724176713,
   "opponent": "Shinya Makabe",
@@ -757,6 +865,7 @@
  },
  {
   "date": "1998/03/06",
+  "wrestling_as": "La Fiera",
   "wrestler": "La Fiera",
   "elo": 943.0028072854956,
   "opponent": "Black Cat",
@@ -764,6 +873,7 @@
  },
  {
   "date": "1998/03/06",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 1065.0517222311187,
   "opponent": "La Fiera",
@@ -771,6 +881,7 @@
  },
  {
   "date": "1998/03/06",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1092.18326707219,
   "opponent": "Kendo Kashin",
@@ -778,6 +889,7 @@
  },
  {
   "date": "1998/03/06",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1149.5530367063116,
   "opponent": "El Samurai",
@@ -785,6 +897,7 @@
  },
  {
   "date": "1998/03/06",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1026.2864734877344,
   "opponent": "Big Titan",
@@ -792,6 +905,7 @@
  },
  {
   "date": "1998/03/06",
+  "wrestling_as": "Big Titan",
   "wrestler": "Big Titan",
   "elo": 1089.750983730243,
   "opponent": "Tadao Yasuda",
@@ -799,13 +913,15 @@
  },
  {
   "date": "1998/03/07",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 535.3777008427645,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/03/07",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 1069.8208432664717,
   "opponent": "Shinya Makabe",
@@ -813,6 +929,7 @@
  },
  {
   "date": "1998/03/07",
+  "wrestling_as": "La Fiera",
   "wrestler": "La Fiera",
   "elo": 871.2440534536563,
   "opponent": "Kuniaki Kobayashi",
@@ -820,6 +937,7 @@
  },
  {
   "date": "1998/03/07",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1079.743320785066,
   "opponent": "La Fiera",
@@ -827,13 +945,15 @@
  },
  {
   "date": "1998/03/08",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 511.6982319959812,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/03/08",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 907.8295412644546,
   "opponent": "Shinya Makabe",
@@ -841,6 +961,7 @@
  },
  {
   "date": "1998/03/08",
+  "wrestling_as": "Michael Wallstreet",
   "wrestler": "Michael Wallstreet",
   "elo": 951.8950737756975,
   "opponent": "Shiro Koshinaka",
@@ -848,6 +969,7 @@
  },
  {
   "date": "1998/03/08",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 1061.2795585291544,
   "opponent": "Michael Wallstreet",
@@ -855,6 +977,7 @@
  },
  {
   "date": "1998/03/09",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 857.3833861203298,
   "opponent": "Akitoshi Saito",
@@ -862,6 +985,7 @@
  },
  {
   "date": "1998/03/09",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1121.840423443475,
   "opponent": "Yutaka Yoshie",
@@ -869,6 +993,7 @@
  },
  {
   "date": "1998/03/09",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 850.7553391237772,
   "opponent": "Kendo Kashin",
@@ -876,6 +1001,7 @@
  },
  {
   "date": "1998/03/09",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1167.6164858216432,
   "opponent": "Koji Kanemoto",
@@ -883,6 +1009,7 @@
  },
  {
   "date": "1998/03/09",
+  "wrestling_as": "nWo Sting",
   "wrestler": "nWo Sting",
   "elo": 873.4962722151196,
   "opponent": "Shinya Hashimoto",
@@ -890,6 +1017,7 @@
  },
  {
   "date": "1998/03/09",
+  "wrestling_as": "Shinya Hashimoto",
   "wrestler": "Shinya Hashimoto",
   "elo": 1085.1838358270136,
   "opponent": "nWo Sting",
@@ -897,13 +1025,15 @@
  },
  {
   "date": "1998/03/11",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 487.64524516746997,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/03/11",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 881.4363729488409,
   "opponent": "Shinya Makabe",
@@ -911,6 +1041,7 @@
  },
  {
   "date": "1998/03/11",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 1027.251619233128,
   "opponent": "Akitoshi Saito",
@@ -918,6 +1049,7 @@
  },
  {
   "date": "1998/03/11",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1164.4096474768187,
   "opponent": "Black Cat",
@@ -925,20 +1057,23 @@
  },
  {
   "date": "1998/03/12",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 479.2718876474262,
   "opponent": "Tatsuhito Takaiwa",
   "result": "lost"
  },
  {
   "date": "1998/03/12",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1035.654426129253,
   "opponent": "Shinya Makabe",
   "result": "won"
  },
  {
   "date": "1998/03/12",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 837.2681792355065,
   "opponent": "Osamu Kido",
@@ -946,6 +1081,7 @@
  },
  {
   "date": "1998/03/12",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1122.5390561442698,
   "opponent": "Yutaka Yoshie",
@@ -953,13 +1089,15 @@
  },
  {
   "date": "1998/03/13",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 471.0884319853905,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/03/13",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 1031.3433470641457,
   "opponent": "Shinya Makabe",
@@ -967,6 +1105,7 @@
  },
  {
   "date": "1998/03/13",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 797.5714643096481,
   "opponent": "Kuniaki Kobayashi",
@@ -974,6 +1113,7 @@
  },
  {
   "date": "1998/03/13",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1099.5916782479953,
   "opponent": "Yutaka Yoshie",
@@ -981,6 +1121,7 @@
  },
  {
   "date": "1998/03/13",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 993.8748141631379,
   "opponent": "nWo Sting",
@@ -988,6 +1129,7 @@
  },
  {
   "date": "1998/03/13",
+  "wrestling_as": "nWo Sting",
   "wrestler": "nWo Sting",
   "elo": 1024.5834918939345,
   "opponent": "Osamu Nishimura",
@@ -995,6 +1137,7 @@
  },
  {
   "date": "1998/03/14",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1035.6393470627834,
   "opponent": "Hiro Saito",
@@ -1002,6 +1145,7 @@
  },
  {
   "date": "1998/03/14",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1063.952331185212,
   "opponent": "Kuniaki Kobayashi",
@@ -1009,6 +1153,7 @@
  },
  {
   "date": "1998/03/14",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1073.4058981390056,
   "opponent": "Kendo Kashin",
@@ -1016,6 +1161,7 @@
  },
  {
   "date": "1998/03/14",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1210.247668714783,
   "opponent": "Jushin Thunder Liger",
@@ -1023,13 +1169,15 @@
  },
  {
   "date": "1998/03/17",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 463.44193008153826,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/03/17",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 1035.166598016072,
   "opponent": "Shinya Makabe",
@@ -1037,6 +1185,7 @@
  },
  {
   "date": "1998/03/17",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 750.0293448706593,
   "opponent": "Dr. Wagner Jr.",
@@ -1044,6 +1193,7 @@
  },
  {
   "date": "1998/03/17",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1023.7710597194945,
   "opponent": "Yutaka Yoshie",
@@ -1051,6 +1201,7 @@
  },
  {
   "date": "1998/03/18",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 983.527236046956,
   "opponent": "Dr. Wagner Jr.",
@@ -1058,6 +1209,7 @@
  },
  {
   "date": "1998/03/18",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1075.4104216886105,
   "opponent": "Black Cat",
@@ -1065,6 +1217,7 @@
  },
  {
   "date": "1998/03/19",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 716.1599896405861,
   "opponent": "Tadao Yasuda",
@@ -1072,6 +1225,7 @@
  },
  {
   "date": "1998/03/19",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1043.221151102771,
   "opponent": "Yutaka Yoshie",
@@ -1079,6 +1233,7 @@
  },
  {
   "date": "1998/03/20",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1071.451144146129,
   "opponent": "Yutaka Yoshie",
@@ -1086,6 +1241,7 @@
  },
  {
   "date": "1998/03/20",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 902.0769963019652,
   "opponent": "Akitoshi Saito",
@@ -1093,6 +1249,7 @@
  },
  {
   "date": "1998/03/20",
+  "wrestling_as": "La Fiera",
   "wrestler": "La Fiera",
   "elo": 815.3195727959811,
   "opponent": "Kuniaki Kobayashi",
@@ -1100,6 +1257,7 @@
  },
  {
   "date": "1998/03/20",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1063.601587391621,
   "opponent": "La Fiera",
@@ -1107,6 +1265,7 @@
  },
  {
   "date": "1998/03/21",
+  "wrestling_as": "La Fiera",
   "wrestler": "La Fiera",
   "elo": 781.5483378149075,
   "opponent": "El Samurai",
@@ -1114,6 +1273,7 @@
  },
  {
   "date": "1998/03/21",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1109.0688845627267,
   "opponent": "La Fiera",
@@ -1121,13 +1281,15 @@
  },
  {
   "date": "1998/03/21",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1008.8592510152201,
   "opponent": "Kendo Kashin",
   "result": "lost"
  },
  {
   "date": "1998/03/21",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1223.6452562717993,
   "opponent": "Tatsuhito Takaiwa",
@@ -1135,6 +1297,7 @@
  },
  {
   "date": "1998/03/22",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
   "elo": 950.0,
   "opponent": "Brian Johnston",
@@ -1142,6 +1305,7 @@
  },
  {
   "date": "1998/03/22",
+  "wrestling_as": "Brian Johnston",
   "wrestler": "Brian Johnston",
   "elo": 1050.0,
   "opponent": "Yoshiaki Fujiwara",
@@ -1149,6 +1313,7 @@
  },
  {
   "date": "1998/03/22",
+  "wrestling_as": "Kazuo Yamazaki",
   "wrestler": "Kazuo Yamazaki",
   "elo": 855.2069049947213,
   "opponent": "Don Frye",
@@ -1156,6 +1321,7 @@
  },
  {
   "date": "1998/03/22",
+  "wrestling_as": "Don Frye",
   "wrestler": "Don Frye",
   "elo": 1073.640283284152,
   "opponent": "Kazuo Yamazaki",
@@ -1163,6 +1329,7 @@
  },
  {
   "date": "1998/03/22",
+  "wrestling_as": "Dave Beneteau",
   "wrestler": "Dave Beneteau",
   "elo": 961.0420218268588,
   "opponent": "Naoya Ogawa",
@@ -1170,6 +1337,7 @@
  },
  {
   "date": "1998/03/22",
+  "wrestling_as": "Naoya Ogawa",
   "wrestler": "Naoya Ogawa",
   "elo": 1116.9709781337183,
   "opponent": "Dave Beneteau",
@@ -1177,6 +1345,7 @@
  },
  {
   "date": "1998/03/22",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 877.5060552553225,
   "opponent": "Kendo Kashin",
@@ -1184,6 +1353,7 @@
  },
  {
   "date": "1998/03/22",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1230.5338429081512,
   "opponent": "Shinjiro Otani",
@@ -1191,6 +1361,7 @@
  },
  {
   "date": "1998/03/23",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1017.3974384520851,
   "opponent": "Tadao Yasuda",
@@ -1198,6 +1369,7 @@
  },
  {
   "date": "1998/03/23",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1097.2748567968151,
   "opponent": "Akitoshi Saito",
@@ -1205,6 +1377,7 @@
  },
  {
   "date": "1998/03/23",
+  "wrestling_as": "La Fiera",
   "wrestler": "La Fiera",
   "elo": 767.5206969796346,
   "opponent": "Kendo Kashin",
@@ -1212,6 +1385,7 @@
  },
  {
   "date": "1998/03/23",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1234.0407531169694,
   "opponent": "La Fiera",
@@ -1219,6 +1393,7 @@
  },
  {
   "date": "1998/03/24",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 831.8788905076817,
   "opponent": "Tatsuhito Takaiwa",
@@ -1226,13 +1401,15 @@
  },
  {
   "date": "1998/03/24",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1043.958303912362,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "1998/03/24",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1050.6491561827947,
   "opponent": "Kengo Kimura",
@@ -1240,6 +1417,7 @@
  },
  {
   "date": "1998/03/24",
+  "wrestling_as": "Kengo Kimura",
   "wrestler": "Kengo Kimura",
   "elo": 1108.4197283799322,
   "opponent": "El Samurai",
@@ -1247,6 +1425,7 @@
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Brian Johnston",
   "wrestler": "Brian Johnston",
   "elo": 1009.5202788658934,
   "opponent": "Naoya Ogawa",
@@ -1254,6 +1433,7 @@
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Naoya Ogawa",
   "wrestler": "Naoya Ogawa",
   "elo": 1095.6180390680793,
   "opponent": "Brian Johnston; Don Frye",
@@ -1261,6 +1441,7 @@
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 801.2618667527227,
   "opponent": "Tatsuhito Takaiwa",
@@ -1268,13 +1449,15 @@
  },
  {
   "date": "1998/04/04",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1068.7050400978892,
   "opponent": "Koji Kanemoto",
   "result": "won"
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Yuji Yasuraoka",
   "wrestler": "Yuji Yasuraoka",
   "elo": 933.0675419214357,
   "opponent": "Shinjiro Otani",
@@ -1282,6 +1465,7 @@
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1011.3709714124511,
   "opponent": "Yuji Yasuraoka",
@@ -1289,6 +1473,7 @@
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Don Frye",
   "wrestler": "Don Frye",
   "elo": 1066.908273859603,
   "opponent": "Naoya Ogawa; Antonio Inoki",
@@ -1296,6 +1481,7 @@
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1198.240929748134,
   "opponent": "Jushin Thunder Liger",
@@ -1303,6 +1489,7 @@
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1145.0055448766761,
   "opponent": "Kendo Kashin",
@@ -1310,6 +1497,7 @@
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Kensuke Sasaki",
   "wrestler": "Kensuke Sasaki",
   "elo": 981.6779314283059,
   "opponent": "Tatsumi Fujinami",
@@ -1317,6 +1505,7 @@
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1090.976034920182,
   "opponent": "Kensuke Sasaki",
@@ -1324,6 +1513,7 @@
  },
  {
   "date": "1998/04/04",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1068.5646696242945,
   "opponent": "Don Frye",
@@ -1331,6 +1521,7 @@
  },
  {
   "date": "1998/04/14",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 893.2450986174719,
   "opponent": "Akitoshi Saito",
@@ -1338,6 +1529,7 @@
  },
  {
   "date": "1998/04/14",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1062.5385071668272,
   "opponent": "Black Cat",
@@ -1345,6 +1537,7 @@
  },
  {
   "date": "1998/04/14",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 762.8159861545611,
   "opponent": "El Samurai",
@@ -1352,6 +1545,7 @@
  },
  {
   "date": "1998/04/14",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1069.8720964818756,
   "opponent": "Koji Kanemoto",
@@ -1359,6 +1553,7 @@
  },
  {
   "date": "1998/04/16",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 919.5668668357059,
   "opponent": "Shinya Hashimoto",
@@ -1366,6 +1561,7 @@
  },
  {
   "date": "1998/04/16",
+  "wrestling_as": "Shinya Hashimoto",
   "wrestler": "Shinya Hashimoto",
   "elo": 1122.3378094907296,
   "opponent": "Osamu Nishimura",
@@ -1373,6 +1569,7 @@
  },
  {
   "date": "1998/04/17",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 775.763893023645,
   "opponent": "Yutaka Yoshie",
@@ -1380,6 +1577,7 @@
  },
  {
   "date": "1998/04/17",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 949.3600961015086,
   "opponent": "Black Cat",
@@ -1387,6 +1585,7 @@
  },
  {
   "date": "1998/04/19",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 744.5114102715116,
   "opponent": "Tatsuhito Takaiwa",
@@ -1394,13 +1593,15 @@
  },
  {
   "date": "1998/04/19",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1084.3312814739559,
   "opponent": "Black Cat",
   "result": "won"
  },
  {
   "date": "1998/04/20",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 800.2950173475789,
   "opponent": "Koji Kanemoto",
@@ -1408,6 +1609,7 @@
  },
  {
   "date": "1998/04/20",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 911.8810649084908,
   "opponent": "Yutaka Yoshie",
@@ -1415,6 +1617,7 @@
  },
  {
   "date": "1998/04/20",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1022.0029386363047,
   "opponent": "Osamu Kido",
@@ -1422,6 +1625,7 @@
  },
  {
   "date": "1998/04/20",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1164.1377048995862,
   "opponent": "Kuniaki Kobayashi",
@@ -1429,6 +1633,7 @@
  },
  {
   "date": "1998/04/20",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 986.7486089213336,
   "opponent": "Hiroyoshi Tenzan",
@@ -1436,6 +1641,7 @@
  },
  {
   "date": "1998/04/20",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 1015.8724199726635,
   "opponent": "Akitoshi Saito",
@@ -1443,6 +1649,7 @@
  },
  {
   "date": "1998/04/21",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 999.5620589595628,
   "opponent": "Big Titan",
@@ -1450,6 +1657,7 @@
  },
  {
   "date": "1998/04/21",
+  "wrestling_as": "Big Titan",
   "wrestler": "Big Titan",
   "elo": 1133.042613029842,
   "opponent": "Manabu Nakanishi",
@@ -1457,13 +1665,15 @@
  },
  {
   "date": "1998/04/23",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 996.7195993556093,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/04/23",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 919.7347745082049,
   "opponent": "Tatsuhito Takaiwa",
@@ -1471,6 +1681,7 @@
  },
  {
   "date": "1998/04/23",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1008.1328003343625,
   "opponent": "Akitoshi Saito",
@@ -1478,6 +1689,7 @@
  },
  {
   "date": "1998/04/23",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1110.2272012163596,
   "opponent": "El Samurai",
@@ -1485,6 +1697,7 @@
  },
  {
   "date": "1998/04/23",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1027.983411458842,
   "opponent": "Osamu Kido",
@@ -1492,6 +1705,7 @@
  },
  {
   "date": "1998/04/23",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1200.106624625956,
   "opponent": "Hiro Saito",
@@ -1499,6 +1713,7 @@
  },
  {
   "date": "1998/04/25",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 781.9168088503267,
   "opponent": "Kendo Kashin",
@@ -1506,6 +1721,7 @@
  },
  {
   "date": "1998/04/25",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1207.4300339967601,
   "opponent": "Yutaka Yoshie",
@@ -1513,6 +1729,7 @@
  },
  {
   "date": "1998/04/25",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 817.4746801158099,
   "opponent": "Koji Kanemoto",
@@ -1520,6 +1737,7 @@
  },
  {
   "date": "1998/04/25",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1014.1411593008858,
   "opponent": "Black Cat",
@@ -1527,6 +1745,7 @@
  },
  {
   "date": "1998/04/26",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 755.6657836015204,
   "opponent": "Akitoshi Saito",
@@ -1534,6 +1753,7 @@
  },
  {
   "date": "1998/04/26",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1123.3527138407628,
   "opponent": "Yutaka Yoshie",
@@ -1541,6 +1761,7 @@
  },
  {
   "date": "1998/04/26",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 771.5976300578225,
   "opponent": "Hiro Saito",
@@ -1548,6 +1769,7 @@
  },
  {
   "date": "1998/04/26",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1050.9219364878359,
   "opponent": "Black Cat",
@@ -1555,6 +1777,7 @@
  },
  {
   "date": "1998/04/26",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 846.5970729080811,
   "opponent": "Hiroyoshi Tenzan",
@@ -1562,6 +1785,7 @@
  },
  {
   "date": "1998/04/26",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 1052.3573169364759,
   "opponent": "Osamu Nishimura",
@@ -1569,6 +1793,7 @@
  },
  {
   "date": "1998/04/30",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 715.7081010655745,
   "opponent": "Tatsuhito Takaiwa",
@@ -1576,13 +1801,15 @@
  },
  {
   "date": "1998/04/30",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1036.6772818915551,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "1998/04/30",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1063.0775136940517,
   "opponent": "Hiro Saito",
@@ -1590,6 +1817,7 @@
  },
  {
   "date": "1998/04/30",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1111.197136634547,
   "opponent": "Akitoshi Saito",
@@ -1597,6 +1825,7 @@
  },
  {
   "date": "1998/04/30",
+  "wrestling_as": "Michiyoshi Ohara",
   "wrestler": "Michiyoshi Ohara",
   "elo": 949.9369752514214,
   "opponent": "Manabu Nakanishi",
@@ -1604,6 +1833,7 @@
  },
  {
   "date": "1998/04/30",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1099.68810845672,
   "opponent": "Michiyoshi Ohara",
@@ -1611,6 +1841,7 @@
  },
  {
   "date": "1998/04/30",
+  "wrestling_as": "Norio Honaga",
   "wrestler": "Norio Honaga",
   "elo": 916.1347779989352,
   "opponent": "Jushin Thunder Liger",
@@ -1618,6 +1849,7 @@
  },
  {
   "date": "1998/04/30",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1171.7006469922703,
   "opponent": "Norio Honaga",
@@ -1625,6 +1857,7 @@
  },
  {
   "date": "1998/05/15",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
   "elo": 942.8536882591618,
   "opponent": "Hiroyoshi Kotsubo",
@@ -1632,6 +1865,7 @@
  },
  {
   "date": "1998/05/15",
+  "wrestling_as": "Hiroyoshi Kotsubo",
   "wrestler": "Hiroyoshi Kotsubo",
   "elo": 1064.2926234816764,
   "opponent": "Katsushi Takemura",
@@ -1639,6 +1873,7 @@
  },
  {
   "date": "1998/05/15",
+  "wrestling_as": "Nobuyuki Kurashima",
   "wrestler": "Nobuyuki Kurashima",
   "elo": 864.2926234816763,
   "opponent": "Alexander Otsuka",
@@ -1646,6 +1881,7 @@
  },
  {
   "date": "1998/05/15",
+  "wrestling_as": "Alexander Otsuka",
   "wrestler": "Alexander Otsuka",
   "elo": 1042.8536882591618,
   "opponent": "Nobuyuki Kurashima",
@@ -1653,6 +1889,7 @@
  },
  {
   "date": "1998/05/15",
+  "wrestling_as": "Kazuhiko Shoda",
   "wrestler": "Kazuhiko Shoda",
   "elo": 998.0836459232162,
   "opponent": "Tatsuhito Takaiwa",
@@ -1660,13 +1897,15 @@
  },
  {
   "date": "1998/05/15",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1088.593635968339,
   "opponent": "Kazuhiko Shoda",
   "result": "won"
  },
  {
   "date": "1998/05/15",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 973.6695709546615,
   "opponent": "Osamu Nishimura",
@@ -1674,6 +1913,7 @@
  },
  {
   "date": "1998/05/15",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 999.2579309987582,
   "opponent": "Masakazu Fukuda",
@@ -1681,6 +1921,7 @@
  },
  {
   "date": "1998/05/16",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 655.6486637296296,
   "opponent": "Yutaka Yoshie",
@@ -1688,6 +1929,7 @@
  },
  {
   "date": "1998/05/16",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 831.6570673937674,
   "opponent": "Black Cat",
@@ -1695,6 +1937,7 @@
  },
  {
   "date": "1998/05/16",
+  "wrestling_as": "Felino",
   "wrestler": "Felino",
   "elo": 950.0,
   "opponent": "Kaz Hayashi",
@@ -1702,6 +1945,7 @@
  },
  {
   "date": "1998/05/16",
+  "wrestling_as": "Kaz Hayashi",
   "wrestler": "Kaz Hayashi",
   "elo": 1050.0,
   "opponent": "Felino",
@@ -1709,6 +1953,7 @@
  },
  {
   "date": "1998/05/16",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1109.9635913248503,
   "opponent": "Tatsuhito Takaiwa",
@@ -1716,13 +1961,15 @@
  },
  {
   "date": "1998/05/16",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1150.3306916357587,
   "opponent": "Jushin Thunder Liger",
   "result": "won"
  },
  {
   "date": "1998/05/17",
+  "wrestling_as": "Felino",
   "wrestler": "Felino",
   "elo": 870.4324291327385,
   "opponent": "Kuniaki Kobayashi",
@@ -1730,6 +1977,7 @@
  },
  {
   "date": "1998/05/17",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1061.7867240699354,
   "opponent": "Felino",
@@ -1737,6 +1985,7 @@
  },
  {
   "date": "1998/05/17",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 970.4840199123536,
   "opponent": "Dr. Wagner Jr.",
@@ -1744,6 +1993,7 @@
  },
  {
   "date": "1998/05/17",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1116.2973731887082,
   "opponent": "Shinjiro Otani",
@@ -1751,6 +2001,7 @@
  },
  {
   "date": "1998/05/17",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 952.6809848884832,
   "opponent": "Yuji Yasuraoka",
@@ -1758,6 +2009,7 @@
  },
  {
   "date": "1998/05/17",
+  "wrestling_as": "Yuji Yasuraoka",
   "wrestler": "Yuji Yasuraoka",
   "elo": 1055.987890746241,
   "opponent": "Koji Kanemoto",
@@ -1765,6 +2017,7 @@
  },
  {
   "date": "1998/05/17",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 864.0833383714935,
   "opponent": "Osamu Nishimura",
@@ -1772,6 +2025,7 @@
  },
  {
   "date": "1998/05/17",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 1085.1745926272647,
   "opponent": "Satoshi Kojima",
@@ -1779,6 +2033,7 @@
  },
  {
   "date": "1998/05/18",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 911.002476661317,
   "opponent": "Jushin Thunder Liger",
@@ -1786,6 +2041,7 @@
  },
  {
   "date": "1998/05/18",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1141.2971384715224,
   "opponent": "Masakazu Fukuda",
@@ -1793,6 +2049,7 @@
  },
  {
   "date": "1998/05/18",
+  "wrestling_as": "Hayato Nanjyo",
   "wrestler": "Hayato Nanjyo",
   "elo": 847.0788939816019,
   "opponent": "Kendo Kashin",
@@ -1800,6 +2057,7 @@
  },
  {
   "date": "1998/05/18",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1213.7775860884792,
   "opponent": "Hayato Nanjyo",
@@ -1807,6 +2065,7 @@
  },
  {
   "date": "1998/05/19",
+  "wrestling_as": "Felino",
   "wrestler": "Felino",
   "elo": 793.6729372906132,
   "opponent": "Koji Kanemoto",
@@ -1814,6 +2073,7 @@
  },
  {
   "date": "1998/05/19",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1029.4404767306085,
   "opponent": "Felino",
@@ -1821,6 +2081,7 @@
  },
  {
   "date": "1998/05/19",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 952.7358131310549,
   "opponent": "Shinjiro Otani",
@@ -1828,6 +2089,7 @@
  },
  {
   "date": "1998/05/19",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1081.2779943189687,
   "opponent": "El Samurai",
@@ -1835,6 +2097,7 @@
  },
  {
   "date": "1998/05/21",
+  "wrestling_as": "Yuji Yasuraoka",
   "wrestler": "Yuji Yasuraoka",
   "elo": 974.0816773812337,
   "opponent": "Felino",
@@ -1842,6 +2105,7 @@
  },
  {
   "date": "1998/05/21",
+  "wrestling_as": "Felino",
   "wrestler": "Felino",
   "elo": 957.4853640206277,
   "opponent": "Yuji Yasuraoka",
@@ -1849,13 +2113,15 @@
  },
  {
   "date": "1998/05/21",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1074.609621764091,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "1998/05/21",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1104.1779528743907,
   "opponent": "Tatsuhito Takaiwa",
@@ -1863,6 +2129,7 @@
  },
  {
   "date": "1998/05/22",
+  "wrestling_as": "Yuji Yasuraoka",
   "wrestler": "Yuji Yasuraoka",
   "elo": 895.5914703777055,
   "opponent": "Kaz Hayashi",
@@ -1870,6 +2137,7 @@
  },
  {
   "date": "1998/05/22",
+  "wrestling_as": "Kaz Hayashi",
   "wrestler": "Kaz Hayashi",
   "elo": 1089.245103501764,
   "opponent": "Yuji Yasuraoka",
@@ -1877,13 +2145,15 @@
  },
  {
   "date": "1998/05/22",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1030.5803456520744,
   "opponent": "Dr. Wagner Jr.",
   "result": "lost"
  },
  {
   "date": "1998/05/22",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1160.3266493007247,
   "opponent": "Tatsuhito Takaiwa",
@@ -1891,6 +2161,7 @@
  },
  {
   "date": "1998/05/23",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 823.0276228216603,
   "opponent": "Yutaka Yoshie",
@@ -1898,6 +2169,7 @@
  },
  {
   "date": "1998/05/23",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 966.4549126238123,
   "opponent": "Kazuyuki Fujita",
@@ -1905,6 +2177,7 @@
  },
  {
   "date": "1998/05/23",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 856.4314482005914,
   "opponent": "Shinjiro Otani",
@@ -1912,6 +2185,7 @@
  },
  {
   "date": "1998/05/23",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1108.5635085493316,
   "opponent": "Masakazu Fukuda",
@@ -1919,6 +2193,7 @@
  },
  {
   "date": "1998/05/23",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1176.632267424035,
   "opponent": "Koji Kanemoto",
@@ -1926,6 +2201,7 @@
  },
  {
   "date": "1998/05/23",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1103.7311140594966,
   "opponent": "Kendo Kashin",
@@ -1933,6 +2209,7 @@
  },
  {
   "date": "1998/05/24",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 634.9366645694265,
   "opponent": "Tatsuhito Takaiwa",
@@ -1940,13 +2217,15 @@
  },
  {
   "date": "1998/05/24",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1040.9363452321759,
   "opponent": "Black Cat",
   "result": "won"
  },
  {
   "date": "1998/05/24",
+  "wrestling_as": "Kaz Hayashi",
   "wrestler": "Kaz Hayashi",
   "elo": 1009.1217676132171,
   "opponent": "Hayato Nanjyo",
@@ -1954,6 +2233,7 @@
  },
  {
   "date": "1998/05/24",
+  "wrestling_as": "Hayato Nanjyo",
   "wrestler": "Hayato Nanjyo",
   "elo": 1007.3255657586958,
   "opponent": "Kaz Hayashi",
@@ -1961,6 +2241,7 @@
  },
  {
   "date": "1998/05/24",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1107.590817745678,
   "opponent": "Jushin Thunder Liger",
@@ -1968,6 +2249,7 @@
  },
  {
   "date": "1998/05/24",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1194.0329700265693,
   "opponent": "Dr. Wagner Jr.",
@@ -1975,6 +2257,7 @@
  },
  {
   "date": "1998/05/25",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 905.2190587715288,
   "opponent": "Shinjiro Otani",
@@ -1982,6 +2265,7 @@
  },
  {
   "date": "1998/05/25",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1139.1814354754733,
   "opponent": "Yutaka Yoshie",
@@ -1989,6 +2273,7 @@
  },
  {
   "date": "1998/05/25",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 817.6913922873897,
   "opponent": "El Samurai",
@@ -1996,6 +2281,7 @@
  },
  {
   "date": "1998/05/25",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1123.5479808309915,
   "opponent": "Masakazu Fukuda",
@@ -2003,6 +2289,7 @@
  },
  {
   "date": "1998/05/25",
+  "wrestling_as": "Felino",
   "wrestler": "Felino",
   "elo": 913.342585084028,
   "opponent": "Kendo Kashin",
@@ -2010,6 +2297,7 @@
  },
  {
   "date": "1998/05/25",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1198.703656892335,
   "opponent": "Felino",
@@ -2017,6 +2305,7 @@
  },
  {
   "date": "1998/05/26",
+  "wrestling_as": "Yuji Yasuraoka",
   "wrestler": "Yuji Yasuraoka",
   "elo": 865.8519834620347,
   "opponent": "Kendo Kashin",
@@ -2024,6 +2313,7 @@
  },
  {
   "date": "1998/05/26",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1218.3488056752212,
   "opponent": "Yuji Yasuraoka; Kazuyuki Fujita",
@@ -2031,6 +2321,7 @@
  },
  {
   "date": "1998/05/26",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 991.8039775540832,
   "opponent": "Yutaka Yoshie",
@@ -2038,6 +2329,7 @@
  },
  {
   "date": "1998/05/26",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1047.766131051466,
   "opponent": "Akitoshi Saito",
@@ -2045,6 +2337,7 @@
  },
  {
   "date": "1998/05/26",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 803.9260015214564,
   "opponent": "Kendo Kashin",
@@ -2052,13 +2345,15 @@
  },
  {
   "date": "1998/05/26",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 962.6046581207578,
   "opponent": "Masakazu Fukuda",
   "result": "lost"
  },
  {
   "date": "1998/05/26",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 974.3547665102258,
   "opponent": "Tatsuhito Takaiwa",
@@ -2066,6 +2361,7 @@
  },
  {
   "date": "1998/05/28",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1003.1289339914289,
   "opponent": "Osamu Nishimura",
@@ -2073,6 +2369,7 @@
  },
  {
   "date": "1998/05/28",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 1129.8117896873016,
   "opponent": "Yutaka Yoshie",
@@ -2080,6 +2377,7 @@
  },
  {
   "date": "1998/05/28",
+  "wrestling_as": "Hayato Nanjyo",
   "wrestler": "Hayato Nanjyo",
   "elo": 970.8540068045539,
   "opponent": "Koji Kanemoto",
@@ -2087,6 +2385,7 @@
  },
  {
   "date": "1998/05/28",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1140.2026730136386,
   "opponent": "Hayato Nanjyo",
@@ -2094,6 +2393,7 @@
  },
  {
   "date": "1998/05/28",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1097.010270021888,
   "opponent": "Jushin Thunder Liger",
@@ -2101,6 +2401,7 @@
  },
  {
   "date": "1998/05/28",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1236.2041354801547,
   "opponent": "Shinjiro Otani",
@@ -2108,6 +2409,7 @@
  },
  {
   "date": "1998/05/29",
+  "wrestling_as": "Yuji Yasuraoka",
   "wrestler": "Yuji Yasuraoka",
   "elo": 795.1862841802972,
   "opponent": "Hayato Nanjyo",
@@ -2115,6 +2417,7 @@
  },
  {
   "date": "1998/05/29",
+  "wrestling_as": "Hayato Nanjyo",
   "wrestler": "Hayato Nanjyo",
   "elo": 1041.5197060862913,
   "opponent": "Yuji Yasuraoka",
@@ -2122,6 +2425,7 @@
  },
  {
   "date": "1998/05/29",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 910.9277115753191,
   "opponent": "Dr. Wagner Jr.",
@@ -2129,6 +2433,7 @@
  },
  {
   "date": "1998/05/29",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1139.3043452131312,
   "opponent": "Masakazu Fukuda",
@@ -2136,6 +2441,7 @@
  },
  {
   "date": "1998/05/30",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 951.4997187164213,
   "opponent": "Akitoshi Saito",
@@ -2143,6 +2449,7 @@
  },
  {
   "date": "1998/05/30",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1095.0624081040985,
   "opponent": "Yutaka Yoshie",
@@ -2150,6 +2457,7 @@
  },
  {
   "date": "1998/05/30",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1179.883408113118,
   "opponent": "Kaz Hayashi",
@@ -2157,6 +2465,7 @@
  },
  {
   "date": "1998/05/30",
+  "wrestling_as": "Kaz Hayashi",
   "wrestler": "Kaz Hayashi",
   "elo": 1086.0525627374232,
   "opponent": "Kendo Kashin",
@@ -2164,6 +2473,7 @@
  },
  {
   "date": "1998/05/30",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1203.3705066286188,
   "opponent": "El Samurai",
@@ -2171,6 +2481,7 @@
  },
  {
   "date": "1998/05/30",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1189.2152385340632,
   "opponent": "Jushin Thunder Liger",
@@ -2178,6 +2489,7 @@
  },
  {
   "date": "1998/05/31",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 859.4644645053547,
   "opponent": "Akitoshi Saito",
@@ -2185,6 +2497,7 @@
  },
  {
   "date": "1998/05/31",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1120.7940316390807,
   "opponent": "Masakazu Fukuda",
@@ -2192,6 +2505,7 @@
  },
  {
   "date": "1998/05/31",
+  "wrestling_as": "Kaz Hayashi",
   "wrestler": "Kaz Hayashi",
   "elo": 1043.7828979604208,
   "opponent": "Koji Kanemoto",
@@ -2199,6 +2513,7 @@
  },
  {
   "date": "1998/05/31",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1182.472337790641,
   "opponent": "Kaz Hayashi",
@@ -2206,6 +2521,7 @@
  },
  {
   "date": "1998/05/31",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1028.5781772659238,
   "opponent": "Tatsuhito Takaiwa",
@@ -2213,13 +2529,15 @@
  },
  {
   "date": "1998/05/31",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1099.468843632686,
   "opponent": "Shinjiro Otani",
   "result": "won"
  },
  {
   "date": "1998/06/01",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 819.3132716778075,
   "opponent": "Tatsuhito Takaiwa",
@@ -2227,13 +2545,15 @@
  },
  {
   "date": "1998/06/01",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1119.5444400464596,
   "opponent": "Masakazu Fukuda",
   "result": "won"
  },
  {
   "date": "1998/06/01",
+  "wrestling_as": "Hayato Nanjyo",
   "wrestler": "Hayato Nanjyo",
   "elo": 973.8672225087159,
   "opponent": "Felino",
@@ -2241,6 +2561,7 @@
  },
  {
   "date": "1998/06/01",
+  "wrestling_as": "Felino",
   "wrestler": "Felino",
   "elo": 1048.6475522391788,
   "opponent": "Hayato Nanjyo",
@@ -2248,6 +2569,7 @@
  },
  {
   "date": "1998/06/01",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1132.0814887784397,
   "opponent": "Dr. Wagner Jr.",
@@ -2255,6 +2577,7 @@
  },
  {
   "date": "1998/06/01",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1196.4380949687547,
   "opponent": "El Samurai",
@@ -2262,6 +2585,7 @@
  },
  {
   "date": "1998/06/03",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1034.689024604969,
   "opponent": "Kazuyuki Fujita",
@@ -2269,6 +2593,7 @@
  },
  {
   "date": "1998/06/03",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 976.1360155896798,
   "opponent": "Akitoshi Saito",
@@ -2276,6 +2601,7 @@
  },
  {
   "date": "1998/06/03",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1144.4293427300163,
   "opponent": "Koji Kanemoto",
@@ -2283,6 +2609,7 @@
  },
  {
   "date": "1998/06/03",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1234.4810900293794,
   "opponent": "Dr. Wagner Jr.",
@@ -2290,6 +2617,7 @@
  },
  {
   "date": "1998/06/04",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 761.6158969902592,
   "opponent": "Kazuyuki Fujita",
@@ -2297,6 +2625,7 @@
  },
  {
   "date": "1998/06/04",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1033.833390277228,
   "opponent": "Masakazu Fukuda",
@@ -2304,6 +2633,7 @@
  },
  {
   "date": "1998/06/04",
+  "wrestling_as": "Felino",
   "wrestler": "Felino",
   "elo": 1012.0927585185581,
   "opponent": "Dr. Wagner Jr.",
@@ -2311,6 +2641,7 @@
  },
  {
   "date": "1998/06/04",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1180.9841364506372,
   "opponent": "Felino",
@@ -2318,6 +2649,7 @@
  },
  {
   "date": "1998/06/05",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 891.1569160838156,
   "opponent": "Tadao Yasuda",
@@ -2325,6 +2657,7 @@
  },
  {
   "date": "1998/06/05",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1127.446258113118,
   "opponent": "Yutaka Yoshie",
@@ -2332,6 +2665,7 @@
  },
  {
   "date": "1998/06/05",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 961.178959809739,
   "opponent": "Satoshi Kojima",
@@ -2339,6 +2673,7 @@
  },
  {
   "date": "1998/06/05",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1009.3921993064715,
   "opponent": "Kazuyuki Fujita",
@@ -2346,6 +2681,7 @@
  },
  {
   "date": "1998/06/05",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 1075.4874739176792,
   "opponent": "Manabu Nakanishi",
@@ -2353,6 +2689,7 @@
  },
  {
   "date": "1998/06/05",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1154.0124242263425,
   "opponent": "Osamu Nishimura",
@@ -2360,6 +2697,7 @@
  },
  {
   "date": "1998/06/05",
+  "wrestling_as": "Yoshiaki Fujiwara",
   "wrestler": "Yoshiaki Fujiwara",
   "elo": 882.4339378744804,
   "opponent": "Don Frye",
@@ -2367,6 +2705,7 @@
  },
  {
   "date": "1998/06/05",
+  "wrestling_as": "Don Frye",
   "wrestler": "Don Frye",
   "elo": 1100.6913049223629,
   "opponent": "Yoshiaki Fujiwara",
@@ -2374,6 +2713,7 @@
  },
  {
   "date": "1998/06/05",
+  "wrestling_as": "Shinya Hashimoto",
   "wrestler": "Shinya Hashimoto",
   "elo": 1067.8367057356916,
   "opponent": "Tatsumi Fujinami",
@@ -2381,6 +2721,7 @@
  },
  {
   "date": "1998/06/05",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1145.47713867522,
   "opponent": "Shinya Hashimoto",
@@ -2388,6 +2729,7 @@
  },
  {
   "date": "1998/06/24",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 890.9534207826694,
   "opponent": "Takashi Iizuka",
@@ -2395,6 +2737,7 @@
  },
  {
   "date": "1998/06/24",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1102.969390243877,
   "opponent": "Kazuyuki Fujita",
@@ -2402,6 +2745,7 @@
  },
  {
   "date": "1998/06/24",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 999.2048163310951,
   "opponent": "Dr. Wagner Jr.",
@@ -2409,6 +2753,7 @@
  },
  {
   "date": "1998/06/24",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1210.3574973854659,
   "opponent": "Shinjiro Otani",
@@ -2416,13 +2761,15 @@
  },
  {
   "date": "1998/06/25",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1057.5699161546215,
   "opponent": "Akitoshi Saito",
   "result": "lost"
  },
  {
   "date": "1998/06/25",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1096.6635484968072,
   "opponent": "Tatsuhito Takaiwa",
@@ -2430,6 +2777,7 @@
  },
  {
   "date": "1998/06/25",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 821.4983234102577,
   "opponent": "Tatsutoshi Goto",
@@ -2437,6 +2785,7 @@
  },
  {
   "date": "1998/06/25",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
   "elo": 1034.829296336779,
   "opponent": "Yutaka Yoshie",
@@ -2444,6 +2793,7 @@
  },
  {
   "date": "1998/06/25",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1068.284050186683,
   "opponent": "Scott Norton",
@@ -2451,6 +2801,7 @@
  },
  {
   "date": "1998/06/25",
+  "wrestling_as": "Scott Norton",
   "wrestler": "Scott Norton",
   "elo": 1122.2156180962704,
   "opponent": "Tadao Yasuda",
@@ -2458,13 +2809,15 @@
  },
  {
   "date": "1998/06/26",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 454.68834249888795,
   "opponent": "Shinjiro Otani",
   "result": "lost"
  },
  {
   "date": "1998/06/26",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1007.9584039137454,
   "opponent": "Shinya Makabe",
@@ -2472,6 +2825,7 @@
  },
  {
   "date": "1998/06/26",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 859.0872341852188,
   "opponent": "Kendo Kashin",
@@ -2479,6 +2833,7 @@
  },
  {
   "date": "1998/06/26",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1195.8165014118433,
   "opponent": "Kazuyuki Fujita",
@@ -2486,13 +2841,15 @@
  },
  {
   "date": "1998/06/27",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 436.9207575131441,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "1998/06/27",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 876.8548191709626,
   "opponent": "Shinya Makabe",
@@ -2500,6 +2857,7 @@
  },
  {
   "date": "1998/06/27",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 780.6157096175584,
   "opponent": "Tatsuhito Takaiwa",
@@ -2507,20 +2865,23 @@
  },
  {
   "date": "1998/06/27",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1078.0112230509712,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "1998/06/28",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 412.62429112856535,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/06/28",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 804.9121760021371,
   "opponent": "Shinya Makabe",
@@ -2528,6 +2889,7 @@
  },
  {
   "date": "1998/06/28",
+  "wrestling_as": "Michael Wallstreet",
   "wrestler": "Michael Wallstreet",
   "elo": 904.2880046454674,
   "opponent": "Manabu Nakanishi",
@@ -2535,6 +2897,7 @@
  },
  {
   "date": "1998/06/28",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1177.8159587914577,
   "opponent": "Michael Wallstreet",
@@ -2542,6 +2905,7 @@
  },
  {
   "date": "1998/06/28",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1151.3579259538028,
   "opponent": "Koji Kanemoto",
@@ -2549,6 +2913,7 @@
  },
  {
   "date": "1998/06/28",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1256.7103777583998,
   "opponent": "Kendo Kashin",
@@ -2556,20 +2921,23 @@
  },
  {
   "date": "1998/06/30",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 408.3757705787659,
   "opponent": "Tatsuhito Takaiwa",
   "result": "lost"
  },
  {
   "date": "1998/06/30",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1080.135483325871,
   "opponent": "Shinya Makabe",
   "result": "won"
  },
  {
   "date": "1998/06/30",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 767.7870648797832,
   "opponent": "Kuniaki Kobayashi",
@@ -2577,6 +2945,7 @@
  },
  {
   "date": "1998/06/30",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1080.3492796311125,
   "opponent": "Yutaka Yoshie",
@@ -2584,6 +2953,7 @@
  },
  {
   "date": "1998/06/30",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1034.3618354126975,
   "opponent": "Satoshi Kojima",
@@ -2591,6 +2961,7 @@
  },
  {
   "date": "1998/06/30",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1071.693912390581,
   "opponent": "Akitoshi Saito",
@@ -2598,13 +2969,15 @@
  },
  {
   "date": "1998/07/01",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 405.63680908454097,
   "opponent": "Kendo Kashin",
   "result": "lost"
  },
  {
   "date": "1998/07/01",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1152.7274067009153,
   "opponent": "Shinya Makabe",
@@ -2612,6 +2985,7 @@
  },
  {
   "date": "1998/07/01",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 715.8859211243872,
   "opponent": "Michiyoshi Ohara",
@@ -2619,6 +2993,7 @@
  },
  {
   "date": "1998/07/01",
+  "wrestling_as": "Michiyoshi Ohara",
   "wrestler": "Michiyoshi Ohara",
   "elo": 1001.8381190068174,
   "opponent": "Yutaka Yoshie",
@@ -2626,20 +3001,23 @@
  },
  {
   "date": "1998/07/02",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 401.6010052849683,
   "opponent": "Tatsuhito Takaiwa",
   "result": "lost"
  },
  {
   "date": "1998/07/02",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1082.1533852256573,
   "opponent": "Shinya Makabe",
   "result": "won"
  },
  {
   "date": "1998/07/02",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 1018.213773903634,
   "opponent": "nWo Sting",
@@ -2647,6 +3025,7 @@
  },
  {
   "date": "1998/07/02",
+  "wrestling_as": "nWo Sting",
   "wrestler": "nWo Sting",
   "elo": 1081.8571919079795,
   "opponent": "Osamu Nishimura",
@@ -2654,6 +3033,7 @@
  },
  {
   "date": "1998/07/02",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1184.8548107502106,
   "opponent": "Jushin Thunder Liger",
@@ -2661,6 +3041,7 @@
  },
  {
   "date": "1998/07/02",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1228.873193263874,
   "opponent": "Dr. Wagner Jr.",
@@ -2668,13 +3049,15 @@
  },
  {
   "date": "1998/07/03",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 398.6606721668485,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "1998/07/03",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1133.5516553374996,
   "opponent": "Shinya Makabe",
@@ -2682,6 +3065,7 @@
  },
  {
   "date": "1998/07/03",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 707.3730051989708,
   "opponent": "Koji Kanemoto",
@@ -2689,6 +3073,7 @@
  },
  {
   "date": "1998/07/03",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1258.838606739754,
   "opponent": "Yutaka Yoshie",
@@ -2696,13 +3081,15 @@
  },
  {
   "date": "1998/07/04",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 369.72813146884636,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/07/04",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 736.305545896973,
   "opponent": "Shinya Makabe",
@@ -2710,6 +3097,7 @@
  },
  {
   "date": "1998/07/04",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1093.0142230773615,
   "opponent": "Osamu Kido",
@@ -2717,6 +3105,7 @@
  },
  {
   "date": "1998/07/04",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1220.3753407560253,
   "opponent": "El Samurai",
@@ -2724,20 +3113,23 @@
  },
  {
   "date": "1998/07/06",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 366.4709957485945,
   "opponent": "Tatsuhito Takaiwa",
   "result": "lost"
  },
  {
   "date": "1998/07/06",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1083.7819530857832,
   "opponent": "Shinya Makabe",
   "result": "won"
  },
  {
   "date": "1998/07/06",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 715.5892613741983,
   "opponent": "Hiro Saito",
@@ -2745,6 +3137,7 @@
  },
  {
   "date": "1998/07/06",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1121.5552788959342,
   "opponent": "Yutaka Yoshie",
@@ -2752,13 +3145,15 @@
  },
  {
   "date": "1998/07/07",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 361.61108843623884,
   "opponent": "Shinjiro Otani",
   "result": "lost"
  },
  {
   "date": "1998/07/07",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1010.3883575699233,
   "opponent": "Shinya Makabe",
@@ -2766,6 +3161,7 @@
  },
  {
   "date": "1998/07/07",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1055.9316702569054,
   "opponent": "Dr. Wagner Jr.",
@@ -2773,6 +3169,7 @@
  },
  {
   "date": "1998/07/07",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1221.9373635706668,
   "opponent": "El Samurai",
@@ -2780,13 +3177,15 @@
  },
  {
   "date": "1998/07/09",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 359.528074037023,
   "opponent": "Kendo Kashin",
   "result": "lost"
  },
  {
   "date": "1998/07/09",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1153.768913900523,
   "opponent": "Shinya Makabe",
@@ -2794,6 +3193,7 @@
  },
  {
   "date": "1998/07/09",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1036.2516511653002,
   "opponent": "Hiro Saito",
@@ -2801,6 +3201,7 @@
  },
  {
   "date": "1998/07/09",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1165.6529073617464,
   "opponent": "Kuniaki Kobayashi",
@@ -2808,6 +3209,7 @@
  },
  {
   "date": "1998/07/10",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 705.3036521576495,
   "opponent": "Dr. Wagner Jr.",
@@ -2815,6 +3217,7 @@
  },
  {
   "date": "1998/07/10",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1224.5087658748039,
   "opponent": "Yutaka Yoshie",
@@ -2822,13 +3225,15 @@
  },
  {
   "date": "1998/07/11",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 355.96186168207817,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "1998/07/11",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1057.7147764343779,
   "opponent": "Shinya Makabe",
@@ -2836,6 +3241,7 @@
  },
  {
   "date": "1998/07/11",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 963.1297376302662,
   "opponent": "Kazuyuki Fujita",
@@ -2843,6 +3249,7 @@
  },
  {
   "date": "1998/07/11",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1019.3190147358251,
   "opponent": "Akitoshi Saito",
@@ -2850,13 +3257,15 @@
  },
  {
   "date": "1998/07/12",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 353.956760145389,
   "opponent": "Kendo Kashin",
   "result": "lost"
  },
  {
   "date": "1998/07/12",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1154.7714646688678,
   "opponent": "Shinya Makabe",
@@ -2864,6 +3273,7 @@
  },
  {
   "date": "1998/07/12",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 682.0579735125278,
   "opponent": "El Samurai",
@@ -2871,6 +3281,7 @@
  },
  {
   "date": "1998/07/12",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1069.3376157569387,
   "opponent": "Yutaka Yoshie",
@@ -2878,6 +3289,7 @@
  },
  {
   "date": "1998/07/12",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 932.2950746777444,
   "opponent": "Koji Kanemoto",
@@ -2885,6 +3297,7 @@
  },
  {
   "date": "1998/07/12",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1266.5472724778842,
   "opponent": "Akitoshi Saito",
@@ -2892,6 +3305,7 @@
  },
  {
   "date": "1998/07/14",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 664.0395241976743,
   "opponent": "Tatsuhito Takaiwa",
@@ -2899,13 +3313,15 @@
  },
  {
   "date": "1998/07/14",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1092.79117774321,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "1998/07/14",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1114.6748275198765,
   "opponent": "Dr. Wagner Jr.",
@@ -2913,6 +3329,7 @@
  },
  {
   "date": "1998/07/14",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1244.5570844492995,
   "opponent": "Kendo Kashin",
@@ -2920,6 +3337,7 @@
  },
  {
   "date": "1998/07/14",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 1015.4464092734918,
   "opponent": "Tatsumi Fujinami",
@@ -2927,6 +3345,7 @@
  },
  {
   "date": "1998/07/14",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1182.388046338204,
   "opponent": "Hiroyoshi Tenzan",
@@ -2934,13 +3353,15 @@
  },
  {
   "date": "1998/07/15",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1063.3413235519497,
   "opponent": "Dr. Wagner Jr.",
   "result": "lost"
  },
  {
   "date": "1998/07/15",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1259.2820115449297,
   "opponent": "Tatsuhito Takaiwa",
@@ -2948,6 +3369,7 @@
  },
  {
   "date": "1998/07/15",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 974.9613358899038,
   "opponent": "Kendo Kashin",
@@ -2955,6 +3377,7 @@
  },
  {
   "date": "1998/07/15",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1150.1018491998962,
   "opponent": "Shinjiro Otani",
@@ -2962,6 +3385,7 @@
  },
  {
   "date": "1998/07/15",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1238.8469797053522,
   "opponent": "Jushin Thunder Liger",
@@ -2969,6 +3393,7 @@
  },
  {
   "date": "1998/07/15",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1256.5734860364062,
   "opponent": "Koji Kanemoto",
@@ -2976,6 +3401,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Big Titan",
   "wrestler": "Big Titan",
   "elo": 1073.8295515789143,
   "opponent": "Tadao Yasuda",
@@ -2983,6 +3409,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1127.4971116376107,
   "opponent": "Big Titan",
@@ -2990,6 +3417,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 973.4710903628857,
   "opponent": "Satoshi Kojima",
@@ -2997,6 +3425,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1113.6692313011872,
   "opponent": "Hiroyoshi Tenzan",
@@ -3004,6 +3433,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 974.3798912067234,
   "opponent": "Shiro Koshinaka",
@@ -3011,6 +3441,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 1105.1134412260649,
   "opponent": "Osamu Nishimura",
@@ -3018,6 +3449,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Michiyoshi Ohara",
   "wrestler": "Michiyoshi Ohara",
   "elo": 948.9400866041555,
   "opponent": "Kensuke Sasaki",
@@ -3025,6 +3457,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Kensuke Sasaki",
   "wrestler": "Kensuke Sasaki",
   "elo": 1087.4739962336298,
   "opponent": "Michiyoshi Ohara",
@@ -3032,6 +3465,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
   "elo": 989.5652048753891,
   "opponent": "Shinya Hashimoto",
@@ -3039,6 +3473,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Shinya Hashimoto",
   "wrestler": "Shinya Hashimoto",
   "elo": 1113.1007971970814,
   "opponent": "Tatsutoshi Goto",
@@ -3046,6 +3481,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1095.5878600978435,
   "opponent": "Kazuo Yamazaki",
@@ -3053,6 +3489,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Kazuo Yamazaki",
   "wrestler": "Kazuo Yamazaki",
   "elo": 1028.8072774754423,
   "opponent": "Tatsumi Fujinami",
@@ -3060,6 +3497,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1101.6049197978753,
   "opponent": "Masahiro Chono",
@@ -3067,6 +3505,7 @@
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
   "elo": 1127.9810735755768,
   "opponent": "Manabu Nakanishi",
@@ -3074,13 +3513,15 @@
  },
  {
   "date": "1998/07/31",
-  "wrestler": "Great Muta",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
   "elo": 1005.144355434171,
   "opponent": "Genichiro Tenryu",
   "result": "lost"
  },
  {
   "date": "1998/07/31",
+  "wrestling_as": "Genichiro Tenryu",
   "wrestler": "Genichiro Tenryu",
   "elo": 1059.1482680475053,
   "opponent": "Keiji Muto",
@@ -3088,6 +3529,7 @@
  },
  {
   "date": "1998/08/01",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1075.5081697604087,
   "opponent": "Satoshi Kojima",
@@ -3095,6 +3537,7 @@
  },
  {
   "date": "1998/08/01",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1165.6581731783892,
   "opponent": "Tadao Yasuda",
@@ -3102,6 +3545,7 @@
  },
  {
   "date": "1998/08/01",
+  "wrestling_as": "Kensuke Sasaki",
   "wrestler": "Kensuke Sasaki",
   "elo": 1029.1105139208107,
   "opponent": "Kazuo Yamazaki",
@@ -3109,6 +3553,7 @@
  },
  {
   "date": "1998/08/01",
+  "wrestling_as": "Kazuo Yamazaki",
   "wrestler": "Kazuo Yamazaki",
   "elo": 1087.1707597882614,
   "opponent": "Kensuke Sasaki",
@@ -3116,6 +3561,7 @@
  },
  {
   "date": "1998/08/01",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 1058.3996141387304,
   "opponent": "Masahiro Chono",
@@ -3123,6 +3569,7 @@
  },
  {
   "date": "1998/08/01",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
   "elo": 1174.6949006629113,
   "opponent": "Shiro Koshinaka",
@@ -3130,6 +3577,7 @@
  },
  {
   "date": "1998/08/01",
+  "wrestling_as": "Genichiro Tenryu",
   "wrestler": "Genichiro Tenryu",
   "elo": 1016.8508462927757,
   "opponent": "Shinya Hashimoto",
@@ -3137,6 +3585,7 @@
  },
  {
   "date": "1998/08/01",
+  "wrestling_as": "Shinya Hashimoto",
   "wrestler": "Shinya Hashimoto",
   "elo": 1155.398218951811,
   "opponent": "Genichiro Tenryu",
@@ -3144,6 +3593,7 @@
  },
  {
   "date": "1998/08/02",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 981.1299307739221,
   "opponent": "Takashi Iizuka",
@@ -3151,6 +3601,7 @@
  },
  {
   "date": "1998/08/02",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1141.15847420578,
   "opponent": "Kazuyuki Fujita",
@@ -3158,6 +3609,7 @@
  },
  {
   "date": "1998/08/02",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
   "elo": 1112.3590162182447,
   "opponent": "Kazuo Yamazaki",
@@ -3165,6 +3617,7 @@
  },
  {
   "date": "1998/08/02",
+  "wrestling_as": "Kazuo Yamazaki",
   "wrestler": "Kazuo Yamazaki",
   "elo": 1107.6882964246647,
   "opponent": "Masahiro Chono; Shinya Hashimoto",
@@ -3172,6 +3625,7 @@
  },
  {
   "date": "1998/08/02",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1114.1820761275528,
   "opponent": "Shinya Hashimoto",
@@ -3179,6 +3633,7 @@
  },
  {
   "date": "1998/08/02",
+  "wrestling_as": "Shinya Hashimoto",
   "wrestler": "Shinya Hashimoto",
   "elo": 1227.783489906779,
   "opponent": "Satoshi Kojima; Kazuo Yamazaki",
@@ -3186,6 +3641,7 @@
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1030.7555966719067,
   "opponent": "Kendo Kashin",
@@ -3193,6 +3649,7 @@
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1188.6838682849282,
   "opponent": "El Samurai",
@@ -3200,6 +3657,7 @@
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 897.4399725229385,
   "opponent": "Shiro Koshinaka",
@@ -3207,6 +3665,7 @@
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 1096.4151730587039,
   "opponent": "Hiroyoshi Tenzan",
@@ -3214,6 +3673,7 @@
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1215.8678701187855,
   "opponent": "The Great Sasuke",
@@ -3221,13 +3681,15 @@
  },
  {
   "date": "1998/08/08",
-  "wrestler": "The Great Sasuke",
+  "wrestling_as": "The Great Sasuke",
+  "wrestler": "SASUKE / The Great Sasuke",
   "elo": 1081.4112318352413,
   "opponent": "Jushin Thunder Liger",
   "result": "won"
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "Don Frye",
   "wrestler": "Don Frye",
   "elo": 1040.5333204150475,
   "opponent": "Kensuke Sasaki",
@@ -3235,6 +3697,7 @@
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "Kensuke Sasaki",
   "wrestler": "Kensuke Sasaki",
   "elo": 1089.2684984281261,
   "opponent": "Don Frye",
@@ -3242,6 +3705,7 @@
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "Shinya Hashimoto",
   "wrestler": "Shinya Hashimoto",
   "elo": 1189.231198932232,
   "opponent": "Genichiro Tenryu",
@@ -3249,6 +3713,7 @@
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "Genichiro Tenryu",
   "wrestler": "Genichiro Tenryu",
   "elo": 1093.9554282418699,
   "opponent": "Shinya Hashimoto",
@@ -3256,6 +3721,7 @@
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1047.9995505961642,
   "opponent": "Masahiro Chono",
@@ -3263,6 +3729,7 @@
  },
  {
   "date": "1998/08/08",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
   "elo": 1159.947325719924,
   "opponent": "Tatsumi Fujinami",
@@ -3270,13 +3737,15 @@
  },
  {
   "date": "1998/09/10",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 320.8454004402456,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/09/10",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 668.0480242745699,
   "opponent": "Shinya Makabe",
@@ -3284,13 +3753,15 @@
  },
  {
   "date": "1998/09/10",
-  "wrestler": "The Great Sasuke",
+  "wrestling_as": "The Great Sasuke",
+  "wrestler": "SASUKE / The Great Sasuke",
   "elo": 1049.84966960506,
   "opponent": "Jushin Thunder Liger",
   "result": "lost"
  },
  {
   "date": "1998/09/10",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1231.6486512338763,
   "opponent": "The Great Sasuke",
@@ -3298,6 +3769,7 @@
  },
  {
   "date": "1998/09/11",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 566.8943363984879,
   "opponent": "Yutaka Yoshie",
@@ -3305,6 +3777,7 @@
  },
  {
   "date": "1998/09/11",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 765.1932120737563,
   "opponent": "Black Cat",
@@ -3312,6 +3785,7 @@
  },
  {
   "date": "1998/09/11",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 916.2111375801926,
   "opponent": "Kengo Kimura",
@@ -3319,6 +3793,7 @@
  },
  {
   "date": "1998/09/11",
+  "wrestling_as": "Kengo Kimura",
   "wrestler": "Kengo Kimura",
   "elo": 1140.879124976797,
   "opponent": "Kazuyuki Fujita",
@@ -3326,13 +3801,15 @@
  },
  {
   "date": "1998/09/12",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 306.4655125075974,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/09/12",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 779.5731000064045,
   "opponent": "Shinya Makabe",
@@ -3340,6 +3817,7 @@
  },
  {
   "date": "1998/09/12",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1000.9062790166282,
   "opponent": "Takashi Iizuka",
@@ -3347,6 +3825,7 @@
  },
  {
   "date": "1998/09/12",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1176.5038463544522,
   "opponent": "Kuniaki Kobayashi",
@@ -3354,6 +3833,7 @@
  },
  {
   "date": "1998/09/12",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 886.6246436239863,
   "opponent": "Osamu Kido",
@@ -3361,6 +3841,7 @@
  },
  {
   "date": "1998/09/12",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1227.7719642450768,
   "opponent": "Kazuyuki Fujita",
@@ -3368,6 +3849,7 @@
  },
  {
   "date": "1998/09/13",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 854.9045626350938,
   "opponent": "Takashi Iizuka",
@@ -3375,6 +3857,7 @@
  },
  {
   "date": "1998/09/13",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1192.3638868488986,
   "opponent": "Kazuyuki Fujita",
@@ -3382,6 +3865,7 @@
  },
  {
   "date": "1998/09/13",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 765.4862783910983,
   "opponent": "Osamu Kido",
@@ -3389,6 +3873,7 @@
  },
  {
   "date": "1998/09/13",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1231.2936696489032,
   "opponent": "Yutaka Yoshie",
@@ -3396,6 +3881,7 @@
  },
  {
   "date": "1998/09/13",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 878.885190731128,
   "opponent": "Kazuo Yamazaki",
@@ -3403,6 +3889,7 @@
  },
  {
   "date": "1998/09/13",
+  "wrestling_as": "Kazuo Yamazaki",
   "wrestler": "Kazuo Yamazaki",
   "elo": 1134.393238397973,
   "opponent": "Akitoshi Saito",
@@ -3410,6 +3897,7 @@
  },
  {
   "date": "1998/09/14",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 690.6693479809475,
   "opponent": "Kazuyuki Fujita",
@@ -3417,6 +3905,7 @@
  },
  {
   "date": "1998/09/14",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 929.7214930452446,
   "opponent": "Yutaka Yoshie",
@@ -3424,6 +3913,7 @@
  },
  {
   "date": "1998/09/14",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 850.6250476447199,
   "opponent": "Takashi Iizuka",
@@ -3431,6 +3921,7 @@
  },
  {
   "date": "1998/09/14",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1206.4939583921027,
   "opponent": "Akitoshi Saito",
@@ -3438,13 +3929,15 @@
  },
  {
   "date": "1998/09/14",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1008.665562453596,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "1998/09/14",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1085.4313577702603,
   "opponent": "Tatsuhito Takaiwa",
@@ -3452,6 +3945,7 @@
  },
  {
   "date": "1998/09/14",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 939.040982379181,
   "opponent": "Koji Kanemoto",
@@ -3459,6 +3953,7 @@
  },
  {
   "date": "1998/09/14",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1247.8270680830328,
   "opponent": "Shinjiro Otani",
@@ -3466,6 +3961,7 @@
  },
  {
   "date": "1998/09/14",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1144.8356708243696,
   "opponent": "Jushin Thunder Liger",
@@ -3473,6 +3969,7 @@
  },
  {
   "date": "1998/09/14",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1253.5727499641557,
   "opponent": "Kendo Kashin",
@@ -3480,13 +3977,15 @@
  },
  {
   "date": "1998/09/15",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 286.72376603518853,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/09/15",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 710.4110944533563,
   "opponent": "Shinya Makabe",
@@ -3494,13 +3993,15 @@
  },
  {
   "date": "1998/09/16",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 281.9049144423545,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "1998/09/16",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 934.5403446380787,
   "opponent": "Shinya Makabe",
@@ -3508,6 +4009,7 @@
  },
  {
   "date": "1998/09/16",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 916.7190583577994,
   "opponent": "Yutaka Yoshie",
@@ -3515,6 +4017,7 @@
  },
  {
   "date": "1998/09/16",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 878.7855357710139,
   "opponent": "Kuniaki Kobayashi",
@@ -3522,6 +4025,7 @@
  },
  {
   "date": "1998/09/18",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 538.4117051597742,
   "opponent": "Yutaka Yoshie",
@@ -3529,6 +4033,7 @@
  },
  {
   "date": "1998/09/18",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 907.2681670097276,
   "opponent": "Black Cat",
@@ -3536,6 +4041,7 @@
  },
  {
   "date": "1998/09/18",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1001.9127959000476,
   "opponent": "Hiroyoshi Tenzan",
@@ -3543,6 +4049,7 @@
  },
  {
   "date": "1998/09/18",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 1044.6307202436606,
   "opponent": "Tadao Yasuda",
@@ -3550,6 +4057,7 @@
  },
  {
   "date": "1998/09/19",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 992.3368473301052,
   "opponent": "Kazuyuki Fujita",
@@ -3557,6 +4065,7 @@
  },
  {
   "date": "1998/09/19",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 953.6922417779635,
   "opponent": "Tadao Yasuda",
@@ -3564,6 +4073,7 @@
  },
  {
   "date": "1998/09/19",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1204.5122114644553,
   "opponent": "Takashi Iizuka",
@@ -3571,6 +4081,7 @@
  },
  {
   "date": "1998/09/19",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1233.2754165765507,
   "opponent": "Osamu Kido",
@@ -3578,6 +4089,7 @@
  },
  {
   "date": "1998/09/19",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1215.6259430450755,
   "opponent": "Kendo Kashin",
@@ -3585,6 +4097,7 @@
  },
  {
   "date": "1998/09/19",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1209.237920900284,
   "opponent": "Koji Kanemoto",
@@ -3592,6 +4105,7 @@
  },
  {
   "date": "1998/09/20",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 766.7853239929923,
   "opponent": "Yutaka Yoshie",
@@ -3599,6 +4113,7 @@
  },
  {
   "date": "1998/09/20",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 991.1078906614551,
   "opponent": "Akitoshi Saito",
@@ -3606,6 +4121,7 @@
  },
  {
   "date": "1998/09/20",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 518.0577304826581,
   "opponent": "Kuniaki Kobayashi",
@@ -3613,6 +4129,7 @@
  },
  {
   "date": "1998/09/20",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 937.0730330349155,
   "opponent": "Black Cat",
@@ -3620,6 +4137,7 @@
  },
  {
   "date": "1998/09/21",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1181.6728887898046,
   "opponent": "El Samurai",
@@ -3627,6 +4145,7 @@
  },
  {
   "date": "1998/09/21",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1153.3374662808023,
   "opponent": "Koji Kanemoto",
@@ -3634,6 +4153,7 @@
  },
  {
   "date": "1998/09/21",
+  "wrestling_as": "Kengo Kimura",
   "wrestler": "Kengo Kimura",
   "elo": 1099.9356236630736,
   "opponent": "Osamu Kido",
@@ -3641,6 +4161,7 @@
  },
  {
   "date": "1998/09/21",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1224.983962121317,
   "opponent": "Kengo Kimura",
@@ -3648,6 +4169,7 @@
  },
  {
   "date": "1998/09/21",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 1002.7572532245202,
   "opponent": "Manabu Nakanishi",
@@ -3655,6 +4177,7 @@
  },
  {
   "date": "1998/09/21",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1143.4783868170157,
   "opponent": "Hiroyoshi Tenzan",
@@ -3662,6 +4185,7 @@
  },
  {
   "date": "1998/09/22",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 834.2343093294902,
   "opponent": "Akitoshi Saito",
@@ -3669,6 +4193,7 @@
  },
  {
   "date": "1998/09/22",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 923.6589053249572,
   "opponent": "Yutaka Yoshie",
@@ -3676,6 +4201,7 @@
  },
  {
   "date": "1998/09/22",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 514.6976010972611,
   "opponent": "Osamu Kido",
@@ -3683,6 +4209,7 @@
  },
  {
   "date": "1998/09/22",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1225.8239944676664,
   "opponent": "Black Cat",
@@ -3690,6 +4217,7 @@
  },
  {
   "date": "1998/09/23",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 864.7694098836146,
   "opponent": "Tadao Yasuda",
@@ -3697,6 +4225,7 @@
  },
  {
   "date": "1998/09/23",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1081.2596792244542,
   "opponent": "Kazuyuki Fujita",
@@ -3704,6 +4233,7 @@
  },
  {
   "date": "1998/09/23",
+  "wrestling_as": "Kaz Hayashi",
   "wrestler": "Kaz Hayashi",
   "elo": 1020.7711409970304,
   "opponent": "Jushin Thunder Liger",
@@ -3711,6 +4241,7 @@
  },
  {
   "date": "1998/09/23",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1265.0786284458509,
   "opponent": "Kaz Hayashi",
@@ -3718,13 +4249,15 @@
  },
  {
   "date": "1998/09/23",
-  "wrestler": "Great Muta",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
   "elo": 979.4074673001996,
   "opponent": "Shinya Hashimoto",
   "result": "lost"
  },
  {
   "date": "1998/09/23",
+  "wrestling_as": "Shinya Hashimoto",
   "wrestler": "Shinya Hashimoto",
   "elo": 1214.9680870662035,
   "opponent": "Keiji Muto",
@@ -3732,6 +4265,7 @@
  },
  {
   "date": "1998/09/23",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1010.245540134221,
   "opponent": "Scott Norton",
@@ -3739,6 +4273,7 @@
  },
  {
   "date": "1998/09/23",
+  "wrestling_as": "Scott Norton",
   "wrestler": "Scott Norton",
   "elo": 1161.9700779620493,
   "opponent": "Yuji Nagata",
@@ -3746,6 +4281,7 @@
  },
  {
   "date": "1998/10/09",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 910.0105968033871,
   "opponent": "Dr. Wagner Jr.",
@@ -3753,6 +4289,7 @@
  },
  {
   "date": "1998/10/09",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1266.0476206028118,
   "opponent": "Kuniaki Kobayashi",
@@ -3760,6 +4297,7 @@
  },
  {
   "date": "1998/10/09",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
   "elo": 936.3116743509956,
   "opponent": "Hiro Saito",
@@ -3767,6 +4305,7 @@
  },
  {
   "date": "1998/10/09",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1192.2796726239433,
   "opponent": "Tatsutoshi Goto",
@@ -3774,6 +4313,7 @@
  },
  {
   "date": "1998/10/09",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 766.0998435232214,
   "opponent": "Michiyoshi Ohara",
@@ -3781,6 +4321,7 @@
  },
  {
   "date": "1998/10/09",
+  "wrestling_as": "Michiyoshi Ohara",
   "wrestler": "Michiyoshi Ohara",
   "elo": 1017.0745524104243,
   "opponent": "Yutaka Yoshie",
@@ -3788,6 +4329,7 @@
  },
  {
   "date": "1998/10/10",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1031.345668127052,
   "opponent": "nWo Sting",
@@ -3795,6 +4337,7 @@
  },
  {
   "date": "1998/10/10",
+  "wrestling_as": "nWo Sting",
   "wrestler": "nWo Sting",
   "elo": 1131.7712030053817,
   "opponent": "Tadao Yasuda",
@@ -3802,6 +4345,7 @@
  },
  {
   "date": "1998/10/10",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 829.8121851464759,
   "opponent": "Kazuo Yamazaki",
@@ -3809,6 +4353,7 @@
  },
  {
   "date": "1998/10/10",
+  "wrestling_as": "Kazuo Yamazaki",
   "wrestler": "Kazuo Yamazaki",
   "elo": 1151.8718507665421,
   "opponent": "Kazuyuki Fujita",
@@ -3816,6 +4361,7 @@
  },
  {
   "date": "1998/10/11",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1073.1079392205825,
   "opponent": "Kuniaki Kobayashi",
@@ -3823,6 +4369,7 @@
  },
  {
   "date": "1998/10/11",
+  "wrestling_as": "Kuniaki Kobayashi",
   "wrestler": "Kuniaki Kobayashi",
   "elo": 1070.4696509238267,
   "opponent": "El Samurai",
@@ -3830,6 +4377,7 @@
  },
  {
   "date": "1998/10/11",
+  "wrestling_as": "Michiyoshi Ohara",
   "wrestler": "Michiyoshi Ohara",
   "elo": 942.4636111662107,
   "opponent": "Kazuyuki Fujita",
@@ -3837,6 +4385,7 @@
  },
  {
   "date": "1998/10/11",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 979.0340676349032,
   "opponent": "Michiyoshi Ohara",
@@ -3844,13 +4393,15 @@
  },
  {
   "date": "1998/10/13",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 270.30150250499213,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/10/13",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 777.7032554605837,
   "opponent": "Shinya Makabe",
@@ -3858,13 +4409,15 @@
  },
  {
   "date": "1998/10/14",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 266.97555301571583,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "1998/10/14",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 982.3600171241795,
   "opponent": "Shinya Makabe",
@@ -3872,6 +4425,7 @@
  },
  {
   "date": "1998/10/14",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 740.0123322120253,
   "opponent": "Tadao Yasuda",
@@ -3879,6 +4433,7 @@
  },
  {
   "date": "1998/10/14",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 1050.1911297513313,
   "opponent": "Yutaka Yoshie",
@@ -3886,27 +4441,31 @@
  },
  {
   "date": "1998/10/15",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 552.3380658649106,
-  "opponent": "Togi Makabe",
+  "opponent": "Shinya Makabe",
   "result": "lost"
  },
  {
   "date": "1998/10/15",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 454.6498193628305,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "1998/10/16",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 371.76290534189104,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/10/16",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 597.5845151182006,
   "opponent": "Shinya Makabe",
@@ -3914,6 +4473,7 @@
  },
  {
   "date": "1998/10/16",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 993.0178762348747,
   "opponent": "Junji Hirata",
@@ -3921,6 +4481,7 @@
  },
  {
   "date": "1998/10/16",
+  "wrestling_as": "Junji Hirata",
   "wrestler": "Junji Hirata",
   "elo": 1057.1732535164565,
   "opponent": "Tadao Yasuda",
@@ -3928,13 +4489,15 @@
  },
  {
   "date": "1998/10/17",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 328.92766962779416,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/10/17",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 640.4197508322974,
   "opponent": "Shinya Makabe",
@@ -3942,13 +4505,15 @@
  },
  {
   "date": "1998/10/17",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 954.8871074425206,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "1998/10/17",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1089.9169271463302,
   "opponent": "Tatsuhito Takaiwa",
@@ -3956,6 +4521,7 @@
  },
  {
   "date": "1998/10/18",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1228.4351062225662,
   "opponent": "El Samurai",
@@ -3963,6 +4529,7 @@
  },
  {
   "date": "1998/10/18",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1148.3329679810738,
   "opponent": "Dr. Wagner Jr.",
@@ -3970,20 +4537,23 @@
  },
  {
   "date": "1998/10/18",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1107.6762624995588,
+  "elo": 1113.5628044221764,
   "opponent": "SASUKE",
   "result": "lost"
  },
  {
   "date": "1998/10/18",
-  "wrestler": "SASUKE",
-  "elo": 1073.9966262902458,
+  "wrestling_as": "SASUKE",
+  "wrestler": "SASUKE / The Great Sasuke",
+  "elo": 1117.959753972688,
   "opponent": "Koji Kanemoto",
   "result": "won"
  },
  {
   "date": "1998/10/18",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 856.0841227574008,
   "opponent": "Don Frye",
@@ -3991,6 +4561,7 @@
  },
  {
   "date": "1998/10/18",
+  "wrestling_as": "Don Frye",
   "wrestler": "Don Frye",
   "elo": 1074.3207116988256,
   "opponent": "Akitoshi Saito",
@@ -3998,13 +4569,15 @@
  },
  {
   "date": "1998/10/20",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 285.6233645118063,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/10/20",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 595.6423709808985,
   "opponent": "Shinya Makabe",
@@ -4012,6 +4585,7 @@
  },
  {
   "date": "1998/10/20",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1059.4516318970652,
   "opponent": "Takashi Iizuka",
@@ -4019,6 +4593,7 @@
  },
  {
   "date": "1998/10/20",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1248.508064201183,
   "opponent": "Kazuyuki Fujita",
@@ -4026,6 +4601,7 @@
  },
  {
   "date": "1998/10/21",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 582.6877745517743,
   "opponent": "Kazuyuki Fujita",
@@ -4033,6 +4609,7 @@
  },
  {
   "date": "1998/10/21",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1065.9289301116273,
   "opponent": "Yutaka Yoshie",
@@ -4040,6 +4617,7 @@
  },
  {
   "date": "1998/10/21",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 630.2216899086876,
   "opponent": "El Samurai",
@@ -4047,6 +4625,7 @@
  },
  {
   "date": "1998/10/21",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1153.4319984428787,
   "opponent": "Black Cat",
@@ -4054,13 +4633,15 @@
  },
  {
   "date": "1998/10/22",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 923.7376753114712,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "1998/10/22",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1256.2954222339454,
   "opponent": "Tatsuhito Takaiwa",
@@ -4068,20 +4649,23 @@
  },
  {
   "date": "1998/10/23",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 454.4073762408167,
-  "opponent": "Togi Makabe",
+  "opponent": "Shinya Makabe",
   "result": "lost"
  },
  {
   "date": "1998/10/23",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 461.43767817967716,
   "opponent": "Black Cat",
   "result": "won"
  },
  {
   "date": "1998/10/24",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1183.6824699079793,
   "opponent": "Akitoshi Saito",
@@ -4089,6 +4673,7 @@
  },
  {
   "date": "1998/10/24",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1035.094668015748,
   "opponent": "Dr. Wagner Jr.",
@@ -4096,6 +4681,7 @@
  },
  {
   "date": "1998/10/24",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1118.9681194110046,
   "opponent": "Jushin Thunder Liger",
@@ -4103,6 +4689,7 @@
  },
  {
   "date": "1998/10/24",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1282.310567961788,
   "opponent": "El Samurai",
@@ -4110,13 +4697,15 @@
  },
  {
   "date": "1998/10/26",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 394.98526018063774,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/10/26",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 649.1401925508137,
   "opponent": "Shinya Makabe",
@@ -4124,6 +4713,7 @@
  },
  {
   "date": "1998/10/26",
+  "wrestling_as": "Kengo Kimura",
   "wrestler": "Kengo Kimura",
   "elo": 1067.2991166441116,
   "opponent": "Osamu Kido",
@@ -4131,6 +4721,7 @@
  },
  {
   "date": "1998/10/26",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
   "elo": 1242.1422479771475,
   "opponent": "Kengo Kimura",
@@ -4138,6 +4729,7 @@
  },
  {
   "date": "1998/10/27",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 498.30639154848006,
   "opponent": "Black Cat",
@@ -4145,6 +4737,7 @@
  },
  {
   "date": "1998/10/27",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 605.2411772431503,
   "opponent": "Yutaka Yoshie",
@@ -4152,13 +4745,15 @@
  },
  {
   "date": "1998/10/27",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 391.93457545796156,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "1998/10/27",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1120.4934617723427,
   "opponent": "Shinya Makabe",
@@ -4166,13 +4761,15 @@
  },
  {
   "date": "1998/10/28",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 321.62879015386324,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/10/28",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 568.6121768525784,
   "opponent": "Shinya Makabe",
@@ -4180,6 +4777,7 @@
  },
  {
   "date": "1998/10/28",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 574.9043288297811,
   "opponent": "Michael Wallstreet",
@@ -4187,6 +4785,7 @@
  },
  {
   "date": "1998/10/28",
+  "wrestling_as": "Michael Wallstreet",
   "wrestler": "Michael Wallstreet",
   "elo": 934.6248530588366,
   "opponent": "Black Cat",
@@ -4194,13 +4793,15 @@
  },
  {
   "date": "1998/10/29",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 318.3907924332193,
   "opponent": "Akitoshi Saito",
   "result": "lost"
  },
  {
   "date": "1998/10/29",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1036.71366687607,
   "opponent": "Shinya Makabe",
@@ -4208,6 +4809,7 @@
  },
  {
   "date": "1998/10/30",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1182.4023674678833,
   "opponent": "Dr. Wagner Jr.",
@@ -4215,6 +4817,7 @@
  },
  {
   "date": "1998/10/30",
+  "wrestling_as": "Dr. Wagner Jr.",
   "wrestler": "Dr. Wagner Jr.",
   "elo": 1237.3535767727808,
   "opponent": "Kendo Kashin",
@@ -4222,20 +4825,23 @@
  },
  {
   "date": "1998/10/30",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1033.4294656671984,
+  "elo": 1038.6734234025676,
   "opponent": "Tatsuhito Takaiwa",
   "result": "lost"
  },
  {
   "date": "1998/10/30",
-  "wrestler": "Tatsuhito Takaiwa",
-  "elo": 1072.2312689761918,
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 1073.516437350689,
   "opponent": "Koji Kanemoto",
   "result": "won"
  },
  {
   "date": "1998/10/30",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 914.6922023340098,
   "opponent": "Jushin Thunder Liger",
@@ -4243,6 +4849,7 @@
  },
  {
   "date": "1998/10/30",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1288.3977629730807,
   "opponent": "Shinjiro Otani",
@@ -4250,6 +4857,7 @@
  },
  {
   "date": "1998/10/30",
+  "wrestling_as": "Shinya Hashimoto",
   "wrestler": "Shinya Hashimoto",
   "elo": 1186.183879421388,
   "opponent": "Scott Norton",
@@ -4257,6 +4865,7 @@
  },
  {
   "date": "1998/10/30",
+  "wrestling_as": "Scott Norton",
   "wrestler": "Scott Norton",
   "elo": 1219.5384932516804,
   "opponent": "Shinya Hashimoto",
@@ -4264,6 +4873,7 @@
  },
  {
   "date": "1998/11/16",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 560.6031880990558,
   "opponent": "El Samurai",
@@ -4271,6 +4881,7 @@
  },
  {
   "date": "1998/11/16",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1124.497956149104,
   "opponent": "Yutaka Yoshie",
@@ -4278,6 +4889,7 @@
  },
  {
   "date": "1998/11/18",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 913.7006356260601,
   "opponent": "Kazuyuki Fujita",
@@ -4285,6 +4897,7 @@
  },
  {
   "date": "1998/11/18",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1105.5875504160347,
   "opponent": "Tadao Yasuda",
@@ -4292,13 +4905,15 @@
  },
  {
   "date": "1998/11/20",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 281.20281000117484,
   "opponent": "Black Cat",
   "result": "lost"
  },
  {
   "date": "1998/11/20",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 612.0923112618256,
   "opponent": "Shinya Makabe",
@@ -4306,6 +4921,7 @@
  },
  {
   "date": "1998/11/21",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1045.8036272662132,
   "opponent": "Akitoshi Saito",
@@ -4313,6 +4929,7 @@
  },
  {
   "date": "1998/11/21",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1096.4975900258914,
   "opponent": "Kazuyuki Fujita",
@@ -4320,6 +4937,7 @@
  },
  {
   "date": "1998/11/21",
+  "wrestling_as": "Michiyoshi Ohara",
   "wrestler": "Michiyoshi Ohara",
   "elo": 904.0943237288822,
   "opponent": "Hiro Saito",
@@ -4327,6 +4945,7 @@
  },
  {
   "date": "1998/11/21",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1211.4643163426076,
   "opponent": "Michiyoshi Ohara",
@@ -4334,6 +4953,7 @@
  },
  {
   "date": "1998/11/22",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 884.0168299146926,
   "opponent": "Hiro Saito",
@@ -4341,6 +4961,7 @@
  },
  {
   "date": "1998/11/22",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1219.133159447437,
   "opponent": "Shinjiro Otani",
@@ -4348,13 +4969,15 @@
  },
  {
   "date": "1998/11/23",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 279.387987232256,
   "opponent": "Akitoshi Saito",
   "result": "lost"
  },
  {
   "date": "1998/11/23",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 1097.405001410351,
   "opponent": "Shinya Makabe",
@@ -4362,6 +4985,7 @@
  },
  {
   "date": "1998/11/25",
+  "wrestling_as": "Tadao Yasuda",
   "wrestler": "Tadao Yasuda",
   "elo": 871.6269833129569,
   "opponent": "Manabu Nakanishi",
@@ -4369,6 +4993,7 @@
  },
  {
   "date": "1998/11/25",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1164.5152129735673,
   "opponent": "Tadao Yasuda",
@@ -4376,6 +5001,7 @@
  },
  {
   "date": "1998/11/26",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 592.7266999113999,
   "opponent": "Dave Finlay",
@@ -4383,6 +5009,7 @@
  },
  {
   "date": "1998/11/26",
+  "wrestling_as": "Dave Finlay",
   "wrestler": "Dave Finlay",
   "elo": 1009.6828056752129,
   "opponent": "Black Cat",
@@ -4390,6 +5017,7 @@
  },
  {
   "date": "1998/11/27",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 557.0226043950468,
   "opponent": "Takashi Iizuka",
@@ -4397,6 +5025,7 @@
  },
  {
   "date": "1998/11/27",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1257.1905681599476,
   "opponent": "Yutaka Yoshie",
@@ -4404,20 +5033,23 @@
  },
  {
   "date": "1998/11/29",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 390.6694591613253,
-  "opponent": "Togi Makabe",
+  "opponent": "Shinya Makabe",
   "result": "lost"
  },
  {
   "date": "1998/11/29",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 445.7411324659775,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "1998/12/01",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 386.16845807662804,
   "opponent": "Kazuyuki Fujita",
@@ -4425,6 +5057,7 @@
  },
  {
   "date": "1998/12/01",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1048.0541278085618,
   "opponent": "Yutaka Yoshie",
@@ -4432,13 +5065,15 @@
  },
  {
   "date": "1998/12/02",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 328.76081962348474,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "1998/12/02",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 503.1487709191208,
   "opponent": "Shinya Makabe",
@@ -4446,6 +5081,7 @@
  },
  {
   "date": "1998/12/02",
+  "wrestling_as": "Black Cat",
   "wrestler": "Black Cat",
   "elo": 583.7787496592439,
   "opponent": "El Samurai",
@@ -4453,6 +5089,7 @@
  },
  {
   "date": "1998/12/02",
+  "wrestling_as": "El Samurai",
   "wrestler": "El Samurai",
   "elo": 1128.971931275182,
   "opponent": "Black Cat",
@@ -4460,20 +5097,23 @@
  },
  {
   "date": "1998/12/03",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 998.5886380826632,
-  "opponent": "Togi Makabe",
+  "opponent": "Shinya Makabe",
   "result": "lost"
  },
  {
   "date": "1998/12/03",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 526.39354627886,
   "opponent": "Akitoshi Saito",
   "result": "won"
  },
  {
   "date": "1998/12/04",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 969.3635584781697,
   "opponent": "Don Frye",
@@ -4481,6 +5121,7 @@
  },
  {
   "date": "1998/12/04",
+  "wrestling_as": "Don Frye",
   "wrestler": "Don Frye",
   "elo": 1115.2026933548768,
   "opponent": "Yuji Nagata",
@@ -4488,20 +5129,23 @@
  },
  {
   "date": "1998/12/04",
-  "wrestler": "Tatsuhito Takaiwa",
-  "elo": 1049.8633735018539,
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 1051.0198150883177,
   "opponent": "Jushin Thunder Liger",
   "result": "lost"
  },
  {
   "date": "1998/12/04",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
-  "elo": 1299.5817107102498,
+  "elo": 1299.6460741042663,
   "opponent": "Tatsuhito Takaiwa",
   "result": "won"
  },
  {
   "date": "1998/12/04",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1122.3681559002514,
   "opponent": "Scott Norton",
@@ -4509,6 +5153,7 @@
  },
  {
   "date": "1998/12/04",
+  "wrestling_as": "Scott Norton",
   "wrestler": "Scott Norton",
   "elo": 1240.6120217883383,
   "opponent": "Manabu Nakanishi",
@@ -4516,6 +5161,7 @@
  },
  {
   "date": "1998/12/06",
+  "wrestling_as": "Dave Finlay",
   "wrestler": "Dave Finlay",
   "elo": 944.938557860146,
   "opponent": "Michiyoshi Ohara",
@@ -4523,6 +5169,7 @@
  },
  {
   "date": "1998/12/06",
+  "wrestling_as": "Michiyoshi Ohara",
   "wrestler": "Michiyoshi Ohara",
   "elo": 1033.582819359016,
   "opponent": "Dave Finlay",
@@ -4530,6 +5177,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Shinichi Nakano",
   "wrestler": "Shinichi Nakano",
   "elo": 956.864075732835,
   "opponent": "Tatsumi Fujinami",
@@ -4537,6 +5185,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1091.1354748633291,
   "opponent": "Shinichi Nakano",
@@ -4544,6 +5193,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Meiko Satomura",
   "wrestler": "Meiko Satomura",
   "elo": 1000.0,
   "opponent": "Chikayo Nagashima",
@@ -4551,6 +5201,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Chikayo Nagashima",
   "wrestler": "Chikayo Nagashima",
   "elo": 1000.0,
   "opponent": "Meiko Satomura",
@@ -4558,6 +5209,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Mach Junji",
   "wrestler": "Mach Junji",
   "elo": 950.0,
   "opponent": "Ikuto Hidaka",
@@ -4565,6 +5217,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Ikuto Hidaka",
   "wrestler": "Ikuto Hidaka",
   "elo": 1050.0,
   "opponent": "Mach Junji",
@@ -4572,6 +5225,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
   "elo": 876.4494966377922,
   "opponent": "Hiroyoshi Kotsubo",
@@ -4579,6 +5233,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Hiroyoshi Kotsubo",
   "wrestler": "Hiroyoshi Kotsubo",
   "elo": 1097.4947192923612,
   "opponent": "Katsushi Takemura",
@@ -4586,6 +5241,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Tadahiro Fujisaki",
   "wrestler": "Tadahiro Fujisaki",
   "elo": 931.406251067766,
   "opponent": "Nobuyuki Kurashima",
@@ -4593,6 +5249,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Nobuyuki Kurashima",
   "wrestler": "Nobuyuki Kurashima",
   "elo": 1001.4801213461443,
   "opponent": "Tadahiro Fujisaki",
@@ -4600,6 +5257,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Kazuhiko Shoda",
   "wrestler": "Kazuhiko Shoda",
   "elo": 838.8921362700323,
   "opponent": "Masakazu Fukuda",
@@ -4607,6 +5265,7 @@
  },
  {
   "date": "1998/12/08",
+  "wrestling_as": "Masakazu Fukuda",
   "wrestler": "Masakazu Fukuda",
   "elo": 920.8074066434431,
   "opponent": "Kazuhiko Shoda",
@@ -4614,13 +5273,15 @@
  },
  {
   "date": "1998/12/23",
-  "wrestler": "Togi Makabe",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
   "elo": 511.9074479442957,
   "opponent": "Yuji Nagata",
   "result": "lost"
  },
  {
   "date": "1998/12/23",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 983.849656812734,
   "opponent": "Shinya Makabe",
@@ -4628,6 +5289,7 @@
  },
  {
   "date": "1998/12/23",
+  "wrestling_as": "Akitoshi Saito",
   "wrestler": "Akitoshi Saito",
   "elo": 912.7305268352732,
   "opponent": "Kazuyuki Fujita",
@@ -4635,6 +5297,7 @@
  },
  {
   "date": "1998/12/23",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
   "elo": 1090.9831834322567,
   "opponent": "Akitoshi Saito",
@@ -4642,6 +5305,7 @@
  },
  {
   "date": "1998/12/23",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1222.9486177617312,
   "opponent": "Manabu Nakanishi",
@@ -4649,6 +5313,7 @@
  },
  {
   "date": "1998/12/23",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1190.8520566966845,
   "opponent": "Takashi Iizuka",
@@ -4656,6 +5321,7 @@
  },
  {
   "date": "1998/12/23",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 837.0611573177533,
   "opponent": "Kensuke Sasaki",
@@ -4663,6 +5329,7 @@
  },
  {
   "date": "1998/12/23",
+  "wrestling_as": "Kensuke Sasaki",
   "wrestler": "Kensuke Sasaki",
   "elo": 1112.7463347265957,
   "opponent": "Shinjiro Otani",

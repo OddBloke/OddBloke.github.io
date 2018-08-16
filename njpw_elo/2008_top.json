@@ -1,6 +1,7 @@
 [
  {
   "date": "2008/01/04",
+  "wrestling_as": "Christopher Daniels",
   "wrestler": "Christopher Daniels",
   "elo": 950.0,
   "opponent": "Wataru Inoue",
@@ -8,6 +9,7 @@
  },
  {
   "date": "2008/01/04",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1050.0,
   "opponent": "Christopher Daniels",
@@ -15,6 +17,7 @@
  },
  {
   "date": "2008/01/04",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1050.0,
   "opponent": "Abyss",
@@ -22,6 +25,7 @@
  },
  {
   "date": "2008/01/04",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 950.0,
   "opponent": "Great Muta",
@@ -29,13 +33,15 @@
  },
  {
   "date": "2008/01/04",
-  "wrestler": "Great Muta",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Keiji Muto / Great Muta",
   "elo": 1050.0,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2008/01/04",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 950.0,
   "opponent": "Kurt Angle",
@@ -43,6 +49,7 @@
  },
  {
   "date": "2008/01/04",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 950.0,
   "opponent": "Shinsuke Nakamura",
@@ -50,6 +57,7 @@
  },
  {
   "date": "2008/01/04",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1050.0,
   "opponent": "Hiroshi Tanahashi",
@@ -57,6 +65,7 @@
  },
  {
   "date": "2008/01/13",
+  "wrestling_as": "GENTARO",
   "wrestler": "GENTARO",
   "elo": 1050.0,
   "opponent": "Taichi Ishikari",
@@ -64,6 +73,7 @@
  },
  {
   "date": "2008/01/25",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1050.0,
   "opponent": "Mitsuhide Hirasawa",
@@ -71,6 +81,7 @@
  },
  {
   "date": "2008/01/27",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 957.1463117408382,
   "opponent": "Wataru Inoue",
@@ -78,6 +89,7 @@
  },
  {
   "date": "2008/01/27",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1092.8536882591618,
   "opponent": "Ryusuke Taguchi",
@@ -85,6 +97,7 @@
  },
  {
   "date": "2008/02/02",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 1042.8536882591618,
   "opponent": "Mitsuhide Hirasawa",
@@ -92,6 +105,7 @@
  },
  {
   "date": "2008/02/08",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 950.0,
   "opponent": "Giant Bernard",
@@ -99,6 +113,7 @@
  },
  {
   "date": "2008/02/08",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1050.0,
   "opponent": "Togi Makabe",
@@ -106,6 +121,7 @@
  },
  {
   "date": "2008/02/11",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 1089.637643404642,
   "opponent": "Tomoaki Honma",
@@ -113,6 +129,7 @@
  },
  {
   "date": "2008/02/11",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1064.2926234816764,
   "opponent": "Tomohiro Ishii",
@@ -120,13 +137,15 @@
  },
  {
   "date": "2008/02/14",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1049.8520173291743,
   "opponent": "Tetsuya Naito",
   "result": "won"
  },
  {
   "date": "2008/02/14",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 1122.3429522417275,
   "opponent": "Taichi Ishikari",
@@ -134,6 +153,7 @@
  },
  {
   "date": "2008/02/14",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 992.8536882591618,
   "opponent": "Toru Yano",
@@ -141,6 +161,7 @@
  },
  {
   "date": "2008/02/14",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1057.1463117408382,
   "opponent": "Giant Bernard",
@@ -148,6 +169,7 @@
  },
  {
   "date": "2008/02/17",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1023.3805762237143,
   "opponent": "Christopher Daniels",
@@ -155,6 +177,7 @@
  },
  {
   "date": "2008/02/17",
+  "wrestling_as": "Christopher Daniels",
   "wrestler": "Christopher Daniels",
   "elo": 1088.946224070895,
   "opponent": "Wataru Inoue",
@@ -162,6 +185,7 @@
  },
  {
   "date": "2008/02/17",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1064.2926234816764,
   "opponent": "AJ Styles",
@@ -169,6 +193,7 @@
  },
  {
   "date": "2008/02/17",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1100.0,
   "opponent": "Kurt Angle",
@@ -176,6 +201,7 @@
  },
  {
   "date": "2008/02/24",
+  "wrestling_as": "Takashi Uwano",
   "wrestler": "Takashi Uwano",
   "elo": 950.0,
   "opponent": "Daisuke Sekimoto",
@@ -183,6 +209,7 @@
  },
  {
   "date": "2008/02/24",
+  "wrestling_as": "Daisuke Sekimoto",
   "wrestler": "Daisuke Sekimoto",
   "elo": 1050.0,
   "opponent": "Takashi Uwano",
@@ -190,6 +217,7 @@
  },
  {
   "date": "2008/02/24",
+  "wrestling_as": "Mammoth Sasaki",
   "wrestler": "Mammoth Sasaki",
   "elo": 1041.8493543293368,
   "opponent": "Tomohiro Ishii",
@@ -197,6 +225,7 @@
  },
  {
   "date": "2008/02/29",
+  "wrestling_as": "Takashi Uwano",
   "wrestler": "Takashi Uwano",
   "elo": 1064.2926234816764,
   "opponent": "Kuniyoshi Wada",
@@ -204,6 +233,7 @@
  },
  {
   "date": "2008/03/09",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1063.234340591266,
   "opponent": "Mitsuhide Hirasawa",
@@ -211,6 +241,7 @@
  },
  {
   "date": "2008/03/09",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1050.0,
   "opponent": "Karl Anderson",
@@ -218,6 +249,7 @@
  },
  {
   "date": "2008/03/09",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1014.2926234816764,
   "opponent": "Hiroshi Tanahashi",
@@ -225,6 +257,7 @@
  },
  {
   "date": "2008/03/09",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1114.2926234816764,
   "opponent": "Hirooki Goto",
@@ -232,6 +265,7 @@
  },
  {
   "date": "2008/03/13",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1003.3581119326983,
   "opponent": "Hiroyoshi Tenzan",
@@ -239,6 +273,7 @@
  },
  {
   "date": "2008/03/13",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 997.4920841782548,
   "opponent": "Togi Makabe",
@@ -246,6 +281,7 @@
  },
  {
   "date": "2008/03/13",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1081.4845128260222,
   "opponent": "Takashi Iizuka",
@@ -253,6 +289,7 @@
  },
  {
   "date": "2008/03/14",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 943.8639438691465,
   "opponent": "Ryusuke Taguchi",
@@ -260,6 +297,7 @@
  },
  {
   "date": "2008/03/14",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1069.4184240025454,
   "opponent": "Jushin Thunder Liger",
@@ -267,6 +305,7 @@
  },
  {
   "date": "2008/03/15",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1098.213907839689,
   "opponent": "Gedo",
@@ -274,6 +313,7 @@
  },
  {
   "date": "2008/03/15",
+  "wrestling_as": "Milano Collection AT",
   "wrestler": "Milano Collection AT",
   "elo": 950.4832561062358,
   "opponent": "Toru Yano",
@@ -281,6 +321,7 @@
  },
  {
   "date": "2008/03/15",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1052.8748558264624,
   "opponent": "Milano Collection AT",
@@ -288,6 +329,7 @@
  },
  {
   "date": "2008/03/16",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1130.1899416343542,
   "opponent": "Jado",
@@ -295,6 +337,7 @@
  },
  {
   "date": "2008/03/16",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1085.8228654809445,
   "opponent": "Tomoaki Honma",
@@ -302,6 +345,7 @@
  },
  {
   "date": "2008/03/17",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 992.8536882591618,
   "opponent": "Rhino",
@@ -309,6 +353,7 @@
  },
  {
   "date": "2008/03/17",
+  "wrestling_as": "Rhino",
   "wrestler": "Rhino",
   "elo": 1057.1463117408382,
   "opponent": "Manabu Nakanishi",
@@ -316,6 +361,7 @@
  },
  {
   "date": "2008/03/19",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1089.7824129477206,
   "opponent": "Karl Anderson",
@@ -323,6 +369,7 @@
  },
  {
   "date": "2008/03/19",
+  "wrestling_as": "Rhino",
   "wrestler": "Rhino",
   "elo": 1006.5316307902386,
   "opponent": "Toru Yano",
@@ -330,6 +377,7 @@
  },
  {
   "date": "2008/03/19",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1103.4895367770619,
   "opponent": "Rhino",
@@ -337,6 +385,7 @@
  },
  {
   "date": "2008/03/19",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1005.1371334398569,
   "opponent": "Giant Bernard",
@@ -344,6 +393,7 @@
  },
  {
   "date": "2008/03/19",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1130.6857320410877,
   "opponent": "Koji Kanemoto",
@@ -351,6 +401,7 @@
  },
  {
   "date": "2008/03/21",
+  "wrestling_as": "Rhino",
   "wrestler": "Rhino",
   "elo": 1038.5101528354444,
   "opponent": "Tomoaki Honma",
@@ -358,6 +409,7 @@
  },
  {
   "date": "2008/03/21",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1143.0377124637678,
   "opponent": "Tomohiro Ishii",
@@ -365,6 +417,7 @@
  },
  {
   "date": "2008/03/21",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1155.3272849724638,
   "opponent": "Hiroyoshi Tenzan; Hiroyoshi Tenzan",
@@ -372,6 +425,7 @@
  },
  {
   "date": "2008/03/21",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1025.8406683890512,
   "opponent": "Hiroshi Tanahashi",
@@ -379,6 +433,7 @@
  },
  {
   "date": "2008/03/21",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1157.8703790951706,
   "opponent": "Ryusuke Taguchi",
@@ -386,6 +441,7 @@
  },
  {
   "date": "2008/03/23",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1105.6932591001512,
   "opponent": "Hiroshi Tanahashi",
@@ -393,6 +449,7 @@
  },
  {
   "date": "2008/03/23",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1230.2993412568585,
   "opponent": "Togi Makabe; Giant Bernard",
@@ -400,6 +457,7 @@
  },
  {
   "date": "2008/03/23",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1057.3954096878213,
   "opponent": "Giant Bernard",
@@ -407,6 +465,7 @@
  },
  {
   "date": "2008/03/23",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1131.189986551578,
   "opponent": "Toru Yano; Hiroshi Tanahashi",
@@ -414,6 +473,7 @@
  },
  {
   "date": "2008/03/23",
+  "wrestling_as": "Rhino",
   "wrestler": "Rhino",
   "elo": 1067.7817169734756,
   "opponent": "Karl Anderson",
@@ -421,6 +481,7 @@
  },
  {
   "date": "2008/03/30",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1196.3397166463308,
   "opponent": "Shinsuke Nakamura",
@@ -428,6 +489,7 @@
  },
  {
   "date": "2008/03/30",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1167.9192492210555,
   "opponent": "Hiroshi Tanahashi",
@@ -435,6 +497,7 @@
  },
  {
   "date": "2008/04/12",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1038.021508311209,
   "opponent": "Tomoaki Honma",
@@ -442,6 +505,7 @@
  },
  {
   "date": "2008/04/13",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1056.734165130512,
   "opponent": "Jado",
@@ -449,13 +513,15 @@
  },
  {
   "date": "2008/04/13",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 953.7119292063442,
   "opponent": "Ryusuke Taguchi",
   "result": "lost"
  },
  {
   "date": "2008/04/13",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1072.128739182707,
   "opponent": "Tatsuhito Takaiwa",
@@ -463,6 +529,7 @@
  },
  {
   "date": "2008/04/13",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 954.3978943803255,
   "opponent": "Masato Tanaka",
@@ -470,6 +537,7 @@
  },
  {
   "date": "2008/04/13",
+  "wrestling_as": "Masato Tanaka",
   "wrestler": "Masato Tanaka",
   "elo": 1050.7392390595314,
   "opponent": "Koji Kanemoto",
@@ -477,6 +545,7 @@
  },
  {
   "date": "2008/04/16",
+  "wrestling_as": "Shiro Koshinaka",
   "wrestler": "Shiro Koshinaka",
   "elo": 1133.619713198695,
   "opponent": "Tomoaki Honma",
@@ -484,6 +553,7 @@
  },
  {
   "date": "2008/04/18",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1149.8687861839348,
   "opponent": "Karl Anderson",
@@ -491,6 +561,7 @@
  },
  {
   "date": "2008/04/19",
+  "wrestling_as": "GAINA",
   "wrestler": "GAINA",
   "elo": 1040.8709270462643,
   "opponent": "Kazuchika Okada",
@@ -498,6 +569,7 @@
  },
  {
   "date": "2008/04/20",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1080.853676016598,
   "opponent": "Karl Anderson",
@@ -505,6 +577,7 @@
  },
  {
   "date": "2008/04/22",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 948.3381038912493,
   "opponent": "Karl Anderson",
@@ -512,6 +585,7 @@
  },
  {
   "date": "2008/04/24",
+  "wrestling_as": "Christopher Daniels",
   "wrestler": "Christopher Daniels",
   "elo": 1122.302629279092,
   "opponent": "Taichi Ishikari",
@@ -519,6 +593,7 @@
  },
  {
   "date": "2008/04/25",
+  "wrestling_as": "Christopher Daniels",
   "wrestler": "Christopher Daniels",
   "elo": 1143.99146703028,
   "opponent": "Tetsuya Naito",
@@ -526,6 +601,7 @@
  },
  {
   "date": "2008/04/27",
+  "wrestling_as": "Christopher Daniels",
   "wrestler": "Christopher Daniels",
   "elo": 1081.6916531614127,
   "opponent": "Wataru Inoue",
@@ -533,6 +609,7 @@
  },
  {
   "date": "2008/04/27",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1119.0339789993795,
   "opponent": "Christopher Daniels",
@@ -540,20 +617,23 @@
  },
  {
   "date": "2008/04/27",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1101.5722174316816,
-  "opponent": "Great Muta",
+  "opponent": "Keiji Muto",
   "result": "lost"
  },
  {
   "date": "2008/04/27",
-  "wrestler": "Great Muta",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto / Great Muta",
   "elo": 1116.347031789374,
   "opponent": "Shinsuke Nakamura",
   "result": "won"
  },
  {
   "date": "2008/04/29",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1140.0686624349323,
   "opponent": "Karl Anderson",
@@ -561,6 +641,7 @@
  },
  {
   "date": "2008/04/29",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1023.384094647892,
   "opponent": "Hirooki Goto",
@@ -568,6 +649,7 @@
  },
  {
   "date": "2008/04/29",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1129.598320551413,
   "opponent": "Ryusuke Taguchi",
@@ -575,6 +657,7 @@
  },
  {
   "date": "2008/05/02",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1137.731701116031,
   "opponent": "Hiroyoshi Tenzan",
@@ -582,6 +665,7 @@
  },
  {
   "date": "2008/05/02",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1144.152035714009,
   "opponent": "Tomohiro Ishii",
@@ -589,6 +673,7 @@
  },
  {
   "date": "2008/05/05",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 969.1320504331368,
   "opponent": "Manabu Nakanishi",
@@ -596,6 +681,7 @@
  },
  {
   "date": "2008/05/05",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1170.9366120017955,
   "opponent": "Yutaka Yoshie",
@@ -603,6 +689,7 @@
  },
  {
   "date": "2008/05/15",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1148.4661948788207,
   "opponent": "Kazuchika Okada",
@@ -610,6 +697,7 @@
  },
  {
   "date": "2008/05/16",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1056.5934149241425,
   "opponent": "Taichi Ishikari",
@@ -617,6 +705,7 @@
  },
  {
   "date": "2008/05/16",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1106.7691788583911,
   "opponent": "Kazuchika Okada",
@@ -624,6 +713,7 @@
  },
  {
   "date": "2008/05/20",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1062.8634218442678,
   "opponent": "Kazuchika Okada",
@@ -631,6 +721,7 @@
  },
  {
   "date": "2008/05/26",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 965.1467730336112,
   "opponent": "Kazuchika Okada",
@@ -638,6 +729,7 @@
  },
  {
   "date": "2008/05/27",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 972.4401818246655,
   "opponent": "Kazuchika Okada",
@@ -645,6 +737,7 @@
  },
  {
   "date": "2008/05/31",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 863.0989645111247,
   "opponent": "Jimmy Rave",
@@ -652,13 +745,15 @@
  },
  {
   "date": "2008/05/31",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1074.5174718941053,
   "opponent": "Tetsuya Naito",
   "result": "won"
  },
  {
   "date": "2008/05/31",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1061.020086476101,
   "opponent": "Ryusuke Taguchi",
@@ -666,6 +761,7 @@
  },
  {
   "date": "2008/05/31",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1120.8773143675464,
   "opponent": "Wataru Inoue",
@@ -673,6 +769,7 @@
  },
  {
   "date": "2008/06/01",
+  "wrestling_as": "Milano Collection AT",
   "wrestler": "Milano Collection AT",
   "elo": 1009.3800686263354,
   "opponent": "Taichi Ishikari",
@@ -680,13 +777,15 @@
  },
  {
   "date": "2008/06/01",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 883.6516843436177,
   "opponent": "Wataru Inoue",
   "result": "lost"
  },
  {
   "date": "2008/06/01",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1096.0502089074641,
   "opponent": "Tatsuhito Takaiwa",
@@ -694,13 +793,15 @@
  },
  {
   "date": "2008/06/01",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 905.142765178937,
-  "opponent": "Minoru Tanaka",
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2008/06/01",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 960.5624594092294,
   "opponent": "Tiger Mask",
@@ -708,27 +809,31 @@
  },
  {
   "date": "2008/06/01",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1113.9550124848759,
   "opponent": "Prince Devitt",
   "result": "won"
  },
  {
   "date": "2008/06/04",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 930.4327073301384,
   "opponent": "Mitsuhide Hirasawa",
   "result": "won"
  },
  {
   "date": "2008/06/04",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 936.678314997163,
   "opponent": "Jushin Thunder Liger",
   "result": "lost"
  },
  {
   "date": "2008/06/04",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1031.7861351846109,
   "opponent": "Yujiro",
@@ -736,6 +841,7 @@
  },
  {
   "date": "2008/06/04",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 841.9686559283273,
   "opponent": "AKIRA",
@@ -743,6 +849,7 @@
  },
  {
   "date": "2008/06/04",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 993.570490407463,
   "opponent": "Koji Kanemoto",
@@ -750,6 +857,7 @@
  },
  {
   "date": "2008/06/05",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 836.0051291792274,
   "opponent": "Tetsuya Naito",
@@ -757,13 +865,15 @@
  },
  {
   "date": "2008/06/05",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 879.5814726908231,
   "opponent": "Wataru Inoue",
   "result": "lost"
  },
  {
   "date": "2008/06/05",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1124.5986300606342,
   "opponent": "Yujiro",
@@ -771,13 +881,15 @@
  },
  {
   "date": "2008/06/05",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 884.8361979518345,
-  "opponent": "Minoru Tanaka",
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2008/06/05",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 807.4020137911909,
   "opponent": "Tiger Mask",
@@ -785,13 +897,15 @@
  },
  {
   "date": "2008/06/05",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1131.2383335534441,
   "opponent": "Koji Kanemoto",
   "result": "won"
  },
  {
   "date": "2008/06/06",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 939.5599662682368,
   "opponent": "Tetsuya Naito",
@@ -799,6 +913,7 @@
  },
  {
   "date": "2008/06/06",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1041.3214744964152,
   "opponent": "Tatsuhito Takaiwa",
@@ -806,13 +921,15 @@
  },
  {
   "date": "2008/06/06",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1043.947877694097,
   "opponent": "Ryusuke Taguchi",
   "result": "won"
  },
  {
   "date": "2008/06/06",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1180.4039919874776,
   "opponent": "Minoru",
@@ -820,13 +937,15 @@
  },
  {
   "date": "2008/06/07",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 823.0391363971617,
   "opponent": "Ryusuke Taguchi",
   "result": "lost"
  },
  {
   "date": "2008/06/07",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1069.5926426432459,
   "opponent": "Yujiro",
@@ -834,13 +953,15 @@
  },
  {
   "date": "2008/06/07",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 992.1983767532382,
   "opponent": "Jushin Thunder Liger",
   "result": "lost"
  },
  {
   "date": "2008/06/07",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1083.5356361254696,
   "opponent": "Tatsuhito Takaiwa",
@@ -848,20 +969,23 @@
  },
  {
   "date": "2008/06/08",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 768.2127533131949,
   "opponent": "Tatsuhito Takaiwa",
   "result": "lost"
  },
  {
   "date": "2008/06/08",
-  "wrestler": "Tatsuhito Takaiwa",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
   "elo": 1047.024759837205,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2008/06/08",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1125.2844860374128,
   "opponent": "Minoru",
@@ -869,6 +993,7 @@
  },
  {
   "date": "2008/06/08",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 805.0989855907374,
   "opponent": "Tiger Mask",
@@ -876,13 +1001,15 @@
  },
  {
   "date": "2008/06/08",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1146.6914053476892,
   "opponent": "AKIRA",
   "result": "won"
  },
  {
   "date": "2008/06/08",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1073.6814842393733,
   "opponent": "Jimmy Rave",
@@ -890,13 +1017,15 @@
  },
  {
   "date": "2008/06/13",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1176.270073535994,
   "opponent": "Jimmy Rave",
   "result": "won"
  },
  {
   "date": "2008/06/13",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1047.1257823925057,
   "opponent": "Wataru Inoue",
@@ -904,6 +1033,7 @@
  },
  {
   "date": "2008/06/13",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1216.8138457204416,
   "opponent": "Jushin Thunder Liger",
@@ -911,13 +1041,15 @@
  },
  {
   "date": "2008/06/14",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 935.8001866117006,
   "opponent": "Minoru",
   "result": "won"
  },
  {
   "date": "2008/06/14",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1008.1877481752856,
   "opponent": "Ryusuke Taguchi",
@@ -925,6 +1057,7 @@
  },
  {
   "date": "2008/06/14",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1164.2225202546329,
   "opponent": "Jushin Thunder Liger",
@@ -932,13 +1065,15 @@
  },
  {
   "date": "2008/06/15",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1132.0784499510262,
   "opponent": "Wataru Inoue",
   "result": "lost"
  },
  {
   "date": "2008/06/15",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1256.741932886515,
   "opponent": "Tiger Mask; Koji Kanemoto",
@@ -946,6 +1081,7 @@
  },
  {
   "date": "2008/06/15",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1101.4797790708806,
   "opponent": "Koji Kanemoto",
@@ -953,6 +1089,7 @@
  },
  {
   "date": "2008/06/15",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1100.7596746759464,
   "opponent": "Ryusuke Taguchi; Wataru Inoue",
@@ -960,6 +1097,7 @@
  },
  {
   "date": "2008/06/15",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1101.6954465965025,
   "opponent": "Manabu Nakanishi",
@@ -967,6 +1105,7 @@
  },
  {
   "date": "2008/06/15",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1217.7073602841137,
   "opponent": "Hirooki Goto",
@@ -974,6 +1113,7 @@
  },
  {
   "date": "2008/06/22",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1261.6355962479302,
   "opponent": "Tomoaki Honma",
@@ -981,6 +1121,7 @@
  },
  {
   "date": "2008/06/22",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1228.8144850382744,
   "opponent": "Takao Omori",
@@ -988,13 +1129,15 @@
  },
  {
   "date": "2008/07/05",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 996.3996216550372,
   "opponent": "Tetsuya Naito",
   "result": "won"
  },
  {
   "date": "2008/07/05",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 918.1609185141987,
   "opponent": "Jado",
@@ -1002,6 +1145,7 @@
  },
  {
   "date": "2008/07/05",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 1044.1527389443004,
   "opponent": "Gedo",
@@ -1009,6 +1153,7 @@
  },
  {
   "date": "2008/07/05",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1052.6899785183334,
   "opponent": "Minoru",
@@ -1016,13 +1161,15 @@
  },
  {
   "date": "2008/07/06",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 910.0581738949938,
   "opponent": "Prince Devitt",
   "result": "lost"
  },
  {
   "date": "2008/07/06",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 1087.3234628243222,
   "opponent": "Yujiro",
@@ -1030,6 +1177,7 @@
  },
  {
   "date": "2008/07/06",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 984.2425364532764,
   "opponent": "AKIRA",
@@ -1037,6 +1185,7 @@
  },
  {
   "date": "2008/07/06",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 1055.0558026443125,
   "opponent": "Jushin Thunder Liger",
@@ -1044,6 +1193,7 @@
  },
  {
   "date": "2008/07/06",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1128.7775421101292,
   "opponent": "Jimmy Rave",
@@ -1051,6 +1201,7 @@
  },
  {
   "date": "2008/07/06",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1055.8719319840634,
   "opponent": "Tiger Mask",
@@ -1058,13 +1209,15 @@
  },
  {
   "date": "2008/07/06",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1177.6862970378434,
   "opponent": "Ryusuke Taguchi",
   "result": "won"
  },
  {
   "date": "2008/07/06",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1072.705588473756,
   "opponent": "Manabu Nakanishi",
@@ -1072,6 +1225,7 @@
  },
  {
   "date": "2008/07/06",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1245.3083203514718,
   "opponent": "Togi Makabe",
@@ -1079,13 +1233,15 @@
  },
  {
   "date": "2008/07/07",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 1035.382320900213,
   "opponent": "Osamu Namiguchi",
   "result": "won"
  },
  {
   "date": "2008/07/07",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 978.2089563038438,
   "opponent": "Masato Tanaka",
@@ -1093,6 +1249,7 @@
  },
  {
   "date": "2008/07/07",
+  "wrestling_as": "Masato Tanaka",
   "wrestler": "Masato Tanaka",
   "elo": 1036.6347609076095,
   "opponent": "Yuji Nagata",
@@ -1100,6 +1257,7 @@
  },
  {
   "date": "2008/07/08",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 1022.0056558317368,
   "opponent": "Tiger Mask",
@@ -1107,13 +1265,15 @@
  },
  {
   "date": "2008/07/08",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1227.2117213702768,
   "opponent": "AKIRA; Prince Devitt",
   "result": "won"
  },
  {
   "date": "2008/07/08",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 1054.3729077846065,
   "opponent": "Tiger Mask",
@@ -1121,6 +1281,7 @@
  },
  {
   "date": "2008/07/08",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1034.6366535142333,
   "opponent": "Yuji Nagata",
@@ -1128,6 +1289,7 @@
  },
  {
   "date": "2008/07/08",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1112.326542468382,
   "opponent": "Hirooki Goto",
@@ -1135,6 +1297,7 @@
  },
  {
   "date": "2008/07/08",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1083.9401219498604,
   "opponent": "Hiroyoshi Tenzan",
@@ -1142,6 +1305,7 @@
  },
  {
   "date": "2008/07/13",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1109.2017828166104,
   "opponent": "Tetsuya Naito",
@@ -1149,13 +1313,15 @@
  },
  {
   "date": "2008/07/16",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 995.8487707610019,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "2008/07/16",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1148.7353329558214,
   "opponent": "Yujiro",
@@ -1163,13 +1329,15 @@
  },
  {
   "date": "2008/07/17",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 1005.0844082229427,
   "opponent": "Nobuo Yoshihashi",
   "result": "won"
  },
  {
   "date": "2008/07/17",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1081.2654569772242,
   "opponent": "AKIRA",
@@ -1177,6 +1345,7 @@
  },
  {
   "date": "2008/07/17",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 1089.4755318103341,
   "opponent": "Takashi Iizuka",
@@ -1184,6 +1353,7 @@
  },
  {
   "date": "2008/07/19",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1090.2207396342637,
   "opponent": "Kazuchika Okada",
@@ -1191,6 +1361,7 @@
  },
  {
   "date": "2008/07/20",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 1112.603766717334,
   "opponent": "Minoru",
@@ -1198,6 +1369,7 @@
  },
  {
   "date": "2008/07/20",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 994.4152089671157,
   "opponent": "Jushin Thunder Liger",
@@ -1205,6 +1377,7 @@
  },
  {
   "date": "2008/07/20",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1104.1579340882581,
   "opponent": "Prince Devitt",
@@ -1212,6 +1385,7 @@
  },
  {
   "date": "2008/07/20",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1105.8235064681294,
   "opponent": "Mitsuhide Hirasawa",
@@ -1219,6 +1393,7 @@
  },
  {
   "date": "2008/07/21",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1076.8552550389459,
   "opponent": "Wataru Inoue",
@@ -1226,6 +1401,7 @@
  },
  {
   "date": "2008/07/21",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1276.119721962522,
   "opponent": "Takashi Iizuka",
@@ -1233,20 +1409,23 @@
  },
  {
   "date": "2008/07/21",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1211.432725671603,
-  "opponent": "Great Muta",
+  "opponent": "Keiji Muto",
   "result": "lost"
  },
  {
   "date": "2008/07/21",
-  "wrestler": "Great Muta",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto / Great Muta",
   "elo": 1184.0982211491112,
   "opponent": "Manabu Nakanishi",
   "result": "won"
  },
  {
   "date": "2008/07/24",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 1059.6303804960198,
   "opponent": "Tetsuya Naito",
@@ -1254,6 +1433,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1245.4779025084883,
   "opponent": "Hiroshi Tanahashi",
@@ -1261,6 +1441,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1257.623355554398,
   "opponent": "Wataru Inoue",
@@ -1268,6 +1449,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 994.9596711698666,
   "opponent": "Yutaka Yoshie",
@@ -1275,6 +1457,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1094.003527469046,
   "opponent": "Toru Yano",
@@ -1282,6 +1465,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1172.855045047372,
   "opponent": "Shinjiro Otani",
@@ -1289,6 +1473,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1077.1553612484622,
   "opponent": "Manabu Nakanishi",
@@ -1296,6 +1481,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 970.322739187295,
   "opponent": "Giant Bernard",
@@ -1303,6 +1489,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1179.54604699664,
   "opponent": "Satoshi Kojima",
@@ -1310,6 +1497,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
   "elo": 972.1224113686594,
   "opponent": "Hiroyoshi Tenzan",
@@ -1317,6 +1505,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1061.5268417561333,
   "opponent": "Shinsuke Nakamura",
@@ -1324,6 +1513,7 @@
  },
  {
   "date": "2008/08/09",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1157.5688795706399,
   "opponent": "Yuji Nagata",
@@ -1331,6 +1521,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1209.232469876783,
   "opponent": "Shinjiro Otani",
@@ -1338,6 +1529,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1149.646226511873,
   "opponent": "Wataru Inoue",
@@ -1345,6 +1537,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1146.4967926332902,
   "opponent": "Hiroyoshi Tenzan",
@@ -1352,6 +1545,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1096.615282241865,
   "opponent": "Satoshi Kojima",
@@ -1359,6 +1553,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1122.802264798309,
   "opponent": "Manabu Nakanishi",
@@ -1366,6 +1561,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1053.0505978660046,
   "opponent": "Shinsuke Nakamura",
@@ -1373,6 +1569,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1198.5218091736815,
   "opponent": "Yutaka Yoshie",
@@ -1380,6 +1577,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 975.7359772438947,
   "opponent": "Toshiaki Kawada",
@@ -1387,6 +1585,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
   "elo": 1089.9237639093367,
   "opponent": "Hirooki Goto",
@@ -1394,6 +1593,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1220.4461421967885,
   "opponent": "Togi Makabe",
@@ -1401,6 +1601,7 @@
  },
  {
   "date": "2008/08/11",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1147.0600151889748,
   "opponent": "Hiroshi Tanahashi",
@@ -1408,6 +1609,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1179.8059501479827,
   "opponent": "Togi Makabe",
@@ -1415,6 +1617,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1205.9130546465753,
   "opponent": "Wataru Inoue",
@@ -1422,6 +1625,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1114.3509469674584,
   "opponent": "Hiroyoshi Tenzan",
@@ -1429,6 +1633,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1103.9385653260192,
   "opponent": "Giant Bernard",
@@ -1436,6 +1641,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1225.2537081824937,
   "opponent": "Shinjiro Otani",
@@ -1443,6 +1649,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1004.27018546363,
   "opponent": "Yuji Nagata",
@@ -1450,6 +1657,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1110.307254158508,
   "opponent": "Yutaka Yoshie",
@@ -1457,6 +1665,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1141.0902681327768,
   "opponent": "Toru Yano",
@@ -1464,6 +1673,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1203.9283336741948,
   "opponent": "Shinsuke Nakamura",
@@ -1471,6 +1681,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1186.8948580202602,
   "opponent": "Manabu Nakanishi",
@@ -1478,6 +1689,7 @@
  },
  {
   "date": "2008/08/13",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1163.7178505949216,
   "opponent": "Hiroshi Tanahashi",
@@ -1485,6 +1697,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1195.87157357865,
   "opponent": "Manabu Nakanishi",
@@ -1492,6 +1705,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1222.4821198026088,
   "opponent": "Giant Bernard",
@@ -1499,6 +1713,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1172.3502035742902,
   "opponent": "Yuji Nagata",
@@ -1506,6 +1721,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1173.4635143583175,
   "opponent": "Toru Yano",
@@ -1513,6 +1729,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1049.0186998585616,
   "opponent": "Yutaka Yoshie",
@@ -1520,6 +1737,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1069.6024325725268,
   "opponent": "Hirooki Goto",
@@ -1527,6 +1745,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1173.7790873350789,
   "opponent": "Shinjiro Otani",
@@ -1534,6 +1753,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1168.2064999490121,
   "opponent": "Togi Makabe",
@@ -1541,6 +1761,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1127.7744158974117,
   "opponent": "Satoshi Kojima",
@@ -1548,6 +1769,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1181.9227069211574,
   "opponent": "Hiroshi Tanahashi",
@@ -1555,6 +1777,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
   "elo": 1047.2344403075338,
   "opponent": "Shinsuke Nakamura",
@@ -1562,6 +1785,7 @@
  },
  {
   "date": "2008/08/14",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1183.7795917345798,
   "opponent": "Toshiaki Kawada",
@@ -1569,6 +1793,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1130.1105721658923,
   "opponent": "Satoshi Kojima",
@@ -1576,6 +1801,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1231.6180849032478,
   "opponent": "Wataru Inoue",
@@ -1583,6 +1809,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1105.0845643943774,
   "opponent": "Toshiaki Kawada",
@@ -1590,6 +1817,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
   "elo": 1114.5000794874466,
   "opponent": "Toru Yano",
@@ -1597,6 +1825,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1130.7424665334047,
   "opponent": "Manabu Nakanishi",
@@ -1604,6 +1833,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1244.0004302034458,
   "opponent": "Togi Makabe",
@@ -1611,6 +1841,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1206.1446371645761,
   "opponent": "Hiroyoshi Tenzan",
@@ -1618,6 +1849,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1087.4507923995125,
   "opponent": "Giant Bernard",
@@ -1625,6 +1857,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1236.1951970765492,
   "opponent": "Hiroshi Tanahashi",
@@ -1632,6 +1865,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1115.3033349984735,
   "opponent": "Hirooki Goto",
@@ -1639,6 +1873,7 @@
  },
  {
   "date": "2008/08/15",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1117.4949565946679,
   "opponent": "Shinsuke Nakamura",
@@ -1646,6 +1881,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1211.0868346729742,
   "opponent": "Wataru Inoue",
@@ -1653,6 +1889,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1195.9377632268356,
   "opponent": "Manabu Nakanishi",
@@ -1660,6 +1897,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1056.8698041912776,
   "opponent": "Hirooki Goto",
@@ -1667,6 +1905,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1165.7097167977677,
   "opponent": "Toru Yano",
@@ -1674,6 +1913,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1111.8431784843333,
   "opponent": "Hiroyoshi Tenzan",
@@ -1681,6 +1921,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1203.8319928890478,
   "opponent": "Togi Makabe",
@@ -1688,6 +1929,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1195.4688749084075,
   "opponent": "Giant Bernard",
@@ -1695,6 +1937,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1177.2321642564941,
   "opponent": "Satoshi Kojima",
@@ -1702,6 +1945,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1227.105252749507,
   "opponent": "Shinjiro Otani",
@@ -1709,6 +1953,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1174.6990795251554,
   "opponent": "Toshiaki Kawada",
@@ -1716,6 +1961,7 @@
  },
  {
   "date": "2008/08/16",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
   "elo": 1177.391194766288,
   "opponent": "Yuji Nagata",
@@ -1723,6 +1969,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1145.8981483573693,
   "opponent": "Hiroyoshi Tenzan",
@@ -1730,6 +1977,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1121.1659479361388,
   "opponent": "Toshiaki Kawada",
@@ -1737,6 +1985,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
   "elo": 1168.0684253144827,
   "opponent": "Yutaka Yoshie",
@@ -1744,6 +1993,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1123.4056948369075,
   "opponent": "Hirooki Goto",
@@ -1751,6 +2001,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1244.3709604357052,
   "opponent": "Yuji Nagata; Togi Makabe",
@@ -1758,6 +2009,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1178.2640551350958,
   "opponent": "Wataru Inoue",
@@ -1765,6 +2017,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1247.0736387347397,
   "opponent": "Giant Bernard",
@@ -1772,6 +2025,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1114.5917036337366,
   "opponent": "Hiroshi Tanahashi",
@@ -1779,6 +2033,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1150.09125302227,
   "opponent": "Shinjiro Otani",
@@ -1786,6 +2041,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1199.8351031056054,
   "opponent": "Togi Makabe",
@@ -1793,6 +2049,7 @@
  },
  {
   "date": "2008/08/17",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1222.641315246521,
   "opponent": "Satoshi Kojima; Hirooki Goto",
@@ -1800,6 +2057,7 @@
  },
  {
   "date": "2008/08/30",
+  "wrestling_as": "Kohei Sato",
   "wrestler": "Kohei Sato",
   "elo": 1029.8209857940747,
   "opponent": "Tomoaki Honma",
@@ -1807,6 +2065,7 @@
  },
  {
   "date": "2008/09/05",
+  "wrestling_as": "Milano Collection AT",
   "wrestler": "Milano Collection AT",
   "elo": 1026.8630147205313,
   "opponent": "Taichi Ishikari",
@@ -1814,6 +2073,7 @@
  },
  {
   "date": "2008/09/08",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 1009.0895173737606,
   "opponent": "Ryusuke Taguchi",
@@ -1821,6 +2081,7 @@
  },
  {
   "date": "2008/09/08",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1106.4127951063226,
   "opponent": "Prince Devitt",
@@ -1828,6 +2089,7 @@
  },
  {
   "date": "2008/09/12",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 1012.5614340595985,
   "opponent": "Nobuo Yoshihashi",
@@ -1835,6 +2097,7 @@
  },
  {
   "date": "2008/09/14",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1182.3112931583887,
   "opponent": "Karl Anderson",
@@ -1842,6 +2105,7 @@
  },
  {
   "date": "2008/09/15",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1257.3712386587802,
   "opponent": "Karl Anderson",
@@ -1849,13 +2113,15 @@
  },
  {
   "date": "2008/09/19",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 1032.750780026889,
   "opponent": "Mitsuhide Hirasawa",
   "result": "won"
  },
  {
   "date": "2008/09/19",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 1018.6719060952507,
   "opponent": "Kazuchika Okada",
@@ -1863,6 +2129,7 @@
  },
  {
   "date": "2008/09/20",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 1035.0292983896836,
   "opponent": "Taichi Ishikari",
@@ -1870,6 +2137,7 @@
  },
  {
   "date": "2008/09/21",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1057.6950621777514,
   "opponent": "Koji Kanemoto",
@@ -1877,6 +2145,7 @@
  },
  {
   "date": "2008/09/21",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1175.2404140206359,
   "opponent": "Jushin Thunder Liger",
@@ -1884,6 +2153,7 @@
  },
  {
   "date": "2008/09/21",
+  "wrestling_as": "Milano Collection AT",
   "wrestler": "Milano Collection AT",
   "elo": 1040.2479214562723,
   "opponent": "Taichi Ishikari",
@@ -1891,13 +2161,15 @@
  },
  {
   "date": "2008/09/21",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1187.8533445399157,
   "opponent": "Low Ki",
   "result": "lost"
  },
  {
   "date": "2008/09/21",
+  "wrestling_as": "Low Ki",
   "wrestler": "Low Ki",
   "elo": 1078.7167536607221,
   "opponent": "Tiger Mask",
@@ -1905,20 +2177,23 @@
  },
  {
   "date": "2008/09/21",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1194.879238162862,
-  "opponent": "Great Muta",
+  "opponent": "Keiji Muto",
   "result": "lost"
  },
  {
   "date": "2008/09/21",
-  "wrestler": "Great Muta",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto / Great Muta",
   "elo": 1239.6223753164288,
   "opponent": "Togi Makabe",
   "result": "won"
  },
  {
   "date": "2008/09/23",
+  "wrestling_as": "Low Ki",
   "wrestler": "Low Ki",
   "elo": 1084.2258472280896,
   "opponent": "Kazuchika Okada",
@@ -1926,6 +2201,7 @@
  },
  {
   "date": "2008/10/02",
+  "wrestling_as": "Masaaki Mochizuki",
   "wrestler": "Masaaki Mochizuki",
   "elo": 1024.3507503794442,
   "opponent": "Tetsuya Naito",
@@ -1933,13 +2209,15 @@
  },
  {
   "date": "2008/10/02",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1213.1780142898644,
   "opponent": "TAKEMURA",
   "result": "won"
  },
  {
   "date": "2008/10/02",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1121.6274667533407,
   "opponent": "Hiroshi Tanahashi",
@@ -1947,6 +2225,7 @@
  },
  {
   "date": "2008/10/02",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1203.704200289565,
   "opponent": "Koji Kanemoto",
@@ -1954,6 +2233,7 @@
  },
  {
   "date": "2008/10/13",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1214.6707701942246,
   "opponent": "Giant Bernard",
@@ -1961,6 +2241,7 @@
  },
  {
   "date": "2008/10/13",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1237.664435618057,
   "opponent": "Hirooki Goto",
@@ -1968,6 +2249,7 @@
  },
  {
   "date": "2008/10/13",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1104.7428931926986,
   "opponent": "Hiroyoshi Tenzan",
@@ -1975,6 +2257,7 @@
  },
  {
   "date": "2008/10/13",
+  "wrestling_as": "Masato Tanaka",
   "wrestler": "Masato Tanaka",
   "elo": 998.8687938167103,
   "opponent": "Yuji Nagata",
@@ -1982,6 +2265,7 @@
  },
  {
   "date": "2008/10/13",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1161.1716619278068,
   "opponent": "Masato Tanaka",
@@ -1989,20 +2273,23 @@
  },
  {
   "date": "2008/10/13",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1140.4850192983936,
-  "opponent": "Great Muta",
+  "opponent": "Keiji Muto",
   "result": "lost"
  },
  {
   "date": "2008/10/13",
-  "wrestler": "Great Muta",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto / Great Muta",
   "elo": 1260.5355122464264,
   "opponent": "Shinsuke Nakamura",
   "result": "won"
  },
  {
   "date": "2008/10/20",
+  "wrestling_as": "Rick Fuller",
   "wrestler": "Rick Fuller",
   "elo": 1022.2644031963256,
   "opponent": "Mitsuhide Hirasawa",
@@ -2010,6 +2297,7 @@
  },
  {
   "date": "2008/10/23",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1257.5499401760344,
   "opponent": "Nobuo Yoshihashi",
@@ -2017,6 +2305,7 @@
  },
  {
   "date": "2008/10/25",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1258.730504067884,
   "opponent": "Kazuchika Okada",
@@ -2024,6 +2313,7 @@
  },
  {
   "date": "2008/11/01",
+  "wrestling_as": "Prince Devitt",
   "wrestler": "Prince Devitt",
   "elo": 1051.611412690051,
   "opponent": "Tetsuya Naito",
@@ -2031,6 +2321,7 @@
  },
  {
   "date": "2008/11/23",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1115.5596070894487,
   "opponent": "Mitsuhide Hirasawa",
@@ -2038,6 +2329,7 @@
  },
  {
   "date": "2008/11/24",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1120.6192270456725,
   "opponent": "Kazuchika Okada",
@@ -2045,6 +2337,7 @@
  },
  {
   "date": "2008/11/25",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1130.483603271568,
   "opponent": "Mitsuhide Hirasawa",
@@ -2052,6 +2345,7 @@
  },
  {
   "date": "2008/11/27",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 1063.7570795777183,
   "opponent": "Takashi Iizuka",
@@ -2059,6 +2353,7 @@
  },
  {
   "date": "2008/11/27",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1169.4659141852883,
   "opponent": "AKIRA",
@@ -2066,6 +2361,7 @@
  },
  {
   "date": "2008/11/29",
+  "wrestling_as": "Milano Collection AT",
   "wrestler": "Milano Collection AT",
   "elo": 1069.672975833525,
   "opponent": "Minoru",
@@ -2073,13 +2369,15 @@
  },
  {
   "date": "2008/12/01",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1215.8703257890259,
   "opponent": "Mitsuhide Hirasawa",
   "result": "won"
  },
  {
   "date": "2008/12/06",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1227.4450956620794,
   "opponent": "Takashi Iizuka",
@@ -2087,6 +2385,7 @@
  },
  {
   "date": "2008/12/06",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 1232.0367309968979,
   "opponent": "Wataru Inoue",
@@ -2094,6 +2393,7 @@
  },
  {
   "date": "2008/12/06",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1210.228552927441,
   "opponent": "Hiroshi Tanahashi",
@@ -2101,6 +2401,7 @@
  },
  {
   "date": "2008/12/06",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1231.1400829801812,
   "opponent": "Giant Bernard",
@@ -2108,6 +2409,7 @@
  },
  {
   "date": "2008/12/07",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1053.2241698608673,
   "opponent": "Low Ki",
@@ -2115,6 +2417,7 @@
  },
  {
   "date": "2008/12/07",
+  "wrestling_as": "Low Ki",
   "wrestler": "Low Ki",
   "elo": 1137.414472473545,
   "opponent": "Ryusuke Taguchi",
@@ -2122,6 +2425,7 @@
  },
  {
   "date": "2008/12/07",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1189.3511443841408,
   "opponent": "Giant Bernard",
@@ -2129,6 +2433,7 @@
  },
  {
   "date": "2008/12/07",
+  "wrestling_as": "Giant Bernard",
   "wrestler": "Giant Bernard",
   "elo": 1235.5481787375247,
   "opponent": "Hirooki Goto",
@@ -2136,6 +2441,7 @@
  },
  {
   "date": "2008/12/07",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1018.6759424695122,
   "opponent": "Shinsuke Nakamura",
@@ -2143,6 +2449,7 @@
  },
  {
   "date": "2008/12/07",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1178.678881020159,
   "opponent": "Toru Yano",
@@ -2150,6 +2457,7 @@
  },
  {
   "date": "2008/12/07",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1150.078728435237,
   "opponent": "Hiroshi Tanahashi",
@@ -2157,6 +2465,7 @@
  },
  {
   "date": "2008/12/07",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1253.5403378439937,
   "opponent": "Togi Makabe",
@@ -2164,41 +2473,47 @@
  },
  {
   "date": "2008/12/20",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1129.002555531008,
-  "opponent": "Manabu Nakanishi (winner), Gedo, Jado, Kazuchika Okada, Milano Collection AT, Minoru Tanaka, YOSHI-HASHI, Ryusuke Taguchi, Taichi Ishikari, Tetsuya Naito, Tiger Mask, Tomohiro Ishii, Yujiro Takahashi",
+  "opponent": "Manabu Nakanishi (winner), Gedo, Jado, Kazuchika Okada, Milano Collection AT, Minoru, Nobuo Yoshihashi, Ryusuke Taguchi, Taichi Ishikari, Tetsuya Naito, Tiger Mask, Tomohiro Ishii, Yujiro",
   "result": "lost"
  },
  {
   "date": "2008/12/20",
+  "wrestling_as": "Milano Collection AT",
   "wrestler": "Milano Collection AT",
   "elo": 1068.50238630252,
-  "opponent": "Manabu Nakanishi (winner), Gedo, Jado, Kazuchika Okada, Koji Kanemoto, Minoru Tanaka, YOSHI-HASHI, Ryusuke Taguchi, Taichi Ishikari, Tetsuya Naito, Tiger Mask, Tomohiro Ishii, Yujiro Takahashi",
+  "opponent": "Manabu Nakanishi (winner), Gedo, Jado, Kazuchika Okada, Koji Kanemoto, Minoru, Nobuo Yoshihashi, Ryusuke Taguchi, Taichi Ishikari, Tetsuya Naito, Tiger Mask, Tomohiro Ishii, Yujiro",
   "result": "lost"
  },
  {
   "date": "2008/12/20",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1052.1362621027258,
-  "opponent": "Manabu Nakanishi (winner), Gedo, Jado, Kazuchika Okada, Koji Kanemoto, Milano Collection AT, Minoru Tanaka, YOSHI-HASHI, Taichi Ishikari, Tetsuya Naito, Tiger Mask, Tomohiro Ishii, Yujiro Takahashi",
+  "opponent": "Manabu Nakanishi (winner), Gedo, Jado, Kazuchika Okada, Koji Kanemoto, Milano Collection AT, Minoru, Nobuo Yoshihashi, Taichi Ishikari, Tetsuya Naito, Tiger Mask, Tomohiro Ishii, Yujiro",
   "result": "lost"
  },
  {
   "date": "2008/12/20",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1213.9496452248777,
-  "opponent": "Manabu Nakanishi (winner), Gedo, Jado, Kazuchika Okada, Koji Kanemoto, Milano Collection AT, Minoru Tanaka, YOSHI-HASHI, Ryusuke Taguchi, Taichi Ishikari, Tetsuya Naito, Tomohiro Ishii, Yujiro Takahashi",
+  "opponent": "Manabu Nakanishi (winner), Gedo, Jado, Kazuchika Okada, Koji Kanemoto, Milano Collection AT, Minoru, Nobuo Yoshihashi, Ryusuke Taguchi, Taichi Ishikari, Tetsuya Naito, Tomohiro Ishii, Yujiro",
   "result": "lost"
  },
  {
   "date": "2008/12/20",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 1031.7680448060466,
-  "opponent": "Manabu Nakanishi (winner), Gedo, Jado, Kazuchika Okada, Koji Kanemoto, Milano Collection AT, Minoru Tanaka, YOSHI-HASHI, Ryusuke Taguchi, Taichi Ishikari, Tetsuya Naito, Tiger Mask, Tomohiro Ishii",
+  "opponent": "Manabu Nakanishi (winner), Gedo, Jado, Kazuchika Okada, Koji Kanemoto, Milano Collection AT, Minoru, Nobuo Yoshihashi, Ryusuke Taguchi, Taichi Ishikari, Tetsuya Naito, Tiger Mask, Tomohiro Ishii",
   "result": "lost"
  },
  {
   "date": "2008/12/20",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1219.512844951039,
   "opponent": "Gedo, Jado, Kazuchika Okada, Koji Kanemoto, Milano Collection AT, Minoru, Nobuo Yoshihashi, Ryusuke Taguchi, Taichi Ishikari, Tetsuya Naito, Tiger Mask, Tomohiro Ishii, Yujiro",
@@ -2206,6 +2521,7 @@
  },
  {
   "date": "2008/12/20",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1168.446653838408,
   "opponent": "Mitsuhide Hirasawa",
@@ -2213,6 +2529,7 @@
  },
  {
   "date": "2008/12/22",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 1081.033258430574,
   "opponent": "Tomoaki Honma",
@@ -2220,6 +2537,7 @@
  },
  {
   "date": "2008/12/22",
+  "wrestling_as": "Masato Tanaka",
   "wrestler": "Masato Tanaka",
   "elo": 1029.9015509805,
   "opponent": "Mitsuhide Hirasawa",
@@ -2227,20 +2545,23 @@
  },
  {
   "date": "2008/12/22",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1214.1408797481488,
   "opponent": "Nobuo Yoshihashi",
   "result": "won"
  },
  {
   "date": "2008/12/22",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 1003.0091166446623,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2008/12/22",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1218.110072545525,
   "opponent": "Yujiro",
@@ -2248,6 +2569,7 @@
  },
  {
   "date": "2008/12/22",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1182.0547537165774,
   "opponent": "Kazuchika Okada",
@@ -2255,6 +2577,7 @@
  },
  {
   "date": "2008/12/22",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1255.767967220264,
   "opponent": "Tetsuya Naito",
@@ -2262,6 +2585,7 @@
  },
  {
   "date": "2008/12/22",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 1026.0861379128585,
   "opponent": "Gedo",
@@ -2269,6 +2593,7 @@
  },
  {
   "date": "2008/12/23",
+  "wrestling_as": "AKIRA",
   "wrestler": "AKIRA",
   "elo": 1049.3037184377981,
   "opponent": "Tiger Mask",
@@ -2276,13 +2601,15 @@
  },
  {
   "date": "2008/12/23",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1230.0056497445366,
   "opponent": "AKIRA",
   "result": "won"
  },
  {
   "date": "2008/12/26",
+  "wrestling_as": "Shinjiro Otani",
   "wrestler": "Shinjiro Otani",
   "elo": 1119.2264830982979,
   "opponent": "Kazuchika Okada",
@@ -2290,6 +2617,7 @@
  },
  {
   "date": "2008/12/26",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1230.5304342721024,
   "opponent": "Shito Ueda",
@@ -2297,6 +2625,7 @@
  },
  {
   "date": "2008/12/26",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1121.789200011579,
   "opponent": "Nobuo Yoshihashi",

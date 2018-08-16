@@ -1,6 +1,7 @@
 [
  {
   "date": "1976/01/02",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1050.0,
   "opponent": "Seiei Kimura",
@@ -8,6 +9,7 @@
  },
  {
   "date": "1976/01/02",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 950.0,
   "opponent": "Yoshiaki Fujiwara",
@@ -15,13 +17,15 @@
  },
  {
   "date": "1976/01/02",
-  "wrestler": "Yoshiaki Fujiwara",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
   "elo": 1050.0,
-  "opponent": "Masanobu Kurisu",
+  "opponent": "Masashi Ozawa",
   "result": "won"
  },
  {
   "date": "1976/01/02",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 950.0,
   "opponent": "Bulldog Otto",
@@ -29,6 +33,7 @@
  },
  {
   "date": "1976/01/02",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1050.0,
   "opponent": "Haruka Eigen",
@@ -36,6 +41,7 @@
  },
  {
   "date": "1976/01/02",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 950.0,
   "opponent": "Strong Kobayashi",
@@ -43,6 +49,7 @@
  },
  {
   "date": "1976/01/02",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1050.0,
   "opponent": "Steve Wright",
@@ -50,6 +57,7 @@
  },
  {
   "date": "1976/01/02",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 950.0,
   "opponent": "Tiger Jeet Singh",
@@ -57,6 +65,7 @@
  },
  {
   "date": "1976/01/02",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1050.0,
   "opponent": "Kantaro Hoshino",
@@ -64,6 +73,7 @@
  },
  {
   "date": "1976/01/02",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
   "elo": 950.0,
   "opponent": "Antonio Inoki",
@@ -71,6 +81,7 @@
  },
  {
   "date": "1976/01/02",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1050.0,
   "opponent": "Brutus Malumba",
@@ -78,6 +89,7 @@
  },
  {
   "date": "1976/01/03",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 950.0,
   "opponent": "Seiei Kimura",
@@ -85,6 +97,7 @@
  },
  {
   "date": "1976/01/03",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1085.9935000197115,
   "opponent": "Daigoro Oshiro",
@@ -92,13 +105,7 @@
  },
  {
   "date": "1976/01/03",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1100.0,
-  "opponent": "Makoto Arakawa",
-  "result": "won"
- },
- {
-  "date": "1976/01/03",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 1050.0,
   "opponent": "Masashi Ozawa",
@@ -106,6 +113,15 @@
  },
  {
   "date": "1976/01/03",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1000.0,
+  "opponent": "Bulldog Otto",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/03",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1100.0,
   "opponent": "Katsuhisa Shibata",
@@ -113,6 +129,7 @@
  },
  {
   "date": "1976/01/03",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 850.0,
   "opponent": "Brutus Malumba",
@@ -120,6 +137,7 @@
  },
  {
   "date": "1976/01/03",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
   "elo": 1050.0,
   "opponent": "Kantaro Hoshino",
@@ -127,6 +145,7 @@
  },
  {
   "date": "1976/01/03",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 957.1463117408382,
   "opponent": "Tiger Jeet Singh",
@@ -134,6 +153,7 @@
  },
  {
   "date": "1976/01/03",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1092.8536882591618,
   "opponent": "Kotetsu Yamamoto",
@@ -141,6 +161,7 @@
  },
  {
   "date": "1976/01/03",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 878.012999960577,
   "opponent": "Antonio Inoki",
@@ -148,6 +169,7 @@
  },
  {
   "date": "1976/01/03",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1085.9935000197115,
   "opponent": "Steve Wright",
@@ -155,6 +177,7 @@
  },
  {
   "date": "1976/01/04",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 829.5719668846807,
   "opponent": "Daigoro Oshiro",
@@ -162,6 +185,7 @@
  },
  {
   "date": "1976/01/04",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 942.8536882591618,
   "opponent": "Seiei Kimura",
@@ -169,13 +193,15 @@
  },
  {
   "date": "1976/01/04",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1019.1682327450542,
-  "opponent": "Masashi Ozawa",
-  "result": "lost"
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1050.0,
+  "opponent": "Makoto Arakawa",
+  "result": "won"
  },
  {
   "date": "1976/01/04",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1047.9853938919734,
   "opponent": "Ivan Gomes",
@@ -183,6 +209,7 @@
  },
  {
   "date": "1976/01/04",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1138.008106127738,
   "opponent": "Bulldog Otto",
@@ -190,6 +217,7 @@
  },
  {
   "date": "1976/01/04",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 977.0904817674335,
   "opponent": "Steve Wright",
@@ -197,6 +225,7 @@
  },
  {
   "date": "1976/01/04",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 1023.8320364257099,
   "opponent": "Haruka Eigen",
@@ -204,6 +233,7 @@
  },
  {
   "date": "1976/01/04",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
   "elo": 1000.0,
   "opponent": "Strong Kobayashi",
@@ -211,6 +241,7 @@
  },
  {
   "date": "1976/01/04",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1100.0,
   "opponent": "Brutus Malumba",
@@ -218,6 +249,7 @@
  },
  {
   "date": "1976/01/04",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 963.0534101698356,
   "opponent": "Tiger Jeet Singh",
@@ -225,6 +257,7 @@
  },
  {
   "date": "1976/01/04",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1129.8002780893262,
   "opponent": "Seiji Sakaguchi",
@@ -232,6 +265,7 @@
  },
  {
   "date": "1976/01/06",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 893.7774235273565,
   "opponent": "Ivan Gomes",
@@ -239,6 +273,7 @@
  },
  {
   "date": "1976/01/06",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1162.5462384936407,
   "opponent": "Shoji Kai",
@@ -246,6 +281,7 @@
  },
  {
   "date": "1976/01/06",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 993.4398095032759,
   "opponent": "Masashi Ozawa",
@@ -253,6 +289,7 @@
  },
  {
   "date": "1976/01/06",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 965.4135254400354,
   "opponent": "Inferno #2 (winner), Katsuhisa Shibata",
@@ -260,6 +297,15 @@
  },
  {
   "date": "1976/01/06",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1036.1267823164776,
+  "opponent": "Inferno #2 (winner), Haruka Eigen",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/06",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 1025.5501740109205,
   "opponent": "Haruka Eigen, Katsuhisa Shibata",
@@ -267,6 +313,7 @@
  },
  {
   "date": "1976/01/06",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1005.4154698412174,
   "opponent": "Strong Kobayashi",
@@ -274,6 +321,7 @@
  },
  {
   "date": "1976/01/06",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1142.569924050756,
   "opponent": "Bulldog Otto",
@@ -281,6 +329,7 @@
  },
  {
   "date": "1976/01/06",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 965.1734335340259,
   "opponent": "Seiji Sakaguchi",
@@ -288,6 +337,7 @@
  },
  {
   "date": "1976/01/06",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1080.3706159532037,
   "opponent": "Steve Wright",
@@ -295,6 +345,7 @@
  },
  {
   "date": "1976/01/08",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 939.2611267211224,
   "opponent": "Seiei Kimura",
@@ -302,13 +353,15 @@
  },
  {
   "date": "1976/01/08",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 971.6068278849949,
-  "opponent": "Katsuhisa Shibata",
-  "result": "lost"
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1083.6881871765368,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
  },
  {
   "date": "1976/01/08",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 916.5685544743403,
   "opponent": "Ivan Gomes",
@@ -316,6 +369,7 @@
  },
  {
   "date": "1976/01/08",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1186.8486780234834,
   "opponent": "Steve Wright",
@@ -323,6 +377,7 @@
  },
  {
   "date": "1976/01/08",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 875.3355596078832,
   "opponent": "Brutus Malumba",
@@ -330,6 +385,7 @@
  },
  {
   "date": "1976/01/08",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
   "elo": 1045.038982916076,
   "opponent": "Haruka Eigen",
@@ -337,6 +393,7 @@
  },
  {
   "date": "1976/01/08",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1090.7330513161448,
   "opponent": "Tiger Jeet Singh",
@@ -344,6 +401,7 @@
  },
  {
   "date": "1976/01/08",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1181.6371508239374,
   "opponent": "Strong Kobayashi",
@@ -351,6 +409,7 @@
  },
  {
   "date": "1976/01/08",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 966.8080482487024,
   "opponent": "Antonio Inoki",
@@ -358,6 +417,7 @@
  },
  {
   "date": "1976/01/08",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1124.6009216122263,
   "opponent": "Bulldog Otto",
@@ -365,6 +425,7 @@
  },
  {
   "date": "1976/01/09",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 734.614488203293,
   "opponent": "Makoto Arakawa",
@@ -372,13 +433,7 @@
  },
  {
   "date": "1976/01/09",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 926.6859120280442,
-  "opponent": "Ivan Gomes",
-  "result": "lost"
- },
- {
-  "date": "1976/01/09",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1209.3091359519588,
   "opponent": "Yoshiaki Fujiwara",
@@ -386,6 +441,15 @@
  },
  {
   "date": "1976/01/09",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1028.148949437961,
+  "opponent": "Brutus Malumba",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/09",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
   "elo": 1100.578220654652,
   "opponent": "Katsuhisa Shibata",
@@ -393,6 +457,7 @@
  },
  {
   "date": "1976/01/09",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 970.9422334389308,
   "opponent": "Kantaro Hoshino",
@@ -400,6 +465,7 @@
  },
  {
   "date": "1976/01/09",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 1102.6556906472554,
   "opponent": "Inferno #2",
@@ -407,6 +473,7 @@
  },
  {
   "date": "1976/01/09",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1173.5019271219435,
   "opponent": "Antonio Inoki",
@@ -414,6 +481,7 @@
  },
  {
   "date": "1976/01/09",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1132.7361453142203,
   "opponent": "Tiger Jeet Singh",
@@ -421,6 +489,7 @@
  },
  {
   "date": "1976/01/10",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 712.0259763361496,
   "opponent": "Masashi Ozawa",
@@ -428,13 +497,7 @@
  },
  {
   "date": "1976/01/10",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 812.012778732256,
-  "opponent": "Haruka Eigen",
-  "result": "lost"
- },
- {
-  "date": "1976/01/10",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 990.0086929036713,
   "opponent": "Yoshiaki Fujiwara",
@@ -442,6 +505,15 @@
  },
  {
   "date": "1976/01/10",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1013.609172611762,
+  "opponent": "Inferno #2 (winner), Kotetsu Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/10",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 945.6635161338676,
   "opponent": "Inferno #2 (winner), Katsuhisa Shibata",
@@ -449,6 +521,7 @@
  },
  {
   "date": "1976/01/10",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 996.9648058721003,
   "opponent": "Katsuhisa Shibata, Kotetsu Yamamoto",
@@ -456,6 +529,7 @@
  },
  {
   "date": "1976/01/10",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 901.0371090279342,
   "opponent": "Strong Kobayashi",
@@ -463,6 +537,7 @@
  },
  {
   "date": "1976/01/10",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1123.618520926529,
   "opponent": "Bulldog Otto",
@@ -470,6 +545,7 @@
  },
  {
   "date": "1976/01/10",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 871.8329828040795,
   "opponent": "Antonio Inoki",
@@ -477,6 +553,7 @@
  },
  {
   "date": "1976/01/10",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1155.1039311493507,
   "opponent": "Steve Wright",
@@ -484,6 +561,7 @@
  },
  {
   "date": "1976/01/11",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1078.6521045289126,
   "opponent": "Daigoro Oshiro",
@@ -491,6 +569,7 @@
  },
  {
   "date": "1976/01/11",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1221.9812400550709,
   "opponent": "Seiei Kimura",
@@ -498,6 +577,7 @@
  },
  {
   "date": "1976/01/11",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 640.0354757686691,
   "opponent": "Yoshiaki Fujiwara",
@@ -505,13 +585,7 @@
  },
  {
   "date": "1976/01/11",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 884.0032792997365,
-  "opponent": "Masanobu Kurisu",
-  "result": "won"
- },
- {
-  "date": "1976/01/11",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 864.9460791631809,
   "opponent": "Bulldog Otto",
@@ -519,6 +593,7 @@
  },
  {
   "date": "1976/01/11",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1026.0997227684245,
   "opponent": "Haruka Eigen",
@@ -526,6 +601,7 @@
  },
  {
   "date": "1976/01/11",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 1062.7122839583387,
   "opponent": "Tiger Jeet Singh",
@@ -533,6 +609,7 @@
  },
  {
   "date": "1976/01/11",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1213.4453338108601,
   "opponent": "Kantaro Hoshino",
@@ -540,6 +617,7 @@
  },
  {
   "date": "1976/01/11",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 833.8140153554482,
   "opponent": "Strong Kobayashi",
@@ -547,6 +625,7 @@
  },
  {
   "date": "1976/01/11",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1142.6280046508448,
   "opponent": "Steve Wright",
@@ -554,6 +633,7 @@
  },
  {
   "date": "1976/01/11",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
   "elo": 1047.6733873576707,
   "opponent": "Seiji Sakaguchi",
@@ -561,6 +641,7 @@
  },
  {
   "date": "1976/01/11",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1133.275449250185,
   "opponent": "Brutus Malumba",
@@ -568,6 +649,7 @@
  },
  {
   "date": "1976/01/12",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 717.2405909402682,
   "opponent": "Seiei Kimura",
@@ -575,6 +657,7 @@
  },
  {
   "date": "1976/01/12",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1233.5921488269855,
   "opponent": "Daigoro Oshiro",
@@ -582,13 +665,15 @@
  },
  {
   "date": "1976/01/12",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1045.3442775995145,
-  "opponent": "Masashi Ozawa",
-  "result": "won"
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 965.4059332647379,
+  "opponent": "Bulldog Otto",
+  "result": "lost"
  },
  {
   "date": "1976/01/12",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1074.3029621154485,
   "opponent": "Katsuhisa Shibata",
@@ -596,6 +681,7 @@
  },
  {
   "date": "1976/01/12",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 934.3018291556898,
   "opponent": "Seiji Sakaguchi",
@@ -603,6 +689,7 @@
  },
  {
   "date": "1976/01/12",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1164.6069376083901,
   "opponent": "Inferno #2",
@@ -610,6 +697,7 @@
  },
  {
   "date": "1976/01/12",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 806.627538255279,
   "opponent": "Antonio Inoki",
@@ -617,6 +705,7 @@
  },
  {
   "date": "1976/01/12",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1168.6971696994353,
   "opponent": "Steve Wright",
@@ -624,6 +713,7 @@
  },
  {
   "date": "1976/01/13",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1098.0755442469645,
   "opponent": "Kuniaki Kobayashi",
@@ -631,6 +721,7 @@
  },
  {
   "date": "1976/01/13",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 707.5025185702259,
   "opponent": "Ivan Gomes",
@@ -638,6 +729,7 @@
  },
  {
   "date": "1976/01/13",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1236.0266669194962,
   "opponent": "Masanobu Kurisu",
@@ -645,13 +737,7 @@
  },
  {
   "date": "1976/01/13",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 977.933975398829,
-  "opponent": "Seiei Kimura",
-  "result": "lost"
- },
- {
-  "date": "1976/01/13",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 1075.225162861934,
   "opponent": "Masashi Ozawa",
@@ -659,6 +745,7 @@
  },
  {
   "date": "1976/01/13",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 854.9087281384362,
   "opponent": "Inferno #2 (winner), Katsuhisa Shibata",
@@ -666,6 +753,15 @@
  },
  {
   "date": "1976/01/13",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 952.1489234098239,
+  "opponent": "Inferno #2 (winner), Haruka Eigen",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/13",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 957.5961900353485,
   "opponent": "Haruka Eigen, Katsuhisa Shibata",
@@ -673,6 +769,7 @@
  },
  {
   "date": "1976/01/13",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
   "elo": 1011.0080910086346,
   "opponent": "Strong Kobayashi",
@@ -680,6 +777,7 @@
  },
  {
   "date": "1976/01/13",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1179.293300999881,
   "opponent": "Brutus Malumba",
@@ -687,6 +785,7 @@
  },
  {
   "date": "1976/01/13",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1121.5894183452308,
   "opponent": "Tiger Jeet Singh",
@@ -694,6 +793,7 @@
  },
  {
   "date": "1976/01/13",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1234.95409344244,
   "opponent": "Seiji Sakaguchi",
@@ -701,6 +801,7 @@
  },
  {
   "date": "1976/01/16",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 776.4838698658209,
   "opponent": "Makoto Arakawa",
@@ -708,6 +809,7 @@
  },
  {
   "date": "1976/01/16",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1141.7531323242804,
   "opponent": "Seiei Kimura",
@@ -715,13 +817,7 @@
  },
  {
   "date": "1976/01/16",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 941.0204020489629,
-  "opponent": "Ivan Gomes",
-  "result": "lost"
- },
- {
-  "date": "1976/01/16",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1245.2550602569627,
   "opponent": "Yoshiaki Fujiwara",
@@ -729,6 +825,7 @@
  },
  {
   "date": "1976/01/16",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 991.1333107669658,
   "opponent": "Masashi Ozawa",
@@ -736,6 +833,15 @@
  },
  {
   "date": "1976/01/16",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 885.9271978534815,
+  "opponent": "Bulldog Otto",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/16",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1107.4138248936197,
   "opponent": "Katsuhisa Shibata",
@@ -743,6 +849,7 @@
  },
  {
   "date": "1976/01/16",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 901.5784192203319,
   "opponent": "Seiji Sakaguchi",
@@ -750,6 +857,7 @@
  },
  {
   "date": "1976/01/16",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1149.5983037527392,
   "opponent": "Inferno #2",
@@ -757,6 +865,7 @@
  },
  {
   "date": "1976/01/16",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 784.4999303596887,
   "opponent": "Antonio Inoki",
@@ -764,6 +873,7 @@
  },
  {
   "date": "1976/01/16",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1179.7609736472305,
   "opponent": "Steve Wright",
@@ -771,6 +881,7 @@
  },
  {
   "date": "1976/01/17",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 754.7161380662901,
   "opponent": "Shoji Kai",
@@ -778,6 +889,7 @@
  },
  {
   "date": "1976/01/17",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1152.6369982240458,
   "opponent": "Masanobu Kurisu",
@@ -785,13 +897,7 @@
  },
  {
   "date": "1976/01/17",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 948.6266067263554,
-  "opponent": "Makoto Arakawa",
-  "result": "draw"
- },
- {
-  "date": "1976/01/17",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1255.5247364064958,
   "opponent": "Seiei Kimura",
@@ -799,6 +905,7 @@
  },
  {
   "date": "1976/01/17",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 1085.480455190882,
   "opponent": "Masashi Ozawa",
@@ -806,6 +913,15 @@
  },
  {
   "date": "1976/01/17",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 757.5360712327899,
+  "opponent": "Steve Wright",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/17",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 912.8910569803803,
   "opponent": "Katsuhisa Shibata",
@@ -813,6 +929,7 @@
  },
  {
   "date": "1976/01/17",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1052.7947123355857,
   "opponent": "Kotetsu Yamamoto",
@@ -820,6 +937,7 @@
  },
  {
   "date": "1976/01/17",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 1129.844275419968,
   "opponent": "Bulldog Otto",
@@ -827,6 +945,7 @@
  },
  {
   "date": "1976/01/17",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 868.019745945433,
   "opponent": "Antonio Inoki",
@@ -834,6 +953,7 @@
  },
  {
   "date": "1976/01/17",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1196.54031028468,
   "opponent": "Inferno #2",
@@ -841,6 +961,7 @@
  },
  {
   "date": "1976/01/19",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1181.3551143190205,
   "opponent": "Daigoro Oshiro",
@@ -848,6 +969,7 @@
  },
  {
   "date": "1976/01/19",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1263.2362600868341,
   "opponent": "Makoto Arakawa",
@@ -855,13 +977,7 @@
  },
  {
   "date": "1976/01/19",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 860.8003409680803,
-  "opponent": "Haruka Eigen",
-  "result": "lost"
- },
- {
-  "date": "1976/01/19",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 1078.959576525241,
   "opponent": "Yoshiaki Fujiwara",
@@ -869,6 +985,7 @@
  },
  {
   "date": "1976/01/19",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 1066.040153515558,
   "opponent": "Inferno #2 (winner), Katsuhisa Shibata",
@@ -876,6 +993,15 @@
  },
  {
   "date": "1976/01/19",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 749.5041087052329,
+  "opponent": "Inferno #2 (winner), Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/19",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 895.4920101483141,
   "opponent": "Kantaro Hoshino, Katsuhisa Shibata",
@@ -883,6 +1009,7 @@
  },
  {
   "date": "1976/01/19",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1016.376226370655,
   "opponent": "Seiji Sakaguchi",
@@ -890,6 +1017,7 @@
  },
  {
   "date": "1976/01/19",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1186.01678971767,
   "opponent": "Bulldog Otto",
@@ -897,6 +1025,7 @@
  },
  {
   "date": "1976/01/19",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1137.2357002936023,
   "opponent": "Tiger Jeet Singh",
@@ -904,6 +1033,7 @@
  },
  {
   "date": "1976/01/19",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1255.9828937955792,
   "opponent": "Strong Kobayashi",
@@ -911,6 +1041,7 @@
  },
  {
   "date": "1976/01/20",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1142.92533743962,
   "opponent": "Ivan Gomes",
@@ -918,6 +1049,7 @@
  },
  {
   "date": "1976/01/20",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1282.4511485265343,
   "opponent": "Shoji Kai",
@@ -925,13 +1057,15 @@
  },
  {
   "date": "1976/01/20",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 729.8192429823607,
-  "opponent": "Katsuhisa Shibata",
-  "result": "lost"
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 880.4852066909524,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
  },
  {
   "date": "1976/01/20",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 854.2865399345745,
   "opponent": "Kotetsu Yamamoto",
@@ -939,6 +1073,7 @@
  },
  {
   "date": "1976/01/20",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 1150.4470105268379,
   "opponent": "Inferno #2",
@@ -946,6 +1081,7 @@
  },
  {
   "date": "1976/01/20",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 869.7689370038793,
   "opponent": "Strong Kobayashi",
@@ -953,6 +1089,7 @@
  },
  {
   "date": "1976/01/20",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1158.7967602818528,
   "opponent": "Steve Wright",
@@ -960,6 +1097,7 @@
  },
  {
   "date": "1976/01/20",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 990.2053839190146,
   "opponent": "Antonio Inoki",
@@ -967,6 +1105,7 @@
  },
  {
   "date": "1976/01/20",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1222.7111527363202,
   "opponent": "Bulldog Otto",
@@ -974,6 +1113,7 @@
  },
  {
   "date": "1976/01/21",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 865.591825873343,
   "opponent": "Kuniaki Kobayashi",
@@ -981,6 +1121,7 @@
  },
  {
   "date": "1976/01/21",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1285.2075012841608,
   "opponent": "Daigoro Oshiro",
@@ -988,13 +1129,7 @@
  },
  {
   "date": "1976/01/21",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 898.9726362798608,
-  "opponent": "Seiei Kimura",
-  "result": "won"
- },
- {
-  "date": "1976/01/21",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 1105.4966702292472,
   "opponent": "Masashi Ozawa",
@@ -1002,6 +1137,7 @@
  },
  {
   "date": "1976/01/21",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 1081.3923718720062,
   "opponent": "Brutus Malumba",
@@ -1009,6 +1145,7 @@
  },
  {
   "date": "1976/01/21",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
   "elo": 1080.0627296634664,
   "opponent": "Kotetsu Yamamoto",
@@ -1016,6 +1153,7 @@
  },
  {
   "date": "1976/01/21",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 995.2262847129432,
   "opponent": "Makoto Arakawa",
@@ -1023,6 +1161,7 @@
  },
  {
   "date": "1976/01/21",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 935.2488138065128,
   "opponent": "Strong Kobayashi",
@@ -1030,6 +1169,7 @@
  },
  {
   "date": "1976/01/21",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1186.2750453381036,
   "opponent": "Bulldog Otto",
@@ -1037,6 +1177,7 @@
  },
  {
   "date": "1976/01/21",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1226.0153966263154,
   "opponent": "Seiji Sakaguchi",
@@ -1044,6 +1185,7 @@
  },
  {
   "date": "1976/01/21",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1245.951784056198,
   "opponent": "Tiger Jeet Singh",
@@ -1051,6 +1193,7 @@
  },
  {
   "date": "1976/01/22",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1157.42976275536,
   "opponent": "Makoto Arakawa",
@@ -1058,6 +1201,7 @@
  },
  {
   "date": "1976/01/22",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 849.1921849981998,
   "opponent": "Ivan Gomes",
@@ -1065,6 +1209,7 @@
  },
  {
   "date": "1976/01/22",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1289.3074115029467,
   "opponent": "Masanobu Kurisu",
@@ -1072,13 +1217,15 @@
  },
  {
   "date": "1976/01/22",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 784.6875841258211,
-  "opponent": "Masashi Ozawa",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 812.3598692643061,
+  "opponent": "Steve Wright",
   "result": "lost"
  },
  {
   "date": "1976/01/22",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 1063.3516221395896,
   "opponent": "Katsuhisa Shibata",
@@ -1086,6 +1233,7 @@
  },
  {
   "date": "1976/01/22",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 874.9953365649961,
   "opponent": "Kotetsu Yamamoto",
@@ -1093,6 +1241,7 @@
  },
  {
   "date": "1976/01/22",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 1111.5191104927644,
   "opponent": "Bulldog Otto",
@@ -1100,6 +1249,7 @@
  },
  {
   "date": "1976/01/22",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 1024.5572022893887,
   "opponent": "Inferno #2",
@@ -1107,6 +1257,7 @@
  },
  {
   "date": "1976/01/22",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 1016.1654758142915,
   "opponent": "Haruka Eigen",
@@ -1114,6 +1265,7 @@
  },
  {
   "date": "1976/01/23",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 841.2629351696277,
   "opponent": "Daigoro Oshiro",
@@ -1121,13 +1273,7 @@
  },
  {
   "date": "1976/01/23",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 763.7403974702502,
-  "opponent": "Shoji Kai",
-  "result": "lost"
- },
- {
-  "date": "1976/01/23",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1167.9033560831454,
   "opponent": "Yoshiaki Fujiwara",
@@ -1135,6 +1281,15 @@
  },
  {
   "date": "1976/01/23",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 765.1044355690447,
+  "opponent": "Inferno #2",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/23",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 1039.7931926619221,
   "opponent": "Katsuhisa Shibata",
@@ -1142,6 +1297,7 @@
  },
  {
   "date": "1976/01/23",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
   "elo": 1044.8889041610141,
   "opponent": "Strong Kobayashi",
@@ -1149,6 +1305,7 @@
  },
  {
   "date": "1976/01/23",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1221.4488708405559,
   "opponent": "Brutus Malumba",
@@ -1156,6 +1313,7 @@
  },
  {
   "date": "1976/01/23",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1202.4483626148506,
   "opponent": "Seiji Sakaguchi",
@@ -1163,6 +1321,7 @@
  },
  {
   "date": "1976/01/23",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1269.5188180676628,
   "opponent": "Tiger Jeet Singh",
@@ -1170,6 +1329,7 @@
  },
  {
   "date": "1976/01/24",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1130.3813553823352,
   "opponent": "Daigoro Oshiro",
@@ -1177,13 +1337,7 @@
  },
  {
   "date": "1976/01/24",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 893.7985510756411,
-  "opponent": "Makoto Arakawa",
-  "result": "won"
- },
- {
-  "date": "1976/01/24",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 933.9840792772371,
   "opponent": "Seiei Kimura",
@@ -1191,6 +1345,15 @@
  },
  {
   "date": "1976/01/24",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 931.7346733285115,
+  "opponent": "Masashi Ozawa",
+  "result": "won"
+ },
+ {
+  "date": "1976/01/24",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 954.2713487130296,
   "opponent": "Bulldog Otto",
@@ -1198,6 +1361,7 @@
  },
  {
   "date": "1976/01/24",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1015.5670437177142,
   "opponent": "Haruka Eigen",
@@ -1205,6 +1369,7 @@
  },
  {
   "date": "1976/01/24",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 1020.2394090043593,
   "opponent": "Kotetsu Yamamoto",
@@ -1212,6 +1377,7 @@
  },
  {
   "date": "1976/01/24",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 1154.6313236279948,
   "opponent": "Steve Wright",
@@ -1219,6 +1385,7 @@
  },
  {
   "date": "1976/01/24",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
   "elo": 1023.3556036738852,
   "opponent": "Seiji Sakaguchi",
@@ -1226,6 +1393,7 @@
  },
  {
   "date": "1976/01/24",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1280.2854683112273,
   "opponent": "Brutus Malumba",
@@ -1233,6 +1401,7 @@
  },
  {
   "date": "1976/01/24",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1195.083035729603,
   "opponent": "Tiger Jeet Singh",
@@ -1240,6 +1409,7 @@
  },
  {
   "date": "1976/01/24",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1228.8141977258035,
   "opponent": "Strong Kobayashi",
@@ -1247,6 +1417,7 @@
  },
  {
   "date": "1976/01/25",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
   "elo": 885.1722892102844,
   "opponent": "Shoji Kai",
@@ -1254,6 +1425,7 @@
  },
  {
   "date": "1976/01/25",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1154.7872504158115,
   "opponent": "Masanobu Kurisu",
@@ -1261,20 +1433,7 @@
  },
  {
   "date": "1976/01/25",
-  "wrestler": "Kengo Kimura",
-  "elo": 935.1752518633041,
-  "opponent": "Yoshiaki Fujiwara",
-  "result": "lost"
- },
- {
-  "date": "1976/01/25",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1023.448047349033,
-  "opponent": "Kengo Kimura",
-  "result": "won"
- },
- {
-  "date": "1976/01/25",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 1179.3481884067733,
   "opponent": "Masashi Ozawa",
@@ -1282,6 +1441,7 @@
  },
  {
   "date": "1976/01/25",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
   "elo": 944.7875707736738,
   "opponent": "Inferno #2 (winner), Katsuhisa Shibata",
@@ -1289,6 +1449,15 @@
  },
  {
   "date": "1976/01/25",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 923.3093146839739,
+  "opponent": "Inferno #2 (winner), Haruka Eigen",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/25",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 1057.7023292458155,
   "opponent": "Haruka Eigen, Katsuhisa Shibata",
@@ -1296,6 +1465,7 @@
  },
  {
   "date": "1976/01/25",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 972.7800375582623,
   "opponent": "Kantaro Hoshino",
@@ -1303,6 +1473,7 @@
  },
  {
   "date": "1976/01/25",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 1108.8271596750099,
   "opponent": "Bulldog Otto",
@@ -1310,6 +1481,7 @@
  },
  {
   "date": "1976/01/25",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 1001.9512548808294,
   "opponent": "Seiji Sakaguchi",
@@ -1317,6 +1489,7 @@
  },
  {
   "date": "1976/01/25",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1289.4295453729922,
   "opponent": "Steve Wright",
@@ -1324,6 +1497,7 @@
  },
  {
   "date": "1976/01/26",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
   "elo": 1293.2183380808658,
   "opponent": "Daigoro Oshiro",
@@ -1331,20 +1505,23 @@
  },
  {
   "date": "1976/01/26",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 962.3174271173846,
-  "opponent": "Haruka Eigen",
-  "result": "lost"
- },
- {
-  "date": "1976/01/26",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
-  "elo": 1067.0488112369708,
+  "elo": 1045.7977950236668,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1976/01/26",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 915.4169462339489,
+  "opponent": "Inferno #2 (winner), Kotetsu Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/26",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 1162.895805796728,
   "opponent": "Inferno #2 (winner), Katsuhisa Shibata",
@@ -1352,6 +1529,7 @@
  },
  {
   "date": "1976/01/26",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 1082.0470803058859,
   "opponent": "Katsuhisa Shibata, Kotetsu Yamamoto",
@@ -1359,6 +1537,7 @@
  },
  {
   "date": "1976/01/26",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 977.1968869138622,
   "opponent": "Strong Kobayashi",
@@ -1366,6 +1545,7 @@
  },
  {
   "date": "1976/01/26",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1219.8374036965702,
   "opponent": "Steve Wright",
@@ -1373,6 +1553,7 @@
  },
  {
   "date": "1976/01/26",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 934.4312827871491,
   "opponent": "Antonio Inoki",
@@ -1380,6 +1561,7 @@
  },
  {
   "date": "1976/01/26",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1232.2983414290984,
   "opponent": "Bulldog Otto",
@@ -1387,20 +1569,31 @@
  },
  {
   "date": "1976/01/28",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
-  "elo": 1295.8815077685904,
+  "elo": 1295.3614377115414,
   "opponent": "Seiei Kimura",
   "result": "won"
  },
  {
   "date": "1976/01/28",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
-  "elo": 1104.3501689233012,
+  "elo": 1086.0016241003545,
   "opponent": "Masashi Ozawa",
   "result": "won"
  },
  {
   "date": "1976/01/28",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 820.8842549018481,
+  "opponent": "Bulldog Otto",
+  "result": "lost"
+ },
+ {
+  "date": "1976/01/28",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
   "elo": 1028.96397411925,
   "opponent": "Katsuhisa Shibata",
@@ -1408,6 +1601,7 @@
  },
  {
   "date": "1976/01/28",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 1058.7888918930616,
   "opponent": "Seiji Sakaguchi",
@@ -1415,6 +1609,7 @@
  },
  {
   "date": "1976/01/28",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1301.0586395794044,
   "opponent": "Inferno #2",
@@ -1422,6 +1617,7 @@
  },
  {
   "date": "1976/01/28",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 939.7621969695085,
   "opponent": "Antonio Inoki",
@@ -1429,6 +1625,7 @@
  },
  {
   "date": "1976/01/28",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1241.6570139151868,
   "opponent": "Steve Wright",
@@ -1436,41 +1633,47 @@
  },
  {
   "date": "1976/01/29",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 906.4654836139742,
+  "elo": 905.1115907642151,
   "opponent": "Kuniaki Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/01/29",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
-  "elo": 1298.357900074391,
+  "elo": 1297.3815177124309,
   "opponent": "Seiei Kimura",
   "result": "won"
  },
  {
   "date": "1976/01/29",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
-  "elo": 1061.4938959905917,
+  "elo": 1060.7648083257764,
   "opponent": "Masashi Ozawa",
   "result": "won"
  },
  {
   "date": "1976/01/29",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
-  "elo": 1042.9007739322676,
+  "elo": 1027.082585611584,
   "opponent": "Brutus Malumba",
   "result": "lost"
  },
  {
   "date": "1976/01/29",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
-  "elo": 1084.804998664919,
+  "elo": 1082.274642162656,
   "opponent": "Haruka Eigen",
   "result": "won"
  },
  {
   "date": "1976/01/29",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 884.9142133273186,
   "opponent": "Kantaro Hoshino",
@@ -1478,6 +1681,7 @@
  },
  {
   "date": "1976/01/29",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 1136.2511514961047,
   "opponent": "Steve Wright",
@@ -1485,6 +1689,7 @@
  },
  {
   "date": "1976/01/29",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1204.7378919675946,
   "opponent": "Antonio Inoki",
@@ -1492,6 +1697,7 @@
  },
  {
   "date": "1976/01/29",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
   "elo": 1265.7333196733957,
   "opponent": "Tiger Jeet Singh",
@@ -1499,34 +1705,47 @@
  },
  {
   "date": "1976/02/01",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 887.4973742130608,
+  "elo": 886.1807592662733,
   "opponent": "Ivan Gomes",
   "result": "lost"
  },
  {
   "date": "1976/02/01",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
-  "elo": 1303.0999274246194,
+  "elo": 1302.1142255869163,
   "opponent": "Masanobu Kurisu",
   "result": "won"
  },
  {
   "date": "1976/02/01",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 924.3200372320184,
+  "opponent": "Masashi Ozawa",
+  "result": "won"
+ },
+ {
+  "date": "1976/02/01",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
-  "elo": 995.5739878460955,
+  "elo": 981.9147185131515,
   "opponent": "Bulldog Otto",
   "result": "lost"
  },
  {
   "date": "1976/02/01",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
-  "elo": 1108.8206820767637,
+  "elo": 1105.9326754242088,
   "opponent": "Haruka Eigen",
   "result": "won"
  },
  {
   "date": "1976/02/01",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
   "elo": 851.3232199750478,
   "opponent": "Kotetsu Yamamoto",
@@ -1534,6 +1753,7 @@
  },
  {
   "date": "1976/02/01",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
   "elo": 1179.6913024728633,
   "opponent": "Steve Wright",
@@ -1541,6 +1761,7 @@
  },
  {
   "date": "1976/02/01",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 1019.7554949205739,
   "opponent": "Kantaro Hoshino",
@@ -1548,6 +1769,7 @@
  },
  {
   "date": "1976/02/01",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
   "elo": 1175.2845484685924,
   "opponent": "Inferno #2",
@@ -1555,48 +1777,63 @@
  },
  {
   "date": "1976/02/02",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 852.7408434429447,
+  "elo": 845.3467115847809,
   "opponent": "Seiei Kimura",
   "result": "draw"
  },
  {
   "date": "1976/02/02",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
-  "elo": 1307.2012294827027,
+  "elo": 1306.2005489347298,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1976/02/02",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
-  "elo": 1031.6302012918545,
+  "elo": 1019.8028914386438,
   "opponent": "Masashi Ozawa",
   "result": "won"
  },
  {
   "date": "1976/02/02",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
-  "elo": 1068.880642510307,
+  "elo": 1066.3907537621585,
   "opponent": "Kotetsu Yamamoto",
   "result": "lost"
  },
  {
   "date": "1976/02/02",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1219.6313420393199,
+  "elo": 1219.2332241349136,
   "opponent": "Bulldog Otto",
   "result": "won"
  },
  {
   "date": "1976/02/02",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 803.6136503154169,
+  "opponent": "Steve Wright",
+  "result": "lost"
+ },
+ {
+  "date": "1976/02/02",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
-  "elo": 972.3734330966403,
+  "elo": 972.0296068916495,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1976/02/02",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
   "elo": 1193.7515900181725,
   "opponent": "Tiger Jeet Singh",
@@ -1604,6 +1841,7 @@
  },
  {
   "date": "1976/02/02",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1230.8237056459923,
   "opponent": "Strong Kobayashi",
@@ -1611,48 +1849,63 @@
  },
  {
   "date": "1976/02/02",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
-  "elo": 1058.719069116005,
+  "elo": 1056.4685804859976,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/02/02",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1278.7762844478527,
+  "elo": 1278.636350511725,
   "opponent": "Brutus Malumba",
   "result": "won"
  },
  {
   "date": "1976/02/03",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 869.5898847217978,
+  "elo": 861.9309684573519,
   "opponent": "Kuniaki Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/02/03",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
-  "elo": 1309.4865717684888,
+  "elo": 1308.3612202431516,
   "opponent": "Daigoro Oshiro",
   "result": "won"
  },
  {
   "date": "1976/02/03",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 895.7856077665894,
+  "opponent": "Seiei Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1976/02/03",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
-  "elo": 986.9705237881129,
+  "elo": 976.4675275131336,
   "opponent": "Bulldog Otto",
   "result": "lost"
  },
  {
   "date": "1976/02/03",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
-  "elo": 1113.5403200140488,
+  "elo": 1109.7261176876686,
   "opponent": "Haruka Eigen",
   "result": "won"
  },
  {
   "date": "1976/02/03",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
   "elo": 1003.2255045061681,
   "opponent": "Seiji Sakaguchi",
@@ -1660,6 +1913,7 @@
  },
  {
   "date": "1976/02/03",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1309.3236347866073,
   "opponent": "Inferno #2",
@@ -1667,83 +1921,95 @@
  },
  {
   "date": "1976/02/03",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
-  "elo": 943.1103370047139,
+  "elo": 942.7958193164126,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/02/03",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1286.0920584708344,
+  "elo": 1285.944797405534,
   "opponent": "Steve Wright",
   "result": "won"
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 841.7333831771899,
+  "elo": 833.2689932779211,
   "opponent": "Daigoro Oshiro",
   "result": "draw"
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
-  "elo": 1310.9290579320646,
+  "elo": 1309.7001263981583,
   "opponent": "Seiei Kimura",
   "result": "won"
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
-  "elo": 1026.2049683551897,
+  "elo": 1016.8630737149947,
   "opponent": "Masashi Ozawa",
   "result": "won"
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
-  "elo": 1072.3336517924042,
+  "elo": 1069.05033379272,
   "opponent": "Kantaro Hoshino",
   "result": "lost"
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1216.491216690237,
+  "elo": 1215.960332363541,
   "opponent": "Bulldog Otto",
   "result": "won"
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1183.815287680693,
+  "elo": 1183.3090802330505,
   "opponent": "Brutus Malumba",
   "result": "lost"
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Brutus Malumba",
   "wrestler": "Brutus Malumba",
-  "elo": 1130.3511778332586,
+  "elo": 1128.3168682897235,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
-  "elo": 904.8881290296624,
+  "elo": 904.6295565017691,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1212.8626940056981,
+  "elo": 1212.8347214254943,
   "opponent": "Steve Wright",
   "result": "won"
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1211.378034806318,
   "opponent": "Seiji Sakaguchi",
@@ -1751,6 +2017,7 @@
  },
  {
   "date": "1976/02/04",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1328.7693056262815,
   "opponent": "Tiger Jeet Singh",
@@ -1758,104 +2025,119 @@
  },
  {
   "date": "1976/02/05",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 829.1494166280902,
+  "elo": 821.1673290005665,
   "opponent": "Ivan Gomes",
   "result": "lost"
  },
  {
   "date": "1976/02/05",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
-  "elo": 1314.0750495693394,
+  "elo": 1312.725542467497,
   "opponent": "Masanobu Kurisu",
   "result": "won"
  },
  {
   "date": "1976/02/05",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 841.8947064986406,
+  "opponent": "Bulldog Otto",
+  "result": "lost"
+ },
+ {
+  "date": "1976/02/05",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
-  "elo": 1099.6284008373748,
+  "elo": 1095.9957844266944,
   "opponent": "Katsuhisa Shibata",
   "result": "won"
  },
  {
   "date": "1976/02/05",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
-  "elo": 876.36496258661,
+  "elo": 876.0680335887477,
   "opponent": "Kantaro Hoshino",
   "result": "lost"
  },
  {
   "date": "1976/02/05",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1223.622008301,
+  "elo": 1223.1007130917965,
   "opponent": "Steve Wright",
   "result": "won"
  },
  {
   "date": "1976/02/05",
+  "wrestling_as": "Inferno #2",
   "wrestler": "Inferno #2",
-  "elo": 986.8193145681485,
+  "elo": 986.8076853863843,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/02/05",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1294.2951534398442,
+  "elo": 1294.153706965426,
   "opponent": "Inferno #2",
   "result": "won"
  },
  {
   "date": "1976/02/06",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 728.766716376036,
+  "elo": 721.6373943004697,
   "opponent": "Makoto Arakawa",
   "result": "lost"
  },
  {
   "date": "1976/02/06",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 1038.9943536860142,
-  "opponent": "Ivan Gomes",
-  "result": "draw"
- },
- {
-  "date": "1976/02/06",
+  "wrestling_as": "Ivan Gomes",
   "wrestler": "Ivan Gomes",
-  "elo": 1294.905817927182,
+  "elo": 1290.9359057404909,
   "opponent": "Yoshiaki Fujiwara",
   "result": "draw"
  },
  {
   "date": "1976/02/06",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
-  "elo": 1047.5745019094084,
+  "elo": 1038.3787628623566,
   "opponent": "Masashi Ozawa",
   "result": "won"
  },
  {
   "date": "1976/02/06",
+  "wrestling_as": "Steve Wright",
   "wrestler": "Steve Wright",
-  "elo": 909.5261169998623,
+  "elo": 907.4789106410014,
   "opponent": "Seiei Kimura",
   "result": "won"
  },
  {
   "date": "1976/02/06",
+  "wrestling_as": "Bulldog Otto",
   "wrestler": "Bulldog Otto",
-  "elo": 1065.3706511021917,
+  "elo": 1062.20382409531,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/02/06",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1229.9915688732897,
+  "elo": 1229.7307015911865,
   "opponent": "Bulldog Otto",
   "result": "won"
  },
  {
   "date": "1976/02/06",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
   "elo": 1194.5176036367118,
   "opponent": "Seiji Sakaguchi",
@@ -1863,6 +2145,7 @@
  },
  {
   "date": "1976/02/06",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1345.6297367958878,
   "opponent": "Tiger Jeet Singh",
@@ -1870,20 +2153,23 @@
  },
  {
   "date": "1976/02/06",
+  "wrestling_as": "Willem Ruska",
   "wrestler": "Willem Ruska",
-  "elo": 984.4762468872806,
+  "elo": 984.4655661540227,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/02/06",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1302.057029996204,
+  "elo": 1301.9209238884146,
   "opponent": "Willem Ruska",
   "result": "won"
  },
  {
   "date": "1976/02/20",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1351.6446712790564,
   "opponent": "Ron Starr",
@@ -1891,6 +2177,7 @@
  },
  {
   "date": "1976/02/21",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
   "elo": 988.331763507678,
   "opponent": "Seiji Sakaguchi",
@@ -1898,6 +2185,7 @@
  },
  {
   "date": "1976/02/21",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
   "elo": 1357.4787895252175,
   "opponent": "Don Serrano",
@@ -1905,1021 +2193,1159 @@
  },
  {
   "date": "1976/02/21",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1309.100852181024,
+  "elo": 1308.9694887061978,
   "opponent": "Ron Starr",
   "result": "won"
  },
  {
   "date": "1976/02/24",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1238.7071170180611,
+  "elo": 1238.4562749554123,
   "opponent": "Ron Starr",
   "result": "won"
  },
  {
   "date": "1976/02/25",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1361.3071265810406,
+  "elo": 1361.3059246316545,
   "opponent": "Ron Starr",
   "result": "won"
  },
  {
   "date": "1976/02/26",
+  "wrestling_as": "Don Serrano",
   "wrestler": "Don Serrano",
-  "elo": 950.0622095428788,
+  "elo": 950.0175036498265,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/02/26",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1248.274505509261,
+  "elo": 1248.0348399198751,
   "opponent": "Don Serrano",
   "result": "won"
  },
  {
   "date": "1976/02/26",
+  "wrestling_as": "Black Gordman",
   "wrestler": "Black Gordman",
-  "elo": 988.8929323680726,
+  "elo": 988.8928640540759,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/02/26",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1366.8606603970043,
+  "elo": 1366.8594926046167,
   "opponent": "Black Gordman",
   "result": "won"
  },
  {
   "date": "1976/02/27",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1254.5051395743396,
+  "elo": 1254.2712973838854,
   "opponent": "Ron Starr",
   "result": "won"
  },
  {
   "date": "1976/02/28",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1266.320161661705,
+  "elo": 1266.1934703774918,
   "opponent": "Johnny Powers",
   "result": "lost"
  },
  {
   "date": "1976/02/28",
+  "wrestling_as": "Johnny Powers",
   "wrestler": "Johnny Powers",
-  "elo": 1085.5613810386378,
+  "elo": 1085.5520366574117,
   "opponent": "Antonio Inoki",
   "result": "won"
  },
  {
   "date": "1976/02/29",
+  "wrestling_as": "Great Goliath",
   "wrestler": "Great Goliath",
-  "elo": 989.2046696179066,
+  "elo": 989.2046048818845,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/02/29",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1372.2583255880509,
+  "elo": 1372.2571901636743,
   "opponent": "Great Goliath",
   "result": "won"
  },
  {
   "date": "1976/02/29",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1218.2240798957298,
+  "elo": 1218.0031061160932,
   "opponent": "Johnny Powers",
   "result": "lost"
  },
  {
   "date": "1976/02/29",
+  "wrestling_as": "Johnny Powers",
   "wrestler": "Johnny Powers",
-  "elo": 1158.1235003958575,
+  "elo": 1158.088419192996,
   "opponent": "Strong Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/03/01",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1271.3220687156386,
+  "elo": 1271.1966507801117,
   "opponent": "Ron Starr",
   "result": "won"
  },
  {
   "date": "1976/03/02",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1333.5441432268485,
+  "elo": 1333.5413003394456,
   "opponent": "Johnny Powers",
   "result": "lost"
  },
  {
   "date": "1976/03/02",
+  "wrestling_as": "Johnny Powers",
   "wrestler": "Johnny Powers",
-  "elo": 1235.5518651182624,
+  "elo": 1235.5201988414535,
   "opponent": "Seiji Sakaguchi",
   "result": "won"
  },
  {
   "date": "1976/03/03",
+  "wrestling_as": "Great Goliath",
   "wrestler": "Great Goliath",
-  "elo": 956.2738307288423,
+  "elo": 956.2539112028787,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/03/03",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1279.5547784379046,
+  "elo": 1279.434324199863,
   "opponent": "Great Goliath",
   "result": "won"
  },
  {
   "date": "1976/03/04",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1283.7587849615227,
+  "elo": 1283.6391687339303,
   "opponent": "Ron Starr",
   "result": "won"
  },
  {
   "date": "1976/03/06",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1194.469881523988,
+  "elo": 1194.2624953178376,
   "opponent": "Johnny Powers",
   "result": "lost"
  },
  {
   "date": "1976/03/06",
+  "wrestling_as": "Johnny Powers",
   "wrestler": "Johnny Powers",
-  "elo": 1259.3060634900041,
+  "elo": 1259.2608096397091,
   "opponent": "Strong Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/03/09",
+  "wrestling_as": "Black Gordman",
   "wrestler": "Black Gordman",
-  "elo": 957.9314922693322,
+  "elo": 957.9134112973748,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/03/09",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1291.4991449862077,
+  "elo": 1291.3840319231056,
   "opponent": "Black Gordman",
   "result": "won"
  },
  {
   "date": "1976/03/11",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1206.440964291439,
+  "elo": 1206.2409433738667,
   "opponent": "Ron Starr",
   "result": "won"
  },
  {
   "date": "1976/03/11",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1303.282123502952,
+  "elo": 1303.2763641739377,
   "opponent": "Johnny Powers",
   "result": "lost"
  },
  {
   "date": "1976/03/11",
+  "wrestling_as": "Johnny Powers",
   "wrestler": "Johnny Powers",
-  "elo": 1289.5680832139008,
+  "elo": 1289.525745805217,
   "opponent": "Seiji Sakaguchi",
   "result": "won"
  },
  {
   "date": "1976/03/12",
+  "wrestling_as": "Great Goliath",
   "wrestler": "Great Goliath",
-  "elo": 932.381547492209,
+  "elo": 932.3633427823967,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/03/12",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1309.2551943121102,
+  "elo": 1309.2490062790582,
   "opponent": "Great Goliath",
   "result": "won"
  },
  {
   "date": "1976/03/12",
+  "wrestling_as": "Johnny Powers",
   "wrestler": "Johnny Powers",
-  "elo": 1264.7070328471807,
+  "elo": 1264.6594589649617,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/03/12",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1316.3601953529278,
+  "elo": 1316.2503187633608,
   "opponent": "Johnny Powers",
   "result": "won"
  },
  {
   "date": "1976/03/14",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1185.5946775677578,
+  "elo": 1185.405322502683,
   "opponent": "Johnny Powers",
   "result": "lost"
  },
  {
   "date": "1976/03/14",
+  "wrestling_as": "Johnny Powers",
   "wrestler": "Johnny Powers",
-  "elo": 1285.553319570862,
+  "elo": 1285.4950798361454,
   "opponent": "Strong Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/03/15",
+  "wrestling_as": "Black Gordman",
   "wrestler": "Black Gordman",
-  "elo": 915.4520136758576,
+  "elo": 915.4009370434353,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/03/15",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1206.834416864495,
+  "elo": 1206.6615596296529,
   "opponent": "Black Gordman",
   "result": "won"
  },
  {
   "date": "1976/03/16",
+  "wrestling_as": "Johnny Powers",
   "wrestler": "Johnny Powers",
-  "elo": 1254.9840138460531,
+  "elo": 1254.917936592684,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/03/16",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1237.403722589304,
+  "elo": 1237.238702873114,
   "opponent": "Johnny Powers",
   "result": "won"
  },
  {
   "date": "1976/03/18",
+  "wrestling_as": "Johnny Powers",
   "wrestler": "Johnny Powers",
-  "elo": 1234.3550109539724,
+  "elo": 1234.2858783593847,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/03/18",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1336.9891982450085,
+  "elo": 1336.8823769966602,
   "opponent": "Johnny Powers",
   "result": "won"
  },
  {
   "date": "1976/04/02",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 983.4060599924654,
-  "opponent": "Raul Mata",
-  "result": "lost"
- },
- {
-  "date": "1976/04/02",
+  "wrestling_as": "Raul Mata",
   "wrestler": "Raul Mata",
-  "elo": 1055.5882936935486,
+  "elo": 1040.6763842737375,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1976/04/02",
+  "wrestling_as": "Butcher Vachon",
   "wrestler": "Butcher Vachon",
-  "elo": 979.683119678104,
+  "elo": 979.6677368096388,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/04/02",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1247.562162750252,
+  "elo": 1247.4048344682947,
   "opponent": "Butcher Vachon",
   "result": "won"
  },
  {
   "date": "1976/04/02",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1266.469017532442,
+  "elo": 1266.4630493930954,
   "opponent": "Killer Karl Krupp",
   "result": "lost"
  },
  {
   "date": "1976/04/02",
+  "wrestling_as": "Killer Karl Krupp",
   "wrestler": "Killer Karl Krupp",
-  "elo": 1085.5723535593365,
+  "elo": 1085.571913771926,
   "opponent": "Seiji Sakaguchi",
   "result": "won"
  },
  {
   "date": "1976/04/03",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1343.2723284861202,
+  "elo": 1343.1688860840025,
   "opponent": "Towering Inferno",
   "result": "won"
  },
  {
   "date": "1976/04/04",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1236.6831710125082,
+  "elo": 1236.5349958271172,
   "opponent": "Killer Karl Krupp",
   "result": "draw"
  },
  {
   "date": "1976/04/04",
+  "wrestling_as": "Killer Karl Krupp",
   "wrestler": "Killer Karl Krupp",
-  "elo": 1107.330337034824,
+  "elo": 1107.3115910542808,
   "opponent": "Strong Kobayashi",
   "result": "draw"
  },
  {
   "date": "1976/04/04",
+  "wrestling_as": "Ken Mantell",
   "wrestler": "Ken Mantell",
-  "elo": 982.2578982712748,
+  "elo": 982.2573968738039,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/04/04",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1275.3400683968046,
+  "elo": 1275.3343509561935,
   "opponent": "Ken Mantell",
   "result": "won"
  },
  {
   "date": "1976/04/06",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1233.0506830779216,
+  "elo": 1233.0446027942726,
   "opponent": "Butcher Vachon",
   "result": "lost"
  },
  {
   "date": "1976/04/06",
+  "wrestling_as": "Butcher Vachon",
   "wrestler": "Butcher Vachon",
-  "elo": 1148.8406609536357,
+  "elo": 1148.8267294573225,
   "opponent": "Seiji Sakaguchi",
   "result": "won"
  },
  {
   "date": "1976/04/06",
+  "wrestling_as": "Ken Mantell",
   "wrestler": "Ken Mantell",
-  "elo": 960.0104699056086,
+  "elo": 959.9982489871344,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/04/06",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1348.8341855775368,
+  "elo": 1348.73367305567,
   "opponent": "Ken Mantell",
   "result": "won"
  },
  {
   "date": "1976/04/07",
+  "wrestling_as": "Masa Saito",
   "wrestler": "Masa Saito",
-  "elo": 979.6158872907411,
+  "elo": 979.6020410325963,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/04/07",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1246.8752273671375,
+  "elo": 1246.733975310819,
   "opponent": "Masa Saito",
   "result": "won"
  },
  {
   "date": "1976/04/07",
+  "wrestling_as": "Victor Rivera",
   "wrestler": "Victor Rivera",
-  "elo": 988.1639792049943,
+  "elo": 988.15794015441,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/04/07",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1354.7521959750397,
+  "elo": 1354.654702978465,
   "opponent": "Victor Rivera",
   "result": "won"
  },
  {
   "date": "1976/04/08",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1206.5994674915944,
+  "elo": 1206.46458614424,
   "opponent": "Pedro Morales",
   "result": "lost"
  },
  {
   "date": "1976/04/08",
+  "wrestling_as": "Pedro Morales",
   "wrestler": "Pedro Morales",
-  "elo": 1080.5515197510863,
+  "elo": 1080.538778333158,
   "opponent": "Strong Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/04/08",
+  "wrestling_as": "Butcher Vachon",
   "wrestler": "Butcher Vachon",
-  "elo": 1125.4309987320864,
+  "elo": 1125.408441689654,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/04/08",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1366.4570270858144,
+  "elo": 1366.3638468622992,
   "opponent": "Butcher Vachon",
   "result": "won"
  },
  {
   "date": "1976/04/09",
+  "wrestling_as": "Ken Mantell",
   "wrestler": "Ken Mantell",
-  "elo": 925.6169389274828,
+  "elo": 925.6057246810318,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/04/09",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1241.649065822453,
+  "elo": 1241.642733870798,
   "opponent": "Ken Mantell",
   "result": "won"
  },
  {
   "date": "1976/04/10",
+  "wrestling_as": "Butcher Vachon",
   "wrestler": "Butcher Vachon",
-  "elo": 1086.904105442369,
+  "elo": 1086.8662336188627,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/04/10",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1225.8629141364531,
+  "elo": 1225.7356901796356,
   "opponent": "Butcher Vachon",
   "result": "won"
  },
  {
   "date": "1976/04/10",
+  "wrestling_as": "Victor Rivera",
   "wrestler": "Victor Rivera",
-  "elo": 950.4453464720774,
+  "elo": 950.4392558189045,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/04/10",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1251.0787240056823,
+  "elo": 1251.0724049546745,
   "opponent": "Victor Rivera",
   "result": "won"
  },
  {
   "date": "1976/04/11",
+  "wrestling_as": "Haruka Eigen",
   "wrestler": "Haruka Eigen",
-  "elo": 1021.1945022969967,
+  "elo": 1013.0000140038467,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/04/11",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1239.052913942659,
+  "elo": 1238.4250646088906,
   "opponent": "Haruka Eigen",
   "result": "won"
  },
  {
   "date": "1976/04/11",
+  "wrestling_as": "Victor Rivera",
   "wrestler": "Victor Rivera",
-  "elo": 933.7306518679399,
+  "elo": 933.7168803766926,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/04/11",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1370.6357007368488,
+  "elo": 1370.5444407228522,
   "opponent": "Victor Rivera",
   "result": "won"
  },
  {
   "date": "1976/04/12",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1260.0690231056278,
+  "elo": 1260.0626854356456,
   "opponent": "Towering Inferno",
   "result": "won"
  },
  {
   "date": "1976/04/12",
+  "wrestling_as": "Butcher Vachon",
   "wrestler": "Butcher Vachon",
-  "elo": 1070.5660940323555,
+  "elo": 1070.5240210103202,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/04/12",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1378.8047064418556,
+  "elo": 1378.7155470271234,
   "opponent": "Butcher Vachon",
   "result": "won"
  },
  {
   "date": "1976/04/13",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1203.3782873355585,
+  "elo": 1202.7866564941594,
   "opponent": "Pedro Morales",
   "result": "lost"
  },
  {
   "date": "1976/04/13",
+  "wrestling_as": "Pedro Morales",
   "wrestler": "Pedro Morales",
-  "elo": 1151.9007729652872,
+  "elo": 1151.8155945626204,
   "opponent": "Strong Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/04/13",
+  "wrestling_as": "Ken Mantell",
   "wrestler": "Ken Mantell",
-  "elo": 900.1617291634517,
+  "elo": 900.1511385366163,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/04/13",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1266.4328255466355,
+  "elo": 1266.4263319717495,
   "opponent": "Ken Mantell",
   "result": "won"
  },
  {
   "date": "1976/04/14",
+  "wrestling_as": "Ken Mantell",
   "wrestler": "Ken Mantell",
-  "elo": 870.4374499648081,
+  "elo": 870.3421158646528,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/04/14",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1210.8093571352194,
+  "elo": 1210.2389121621502,
   "opponent": "Ken Mantell",
   "result": "won"
  },
  {
   "date": "1976/04/14",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1273.446278042979,
+  "elo": 1273.439777885701,
   "opponent": "Towering Inferno",
   "result": "won"
  },
  {
   "date": "1976/04/15",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1218.8354291637895,
+  "elo": 1218.2868750404677,
   "opponent": "Towering Inferno",
   "result": "won"
  },
  {
   "date": "1976/04/15",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1262.3278578361599,
+  "elo": 1262.3206508170813,
   "opponent": "Killer Karl Krupp",
   "result": "draw"
  },
  {
   "date": "1976/04/15",
+  "wrestling_as": "Killer Karl Krupp",
   "wrestler": "Killer Karl Krupp",
-  "elo": 1129.5671774484622,
+  "elo": 1129.5498451915203,
   "opponent": "Seiji Sakaguchi",
   "result": "draw"
  },
  {
   "date": "1976/04/17",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1267.6114944902333,
+  "elo": 1267.6019210893987,
   "opponent": "Towering Inferno",
   "result": "won"
  },
  {
   "date": "1976/04/17",
+  "wrestling_as": "Killer Karl Krupp",
   "wrestler": "Killer Karl Krupp",
-  "elo": 1110.330847294474,
+  "elo": 1110.3070905589575,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/04/17",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1388.4228715188497,
+  "elo": 1388.336924343405,
   "opponent": "Killer Karl Krupp",
   "result": "won"
  },
  {
   "date": "1976/04/20",
+  "wrestling_as": "Raul Mata",
   "wrestler": "Raul Mata",
-  "elo": 1027.4927254714103,
+  "elo": 1014.2205259212432,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/04/20",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1232.8832132748587,
+  "elo": 1231.514804216715,
   "opponent": "Raul Mata",
   "result": "won"
  },
  {
   "date": "1976/04/20",
+  "wrestling_as": "Victor Rivera",
   "wrestler": "Victor Rivera",
-  "elo": 920.1255011273178,
+  "elo": 920.106460592108,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/04/20",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1391.8241592040051,
+  "elo": 1391.739529289551,
   "opponent": "Victor Rivera",
   "result": "won"
  },
  {
   "date": "1976/04/21",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1394.1890781291595,
+  "elo": 1394.1044465955142,
   "opponent": "Towering Inferno",
   "result": "won"
  },
  {
   "date": "1976/04/22",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1238.1356617450558,
+  "elo": 1236.8020891752815,
   "opponent": "Towering Inferno",
   "result": "won"
  },
  {
   "date": "1976/04/22",
+  "wrestling_as": "Raul Mata",
   "wrestler": "Raul Mata",
-  "elo": 1007.4276925037788,
+  "elo": 995.3520738097496,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/04/22",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1277.644010974049,
+  "elo": 1277.0361471451456,
   "opponent": "Raul Mata",
   "result": "won"
  },
  {
   "date": "1976/04/23",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1243.9714495544247,
+  "elo": 1243.3966871496575,
   "opponent": "Pedro Morales",
   "result": "lost"
  },
  {
   "date": "1976/04/23",
+  "wrestling_as": "Pedro Morales",
   "wrestler": "Pedro Morales",
-  "elo": 1219.2458958045358,
+  "elo": 1219.0945145535966,
   "opponent": "Seiji Sakaguchi",
   "result": "won"
  },
  {
   "date": "1976/04/23",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1396.162784087716,
+  "elo": 1396.0766311494292,
   "opponent": "Towering Inferno",
   "result": "won"
  },
  {
   "date": "1976/04/24",
+  "wrestling_as": "Victor Rivera",
   "wrestler": "Victor Rivera",
-  "elo": 892.4924636001427,
+  "elo": 892.2927188874806,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/04/24",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1245.0439211268495,
+  "elo": 1243.7555246014383,
   "opponent": "Victor Rivera",
   "result": "won"
  },
  {
   "date": "1976/04/24",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 980.2883161190382,
+  "elo": 980.2359011706975,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/04/24",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1253.8272914949057,
+  "elo": 1253.2787365643087,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1976/04/26",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1257.8755887375603,
+  "elo": 1257.3341187815208,
   "opponent": "Towering Inferno",
   "result": "won"
  },
  {
   "date": "1976/04/26",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1210.808763859584,
+  "elo": 1209.599053237465,
   "opponent": "Killer Karl Krupp",
   "result": "lost"
  },
  {
   "date": "1976/04/26",
+  "wrestling_as": "Killer Karl Krupp",
   "wrestler": "Killer Karl Krupp",
-  "elo": 1178.8011618290054,
+  "elo": 1178.6200332869043,
   "opponent": "Strong Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/04/27",
+  "wrestling_as": "Victor Rivera",
   "wrestler": "Victor Rivera",
-  "elo": 882.0554160285998,
+  "elo": 881.8621379240891,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/04/27",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1398.772045980602,
+  "elo": 1398.684276390277,
   "opponent": "Victor Rivera",
   "result": "won"
  },
  {
   "date": "1976/04/28",
+  "wrestling_as": "Raul Mata",
   "wrestler": "Raul Mata",
-  "elo": 983.7558484225834,
+  "elo": 950.2313657727949,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/04/28",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1222.6446859001817,
+  "elo": 1220.8792302467036,
   "opponent": "Raul Mata",
   "result": "won"
  },
  {
   "date": "1976/04/28",
+  "wrestling_as": "Ken Mantell",
   "wrestler": "Ken Mantell",
-  "elo": 861.3188708777863,
+  "elo": 861.2239157335791,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/04/28",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1401.0516907523574,
+  "elo": 1400.9638264230455,
   "opponent": "Ken Mantell",
   "result": "won"
  },
  {
   "date": "1976/04/30",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1178.814849444783,
+  "elo": 1177.098510986069,
   "opponent": "Victor Rivera",
   "result": "lost"
  },
  {
   "date": "1976/04/30",
+  "wrestling_as": "Victor Rivera",
   "wrestler": "Victor Rivera",
-  "elo": 1057.3747618501943,
+  "elo": 1056.9850149666277,
   "opponent": "Strong Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/04/30",
+  "wrestling_as": "Masa Saito",
   "wrestler": "Masa Saito",
-  "elo": 946.0696147310529,
+  "elo": 945.9708844487424,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/04/30",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1266.2621568774823,
+  "elo": 1265.7419079274844,
   "opponent": "Masa Saito",
   "result": "won"
  },
  {
   "date": "1976/04/30",
+  "wrestling_as": "Killer Karl Krupp",
   "wrestler": "Killer Karl Krupp",
-  "elo": 1157.0355308431197,
+  "elo": 1156.8635428806274,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/04/30",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1411.9345062453003,
+  "elo": 1411.842071626184,
   "opponent": "Killer Karl Krupp",
   "result": "won"
  },
  {
   "date": "1976/05/01",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1134.6072216285513,
+  "elo": 1133.112958699025,
   "opponent": "Pedro Morales",
   "result": "lost"
  },
  {
   "date": "1976/05/01",
+  "wrestling_as": "Pedro Morales",
   "wrestler": "Pedro Morales",
-  "elo": 1241.3497097126517,
+  "elo": 1241.0872906971185,
   "opponent": "Strong Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/05/04",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 921.9974431983131,
+  "elo": 921.6016336678338,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/05/04",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1163.752658088914,
+  "elo": 1162.4300924504569,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1976/05/04",
+  "wrestling_as": "Butcher Vachon",
   "wrestler": "Butcher Vachon",
-  "elo": 1046.0856508608538,
+  "elo": 1045.9926533100665,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/05/04",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1278.5023784632333,
+  "elo": 1278.0075917776112,
   "opponent": "Butcher Vachon",
   "result": "won"
  },
  {
   "date": "1976/05/05",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1194.3562010754065,
+  "elo": 1193.7789506202798,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/05/05",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1222.284272540101,
+  "elo": 1221.0736173934902,
   "opponent": "Kantaro Hoshino",
   "result": "won"
  },
  {
   "date": "1976/05/06",
+  "wrestling_as": "Butcher Vachon",
   "wrestler": "Butcher Vachon",
-  "elo": 1025.3000602399718,
+  "elo": 1025.1689548959675,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/05/06",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1288.8951737736743,
+  "elo": 1288.4194409846607,
   "opponent": "Butcher Vachon",
   "result": "won"
  },
  {
   "date": "1976/05/07",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1202.0194367724046,
+  "elo": 1200.8597459149412,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/05/07",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1309.1600095413708,
+  "elo": 1308.6333124632097,
   "opponent": "Strong Kobayashi",
   "result": "won"
  },
  {
   "date": "1976/05/08",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1160.3016423292727,
+  "elo": 1159.7309268765262,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/05/08",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1326.1872889144377,
+  "elo": 1325.6573243350865,
   "opponent": "Kantaro Hoshino",
   "result": "won"
  },
  {
   "date": "1976/05/08",
+  "wrestling_as": "Butcher Vachon",
   "wrestler": "Butcher Vachon",
-  "elo": 1015.552967759094,
+  "elo": 1015.4238205174169,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/05/08",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1416.8080524857392,
+  "elo": 1416.7146388154592,
   "opponent": "Butcher Vachon",
   "result": "won"
  },
  {
   "date": "1976/05/10",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1418.330616463723,
+  "elo": 1418.2359037376134,
   "opponent": "Towering Inferno",
   "result": "won"
  },
  {
   "date": "1976/05/10",
+  "wrestling_as": "Victor Rivera",
   "wrestler": "Victor Rivera",
-  "elo": 1006.5927804594022,
+  "elo": 1006.2196827652249,
   "opponent": "Killer Karl Krupp; Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/05/10",
+  "wrestling_as": "Killer Karl Krupp",
   "wrestler": "Killer Karl Krupp",
-  "elo": 1162.2572014186087,
+  "elo": 1162.0166726448556,
   "opponent": "Victor Rivera; Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/05/10",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1348.967444322089,
+  "elo": 1348.4634255536737,
   "opponent": "Victor Rivera; Killer Karl Krupp",
   "result": "won"
  },
  {
   "date": "1976/05/11",
+  "wrestling_as": "Victor Rivera",
   "wrestler": "Victor Rivera",
-  "elo": 998.0450665805711,
+  "elo": 997.6844875373829,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/05/11",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1422.6044734031384,
+  "elo": 1422.5035013515344,
   "opponent": "Victor Rivera",
   "result": "won"
  },
  {
   "date": "1976/05/11",
+  "wrestling_as": "Pedro Morales",
   "wrestler": "Pedro Morales",
-  "elo": 1223.8549221780904,
+  "elo": 1223.5766821431694,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/05/11",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1366.4622318566503,
+  "elo": 1365.9740341076229,
   "opponent": "Pedro Morales",
   "result": "won"
  },
  {
   "date": "1976/05/13",
+  "wrestling_as": "Killer Karl Krupp",
   "wrestler": "Killer Karl Krupp",
-  "elo": 1143.9949440290393,
+  "elo": 1143.7664039752797,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/05/13",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1431.7356020979232,
+  "elo": 1431.6286356863225,
   "opponent": "Killer Karl Krupp",
   "result": "won"
  },
  {
   "date": "1976/05/28",
-  "wrestler": "Satoru Sayama",
+  "wrestling_as": "Satoru Sayama",
+  "wrestler": "Satoru Sayama / Tiger Mask I",
   "elo": 970.910207177643,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1976/05/28",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1183.8770432381684,
   "opponent": "Satoru Sayama",
@@ -2927,27 +3353,31 @@
  },
  {
   "date": "1976/05/28",
+  "wrestling_as": "Pete Roberts",
   "wrestler": "Pete Roberts",
-  "elo": 992.3102712294948,
+  "elo": 992.3058992580328,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/05/28",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1435.5804664831758,
+  "elo": 1435.4756860573061,
   "opponent": "Pete Roberts",
   "result": "won"
  },
  {
   "date": "1976/05/29",
-  "wrestler": "Satoru Sayama",
+  "wrestling_as": "Satoru Sayama",
+  "wrestler": "Satoru Sayama / Tiger Mask I",
   "elo": 925.531492633524,
   "opponent": "Shoji Kai",
   "result": "lost"
  },
  {
   "date": "1976/05/29",
+  "wrestling_as": "Shoji Kai",
   "wrestler": "Shoji Kai",
   "elo": 1206.566400510228,
   "opponent": "Satoru Sayama",
@@ -2955,1149 +3385,1377 @@
  },
  {
   "date": "1976/05/29",
+  "wrestling_as": "Masanobu Kurisu",
   "wrestler": "Masanobu Kurisu",
-  "elo": 880.5974276365118,
+  "elo": 873.732272347859,
   "opponent": "Makoto Arakawa",
   "result": "won"
  },
  {
   "date": "1976/05/29",
-  "wrestler": "Kengo Kimura",
-  "elo": 987.9935706629284,
-  "opponent": "Masashi Ozawa",
-  "result": "won"
- },
- {
-  "date": "1976/05/29",
-  "wrestler": "Yoshiaki Fujiwara",
-  "elo": 888.1785515116112,
-  "opponent": "Charlie Fulton",
-  "result": "lost"
- },
- {
-  "date": "1976/05/29",
+  "wrestling_as": "Charlie Fulton",
   "wrestler": "Charlie Fulton",
-  "elo": 1047.6137542404272,
+  "elo": 1030.0343230415053,
   "opponent": "Yoshiaki Fujiwara",
   "result": "won"
  },
  {
   "date": "1976/05/29",
+  "wrestling_as": "Geoff Portz",
   "wrestler": "Geoff Portz",
-  "elo": 976.1862409966235,
+  "elo": 976.0649130972614,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/05/29",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1213.9263162740929,
+  "elo": 1212.8272893663104,
   "opponent": "Geoff Portz",
   "result": "won"
  },
  {
   "date": "1976/05/29",
+  "wrestling_as": "Pete Roberts",
   "wrestler": "Pete Roberts",
-  "elo": 971.5147865637299,
+  "elo": 971.4584614646061,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/05/29",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1371.6611030230915,
+  "elo": 1371.1858935559794,
   "opponent": "Pete Roberts",
   "result": "won"
  },
  {
   "date": "1976/05/30",
+  "wrestling_as": "Jerry Brown",
   "wrestler": "Jerry Brown",
-  "elo": 992.4659151642583,
+  "elo": 992.46171216536,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/05/30",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1439.3475089010467,
+  "elo": 1439.244829974626,
   "opponent": "Jerry Brown",
   "result": "won"
  },
  {
   "date": "1976/06/01",
+  "wrestling_as": "Charlie Fulton",
   "wrestler": "Charlie Fulton",
-  "elo": 1034.2058772856617,
+  "elo": 1017.728968022109,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/06/01",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1378.3650415004743,
+  "elo": 1377.3385710656776,
   "opponent": "Charlie Fulton",
   "result": "won"
  },
  {
   "date": "1976/06/01",
+  "wrestling_as": "Geoff Portz",
   "wrestler": "Geoff Portz",
-  "elo": 963.1863785714545,
+  "elo": 963.0663554633018,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/06/01",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1442.597474507339,
+  "elo": 1442.494469383116,
   "opponent": "Geoff Portz",
   "result": "won"
  },
  {
   "date": "1976/06/03",
+  "wrestling_as": "Pete Roberts",
   "wrestler": "Pete Roberts",
-  "elo": 931.806419420095,
+  "elo": 931.5587286892999,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/06/03",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1223.8534080600016,
+  "elo": 1222.802222560137,
   "opponent": "Pete Roberts",
   "result": "won"
  },
  {
   "date": "1976/06/06",
+  "wrestling_as": "Geoff Portz",
   "wrestler": "Geoff Portz",
-  "elo": 926.7167836975459,
+  "elo": 926.4366501559831,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/06/06",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1232.9708067784788,
+  "elo": 1231.9596488869665,
   "opponent": "Geoff Portz",
   "result": "won"
  },
  {
   "date": "1976/06/10",
+  "wrestling_as": "Pete Roberts",
   "wrestler": "Pete Roberts",
-  "elo": 917.5954558198601,
+  "elo": 917.28846994269,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/06/10",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1381.917782400533,
+  "elo": 1380.90613575233,
   "opponent": "Pete Roberts",
   "result": "won"
  },
  {
   "date": "1976/06/11",
+  "wrestling_as": "Buddy Roberts",
   "wrestler": "Buddy Roberts",
-  "elo": 979.2668767408766,
+  "elo": 979.1710536031794,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/06/11",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1243.3373684080407,
+  "elo": 1242.3741220853767,
   "opponent": "Buddy Roberts",
   "result": "won"
  },
  {
   "date": "1976/06/12",
+  "wrestling_as": "Geoff Portz",
   "wrestler": "Geoff Portz",
-  "elo": 898.8926961338473,
+  "elo": 898.5182374175729,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/06/12",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1250.2933902989653,
+  "elo": 1249.3537252699793,
   "opponent": "Geoff Portz",
   "result": "won"
  },
  {
   "date": "1976/06/13",
+  "wrestling_as": "Jerry Brown",
   "wrestler": "Jerry Brown",
-  "elo": 973.2552205566202,
+  "elo": 973.150073763119,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/06/13",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1386.7204560524426,
+  "elo": 1385.7340453528905,
   "opponent": "Jerry Brown",
   "result": "won"
  },
  {
   "date": "1976/06/14",
+  "wrestling_as": "Charlie Fulton",
   "wrestler": "Charlie Fulton",
-  "elo": 1011.8300859542991,
+  "elo": 996.8682135132836,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/06/14",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1261.4812859646465,
+  "elo": 1259.784102524392,
   "opponent": "Charlie Fulton",
   "result": "won"
  },
  {
   "date": "1976/06/15",
+  "wrestling_as": "Pete Roberts",
   "wrestler": "Pete Roberts",
-  "elo": 893.3224330539092,
+  "elo": 892.8442564866646,
   "opponent": "Strong Kobayashi",
   "result": "lost"
  },
  {
   "date": "1976/06/15",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1267.5495416561344,
+  "elo": 1265.8951558883982,
   "opponent": "Pete Roberts",
   "result": "won"
  },
  {
   "date": "1976/06/15",
+  "wrestling_as": "Geoff Portz",
   "wrestler": "Geoff Portz",
-  "elo": 887.5157581457914,
+  "elo": 887.1034428629252,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/06/15",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1389.5646905494566,
+  "elo": 1388.5877439915523,
   "opponent": "Geoff Portz",
   "result": "won"
  },
  {
   "date": "1976/07/09",
+  "wrestling_as": "Geeto Mongol",
   "wrestler": "Geeto Mongol",
-  "elo": 990.4002903242738,
+  "elo": 990.3513754291102,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/07/09",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1394.3645453873196,
+  "elo": 1393.4120562769972,
   "opponent": "Geeto Mongol",
   "result": "won"
  },
  {
   "date": "1976/07/10",
+  "wrestling_as": "Bolo Mongol",
   "wrestler": "Bolo Mongol",
-  "elo": 992.742529943369,
+  "elo": 992.7385379594065,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/07/10",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1446.2262095356546,
+  "elo": 1446.1252004034127,
   "opponent": "Bolo Mongol",
   "result": "won"
  },
  {
   "date": "1976/07/13",
+  "wrestling_as": "Ali Baba",
   "wrestler": "Ali Baba",
-  "elo": 990.6374076953612,
+  "elo": 990.59077538195,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/07/13",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1399.045841539639,
+  "elo": 1398.1166685860221,
   "opponent": "Ali Baba",
   "result": "won"
  },
  {
   "date": "1976/07/18",
+  "wrestling_as": "Ali Baba",
   "wrestler": "Ali Baba",
-  "elo": 977.0975527083974,
+  "elo": 977.0469685645894,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/07/18",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1449.6111732823956,
+  "elo": 1449.5111521077529,
   "opponent": "Ali Baba",
   "result": "won"
  },
  {
   "date": "1976/07/20",
+  "wrestling_as": "Kantaro Hoshino",
   "wrestler": "Kantaro Hoshino",
-  "elo": 1140.109397731659,
+  "elo": 1139.5054094204093,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/07/20",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1409.141963838446,
+  "elo": 1408.2294273140806,
   "opponent": "Kantaro Hoshino",
   "result": "won"
  },
  {
   "date": "1976/07/21",
+  "wrestling_as": "Bolo Mongol",
   "wrestler": "Bolo Mongol",
-  "elo": 979.2953790622231,
+  "elo": 979.2844517817946,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/07/21",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1452.972961002682,
+  "elo": 1452.874673652156,
   "opponent": "Bolo Mongol",
   "result": "won"
  },
  {
   "date": "1976/07/23",
+  "wrestling_as": "Bolo Mongol",
   "wrestler": "Bolo Mongol",
-  "elo": 963.7608324787867,
+  "elo": 963.675378876784,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/07/23",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1413.025600484305,
+  "elo": 1412.131695540333,
   "opponent": "Bolo Mongol",
   "result": "won"
  },
  {
   "date": "1976/07/23",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
-  "elo": 1226.09221627968,
+  "elo": 1226.08371072673,
   "opponent": "Antonio Inoki",
   "result": "draw"
  },
  {
   "date": "1976/07/23",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1437.1856546811978,
+  "elo": 1437.0916201071468,
   "opponent": "Tiger Jeet Singh",
   "result": "draw"
  },
  {
   "date": "1976/07/24",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1277.4456988388438,
+  "elo": 1275.8374195758454,
   "opponent": "Seiji Sakaguchi",
   "result": "draw"
  },
  {
   "date": "1976/07/24",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1403.1294433015955,
+  "elo": 1402.189431852886,
   "opponent": "Strong Kobayashi",
   "result": "draw"
  },
  {
   "date": "1976/07/25",
+  "wrestling_as": "Geeto Mongol",
   "wrestler": "Geeto Mongol",
-  "elo": 976.2065477360702,
+  "elo": 976.1542075508255,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/07/25",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1440.7340903282486,
+  "elo": 1440.640912076718,
   "opponent": "Geeto Mongol",
   "result": "won"
  },
  {
   "date": "1976/07/27",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
-  "elo": 1237.8321588379301,
+  "elo": 1237.7713412911303,
   "opponent": "Seiji Sakaguchi",
   "result": "draw"
  },
  {
   "date": "1976/07/27",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1391.3895007433455,
+  "elo": 1390.5018012884857,
   "opponent": "Tiger Jeet Singh",
   "result": "draw"
  },
  {
   "date": "1976/07/28",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 909.4268007786884,
+  "elo": 908.9975927967763,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/07/28",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1394.5321613482517,
+  "elo": 1393.6528115062501,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1976/07/29",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1358.963757568672,
+  "elo": 1358.1328285530738,
   "opponent": "Tiger Jeet Singh",
   "result": "lost"
  },
  {
   "date": "1976/07/29",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
-  "elo": 1273.4005626175099,
+  "elo": 1273.2913242443067,
   "opponent": "Seiji Sakaguchi",
   "result": "won"
  },
  {
   "date": "1976/07/31",
+  "wrestling_as": "Ali Baba",
   "wrestler": "Ali Baba",
-  "elo": 957.1150778744836,
+  "elo": 956.9835549177999,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/07/31",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1363.9593762771503,
+  "elo": 1363.1486819647712,
   "opponent": "Ali Baba",
   "result": "won"
  },
  {
   "date": "1976/08/01",
+  "wrestling_as": "Bolo Mongol",
   "wrestler": "Bolo Mongol",
-  "elo": 945.5978965404274,
+  "elo": 945.4433842644,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/08/01",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1368.5001102617402,
+  "elo": 1367.706680617867,
   "opponent": "Bolo Mongol",
   "result": "won"
  },
  {
   "date": "1976/08/02",
+  "wrestling_as": "Geeto Mongol",
   "wrestler": "Geeto Mongol",
-  "elo": 957.2780479890905,
+  "elo": 957.1524736552674,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/08/02",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1373.2322351984851,
+  "elo": 1372.4571140917565,
   "opponent": "Geeto Mongol",
   "result": "won"
  },
  {
   "date": "1976/08/02",
+  "wrestling_as": "Bolo Mongol",
   "wrestler": "Bolo Mongol",
-  "elo": 934.6640421467883,
+  "elo": 934.513178636125,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/08/02",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1443.4675539266584,
+  "elo": 1443.3734634837867,
   "opponent": "Bolo Mongol",
   "result": "won"
  },
  {
   "date": "1976/08/03",
+  "wrestling_as": "Geeto Mongol",
   "wrestler": "Geeto Mongol",
-  "elo": 945.7994985801878,
+  "elo": 945.6758850181305,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/08/03",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1446.3371912788841,
+  "elo": 1446.242610643071,
   "opponent": "Geeto Mongol",
   "result": "won"
  },
  {
   "date": "1976/08/05",
+  "wrestling_as": "Tiger Jeet Singh",
   "wrestler": "Tiger Jeet Singh",
-  "elo": 1284.909239988544,
+  "elo": 1284.8008327948394,
   "opponent": "Antonio Inoki",
   "result": "draw"
  },
  {
   "date": "1976/08/05",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1434.82851390785,
+  "elo": 1434.7331020925383,
   "opponent": "Tiger Jeet Singh",
   "result": "draw"
  },
  {
   "date": "1976/08/27",
+  "wrestling_as": "Karl von Steiger",
   "wrestler": "Karl von Steiger",
-  "elo": 992.4357047492665,
+  "elo": 992.4318635458412,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/08/27",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1438.6106615332167,
+  "elo": 1438.5171703196177,
   "opponent": "Karl von Steiger",
   "result": "won"
  },
  {
   "date": "1976/08/28",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1039.5528285999628,
+  "elo": 1039.5110099797464,
   "opponent": "Seiji Sakaguchi",
   "result": "draw"
  },
  {
   "date": "1976/08/28",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1353.4558208985038,
+  "elo": 1352.7016091018834,
   "opponent": "Superstar Billy Graham",
   "result": "draw"
  },
  {
   "date": "1976/08/28",
+  "wrestling_as": "Blackjack Morse",
+  "wrestler": "Blackjack Morse",
+  "elo": 992.5828411796234,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1976/08/28",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1442.317393525899,
+  "elo": 1442.225749729806,
   "opponent": "Blackjack Morse",
   "result": "won"
  },
  {
   "date": "1976/08/29",
+  "wrestling_as": "Blackjack Morse",
+  "wrestler": "Blackjack Morse",
+  "elo": 970.233263345208,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1976/08/29",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1359.0218094689765,
+  "elo": 1358.2890035604873,
   "opponent": "Blackjack Morse",
   "result": "won"
  },
  {
   "date": "1976/08/29",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1069.2814948713383,
+  "elo": 1069.0935477801547,
   "opponent": "Strong Kobayashi",
   "result": "draw"
  },
  {
   "date": "1976/08/29",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1262.581365703156,
+  "elo": 1261.0461506756412,
   "opponent": "Superstar Billy Graham",
   "result": "draw"
  },
  {
   "date": "1976/08/30",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1058.8237448515665,
+  "elo": 1058.6409877668839,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/08/30",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1447.5462685357847,
+  "elo": 1447.4520297364415,
   "opponent": "Superstar Billy Graham",
   "result": "won"
  },
  {
   "date": "1976/08/31",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1093.740398317742,
+  "elo": 1093.5170410897963,
   "opponent": "Seiji Sakaguchi",
   "result": "draw"
  },
  {
   "date": "1976/08/31",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1341.5634827358888,
+  "elo": 1340.8509768990311,
   "opponent": "Superstar Billy Graham",
   "result": "draw"
  },
  {
   "date": "1976/09/03",
+  "wrestling_as": "Blackjack Morse",
+  "wrestler": "Blackjack Morse",
+  "elo": 958.1830451742856,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1976/09/03",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1450.5587428925267,
+  "elo": 1450.4645842791722,
   "opponent": "Blackjack Morse",
   "result": "won"
  },
  {
   "date": "1976/09/04",
+  "wrestling_as": "Osamu Kido",
   "wrestler": "Osamu Kido",
-  "elo": 858.0029051858876,
+  "elo": 857.6189522570494,
   "opponent": "Superstar Billy Graham",
   "result": "lost"
  },
  {
   "date": "1976/09/04",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1119.4523461141423,
+  "elo": 1119.2063613596597,
   "opponent": "Osamu Kido",
   "result": "won"
  },
  {
   "date": "1976/09/04",
+  "wrestling_as": "Blackjack Morse",
+  "wrestler": "Blackjack Morse",
+  "elo": 938.2834244905218,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1976/09/04",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1346.5223481940434,
+  "elo": 1345.825882069972,
   "opponent": "Blackjack Morse",
   "result": "won"
  },
  {
   "date": "1976/09/05",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1106.5092746589153,
+  "elo": 1106.2731345997736,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/09/05",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1457.03027862014,
+  "elo": 1456.9311976591152,
   "opponent": "Superstar Billy Graham",
   "result": "won"
  },
  {
   "date": "1976/09/06",
+  "wrestling_as": "Kotetsu Yamamoto",
   "wrestler": "Kotetsu Yamamoto",
-  "elo": 1122.8700907446566,
+  "elo": 1122.4008929997256,
   "opponent": "Superstar Billy Graham",
   "result": "lost"
  },
  {
   "date": "1976/09/06",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1167.4544715949517,
+  "elo": 1167.1813218330985,
   "opponent": "Kotetsu Yamamoto",
   "result": "won"
  },
  {
   "date": "1976/09/06",
+  "wrestling_as": "Ivan Koloff",
   "wrestler": "Ivan Koloff",
-  "elo": 988.0244019080621,
+  "elo": 987.9820748601078,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/09/06",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1352.5101472400124,
+  "elo": 1351.8348446399182,
   "opponent": "Ivan Koloff",
   "result": "won"
  },
  {
   "date": "1976/09/07",
+  "wrestling_as": "Terry Rudge",
   "wrestler": "Terry Rudge",
-  "elo": 988.3830146258097,
+  "elo": 988.3430418495732,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/09/07",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1358.3186399271076,
+  "elo": 1357.6633237151316,
   "opponent": "Terry Rudge",
   "result": "won"
  },
  {
   "date": "1976/09/07",
+  "wrestling_as": "Ivan Koloff",
   "wrestler": "Ivan Koloff",
-  "elo": 1075.4275454714518,
+  "elo": 1075.3813616638884,
   "opponent": "Antonio Inoki",
   "result": "draw"
  },
  {
   "date": "1976/09/07",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1435.1794927292926,
+  "elo": 1435.0813759581702,
   "opponent": "Ivan Koloff",
   "result": "draw"
  },
  {
   "date": "1976/09/09",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1192.4561624937537,
+  "elo": 1192.1417432796595,
   "opponent": "Seiji Sakaguchi",
   "result": "draw"
  },
  {
   "date": "1976/09/09",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1345.8177944777067,
+  "elo": 1345.1831129918512,
   "opponent": "Superstar Billy Graham",
   "result": "draw"
  },
  {
   "date": "1976/09/10",
+  "wrestling_as": "Ivan Koloff",
   "wrestler": "Ivan Koloff",
-  "elo": 1058.0124768608323,
+  "elo": 1057.9175171067054,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/09/10",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1354.5253287830164,
+  "elo": 1353.9150352704426,
   "opponent": "Ivan Koloff",
   "result": "won"
  },
  {
   "date": "1976/09/10",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1172.6305239444637,
+  "elo": 1172.3358888450357,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/09/10",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1445.0923120039376,
+  "elo": 1444.9843031754822,
   "opponent": "Superstar Billy Graham",
   "result": "won"
  },
  {
   "date": "1976/09/13",
+  "wrestling_as": "Blackjack Morse",
+  "wrestler": "Blackjack Morse",
+  "elo": 921.5351861928932,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1976/09/13",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1358.7023180091883,
+  "elo": 1358.1020948448497,
   "opponent": "Blackjack Morse",
   "result": "won"
  },
  {
   "date": "1976/09/13",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1185.293811688435,
+  "elo": 1184.8319440538703,
   "opponent": "Strong Kobayashi",
   "result": "draw"
  },
  {
   "date": "1976/09/13",
+  "wrestling_as": "Strong Kobayashi",
   "wrestler": "Strong Kobayashi",
-  "elo": 1256.2497218311705,
+  "elo": 1254.798123071224,
   "opponent": "Superstar Billy Graham",
   "result": "draw"
  },
  {
   "date": "1976/09/14",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1166.9843523690463,
+  "elo": 1166.5529323008961,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/09/14",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1454.247041663632,
+  "elo": 1454.1238090519691,
   "opponent": "Superstar Billy Graham",
   "result": "won"
  },
  {
   "date": "1976/09/15",
+  "wrestling_as": "Superstar Billy Graham",
   "wrestler": "Superstar Billy Graham",
-  "elo": 1192.0780793158456,
+  "elo": 1191.6284809008323,
   "opponent": "Seiji Sakaguchi",
   "result": "draw"
  },
  {
   "date": "1976/09/15",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1346.1554545357887,
+  "elo": 1345.5643205448816,
   "opponent": "Superstar Billy Graham",
   "result": "draw"
  },
  {
   "date": "1976/09/17",
+  "wrestling_as": "Blackjack Morse",
+  "wrestler": "Blackjack Morse",
+  "elo": 905.5139894500571,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1976/09/17",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1350.1523405079788,
+  "elo": 1349.5696197305906,
   "opponent": "Blackjack Morse",
   "result": "won"
  },
  {
   "date": "1976/09/18",
+  "wrestling_as": "Karl von Steiger",
   "wrestler": "Karl von Steiger",
-  "elo": 979.3410689597699,
+  "elo": 979.3288148962798,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/09/18",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1457.520700611006,
+  "elo": 1457.3995712143594,
   "opponent": "Karl von Steiger",
   "result": "won"
  },
  {
   "date": "1976/09/21",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1306.03087508622,
+  "elo": 1305.4655772823166,
   "opponent": "Andre The Giant",
   "result": "lost"
  },
  {
   "date": "1976/09/21",
+  "wrestling_as": "Andre The Giant",
   "wrestler": "Andre The Giant",
-  "elo": 1088.2429308435173,
+  "elo": 1088.2080848965481,
   "opponent": "Seiji Sakaguchi",
   "result": "won"
  },
  {
   "date": "1976/09/21",
+  "wrestling_as": "Bill Dromo",
   "wrestler": "Bill Dromo",
-  "elo": 993.2999267426833,
+  "elo": 993.2955666348543,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/09/21",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1460.8707372396643,
+  "elo": 1460.7517878969322,
   "opponent": "Bill Dromo",
   "result": "won"
  },
  {
   "date": "1976/09/22",
+  "wrestling_as": "Blackjack Morse",
+  "wrestler": "Blackjack Morse",
+  "elo": 887.3275644151331,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1976/09/22",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1310.56945621108,
+  "elo": 1310.0121835410478,
   "opponent": "Blackjack Morse",
   "result": "won"
  },
  {
   "date": "1976/09/26",
+  "wrestling_as": "Kurt von Steiger",
   "wrestler": "Kurt von Steiger",
-  "elo": 985.6655066572258,
+  "elo": 985.6260692300972,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/09/26",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1317.7367028824672,
+  "elo": 1317.1991489259992,
   "opponent": "Kurt von Steiger",
   "result": "won"
  },
  {
   "date": "1976/09/28",
+  "wrestling_as": "Blackjack Morse",
+  "wrestler": "Blackjack Morse",
+  "elo": 871.7950796402216,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1976/09/28",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1321.614102148828,
+  "elo": 1321.0822701197271,
   "opponent": "Blackjack Morse",
   "result": "won"
  },
  {
   "date": "1976/09/30",
+  "wrestling_as": "Kurt von Steiger",
   "wrestler": "Kurt von Steiger",
-  "elo": 973.483360724609,
+  "elo": 973.438686016512,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/09/30",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1463.9162737228185,
+  "elo": 1463.7986337003285,
   "opponent": "Kurt von Steiger",
   "result": "won"
  },
  {
   "date": "1976/10/01",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1281.9617383926513,
+  "elo": 1281.4534029142242,
   "opponent": "Andre The Giant",
   "result": "lost"
  },
  {
   "date": "1976/10/01",
+  "wrestling_as": "Andre The Giant",
   "wrestler": "Andre The Giant",
-  "elo": 1167.5476583558707,
+  "elo": 1167.4658193075543,
   "opponent": "Seiji Sakaguchi",
   "result": "won"
  },
  {
   "date": "1976/10/02",
+  "wrestling_as": "Blackjack Morse",
+  "wrestler": "Blackjack Morse",
+  "elo": 854.5115699901988,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1976/10/02",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1286.2774917936692,
+  "elo": 1285.77428032673,
   "opponent": "Blackjack Morse",
   "result": "won"
  },
  {
   "date": "1976/10/04",
+  "wrestling_as": "Blackjack Morse",
+  "wrestler": "Blackjack Morse",
+  "elo": 848.6907391387756,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1976/10/04",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1465.372991497695,
+  "elo": 1465.2538414131843,
   "opponent": "Blackjack Morse",
   "result": "won"
  },
  {
   "date": "1976/10/05",
+  "wrestling_as": "Kurt von Steiger",
   "wrestler": "Kurt von Steiger",
-  "elo": 945.1274542219219,
+  "elo": 945.0184836785571,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/10/05",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1293.3664684193411,
+  "elo": 1292.8793309112186,
   "opponent": "Kurt von Steiger",
   "result": "won"
  },
  {
   "date": "1976/10/06",
+  "wrestling_as": "Bill Dromo",
   "wrestler": "Bill Dromo",
-  "elo": 963.1138340834847,
+  "elo": 963.0381765217295,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/10/06",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1300.9129915841409,
+  "elo": 1300.4436784394998,
   "opponent": "Bill Dromo",
   "result": "won"
  },
  {
   "date": "1976/10/07",
+  "wrestling_as": "Andre The Giant",
   "wrestler": "Andre The Giant",
-  "elo": 1152.288533936931,
+  "elo": 1152.2039174275862,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/10/07",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1473.002553707165,
+  "elo": 1472.8847923531685,
   "opponent": "Andre The Giant",
   "result": "won"
  },
  {
   "date": "1976/10/29",
+  "wrestling_as": "Pat Patterson",
   "wrestler": "Pat Patterson",
-  "elo": 1043.8359937101463,
+  "elo": 1043.8320715973834,
   "opponent": "Antonio Inoki",
   "result": "draw"
  },
  {
   "date": "1976/10/29",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1451.0845568520917,
+  "elo": 1450.9687565544766,
   "opponent": "Pat Patterson",
   "result": "draw"
  },
  {
   "date": "1976/11/09",
+  "wrestling_as": "Larry Hennig",
   "wrestler": "Larry Hennig",
-  "elo": 993.0645760902415,
+  "elo": 993.0602723360188,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/11/09",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1454.552268806971,
+  "elo": 1454.4386203864672,
   "opponent": "Larry Hennig",
   "result": "won"
  },
  {
   "date": "1976/11/14",
+  "wrestling_as": "Pat Patterson",
   "wrestler": "Pat Patterson",
-  "elo": 1085.24219869348,
+  "elo": 1085.233313621393,
   "opponent": "Antonio Inoki",
   "result": "draw"
  },
  {
   "date": "1976/11/14",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1433.849166315304,
+  "elo": 1433.7379993744623,
   "opponent": "Pat Patterson",
   "result": "draw"
  },
  {
   "date": "1976/11/16",
+  "wrestling_as": "Ivan Koloff",
   "wrestler": "Ivan Koloff",
-  "elo": 1038.2030456018272,
+  "elo": 1038.0738315363326,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/11/16",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1310.8177072136434,
+  "elo": 1310.365521224686,
   "opponent": "Ivan Koloff",
   "result": "won"
  },
  {
   "date": "1976/11/19",
+  "wrestling_as": "Pat Patterson",
   "wrestler": "Pat Patterson",
-  "elo": 1073.3925222594132,
+  "elo": 1073.3774856692476,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/11/19",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1439.7740045323376,
+  "elo": 1439.665913350535,
   "opponent": "Pat Patterson",
   "result": "won"
  },
  {
   "date": "1976/11/21",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1295.9751473499516,
+  "elo": 1295.5433445154997,
   "opponent": "Pat Patterson",
   "result": "draw"
  },
  {
   "date": "1976/11/21",
+  "wrestling_as": "Pat Patterson",
   "wrestler": "Pat Patterson",
-  "elo": 1103.077641986797,
+  "elo": 1103.0218390876205,
   "opponent": "Seiji Sakaguchi",
   "result": "draw"
  },
  {
   "date": "1976/11/25",
+  "wrestling_as": "Ivan Koloff",
   "wrestler": "Ivan Koloff",
-  "elo": 1079.18659745046,
+  "elo": 1079.0583808223446,
   "opponent": "Antonio Inoki",
   "result": "draw"
  },
  {
   "date": "1976/11/25",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1419.2822286080211,
+  "elo": 1419.173638707529,
   "opponent": "Ivan Koloff",
   "result": "draw"
  },
  {
   "date": "1976/11/28",
+  "wrestling_as": "Pat Patterson",
   "wrestler": "Pat Patterson",
-  "elo": 1089.1368933316621,
+  "elo": 1089.0774444553936,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/11/28",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1426.2526029355886,
+  "elo": 1426.1458360236425,
   "opponent": "Pat Patterson",
   "result": "won"
  },
  {
   "date": "1976/12/01",
+  "wrestling_as": "Ricky Hunter",
   "wrestler": "Ricky Hunter",
-  "elo": 992.0832130564602,
+  "elo": 992.0787314457502,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/12/01",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1430.2109964073586,
+  "elo": 1430.1064703007673,
   "opponent": "Ricky Hunter",
   "result": "won"
  },
  {
   "date": "1976/12/02",
+  "wrestling_as": "Ivan Koloff",
   "wrestler": "Ivan Koloff",
-  "elo": 1067.4815095088732,
+  "elo": 1067.3547022279586,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/12/02",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1436.063540378152,
+  "elo": 1435.9583095979604,
   "opponent": "Ivan Koloff",
   "result": "won"
  },
  {
   "date": "1976/12/03",
+  "wrestling_as": "Ricky Hunter",
   "wrestler": "Ricky Hunter",
-  "elo": 962.4571860025916,
+  "elo": 962.3905699104218,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/12/03",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1303.3816541134188,
+  "elo": 1302.9653848993319,
   "opponent": "Ricky Hunter",
   "result": "won"
  },
  {
   "date": "1976/12/03",
+  "wrestling_as": "Pat Patterson",
   "wrestler": "Pat Patterson",
-  "elo": 1077.1858069799225,
+  "elo": 1077.1235846272086,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/12/03",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1442.039083554022,
+  "elo": 1441.935239512053,
   "opponent": "Pat Patterson",
   "result": "won"
  },
  {
   "date": "1976/12/07",
+  "wrestling_as": "Larry Hennig",
   "wrestler": "Larry Hennig",
-  "elo": 979.0361094649265,
+  "elo": 979.024329384528,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/12/07",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1445.5462002103507,
+  "elo": 1445.4442252499257,
   "opponent": "Larry Hennig",
   "result": "won"
  },
  {
   "date": "1976/12/08",
+  "wrestling_as": "Ricky Hunter",
   "wrestler": "Ricky Hunter",
-  "elo": 950.7839944798428,
+  "elo": 950.7151408783438,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/12/08",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1448.4644980910377,
+  "elo": 1448.3630825079451,
   "opponent": "Ricky Hunter",
   "result": "won"
  },
  {
   "date": "1976/12/09",
+  "wrestling_as": "Larry Hennig",
   "wrestler": "Larry Hennig",
-  "elo": 952.2601894622205,
+  "elo": 952.1943643947982,
   "opponent": "Seiji Sakaguchi",
   "result": "lost"
  },
  {
   "date": "1976/12/09",
+  "wrestling_as": "Seiji Sakaguchi",
   "wrestler": "Seiji Sakaguchi",
-  "elo": 1310.0756341140952,
+  "elo": 1309.6728761467643,
   "opponent": "Larry Hennig",
   "result": "won"
  },
  {
   "date": "1976/12/09",
+  "wrestling_as": "Willem Ruska",
   "wrestler": "Willem Ruska",
-  "elo": 971.5341280664475,
+  "elo": 971.5171235064712,
   "opponent": "Antonio Inoki",
   "result": "lost"
  },
  {
   "date": "1976/12/09",
+  "wrestling_as": "Antonio Inoki",
   "wrestler": "Antonio Inoki",
-  "elo": 1451.700027796246,
+  "elo": 1451.600193169833,
   "opponent": "Willem Ruska",
   "result": "won"
  }

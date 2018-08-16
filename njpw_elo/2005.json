@@ -1,6 +1,7 @@
 [
  {
   "date": "2005/01/04",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 950.0,
   "opponent": "Jushin Thunder Liger",
@@ -8,6 +9,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1050.0,
   "opponent": "Koji Kanemoto",
@@ -15,20 +17,23 @@
  },
  {
   "date": "2005/01/04",
-  "wrestler": "Heat",
+  "wrestling_as": "Heat",
+  "wrestler": "Minoru / Heat",
   "elo": 950.0,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/01/04",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1050.0,
   "opponent": "Heat",
   "result": "won"
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 950.0,
   "opponent": "Minoru Suzuki",
@@ -36,6 +41,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
   "elo": 1050.0,
   "opponent": "Takashi Iizuka",
@@ -43,6 +49,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 950.0,
   "opponent": "Satoshi Kojima",
@@ -50,6 +57,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1050.0,
   "opponent": "Osamu Nishimura",
@@ -57,6 +65,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
   "elo": 995.8333333333334,
   "opponent": "Ron Waterman (winner), Manabu Nakanishi, Masayuki Naruse, Mitsuya Nagai, Toru Yano, Yuji Nagata",
@@ -64,6 +73,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 995.8833002324428,
   "opponent": "Ron Waterman (winner), Blue Wolf, Masayuki Naruse, Mitsuya Nagai, Toru Yano, Yuji Nagata",
@@ -71,6 +81,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
   "elo": 995.932653870173,
   "opponent": "Ron Waterman (winner), Blue Wolf, Manabu Nakanishi, Mitsuya Nagai, Toru Yano, Yuji Nagata",
@@ -78,6 +89,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Mitsuya Nagai",
   "wrestler": "Mitsuya Nagai",
   "elo": 995.9813885086119,
   "opponent": "Ron Waterman (winner), Blue Wolf, Manabu Nakanishi, Masayuki Naruse, Toru Yano, Yuji Nagata",
@@ -85,6 +97,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 996.029499463354,
   "opponent": "Ron Waterman (winner), Blue Wolf, Manabu Nakanishi, Masayuki Naruse, Mitsuya Nagai, Yuji Nagata",
@@ -92,6 +105,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 996.076983052082,
   "opponent": "Ron Waterman (winner), Blue Wolf, Manabu Nakanishi, Masayuki Naruse, Mitsuya Nagai, Toru Yano",
@@ -99,6 +113,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Ron Waterman",
   "wrestler": "Ron Waterman",
   "elo": 1024.262841540003,
   "opponent": "Blue Wolf, Manabu Nakanishi, Masayuki Naruse, Mitsuya Nagai, Toru Yano, Yuji Nagata",
@@ -106,6 +121,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 987.5,
   "opponent": "Masahiro Chono (winner), Riki Choshu",
@@ -113,6 +129,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Riki Choshu",
   "wrestler": "Riki Choshu",
   "elo": 987.9495297093191,
   "opponent": "Masahiro Chono (winner), Hiroyoshi Tenzan",
@@ -120,6 +137,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
   "elo": 1024.5504702906808,
   "opponent": "Hiroyoshi Tenzan, Riki Choshu",
@@ -127,6 +145,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 950.0,
   "opponent": "Shinsuke Nakamura",
@@ -134,6 +153,7 @@
  },
  {
   "date": "2005/01/04",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1050.0,
   "opponent": "Hiroshi Tanahashi",
@@ -141,6 +161,7 @@
  },
  {
   "date": "2005/01/06",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 950.0,
   "opponent": "Hirooki Goto",
@@ -148,6 +169,7 @@
  },
  {
   "date": "2005/01/06",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1050.0,
   "opponent": "Ryusuke Taguchi",
@@ -155,6 +177,7 @@
  },
  {
   "date": "2005/01/06",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 950.0,
   "opponent": "Hiroyuki Ito",
@@ -162,6 +185,7 @@
  },
  {
   "date": "2005/01/06",
+  "wrestling_as": "Hiroyuki Ito",
   "wrestler": "Hiroyuki Ito",
   "elo": 1050.0,
   "opponent": "Naofumi Yamamoto",
@@ -169,6 +193,7 @@
  },
  {
   "date": "2005/01/06",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 995.9730383185117,
   "opponent": "Blue Wolf",
@@ -176,6 +201,7 @@
  },
  {
   "date": "2005/01/06",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
   "elo": 995.8897944781756,
   "opponent": "Toru Yano",
@@ -183,6 +209,7 @@
  },
  {
   "date": "2005/01/19",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 957.1463117408382,
   "opponent": "Hirooki Goto",
@@ -190,6 +217,7 @@
  },
  {
   "date": "2005/01/19",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1092.8536882591618,
   "opponent": "Akiya Anzawa",
@@ -197,13 +225,15 @@
  },
  {
   "date": "2005/01/19",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 942.8536882591618,
   "opponent": "Ryusuke Taguchi",
   "result": "lost"
  },
  {
   "date": "2005/01/19",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1064.2926234816764,
   "opponent": "Yujiro",
@@ -211,6 +241,7 @@
  },
  {
   "date": "2005/01/19",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 864.2926234816763,
   "opponent": "Wataru Inoue",
@@ -218,6 +249,7 @@
  },
  {
   "date": "2005/01/19",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1042.8536882591618,
   "opponent": "Naofumi Yamamoto",
@@ -225,6 +257,7 @@
  },
  {
   "date": "2005/01/19",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 950.0,
   "opponent": "Togi Makabe",
@@ -232,6 +265,7 @@
  },
  {
   "date": "2005/01/19",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1050.0,
   "opponent": "Hiroshi Nagao",
@@ -239,6 +273,7 @@
  },
  {
   "date": "2005/01/19",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 863.1577765741513,
   "opponent": "Mitsuya Nagai",
@@ -246,6 +281,7 @@
  },
  {
   "date": "2005/01/19",
+  "wrestling_as": "Mitsuya Nagai",
   "wrestler": "Mitsuya Nagai",
   "elo": 1082.8236119344606,
   "opponent": "Osamu Nishimura",
@@ -253,13 +289,15 @@
  },
  {
   "date": "2005/01/23",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 820.6196445882504,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/01/23",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 986.5266671525877,
   "opponent": "Yujiro",
@@ -267,6 +305,7 @@
  },
  {
   "date": "2005/01/23",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 950.0,
   "opponent": "Harry Smith",
@@ -274,6 +313,7 @@
  },
  {
   "date": "2005/01/23",
+  "wrestling_as": "Harry Smith",
   "wrestler": "Harry Smith",
   "elo": 1050.0,
   "opponent": "Hiro Saito",
@@ -281,6 +321,7 @@
  },
  {
   "date": "2005/01/23",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
   "elo": 1011.2112226709738,
   "opponent": "Wataru Inoue",
@@ -288,6 +329,7 @@
  },
  {
   "date": "2005/01/23",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1095.9350890698645,
   "opponent": "Ryusuke Taguchi",
@@ -295,6 +337,7 @@
  },
  {
   "date": "2005/01/23",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1036.7176321283082,
   "opponent": "Shinsuke Nakamura",
@@ -302,6 +345,7 @@
  },
  {
   "date": "2005/01/23",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1106.1360561308536,
   "opponent": "Hirooki Goto",
@@ -309,20 +353,23 @@
  },
  {
   "date": "2005/01/26",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 819.7557919980485,
-  "opponent": "Yujiro Takahashi",
+  "opponent": "Yujiro",
   "result": "lost"
  },
  {
   "date": "2005/01/26",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 958.0101643310401,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/01/26",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 874.4536422593362,
   "opponent": "Hirooki Goto",
@@ -330,6 +377,7 @@
  },
  {
   "date": "2005/01/26",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1074.4908109986402,
   "opponent": "Hiroshi Nagao",
@@ -337,6 +385,7 @@
  },
  {
   "date": "2005/01/26",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 890.4026613106029,
   "opponent": "Tatsutoshi Goto",
@@ -344,6 +393,7 @@
  },
  {
   "date": "2005/01/26",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
   "elo": 1048.0620029209924,
   "opponent": "Naofumi Yamamoto",
@@ -351,6 +401,7 @@
  },
  {
   "date": "2005/01/26",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
   "elo": 957.1463117408382,
   "opponent": "Jushin Thunder Liger",
@@ -358,6 +409,7 @@
  },
  {
   "date": "2005/01/26",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1092.8536882591618,
   "opponent": "Katsushi Takemura",
@@ -365,13 +417,15 @@
  },
  {
   "date": "2005/01/29",
-  "wrestler": "Osamu Matsuda",
+  "wrestling_as": "Osamu Matsuda",
+  "wrestler": "El Samurai / Osamu Matsuda",
   "elo": 964.8161641729865,
   "opponent": "Shinsuke Nakamura",
   "result": "lost"
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1141.3198919578672,
   "opponent": "Osamu Matsuda",
@@ -379,6 +433,7 @@
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
   "elo": 855.0897279004859,
   "opponent": "Hiroshi Tanahashi",
@@ -386,6 +441,7 @@
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1052.0565838403522,
   "opponent": "Katsushi Takemura",
@@ -393,6 +449,7 @@
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 864.2926234816763,
   "opponent": "Yutaka Yoshie",
@@ -400,6 +457,7 @@
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1042.8536882591618,
   "opponent": "Takashi Iizuka",
@@ -407,6 +465,7 @@
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1029.2757580521506,
   "opponent": "Yuji Nagata",
@@ -414,6 +473,7 @@
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1123.2328434661044,
   "opponent": "Jushin Thunder Liger",
@@ -421,6 +481,7 @@
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
   "elo": 942.8536882591618,
   "opponent": "Hiro Saito",
@@ -428,6 +489,7 @@
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1064.2926234816764,
   "opponent": "Gedo",
@@ -435,6 +497,7 @@
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 912.2879755635373,
   "opponent": "Minoru Suzuki",
@@ -442,6 +505,7 @@
  },
  {
   "date": "2005/01/29",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
   "elo": 1025.434900505307,
   "opponent": "Osamu Nishimura",
@@ -449,6 +513,7 @@
  },
  {
   "date": "2005/01/30",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 770.3445421674116,
   "opponent": "Akiya Anzawa",
@@ -456,6 +521,7 @@
  },
  {
   "date": "2005/01/30",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 939.8139111412397,
   "opponent": "Naofumi Yamamoto",
@@ -463,20 +529,23 @@
  },
  {
   "date": "2005/01/30",
+  "wrestling_as": "Taiji Ishimori",
   "wrestler": "Taiji Ishimori",
-  "elo": 950.0,
+  "elo": 944.9538766409755,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "2005/01/30",
-  "wrestler": "El Samurai",
-  "elo": 1050.0,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1074.9084108910354,
   "opponent": "Taiji Ishimori",
   "result": "won"
  },
  {
   "date": "2005/01/30",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 986.1349883351215,
   "opponent": "Manabu Nakanishi",
@@ -484,6 +553,7 @@
  },
  {
   "date": "2005/01/30",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1109.3207000805232,
   "opponent": "Yutaka Yoshie",
@@ -491,20 +561,23 @@
  },
  {
   "date": "2005/01/31",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 719.6543200725122,
-  "opponent": "Yujiro Takahashi",
+  "opponent": "Yujiro",
   "result": "lost"
  },
  {
   "date": "2005/01/31",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 1008.7003864259395,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/01/31",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 876.7455489495961,
   "opponent": "Hirooki Goto",
@@ -512,6 +585,7 @@
  },
  {
   "date": "2005/01/31",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1106.024992094462,
   "opponent": "Akiya Anzawa",
@@ -519,6 +593,7 @@
  },
  {
   "date": "2005/02/03",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 734.3794968659083,
   "opponent": "Naofumi Yamamoto",
@@ -526,6 +601,7 @@
  },
  {
   "date": "2005/02/03",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 862.0203721562,
   "opponent": "Akiya Anzawa",
@@ -533,6 +609,7 @@
  },
  {
   "date": "2005/02/03",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 809.0940307907634,
   "opponent": "Jado",
@@ -540,6 +617,7 @@
  },
  {
   "date": "2005/02/03",
+  "wrestling_as": "Jado",
   "wrestler": "Jado",
   "elo": 1032.6798057342864,
   "opponent": "Hiroshi Nagao",
@@ -547,6 +625,7 @@
  },
  {
   "date": "2005/02/03",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
   "elo": 779.8263097764277,
   "opponent": "Gedo",
@@ -554,6 +633,7 @@
  },
  {
   "date": "2005/02/03",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
   "elo": 1018.1171063832198,
   "opponent": "Katsushi Takemura",
@@ -561,13 +641,15 @@
  },
  {
   "date": "2005/02/04",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 925.7924298450707,
   "opponent": "Akiya Anzawa",
   "result": "lost"
  },
  {
   "date": "2005/02/04",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 900.195410027646,
   "opponent": "Yujiro",
@@ -575,6 +657,7 @@
  },
  {
   "date": "2005/02/11",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 772.964026281813,
   "opponent": "Akiya Anzawa",
@@ -582,6 +665,7 @@
  },
  {
   "date": "2005/02/11",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 989.251755902033,
   "opponent": "Naofumi Yamamoto",
@@ -589,6 +673,7 @@
  },
  {
   "date": "2005/02/11",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 756.054637968977,
   "opponent": "Yutaka Yoshie",
@@ -596,6 +681,7 @@
  },
  {
   "date": "2005/02/11",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1039.174381156908,
   "opponent": "Hiroshi Nagao",
@@ -603,6 +689,7 @@
  },
  {
   "date": "2005/02/11",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 991.1013084039514,
   "opponent": "Hiroyoshi Tenzan",
@@ -610,6 +697,7 @@
  },
  {
   "date": "2005/02/11",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 1105.2973831920972,
   "opponent": "Togi Makabe",
@@ -617,13 +705,15 @@
  },
  {
   "date": "2005/02/13",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 784.4383055443539,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/02/13",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 914.3181505825298,
   "opponent": "Yujiro",
@@ -631,6 +721,7 @@
  },
  {
   "date": "2005/02/13",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 732.5187537468508,
   "opponent": "Hirooki Goto",
@@ -638,6 +729,7 @@
  },
  {
   "date": "2005/02/13",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1117.7929342055252,
   "opponent": "Hiroshi Nagao",
@@ -645,6 +737,7 @@
  },
  {
   "date": "2005/02/13",
+  "wrestling_as": "James Gibson",
   "wrestler": "James Gibson",
   "elo": 957.1463117408382,
   "opponent": "Tiger Mask",
@@ -652,20 +745,23 @@
  },
  {
   "date": "2005/02/13",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1092.8536882591618,
   "opponent": "James Gibson",
   "result": "won"
  },
  {
   "date": "2005/02/18",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 737.3919320048013,
   "opponent": "Akiya Anzawa",
   "result": "lost"
  },
  {
   "date": "2005/02/18",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 1036.2981294415856,
   "opponent": "Yujiro",
@@ -673,6 +769,7 @@
  },
  {
   "date": "2005/02/19",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 951.1193210241587,
   "opponent": "Hiroshi Nagao",
@@ -680,6 +777,7 @@
  },
  {
   "date": "2005/02/19",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 902.8763705817047,
   "opponent": "Akiya Anzawa",
@@ -687,6 +785,7 @@
  },
  {
   "date": "2005/02/19",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 862.299007684083,
   "opponent": "Wataru Inoue",
@@ -694,6 +793,7 @@
  },
  {
   "date": "2005/02/19",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1121.9446605190878,
   "opponent": "Naofumi Yamamoto",
@@ -701,13 +801,15 @@
  },
  {
   "date": "2005/02/19",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 699.7127981855061,
   "opponent": "Togi Makabe",
   "result": "lost"
  },
  {
   "date": "2005/02/19",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1028.7804422232466,
   "opponent": "Yujiro",
@@ -715,6 +817,7 @@
  },
  {
   "date": "2005/02/19",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1046.191910043741,
   "opponent": "James Gibson",
@@ -722,6 +825,7 @@
  },
  {
   "date": "2005/02/19",
+  "wrestling_as": "James Gibson",
   "wrestler": "James Gibson",
   "elo": 1100.3483600644065,
   "opponent": "Hirooki Goto",
@@ -729,6 +833,7 @@
  },
  {
   "date": "2005/02/20",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 773.9252981202952,
   "opponent": "Hiroshi Nagao",
@@ -736,6 +841,7 @@
  },
  {
   "date": "2005/02/20",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 991.2500801454925,
   "opponent": "Naofumi Yamamoto",
@@ -743,6 +849,7 @@
  },
  {
   "date": "2005/02/20",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 988.3245793090749,
   "opponent": "Tiger Mask",
@@ -750,13 +857,15 @@
  },
  {
   "date": "2005/02/20",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1133.8048670022376,
   "opponent": "Jushin Thunder Liger",
   "result": "won"
  },
  {
   "date": "2005/02/20",
+  "wrestling_as": "Riki Choshu",
   "wrestler": "Riki Choshu",
   "elo": 866.510232492802,
   "opponent": "Osamu Nishimura",
@@ -764,6 +873,7 @@
  },
  {
   "date": "2005/02/20",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 1033.7272727800544,
   "opponent": "Riki Choshu",
@@ -771,6 +881,7 @@
  },
  {
   "date": "2005/02/20",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 1047.4059715077053,
   "opponent": "Satoshi Kojima",
@@ -778,6 +889,7 @@
  },
  {
   "date": "2005/02/20",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1107.8914116843919,
   "opponent": "Hiroyoshi Tenzan",
@@ -785,6 +897,7 @@
  },
  {
   "date": "2005/03/04",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 879.7506139702783,
   "opponent": "Akiya Anzawa",
@@ -792,6 +905,7 @@
  },
  {
   "date": "2005/03/04",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 1062.6187871993727,
   "opponent": "Hiroshi Nagao",
@@ -799,13 +913,15 @@
  },
  {
   "date": "2005/03/04",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 676.214763477663,
   "opponent": "Hiroyuki Ito",
   "result": "lost"
  },
  {
   "date": "2005/03/04",
+  "wrestling_as": "Hiroyuki Ito",
   "wrestler": "Hiroyuki Ito",
   "elo": 1061.7490173539215,
   "opponent": "Yujiro",
@@ -813,6 +929,7 @@
  },
  {
   "date": "2005/03/04",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 739.4047591394507,
   "opponent": "Hirooki Goto",
@@ -820,6 +937,7 @@
  },
  {
   "date": "2005/03/04",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1063.4521795341632,
   "opponent": "Naofumi Yamamoto",
@@ -827,6 +945,7 @@
  },
  {
   "date": "2005/03/05",
+  "wrestling_as": "Tommy Williams",
   "wrestler": "Tommy Williams",
   "elo": 958.9152439663154,
   "opponent": "Akiya Anzawa",
@@ -834,6 +953,7 @@
  },
  {
   "date": "2005/03/05",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 1103.7035432330572,
   "opponent": "Tommy Williams",
@@ -841,13 +961,15 @@
  },
  {
   "date": "2005/03/05",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 628.9032647301169,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/03/05",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 927.0621127178244,
   "opponent": "Yujiro",
@@ -855,6 +977,7 @@
  },
  {
   "date": "2005/03/05",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 712.7011556182916,
   "opponent": "Hiro Saito",
@@ -862,6 +985,7 @@
  },
  {
   "date": "2005/03/05",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1077.644425242256,
   "opponent": "Naofumi Yamamoto",
@@ -869,6 +993,7 @@
  },
  {
   "date": "2005/03/06",
+  "wrestling_as": "Tommy Williams",
   "wrestler": "Tommy Williams",
   "elo": 888.1271526040157,
   "opponent": "Hirooki Goto",
@@ -876,6 +1001,7 @@
  },
  {
   "date": "2005/03/06",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1098.846225215313,
   "opponent": "Tommy Williams",
@@ -883,6 +1009,7 @@
  },
  {
   "date": "2005/03/06",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 689.0547727364462,
   "opponent": "Hiroyuki Ito",
@@ -890,6 +1017,7 @@
  },
  {
   "date": "2005/03/06",
+  "wrestling_as": "Hiroyuki Ito",
   "wrestler": "Hiroyuki Ito",
   "elo": 1073.5722087948443,
   "opponent": "Naofumi Yamamoto",
@@ -897,6 +1025,7 @@
  },
  {
   "date": "2005/03/06",
+  "wrestling_as": "Puma",
   "wrestler": "Puma",
   "elo": 968.357339884054,
   "opponent": "Tiger Mask",
@@ -904,13 +1033,15 @@
  },
  {
   "date": "2005/03/06",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1165.4475271181836,
   "opponent": "Puma",
   "result": "won"
  },
  {
   "date": "2005/03/11",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 904.3954986519539,
   "opponent": "Akiya Anzawa; Tommy Williams",
@@ -918,6 +1049,7 @@
  },
  {
   "date": "2005/03/11",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 1062.1211753570835,
   "opponent": "Naofumi Yamamoto",
@@ -925,6 +1057,7 @@
  },
  {
   "date": "2005/03/11",
+  "wrestling_as": "Tommy Williams",
   "wrestler": "Tommy Williams",
   "elo": 755.9511624404553,
   "opponent": "Naofumi Yamamoto",
@@ -932,13 +1065,15 @@
  },
  {
   "date": "2005/03/11",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 616.3699296149325,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/03/11",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1105.1128927729053,
   "opponent": "Yujiro",
@@ -946,20 +1081,23 @@
  },
  {
   "date": "2005/03/12",
+  "wrestling_as": "Tommy Williams",
   "wrestler": "Tommy Williams",
   "elo": 617.8068783796052,
-  "opponent": "Yujiro Takahashi",
+  "opponent": "Yujiro",
   "result": "lost"
  },
  {
   "date": "2005/03/12",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 754.5142136757827,
   "opponent": "Tommy Williams",
   "result": "won"
  },
  {
   "date": "2005/03/12",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 810.9102345007269,
   "opponent": "Hiroshi Nagao",
@@ -967,6 +1105,7 @@
  },
  {
   "date": "2005/03/12",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 1020.5473768690514,
   "opponent": "Naofumi Yamamoto",
@@ -974,6 +1113,7 @@
  },
  {
   "date": "2005/03/13",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 772.7893143486195,
   "opponent": "Akiya Anzawa",
@@ -981,6 +1121,7 @@
  },
  {
   "date": "2005/03/13",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 1081.1816354331372,
   "opponent": "Naofumi Yamamoto",
@@ -988,6 +1129,7 @@
  },
  {
   "date": "2005/03/13",
+  "wrestling_as": "Hiroyuki Ito",
   "wrestler": "Hiroyuki Ito",
   "elo": 1078.098849843134,
   "opponent": "Hirooki Goto",
@@ -995,6 +1137,7 @@
  },
  {
   "date": "2005/03/13",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1100.5862517246155,
   "opponent": "Hiroyuki Ito",
@@ -1002,6 +1145,7 @@
  },
  {
   "date": "2005/03/13",
+  "wrestling_as": "Mitsuya Nagai",
   "wrestler": "Mitsuya Nagai",
   "elo": 1070.5733416394557,
   "opponent": "Masayuki Naruse",
@@ -1009,6 +1153,7 @@
  },
  {
   "date": "2005/03/13",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
   "elo": 1020.4331944601826,
   "opponent": "Mitsuya Nagai",
@@ -1016,6 +1161,7 @@
  },
  {
   "date": "2005/03/13",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 953.6538513393197,
   "opponent": "Minoru Suzuki",
@@ -1023,6 +1169,7 @@
  },
  {
   "date": "2005/03/13",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
   "elo": 1071.7810491659873,
   "opponent": "Katsuhiko Nakajima",
@@ -1030,6 +1177,7 @@
  },
  {
   "date": "2005/03/15",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 698.5335887373354,
   "opponent": "Takashi Iizuka",
@@ -1037,6 +1185,7 @@
  },
  {
   "date": "2005/03/15",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 938.5483490929604,
   "opponent": "Naofumi Yamamoto",
@@ -1044,6 +1193,7 @@
  },
  {
   "date": "2005/03/15",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 978.7547697005376,
   "opponent": "Hiroyuki Ito",
@@ -1051,6 +1201,7 @@
  },
  {
   "date": "2005/03/15",
+  "wrestling_as": "Hiroyuki Ito",
   "wrestler": "Hiroyuki Ito",
   "elo": 1119.8914570116478,
   "opponent": "Hiroshi Nagao",
@@ -1058,6 +1209,7 @@
  },
  {
   "date": "2005/03/15",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1047.796602971613,
   "opponent": "Akiya Anzawa",
@@ -1065,6 +1217,7 @@
  },
  {
   "date": "2005/03/15",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 1133.9712841861397,
   "opponent": "Hirooki Goto",
@@ -1072,6 +1225,7 @@
  },
  {
   "date": "2005/03/18",
+  "wrestling_as": "Tommy Williams",
   "wrestler": "Tommy Williams",
   "elo": 595.551875379855,
   "opponent": "Hiroshi Nagao",
@@ -1079,6 +1233,7 @@
  },
  {
   "date": "2005/03/18",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 957.7400376278968,
   "opponent": "Tommy Williams; Tatsutoshi Goto",
@@ -1086,20 +1241,23 @@
  },
  {
   "date": "2005/03/18",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
   "elo": 1044.0879310233508,
-  "opponent": "Yujiro Takahashi",
+  "opponent": "Yujiro",
   "result": "lost"
  },
  {
   "date": "2005/03/18",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 934.2809200013601,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/03/18",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
   "elo": 1091.3317379933835,
   "opponent": "Hiroshi Nagao",
@@ -1107,6 +1265,7 @@
  },
  {
   "date": "2005/03/19",
+  "wrestling_as": "Tommy Williams",
   "wrestler": "Tommy Williams",
   "elo": 586.2310512793107,
   "opponent": "Hiroyuki Ito",
@@ -1114,20 +1273,23 @@
  },
  {
   "date": "2005/03/19",
+  "wrestling_as": "Hiroyuki Ito",
   "wrestler": "Hiroyuki Ito",
-  "elo": 1063.9846805077439,
+  "elo": 1067.4558270043256,
   "opponent": "Tommy Williams; El Samurai",
   "result": "lost"
  },
  {
   "date": "2005/03/19",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 775.2242796857804,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/03/19",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 857.5902290529151,
   "opponent": "Yujiro",
@@ -1135,20 +1297,23 @@
  },
  {
   "date": "2005/03/19",
-  "wrestler": "El Samurai",
-  "elo": 1110.567188554176,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1132.0044529486297,
   "opponent": "Hiroyuki Ito",
   "result": "won"
  },
  {
   "date": "2005/03/21",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 676.5487729619799,
   "opponent": "Katsushi Takemura",
   "result": "lost"
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
   "elo": 878.5018165002282,
   "opponent": "Yujiro",
@@ -1156,6 +1321,7 @@
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 883.0950887458935,
   "opponent": "Hirooki Goto",
@@ -1163,6 +1329,7 @@
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
   "elo": 1085.1190774126148,
   "opponent": "Hiroshi Nagao",
@@ -1170,20 +1337,23 @@
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 996.948177345617,
+  "elo": 997.4457798451688,
   "opponent": "Hiroyuki Ito",
   "result": "lost"
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Hiroyuki Ito",
   "wrestler": "Hiroyuki Ito",
-  "elo": 1111.1244341854776,
+  "elo": 1114.0979781825076,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1131.4439722252014,
   "opponent": "Minoru Suzuki",
@@ -1191,6 +1361,7 @@
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
   "elo": 1081.656968898653,
   "opponent": "Shinsuke Nakamura",
@@ -1198,6 +1369,7 @@
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1010.2237315214664,
   "opponent": "Manabu Nakanishi",
@@ -1205,6 +1377,7 @@
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1151.1535523994091,
   "opponent": "Hiroshi Tanahashi",
@@ -1212,6 +1385,7 @@
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
   "elo": 887.2059741162026,
   "opponent": "Yuji Nagata",
@@ -1219,6 +1393,7 @@
  },
  {
   "date": "2005/03/21",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1148.9040309544832,
   "opponent": "Takashi Iizuka",
@@ -1226,6 +1401,7 @@
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1004.8385554946275,
   "opponent": "Osamu Nishimura",
@@ -1233,6 +1409,7 @@
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
   "elo": 1028.8887172854268,
   "opponent": "Tatsumi Fujinami",
@@ -1240,6 +1417,7 @@
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
   "elo": 1086.651570515871,
   "opponent": "Hiroyoshi Tenzan",
@@ -1247,6 +1425,7 @@
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 1149.5945956966268,
   "opponent": "Manabu Nakanishi; Masahiro Chono",
@@ -1254,20 +1433,23 @@
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Hiroyuki Ito",
   "wrestler": "Hiroyuki Ito",
-  "elo": 1057.3889358692097,
+  "elo": 1059.9372232926044,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1138.8545757288828,
+  "elo": 1139.2798323025181,
   "opponent": "Hiroyuki Ito",
   "result": "won"
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1078.6973248289426,
   "opponent": "Tsuyoshi Kohsaka",
@@ -1275,6 +1457,7 @@
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Tsuyoshi Kohsaka",
   "wrestler": "Tsuyoshi Kohsaka",
   "elo": 1070.2067061255407,
   "opponent": "Yuji Nagata",
@@ -1282,6 +1465,7 @@
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
   "elo": 986.8638279852972,
   "opponent": "Hiroyoshi Tenzan",
@@ -1289,6 +1473,7 @@
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1128.0596688402209,
   "opponent": "Satoshi Kojima",
@@ -1296,6 +1481,7 @@
  },
  {
   "date": "2005/03/26",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1111.2757150693724,
   "opponent": "Shinsuke Nakamura",
@@ -1303,13 +1489,15 @@
  },
  {
   "date": "2005/04/09",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 624.4020239836353,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/04/09",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 909.7369780312597,
   "opponent": "Yujiro",
@@ -1317,6 +1505,7 @@
  },
  {
   "date": "2005/04/09",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 833.8897159335447,
   "opponent": "Hiro Saito",
@@ -1324,6 +1513,7 @@
  },
  {
   "date": "2005/04/09",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1102.2471116484303,
   "opponent": "Hiroshi Nagao",
@@ -1331,6 +1521,7 @@
  },
  {
   "date": "2005/04/09",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 987.6790191821145,
   "opponent": "Togi Makabe",
@@ -1338,6 +1529,7 @@
  },
  {
   "date": "2005/04/09",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1080.2758041980403,
   "opponent": "Yutaka Yoshie",
@@ -1345,6 +1537,7 @@
  },
  {
   "date": "2005/04/16",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
   "elo": 755.3800015050384,
   "opponent": "Naofumi Yamamoto",
@@ -1352,6 +1545,7 @@
  },
  {
   "date": "2005/04/16",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 988.246692459766,
   "opponent": "Hiroshi Nagao",
@@ -1359,6 +1553,7 @@
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
   "elo": 942.8536882591618,
   "opponent": "Koji Kanemoto",
@@ -1366,6 +1561,7 @@
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1064.2926234816764,
   "opponent": "Ryushi Yanagisawa",
@@ -1373,34 +1569,39 @@
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1081.3979878241469,
+  "elo": 1081.7634170983515,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1144.108158420607,
+  "elo": 1144.1679857200377,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 974.7408512477882,
-  "opponent": "Minoru Tanaka",
+  "elo": 967.7268828938858,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/04/19",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1054.1478660376386,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1072.323668783082,
   "opponent": "Osamu Nishimura",
   "result": "won"
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Scott Norton",
   "wrestler": "Scott Norton",
   "elo": 948.2276112494723,
   "opponent": "Yutaka Yoshie",
@@ -1408,6 +1609,7 @@
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1091.2237966831701,
   "opponent": "Scott Norton",
@@ -1415,13 +1617,15 @@
  },
  {
   "date": "2005/04/19",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1091.7945280899164,
   "opponent": "Masahiro Chono",
   "result": "lost"
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
   "elo": 1134.1698260418316,
   "opponent": "Tiger Mask",
@@ -1429,6 +1633,7 @@
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
   "elo": 1060.4219829285967,
   "opponent": "Kendo Kashin",
@@ -1436,6 +1641,7 @@
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1067.6376859116242,
   "opponent": "Shinsuke Nakamura",
@@ -1443,6 +1649,7 @@
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 931.672453035852,
   "opponent": "Hiroyoshi Tenzan",
@@ -1450,6 +1657,7 @@
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
   "elo": 1177.9206588332383,
   "opponent": "Jushin Thunder Liger",
@@ -1457,6 +1665,7 @@
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1018.9688147900615,
   "opponent": "Hiroshi Tanahashi",
@@ -1464,6 +1673,7 @@
  },
  {
   "date": "2005/04/19",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1069.9522415603474,
   "opponent": "Yuji Nagata",
@@ -1471,20 +1681,23 @@
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 836.8112706062277,
+  "elo": 837.2175256413972,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 915.5169082444277,
+  "elo": 915.60825570881,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Tomoaki Honma",
   "wrestler": "Tomoaki Honma",
   "elo": 961.3513344679499,
   "opponent": "Togi Makabe",
@@ -1492,6 +1705,7 @@
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1118.9244697300906,
   "opponent": "Tomoaki Honma",
@@ -1499,6 +1713,7 @@
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
   "elo": 1037.8346871835329,
   "opponent": "Kendo Kashin",
@@ -1506,6 +1721,7 @@
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
   "elo": 1121.0267954112614,
   "opponent": "Yutaka Yoshie",
@@ -1513,34 +1729,39 @@
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 927.3552836707292,
+  "elo": 921.7857044106698,
   "opponent": "Hiroyoshi Tenzan",
   "result": "lost"
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1201.6134426217677,
+  "elo": 1200.8912480748463,
   "opponent": "Osamu Nishimura",
   "result": "won"
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1085.5996770770732,
+  "elo": 1085.6082798340765,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1192.6783073853653,
+  "elo": 1192.7295319277928,
   "opponent": "Masahiro Chono",
   "result": "won"
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
   "elo": 1015.1070359608277,
   "opponent": "Hiroshi Tanahashi",
@@ -1548,6 +1769,7 @@
  },
  {
   "date": "2005/04/21",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
   "elo": 1119.137829081196,
   "opponent": "Koji Kanemoto",
@@ -1555,13 +1777,15 @@
  },
  {
   "date": "2005/04/23",
-  "wrestler": "Yujiro Takahashi",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
   "elo": 602.4747008769871,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/04/23",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
   "elo": 1010.1740155664143,
   "opponent": "Yujiro",
@@ -1569,76 +1793,87 @@
  },
  {
   "date": "2005/04/23",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 952.7403944161263,
+  "elo": 951.9909354689647,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/04/23",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1052.088566760132,
+  "elo": 1048.0179053943957,
   "opponent": "Koji Kanemoto",
   "result": "won"
  },
  {
   "date": "2005/04/23",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 994.6656400257243,
+  "elo": 994.6668549502085,
   "opponent": "Masahiro Chono",
   "result": "lost"
  },
  {
   "date": "2005/04/23",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1128.7687242348818,
+  "elo": 1128.7761120674008,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "2005/04/24",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 574.1535288855131,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 574.1663099878276,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/04/24",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 943.8380802359017,
+  "elo": 943.9166465979695,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/04/24",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
-  "elo": 1081.1945370135911,
+  "elo": 1081.2016037582982,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/04/24",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1203.816149987545,
+  "elo": 1203.8502790405032,
   "opponent": "Kendo Kashin; Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/04/24",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1170.7878622672126,
+  "elo": 1170.114835791625,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/04/24",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1238.1778213812875,
+  "elo": 1238.0995427281443,
   "opponent": "Hiroyoshi Tenzan; Manabu Nakanishi",
   "result": "won"
  },
  {
   "date": "2005/04/24",
+  "wrestling_as": "Katsuhiko Nakajima",
   "wrestler": "Katsuhiko Nakajima",
   "elo": 868.2803304701574,
   "opponent": "Tatsumi Fujinami",
@@ -1646,6 +1881,7 @@
  },
  {
   "date": "2005/04/24",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
   "elo": 1047.5253159292085,
   "opponent": "Katsuhiko Nakajima",
@@ -1653,6 +1889,7 @@
  },
  {
   "date": "2005/04/24",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
   "elo": 1067.8239032439062,
   "opponent": "Satoshi Kojima",
@@ -1660,6 +1897,7 @@
  },
  {
   "date": "2005/04/24",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
   "elo": 1162.3762815555567,
   "opponent": "Togi Makabe",
@@ -1667,6 +1905,7 @@
  },
  {
   "date": "2005/05/14",
+  "wrestling_as": "Alexander Otsuka",
   "wrestler": "Alexander Otsuka",
   "elo": 961.5396844676687,
   "opponent": "Minoru Suzuki",
@@ -1674,6 +1913,7 @@
  },
  {
   "date": "2005/05/14",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
   "elo": 1120.1172844309842,
   "opponent": "Alexander Otsuka",
@@ -1681,20 +1921,23 @@
  },
  {
   "date": "2005/05/14",
-  "wrestler": "Black Tiger",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger IV / Black Tiger",
   "elo": 962.9112608751175,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/05/14",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1128.883267214799,
   "opponent": "Black Tiger",
   "result": "won"
  },
  {
   "date": "2005/05/14",
+  "wrestling_as": "Tsuyoshi Kohsaka",
   "wrestler": "Tsuyoshi Kohsaka",
   "elo": 1012.8859762277434,
   "opponent": "Yuji Nagata",
@@ -1702,6 +1945,7 @@
  },
  {
   "date": "2005/05/14",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
   "elo": 1076.2895446878588,
   "opponent": "Tsuyoshi Kohsaka",
@@ -1709,76 +1953,87 @@
  },
  {
   "date": "2005/05/14",
+  "wrestling_as": "Ron Waterman",
   "wrestler": "Ron Waterman",
   "elo": 970.7768030220734,
-  "opponent": "Great Muta",
+  "opponent": "Keiji Muto",
   "result": "lost"
  },
  {
   "date": "2005/05/14",
-  "wrestler": "Great Muta",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
   "elo": 1053.4860385179295,
   "opponent": "Ron Waterman",
   "result": "won"
  },
  {
   "date": "2005/05/14",
+  "wrestling_as": "Satoshi Kojima",
   "wrestler": "Satoshi Kojima",
-  "elo": 1113.586568868187,
+  "elo": 1113.4897649044185,
   "opponent": "Hiroyoshi Tenzan",
   "result": "lost"
  },
  {
   "date": "2005/05/14",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1219.5775749545824,
+  "elo": 1219.0013524427632,
   "opponent": "Satoshi Kojima",
   "result": "won"
  },
  {
   "date": "2005/05/21",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 771.5918088116182,
+  "elo": 771.8952372848204,
   "opponent": "Black Tiger",
   "result": "lost"
  },
  {
   "date": "2005/05/21",
-  "wrestler": "Black Tiger",
-  "elo": 1028.130722669727,
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger IV / Black Tiger",
+  "elo": 1028.2335492316943,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/05/21",
-  "wrestler": "El Samurai",
-  "elo": 1056.3792381846315,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1074.824165335096,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/05/21",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1135.5859381936914,
+  "elo": 1138.9437047118852,
   "opponent": "El Samurai",
   "result": "won"
  },
  {
   "date": "2005/05/21",
+  "wrestling_as": "Stampede Kid",
   "wrestler": "Stampede Kid",
-  "elo": 943.2404344421177,
+  "elo": 943.1345809105096,
   "opponent": "Koji Kanemoto",
   "result": "lost"
  },
  {
   "date": "2005/05/21",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1066.2595255318909,
+  "elo": 1065.7217736479456,
   "opponent": "Stampede Kid",
   "result": "won"
  },
  {
   "date": "2005/05/21",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1047.0069136655957,
   "opponent": "Jushin Thunder Liger",
@@ -1786,6 +2041,7 @@
  },
  {
   "date": "2005/05/21",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1081.5479467428363,
   "opponent": "Wataru Inoue",
@@ -1793,20 +2049,23 @@
  },
  {
   "date": "2005/05/22",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 819.089641972487,
+  "elo": 819.114359327785,
   "opponent": "Black Tiger",
   "result": "lost"
  },
  {
   "date": "2005/05/22",
-  "wrestler": "Black Tiger",
-  "elo": 1057.8368099335976,
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger IV / Black Tiger",
+  "elo": 1057.9272778179159,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/05/22",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
   "elo": 972.265128204469,
   "opponent": "Wataru Inoue",
@@ -1814,6 +2073,7 @@
  },
  {
   "date": "2005/05/22",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
   "elo": 1092.8588918443465,
   "opponent": "Gedo",
@@ -1821,34 +2081,39 @@
  },
  {
   "date": "2005/05/22",
-  "wrestler": "Minoru Tanaka",
-  "elo": 996.4178460667766,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1012.0632327642419,
   "opponent": "Masahito Kakihara",
   "result": "lost"
  },
  {
   "date": "2005/05/22",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1057.7300199708618,
+  "elo": 1060.2604360188402,
   "opponent": "Minoru",
   "result": "won"
  },
  {
   "date": "2005/05/22",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1075.7394004707462,
+  "elo": 1078.559507949973,
   "opponent": "Koji Kanemoto",
   "result": "lost"
  },
  {
   "date": "2005/05/22",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1126.106063254836,
+  "elo": 1126.1059704098577,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/05/22",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
   "elo": 1038.3182090863359,
   "opponent": "Tiger Mask",
@@ -1856,223 +2121,255 @@
  },
  {
   "date": "2005/05/22",
-  "wrestler": "Tiger Mask",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
   "elo": 1172.1130048712994,
   "opponent": "Jushin Thunder Liger",
   "result": "won"
  },
  {
   "date": "2005/05/24",
-  "wrestler": "El Samurai",
-  "elo": 1002.973895671202,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1018.7886774792473,
   "opponent": "Jado",
   "result": "lost"
  },
  {
   "date": "2005/05/24",
+  "wrestling_as": "Jado",
   "wrestler": "Jado",
-  "elo": 1086.085148247716,
+  "elo": 1088.7152935901352,
   "opponent": "El Samurai",
   "result": "won"
  },
  {
   "date": "2005/05/24",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 760.5265462053716,
+  "elo": 760.5453706850786,
   "opponent": "Gedo",
   "result": "lost"
  },
  {
   "date": "2005/05/24",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
-  "elo": 1030.8282239715843,
+  "elo": 1030.8341168471754,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/05/24",
-  "wrestler": "Minoru Tanaka",
-  "elo": 881.2305663462973,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 952.2717298487295,
   "opponent": "Stampede Kid",
   "result": "lost"
  },
  {
   "date": "2005/05/24",
+  "wrestling_as": "Stampede Kid",
   "wrestler": "Stampede Kid",
-  "elo": 1058.4277141625969,
+  "elo": 1062.7175867415347,
   "opponent": "Minoru",
   "result": "won"
  },
  {
   "date": "2005/05/24",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 753.4595206387542,
+  "elo": 753.7341286616718,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/05/24",
-  "wrestler": "Tiger Mask",
-  "elo": 1181.1791489577313,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1181.1935591828737,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/05/27",
+  "wrestling_as": "Jado",
   "wrestler": "Jado",
-  "elo": 1032.1133096730834,
+  "elo": 1034.9808900434352,
   "opponent": "Stampede Kid",
   "result": "lost"
  },
  {
   "date": "2005/05/27",
+  "wrestling_as": "Stampede Kid",
   "wrestler": "Stampede Kid",
-  "elo": 1112.3995527372294,
+  "elo": 1116.4519902882346,
   "opponent": "Jado",
   "result": "won"
  },
  {
   "date": "2005/05/27",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 719.769804838779,
+  "elo": 720.0010560832135,
   "opponent": "Gedo",
   "result": "lost"
  },
  {
   "date": "2005/05/27",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
-  "elo": 1047.6730818715719,
+  "elo": 1047.7006531364045,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/05/27",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1010.3194594036054,
+  "elo": 1012.8914517791017,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/05/27",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1123.1499610380026,
+  "elo": 1125.9284921897115,
   "opponent": "Masahito Kakihara",
   "result": "won"
  },
  {
   "date": "2005/05/27",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 744.2165446106359,
+  "elo": 744.2349884391385,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/05/27",
-  "wrestler": "Tiger Mask",
-  "elo": 1189.3341497550991,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1189.3487503058439,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/05/28",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 927.9591338842677,
+  "elo": 927.9606863743038,
   "opponent": "Katsushi Takemura",
   "result": "lost"
  },
  {
   "date": "2005/05/28",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 908.6463079749291,
+  "elo": 908.6616468233594,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/05/28",
+  "wrestling_as": "Jado",
   "wrestler": "Jado",
-  "elo": 961.6689018039914,
-  "opponent": "Minoru Tanaka",
+  "elo": 973.2979492722613,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/05/28",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1022.1193820844815,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1075.6376113910771,
   "opponent": "Jado",
   "result": "won"
  },
  {
   "date": "2005/05/28",
-  "wrestler": "Black Tiger",
-  "elo": 1012.8598910489463,
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger IV / Black Tiger",
+  "elo": 1012.9374706198294,
   "opponent": "Wataru Inoue",
   "result": "lost"
  },
  {
   "date": "2005/05/28",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
-  "elo": 1137.8358107289978,
+  "elo": 1137.848699042433,
   "opponent": "Black Tiger",
   "result": "won"
  },
  {
   "date": "2005/05/28",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 692.2104728788565,
+  "elo": 692.410077487485,
   "opponent": "Jushin Thunder Liger",
   "result": "lost"
  },
  {
   "date": "2005/05/28",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
-  "elo": 1052.097875066297,
+  "elo": 1052.1136983842,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/05/28",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1059.0923415580687,
+  "elo": 1061.1348959740617,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "2005/05/28",
-  "wrestler": "El Samurai",
-  "elo": 1069.9876173679693,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1083.7597519150434,
   "opponent": "Koji Kanemoto",
   "result": "won"
  },
  {
   "date": "2005/05/29",
+  "wrestling_as": "Alexander Otsuka",
   "wrestler": "Alexander Otsuka",
-  "elo": 875.4881020437396,
+  "elo": 876.2132162337848,
   "opponent": "Masahito Kakihara",
   "result": "lost"
  },
  {
   "date": "2005/05/29",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1053.34525061557,
+  "elo": 1055.5546858960436,
   "opponent": "Alexander Otsuka",
   "result": "won"
  },
  {
   "date": "2005/05/29",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 839.2709315860039,
+  "elo": 839.3273780346583,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/05/29",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 1032.5262825341654,
+  "elo": 1032.549954937615,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/05/29",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
   "elo": 895.9137539809474,
   "opponent": "Toru Yano",
@@ -2080,6 +2377,7 @@
  },
  {
   "date": "2005/05/29",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
   "elo": 1095.94907881574,
   "opponent": "Blue Wolf",
@@ -2087,1945 +2385,2223 @@
  },
  {
   "date": "2005/06/02",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 1040.5473423101464,
+  "elo": 1040.5384029275044,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/06/02",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1251.8161018481674,
+  "elo": 1251.7422928863452,
   "opponent": "Togi Makabe",
   "result": "won"
  },
  {
   "date": "2005/06/02",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1072.8123658924678,
+  "elo": 1072.2298850690772,
   "opponent": "Osamu Nishimura",
   "result": "draw"
  },
  {
   "date": "2005/06/02",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1055.5657455555229,
+  "elo": 1052.0775650131773,
   "opponent": "Yuji Nagata",
   "result": "draw"
  },
  {
   "date": "2005/06/02",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 948.5115919218484,
+  "elo": 948.5195332322219,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/06/02",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1215.354662013514,
+  "elo": 1215.3871094699998,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "2005/06/02",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
-  "elo": 1017.0004009684206,
+  "elo": 1017.0263844837206,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/06/02",
-  "wrestler": "Tiger Mask",
-  "elo": 1220.0068306582505,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1220.0230189585277,
   "opponent": "Gedo",
   "result": "won"
  },
  {
   "date": "2005/06/03",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1025.9192559895846,
+  "elo": 1025.920215443638,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/06/03",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1088.571237574159,
+  "elo": 1088.577259976426,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/06/04",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1003.405768746976,
+  "elo": 1000.4175564197118,
   "opponent": "Togi Makabe",
   "result": "lost"
  },
  {
   "date": "2005/06/04",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 1092.7073191186932,
+  "elo": 1092.19841152097,
   "opponent": "Osamu Nishimura",
   "result": "won"
  },
  {
   "date": "2005/06/04",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1004.5089264026731,
+  "elo": 1004.5026428959451,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/06/04",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1262.521266641623,
+  "elo": 1262.4510791601917,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/06/04",
+  "wrestling_as": "Scott Norton",
   "wrestler": "Scott Norton",
-  "elo": 913.5560990285284,
+  "elo": 913.4609275527542,
   "opponent": "Hiroyoshi Tenzan",
   "result": "lost"
  },
  {
   "date": "2005/06/04",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1228.2454530098182,
+  "elo": 1227.6930233669427,
   "opponent": "Scott Norton",
   "result": "won"
  },
  {
   "date": "2005/06/10",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 783.5416719527879,
+  "elo": 783.5836007312921,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/06/10",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1032.3735562192812,
+  "elo": 1032.374531547628,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/06/10",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1005.7384496241966,
+  "elo": 1009.6048278614771,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "2005/06/10",
-  "wrestler": "El Samurai",
-  "elo": 1117.5944183593426,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1129.7096099496098,
   "opponent": "Masahito Kakihara",
   "result": "won"
  },
  {
   "date": "2005/06/10",
+  "wrestling_as": "Jado",
   "wrestler": "Jado",
-  "elo": 888.9970929696628,
+  "elo": 898.0542518565209,
   "opponent": "Koji Kanemoto",
   "result": "lost"
  },
  {
   "date": "2005/06/10",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1095.428245975233,
+  "elo": 1098.7567446819319,
   "opponent": "Jado",
   "result": "won"
  },
  {
   "date": "2005/06/11",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 985.0388345377254,
+  "elo": 985.0591087994085,
   "opponent": "Harry Smith",
   "result": "lost"
  },
  {
   "date": "2005/06/11",
+  "wrestling_as": "Harry Smith",
   "wrestler": "Harry Smith",
-  "elo": 1097.48744799644,
+  "elo": 1097.4908461382065,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/06/11",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 714.8024336901188,
+  "elo": 714.8334733198892,
   "opponent": "Blue Wolf",
   "result": "lost"
  },
  {
   "date": "2005/06/11",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 964.6529922436164,
+  "elo": 964.6638813923503,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/06/11",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1059.006901175729,
-  "opponent": "Minoru Tanaka",
+  "elo": 1068.7411793877268,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/06/11",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1086.2624419467552,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1132.8249241930619,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/06/11",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 847.7384157432282,
+  "elo": 847.7538727237628,
   "opponent": "Jushin Thunder Liger",
   "result": "lost"
  },
  {
   "date": "2005/06/11",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
-  "elo": 1082.5518211821475,
+  "elo": 1082.5675854339984,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/06/11",
-  "wrestler": "Tiger Mask",
-  "elo": 1189.2019817018422,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1189.2179453515307,
   "opponent": "Wataru Inoue",
   "result": "lost"
  },
  {
   "date": "2005/06/11",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
-  "elo": 1199.4455086418143,
+  "elo": 1199.4588462564268,
   "opponent": "Tiger Mask",
   "result": "won"
  },
  {
   "date": "2005/06/13",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 512.5600935456904,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 512.5773546045489,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/06/13",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 776.3958690299415,
+  "elo": 776.422428703168,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/06/13",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 914.7123376551946,
+  "elo": 914.7272902400509,
   "opponent": "Tatsutoshi Goto",
   "result": "lost"
  },
  {
   "date": "2005/06/13",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1126.494986434649,
+  "elo": 1126.4976472730623,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/06/13",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 634.2066331765226,
+  "elo": 634.3625739564758,
   "opponent": "Katsushi Takemura",
   "result": "lost"
  },
  {
   "date": "2005/06/13",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 905.7422554455621,
+  "elo": 905.801376254772,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/06/13",
+  "wrestling_as": "Harry Smith",
   "wrestler": "Harry Smith",
-  "elo": 1069.5991875526365,
+  "elo": 1069.5940661427467,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/06/13",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1276.4653968635248,
+  "elo": 1276.3994691579217,
   "opponent": "Harry Smith",
   "result": "won"
  },
  {
   "date": "2005/06/13",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1044.1094866688527,
-  "opponent": "Minoru Tanaka",
+  "elo": 1053.6438965353573,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/06/13",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1137.5812012531355,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1177.9377723396365,
   "opponent": "Koji Kanemoto",
   "result": "won"
  },
  {
   "date": "2005/06/15",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 446.208900399333,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 446.2615525641891,
   "opponent": "Akiya Anzawa",
   "result": "lost"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 700.5578263228799,
+  "elo": 700.6783759968356,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 745.1831610491624,
+  "elo": 745.2049164883309,
   "opponent": "Harry Smith",
   "result": "lost"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Harry Smith",
   "wrestler": "Harry Smith",
-  "elo": 1085.2055415430261,
+  "elo": 1085.2028222501651,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 828.9882286747852,
+  "elo": 829.0020355423709,
   "opponent": "Blue Wolf",
   "result": "lost"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1050.3771012240256,
+  "elo": 1050.3891360900302,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Stampede Kid",
   "wrestler": "Stampede Kid",
-  "elo": 1047.5144938966744,
+  "elo": 1051.5425323095117,
   "opponent": "Masahito Kakihara",
   "result": "lost"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1070.6235084647517,
+  "elo": 1074.5142858402,
   "opponent": "Stampede Kid",
   "result": "won"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 986.322772948366,
+  "elo": 995.9797312786047,
   "opponent": "Jado",
   "result": "lost"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Jado",
   "wrestler": "Jado",
-  "elo": 1034.3653494243886,
+  "elo": 1043.577148074765,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
-  "elo": 1023.2285788965082,
+  "elo": 1023.2457626924371,
   "opponent": "Gedo",
   "result": "lost"
  },
  {
   "date": "2005/06/15",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
-  "elo": 1076.3236432540598,
+  "elo": 1076.3482072252818,
   "opponent": "Jushin Thunder Liger",
   "result": "won"
  },
  {
   "date": "2005/06/16",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 732.4091260376904,
+  "elo": 732.4588537634665,
   "opponent": "Akiya Anzawa",
   "result": "draw"
  },
  {
   "date": "2005/06/16",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 901.8485862660325,
+  "elo": 901.9362254126855,
   "opponent": "Hiroshi Nagao; Wataru Inoue",
   "result": "won"
  },
  {
   "date": "2005/06/16",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
-  "elo": 1105.187146175974,
+  "elo": 1105.202952910934,
   "opponent": "Akiya Anzawa",
   "result": "lost"
  },
  {
   "date": "2005/06/16",
+  "wrestling_as": "Jado",
   "wrestler": "Jado",
-  "elo": 989.5644573618023,
+  "elo": 998.0176302765556,
   "opponent": "Masahito Kakihara",
   "result": "lost"
  },
  {
   "date": "2005/06/16",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1115.424400527338,
+  "elo": 1120.0738036384096,
   "opponent": "Jado",
   "result": "won"
  },
  {
   "date": "2005/06/16",
+  "wrestling_as": "Harry Smith",
   "wrestler": "Harry Smith",
-  "elo": 1030.2100479832368,
+  "elo": 1030.2094307987502,
   "opponent": "Blue Wolf",
   "result": "lost"
  },
  {
   "date": "2005/06/16",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1105.372594783815,
+  "elo": 1105.3825275414451,
   "opponent": "Harry Smith",
   "result": "won"
  },
  {
   "date": "2005/06/16",
+  "wrestling_as": "Stampede Kid",
   "wrestler": "Stampede Kid",
-  "elo": 1007.465220568518,
+  "elo": 1012.6056442144067,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "2005/06/16",
-  "wrestler": "El Samurai",
-  "elo": 1157.643691687499,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1168.6464980447147,
   "opponent": "Stampede Kid",
   "result": "won"
  },
  {
   "date": "2005/06/16",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 814.8469093402163,
+  "elo": 814.8546832438603,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/06/16",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1280.000726697167,
+  "elo": 1279.9363072325493,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/06/17",
+  "wrestling_as": "Stampede Kid",
   "wrestler": "Stampede Kid",
-  "elo": 954.4263279253033,
+  "elo": 960.2148076809315,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/06/17",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1092.4005582347954,
+  "elo": 1100.761404345555,
   "opponent": "Stampede Kid",
   "result": "won"
  },
  {
   "date": "2005/06/17",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 770.3824491990213,
+  "elo": 770.3888698122752,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/06/17",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1054.6057862898788,
+  "elo": 1054.6074382634206,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/06/17",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 724.2081165308219,
+  "elo": 724.2526749112513,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/06/17",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1282.050979073884,
+  "elo": 1281.987851945603,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/06/17",
-  "wrestler": "El Samurai",
-  "elo": 1104.759672029247,
-  "opponent": "Minoru Tanaka",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1119.9833012401666,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/06/17",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1190.4652209113876,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1226.6009691441845,
   "opponent": "El Samurai",
   "result": "won"
  },
  {
   "date": "2005/06/17",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1055.303105260243,
+  "elo": 1060.628590361295,
   "opponent": "Koji Kanemoto",
   "result": "lost"
  },
  {
   "date": "2005/06/17",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1104.2307819359478,
+  "elo": 1113.0891098124719,
   "opponent": "Masahito Kakihara",
   "result": "won"
  },
  {
   "date": "2005/06/18",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 707.483710705798,
+  "elo": 707.503210991697,
   "opponent": "Katsushi Takemura",
   "result": "lost"
  },
  {
   "date": "2005/06/18",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 1106.036337775503,
+  "elo": 1106.0748934285039,
   "opponent": "Naofumi Yamamoto; Wataru Inoue",
   "result": "won"
  },
  {
   "date": "2005/06/18",
+  "wrestling_as": "Harry Smith",
   "wrestler": "Harry Smith",
-  "elo": 983.7151184065808,
+  "elo": 983.7148261752618,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/06/18",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1076.463963325,
+  "elo": 1076.4588393217189,
   "opponent": "Harry Smith; Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/06/18",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1078.812206874768,
+  "elo": 1078.8139353182212,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/06/18",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1307.649549299175,
+  "elo": 1307.59374983981,
   "opponent": "Blue Wolf; Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/06/18",
+  "wrestling_as": "Wataru Inoue",
   "wrestler": "Wataru Inoue",
-  "elo": 1036.4894742576153,
+  "elo": 1036.5090237343572,
   "opponent": "Katsushi Takemura",
   "result": "lost"
  },
  {
   "date": "2005/06/18",
-  "wrestler": "Black Tiger",
-  "elo": 964.3516223427897,
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger IV / Black Tiger",
+  "elo": 964.4205179545108,
   "opponent": "Jushin Thunder Liger",
   "result": "lost"
  },
  {
   "date": "2005/06/18",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
-  "elo": 1071.7368476026647,
+  "elo": 1071.7627153577555,
   "opponent": "Black Tiger",
   "result": "won"
  },
  {
   "date": "2005/06/18",
-  "wrestler": "Tiger Mask",
-  "elo": 1123.5058944142775,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1123.5229737883474,
   "opponent": "Gedo",
   "result": "lost"
  },
  {
   "date": "2005/06/18",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
-  "elo": 1142.0197305416245,
+  "elo": 1142.0431787884652,
   "opponent": "Tiger Mask",
   "result": "won"
  },
  {
   "date": "2005/06/19",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 691.0316145259164,
+  "elo": 691.0496511464554,
   "opponent": "Tatsutoshi Goto",
   "result": "lost"
  },
  {
   "date": "2005/06/19",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1134.7210345245899,
+  "elo": 1134.7244271956831,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/06/19",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1130.9465580697351,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1194.3941302875844,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/06/19",
-  "wrestler": "Tiger Mask",
-  "elo": 1233.5394906406425,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1237.9293582438322,
   "opponent": "Minoru; Gedo",
   "result": "won"
  },
  {
   "date": "2005/06/19",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1059.6477050714898,
+  "elo": 1067.246315845044,
   "opponent": "Gedo",
   "result": "lost"
  },
  {
   "date": "2005/06/19",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
-  "elo": 1136.08787402137,
+  "elo": 1137.8932660136086,
   "opponent": "Koji Kanemoto; Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/06/30",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 614.6880695498523,
+  "elo": 614.7250635932361,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/06/30",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 800.551661506886,
+  "elo": 800.5772624644707,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/06/30",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 441.47575989370347,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 441.7444582713033,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/06/30",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1094.7671284876103,
+  "elo": 1103.019951491998,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/06/30",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1078.1183314247337,
+  "elo": 1078.1220959454427,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/06/30",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1145.1739406740153,
+  "elo": 1145.1795912266664,
   "opponent": "Tatsutoshi Goto",
   "result": "won"
  },
  {
   "date": "2005/07/01",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 426.28133672988304,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 426.5868820842871,
   "opponent": "Alexander Otsuka",
   "result": "lost"
  },
  {
   "date": "2005/07/01",
+  "wrestling_as": "Alexander Otsuka",
   "wrestler": "Alexander Otsuka",
-  "elo": 890.6825252075599,
+  "elo": 891.3707924208011,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/07/01",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
-  "elo": 880.103457583271,
+  "elo": 880.1038860400541,
   "opponent": "Blue Wolf",
   "result": "lost"
  },
  {
   "date": "2005/07/01",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1110.1873222127133,
+  "elo": 1110.188836427775,
   "opponent": "Ryushi Yanagisawa",
   "result": "won"
  },
  {
   "date": "2005/07/03",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 750.1543465788914,
+  "elo": 751.9866915064213,
   "opponent": "Jado",
   "result": "lost"
  },
  {
   "date": "2005/07/03",
+  "wrestling_as": "Jado",
   "wrestler": "Jado",
-  "elo": 1039.961772289797,
+  "elo": 1046.608201234605,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/07/03",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1016.7238872954913,
+  "elo": 1021.568123290349,
   "opponent": "Gedo",
   "result": "lost"
  },
  {
   "date": "2005/07/03",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
-  "elo": 1174.6670919861217,
+  "elo": 1176.9537330845544,
   "opponent": "Masahito Kakihara",
   "result": "won"
  },
  {
   "date": "2005/07/08",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 687.6747646255176,
+  "elo": 689.0530692266884,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "2005/07/08",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 949.6855560695764,
+  "elo": 950.1395963959354,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/07/08",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1032.7203683451999,
+  "elo": 1032.7238117641546,
   "opponent": "Blue Wolf",
   "result": "lost"
  },
  {
   "date": "2005/07/08",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1155.5852852922471,
+  "elo": 1155.587120609063,
   "opponent": "Tatsutoshi Goto",
   "result": "won"
  },
  {
   "date": "2005/07/09",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 389.936265818606,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 390.42510526182804,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/07/09",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 724.0198355367946,
+  "elo": 725.2148460491475,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/07/09",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
-  "elo": 799.8672610261077,
+  "elo": 799.9931172610856,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "2005/07/09",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1029.9217526267398,
+  "elo": 1030.250365174904,
   "opponent": "Ryushi Yanagisawa",
   "result": "won"
  },
  {
   "date": "2005/07/09",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1146.6718052839494,
+  "elo": 1146.6769072725926,
   "opponent": "Blue Wolf",
   "result": "draw"
  },
  {
   "date": "2005/07/09",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1154.087420682313,
+  "elo": 1154.0898045631368,
   "opponent": "Yutaka Yoshie",
   "result": "draw"
  },
  {
   "date": "2005/07/09",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1046.2047747213953,
+  "elo": 1055.4592357892307,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "2005/07/09",
-  "wrestler": "El Samurai",
-  "elo": 1153.322025795462,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1167.544016942934,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/07/13",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 549.5222089243897,
-  "opponent": "Yujiro Takahashi",
+  "elo": 550.6269068988449,
+  "opponent": "Yujiro",
   "result": "lost"
  },
  {
   "date": "2005/07/13",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 564.4338924310109,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 565.0130444121305,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/07/13",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1032.3176238785795,
+  "elo": 1032.3678601998224,
   "opponent": "Takashi Iizuka",
   "result": "draw"
  },
  {
   "date": "2005/07/13",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1030.3244970933602,
+  "elo": 1030.606316739236,
   "opponent": "Tatsutoshi Goto",
   "result": "draw"
  },
  {
   "date": "2005/07/14",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 500.3237899839372,
-  "opponent": "Yujiro Takahashi",
+  "elo": 500.51364403647125,
+  "opponent": "Yujiro",
   "result": "lost"
  },
  {
   "date": "2005/07/14",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 678.798171996926,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 679.2244639688953,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/07/14",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 992.5027334445044,
+  "elo": 1000.4355906192201,
   "opponent": "Masayuki Naruse",
   "result": "lost"
  },
  {
   "date": "2005/07/14",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1074.1352357370733,
+  "elo": 1075.4568396301931,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/07/14",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 542.7231566597982,
-  "opponent": "Minoru Tanaka",
+  "elo": 545.8288426229713,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/07/14",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1134.3460842020309,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1196.7931624255214,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/07/15",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 528.7550224308915,
+  "elo": 532.2174519858897,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/07/15",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1006.4708676734111,
+  "elo": 1007.2412859377608,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/07/15",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 661.8971469565054,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 662.2399554720503,
   "opponent": "Togi Makabe",
   "result": "lost"
  },
  {
   "date": "2005/07/15",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 1101.1578316389036,
+  "elo": 1100.6906657693926,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/07/15",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 493.322096961202,
+  "elo": 493.5043635841454,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/07/15",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1079.9648098363675,
+  "elo": 1079.963479547882,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/07/17",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 523.4340838236643,
+  "elo": 526.7923740239195,
   "opponent": "Blue Wolf",
   "result": "lost"
  },
  {
   "date": "2005/07/17",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1156.7478899859266,
+  "elo": 1156.8023435441219,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/07/17",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 485.0778823730533,
+  "elo": 485.54930683574327,
   "opponent": "Jado",
   "result": "lost"
  },
  {
   "date": "2005/07/17",
+  "wrestling_as": "Jado",
   "wrestler": "Jado",
-  "elo": 1044.0838795838713,
+  "elo": 1050.585729608806,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/07/18",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 478.7698446710104,
+  "elo": 479.22462269887905,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/07/18",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1083.118828687389,
+  "elo": 1083.125821616314,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/07/18",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1028.01627717863,
+  "elo": 1029.0819073585017,
   "opponent": "Togi Makabe",
   "result": "lost"
  },
  {
   "date": "2005/07/18",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 1147.276790197347,
+  "elo": 1147.065598041084,
   "opponent": "Masayuki Naruse",
   "result": "won"
  },
  {
   "date": "2005/07/18",
+  "wrestling_as": "Dick Togo",
   "wrestler": "Dick Togo",
-  "elo": 979.3206252966763,
+  "elo": 979.732060769077,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/07/18",
-  "wrestler": "Tiger Mask",
-  "elo": 1243.8791779923042,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1248.0633278592936,
   "opponent": "Dick Togo",
   "result": "won"
  },
  {
   "date": "2005/07/18",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1188.8373144144311,
+  "elo": 1188.311456430465,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/07/18",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
-  "elo": 1078.8162771907741,
+  "elo": 1078.763133872956,
   "opponent": "Hiroyoshi Tenzan",
   "result": "won"
  },
  {
   "date": "2005/07/19",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 469.6194724701083,
+  "elo": 470.0901027044341,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/07/19",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1011.0460537738621,
+  "elo": 1011.8085459349833,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/07/19",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 515.7634077570424,
+  "elo": 518.9781194855954,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/07/19",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1086.9541667207,
+  "elo": 1087.032948885476,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/07/21",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 649.5322167323104,
-  "opponent": "Minoru Tanaka",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 653.4278948727625,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/07/21",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1140.5285493141284,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1201.1991927251652,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 1097.1897259576501,
+  "elo": 1097.0096609663387,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1196.7588695236464,
+  "elo": 1196.732844347338,
   "opponent": "Togi Makabe",
   "result": "won"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1115.0357115796273,
+  "elo": 1115.1012321949004,
   "opponent": "Hiroshi Tanahashi",
   "result": "draw"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1293.6087768697114,
+  "elo": 1293.5596081850977,
   "opponent": "Toru Yano",
   "result": "draw"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1019.5973959620361,
+  "elo": 1016.9930463037117,
   "opponent": "Minoru Suzuki",
   "result": "draw"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
-  "elo": 1103.9256572159243,
+  "elo": 1103.5417945469842,
   "opponent": "Osamu Nishimura",
   "result": "draw"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
-  "elo": 1026.3642577280975,
+  "elo": 1026.3703169796372,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1102.3555952147021,
+  "elo": 1102.3566027078696,
   "opponent": "Kendo Kashin",
   "result": "won"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 988.969649408834,
+  "elo": 989.005270954874,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
-  "elo": 1122.1642516605195,
+  "elo": 1122.1257231179043,
   "opponent": "Tatsutoshi Goto",
   "result": "won"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1179.890925676533,
+  "elo": 1179.921447441774,
   "opponent": "Shinsuke Nakamura",
   "result": "lost"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
-  "elo": 1131.3494556025585,
+  "elo": 1131.3533069850482,
   "opponent": "Manabu Nakanishi",
   "result": "won"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1030.7962216451945,
+  "elo": 1030.2964428511982,
   "opponent": "Masahiro Chono",
   "result": "lost"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1170.7848684821552,
+  "elo": 1170.7095542852799,
   "opponent": "Yuji Nagata",
   "result": "won"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1114.0550169436772,
+  "elo": 1113.5862876253057,
   "opponent": "Toshiaki Kawada",
   "result": "lost"
  },
  {
   "date": "2005/08/04",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
-  "elo": 1074.782297470754,
+  "elo": 1074.7251688051592,
   "opponent": "Hiroyoshi Tenzan",
   "result": "won"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 717.1877607705559,
+  "elo": 717.3066532580232,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 654.2802979655849,
+  "elo": 654.7196748590965,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1076.5844136443034,
+  "elo": 1076.637461848783,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1235.2101674589703,
+  "elo": 1235.1966146934553,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 1052.0899267268303,
+  "elo": 1051.9360738504472,
   "opponent": "Shinsuke Nakamura",
   "result": "lost"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
-  "elo": 1176.4492548333783,
+  "elo": 1176.4268941009398,
   "opponent": "Togi Makabe",
   "result": "won"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 938.9853573761993,
+  "elo": 939.019878268583,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1204.8830716928503,
+  "elo": 1204.9141437849196,
   "opponent": "Tatsutoshi Goto",
   "result": "won"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 970.5711025332494,
+  "elo": 968.3422164446439,
   "opponent": "Kendo Kashin",
   "result": "lost"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
-  "elo": 1075.3905511568842,
+  "elo": 1075.021146838705,
   "opponent": "Osamu Nishimura",
   "result": "won"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 991.1676806773057,
+  "elo": 990.6838646893349,
   "opponent": "Minoru Suzuki",
   "result": "lost"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
-  "elo": 1143.554198183813,
+  "elo": 1143.1543727088474,
   "opponent": "Yuji Nagata",
   "result": "won"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1048.3957886589747,
+  "elo": 1048.3884822713114,
   "opponent": "Toshiaki Kawada",
   "result": "lost"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
-  "elo": 1128.7421040264815,
+  "elo": 1128.6932892417174,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1112.6925750024304,
+  "elo": 1112.5621369744265,
   "opponent": "Hiroyoshi Tenzan",
   "result": "lost"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1172.147310423402,
+  "elo": 1171.733704936159,
   "opponent": "Masahiro Chono",
   "result": "won"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1257.1848792302912,
+  "elo": 1257.1363163058488,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/08/06",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
-  "elo": 1195.0120469393598,
+  "elo": 1194.9723068764022,
   "opponent": "Hiroshi Tanahashi",
   "result": "won"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 986.3644966115569,
+  "elo": 986.2350755424928,
   "opponent": "Tatsutoshi Goto",
   "result": "lost"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1070.4362176067461,
+  "elo": 1070.421874884492,
   "opponent": "Togi Makabe",
   "result": "won"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1208.0334829409087,
+  "elo": 1208.0231168857874,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1232.059756210912,
+  "elo": 1232.0876415925875,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 922.8509424523565,
+  "elo": 921.000695207951,
   "opponent": "Hiroyoshi Tenzan",
   "result": "lost"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1196.0073904638482,
+  "elo": 1195.4044655545056,
   "opponent": "Osamu Nishimura",
   "result": "won"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 990.2336848075198,
+  "elo": 990.1596455498789,
   "opponent": "Yuji Nagata",
   "result": "lost"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1107.4918883802154,
+  "elo": 1107.1415381322,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1042.9967561554963,
+  "elo": 1043.0378887757472,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
-  "elo": 1228.599704428167,
+  "elo": 1228.571879949438,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
-  "elo": 1071.1239831314158,
+  "elo": 1071.0301091795818,
   "opponent": "Kendo Kashin",
   "result": "lost"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
-  "elo": 1133.0086720519498,
+  "elo": 1132.6843269008405,
   "opponent": "Toshiaki Kawada",
   "result": "won"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
-  "elo": 1089.1244978991733,
+  "elo": 1088.763138742975,
   "opponent": "Masahiro Chono",
   "result": "lost"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1167.1222752870701,
+  "elo": 1166.953370940299,
   "opponent": "Minoru Suzuki",
   "result": "won"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1226.4778400444386,
+  "elo": 1226.4310642972127,
   "opponent": "Shinsuke Nakamura",
   "result": "lost"
  },
  {
   "date": "2005/08/07",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
-  "elo": 1237.8633332050836,
+  "elo": 1237.8373981182121,
   "opponent": "Hiroshi Tanahashi",
   "result": "won"
  },
  {
   "date": "2005/08/08",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 550.8987392955447,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 553.7996973270141,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 752.9137754023507,
+  "elo": 754.3478724048449,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 946.6238179253273,
+  "elo": 946.5130171651499,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
-  "elo": 1249.1631415693264,
+  "elo": 1249.1690111195014,
   "opponent": "Togi Makabe; Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1042.8241750805885,
+  "elo": 1042.808498532655,
   "opponent": "Shinsuke Nakamura",
   "result": "lost"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
-  "elo": 1251.6693544681625,
+  "elo": 1251.6440862941306,
   "opponent": "Tatsutoshi Goto",
   "result": "won"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1017.8035456167847,
+  "elo": 1017.843241048306,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1244.6563614802676,
+  "elo": 1244.684965456308,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
-  "elo": 1091.9768438642236,
+  "elo": 1091.6136920629258,
   "opponent": "Hiroyoshi Tenzan",
   "result": "lost"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1237.0392186515742,
+  "elo": 1236.4751003924202,
   "opponent": "Kendo Kashin",
   "result": "won"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1086.8066532424073,
+  "elo": 1086.4851828375906,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1083.482186541682,
+  "elo": 1081.937071413368,
   "opponent": "Masahiro Chono",
   "result": "won"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 989.7895188346577,
+  "elo": 990.4753127835278,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1184.3594157531927,
+  "elo": 1184.3464371652449,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1250.1519072321546,
+  "elo": 1250.1077440177553,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
-  "elo": 1025.2652277060663,
+  "elo": 1024.9420490606806,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1117.952225193734,
+  "elo": 1117.8018249144675,
   "opponent": "Minoru Suzuki",
   "result": "won"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1052.2771579740581,
+  "elo": 1051.963318953901,
   "opponent": "Toshiaki Kawada",
   "result": "lost"
  },
  {
   "date": "2005/08/08",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
-  "elo": 1126.338713537573,
+  "elo": 1126.2083283578806,
   "opponent": "Yuji Nagata",
   "result": "won"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 503.50337951803544,
+  "elo": 506.5494812205622,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1002.0495470736646,
+  "elo": 1002.9039510485609,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/08/10",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 547.2787832484662,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 550.1204994206785,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1253.1496113225478,
+  "elo": 1253.187313516851,
   "opponent": "Yujiro; Togi Makabe",
   "result": "won"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 916.270774603285,
+  "elo": 916.1828228293135,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1047.1549659895825,
+  "elo": 1047.1885334265203,
   "opponent": "Shinsuke Nakamura",
   "result": "draw"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
-  "elo": 1236.9936442817636,
+  "elo": 1236.9714401050235,
   "opponent": "Toru Yano",
   "result": "draw"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1019.5603626225804,
+  "elo": 1019.541758570798,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1261.7838134611586,
+  "elo": 1261.7411139986839,
   "opponent": "Tatsutoshi Goto",
   "result": "won"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
-  "elo": 1036.2883355497802,
+  "elo": 1035.9321886842783,
   "opponent": "Yuji Nagata",
   "result": "lost"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1107.9656662885016,
+  "elo": 1107.6448223325485,
   "opponent": "Kendo Kashin",
   "result": "won"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1143.5787558565153,
+  "elo": 1143.5683974877466,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
-  "elo": 1269.553471517665,
+  "elo": 1269.5580309582506,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1063.0078001729562,
+  "elo": 1062.6587270115544,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1138.4266115624598,
+  "elo": 1137.080169316281,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1198.4442344281756,
+  "elo": 1197.8923309139043,
   "opponent": "Minoru Suzuki",
   "result": "lost"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
-  "elo": 1102.4551961528634,
+  "elo": 1102.1075880177123,
   "opponent": "Hiroyoshi Tenzan",
   "result": "won"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
-  "elo": 1070.6740175475284,
+  "elo": 1070.516487656095,
   "opponent": "Masahiro Chono",
   "result": "lost"
  },
  {
   "date": "2005/08/10",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1142.471349232452,
+  "elo": 1142.1770235393763,
   "opponent": "Toshiaki Kawada",
   "result": "won"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 892.196814830726,
+  "elo": 892.1143787636485,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1284.8505012663443,
+  "elo": 1285.7407735112436,
   "opponent": "Togi Makabe; El Samurai",
   "result": "won"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 993.1921125538516,
+  "elo": 993.2182191622595,
   "opponent": "Tatsutoshi Goto",
   "result": "lost"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1073.5232160583112,
+  "elo": 1073.5120728350587,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1106.7073928888467,
+  "elo": 1106.6954472900245,
   "opponent": "Shinsuke Nakamura",
   "result": "lost"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
-  "elo": 1255.429325765598,
+  "elo": 1255.4079152038846,
   "opponent": "Yutaka Yoshie",
   "result": "won"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1084.05412669962,
+  "elo": 1082.854188576586,
   "opponent": "Yuji Nagata",
   "result": "lost"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1162.3381511513414,
+  "elo": 1161.8708030722435,
   "opponent": "Osamu Nishimura",
   "result": "won"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
-  "elo": 1001.1106638310555,
+  "elo": 1000.7626314650903,
   "opponent": "Masahiro Chono",
   "result": "lost"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1177.6490209511767,
+  "elo": 1177.3465807585642,
   "opponent": "Kendo Kashin",
   "result": "won"
  },
  {
   "date": "2005/08/11",
-  "wrestler": "El Samurai",
-  "elo": 1119.2256300713702,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1131.578919950647,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
-  "elo": 1047.8942309719132,
+  "elo": 1047.573751030657,
   "opponent": "Toshiaki Kawada",
   "result": "lost"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
-  "elo": 1125.2349827284786,
+  "elo": 1125.0503246431504,
   "opponent": "Minoru Suzuki",
   "result": "won"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1031.5679398440514,
+  "elo": 1031.1936936800817,
   "opponent": "Hiroyoshi Tenzan",
   "result": "lost"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1229.8840947570804,
+  "elo": 1229.357364245377,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1229.3290876578674,
+  "elo": 1229.3644103369027,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/08/11",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
-  "elo": 1293.3739951823454,
+  "elo": 1293.3809341381989,
   "opponent": "Manabu Nakanishi",
   "result": "won"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Togi Makabe",
   "wrestler": "Togi Makabe",
-  "elo": 820.4735920190943,
+  "elo": 820.4198965422179,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1064.9153353654833,
+  "elo": 1064.91270138369,
   "opponent": "Togi Makabe",
   "result": "won"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1028.284334032495,
+  "elo": 1028.2730763851018,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1151.9462749146628,
+  "elo": 1151.9344437399814,
   "opponent": "Tatsutoshi Goto",
   "result": "won"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
-  "elo": 1041.2019331817398,
+  "elo": 1040.8775592031352,
   "opponent": "Kendo Kashin",
   "result": "draw"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Kendo Kashin",
   "wrestler": "Kendo Kashin",
-  "elo": 1007.802961621229,
+  "elo": 1007.4588232926121,
   "opponent": "Minoru Suzuki",
   "result": "draw"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1255.889078293838,
+  "elo": 1256.7194001140665,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1258.2905106303735,
+  "elo": 1258.3857837340797,
   "opponent": "Hiroshi Tanahashi",
   "result": "won"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1039.952930223961,
+  "elo": 1038.8970189619304,
   "opponent": "Toshiaki Kawada",
   "result": "lost"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
-  "elo": 1169.3361792041376,
+  "elo": 1169.007494257806,
   "opponent": "Osamu Nishimura",
   "result": "won"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1001.4336299356357,
+  "elo": 1001.068085505513,
   "opponent": "Masahiro Chono",
   "result": "lost"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1207.7833308595923,
+  "elo": 1207.4721889331329,
   "opponent": "Tatsumi Fujinami",
   "result": "won"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1200.0840957443818,
+  "elo": 1199.5614807607253,
   "opponent": "Yuji Nagata",
   "result": "lost"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1221.9381491767388,
+  "elo": 1221.462570041547,
   "opponent": "Hiroyoshi Tenzan",
   "result": "won"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
-  "elo": 1233.1488602922923,
+  "elo": 1233.1294654853803,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/08/13",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
-  "elo": 1315.654460655651,
+  "elo": 1315.6593838567032,
   "opponent": "Shinsuke Nakamura",
   "result": "won"
  },
  {
   "date": "2005/08/14",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 684.6892031978824,
+  "elo": 684.9231696278795,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/08/14",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1018.2988258600013,
+  "elo": 1019.0956928636327,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/08/14",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 975.9714992015171,
+  "elo": 976.2130719911622,
   "opponent": "Lizmark Jr.",
   "result": "lost"
  },
  {
   "date": "2005/08/14",
+  "wrestling_as": "Lizmark Jr.",
   "wrestler": "Lizmark Jr.",
-  "elo": 1054.352997891843,
+  "elo": 1054.3932447480738,
   "opponent": "Takashi Iizuka",
   "result": "won"
  },
  {
   "date": "2005/08/14",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
   "elo": 1037.9431463618942,
   "opponent": "Hangman",
@@ -4033,6 +4609,7 @@
  },
  {
   "date": "2005/08/14",
+  "wrestling_as": "Hangman",
   "wrestler": "Hangman",
   "elo": 1064.3039652865361,
   "opponent": "Hiro Saito",
@@ -4040,2255 +4617,2577 @@
  },
  {
   "date": "2005/08/14",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
-  "elo": 1206.3268996882712,
+  "elo": 1206.2866247701184,
   "opponent": "Masahiro Chono",
   "result": "lost"
  },
  {
   "date": "2005/08/14",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1266.3492611105073,
+  "elo": 1266.0773424623333,
   "opponent": "Shinsuke Nakamura; Kazuyuki Fujita",
   "result": "won"
  },
  {
   "date": "2005/08/14",
+  "wrestling_as": "Toshiaki Kawada",
   "wrestler": "Toshiaki Kawada",
-  "elo": 1139.230608739653,
+  "elo": 1138.942317689609,
   "opponent": "Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/08/14",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
-  "elo": 1298.9632762409994,
+  "elo": 1298.9296593268634,
   "opponent": "Toshiaki Kawada; Masahiro Chono",
   "result": "lost"
  },
  {
   "date": "2005/08/17",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 434.74546101194517,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 437.64508425415085,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/08/17",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 616.0367017545565,
+  "elo": 619.0248963870898,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/08/17",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 604.0772530384625,
+  "elo": 604.6434365859151,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/08/17",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 833.5257255617707,
+  "elo": 834.6276054468093,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/08/17",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
-  "elo": 746.6174497434176,
+  "elo": 746.7693285555406,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "2005/08/17",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1029.2213104842072,
+  "elo": 1029.436860696707,
   "opponent": "Ryushi Yanagisawa",
   "result": "won"
  },
  {
   "date": "2005/08/17",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 1051.116217818504,
+  "elo": 1051.152965223307,
   "opponent": "Jushin Thunder Liger",
   "result": "lost"
  },
  {
   "date": "2005/08/17",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
-  "elo": 1126.6569675596636,
+  "elo": 1126.6846435629523,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/08/18",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 379.9585986348246,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 382.32227856591396,
   "opponent": "Akiya Anzawa",
   "result": "lost"
  },
  {
   "date": "2005/08/18",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 658.864115415583,
+  "elo": 659.9662422741519,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/08/18",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 671.5647521838926,
+  "elo": 674.1762935411969,
   "opponent": "Hiroshi Nagao",
   "result": "draw"
  },
  {
   "date": "2005/08/18",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 777.9976751324347,
+  "elo": 779.4762082927023,
   "opponent": "Naofumi Yamamoto",
   "result": "draw"
  },
  {
   "date": "2005/08/18",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 1013.7069502694692,
-  "opponent": "Minoru Tanaka",
+  "elo": 1021.4970171788951,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/08/18",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1177.9378168631633,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1216.0271667473712,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/08/19",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 737.6098486877705,
+  "elo": 739.7092561851666,
   "opponent": "Masahito Kakihara",
   "result": "lost"
  },
  {
   "date": "2005/08/19",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1036.9178005178233,
+  "elo": 1041.4515993441169,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/08/19",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 358.3455533311517,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 360.4625625634505,
   "opponent": "Ryushi Yanagisawa",
   "result": "lost"
  },
  {
   "date": "2005/08/19",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
-  "elo": 768.2304950470906,
+  "elo": 768.6290445580041,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/08/19",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 978.1896947161259,
+  "elo": 979.1329892323083,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "2005/08/19",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1079.047892946711,
+  "elo": 1079.3857788229004,
   "opponent": "Masayuki Naruse",
   "result": "won"
  },
  {
   "date": "2005/08/19",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 968.067436474613,
+  "elo": 975.6734653907055,
   "opponent": "Jado",
   "result": "lost"
  },
  {
   "date": "2005/08/19",
+  "wrestling_as": "Jado",
   "wrestler": "Jado",
-  "elo": 1089.7233933787275,
+  "elo": 1096.4092813969958,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/08/20",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 354.4241969700426,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 356.4940803067771,
   "opponent": "Hiro Saito",
   "result": "lost"
  },
  {
   "date": "2005/08/20",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
-  "elo": 1039.9038245424488,
+  "elo": 1039.9273874902308,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/08/20",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 642.3335794302616,
+  "elo": 644.7046204109286,
   "opponent": "Masayuki Naruse",
   "result": "lost"
  },
  {
   "date": "2005/08/20",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1007.4208674697569,
+  "elo": 1008.6046623625766,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/08/20",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
-  "elo": 748.4387030372093,
+  "elo": 748.7950844763538,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/08/20",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1161.8421709196034,
+  "elo": 1161.8514237808065,
   "opponent": "Ryushi Yanagisawa",
   "result": "won"
  },
  {
   "date": "2005/08/20",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 921.390005222247,
+  "elo": 927.8913801270448,
   "opponent": "Gedo",
   "result": "lost"
  },
  {
   "date": "2005/08/20",
+  "wrestling_as": "Gedo",
   "wrestler": "Gedo",
-  "elo": 1198.0058076123046,
+  "elo": 1200.8447757163847,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/08/21",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 571.9577862244423,
+  "elo": 573.7989459204701,
   "opponent": "Ryushi Yanagisawa",
   "result": "lost"
  },
  {
   "date": "2005/08/21",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
-  "elo": 818.8144962430285,
+  "elo": 819.7007589668123,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/08/21",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 638.4834284598948,
+  "elo": 639.9443015296476,
   "opponent": "Masahito Kakihara",
   "result": "lost"
  },
  {
   "date": "2005/08/21",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1047.1081439956674,
+  "elo": 1051.462569716369,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/08/21",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 954.7032866249613,
+  "elo": 956.2637417772795,
   "opponent": "Katsushi Takemura",
   "result": "lost"
  },
  {
   "date": "2005/08/21",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 1048.5810836923272,
+  "elo": 1053.5552822997515,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/08/22",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 593.243338373312,
+  "elo": 595.2830668318845,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/08/22",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 716.3242965389009,
+  "elo": 718.2251352737522,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/08/22",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 349.86874077798615,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 351.9158618380166,
   "opponent": "Masayuki Naruse",
   "result": "lost"
  },
  {
   "date": "2005/08/22",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1009.6985955657851,
+  "elo": 1010.8937715969569,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/08/23",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 432.7755690957489,
-  "opponent": "Yujiro Takahashi",
+  "elo": 434.81664734902506,
+  "opponent": "Yujiro",
   "result": "lost"
  },
  {
   "date": "2005/08/23",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 510.33651005554924,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 512.382281320876,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/08/23",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1052.774431204288,
+  "elo": 1053.0852554249564,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/08/23",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1271.427241501585,
+  "elo": 1271.5360454330516,
   "opponent": "Takashi Iizuka",
   "result": "won"
  },
  {
   "date": "2005/09/01",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 698.4166552002241,
+  "elo": 701.2745791237699,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "2005/09/01",
-  "wrestler": "El Samurai",
-  "elo": 1128.1794507407085,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1140.0541980256382,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/09/02",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 459.7365346183433,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 461.958813049453,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/09/02",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 749.0166306374301,
+  "elo": 751.6980473951928,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/09/02",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1000.930106045243,
+  "elo": 1001.0445383471915,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/09/02",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1091.7972553830061,
+  "elo": 1090.9377360396952,
   "opponent": "Takashi Iizuka",
   "result": "won"
  },
  {
   "date": "2005/09/04",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 407.07898429761275,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 409.1310546017571,
   "opponent": "Akiya Anzawa",
   "result": "lost"
  },
  {
   "date": "2005/09/04",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 691.1409787806252,
+  "elo": 692.7720599773435,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/09/04",
+  "wrestling_as": "El Texano Jr.",
   "wrestler": "El Texano Jr.",
-  "elo": 957.7588325982546,
+  "elo": 957.7644850149446,
   "opponent": "Lizmark Jr.",
   "result": "lost"
  },
  {
   "date": "2005/09/04",
+  "wrestling_as": "Lizmark Jr.",
   "wrestler": "Lizmark Jr.",
-  "elo": 1096.5941652935885,
+  "elo": 1096.628759733129,
   "opponent": "El Texano Jr.",
   "result": "won"
  },
  {
   "date": "2005/09/06",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 732.5110668117429,
+  "elo": 734.8985562185854,
   "opponent": "Akiya Anzawa",
   "result": "draw"
  },
  {
   "date": "2005/09/06",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 707.6465426063124,
+  "elo": 709.5715511539508,
   "opponent": "Naofumi Yamamoto",
   "result": "draw"
  },
  {
   "date": "2005/09/06",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
-  "elo": 776.456313990959,
+  "elo": 778.0052933619727,
   "opponent": "Masahito Kakihara",
   "result": "lost"
  },
  {
   "date": "2005/09/06",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1068.2872351217022,
+  "elo": 1072.3103025187888,
   "opponent": "Ryushi Yanagisawa",
   "result": "won"
  },
  {
   "date": "2005/09/09",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 741.3878724137479,
+  "elo": 743.8924179532064,
   "opponent": "Masahito Kakihara; Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/09/09",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1080.9304170163791,
+  "elo": 1084.8498623750495,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/09/09",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 402.21947798202183,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 404.35066951886836,
   "opponent": "Katsushi Takemura",
   "result": "lost"
  },
  {
   "date": "2005/09/09",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 1051.0108368501226,
+  "elo": 1055.9454748411958,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/09/09",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 398.61239970439016,
+  "elo": 400.74366590188293,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/09/11",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 565.7975426671052,
+  "elo": 568.2560763839379,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/09/11",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 574.202729451033,
+  "elo": 576.3800074711514,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/09/11",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 398.2784512883723,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 400.44921639388014,
   "opponent": "Masahito Kakihara",
   "result": "lost"
  },
  {
   "date": "2005/09/11",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1082.9009303632038,
+  "elo": 1086.8005889375436,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/09/15",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 394.46676683585235,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 396.6745664565807,
   "opponent": "Masahito Kakihara",
   "result": "lost"
  },
  {
   "date": "2005/09/15",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1084.8067725894637,
+  "elo": 1088.6879139061932,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/09/15",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1000.8602902346032,
+  "elo": 1004.7247194777445,
   "opponent": "El Samurai",
   "result": "draw"
  },
  {
   "date": "2005/09/15",
-  "wrestler": "El Samurai",
-  "elo": 1105.1009489358876,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1115.8237091754056,
   "opponent": "Hirooki Goto",
   "result": "draw"
  },
  {
   "date": "2005/09/15",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 563.0026697451909,
+  "elo": 565.0465318652429,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/09/15",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1070.5153652184042,
+  "elo": 1070.5794391866443,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/09/17",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 390.32347564907286,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 392.47939324964665,
   "opponent": "Hangman",
   "result": "lost"
  },
  {
   "date": "2005/09/17",
+  "wrestling_as": "Hangman",
   "wrestler": "Hangman",
-  "elo": 1066.375610879926,
+  "elo": 1066.4015518900032,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/09/17",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 549.2501368428584,
+  "elo": 551.4925617267162,
   "opponent": "Harry Smith",
   "result": "lost"
  },
  {
   "date": "2005/09/17",
+  "wrestling_as": "Harry Smith",
   "wrestler": "Harry Smith",
-  "elo": 1000.2625242308276,
+  "elo": 1000.4783408324835,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/09/17",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1011.8514377674176,
+  "elo": 1012.073491465241,
   "opponent": "Masayuki Naruse",
   "result": "lost"
  },
  {
   "date": "2005/09/17",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1068.3625230167718,
+  "elo": 1069.3997193183602,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/09/19",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 387.10944184473937,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 389.4176463172109,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "2005/09/19",
-  "wrestler": "El Samurai",
-  "elo": 1106.7079658380544,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1117.3545826416234,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/09/19",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 952.5012945563749,
+  "elo": 952.6311993774448,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/09/19",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1060.2802492562857,
+  "elo": 1060.4868304349877,
   "opponent": "Takashi Iizuka",
   "result": "won"
  },
  {
   "date": "2005/09/19",
+  "wrestling_as": "Hangman",
   "wrestler": "Hangman",
-  "elo": 1029.7787219314755,
+  "elo": 1029.8024338690695,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/09/19",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1198.4390598680538,
+  "elo": 1198.4505418017402,
   "opponent": "Hangman",
   "result": "won"
  },
  {
   "date": "2005/09/20",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 553.5512829841707,
+  "elo": 555.6899266053186,
   "opponent": "Masahito Kakihara",
   "result": "lost"
  },
  {
   "date": "2005/09/20",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1089.5324659699738,
+  "elo": 1093.3662165361554,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/09/22",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 537.4138774210326,
+  "elo": 539.513273559215,
   "opponent": "Hangman",
   "result": "lost"
  },
  {
   "date": "2005/09/22",
+  "wrestling_as": "Hangman",
   "wrestler": "Hangman",
-  "elo": 1035.6968516423885,
+  "elo": 1035.7920779528201,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/09/22",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1017.1996000891313,
+  "elo": 1018.1173327992083,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/09/22",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1111.4431721839262,
+  "elo": 1111.7692169541397,
   "opponent": "Masayuki Naruse",
   "result": "won"
  },
  {
   "date": "2005/09/22",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 877.4908081770275,
+  "elo": 877.498086194213,
   "opponent": "Minoru Suzuki",
   "result": "lost"
  },
  {
   "date": "2005/09/22",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
-  "elo": 1078.7071763714134,
+  "elo": 1078.444115794751,
   "opponent": "Takashi Iizuka",
   "result": "won"
  },
  {
   "date": "2005/09/24",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 448.90990149919173,
+  "elo": 451.0372731808741,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/09/24",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 642.0552589060115,
+  "elo": 644.1659269836596,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/09/24",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 381.92853106857604,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 384.1961870828503,
   "opponent": "Masayuki Naruse",
   "result": "lost"
  },
  {
   "date": "2005/09/24",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1019.790055477213,
+  "elo": 1020.7280624163885,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/09/24",
+  "wrestling_as": "Hangman",
   "wrestler": "Hangman",
-  "elo": 993.7009073127059,
+  "elo": 993.6621970775283,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/09/24",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1133.7931997126889,
+  "elo": 1133.0676169149872,
   "opponent": "Hangman",
   "result": "won"
  },
  {
   "date": "2005/09/25",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 329.866461082099,
-  "opponent": "Yujiro Takahashi",
+  "elo": 332.03274854532424,
+  "opponent": "Yujiro",
   "result": "lost"
  },
  {
   "date": "2005/09/25",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 500.97197148566875,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 503.20071171840016,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/09/25",
+  "wrestling_as": "Hangman",
   "wrestler": "Hangman",
-  "elo": 901.195886002329,
+  "elo": 901.4366587510665,
   "opponent": "Masayuki Naruse",
   "result": "lost"
  },
  {
   "date": "2005/09/25",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1066.0425661324014,
+  "elo": 1066.8408315796194,
   "opponent": "Hangman",
   "result": "won"
  },
  {
   "date": "2005/09/25",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 1012.3153796867624,
+  "elo": 1015.763950315754,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "2005/09/25",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1031.9249807434503,
+  "elo": 1032.702618635016,
   "opponent": "Masahito Kakihara",
   "result": "won"
  },
  {
   "date": "2005/09/25",
+  "wrestling_as": "Harry Smith",
   "wrestler": "Harry Smith",
-  "elo": 968.5857138858207,
+  "elo": 968.6841300870718,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/09/25",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1165.4700100576956,
+  "elo": 1164.8618276603988,
   "opponent": "Harry Smith",
   "result": "won"
  },
  {
   "date": "2005/09/28",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 680.3717615366288,
+  "elo": 682.0331569501186,
   "opponent": "Tatsutoshi Goto",
   "result": "lost"
  },
  {
   "date": "2005/09/28",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 1041.921724567337,
+  "elo": 1042.042273487018,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/09/28",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 328.52776563587605,
+  "elo": 330.67745765562836,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/09/28",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1199.1084075911654,
+  "elo": 1199.1281872465881,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/09/28",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1011.1483722270965,
+  "elo": 1011.9436975898916,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "2005/09/28",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1086.819174648755,
+  "elo": 1087.5997526247438,
   "opponent": "Masayuki Naruse",
   "result": "won"
  },
  {
   "date": "2005/09/28",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1056.7459756326955,
+  "elo": 1056.9880030066663,
   "opponent": "Minoru Suzuki",
   "result": "lost"
  },
  {
   "date": "2005/09/28",
+  "wrestling_as": "Minoru Suzuki",
   "wrestler": "Minoru Suzuki",
-  "elo": 1133.4043729226441,
+  "elo": 1133.2253297422244,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/10/07",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 326.2855208479894,
+  "elo": 328.54110376825366,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "2005/10/07",
-  "wrestler": "El Samurai",
-  "elo": 1107.8290882319977,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1118.4227595853108,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/10/08",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1182.8362825210472,
+  "elo": 1182.3840537296592,
   "opponent": "Matt Morgan",
   "result": "lost"
  },
  {
   "date": "2005/10/08",
+  "wrestling_as": "Matt Morgan",
   "wrestler": "Matt Morgan",
-  "elo": 1078.203733311383,
+  "elo": 1078.1570326237754,
   "opponent": "Yuji Nagata",
   "result": "won"
  },
  {
   "date": "2005/10/08",
-  "wrestler": "Tiger Mask",
-  "elo": 1202.214927964484,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1206.2358271330934,
   "opponent": "Black Tiger",
   "result": "lost"
  },
  {
   "date": "2005/10/08",
-  "wrestler": "Black Tiger",
-  "elo": 1131.0086224540705,
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger IV / Black Tiger",
+  "elo": 1131.7305208593116,
   "opponent": "Tiger Mask",
   "result": "won"
  },
  {
   "date": "2005/10/08",
+  "wrestling_as": "Kazuyuki Fujita",
   "wrestler": "Kazuyuki Fujita",
-  "elo": 1277.7569297509542,
+  "elo": 1277.723935604858,
   "opponent": "Brock Lesnar (winner), Masahiro Chono",
   "result": "lost"
  },
  {
   "date": "2005/10/08",
+  "wrestling_as": "Masahiro Chono",
   "wrestler": "Masahiro Chono",
-  "elo": 1246.2505556261146,
+  "elo": 1245.9847936197013,
   "opponent": "Brock Lesnar (winner), Kazuyuki Fujita",
   "result": "lost"
  },
  {
   "date": "2005/10/08",
+  "wrestling_as": "Brock Lesnar",
   "wrestler": "Brock Lesnar",
-  "elo": 1041.305051974438,
+  "elo": 1041.2982725646373,
   "opponent": "Kazuyuki Fujita, Masahiro Chono",
   "result": "won"
  },
  {
   "date": "2005/10/22",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 298.3439062537776,
+  "elo": 300.5794307671931,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/10/22",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 669.9968735002233,
+  "elo": 672.1275999847201,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/10/22",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 466.97727897910937,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 469.09546492089225,
   "opponent": "Ryushi Yanagisawa",
   "result": "lost"
  },
  {
   "date": "2005/10/22",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
-  "elo": 810.4510064975184,
+  "elo": 812.1105401594806,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/10/22",
+  "wrestling_as": "Starman",
   "wrestler": "Starman",
-  "elo": 976.2066517664981,
+  "elo": 976.6237915868895,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/10/22",
-  "wrestler": "Tiger Mask",
-  "elo": 1214.111602081235,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1217.9239313396486,
   "opponent": "Starman",
   "result": "won"
  },
  {
   "date": "2005/10/23",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 616.1550351498454,
+  "elo": 617.8159633204567,
   "opponent": "Ryushi Yanagisawa",
   "result": "lost"
  },
  {
   "date": "2005/10/23",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
-  "elo": 874.6677328843018,
+  "elo": 876.3277337891425,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/10/23",
+  "wrestling_as": "Sangre Azteca",
   "wrestler": "Sangre Azteca",
-  "elo": 977.4260282797312,
+  "elo": 977.80728511762,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/10/23",
-  "wrestler": "Tiger Mask",
-  "elo": 1225.3985879413694,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1229.0202887808384,
   "opponent": "Sangre Azteca",
   "result": "won"
  },
  {
   "date": "2005/10/23",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 644.1535565701097,
+  "elo": 645.9591819616381,
   "opponent": "Tatsumi Fujinami",
   "result": "lost"
  },
  {
   "date": "2005/10/23",
+  "wrestling_as": "Tatsumi Fujinami",
   "wrestler": "Tatsumi Fujinami",
-  "elo": 1014.3552884006925,
+  "elo": 1014.152294517054,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/10/24",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 475.675726865249,
-  "opponent": "Yujiro Takahashi",
+  "elo": 477.4467578212374,
+  "opponent": "Yujiro",
   "result": "lost"
  },
  {
   "date": "2005/10/24",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 607.4565872637058,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 609.4646704201116,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/10/24",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 628.9621909588449,
+  "elo": 630.6174584675571,
   "opponent": "Matt Morgan",
   "result": "lost"
  },
  {
   "date": "2005/10/24",
+  "wrestling_as": "Matt Morgan",
   "wrestler": "Matt Morgan",
-  "elo": 1085.7994161170154,
+  "elo": 1085.827894370816,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/10/25",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 513.6385045086969,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 515.5454209214151,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/10/25",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 722.7802737138538,
+  "elo": 724.5367079662535,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/10/25",
+  "wrestling_as": "Starman",
   "wrestler": "Starman",
-  "elo": 928.5188943335735,
-  "opponent": "Minoru Tanaka",
+  "elo": 936.3614613399031,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/10/25",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1201.7816955796256,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1226.0927493091178,
   "opponent": "Starman",
   "result": "won"
  },
  {
   "date": "2005/10/25",
+  "wrestling_as": "Mark Jindrak",
   "wrestler": "Mark Jindrak",
-  "elo": 975.880884991131,
+  "elo": 975.882968787978,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/10/25",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1223.2275226000345,
+  "elo": 1223.2452184586102,
   "opponent": "Mark Jindrak",
   "result": "won"
  },
  {
   "date": "2005/10/27",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 467.48267001396755,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 469.35882406855876,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/10/27",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 768.9361082085832,
+  "elo": 770.7233048191099,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/10/27",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 913.9297493536063,
+  "elo": 917.3672664515727,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/10/27",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 495.1151669200898,
+  "elo": 497.37279849555546,
   "opponent": "Masahito Kakihara",
   "result": "won"
  },
  {
   "date": "2005/10/27",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1090.606185434125,
+  "elo": 1090.0641675735478,
   "opponent": "Mark Jindrak",
   "result": "lost"
  },
  {
   "date": "2005/10/27",
+  "wrestling_as": "Mark Jindrak",
   "wrestler": "Mark Jindrak",
-  "elo": 1125.6085342382721,
+  "elo": 1125.4782889616802,
   "opponent": "Osamu Nishimura",
   "result": "won"
  },
  {
   "date": "2005/10/28",
+  "wrestling_as": "Starman",
   "wrestler": "Starman",
-  "elo": 743.7625795682338,
+  "elo": 751.1585460969683,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/10/28",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 679.8714816854294,
+  "elo": 682.5757137384903,
   "opponent": "Starman",
   "result": "won"
  },
  {
   "date": "2005/10/28",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 727.107896665575,
+  "elo": 728.553747906188,
   "opponent": "Black Strong Machine",
   "result": "lost"
  },
  {
   "date": "2005/10/28",
+  "wrestling_as": "Black Strong Machine",
   "wrestler": "Black Strong Machine",
-  "elo": 1020.9141057715041,
+  "elo": 1021.0847784564609,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/10/28",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 869.3760947818905,
+  "elo": 872.2699414810422,
   "opponent": "Black Tiger",
   "result": "lost"
  },
  {
   "date": "2005/10/28",
-  "wrestler": "Black Tiger",
-  "elo": 1153.2854497399285,
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger IV / Black Tiger",
+  "elo": 1154.2791833445767,
   "opponent": "Masahito Kakihara",
   "result": "won"
  },
  {
   "date": "2005/10/28",
+  "wrestling_as": "Sangre Azteca",
   "wrestler": "Sangre Azteca",
-  "elo": 900.6592177770261,
+  "elo": 902.9959472480813,
   "opponent": "Koji Kanemoto",
   "result": "lost"
  },
  {
   "date": "2005/10/28",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1098.0311103228423,
+  "elo": 1104.6519847798133,
   "opponent": "Sangre Azteca",
   "result": "won"
  },
  {
   "date": "2005/10/29",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 613.5953184081234,
+  "elo": 615.3969200754909,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/10/29",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 793.3840599428811,
+  "elo": 795.7325415691874,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/10/29",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 463.7696403250368,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 465.6073868211419,
   "opponent": "Blue Wolf",
   "result": "lost"
  },
  {
   "date": "2005/10/29",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1158.604404830392,
+  "elo": 1158.6780621678304,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/10/30",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 437.6893327101858,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 439.59368483429864,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/10/30",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 819.4643675577321,
+  "elo": 821.7462435560307,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/10/30",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 910.5754996305017,
+  "elo": 914.3362696990235,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/10/30",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 794.1648996163266,
+  "elo": 796.1738196329328,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/10/30",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1055.9164816953732,
+  "elo": 1061.7457340068336,
   "opponent": "Black Tiger",
   "result": "lost"
  },
  {
   "date": "2005/10/30",
-  "wrestler": "Black Tiger",
-  "elo": 1195.4000783673976,
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger IV / Black Tiger",
+  "elo": 1197.1854341175565,
   "opponent": "Koji Kanemoto",
   "result": "won"
  },
  {
   "date": "2005/10/30",
+  "wrestling_as": "Scott Norton",
   "wrestler": "Scott Norton",
-  "elo": 890.9483746991251,
+  "elo": 890.8767373308563,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/10/30",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1277.0791725839358,
+  "elo": 1277.1820929885262,
   "opponent": "Scott Norton",
   "result": "won"
  },
  {
   "date": "2005/10/31",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 417.69741655082447,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 419.6408382767295,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/10/31",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 839.4562837170935,
+  "elo": 841.6990901135998,
   "opponent": "Yujiro",
   "result": "won"
  },
  {
   "date": "2005/10/31",
+  "wrestling_as": "Starman",
   "wrestler": "Starman",
-  "elo": 688.3970452646831,
+  "elo": 694.9512641745282,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/10/31",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 965.9410339340524,
+  "elo": 970.5435516214636,
   "opponent": "Starman",
   "result": "won"
  },
  {
   "date": "2005/10/31",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 459.73530891367864,
+  "elo": 461.55404603342214,
   "opponent": "Sangre Azteca",
   "result": "lost"
  },
  {
   "date": "2005/10/31",
+  "wrestling_as": "Sangre Azteca",
   "wrestler": "Sangre Azteca",
-  "elo": 916.5996357285965,
+  "elo": 918.8886590358965,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/10/31",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 748.0604975368843,
+  "elo": 750.7113468362655,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/10/31",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 915.4804968613328,
+  "elo": 917.7324142777095,
   "opponent": "Masahito Kakihara",
   "result": "won"
  },
  {
   "date": "2005/11/03",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 851.5185896837455,
+  "elo": 855.4592789675787,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/11/03",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 1029.9029411116396,
+  "elo": 1032.8166869315944,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/11/03",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
-  "elo": 1014.0828831325547,
+  "elo": 1014.1057991830569,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/11/03",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1236.1379933049816,
+  "elo": 1236.1560126121972,
   "opponent": "Hiro Saito",
   "result": "won"
  },
  {
   "date": "2005/11/03",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1011.6034824432062,
+  "elo": 1011.7337172551074,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/11/03",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1135.7486786236143,
+  "elo": 1135.3184533251067,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/11/03",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
-  "elo": 947.92238592294,
+  "elo": 948.2290663115656,
   "opponent": "Sangre Azteca",
   "result": "lost"
  },
  {
   "date": "2005/11/03",
+  "wrestling_as": "Sangre Azteca",
   "wrestler": "Sangre Azteca",
-  "elo": 1043.1773092246642,
+  "elo": 1044.852971754713,
   "opponent": "Ryusuke Taguchi",
   "result": "won"
  },
  {
   "date": "2005/11/04",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 440.75641048830624,
+  "elo": 442.78393890204734,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/11/04",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 870.4974881091179,
+  "elo": 874.2293860989536,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/11/04",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 789.3694884551578,
+  "elo": 791.7571564254322,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/11/04",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 1054.9463387426074,
+  "elo": 1057.787653775678,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/11/04",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 914.3277382793349,
-  "opponent": "Yujiro Takahashi",
+  "elo": 915.1434710035509,
+  "opponent": "Yujiro",
   "result": "lost"
  },
  {
   "date": "2005/11/04",
-  "wrestler": "Yujiro Takahashi",
-  "elo": 611.3386844463478,
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 613.2412914494109,
   "opponent": "Masayuki Naruse",
   "result": "won"
  },
  {
   "date": "2005/11/04",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 981.580534321678,
+  "elo": 981.7039262920005,
   "opponent": "Blue Wolf",
   "result": "lost"
  },
  {
   "date": "2005/11/04",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1188.6273529519203,
+  "elo": 1188.7078531309373,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/11/23",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 995.7163991476721,
+  "elo": 999.9532001969113,
   "opponent": "Hiro Saito",
   "result": "lost"
  },
  {
   "date": "2005/11/23",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
-  "elo": 1069.377320835005,
+  "elo": 1070.0980738273413,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/11/23",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1057.5957373622662,
+  "elo": 1057.2882202021276,
   "opponent": "Masayuki Naruse",
   "result": "lost"
  },
  {
   "date": "2005/11/23",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1070.633620802031,
+  "elo": 1071.2039372495092,
   "opponent": "Osamu Nishimura",
   "result": "won"
  },
  {
   "date": "2005/11/26",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 861.1589752157554,
+  "elo": 865.2678724784389,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/11/26",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1005.0549120410345,
+  "elo": 1008.914713817426,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/11/26",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
-  "elo": 857.5797872519834,
+  "elo": 857.8342023535524,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/11/26",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1071.9231329926345,
+  "elo": 1072.0987902500135,
   "opponent": "Ryusuke Taguchi",
   "result": "won"
  },
  {
   "date": "2005/11/26",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 972.7635169288623,
+  "elo": 975.5666262155288,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/11/26",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 953.7351320826481,
+  "elo": 956.1992115457308,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/11/26",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 737.8577203711011,
+  "elo": 740.4066224232884,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/11/26",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1258.439772585284,
+  "elo": 1259.2955812173109,
   "opponent": "Masahito Kakihara",
   "result": "won"
  },
  {
   "date": "2005/11/27",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 760.128838550509,
+  "elo": 763.1286166535501,
   "opponent": "Ryusuke Taguchi",
   "result": "lost"
  },
  {
   "date": "2005/11/27",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
-  "elo": 958.6099239172297,
+  "elo": 959.9734581784412,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/11/27",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 900.5534654050313,
+  "elo": 902.657280017489,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/11/27",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1108.02815875455,
+  "elo": 1108.5534633490333,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/11/27",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 1038.6592312990917,
-  "opponent": "Minoru Tanaka",
+  "elo": 1042.126202605422,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/11/27",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1217.7688903310952,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1240.6316166311615,
   "opponent": "Masayuki Naruse",
   "result": "won"
  },
  {
   "date": "2005/11/27",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 994.1758673108486,
+  "elo": 994.2349343929307,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/11/27",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1105.3415946187545,
+  "elo": 1105.095559296215,
   "opponent": "Tatsutoshi Goto",
   "result": "won"
  },
  {
   "date": "2005/11/27",
+  "wrestling_as": "Masahito Kakihara",
   "wrestler": "Masahito Kakihara",
-  "elo": 710.2313448799324,
+  "elo": 713.2267971282567,
   "opponent": "Koji Kanemoto",
   "result": "lost"
  },
  {
   "date": "2005/11/27",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1069.7296694409577,
+  "elo": 1075.3356466543494,
   "opponent": "Masahito Kakihara",
   "result": "won"
  },
  {
   "date": "2005/11/30",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 829.7560308709974,
+  "elo": 832.3214727838746,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/11/30",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1040.4536293080514,
+  "elo": 1044.0826174342333,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/11/30",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 744.482740481081,
+  "elo": 747.2384351245605,
   "opponent": "Blue Wolf",
   "result": "lost"
  },
  {
   "date": "2005/11/30",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1196.4504019866342,
+  "elo": 1196.6529438954321,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/11/30",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
-  "elo": 1024.916790790427,
+  "elo": 1025.6097600111218,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/11/30",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1152.488688799128,
+  "elo": 1153.0417771652528,
   "opponent": "Hiro Saito",
   "result": "won"
  },
  {
   "date": "2005/11/30",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 894.79727697202,
+  "elo": 896.610773552589,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/11/30",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1134.8105221740684,
+  "elo": 1134.8897782927859,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/12/03",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 834.4256580739901,
+  "elo": 836.6787206921624,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/12/03",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1070.6394387570663,
+  "elo": 1074.0486438644466,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/12/03",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 431.0981217230875,
+  "elo": 433.0904556967868,
   "opponent": "Ryusuke Taguchi",
   "result": "lost"
  },
  {
   "date": "2005/12/03",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
-  "elo": 968.2682126824484,
+  "elo": 969.6669413837017,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/12/03",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 802.7640590655525,
+  "elo": 805.0578781016322,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/12/03",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1165.9846747018505,
+  "elo": 1166.673574506374,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/12/03",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 986.6825658650429,
+  "elo": 989.7510843360868,
   "opponent": "Hiro Saito",
   "result": "lost"
  },
  {
   "date": "2005/12/03",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
-  "elo": 1076.8934562244758,
+  "elo": 1077.984878280457,
   "opponent": "Masayuki Naruse",
   "result": "won"
  },
  {
   "date": "2005/12/04",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 808.598174968917,
+  "elo": 810.6480397509763,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/12/04",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1178.898416254387,
+  "elo": 1179.688914976967,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/12/04",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 768.5487197130551,
+  "elo": 770.6457832382289,
   "opponent": "Hiro Saito",
   "result": "lost"
  },
  {
   "date": "2005/12/04",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
-  "elo": 1094.0011259007244,
+  "elo": 1095.1909257121588,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/12/04",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 954.3851065017976,
+  "elo": 954.4366414849646,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/12/04",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1246.0856835072443,
+  "elo": 1246.1055858391887,
   "opponent": "Tatsutoshi Goto",
   "result": "won"
  },
  {
   "date": "2005/12/06",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 831.0262785868663,
+  "elo": 833.9021019737652,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/12/06",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 924.2050069912316,
+  "elo": 926.4947656005506,
   "opponent": "Masayuki Naruse",
   "result": "won"
  },
  {
   "date": "2005/12/06",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 427.11281986359694,
+  "elo": 429.2940192740542,
   "opponent": "El Samurai",
   "result": "lost"
  },
  {
   "date": "2005/12/06",
-  "wrestler": "El Samurai",
-  "elo": 1109.821739161743,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1120.3209777966772,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/12/07",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 792.106655468377,
+  "elo": 794.3344947574324,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/12/07",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 940.6965264917716,
+  "elo": 942.8083105940946,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/12/07",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 1041.5463090198793,
+  "elo": 1044.9807415894509,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/12/07",
-  "wrestler": "Tiger Mask",
-  "elo": 1239.945152809963,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1243.5542399183362,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/12/08",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 772.6283974780262,
+  "elo": 774.710284226906,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/12/08",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1188.6375452495624,
+  "elo": 1189.5010202422302,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/12/08",
-  "wrestler": "El Samurai",
-  "elo": 1063.4117259274954,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1072.4163687427815,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/12/08",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1181.220535408316,
+  "elo": 1182.7943873466816,
   "opponent": "El Samurai",
   "result": "won"
  },
  {
   "date": "2005/12/08",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 981.1543783188192,
+  "elo": 984.3088487048369,
   "opponent": "Ryusuke Taguchi",
   "result": "lost"
  },
  {
   "date": "2005/12/08",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
-  "elo": 1089.0520740845686,
+  "elo": 1091.0107271529296,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/12/08",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1222.0058533079434,
+  "elo": 1222.8573814072902,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "2005/12/08",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1159.687013203436,
+  "elo": 1160.476152244785,
   "opponent": "Hiroshi Tanahashi",
   "result": "won"
  },
  {
   "date": "2005/12/09",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 795.7732247578647,
+  "elo": 797.8781405836135,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/12/09",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 917.551699211933,
+  "elo": 919.6404542373871,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/12/09",
+  "wrestling_as": "Masayuki Naruse",
   "wrestler": "Masayuki Naruse",
-  "elo": 808.3885395227763,
+  "elo": 811.0307651724466,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/12/09",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1199.9564147816075,
+  "elo": 1200.9366886428895,
   "opponent": "Masayuki Naruse",
   "result": "won"
  },
  {
   "date": "2005/12/10",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 764.5719681104472,
+  "elo": 766.6547057242498,
   "opponent": "Ryusuke Taguchi",
   "result": "lost"
  },
  {
   "date": "2005/12/10",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
-  "elo": 1104.6527024082775,
+  "elo": 1106.6224445826115,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/12/10",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 419.1988938806466,
+  "elo": 421.4225676995372,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/12/10",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 989.0683043017696,
+  "elo": 992.1803002793539,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/12/10",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
-  "elo": 1020.5872301804076,
+  "elo": 1021.8781535348514,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/12/10",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 1064.3794906525668,
+  "elo": 1066.2659985920018,
   "opponent": "Hiro Saito",
   "result": "won"
  },
  {
   "date": "2005/12/10",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1182.717654309442,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1204.5605777398089,
   "opponent": "Koji Kanemoto",
   "result": "lost"
  },
  {
   "date": "2005/12/10",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1139.8321414842642,
+  "elo": 1147.4777244370543,
   "opponent": "Minoru",
   "result": "won"
  },
  {
   "date": "2005/12/10",
-  "wrestler": "Tiger Mask",
-  "elo": 1207.0705344019693,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1210.4482458418324,
   "opponent": "Jushin Thunder Liger",
   "result": "lost"
  },
  {
   "date": "2005/12/10",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
-  "elo": 1192.4062043756508,
+  "elo": 1192.89663171596,
   "opponent": "Tiger Mask",
   "result": "won"
  },
  {
   "date": "2005/12/10",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1237.3137572172113,
+  "elo": 1237.4115385304744,
   "opponent": "Brock Lesnar",
   "result": "lost"
  },
  {
   "date": "2005/12/10",
+  "wrestling_as": "Brock Lesnar",
   "wrestler": "Brock Lesnar",
-  "elo": 1120.8358827078869,
+  "elo": 1120.8393814807405,
   "opponent": "Manabu Nakanishi",
   "result": "won"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 832.1608955431135,
+  "elo": 835.072922205453,
   "opponent": "Hiroshi Nagao",
   "result": "lost"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 921.4793768691032,
+  "elo": 923.7620837981507,
   "opponent": "Hirooki Goto",
   "result": "won"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 1020.1494522722783,
+  "elo": 1022.0477787382969,
   "opponent": "Ryusuke Taguchi",
   "result": "lost"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
-  "elo": 1148.882740788566,
+  "elo": 1150.8406644363163,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1144.186994189123,
+  "elo": 1173.0384090710545,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1215.4564337959205,
+  "elo": 1216.272711388455,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Hiro Saito",
   "wrestler": "Hiro Saito",
-  "elo": 992.1866955115898,
+  "elo": 993.510725572016,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1209.6210700771337,
+  "elo": 1211.1618153095171,
   "opponent": "Hiro Saito",
   "result": "won"
  },
  {
   "date": "2005/12/11",
-  "wrestler": "Tiger Mask",
-  "elo": 1177.2918532559243,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1180.966123628586,
   "opponent": "Koji Kanemoto",
   "result": "lost"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1199.3895037763546,
+  "elo": 1206.4419688635471,
   "opponent": "Tiger Mask",
   "result": "won"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
-  "elo": 1141.0122712402792,
-  "opponent": "Minoru Tanaka",
+  "elo": 1144.5745781529372,
+  "opponent": "Minoru",
   "result": "lost"
  },
  {
   "date": "2005/12/11",
-  "wrestler": "Minoru Tanaka",
-  "elo": 1234.1115874448135,
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Heat",
+  "elo": 1228.7216045213204,
   "opponent": "Jushin Thunder Liger",
   "result": "won"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1124.0072295910575,
+  "elo": 1123.618554971296,
   "opponent": "Brock Lesnar",
   "result": "lost"
  },
  {
   "date": "2005/12/11",
+  "wrestling_as": "Brock Lesnar",
   "wrestler": "Brock Lesnar",
-  "elo": 1179.6649356378766,
+  "elo": 1179.6048802391037,
   "opponent": "Yuji Nagata",
   "result": "won"
  },
  {
   "date": "2005/12/16",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 849.1392549018383,
+  "elo": 851.3197612389532,
   "opponent": "Naofumi Yamamoto",
   "result": "lost"
  },
  {
   "date": "2005/12/16",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 1056.3195132559108,
+  "elo": 1058.2689400178956,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/12/16",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 726.2727629834129,
+  "elo": 731.3668305918932,
   "opponent": "Toru Yano",
   "result": "lost"
  },
  {
   "date": "2005/12/16",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1153.291982937957,
+  "elo": 1180.9742113373882,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/12/16",
+  "wrestling_as": "Tatsutoshi Goto",
   "wrestler": "Tatsutoshi Goto",
-  "elo": 922.9438531074791,
+  "elo": 922.9905626214581,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/12/16",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1253.945996855824,
+  "elo": 1253.9671055550652,
   "opponent": "Tatsutoshi Goto",
   "result": "won"
  },
  {
   "date": "2005/12/16",
+  "wrestling_as": "Akiya Anzawa",
   "wrestler": "Akiya Anzawa",
-  "elo": 416.9821627229494,
+  "elo": 419.2659506879064,
   "opponent": "Koji Kanemoto",
   "result": "lost"
  },
  {
   "date": "2005/12/16",
+  "wrestling_as": "Koji Kanemoto",
   "wrestler": "Koji Kanemoto",
-  "elo": 1200.4978693552032,
+  "elo": 1206.981123116455,
   "opponent": "Akiya Anzawa",
   "result": "won"
  },
  {
   "date": "2005/12/16",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
-  "elo": 1102.9620533323846,
+  "elo": 1105.1652341612091,
   "opponent": "Tiger Mask",
   "result": "lost"
  },
  {
   "date": "2005/12/16",
-  "wrestler": "Tiger Mask",
-  "elo": 1223.2125407121057,
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1226.6415539036932,
   "opponent": "Ryusuke Taguchi",
   "result": "won"
  },
  {
   "date": "2005/12/18",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
-  "elo": 1020.3431287222618,
+  "elo": 1022.6049829835675,
   "opponent": "Hirooki Goto",
   "result": "lost"
  },
  {
   "date": "2005/12/18",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 997.3987447633591,
+  "elo": 1000.193424560736,
   "opponent": "Ryusuke Taguchi",
   "result": "won"
  },
  {
   "date": "2005/12/18",
+  "wrestling_as": "Katsushi Takemura",
   "wrestler": "Katsushi Takemura",
-  "elo": 714.6159672297507,
+  "elo": 719.4834577940219,
   "opponent": "Osamu Nishimura",
   "result": "lost"
  },
  {
   "date": "2005/12/18",
+  "wrestling_as": "Osamu Nishimura",
   "wrestler": "Osamu Nishimura",
-  "elo": 1212.5352690155494,
+  "elo": 1214.132658508985,
   "opponent": "Katsushi Takemura",
   "result": "won"
  },
  {
   "date": "2005/12/18",
+  "wrestling_as": "Ryushi Yanagisawa",
   "wrestler": "Ryushi Yanagisawa",
-  "elo": 847.5478194696484,
+  "elo": 849.0105406093699,
   "opponent": "Blue Wolf",
   "result": "lost"
  },
  {
   "date": "2005/12/18",
+  "wrestling_as": "Blue Wolf",
   "wrestler": "Blue Wolf",
-  "elo": 1210.0103586939608,
+  "elo": 1210.3115404853183,
   "opponent": "Ryushi Yanagisawa",
   "result": "won"
  },
  {
   "date": "2005/12/18",
+  "wrestling_as": "Chocoball Mukai",
   "wrestler": "Chocoball Mukai",
-  "elo": 967.1249764622728,
+  "elo": 967.0755842645879,
   "opponent": "Yuji Nagata",
   "result": "lost"
  },
  {
   "date": "2005/12/18",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1156.8822531287847,
+  "elo": 1156.542970706708,
   "opponent": "Chocoball Mukai",
   "result": "won"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Ryusuke Taguchi",
   "wrestler": "Ryusuke Taguchi",
-  "elo": 995.8006137958345,
+  "elo": 997.9080362686808,
   "opponent": "Takashi Iizuka",
   "result": "lost"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Takashi Iizuka",
   "wrestler": "Takashi Iizuka",
-  "elo": 1227.7276912591342,
+  "elo": 1228.6211847458985,
   "opponent": "Ryusuke Taguchi",
   "result": "won"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Toru Yano",
   "wrestler": "Toru Yano",
-  "elo": 1117.3851713973686,
+  "elo": 1141.3268644299105,
   "opponent": "Yutaka Yoshie",
   "result": "lost"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Yutaka Yoshie",
   "wrestler": "Yutaka Yoshie",
-  "elo": 1271.8994026261182,
+  "elo": 1273.790779008804,
   "opponent": "Toru Yano",
   "result": "won"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Hiroshi Nagao",
   "wrestler": "Hiroshi Nagao",
-  "elo": 829.8004905871587,
+  "elo": 831.7705458536476,
   "opponent": "Manabu Nakanishi",
   "result": "lost"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Manabu Nakanishi",
   "wrestler": "Manabu Nakanishi",
-  "elo": 1242.1484482958813,
+  "elo": 1242.2988423768008,
   "opponent": "Hiroshi Nagao",
   "result": "won"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Naofumi Yamamoto",
   "wrestler": "Naofumi Yamamoto",
-  "elo": 1026.6589007037003,
+  "elo": 1028.368813679451,
   "opponent": "Shinsuke Nakamura",
   "result": "lost"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Shinsuke Nakamura",
   "wrestler": "Shinsuke Nakamura",
-  "elo": 1221.1572059643765,
+  "elo": 1221.2366879393408,
   "opponent": "Naofumi Yamamoto",
   "result": "won"
  },
  {
   "date": "2005/12/25",
-  "wrestler": "El Samurai",
-  "elo": 1032.1250197939146,
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai / Osamu Matsuda",
+  "elo": 1039.9387100854663,
   "opponent": "Hiroyoshi Tenzan",
   "result": "lost"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Hiroyoshi Tenzan",
   "wrestler": "Hiroyoshi Tenzan",
-  "elo": 1215.7274488111723,
+  "elo": 1232.0391394180406,
   "opponent": "El Samurai",
   "result": "won"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Jushin Thunder Liger",
   "wrestler": "Jushin Thunder Liger",
-  "elo": 1093.2945581647423,
+  "elo": 1096.2962873266881,
   "opponent": "Yuji Nagata",
   "result": "lost"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Yuji Nagata",
   "wrestler": "Yuji Nagata",
-  "elo": 1204.5999662043216,
+  "elo": 1204.8212615329571,
   "opponent": "Jushin Thunder Liger",
   "result": "won"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Hirooki Goto",
   "wrestler": "Hirooki Goto",
-  "elo": 954.3277073463613,
+  "elo": 978.4682914670962,
   "opponent": "Hiroshi Tanahashi",
   "result": "lost"
  },
  {
   "date": "2005/12/25",
+  "wrestling_as": "Hiroshi Tanahashi",
   "wrestler": "Hiroshi Tanahashi",
-  "elo": 1232.7736126621928,
+  "elo": 1233.71994795411,
   "opponent": "Hirooki Goto",
   "result": "won"
  }
