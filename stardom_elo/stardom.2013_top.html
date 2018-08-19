@@ -1,0 +1,1751 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/latest/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+const params = location.hash.match(/filter=(.+)/);
+let selectedCategories = null;
+if(params) {
+    selectedCategories = JSON.parse(decodeURIComponent(params[1]));
+}
+
+var datasource = [
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Kellie Skater",
+  "wrestler": "Kellie Skater",
+  "elo": 948.6112979507844,
+  "opponent": "Io Shirai; Miho Wakizawa (winner), Act Yasukawa, Hailey Hatred, Hiroyo Matsumoto, Io Shirai, Kairi Hojo, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1048.1185520672823,
+  "opponent": "Kellie Skater; Miho Wakizawa (winner), Act Yasukawa, Hailey Hatred, Hiroyo Matsumoto, Kairi Hojo, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 998.3333333333334,
+  "opponent": "Miho Wakizawa (winner), Hailey Hatred, Hiroyo Matsumoto, Io Shirai, Kairi Hojo, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Hailey Hatred",
+  "wrestler": "Hailey Hatred",
+  "elo": 998.3413283591354,
+  "opponent": "Miho Wakizawa (winner), Act Yasukawa, Hiroyo Matsumoto, Io Shirai, Kairi Hojo, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 998.3492846679582,
+  "opponent": "Miho Wakizawa (winner), Act Yasukawa, Hailey Hatred, Io Shirai, Kairi Hojo, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 998.3662248558155,
+  "opponent": "Miho Wakizawa (winner), Act Yasukawa, Hailey Hatred, Hiroyo Matsumoto, Io Shirai, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 998.3807153367547,
+  "opponent": "Miho Wakizawa (winner), Act Yasukawa, Hailey Hatred, Hiroyo Matsumoto, Io Shirai, Kairi Hojo, Kellie Skater, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 998.3959101709047,
+  "opponent": "Miho Wakizawa (winner), Act Yasukawa, Hailey Hatred, Hiroyo Matsumoto, Io Shirai, Kairi Hojo, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 998.4035928397273,
+  "opponent": "Miho Wakizawa (winner), Act Yasukawa, Hailey Hatred, Hiroyo Matsumoto, Io Shirai, Kairi Hojo, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 998.4194019447132,
+  "opponent": "Miho Wakizawa (winner), Act Yasukawa, Hailey Hatred, Hiroyo Matsumoto, Io Shirai, Kairi Hojo, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 998.4269621076108,
+  "opponent": "Miho Wakizawa (winner), Act Yasukawa, Hailey Hatred, Hiroyo Matsumoto, Io Shirai, Kairi Hojo, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yui Yokoo, Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 998.441687966051,
+  "opponent": "Miho Wakizawa (winner), Act Yasukawa, Hailey Hatred, Hiroyo Matsumoto, Io Shirai, Kairi Hojo, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/06",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1024.17796973601,
+  "opponent": "Act Yasukawa, Hailey Hatred, Hiroyo Matsumoto, Io Shirai, Kairi Hojo, Kellie Skater, Kyoko Kimura, Mayu Iwatani, Nanae Takahashi, Natsuki Taiyo, Natsumi Showzuki, Saki Kashima, Yuhi, Yui Yokoo, Yuzuki Aikawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/01/14",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 948.4146384208168,
+  "opponent": "Hailey Hatred",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/14",
+  "wrestling_as": "Hailey Hatred",
+  "wrestler": "Hailey Hatred",
+  "elo": 1048.3536520459295,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2013/01/14",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 999.7624447551979,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "draw"
+ },
+ {
+  "date": "2013/01/14",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 998.5868399127603,
+  "opponent": "Yoshiko",
+  "result": "draw"
+ },
+ {
+  "date": "2013/01/14",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 948.3770848701885,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/14",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1048.430827951678,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2013/01/14",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 948.3829020491661,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/01/14",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1048.3937234584932,
+  "opponent": "Kyoko Kimura",
+  "result": "won"
+ },
+ {
+  "date": "2013/01/19",
+  "wrestling_as": "Kellie Skater",
+  "wrestler": "Kellie Skater",
+  "elo": 1059.4568675484632,
+  "opponent": "Yui Yokoo",
+  "result": "won"
+ },
+ {
+  "date": "2013/01/19",
+  "wrestling_as": "Portia Perez",
+  "wrestler": "Portia Perez",
+  "elo": 1053.2827866947578,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2013/01/20",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1061.0835865006918,
+  "opponent": "Yui Yokoo",
+  "result": "won"
+ },
+ {
+  "date": "2013/02/03",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1073.3903873332256,
+  "opponent": "Yui Yokoo",
+  "result": "won"
+ },
+ {
+  "date": "2013/02/10",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 946.5517349213325,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2013/02/10",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1108.8776518437826,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2013/02/17",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1049.7966316977106,
+  "opponent": "Sumire Yoshino",
+  "result": "won"
+ },
+ {
+  "date": "2013/02/17",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1096.6239466174377,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2013/03/03",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 999.7702601586889,
+  "opponent": "Natsuki Taiyo",
+  "result": "draw"
+ },
+ {
+  "date": "2013/03/03",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 998.6333326810384,
+  "opponent": "Kaori Yoneyama",
+  "result": "draw"
+ },
+ {
+  "date": "2013/03/10",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1095.6162584305391,
+  "opponent": "Sumire Yoshino",
+  "result": "won"
+ },
+ {
+  "date": "2013/03/10",
+  "wrestling_as": "Hailey Hatred",
+  "wrestler": "Hailey Hatred",
+  "elo": 1089.9254938935323,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2013/03/17",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 939.4903541258309,
+  "opponent": "Female Predator Amazon (winner), Kaori Yoneyama, Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/03/17",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 991.611780592276,
+  "opponent": "Female Predator Amazon (winner), Act Yasukawa, Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/03/17",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 941.6641863147535,
+  "opponent": "Female Predator Amazon (winner), Act Yasukawa, Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2013/03/17",
+  "wrestling_as": "Female Predator Amazon",
+  "wrestler": "Female Predator Amazon",
+  "elo": 1021.9703124679778,
+  "opponent": "Act Yasukawa, Kaori Yoneyama, Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2013/03/17",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1043.7024315659005,
+  "opponent": "Meiko Satomura",
+  "result": "lost"
+ },
+ {
+  "date": "2013/03/17",
+  "wrestling_as": "Meiko Satomura",
+  "wrestler": "Meiko Satomura",
+  "elo": 1065.175220277882,
+  "opponent": "Yuzuki Aikawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/03/17",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 991.4739994528836,
+  "opponent": "Alpha Female",
+  "result": "lost"
+ },
+ {
+  "date": "2013/03/17",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 1056.9197240056096,
+  "opponent": "Nanae Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2013/03/24",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 948.7902088756967,
+  "opponent": "Dark Angel",
+  "result": "lost"
+ },
+ {
+  "date": "2013/03/24",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1011.4046694059163,
+  "opponent": "Hiroyo Matsumoto; Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2013/03/24",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 956.2802649863459,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2013/03/24",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1170.3474238545152,
+  "opponent": "Kaori Yoneyama; Dark Angel",
+  "result": "won"
+ },
+ {
+  "date": "2013/03/31",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 1033.5014368764237,
+  "opponent": "Sumire Yoshino",
+  "result": "won"
+ },
+ {
+  "date": "2013/03/31",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 868.6167165691282,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/03/31",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1079.1392503442519,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/04/07",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1112.1132726005533,
+  "opponent": "Sumire Yoshino",
+  "result": "won"
+ },
+ {
+  "date": "2013/04/07",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 977.4825309717885,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/04/07",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1047.4929053575188,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1146.5165054456404,
+  "opponent": "Manami Toyota",
+  "result": "won"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 959.2709746149094,
+  "opponent": "Meiko Satomura",
+  "result": "lost"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Meiko Satomura",
+  "wrestler": "Meiko Satomura",
+  "elo": 1105.9042456629727,
+  "opponent": "Takumi Iroha",
+  "result": "won"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 807.5468891100196,
+  "opponent": "Dark Angel",
+  "result": "lost"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1041.9395831354707,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 857.9158362691138,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1040.5075077038582,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 1022.6870442749133,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1204.5801035852114,
+  "opponent": "Alpha Female",
+  "result": "won"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1024.9265192549608,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2013/04/29",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1104.0093627870017,
+  "opponent": "Yuzuki Aikawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/05/06",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 935.3627787157403,
+  "opponent": "Natsumi Showzuki (winner), Sumire Yoshino",
+  "result": "lost"
+ },
+ {
+  "date": "2013/05/12",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 934.212301943831,
+  "opponent": "Sumire Yoshino",
+  "result": "won"
+ },
+ {
+  "date": "2013/05/12",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1040.7003818916,
+  "opponent": "Emi Sakura",
+  "result": "draw"
+ },
+ {
+  "date": "2013/05/12",
+  "wrestling_as": "Emi Sakura",
+  "wrestler": "Emi Sakura",
+  "elo": 1006.7925234659189,
+  "opponent": "Nanae Takahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2013/05/19",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1052.8893974186208,
+  "opponent": "Sumire Yoshino",
+  "result": "won"
+ },
+ {
+  "date": "2013/05/19",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1081.9052878056195,
+  "opponent": "Dark Angel",
+  "result": "lost"
+ },
+ {
+  "date": "2013/05/19",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1106.5508007754916,
+  "opponent": "Miho Wakizawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/05/24",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 975.432788404918,
+  "opponent": "Sumire Yoshino",
+  "result": "won"
+ },
+ {
+  "date": "2013/05/24",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1121.6082312601397,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2013/06/02",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 880.1112314714451,
+  "opponent": "Dark Angel",
+  "result": "lost"
+ },
+ {
+  "date": "2013/06/02",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1133.6013360116845,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2013/06/02",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 936.3986173640309,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/06/02",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1091.923568459508,
+  "opponent": "Takumi Iroha",
+  "result": "won"
+ },
+ {
+  "date": "2013/06/02",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 978.6182369259363,
+  "opponent": "Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2013/06/02",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1018.1695357642677,
+  "opponent": "Natsuki Taiyo",
+  "result": "won"
+ },
+ {
+  "date": "2013/06/02",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1068.0915186283435,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2013/06/02",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1222.5390256645405,
+  "opponent": "Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2013/06/07",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 924.3707782517178,
+  "opponent": "Eri Susa (winner), Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/06/07",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 871.3882283185744,
+  "opponent": "Eri Susa (winner), Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2013/06/07",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 997.1975345886817,
+  "opponent": "Kairi Hojo, Yuhi",
+  "result": "draw"
+ },
+ {
+  "date": "2013/06/07",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1061.226828840986,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2013/06/16",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1103.6827492518596,
+  "opponent": "Kyoko Kimura (winner), Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2013/06/16",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 978.0241184388624,
+  "opponent": "Mayu Iwatani, Miho Wakizawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/06/23",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 1004.0998945507611,
+  "opponent": "Io Shirai",
+  "result": "draw"
+ },
+ {
+  "date": "2013/06/23",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1205.613706367858,
+  "opponent": "Takumi Iroha",
+  "result": "draw"
+ },
+ {
+  "date": "2013/06/23",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1103.9127547952626,
+  "opponent": "Yui Yokoo",
+  "result": "won"
+ },
+ {
+  "date": "2013/07/15",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 978.4892543963082,
+  "opponent": "Act Yasukawa",
+  "result": "draw"
+ },
+ {
+  "date": "2013/07/15",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 858.7681694189254,
+  "opponent": "Takumi Iroha",
+  "result": "draw"
+ },
+ {
+  "date": "2013/08/17",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 969.7444016472681,
+  "opponent": "Alpha Female",
+  "result": "draw"
+ },
+ {
+  "date": "2013/08/17",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 1012.2099478891276,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "draw"
+ },
+ {
+  "date": "2013/08/17",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 949.4380176577284,
+  "opponent": "Dark Angel",
+  "result": "lost"
+ },
+ {
+  "date": "2013/08/17",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1162.6525727502642,
+  "opponent": "Takumi Iroha",
+  "result": "won"
+ },
+ {
+  "date": "2013/08/17",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 956.7772910846636,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2013/08/17",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1216.2371200449572,
+  "opponent": "Kyoko Kimura",
+  "result": "won"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 961.837891041419,
+  "opponent": "Miho Wakizawa (winner), Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1117.6813917792579,
+  "opponent": "Hiroyo Matsumoto, Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 883.9004307931013,
+  "opponent": "Dark Angel",
+  "result": "lost"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1182.8877464795723,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 967.311178982605,
+  "opponent": "Alpha Female",
+  "result": "draw"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 1003.2733672266894,
+  "opponent": "Takumi Iroha",
+  "result": "draw"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 893.0352398474283,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 986.2522718933959,
+  "opponent": "Kyoko Kimura",
+  "result": "won"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 913.6585984197167,
+  "opponent": "Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 1001.3075053310138,
+  "opponent": "Natsuki Taiyo",
+  "result": "won"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1073.2284200661056,
+  "opponent": "Nanae Takahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1098.7758533575004,
+  "opponent": "Yoshiko",
+  "result": "draw"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1032.1635132597953,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2013/08/25",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1230.7687778355526,
+  "opponent": "Kaori Yoneyama",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 954.5967582959338,
+  "opponent": "Miho Wakizawa (winner), Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1130.5142932714248,
+  "opponent": "Hiroyo Matsumoto, Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 926.5372764010979,
+  "opponent": "Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1072.9374158413025,
+  "opponent": "Takumi Iroha",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 816.9676631711292,
+  "opponent": "Alpha Female",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 1036.7397510376754,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 964.9775808596961,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1135.1057778288182,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 999.3960264186336,
+  "opponent": "Kyoko Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1040.7000271423724,
+  "opponent": "Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1139.7350865860835,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1252.345107782297,
+  "opponent": "Dark Angel",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 925.954621302202,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/01",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1034.2538996021046,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 943.7210355198702,
+  "opponent": "BUSU (winner), Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "BUSU",
+  "wrestler": "BUSU",
+  "elo": 1019.6197799652963,
+  "opponent": "Hiroyo Matsumoto, Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1062.4011295373537,
+  "opponent": "Takumi Iroha",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 1081.2051904985576,
+  "opponent": "Dark Angel",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 919.9146535366776,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1044.458953741652,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 801.883202180884,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1256.1162230298582,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 991.9302471286261,
+  "opponent": "Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1117.7469197503517,
+  "opponent": "Alpha Female",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1035.1814654962882,
+  "opponent": "Kyoko Kimura",
+  "result": "draw"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1039.7724612481888,
+  "opponent": "Natsuki Taiyo",
+  "result": "draw"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 879.8007053379883,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/08",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1158.182735810925,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1150.9527258935307,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 997.8931360269218,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 968.5073111241559,
+  "opponent": "Takumi Iroha",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 791.2953968983352,
+  "opponent": "Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 1008.4199619763308,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 993.1241331021379,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1086.5162861358024,
+  "opponent": "Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1059.8487154146324,
+  "opponent": "Dark Angel",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1120.299333873073,
+  "opponent": "Kaori Yoneyama",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1091.772622295996,
+  "opponent": "Kyoko Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1106.1825747631178,
+  "opponent": "Nanae Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1215.083581590837,
+  "opponent": "Alpha Female",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/15",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 1073.9955300066686,
+  "opponent": "Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 928.0473003444755,
+  "opponent": "Mayu Iwatani (winner), Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1130.0764799468307,
+  "opponent": "Mayu Iwatani (winner), Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 996.998336561503,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 1031.3576899772852,
+  "opponent": "Kaori Yoneyama",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1063.674855163542,
+  "opponent": "Alpha Female",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 1082.1156992021938,
+  "opponent": "Dark Angel; Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 1025.627427062899,
+  "opponent": "Io Shirai",
+  "result": "draw"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1201.2164360728484,
+  "opponent": "Takumi Iroha",
+  "result": "draw"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 743.6280345184059,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1016.9578142921025,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 1022.1292110753801,
+  "opponent": "Kyoko Kimura",
+  "result": "draw"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1092.4733256640686,
+  "opponent": "Yuhi",
+  "result": "draw"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1037.2726760082624,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/09/23",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1189.5205419375418,
+  "opponent": "Natsuki Taiyo; Alpha Female",
+  "result": "won"
+ },
+ {
+  "date": "2013/10/06",
+  "wrestling_as": "Passion No. 2",
+  "wrestler": "Passion No. 2",
+  "elo": 1000.0,
+  "opponent": "Azumi",
+  "result": "draw"
+ },
+ {
+  "date": "2013/10/06",
+  "wrestling_as": "Azumi",
+  "wrestler": "Azumi",
+  "elo": 1000.0,
+  "opponent": "Passion No. 2",
+  "result": "draw"
+ },
+ {
+  "date": "2013/10/06",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 980.6771912729494,
+  "opponent": "Alpha Female",
+  "result": "lost"
+ },
+ {
+  "date": "2013/10/06",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 1123.5677190046247,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2013/10/14",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 1101.090572153951,
+  "opponent": "Act Yasukawa (winner), Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2013/10/14",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 996.7308894990697,
+  "opponent": "Act Yasukawa (winner), Alpha Female",
+  "result": "lost"
+ },
+ {
+  "date": "2013/10/14",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 786.3321061621126,
+  "opponent": "Alpha Female, Yoshiko",
+  "result": "draw"
+ },
+ {
+  "date": "2013/10/14",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1081.929190192749,
+  "opponent": "DASH Chisako",
+  "result": "won"
+ },
+ {
+  "date": "2013/10/20",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 988.1680913341174,
+  "opponent": "Azumi; Natsuki Taiyo (winner), Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/10/20",
+  "wrestling_as": "Azumi",
+  "wrestler": "Azumi",
+  "elo": 999.5295510643355,
+  "opponent": "Yoshiko",
+  "result": "draw"
+ },
+ {
+  "date": "2013/10/20",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1115.8552461489815,
+  "opponent": "Natsuki Taiyo (winner), Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2013/10/20",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1105.183671091215,
+  "opponent": "Miho Wakizawa, Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2013/11/04",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1140.4926326399664,
+  "opponent": "Koguma",
+  "result": "won"
+ },
+ {
+  "date": "2013/11/04",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 961.9424690179263,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2013/11/04",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1055.4172164344207,
+  "opponent": "Takumi Iroha",
+  "result": "won"
+ },
+ {
+  "date": "2013/11/04",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 980.5218059396246,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/11/04",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 952.6382046099471,
+  "opponent": "Dark Angel",
+  "result": "won"
+ },
+ {
+  "date": "2013/11/04",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1141.2030808852178,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2013/11/04",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1225.3751665990103,
+  "opponent": "Nanae Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2013/11/10",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1042.3622971440313,
+  "opponent": "Koguma",
+  "result": "won"
+ },
+ {
+  "date": "2013/11/23",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1140.2472426710935,
+  "opponent": "Koguma",
+  "result": "won"
+ },
+ {
+  "date": "2013/11/23",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1039.130393707379,
+  "opponent": "Io Shirai (winner), Mayu Iwatani, Takumi Iroha, Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/11/23",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 959.7430688607433,
+  "opponent": "Io Shirai (winner), Kaori Yoneyama, Mayu Iwatani, Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/11/23",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 978.2999248885429,
+  "opponent": "Io Shirai (winner), Kaori Yoneyama, Mayu Iwatani, Takumi Iroha",
+  "result": "lost"
+ },
+ {
+  "date": "2013/11/23",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1234.7424412768107,
+  "opponent": "Kaori Yoneyama, Mayu Iwatani, Takumi Iroha, Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/08",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 977.1620623280718,
+  "opponent": "Female Predator Amazon (winner), Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2013/12/08",
+  "wrestling_as": "Female Predator Amazon",
+  "wrestler": "Female Predator Amazon",
+  "elo": 1040.8982468784309,
+  "opponent": "Mayu Iwatani, Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/08",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 997.1809622865097,
+  "opponent": "Koguma",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/23",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1073.7308590205819,
+  "opponent": "Koguma",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/23",
+  "wrestling_as": "Kellie Skater",
+  "wrestler": "Kellie Skater",
+  "elo": 1085.7738677960012,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/23",
+  "wrestling_as": "Female Predator Amazon",
+  "wrestler": "Female Predator Amazon",
+  "elo": 984.6398185636187,
+  "opponent": "Takumi Iroha",
+  "result": "lost"
+ },
+ {
+  "date": "2013/12/23",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 1053.439390601322,
+  "opponent": "Female Predator Amazon",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/23",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 936.9657646007187,
+  "opponent": "Kaori Yoneyama",
+  "result": "lost"
+ },
+ {
+  "date": "2013/12/23",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1080.4645539952032,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/29",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 1048.613761867588,
+  "opponent": "Koguma",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/29",
+  "wrestling_as": "Takumi Iroha",
+  "wrestler": "Takumi Iroha",
+  "elo": 987.2784151077055,
+  "opponent": "Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2013/12/29",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 1069.2877155879517,
+  "opponent": "Takumi Iroha",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/29",
+  "wrestling_as": "Kellie Skater",
+  "wrestler": "Kellie Skater",
+  "elo": 1017.4999111848482,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2013/12/29",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 1020.9121612211002,
+  "opponent": "Kellie Skater",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/29",
+  "wrestling_as": "Kaori Yoneyama",
+  "wrestler": "Kaori Yoneyama",
+  "elo": 1039.0183444953677,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2013/12/29",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1181.9388421398019,
+  "opponent": "Kaori Yoneyama",
+  "result": "won"
+ },
+ {
+  "date": "2013/12/29",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1220.0254506411143,
+  "opponent": "Arisa Nakajima",
+  "result": "draw"
+ },
+ {
+  "date": "2013/12/29",
+  "wrestling_as": "Arisa Nakajima",
+  "wrestler": "Arisa Nakajima",
+  "elo": 1029.4339812713927,
+  "opponent": "Io Shirai",
+  "result": "draw"
+ }
+]
+var chart = new Taucharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Io Shirai",
+ "Nanae Takahashi",
+ "Dark Angel",
+ "Natsuki Taiyo",
+ "Miho Wakizawa",
+ "Alpha Female",
+ "Kaori Yoneyama",
+ "Yuzuki Aikawa",
+ "Kyoko Kimura",
+ "Meiko Satomura",
+ "Yoshiko",
+ "Hailey Hatred",
+ "Kellie Skater",
+ "Takumi Iroha",
+ "Hiroyo Matsumoto",
+ "Yuhi",
+ "Portia Perez",
+ "Kairi Hojo",
+ "Female Predator Amazon",
+ "Mayu Iwatani",
+ "Eri Susa",
+ "Arisa Nakajima",
+ "Natsumi Showzuki",
+ "Act Yasukawa",
+ "BUSU",
+ "Emi Sakura",
+ "Passion No. 2",
+ "Azumi",
+ "Saki Kashima",
+ "Yui Yokoo",
+ "Manami Toyota",
+ "Koguma",
+ "DASH Chisako",
+ "Sumire Yoshino"
+],
+      },
+    },
+    plugins: [
+        Taucharts.api.plugins.get('tooltip')(),
+        Taucharts.api.plugins.get('quick-filter')(['date']),
+        Taucharts.api.plugins.get('legend')({
+            onSelect({selectedCategories}) {
+                location.hash = 'filter=' + JSON.stringify(selectedCategories);
+            },
+            selectedCategories: selectedCategories
+        }),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

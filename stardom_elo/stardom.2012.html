@@ -1,0 +1,1908 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/latest/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+const params = location.hash.match(/filter=(.+)/);
+let selectedCategories = null;
+if(params) {
+    selectedCategories = JSON.parse(decodeURIComponent(params[1]));
+}
+
+var datasource = [
+ {
+  "date": "2012/01/07",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 950.0,
+  "opponent": "Saki Kashima",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/07",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 1050.0,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/07",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 950.0,
+  "opponent": "Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/07",
+  "wrestling_as": "Yoko Bito",
+  "wrestler": "Yoko Bito",
+  "elo": 1050.0,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/07",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 950.0,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/07",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1050.0,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/22",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 950.0,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/22",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1050.0,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/22",
+  "wrestling_as": "Yoko Bito",
+  "wrestler": "Yoko Bito",
+  "elo": 992.8536882591618,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/22",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1057.1463117408382,
+  "opponent": "Yoko Bito",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 907.1463117408382,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 1042.8536882591618,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 907.1463117408382,
+  "opponent": "Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1042.8536882591618,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 1035.7134220647904,
+  "opponent": "Natsuki Taiyo (winner), Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Yoko Bito",
+  "wrestler": "Yoko Bito",
+  "elo": 981.1238217816773,
+  "opponent": "Natsuki Taiyo (winner), Saki Kashima",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1026.016444412694,
+  "opponent": "Saki Kashima, Yoko Bito",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 907.1463117408382,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1042.8536882591618,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/11",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 833.2531320805094,
+  "opponent": "Kellie Skater",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/11",
+  "wrestling_as": "Kellie Skater",
+  "wrestler": "Kellie Skater",
+  "elo": 1036.9465898301644,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/11",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 844.3338096053062,
+  "opponent": "Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/11",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1074.259939326928,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/11",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 844.3338096053062,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/11",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1074.259939326928,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/26",
+  "wrestling_as": "Kellie Skater",
+  "wrestler": "Kellie Skater",
+  "elo": 985.3741341798088,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/26",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1077.5889000630496,
+  "opponent": "Kellie Skater",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/26",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 997.3611407525053,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/26",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1119.7524868335845,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/26",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1020.7743164410264,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/26",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1103.4856228859014,
+  "opponent": "Miho Wakizawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/11",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 844.3338096053062,
+  "opponent": "Kairi Hojo",
+  "result": "draw"
+ },
+ {
+  "date": "2012/03/11",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 844.3338096053062,
+  "opponent": "Natsumi Showzuki",
+  "result": "draw"
+ },
+ {
+  "date": "2012/03/11",
+  "wrestling_as": "Mayu Iwatani",
+  "wrestler": "Mayu Iwatani",
+  "elo": 950.0,
+  "opponent": "Tomoka Nakagawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/11",
+  "wrestling_as": "Tomoka Nakagawa",
+  "wrestler": "Tomoka Nakagawa",
+  "elo": 1050.0,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/11",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 801.0103300541912,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/11",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1135.8738878467436,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/20",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 960.6561411744041,
+  "opponent": "Natsumi Showzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/20",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 994.4483713860789,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/20",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 906.7739100155387,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/20",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 1040.5872307369666,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/20",
+  "wrestling_as": "Mayu Iwatani",
+  "wrestler": "Mayu Iwatani",
+  "elo": 885.2455421680769,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/20",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 973.8427252691524,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/20",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 752.7470767298676,
+  "opponent": "Arisa Hoshiki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/20",
+  "wrestling_as": "Arisa Hoshiki",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 1024.1316266621618,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/20",
+  "wrestling_as": "Meiko Satomura",
+  "wrestler": "Meiko Satomura",
+  "elo": 968.6143943032804,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/20",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1167.2594935434633,
+  "opponent": "Meiko Satomura",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/25",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 712.9084362076172,
+  "opponent": "Natsumi Showzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/25",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 1014.3676916472041,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/25",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 838.456919435148,
+  "opponent": "Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/25",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1054.9328117312216,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/25",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1003.9620378190792,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/25",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1123.6268622439704,
+  "opponent": "Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 941.0143598517127,
+  "opponent": "Eri Susa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 985.1635830261308,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 674.1685961179495,
+  "opponent": "Saki Kashima",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 980.0260612192379,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Mayu Iwatani",
+  "wrestler": "Mayu Iwatani",
+  "elo": 827.1975390060868,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 1069.6112323179616,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 931.029759097586,
+  "opponent": "Arisa Hoshiki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Arisa Hoshiki",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 1066.9445928337284,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/07",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 654.3009079981576,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/07",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1067.080155800734,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/07",
+  "wrestling_as": "Shinya Ishikawa",
+  "wrestler": "Shinya Ishikawa",
+  "elo": 950.0,
+  "opponent": "Amigo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/07",
+  "wrestling_as": "Amigo Suzuki",
+  "wrestler": "Amigo Suzuki",
+  "elo": 1050.0,
+  "opponent": "Shinya Ishikawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/07",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 940.642029600885,
+  "opponent": "Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/07",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1094.3168433495746,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/22",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 809.1030369498401,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/22",
+  "wrestling_as": "Mayu Iwatani",
+  "wrestler": "Mayu Iwatani",
+  "elo": 958.7365316571318,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/22",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 937.2974181914401,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/22",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1047.8661648346906,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 963.7658021400359,
+  "opponent": "Arisa Hoshiki; Yoko Bito",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Arisa Hoshiki",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 1117.3283455685887,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 950.570158361341,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1053.3918794577382,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Yoko Bito",
+  "wrestler": "Yoko Bito",
+  "elo": 1036.5854992247425,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1014.4023947666108,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1200.7232636115432,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/06",
+  "wrestling_as": "Kagetsu",
+  "wrestler": "Kagetsu",
+  "elo": 924.9947697733952,
+  "opponent": "Saki Kashima",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/06",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 959.1134974030497,
+  "opponent": "Kagetsu",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/06",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 869.521603501772,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/06",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1087.2797868025723,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/06",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1108.4063424513374,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "draw"
+ },
+ {
+  "date": "2012/05/06",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1029.6229145592438,
+  "opponent": "Natsuki Taiyo",
+  "result": "draw"
+ },
+ {
+  "date": "2012/05/20",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 846.1107916138549,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/20",
+  "wrestling_as": "Mayu Iwatani",
+  "wrestler": "Mayu Iwatani",
+  "elo": 1006.1883157760607,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/20",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 929.3669984003454,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/20",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1138.1528414540417,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/20",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 972.8810832974428,
+  "opponent": "Arisa Hoshiki",
+  "result": "draw"
+ },
+ {
+  "date": "2012/05/20",
+  "wrestling_as": "Arisa Hoshiki",
+  "wrestler": "Arisa Hoshiki",
+  "elo": 1095.0174206324868,
+  "opponent": "Yuhi",
+  "result": "draw"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 620.5078798964935,
+  "opponent": "Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 964.8227871992501,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 787.7177046906279,
+  "opponent": "Aoi Kizuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Aoi Kizuki",
+  "wrestler": "Aoi Kizuki",
+  "elo": 1029.1965434616134,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 854.1316782198425,
+  "opponent": "Natsumi Showzuki (winner), Kairi Hojo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 946.8913043033151,
+  "opponent": "Natsumi Showzuki (winner), Eri Susa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 821.0391128684926,
+  "opponent": "Eri Susa, Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 867.0508983859729,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1098.2382058079204,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Mayu Iwatani",
+  "wrestler": "Mayu Iwatani",
+  "elo": 968.605849001827,
+  "opponent": "Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1131.8993101238084,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/10",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 759.9543237058188,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/10",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 963.1350753337895,
+  "opponent": "Natsumi Showzuki; Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/10",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1163.0724315113916,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/10",
+  "wrestling_as": "Mayu Iwatani",
+  "wrestler": "Mayu Iwatani",
+  "elo": 947.7918748528008,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/10",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1211.1302506860563,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/24",
+  "wrestling_as": "Mayu Iwatani",
+  "wrestler": "Mayu Iwatani",
+  "elo": 942.1777304226976,
+  "opponent": "Miho Wakizawa (winner), Natsumi Showzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/24",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 757.7833399836057,
+  "opponent": "Miho Wakizawa (winner), Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/24",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1170.8575596637081,
+  "opponent": "Mayu Iwatani, Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/24",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 603.1749246375311,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/24",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1038.289392188725,
+  "opponent": "Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/24",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 831.4230375320955,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/24",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1216.807410857993,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/08",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 776.4631604298306,
+  "opponent": "Kyoko Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/08",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1027.4799385511324,
+  "opponent": "Eri Susa",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/08",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 953.1652883526448,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/08",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1226.665308330392,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/08",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 826.2362327693663,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/08",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1123.8929556942046,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1044.5491301445823,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1210.1378666624796,
+  "opponent": "Io Shirai; Kyoko Kimura",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1102.654405491377,
+  "opponent": "Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1106.4925463610562,
+  "opponent": "Miho Wakizawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 998.2255700006846,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1065.9221725158786,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1242.823324976413,
+  "opponent": "Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Yoko Bito",
+  "wrestler": "Yoko Bito",
+  "elo": 998.8920938950075,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1161.5863610239396,
+  "opponent": "Yoko Bito",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 918.8456177037633,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1100.24184316476,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 772.4583545411642,
+  "opponent": "Dark Angel",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1026.888939114101,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 910.8624110106786,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1219.1450899856388,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1085.7747739620702,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 1038.946662395659,
+  "opponent": "Yuzuki Aikawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1038.0626817955715,
+  "opponent": "Kyoko Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1062.8172936964902,
+  "opponent": "Miho Wakizawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1020.3420186080099,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/19",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1254.9268807446992,
+  "opponent": "Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/26",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 972.3197852034798,
+  "opponent": "Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/26",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 1052.0993720881215,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/26",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1121.1399118726424,
+  "opponent": "Nanae Takahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2012/08/26",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1244.477846390758,
+  "opponent": "Yoshiko",
+  "result": "draw"
+ },
+ {
+  "date": "2012/08/26",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 979.6487763595325,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/26",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1126.4680162105476,
+  "opponent": "Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/26",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 843.0690728335403,
+  "opponent": "Dark Angel",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/26",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1060.7856082026701,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/26",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1011.9938509629147,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/26",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1232.1795054019672,
+  "opponent": "Miho Wakizawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 723.0209403723042,
+  "opponent": "Saki Kashima",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 892.5064870024003,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1003.8097085801239,
+  "opponent": "Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1068.969750585461,
+  "opponent": "Dark Angel",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1195.8744796486042,
+  "opponent": "Kyoko Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1135.427345203216,
+  "opponent": "Natsuki Taiyo",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 923.3743553989009,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1028.5942061641115,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 1027.2641437748096,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1256.8954605474141,
+  "opponent": "Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1125.7013004631199,
+  "opponent": "Yoshiko",
+  "result": "draw"
+ },
+ {
+  "date": "2012/09/02",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1121.9066276200701,
+  "opponent": "Yuzuki Aikawa",
+  "result": "draw"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 754.8224574160807,
+  "opponent": "Hiroyo Matsumoto (winner), Yuuri Haruka",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Yuuri Haruka",
+  "wrestler": "Yuuri Haruka",
+  "elo": 601.8887347878356,
+  "opponent": "Hiroyo Matsumoto (winner), Natsumi Showzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1110.7396187782767,
+  "opponent": "Natsumi Showzuki, Yuuri Haruka",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 699.0000505191892,
+  "opponent": "Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1080.9801955120186,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 1027.4555542041473,
+  "opponent": "Io Shirai",
+  "result": "draw"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1028.4027957347737,
+  "opponent": "Yuhi",
+  "result": "draw"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 962.8042615046714,
+  "opponent": "Natsuki Taiyo",
+  "result": "draw"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1160.7255923974685,
+  "opponent": "Saki Kashima",
+  "result": "draw"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 875.014625313168,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1146.0864926629365,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1067.3429707005976,
+  "opponent": "Dark Angel",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1071.8940830827423,
+  "opponent": "Kyoko Kimura",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1222.8797703234259,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1193.7326809110964,
+  "opponent": "Nanae Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 868.9413022323968,
+  "opponent": "Kyoko Kimura; Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1026.3537940136566,
+  "opponent": "Saki Kashima; Yuzuki Aikawa; Kairi Hojo",
+  "result": "draw"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 724.601125282457,
+  "opponent": "Act Yasukawa (winner), Yuhi; Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 988.1489500293033,
+  "opponent": "Act Yasukawa (winner), Natsumi Showzuki; Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 873.6866442185324,
+  "opponent": "Natsumi Showzuki, Yuhi; Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1241.878913904986,
+  "opponent": "Kyoko Kimura; Yuhi",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1121.6801023114688,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1110.2147690396982,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 777.3738862250132,
+  "opponent": "Kyoko Kimura",
+  "result": "draw"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Dark Angel",
+  "wrestler": "Dark Angel",
+  "elo": 1034.4064959108334,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1198.2131795693772,
+  "opponent": "Dark Angel",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1229.648426936133,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1079.7697428429206,
+  "opponent": "Io Shirai",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/30",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1094.7195455547896,
+  "opponent": "Yoshiko",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/03",
+  "wrestling_as": "Mika Iida",
+  "wrestler": "Mika Iida",
+  "elo": 1000.0,
+  "opponent": "Makoto",
+  "result": "draw"
+ },
+ {
+  "date": "2012/10/03",
+  "wrestling_as": "Makoto",
+  "wrestler": "Makoto",
+  "elo": 1000.0,
+  "opponent": "Mika Iida",
+  "result": "draw"
+ },
+ {
+  "date": "2012/10/03",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 694.6629596113779,
+  "opponent": "Kyoko Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/03",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1041.322876849196,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/03",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 804.9701398039801,
+  "opponent": "Hailey Hatred",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/03",
+  "wrestling_as": "Hailey Hatred",
+  "wrestler": "Hailey Hatred",
+  "elo": 1031.9855812142084,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/14",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 675.0135049482938,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/14",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1089.5944701744627,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/14",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 852.2431742798038,
+  "opponent": "Yuzuki Aikawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/14",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1247.239781389668,
+  "opponent": "Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/21",
+  "wrestling_as": "Mayu Iwatani",
+  "wrestler": "Mayu Iwatani",
+  "elo": 882.232362740288,
+  "opponent": "Yoshiko",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/21",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1119.5671540156675,
+  "opponent": "Mayu Iwatani",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/21",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1028.6820493900102,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/21",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 1015.3086135791799,
+  "opponent": "Miho Wakizawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/21",
+  "wrestling_as": "Saki Kashima",
+  "wrestler": "Saki Kashima",
+  "elo": 786.135097596949,
+  "opponent": "Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/21",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1207.6307006728928,
+  "opponent": "Saki Kashima",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/21",
+  "wrestling_as": "Alpha Female",
+  "wrestler": "Alpha Female",
+  "elo": 1028.9508048566167,
+  "opponent": "Nanae Takahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2012/10/21",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1215.1730245078247,
+  "opponent": "Alpha Female",
+  "result": "draw"
+ },
+ {
+  "date": "2012/11/03",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 706.6704215254571,
+  "opponent": "Mayu Iwatani",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/03",
+  "wrestling_as": "Mayu Iwatani",
+  "wrestler": "Mayu Iwatani",
+  "elo": 952.935827439844,
+  "opponent": "Kairi Hojo",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/03",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 651.9161162702537,
+  "opponent": "Miho Wakizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/03",
+  "wrestling_as": "Miho Wakizawa",
+  "wrestler": "Miho Wakizawa",
+  "elo": 1040.2307437290303,
+  "opponent": "Natsumi Showzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Eri Susa",
+  "wrestler": "Eri Susa",
+  "elo": 774.9400872058104,
+  "opponent": "Yoshiko (winner), Hailey Hatred, Hiroyo Matsumoto, Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Hailey Hatred",
+  "wrestler": "Hailey Hatred",
+  "elo": 1027.3042376521032,
+  "opponent": "Yoshiko (winner), Eri Susa, Hiroyo Matsumoto, Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Hiroyo Matsumoto",
+  "wrestler": "Hiroyo Matsumoto",
+  "elo": 1115.5037001152432,
+  "opponent": "Yoshiko (winner), Eri Susa, Hailey Hatred, Natsuki Taiyo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Natsuki Taiyo",
+  "wrestler": "Natsuki Taiyo",
+  "elo": 1200.040381219472,
+  "opponent": "Yoshiko (winner), Eri Susa, Hailey Hatred, Hiroyo Matsumoto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Yoshiko",
+  "wrestler": "Yoshiko",
+  "elo": 1139.5382924514392,
+  "opponent": "Eri Susa, Hailey Hatred, Hiroyo Matsumoto, Natsuki Taiyo",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/09",
+  "wrestling_as": "Natsumi Showzuki",
+  "wrestler": "Natsumi Showzuki",
+  "elo": 629.9379242189478,
+  "opponent": "Act Yasukawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/09",
+  "wrestling_as": "Act Yasukawa",
+  "wrestler": "Act Yasukawa",
+  "elo": 973.1885314739815,
+  "opponent": "Natsumi Showzuki; Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/09",
+  "wrestling_as": "Kairi Hojo",
+  "wrestler": "Kairi Hojo",
+  "elo": 673.6382911058517,
+  "opponent": "Yuhi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/09",
+  "wrestling_as": "Yuhi",
+  "wrestler": "Yuhi",
+  "elo": 1057.7741933699572,
+  "opponent": "Kairi Hojo; Act Yasukawa",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/24",
+  "wrestling_as": "Yui Yokoo",
+  "wrestler": "Yui Yokoo",
+  "elo": 953.921326201885,
+  "opponent": "Hailey Hatred",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/24",
+  "wrestling_as": "Hailey Hatred",
+  "wrestler": "Hailey Hatred",
+  "elo": 1073.3829114502182,
+  "opponent": "Yui Yokoo",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/24",
+  "wrestling_as": "Io Shirai",
+  "wrestler": "Io Shirai",
+  "elo": 1037.0950828178295,
+  "opponent": "Kyoko Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/24",
+  "wrestling_as": "Kyoko Kimura",
+  "wrestler": "Kyoko Kimura",
+  "elo": 1098.9473395861562,
+  "opponent": "Io Shirai",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/24",
+  "wrestling_as": "Yuzuki Aikawa",
+  "wrestler": "Yuzuki Aikawa",
+  "elo": 1219.9389223102676,
+  "opponent": "Nanae Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/24",
+  "wrestling_as": "Nanae Takahashi",
+  "wrestler": "Nanae Takahashi",
+  "elo": 1242.4738835872251,
+  "opponent": "Yuzuki Aikawa",
+  "result": "won"
+ }
+]
+var chart = new Taucharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Nanae Takahashi",
+ "Yuzuki Aikawa",
+ "Natsuki Taiyo",
+ "Miho Wakizawa",
+ "Yoshiko",
+ "Kyoko Kimura",
+ "Hiroyo Matsumoto",
+ "Arisa Hoshiki",
+ "Io Shirai",
+ "Hailey Hatred",
+ "Dark Angel",
+ "Act Yasukawa",
+ "Yuhi",
+ "Saki Kashima",
+ "Yoko Bito",
+ "Tomoka Nakagawa",
+ "Amigo Suzuki",
+ "Kellie Skater",
+ "Aoi Kizuki",
+ "Alpha Female",
+ "Natsumi Showzuki",
+ "Mayu Iwatani",
+ "Mika Iida",
+ "Makoto",
+ "Eri Susa",
+ "Kairi Hojo",
+ "Meiko Satomura",
+ "Yui Yokoo",
+ "Yuuri Haruka",
+ "Shinya Ishikawa",
+ "Kagetsu"
+],
+      },
+    },
+    plugins: [
+        Taucharts.api.plugins.get('tooltip')(),
+        Taucharts.api.plugins.get('quick-filter')(['date']),
+        Taucharts.api.plugins.get('legend')({
+            onSelect({selectedCategories}) {
+                location.hash = 'filter=' + JSON.stringify(selectedCategories);
+            },
+            selectedCategories: selectedCategories
+        }),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>
