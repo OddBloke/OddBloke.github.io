@@ -1,0 +1,3510 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1990/01/05",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1050.0,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/06",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 950.0,
+  "opponent": "George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/06",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1050.0,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/06",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1042.8536882591618,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/11",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 950.0,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/11",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1050.0,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/11",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1042.8536882591618,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/11",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1092.8536882591618,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/12",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1052.2582411020137,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/12",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1136.7176321283082,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/12",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 992.8536882591618,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/12",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1057.1463117408382,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/13",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 986.7176321283083,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/13",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1056.1360561308536,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/14",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1090.5929006226977,
+  "opponent": "Biff Wellington",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/14",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1163.662108489577,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/14",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1098.995666070175,
+  "opponent": "Tracy Smothers",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/15",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1097.0476615003008,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/15",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1044.0063524932987,
+  "opponent": "Tracy Smothers",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/17",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1104.6701941130698,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/17",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1031.7163771714982,
+  "opponent": "Tracy Smothers",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/17",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1061.9427401632424,
+  "opponent": "Akira Nogami",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/18",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1170.8561421935665,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/18",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 974.8641241187571,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/18",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1101.196592105222,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/18",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1050.0,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/19",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1096.3811450013814,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/19",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1078.1510377386705,
+  "opponent": "Tracy Smothers",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/20",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 932.9735702049857,
+  "opponent": "George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/20",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1073.6069310852697,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/22",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1177.372437399893,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/22",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1159.3016703017784,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/24",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1070.8258455836317,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/24",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1117.3246564030503,
+  "opponent": "Takayuki Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/24",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1141.2330134919673,
+  "opponent": "Biff Wellington",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/24",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 938.6281878435393,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/24",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1048.089444284769,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/25",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1153.552506680977,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/25",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1188.945139356498,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/25",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 864.9451143710154,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/25",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1082.103672201754,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/25",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 987.7069799944982,
+  "opponent": "Big Van Vader",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/25",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1056.2993724988005,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/26",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 997.6384184461988,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/26",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1081.3468956417946,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/26",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1059.9125910336807,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/26",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1023.2347107795026,
+  "opponent": "Tracy Smothers",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/27",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1121.1712949593284,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/27",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1136.2909194879037,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/27",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1086.7733905904868,
+  "opponent": "Tracy Smothers",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/27",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1217.196448929518,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/30",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1126.1585167098226,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/30",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1097.7281723542976,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/30",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1236.477822496321,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/31",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 872.1845325571546,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/31",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1093.1344186768729,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1990/01/31",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1091.5218585282073,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1990/01/31",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1253.7961515871289,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1990/02/10",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 1050.0,
+  "opponent": "Victor Zangiev",
+  "result": "won"
+ },
+ {
+  "date": "1990/02/10",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1050.0,
+  "opponent": "Salman Hashimikov",
+  "result": "won"
+ },
+ {
+  "date": "1990/02/10",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1069.8959428953665,
+  "opponent": "Larry Zbyszko",
+  "result": "won"
+ },
+ {
+  "date": "1990/02/10",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1048.2674192544193,
+  "opponent": "Stan Hansen",
+  "result": "draw"
+ },
+ {
+  "date": "1990/02/10",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 950.0,
+  "opponent": "Koji Kitao",
+  "result": "lost"
+ },
+ {
+  "date": "1990/02/10",
+  "wrestling_as": "Koji Kitao",
+  "wrestler": "Koji Kitao",
+  "elo": 1050.0,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/02",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1097.0739485101133,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/02",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1036.1014045573772,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1990/03/02",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1132.7756582348636,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/03",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1109.9706473052888,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/05",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1153.7463478118402,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/05",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 947.9782721173882,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1990/03/05",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1049.6601463288105,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/05",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1263.2121167517512,
+  "opponent": "Cheetah Kid",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/06",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1097.2314488735044,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/06",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1180.7696542947015,
+  "opponent": "Cheetah Kid",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/06",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1176.2321372398162,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/06",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1130.0433696513594,
+  "opponent": "Mike Kirchner",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/09",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1086.9169089914058,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/09",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1131.6671279049517,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/09",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1264.217714998617,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/11",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1107.2891302228945,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/11",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1162.0132913213913,
+  "opponent": "Mike Kirchner",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/11",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1144.6527582147016,
+  "opponent": "Larry Cameron",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/14",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1092.5261076534994,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/14",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1007.1463117408382,
+  "opponent": "Nord The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/15",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1058.6505289029378,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/15",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1190.8288300975948,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/15",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1120.3498536774564,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1990/03/15",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1167.7089308401396,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/18",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1099.3192307700715,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/18",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1198.2935510582547,
+  "opponent": "Mike Kirchner",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/19",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1130.134044922398,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/19",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1089.7409414462788,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1990/03/19",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1238.5959792633353,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/19",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1131.251139981385,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1990/03/19",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1282.4466104279945,
+  "opponent": "Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/20",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 904.1814584202165,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/20",
+  "wrestling_as": "Koji Kitao",
+  "wrestler": "Koji Kitao",
+  "elo": 1098.7523139172756,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/22",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1118.827096076805,
+  "opponent": "Mike Kirchner",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/22",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1190.2525685033172,
+  "opponent": "Punisher Dice Morgan",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/22",
+  "wrestling_as": "Koji Kitao",
+  "wrestler": "Koji Kitao",
+  "elo": 1130.4411168540641,
+  "opponent": "Larry Cameron",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/22",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 975.9627323755616,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1990/03/22",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1175.8363375799781,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/23",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1298.721378839396,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1990/03/23",
+  "wrestling_as": "Koji Kitao",
+  "wrestler": "Koji Kitao",
+  "elo": 1149.2823562281162,
+  "opponent": "Mike Kirchner",
+  "result": "won"
+ },
+ {
+  "date": "1990/04/13",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1300.1589411112188,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1990/04/13",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1050.0,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1990/04/13",
+  "wrestling_as": "Jake Roberts",
+  "wrestler": "Jake Roberts",
+  "elo": 1050.0,
+  "opponent": "The Big Boss Man",
+  "result": "won"
+ },
+ {
+  "date": "1990/04/13",
+  "wrestling_as": "Genichiro Tenryu",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1050.0,
+  "opponent": "Randy Savage",
+  "result": "won"
+ },
+ {
+  "date": "1990/04/13",
+  "wrestling_as": "The Ultimate Warrior",
+  "wrestler": "The Ultimate Warrior",
+  "elo": 1050.0,
+  "opponent": "Ted DiBiase",
+  "result": "won"
+ },
+ {
+  "date": "1990/04/13",
+  "wrestling_as": "Hulk Hogan",
+  "wrestler": "Hulk Hogan",
+  "elo": 1051.1556851163614,
+  "opponent": "Stan Hansen",
+  "result": "won"
+ },
+ {
+  "date": "1990/04/27",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 855.1016450424233,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1990/04/27",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1123.859137458968,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1990/04/27",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1051.4405488127734,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1990/04/27",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1226.3051902762272,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1990/04/27",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 934.0411362368541,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1990/04/27",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1246.5754111449082,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/04",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1070.55766806951,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/04",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1173.7816968094648,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/04",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1236.990592237529,
+  "opponent": "Apollo Sugawara",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/04",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1305.0316974394104,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/05",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1192.4373027237962,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/05",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1245.0321917927577,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/05",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1097.1318677656536,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/05",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1050.0,
+  "opponent": "Masahiko Takasugi",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/05",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1260.3159557128624,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/05",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1112.904103143046,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/06",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 815.3233773415762,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/06",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1117.0210016160772,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/06",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1261.4710725649777,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/06",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1216.1228222565846,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/06",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1248.0713075756635,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/06",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1117.7048949532232,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/06",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1176.95853870356,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/24",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1136.1316653544336,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/24",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 933.9110637618205,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/24",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1017.4987843891082,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/24",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1209.4597543144519,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/24",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 957.1463117408382,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/24",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1092.8536882591618,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/26",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1217.4306657617533,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/26",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1153.638420013392,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/26",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 986.9465898301644,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/26",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1020.1997219106738,
+  "opponent": "Steve Williams",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/26",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1176.3707333806794,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/26",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1159.0317301267066,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/28",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1274.1214764387935,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/28",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 935.3664120790304,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/28",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1027.5429101266957,
+  "opponent": "Steve Williams",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/28",
+  "wrestling_as": "Koji Kitao",
+  "wrestler": "Koji Kitao",
+  "elo": 1085.1413673455756,
+  "opponent": "Big Van Vader",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/28",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1112.40840813696,
+  "opponent": "Koji Kitao",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/28",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1121.5722069752317,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/28",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1266.801069151401,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/29",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1024.3667541146656,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/29",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1225.5213613489552,
+  "opponent": "Apollo Sugawara",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/30",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1023.9928648781628,
+  "opponent": "Apollo Sugawara",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/30",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1088.648959763853,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/30",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1201.1211256039726,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/30",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1193.0031399979407,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1990/05/30",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1182.741337655252,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1990/05/30",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1282.7764568504026,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1133.7218210025608,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1189.9666217026204,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1004.5146575631277,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1289.5205421423702,
+  "opponent": "Kensuke Sasaki; Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1105.29648946516,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1065.6871163957924,
+  "opponent": "Masahiro Chono; Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "The Soultaker",
+  "wrestler": "The Soultaker",
+  "elo": 974.1147968201321,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1208.6265408351198,
+  "opponent": "The Soultaker",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Masashi Aoyagi",
+  "wrestler": "Masashi Aoyagi",
+  "elo": 983.5866958942844,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1290.9831089032605,
+  "opponent": "Masashi Aoyagi",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Animal Hamaguchi",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 966.8149166117015,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1154.7572903635303,
+  "opponent": "Animal Hamaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/12",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1141.4098305022276,
+  "opponent": "Stan Hansen",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/14",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1124.774093731423,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/14",
+  "wrestling_as": "The Soultaker",
+  "wrestler": "The Soultaker",
+  "elo": 988.1252828993007,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/16",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1146.5047581410445,
+  "opponent": "Super Strong Machine; Takayuki Iizuka (winner), Black Cat, Hiro Saito, Kensuke Sasaki, Norio Honaga, Osamu Matsuda, Shinya Hashimoto, Super Strong Machine, Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/16",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1263.0522173445804,
+  "opponent": "Osamu Kido; Takayuki Iizuka (winner), Black Cat, Hiro Saito, Kensuke Sasaki, Norio Honaga, Osamu Kido, Osamu Matsuda, Shinya Hashimoto, Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/16",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1294.273469585623,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/16",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1292.631284202509,
+  "opponent": "Gary Albright; Takayuki Iizuka (winner), Black Cat, Hiro Saito, Kensuke Sasaki, Norio Honaga, Osamu Kido, Osamu Matsuda, Super Strong Machine, Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/16",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1001.3683683694137,
+  "opponent": "Takayuki Iizuka (winner), Black Cat, Hiro Saito, Norio Honaga, Osamu Kido, Osamu Matsuda, Shinya Hashimoto, Super Strong Machine, Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/18",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1147.6798975755044,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/18",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1162.464339822668,
+  "opponent": "The Soultaker",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/18",
+  "wrestling_as": "The Soultaker",
+  "wrestler": "The Soultaker",
+  "elo": 1065.4388544619096,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/18",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1219.3988218594504,
+  "opponent": "Gary Albright",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/18",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1261.9856386995289,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/18",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1254.5422834748083,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/26",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1083.9816579832375,
+  "opponent": "Brad Rheingans",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/26",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 1113.6982395922669,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/26",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1098.8532539369376,
+  "opponent": "The Soultaker",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/26",
+  "wrestling_as": "The Soultaker",
+  "wrestler": "The Soultaker",
+  "elo": 1129.0499403476401,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/26",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1068.878464962824,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/26",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1268.9671371705451,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/26",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 961.291513643461,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "draw"
+ },
+ {
+  "date": "1990/06/26",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1014.5803593444804,
+  "opponent": "Steve Williams",
+  "result": "draw"
+ },
+ {
+  "date": "1990/06/30",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1272.7962498191832,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/30",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1058.7095697144136,
+  "opponent": "The Soultaker",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/30",
+  "wrestling_as": "The Soultaker",
+  "wrestler": "The Soultaker",
+  "elo": 1175.6368600983865,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1990/06/30",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 1056.832529822915,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/06/30",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1122.5528261651443,
+  "opponent": "Brad Rheingans",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/03",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1041.444184061516,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/03",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1066.79875507062,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1990/07/03",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1126.8538036236268,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/05",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1106.9045291660352,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/05",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 992.8359932704886,
+  "opponent": "Masa Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1990/07/05",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1203.6265820459366,
+  "opponent": "Steve Williams",
+  "result": "draw"
+ },
+ {
+  "date": "1990/07/05",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1076.234874827851,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/07/05",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1173.1717549609202,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/06",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1160.279774991502,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/06",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1051.2907991895918,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/06",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 1012.8504836024163,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1990/07/06",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1142.8353001574362,
+  "opponent": "Brad Rheingans",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/06",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1021.157591470288,
+  "opponent": "Steve Williams",
+  "result": "lost"
+ },
+ {
+  "date": "1990/07/06",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1055.660059783438,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/07",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1066.7184856702738,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/07",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1106.4067696304294,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/09",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1091.1030196160038,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/09",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1153.236296254391,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/09",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1276.11305580693,
+  "opponent": "Apollo Sugawara",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/09",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1230.07580487871,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "1990/07/09",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1129.0734637732621,
+  "opponent": "Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/19",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1238.0975930731686,
+  "opponent": "Biff Wellington",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/19",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1056.7530672336165,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1990/07/19",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1220.8015582371302,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/20",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1188.7217105191212,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/20",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1247.166359658589,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1990/07/20",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1249.7482543854712,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/20",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1300.4561707434077,
+  "opponent": "Vladimir Berkovich",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/21",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1064.9972063773926,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/21",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1160.0270499822655,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/22",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1096.6822909782236,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1990/07/22",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1128.3419653814344,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/22",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1244.6833689607233,
+  "opponent": "Biff Wellington",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/22",
+  "wrestling_as": "Koji Kitao",
+  "wrestler": "Koji Kitao",
+  "elo": 1121.030014634746,
+  "opponent": "Vladimir Berkovich",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/23",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1125.2733081168863,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/23",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1247.6836545415417,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/23",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1141.5501770371075,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/24",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1190.8875438086789,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/25",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1117.9889462338833,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/29",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1148.136526535944,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/07/29",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 978.9724384089761,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1990/07/29",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1103.7299961836002,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/01",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 993.2552848838575,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/01",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1129.8168516530602,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/01",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1222.3521384984613,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/01",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1274.562475545599,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/01",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1118.7528567909444,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/01",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1315.1480056159076,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/02",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1145.263221664605,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/02",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1122.4876939463356,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/02",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1124.6992961011217,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/02",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 979.7027519582558,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/02",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1321.9242720787083,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/03",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1154.5033873116006,
+  "opponent": "Apollo Sugawara",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/03",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1150.0871560112203,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/03",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1128.825155674956,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/03",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1326.3497936721585,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/04",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 949.167470600032,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/04",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1153.0229753045594,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/04",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1170.9713754314212,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/04",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1057.0647889134477,
+  "opponent": "Animal Hamaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/04",
+  "wrestling_as": "Animal Hamaguchi",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1038.5752833732097,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/04",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1294.0823256155695,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/04",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1254.6196065550503,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/05",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1174.942253414806,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/05",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1122.276589743041,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/05",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1309.4555183963287,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/06",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1130.3949913371657,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/06",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1275.2327792135495,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/06",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1243.3877317803642,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/07",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1222.31692458102,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/07",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1214.6925199592808,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/16",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1216.2301124532394,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/16",
+  "wrestling_as": "Animal Hamaguchi",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1069.5185443121693,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/17",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 897.0620013048103,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/17",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1156.4477259847765,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/19",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1235.9571090998688,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/19",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1273.7121841412018,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/19",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1093.3297399633248,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/19",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1202.837380902433,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/20",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1220.3579953194198,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/20",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1275.5242375234839,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/20",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1234.3508049004495,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/20",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1096.3443079706803,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/22",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1202.4370477214839,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/22",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1231.3338512532725,
+  "opponent": "Mike Enos",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/22",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1141.1937021569556,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/25",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1204.8752288506284,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/25",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1085.425207696026,
+  "opponent": "Apollo Sugawara",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/25",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1057.178077323973,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/25",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1241.345994307593,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/08/26",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1198.1824857734775,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/08/26",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1258.485243707992,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/01",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1086.1398745228585,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/01",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1156.7420325856642,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/01",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1242.0214398726632,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/01",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1218.0079018177669,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/01",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1046.731790443629,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/02",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1060.9244387749206,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/02",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1086.0374138092197,
+  "opponent": "Kantaro Hoshino; Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/02",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1106.4900800991445,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/02",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1225.886875347183,
+  "opponent": "Kengo Kimura; Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/02",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1243.725604618377,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/07",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1133.1307437040032,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/07",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1192.4024296093835,
+  "opponent": "Brad Rheingans",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/07",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 1090.7133268901941,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/07",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1222.4620388855749,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/07",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1191.7859868769447,
+  "opponent": "Big Van Vader",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/07",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1161.5315169038013,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/07",
+  "wrestling_as": "Samurai Shiro",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1213.4029671642445,
+  "opponent": "Great Muta",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/07",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1233.1412841931594,
+  "opponent": "Samurai Shiro",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/08",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1203.9884513218203,
+  "opponent": "Apollo Sugawara",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/08",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 1063.1409392095354,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/08",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1272.2714375483213,
+  "opponent": "Brad Rheingans",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/11",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1201.0947773166033,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/12",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1081.165201933803,
+  "opponent": "Apollo Sugawara",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/12",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1093.126991618029,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/13",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1206.5885578977257,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/13",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1220.005267603308,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/14",
+  "wrestling_as": "Animal Hamaguchi",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1085.2301476539583,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/14",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1126.94965471573,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/14",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1289.562368642357,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/14",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1197.853645754848,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/14",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1151.7404788104259,
+  "opponent": "Great Muta",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/30",
+  "wrestling_as": "Villano V",
+  "wrestler": "Villano V",
+  "elo": 980.2659093538583,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/30",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1253.592649941448,
+  "opponent": "Villano V",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/30",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1028.0134805133678,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1990/09/30",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1205.998527346624,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1990/09/30",
+  "wrestling_as": "TNT",
+  "wrestler": "TNT",
+  "elo": 976.0895364835894,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/30",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1213.0500090748087,
+  "opponent": "TNT",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/30",
+  "wrestling_as": "Ricky Steamboat",
+  "wrestler": "Ricky Steamboat",
+  "elo": 975.7484442870006,
+  "opponent": "Great Muta",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/30",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1222.1052014678473,
+  "opponent": "Ricky Steamboat",
+  "result": "won"
+ },
+ {
+  "date": "1990/09/30",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1071.5991900438867,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/09/30",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1301.9349276057537,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/05",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1210.586690903024,
+  "opponent": "Apollo Sugawara",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/05",
+  "wrestling_as": "Villano V",
+  "wrestler": "Villano V",
+  "elo": 985.2719330971422,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/07",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1190.4244220164924,
+  "opponent": "Big Van Vader",
+  "result": "lost"
+ },
+ {
+  "date": "1990/10/07",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1190.3112136184398,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/08",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1205.1613636660163,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/09",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1207.2456182357628,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/09",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1137.5243786956269,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/09",
+  "wrestling_as": "Ricky Steamboat",
+  "wrestler": "Ricky Steamboat",
+  "elo": 1009.6661769393335,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/11",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1283.098648329478,
+  "opponent": "Miguelito Perez",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/11",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1065.8311825942944,
+  "opponent": "TNT",
+  "result": "lost"
+ },
+ {
+  "date": "1990/10/11",
+  "wrestling_as": "TNT",
+  "wrestler": "TNT",
+  "elo": 1047.7827325849219,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/12",
+  "wrestling_as": "Villano V",
+  "wrestler": "Villano V",
+  "elo": 1022.3239681376001,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/12",
+  "wrestling_as": "Ricky Steamboat",
+  "wrestler": "Ricky Steamboat",
+  "elo": 1069.9819539246976,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/12",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1076.4061852889724,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1990/10/12",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1268.5929421121764,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/14",
+  "wrestling_as": "Ricky Steamboat",
+  "wrestler": "Ricky Steamboat",
+  "elo": 1081.5354740570358,
+  "opponent": "Hiroshi Hase",
+  "result": "draw"
+ },
+ {
+  "date": "1990/10/14",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1140.1869586780876,
+  "opponent": "Ricky Steamboat",
+  "result": "draw"
+ },
+ {
+  "date": "1990/10/14",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1166.8734392960082,
+  "opponent": "Masashi Aoyagi",
+  "result": "lost"
+ },
+ {
+  "date": "1990/10/14",
+  "wrestling_as": "Masashi Aoyagi",
+  "wrestler": "Masashi Aoyagi",
+  "elo": 1061.8368719955163,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/25",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1307.292666884292,
+  "opponent": "Larry Cameron",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/25",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1059.7310778607246,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1990/10/25",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1229.747965953461,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/25",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1097.3667427677078,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/10/25",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1233.2446379268722,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/25",
+  "wrestling_as": "The Soultaker",
+  "wrestler": "The Soultaker",
+  "elo": 1102.31435944082,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1990/10/25",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1073.3225006575665,
+  "opponent": "The Soultaker",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/25",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1115.3692499451392,
+  "opponent": "Tiger Jeet Singh",
+  "result": "lost"
+ },
+ {
+  "date": "1990/10/25",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1074.9419636733005,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/29",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1178.773327721574,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/29",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 986.1739817619022,
+  "opponent": "Animal Hamaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1990/10/29",
+  "wrestling_as": "Animal Hamaguchi",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1127.069646405424,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/30",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1031.6973184879753,
+  "opponent": "Takayuki Iizuka",
+  "result": "draw"
+ },
+ {
+  "date": "1990/10/31",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1217.5988061709418,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1990/10/31",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1275.9695562956033,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/01",
+  "wrestling_as": "Animal Hamaguchi",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1132.0406614269284,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/01",
+  "wrestling_as": "Masashi Aoyagi",
+  "wrestler": "Masashi Aoyagi",
+  "elo": 1028.0574698906842,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1990/11/01",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1212.5527298264062,
+  "opponent": "Masashi Aoyagi",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/01",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 948.6778244005989,
+  "opponent": "Tiger Jeet Singh",
+  "result": "lost"
+ },
+ {
+  "date": "1990/11/01",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1112.4381210346037,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/01",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1250.4388459799195,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1990/11/01",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1294.1236524278602,
+  "opponent": "Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/01",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1276.3070862673794,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1990/11/01",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1253.4476195024874,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/06",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1054.787861792243,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/06",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1184.2769835829113,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1990/11/06",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1164.0103879437688,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/07",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1059.8934732295786,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/07",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1211.1107165216001,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/07",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1072.3976647736306,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/27",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1188.5121393072582,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/27",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1285.2494412143055,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/28",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1206.729135211013,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/28",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1176.6280775799892,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1990/11/28",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1141.3629426568525,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1990/11/28",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1076.2261522713347,
+  "opponent": "Ryuma Go",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/03",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Brown / Bad News Allen",
+  "elo": 1036.437741272394,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/03",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1298.6001242266877,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/03",
+  "wrestling_as": "The Cuban Assassin",
+  "wrestler": "The Cuban Assassin",
+  "elo": 1017.1807083718148,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/07",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1180.6159737304797,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/07",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1210.3456644136738,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/07",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1172.0721287432712,
+  "opponent": "Ray Apollo",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/08",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1191.1900820978965,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/08",
+  "wrestling_as": "Animal Hamaguchi",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1093.122648976151,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1990/12/08",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1229.8046706390626,
+  "opponent": "Animal Hamaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/09",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1299.6674057488444,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/10",
+  "wrestling_as": "Animal Hamaguchi",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1115.1269818766455,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/10",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1210.8609303106832,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka / Samurai Shiro",
+  "elo": 1188.7930875036584,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1990/12/10",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1253.5643129618104,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/11",
+  "wrestling_as": "Bad News Brown",
+  "wrestler": "Bad News Brown / Bad News Allen",
+  "elo": 1005.022438133572,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1990/12/11",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1203.4874318820932,
+  "opponent": "Bad News Brown",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/11",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1028.8077860579363,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1990/12/11",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1243.174102816212,
+  "opponent": "Steve Williams",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/11",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1243.3589077810407,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "1990/12/11",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1083.7810668665295,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/11",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1043.3169830398492,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/12/11",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1247.385741428891,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/13",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1097.276326516566,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/13",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1203.2426816619673,
+  "opponent": "Ax Demolition",
+  "result": "lost"
+ },
+ {
+  "date": "1990/12/13",
+  "wrestling_as": "Ax Demolition",
+  "wrestler": "Ax Demolition",
+  "elo": 1080.2324522381468,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/26",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1195.6525166881192,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/26",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1215.085802125956,
+  "opponent": "Nick Bockwinkel",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/26",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1253.0663155197603,
+  "opponent": "Lou Thesz",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/26",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1080.9375761613583,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1990/12/26",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1263.1360138655136,
+  "opponent": "Tiger Jeet Singh",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/26",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1307.228662719819,
+  "opponent": "Negro Casas",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/26",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1238.163639817289,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1990/12/26",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1149.6093935577474,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1990/12/26",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1216.697345862113,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1990/12/26",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1149.7266995520836,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Shinya Hashimoto",
+ "Jushin Thunder Liger",
+ "Masa Saito",
+ "Super Strong Machine",
+ "Pegasus Kid",
+ "Great Muta / Keiji Muto",
+ "Riki Choshu",
+ "Masahiro Chono",
+ "Osamu Kido",
+ "Shiro Koshinaka / Samurai Shiro",
+ "Akira Nogami",
+ "Kuniaki Kobayashi",
+ "Kengo Kimura",
+ "Big Van Vader",
+ "Naoki Sano",
+ "Owen Hart",
+ "Hiro Saito",
+ "The Soultaker",
+ "Takayuki Iizuka",
+ "Hiroshi Hase",
+ "Tatsumi Fujinami",
+ "Tony Halme",
+ "Koji Kitao",
+ "Kensuke Sasaki",
+ "Animal Hamaguchi",
+ "Brad Rheingans",
+ "Tiger Jeet Singh",
+ "Scott Norton",
+ "Crusher Bam Bam Bigelow",
+ "George Takano",
+ "Ricky Steamboat",
+ "Ax Demolition",
+ "Masashi Aoyagi",
+ "Biff Wellington",
+ "Steve Williams",
+ "Black Tiger / Black Tiger I",
+ "Hulk Hogan",
+ "Black Cat",
+ "The Great Kabuki",
+ "Jake Roberts",
+ "Genichiro Tenryu",
+ "The Ultimate Warrior",
+ "TNT",
+ "Ryuma Go",
+ "Antonio Inoki",
+ "Scott Hall",
+ "Bad News Brown / Bad News Allen",
+ "Apollo Sugawara",
+ "Villano V",
+ "The Cuban Assassin",
+ "Tatsutoshi Goto",
+ "Kantaro Hoshino",
+ "Stan Hansen",
+ "Tiger Mask",
+ "Bret Hart",
+ "Mike Kirchner",
+ "Negro Casas",
+ "Vladimir Berkovich",
+ "Gary Albright",
+ "Miguelito Perez",
+ "Cheetah Kid",
+ "Lou Thesz",
+ "Mike Enos",
+ "Nick Bockwinkel",
+ "Punisher Dice Morgan",
+ "Masanobu Kurisu",
+ "Ray Apollo",
+ "Hirokazu Hata",
+ "Larry Cameron",
+ "Osamu Matsuda",
+ "Norio Honaga",
+ "Tracy Smothers",
+ "Larry Zbyszko",
+ "Akira Katayama",
+ "Victor Zangiev",
+ "Salman Hashimikov",
+ "Greg Valentine",
+ "The Big Boss Man",
+ "Randy Savage",
+ "Ted DiBiase",
+ "Masahiko Takasugi",
+ "Nord The Barbarian",
+ "Michiyoshi Ohara",
+ "Koji Kanemoto"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

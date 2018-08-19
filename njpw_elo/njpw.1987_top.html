@@ -1,0 +1,6927 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1987/01/02",
+  "wrestling_as": "Mike von Erich",
+  "wrestler": "Mike von Erich",
+  "elo": 1050.0,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/02",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1050.0,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/02",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1000.0,
+  "opponent": "Kengo Kimura",
+  "result": "draw"
+ },
+ {
+  "date": "1987/01/02",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1000.0,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1987/01/03",
+  "wrestling_as": "Rey Cobra",
+  "wrestler": "Rey Cobra",
+  "elo": 950.0,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/03",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1050.0,
+  "opponent": "Rey Cobra",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/03",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1042.8536882591618,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/03",
+  "wrestling_as": "Mike von Erich",
+  "wrestler": "Mike von Erich",
+  "elo": 992.8536882591618,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/03",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1057.1463117408382,
+  "opponent": "Mike von Erich",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/03",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 1050.0,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/03",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1050.0,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/03",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 950.0,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/03",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1050.0,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/04",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1092.8536882591618,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/04",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1006.1360561308535,
+  "opponent": "Umanosuke Ueda",
+  "result": "draw"
+ },
+ {
+  "date": "1987/01/04",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1036.7176321283082,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
+ },
+ {
+  "date": "1987/01/04",
+  "wrestling_as": "Black Bart",
+  "wrestler": "Black Bart",
+  "elo": 1000.0,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1987/01/06",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1129.8002780893262,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/06",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 957.1463117408382,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/06",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1092.8536882591618,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/06",
+  "wrestling_as": "Black Bart",
+  "wrestler": "Black Bart",
+  "elo": 957.1463117408382,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/06",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1092.8536882591618,
+  "opponent": "Black Bart",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/07",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 967.856620730342,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/07",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1161.9436573589842,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/07",
+  "wrestling_as": "Rey Cobra",
+  "wrestler": "Rey Cobra",
+  "elo": 900.0,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/07",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 992.8536882591618,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/07",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1057.1463117408382,
+  "opponent": "El Canek",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/07",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1010.5257678656282,
+  "opponent": "Umanosuke Ueda",
+  "result": "draw"
+ },
+ {
+  "date": "1987/01/07",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1032.3279203935335,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
+ },
+ {
+  "date": "1987/01/07",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 925.7400606730722,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/07",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1124.259939326928,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/09",
+  "wrestling_as": "Mike von Erich",
+  "wrestler": "Mike von Erich",
+  "elo": 1043.881980179338,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/09",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 993.8639438691465,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/09",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1101.0927661616743,
+  "opponent": "Konga The Barbarian",
+  "result": "draw"
+ },
+ {
+  "date": "1987/01/12",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1057.1463117408382,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/12",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 979.1944503109881,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/12",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1063.6592379481735,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/12",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 956.8601882394503,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/12",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1128.8471882788733,
+  "opponent": "El Canek",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/12",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1040.8889573145655,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/13",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1092.1976407529337,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/13",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 935.9935000197115,
+  "opponent": "Rey Cobra",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/13",
+  "wrestling_as": "Rey Cobra",
+  "wrestler": "Rey Cobra",
+  "elo": 1028.012999960577,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/13",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 963.03679660723,
+  "opponent": "Kantaro Hoshino",
+  "result": "draw"
+ },
+ {
+  "date": "1987/01/13",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1111.6945277243879,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/13",
+  "wrestling_as": "Black Bart",
+  "wrestler": "Black Bart",
+  "elo": 918.9697647808991,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1079.0655042745045,
+  "opponent": "Black Bart",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/14",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1004.1731315741972,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/14",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1124.8923727003073,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/16",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1067.7086625671514,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/16",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1146.4080506461755,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/16",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1039.5282691850791,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/17",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 962.9653889154819,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/17",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1129.232251837452,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/17",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 995.3009752355624,
+  "opponent": "Tony St. Clair",
+  "result": "draw"
+ },
+ {
+  "date": "1987/01/17",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1143.2625035328354,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/19",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1157.8308211050178,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/19",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1119.9061381206473,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/21",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1097.996515224024,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/21",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 953.5256410065674,
+  "opponent": "Masahiro Chono (winner), Masaharu Funaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/21",
+  "wrestling_as": "Rey Cobra",
+  "wrestler": "Rey Cobra",
+  "elo": 952.3757677019772,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/21",
+  "wrestling_as": "Brett Sawyer",
+  "wrestler": "Brett Sawyer",
+  "elo": 1042.7087898585894,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/21",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 926.8708519120311,
+  "opponent": "El Canek",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/21",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 1015.3603950061871,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/21",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1038.8864597768343,
+  "opponent": "Konga The Barbarian",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/22",
+  "wrestling_as": "Black Bart",
+  "wrestler": "Black Bart",
+  "elo": 871.1156507472017,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/22",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1143.833195137496,
+  "opponent": "Black Bart",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/23",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1085.2853305165718,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/24",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1154.1274071630462,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/25",
+  "wrestling_as": "Rey Cobra",
+  "wrestler": "Rey Cobra",
+  "elo": 929.3413664376202,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/25",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1184.9780586233412,
+  "opponent": "Rey Cobra",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/25",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 1060.6431529281033,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/25",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1075.2974956326632,
+  "opponent": "Buzz Sawyer",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/25",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1083.3998837338381,
+  "opponent": "Akira Maeda",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/26",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1154.1048220027694,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/26",
+  "wrestling_as": "Rey Cobra",
+  "wrestler": "Rey Cobra",
+  "elo": 1061.5712262466832,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/26",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 1084.9756568269315,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/26",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 838.4894087384787,
+  "opponent": "Tony St. Clair",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/26",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1033.6712186737436,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/26",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1135.0139955766663,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/29",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1019.3354926606312,
+  "opponent": "Buzz Sawyer",
+  "result": "lost"
+ },
+ {
+  "date": "1987/01/29",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1089.6332216457756,
+  "opponent": "Akira Maeda",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/30",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1034.347294802045,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/30",
+  "wrestling_as": "Black Bart",
+  "wrestler": "Black Bart",
+  "elo": 1006.5986742186751,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1987/01/30",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1114.2517195896623,
+  "opponent": "Konga The Barbarian",
+  "result": "draw"
+ },
+ {
+  "date": "1987/02/02",
+  "wrestling_as": "Brett Sawyer",
+  "wrestler": "Brett Sawyer",
+  "elo": 1095.084252341662,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/04",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1184.097334795298,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/04",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1122.3224527692694,
+  "opponent": "Brett Sawyer",
+  "result": "lost"
+ },
+ {
+  "date": "1987/02/04",
+  "wrestling_as": "Brett Sawyer",
+  "wrestler": "Brett Sawyer",
+  "elo": 1157.7398581957339,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/04",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1124.0125450609482,
+  "opponent": "Konga The Barbarian",
+  "result": "draw"
+ },
+ {
+  "date": "1987/02/05",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1093.3931922776985,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/05",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1112.2665439922334,
+  "opponent": "Konga The Barbarian",
+  "result": "lost"
+ },
+ {
+  "date": "1987/02/05",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 987.6236356896989,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1987/02/05",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1103.8699708531844,
+  "opponent": "Nobuhiko Takada",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/05",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 955.6641574076386,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/02/05",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1083.8641117774405,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/23",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 910.1742321539191,
+  "opponent": "Jerry Grey",
+  "result": "lost"
+ },
+ {
+  "date": "1987/02/23",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1056.6354069893994,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/23",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 992.1747075170432,
+  "opponent": "Akira Maeda",
+  "result": "draw"
+ },
+ {
+  "date": "1987/02/23",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1014.7844208332868,
+  "opponent": "Nobuhiko Takada",
+  "result": "draw"
+ },
+ {
+  "date": "1987/02/24",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1062.658054933249,
+  "opponent": "Luke Williams",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/24",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1148.3776859466557,
+  "opponent": "Butch Miller",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/27",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 1025.6243815070611,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/27",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1085.2590194917943,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/27",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1109.8824615593933,
+  "opponent": "Jerry Grey",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/28",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1124.1150648610362,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/28",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 1048.9359847387875,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/02/28",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 856.6948146585652,
+  "opponent": "Rick Steiner",
+  "result": "lost"
+ },
+ {
+  "date": "1987/02/28",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1111.9987282394713,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/01",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1150.825355534302,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/01",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 1084.630148331961,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/01",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1061.6941767490107,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/01",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1160.187013049854,
+  "opponent": "Rick Steiner",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/01",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 992.743463914075,
+  "opponent": "Jerry Grey",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/02",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1031.3861662953834,
+  "opponent": "Tatsuo Nakano",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/02",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 814.2677265048762,
+  "opponent": "George Wells",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/02",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 1105.8436924088055,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/02",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1106.325154115502,
+  "opponent": "Jerry Grey",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/04",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1026.2116825834817,
+  "opponent": "Kazuo Yamazaki",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/04",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1000.4754589474642,
+  "opponent": "Shinya Hashimoto",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/04",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1024.247006022161,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/04",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1188.2725262611516,
+  "opponent": "Rick Steiner",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/04",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 1055.9129802737466,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/04",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1156.255866250561,
+  "opponent": "George Wells",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/04",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 961.839954605201,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1122.0241571722395,
+  "opponent": "Steve Williams",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/05",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1041.1722177526499,
+  "opponent": "Akira Katayama",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/05",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 785.4964986446774,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/05",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1138.5006787911357,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/05",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1106.9887901460982,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/05",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1190.2171630835805,
+  "opponent": "Jerry Grey",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/07",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1097.1635090044056,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/07",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1162.0975256251431,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/07",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1040.936708757994,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/07",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 1041.1261059647823,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/07",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1176.2510866446664,
+  "opponent": "Jerry Grey",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/09",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 738.9522719699207,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/09",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1016.0155772514535,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/09",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1133.7085752760831,
+  "opponent": "Jerry Grey",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/09",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 1011.3553265055523,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/09",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1219.9879425428105,
+  "opponent": "George Wells",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/11",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1131.905593646554,
+  "opponent": "Yoji Anjo",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/11",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 879.2084959212596,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/11",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1136.4065477020247,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/11",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 981.2687955513034,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/11",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1187.9173520592667,
+  "opponent": "George Wells",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/11",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1148.7949362480188,
+  "opponent": "Steve Williams",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/11",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 989.2961050018487,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/14",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1139.1406467182958,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/14",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1144.382860553252,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/14",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 961.0742268780547,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/14",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1230.085226879435,
+  "opponent": "George Wells",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/15",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1195.311025985244,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/15",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1057.4386015410728,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/15",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1042.6125862757056,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/15",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1033.7257234524832,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/15",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 936.5389959918681,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/15",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1180.7910971367476,
+  "opponent": "George Wells",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/16",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1164.8422115400795,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/16",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1037.8564479497609,
+  "opponent": "Masahiro Chono",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/16",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1123.600256117884,
+  "opponent": "Rick Steiner",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/16",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1105.436493319843,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/16",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 1051.7345103140915,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/16",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 969.2928927340962,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/16",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1240.0868330133112,
+  "opponent": "Steve Williams",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/18",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1001.5564078585288,
+  "opponent": "Rick Steiner",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/18",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1146.49267173702,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/18",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 1020.3871916104556,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/18",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1219.2646707629026,
+  "opponent": "George Wells",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/18",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1247.1133788652432,
+  "opponent": "Jerry Grey",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/19",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1186.1345065394516,
+  "opponent": "Chris Benoit",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/19",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1099.7324535383582,
+  "opponent": "Yuji Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/19",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1076.5875512277717,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/19",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1191.3955654433644,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/19",
+  "wrestling_as": "George Wells",
+  "wrestler": "George Wells",
+  "elo": 1057.9696346491614,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/20",
+  "wrestling_as": "Naoki Sano",
+  "wrestler": "Naoki Sano",
+  "elo": 1168.753785982709,
+  "opponent": "Masakatsu Funaki",
+  "result": "draw"
+ },
+ {
+  "date": "1987/03/20",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1037.421851367279,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/20",
+  "wrestling_as": "Kendo Nagasaki",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 966.8725763186108,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/20",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1155.1515808536287,
+  "opponent": "Kendo Nagasaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/26",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 982.2786552149556,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/26",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1056.6996040108522,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/26",
+  "wrestling_as": "Miss A",
+  "wrestler": "Miss A",
+  "elo": 1050.0,
+  "opponent": "Harley Saito",
+  "result": "won"
+ },
+ {
+  "date": "1987/03/26",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 970.9534495948452,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/03/26",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1184.1981312587836,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/06",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1025.1677918931337,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/06",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1222.927377561083,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/06",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1063.712381527119,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/06",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Yang Seung-Hi",
+  "elo": 950.6005330302913,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/06",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1053.5725985439058,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/06",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 934.5081514047527,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/06",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1205.3541372616696,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/07",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1228.3003735501684,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/07",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1060.998455479976,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/07",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1095.9234081061234,
+  "opponent": "Ray Candy",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/07",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1231.8268851154994,
+  "opponent": "Bad News Allen",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/08",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1082.2716904077615,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/08",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1047.1313476639439,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/08",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1243.0284753320823,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/08",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 971.5521774343952,
+  "opponent": "Matt Borne",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/08",
+  "wrestling_as": "Matt Borne",
+  "wrestler": "Matt Borne",
+  "elo": 1053.6156144587385,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/08",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1180.2945364842292,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/08",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1077.940268557347,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/08",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 889.395449261458,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/08",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1171.3512873196662,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/11",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 923.0953514083254,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/11",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1030.7354812410254,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/11",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Yang Seung-Hi",
+  "elo": 934.9353020132842,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/11",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1250.8610908405858,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/11",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1030.503601444616,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/11",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1098.7434166710552,
+  "opponent": "Akira Maeda",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/11",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1221.4253110586453,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/11",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1218.7411187035543,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/13",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1259.1691525832894,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/13",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1117.4600449592356,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/13",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1096.0704856929226,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/13",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1240.2443558502257,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1102.1236231550504,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/13",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1099.7312656092317,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/14",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1124.9948637552793,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/14",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1225.4475263946224,
+  "opponent": "Bad News Allen",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/15",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1045.326204882205,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/15",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1024.3480437664803,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/15",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1270.5608045320212,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/15",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1132.4530061277026,
+  "opponent": "Ray Candy",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/16",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1235.6591938061817,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/16",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1194.798085206958,
+  "opponent": "Darryl Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/16",
+  "wrestling_as": "Matt Borne",
+  "wrestler": "Matt Borne",
+  "elo": 1014.7704303648491,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/16",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1171.298190221592,
+  "opponent": "Matt Borne",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/17",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1081.4267438555335,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/17",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 961.7572560185353,
+  "opponent": "Yang Seung-Hi",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/17",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Yang Seung-Hi",
+  "elo": 1060.1168775091742,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/17",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1232.353748732208,
+  "opponent": "Ray Candy",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/19",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 771.7306868153206,
+  "opponent": "Shunji Kosugi",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/19",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1036.5938398668009,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/19",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1162.2929489479682,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/19",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1127.3950937213767,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/19",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1161.0059004482523,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/19",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1109.0357064443951,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/20",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1075.8051969513792,
+  "opponent": "Tatsuo Nakano",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/20",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1178.269945373986,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/20",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1198.2487815309148,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/20",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1167.9412000118182,
+  "opponent": "Akira Maeda",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/20",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1231.5402828771885,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/21",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 999.9806357585909,
+  "opponent": "Shunji Kosugi",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/21",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 691.6783313741746,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/21",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1197.447967074094,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/21",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1057.2833616726289,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/21",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1158.7411349178644,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/22",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 792.5142707020333,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/22",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1221.5346679802744,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/22",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1178.3720098881736,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/23",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 938.9471632436434,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/23",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1021.2985964996948,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/23",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1001.195611659216,
+  "opponent": "Matt Borne",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/23",
+  "wrestling_as": "Matt Borne",
+  "wrestler": "Matt Borne",
+  "elo": 1070.858180378262,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/23",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1160.0648213451298,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/23",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1166.6175135845529,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/24",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 997.2980852878453,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/24",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1233.5349235861993,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/24",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1139.1411692808574,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/25",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Yang Seung-Hi",
+  "elo": 1026.7535604304876,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/25",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1213.6578535629155,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/25",
+  "wrestling_as": "Matt Borne",
+  "wrestler": "Matt Borne",
+  "elo": 1037.9746040159625,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/25",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1227.6816615692574,
+  "opponent": "Matt Borne",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/25",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1173.291339669628,
+  "opponent": "Bad News Allen",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/26",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1020.5761913159251,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/26",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1161.9673513505224,
+  "opponent": "Akira Maeda",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/26",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1171.3888096642354,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1987/04/27",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 902.1042521323689,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/27",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1215.8694226297314,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/27",
+  "wrestling_as": "Matt Borne",
+  "wrestler": "Matt Borne",
+  "elo": 1084.0118579991934,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/27",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1184.9656249062878,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/27",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1219.351808663778,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/27",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1118.3084764643663,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/27",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1226.68104700836,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/04/27",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 952.7117681293114,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/04/27",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1240.6611236099554,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/11",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1000.0999647082887,
+  "opponent": "Chris Benoit",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/11",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 954.4593475366524,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/11",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 967.6184964539622,
+  "opponent": "Alexis Smirnoff",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/11",
+  "wrestling_as": "Alexis Smirnoff",
+  "wrestler": "Alexis Smirnoff",
+  "elo": 1052.957694861963,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/11",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 972.8414509539646,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/11",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1198.5473587102708,
+  "opponent": "Hacksaw Higgins",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/11",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1250.6686262949074,
+  "opponent": "Killer Brooks",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/13",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1045.5989126985805,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/13",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 819.2527464917187,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/13",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1232.4908271309473,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/13",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 935.5910237006369,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1235.2414192226975,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/14",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1203.152515766254,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/14",
+  "wrestling_as": "Alexis Smirnoff",
+  "wrestler": "Alexis Smirnoff",
+  "elo": 991.6281417184298,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/14",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1034.1710040974979,
+  "opponent": "Alexis Smirnoff",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/14",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 905.3434820375284,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/14",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1242.8033046384746,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/15",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 976.1314820911806,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/15",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 962.4748379368605,
+  "opponent": "Killer Brooks",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/15",
+  "wrestling_as": "Alexis Smirnoff",
+  "wrestler": "Alexis Smirnoff",
+  "elo": 971.6317048580066,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/15",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1242.489045561159,
+  "opponent": "Alexis Smirnoff",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/16",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 949.6967505877067,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/16",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1047.7012994084273,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/16",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1225.3317237927731,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/16",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 923.6564069659169,
+  "opponent": "George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/16",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1210.8961634838297,
+  "opponent": "Killer Brooks",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/18",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1241.4858671567774,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/18",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 891.5287061229644,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/18",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1218.9280886945678,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/18",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1114.1536703834154,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/18",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1074.1308586912396,
+  "opponent": "Akira Maeda",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/20",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 915.7265176048758,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/20",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1233.8242820384808,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/20",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1004.9190814358612,
+  "opponent": "Killer Brooks",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/20",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1196.2056712321764,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/20",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1273.3910437572988,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/20",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1005.1420175248197,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1987/05/22",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1043.4582761662173,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1987/05/22",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 839.7275516271676,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/22",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1100.031435939138,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/23",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 855.9185859496263,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/23",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1093.6163473547438,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/23",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 986.9256422999194,
+  "opponent": "Alexis Smirnoff",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/23",
+  "wrestling_as": "Alexis Smirnoff",
+  "wrestler": "Alexis Smirnoff",
+  "elo": 1032.4073619665144,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/23",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1256.5999699298907,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/25",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 836.3160513796181,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/25",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1246.3865007992795,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/25",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1028.7222460961543,
+  "opponent": "Killer Brooks",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/25",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1000.5842095638719,
+  "opponent": "Konga The Barbarian",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/25",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1283.404347254105,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/27",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 968.5870941231649,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/27",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1255.5557748876568,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/27",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1235.0489175378557,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/28",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 996.930811601662,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/28",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1264.6589825987119,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/28",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 981.9468063803773,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/28",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1265.918671521638,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/30",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 942.8608476534718,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/30",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1022.6570580713551,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/30",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 960.1673306656629,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/30",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1272.6410583114707,
+  "opponent": "Hacksaw Higgins",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/30",
+  "wrestling_as": "Alexis Smirnoff",
+  "wrestler": "Alexis Smirnoff",
+  "elo": 1004.3758461801464,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/05/30",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1224.2371870185445,
+  "opponent": "Alexis Smirnoff",
+  "result": "won"
+ },
+ {
+  "date": "1987/05/30",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1300.4668540144505,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/01",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1098.8185806619356,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/01",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 993.0871131825478,
+  "opponent": "Chris Benoit",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/01",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1046.6019450315441,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/01",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1253.327281892725,
+  "opponent": "Killer Brooks",
+  "result": "draw"
+ },
+ {
+  "date": "1987/06/01",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1008.8303560607683,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/03",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1041.360074819654,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/03",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1104.0604508738256,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/03",
+  "wrestling_as": "Kerry von Erich",
+  "wrestler": "Kerry von Erich",
+  "elo": 1008.5741247436918,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/03",
+  "wrestling_as": "Alexis Smirnoff",
+  "wrestler": "Alexis Smirnoff",
+  "elo": 961.2016636146059,
+  "opponent": "George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/03",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1032.2116156569468,
+  "opponent": "Kengo Kimura",
+  "result": "draw"
+ },
+ {
+  "date": "1987/06/03",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1249.8128636931647,
+  "opponent": "Riki Choshu",
+  "result": "draw"
+ },
+ {
+  "date": "1987/06/04",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1234.0750927246677,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/05",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1001.7054454775516,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/05",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1263.8030881896268,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/05",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 929.2742474578378,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/05",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1130.9245191469631,
+  "opponent": "Hacksaw Higgins",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/05",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 968.165200925669,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/05",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1307.3576567418047,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/07",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1010.1932422066541,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/07",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1040.0256996912233,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/07",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 951.9162671225157,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/07",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1217.9696544547455,
+  "opponent": "Scott Hall",
+  "result": "draw"
+ },
+ {
+  "date": "1987/06/07",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1000.3760774655134,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
+ },
+ {
+  "date": "1987/06/07",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1175.8125908139205,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/09",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 973.1917032704,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/09",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1244.9966224939296,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/09",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1070.6170469138992,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/09",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 974.598173261382,
+  "opponent": "Kevin von Erich",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/09",
+  "wrestling_as": "Kevin von Erich",
+  "wrestler": "Kevin von Erich",
+  "elo": 1054.1240728347723,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/09",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1290.3388326706006,
+  "opponent": "Masa Saito (winner), Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/09",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1084.591931787299,
+  "opponent": "Masa Saito (winner), Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/09",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1201.8558304525693,
+  "opponent": "Antonio Inoki, Nobuhiko Takada",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/09",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1180.7463780635792,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/09",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1106.6581684392795,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/10",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 953.1891480004663,
+  "opponent": "Alexis Smirnoff",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/10",
+  "wrestling_as": "Alexis Smirnoff",
+  "wrestler": "Alexis Smirnoff",
+  "elo": 1018.2057578207937,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/10",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1036.6710967111585,
+  "opponent": "Killer Brooks",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/10",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1015.720185557298,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/10",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1221.3838275892851,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/10",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1230.2848665564488,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/10",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1299.4925054214634,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/11",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1256.0142217551565,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/11",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 932.2268076920693,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/11",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1077.6359922894892,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/11",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1002.4742237045285,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1987/06/11",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1208.2307930509771,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/12",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 962.0854241832933,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/12",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1017.6400092730423,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/12",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1267.207066964247,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/12",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1210.199919849966,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/12",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1319.5774521279463,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/29",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1125.576506208866,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/29",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1206.892260225312,
+  "opponent": "Johnny Smith",
+  "result": "won"
+ },
+ {
+  "date": "1987/06/29",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1030.1816780465315,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1987/06/29",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1227.7124656152089,
+  "opponent": "The Violence Warlord",
+  "result": "draw"
+ },
+ {
+  "date": "1987/06/29",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1176.123396330094,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/06/29",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1170.8729618810455,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/01",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 976.1514645464811,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/01",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1062.6440282384153,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/01",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1234.0038246731085,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/01",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1148.2923260471632,
+  "opponent": "Mike Moore",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/01",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1220.5678271194931,
+  "opponent": "Buzz Sawyer",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/01",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1139.8657832002975,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/03",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 988.2147651987515,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/03",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1231.9080034640367,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/04",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1174.0127726876099,
+  "opponent": "Mike Moore",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/06",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1016.6166232475118,
+  "opponent": "Chris Benoit",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/06",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1006.5995156367184,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/06",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1007.985867784386,
+  "opponent": "The Violence Warlord",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/06",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1084.8398385005607,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/06",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1199.1931488731675,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/07",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 930.0211963164978,
+  "opponent": "Shunji Kosugi",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/07",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1046.2507912861743,
+  "opponent": "Johnny Smith",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/07",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1116.9928793737972,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/08",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1239.6971980150154,
+  "opponent": "Mike Moore",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/09",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1129.6492360734792,
+  "opponent": "Keiji Muto",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/09",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1200.564081875471,
+  "opponent": "The Violence Warlord",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/09",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1217.6381097999038,
+  "opponent": "Mike Moore",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/11",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1102.9790834121313,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/11",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1212.7541548531603,
+  "opponent": "Mike Moore",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/11",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1094.4162518638327,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/11",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1331.5235644282131,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/12",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1036.7919271959163,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/12",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1082.410035041972,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/12",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1012.6863476886756,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/12",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1068.2714640876584,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/12",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1230.1079645153968,
+  "opponent": "The Violence Warlord",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/12",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1229.812883042102,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/12",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1114.1848818096596,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1238.529877755144,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/14",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1046.7047629188976,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/14",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1030.3764535407572,
+  "opponent": "The Violence Warlord",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/14",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1120.305045588873,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/14",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1210.4065222571685,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/14",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1128.6480568951301,
+  "opponent": "Masa Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/15",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1103.9693802076317,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/15",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1018.80988908577,
+  "opponent": "The Violence Warlord",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/15",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1240.2816448460785,
+  "opponent": "Mike Moore",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/15",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1336.3298726669484,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/16",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1076.787242175332,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/16",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1092.8763762971291,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/16",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1081.6990699511712,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/16",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1209.1675551440335,
+  "opponent": "Johnny Smith",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/16",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1247.4271246078717,
+  "opponent": "Mike Moore",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/17",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1053.0578750826098,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/17",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1254.6022422803592,
+  "opponent": "The Violence Warlord",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/17",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1254.1181105114038,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/18",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1017.6656451590012,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/18",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1071.8079447050065,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/18",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1259.6836812991785,
+  "opponent": "Johnny Smith",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/18",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1096.0198785817868,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/18",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1270.9163314370307,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/20",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1265.17644813083,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/20",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1019.3915176851773,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/20",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1204.5393192784782,
+  "opponent": "The Violence Warlord",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/21",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1034.1270682174677,
+  "opponent": "Chris Benoit",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/21",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1126.3199758012195,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/21",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 910.5464187613183,
+  "opponent": "Bad News Allen",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/21",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1228.8831968650438,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/21",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1168.6063811133592,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/21",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1204.2459905869225,
+  "opponent": "Buzz Sawyer",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/21",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1149.7089123145192,
+  "opponent": "Keiji Muto",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/22",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 996.3493379302254,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/22",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1240.4042867425198,
+  "opponent": "The Violence Warlord",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/22",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1107.5347808702893,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/22",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1225.626385000593,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/23",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 979.2773605652366,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/23",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1279.4523201195252,
+  "opponent": "The Violence Warlord",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/23",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1119.6879977978283,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/23",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1225.041779645625,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/24",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1067.1420035507197,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/24",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1012.7231047539973,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/24",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1216.1598582103675,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/24",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1075.7755414158885,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/24",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1256.2839064697203,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/24",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 959.7813828841994,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/24",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1235.3743738411115,
+  "opponent": "The Violence Warlord",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/25",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1085.4418083945895,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/25",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1228.7655628532705,
+  "opponent": "Johnny Smith",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/25",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1286.9674285329784,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/25",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 949.5114677661043,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/25",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1341.464830225996,
+  "opponent": "The Violence Warlord",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/26",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1048.7271734338578,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/26",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1065.7320234960416,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/26",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 924.4379302180453,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/26",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1293.2358129199931,
+  "opponent": "The Violence Warlord",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/26",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1264.1030870045554,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/27",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1091.8684272930873,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/27",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 991.4586201181875,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/27",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1128.1102564938697,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/27",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 899.641955352603,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/27",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1270.302080720916,
+  "opponent": "The Violence Warlord",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/27",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1053.5367045411429,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/27",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1304.355231357366,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/29",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1036.6047774174906,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/29",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1065.157334912696,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/29",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1280.5626131544427,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/29",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1237.0465197292094,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/29",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1023.6447595355693,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/29",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1090.100196254806,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/29",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1285.0959814924272,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/30",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 990.704595259367,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/30",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1111.0575170708196,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/30",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1069.2285345788143,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/30",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1124.613745411097,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/30",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1247.3177358499668,
+  "opponent": "Johnny Smith",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/30",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1007.0676421458794,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/30",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1312.643790052211,
+  "opponent": "The Violence Warlord",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/30",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1056.7533438080548,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/30",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1227.079948480544,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/31",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1043.0478976112677,
+  "opponent": "Yoji Anjo",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/31",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1098.4379310300565,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1987/07/31",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1290.3975333542094,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/31",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1038.10499944461,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/31",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1321.9679622339333,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/07/31",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1037.5262111451782,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/07/31",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1349.4700769239782,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/01",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1076.4845753744544,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/01",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1042.4260339268963,
+  "opponent": "George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/01",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1233.472776939711,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/01",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1071.244000337377,
+  "opponent": "Akira Maeda",
+  "result": "draw"
+ },
+ {
+  "date": "1987/08/01",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1305.109067637834,
+  "opponent": "Buzz Sawyer",
+  "result": "draw"
+ },
+ {
+  "date": "1987/08/02",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1082.9412177530826,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/02",
+  "wrestling_as": "The Violence Warlord",
+  "wrestler": "The Violence Warlord",
+  "elo": 1062.3167741579643,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/02",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1044.5323820287363,
+  "opponent": "Buzz Sawyer",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/02",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1125.1495493386972,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/02",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1023.826654947396,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/02",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1356.6092491725851,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/19",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 998.7639096972949,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/19",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1127.2252056670554,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/19",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1013.5910775833293,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/19",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1095.9769598942867,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/19",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1077.8974399277051,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/19",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1077.4802712294884,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/19",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1293.8527029766115,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/19",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 961.9387738926721,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/19",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1122.653157894627,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/20",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1086.527783736278,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/20",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1043.3774537588558,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/20",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1189.7402478209929,
+  "opponent": "Tatsutoshi Goto; Nobuhiko Takada",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/20",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1257.4427567423597,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/20",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1136.2297486052737,
+  "opponent": "Kazuo Yamazaki; Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/20",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1208.3590966841925,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/20",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1250.686507634541,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/20",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 997.0546809377836,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/20",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1312.9432795459409,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/24",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1137.7218658195616,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/24",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1048.0392448876132,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/24",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1109.6034694028447,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/24",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1285.3554646501484,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1987/08/24",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1224.393877367839,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1987/08/25",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 996.2588038755478,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/25",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 955.8080338526021,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/25",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1090.995120732306,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/25",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1253.4363373452582,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/26",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 929.831339008255,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/26",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1163.6985606639087,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/26",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1009.867721213999,
+  "opponent": "George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/26",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1235.2400462361556,
+  "opponent": "Owen Hart",
+  "result": "draw"
+ },
+ {
+  "date": "1987/08/26",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1030.8929227967706,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
+ },
+ {
+  "date": "1987/08/27",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1025.884311670604,
+  "opponent": "Tatsuo Nakano",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/27",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 990.4822727123449,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/27",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1267.1354809931868,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/27",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1146.4975943025067,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/27",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1052.2828658160597,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1987/08/27",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1168.3503048017037,
+  "opponent": "Owen Hart",
+  "result": "draw"
+ },
+ {
+  "date": "1987/08/28",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1065.7749918113186,
+  "opponent": "Yoji Anjo",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/28",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1102.7718947441565,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/28",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1147.4544496560302,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/28",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 999.626771240647,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1987/08/28",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1258.6703779352567,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/28",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1293.360692004867,
+  "opponent": "Angel Of Death",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/29",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1156.155945553988,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/29",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1047.008483134176,
+  "opponent": "Angel Of Death",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/29",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1282.4434752345358,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/29",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1265.7398505475608,
+  "opponent": "Akira Maeda",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/30",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1123.1207135701488,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/30",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1260.8443179764824,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/30",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1288.374273804757,
+  "opponent": "Angel Of Death",
+  "result": "won"
+ },
+ {
+  "date": "1987/08/30",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1076.952094523337,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/08/30",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1251.7000612808652,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/01",
+  "wrestling_as": "Kendo Nagasaki",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 1008.8039341421816,
+  "opponent": "Angel Of Death",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/01",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1117.763721216388,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/01",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1012.6346651425029,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/01",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1208.4734252969404,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/01",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1372.5297012434837,
+  "opponent": "Dick Murdoch",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/03",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1005.1059945717091,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/03",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1051.1512699519544,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/03",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1129.940698398677,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/03",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1265.3615814212287,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/03",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1295.323603332399,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/03",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1296.5456629434843,
+  "opponent": "Angel Of Death",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/04",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1031.2847503530547,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/04",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1085.5761675093934,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/04",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1037.2840449759628,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/04",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1186.6938205560323,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/04",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1141.302194206851,
+  "opponent": "Akira Maeda",
+  "result": "draw"
+ },
+ {
+  "date": "1987/09/04",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1283.5543668371674,
+  "opponent": "Scott Hall",
+  "result": "draw"
+ },
+ {
+  "date": "1987/09/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1374.4565624073746,
+  "opponent": "Angel Of Death",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/05",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1093.3243033068534,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/05",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1170.2100247829878,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/05",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1170.1742527377535,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/05",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1213.7933772358656,
+  "opponent": "Akira Maeda",
+  "result": "draw"
+ },
+ {
+  "date": "1987/09/05",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1278.2344148982422,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1987/09/07",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1075.9861974494772,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/07",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1074.6905990545017,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/07",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1148.5744026510285,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/07",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1044.071295812965,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/07",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1227.6503715372264,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/07",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1116.2542638878836,
+  "opponent": "Kazuo Yamazaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/07",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1133.5400586985995,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/07",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1283.6786784408057,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/07",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1248.9832277096796,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1987/09/07",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1216.5102108070512,
+  "opponent": "Riki Choshu",
+  "result": "draw"
+ },
+ {
+  "date": "1987/09/09",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 990.8400281244881,
+  "opponent": "Shunji Kosugi",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/09",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1093.9365312081625,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/09",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1170.8921353307496,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/09",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 958.9698838290367,
+  "opponent": "George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/09",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1245.8739511633064,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/10",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 952.678143298294,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/10",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1112.8524838806957,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/10",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1037.2238145698261,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/10",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1103.7211997725124,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/10",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1287.284139920681,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/10",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1249.7053587318674,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/10",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1099.5681049416091,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/10",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1265.9692045881748,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/11",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 901.2782115480628,
+  "opponent": "Shunji Kosugi",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/11",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1056.1988362057311,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/11",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 922.0848654005376,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/11",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1089.1678842445588,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/11",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1191.8341084880008,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/12",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1068.7615439894107,
+  "opponent": "Tatsuo Nakano",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/12",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1014.1404087735557,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/12",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1221.76499552741,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/12",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1295.23266973045,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/12",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1065.9092143241112,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/12",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1308.1749979037081,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/12",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1069.9230867778965,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/12",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1264.5278678137236,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/13",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1101.6530588147423,
+  "opponent": "Tatsuo Nakano",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/13",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1023.7093497790745,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/13",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1173.7216803909466,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/13",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1104.0616837048901,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/13",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1197.9571272910987,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1326.7280814196606,
+  "opponent": "Dick Murdoch",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/14",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 874.7716891782085,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/14",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1234.27700212969,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/14",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1141.5742543020006,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1987/09/14",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1023.8242337861831,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/14",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1148.9989939081177,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/14",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1045.479878252209,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/14",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1278.1908088510186,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/14",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1161.6015260123363,
+  "opponent": "Akira Maeda",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/14",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1313.410470369831,
+  "opponent": "Dick Murdoch",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/17",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1059.925421581629,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/17",
+  "wrestling_as": "Brian Adams",
+  "wrestler": "Brian Adams",
+  "elo": 1040.4615331774446,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/17",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1043.6387984518194,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/17",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1103.4941386151318,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/17",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1102.5508816325582,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/17",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1220.169792666506,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/19",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1003.9207256692762,
+  "opponent": "Tatsuo Nakano",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/19",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1007.5833033940368,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/19",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1095.9809166394118,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/19",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1139.1718582901751,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/19",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1257.331035731828,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1987/09/19",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1175.9951901761276,
+  "opponent": "Masa Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1987/09/20",
+  "wrestling_as": "Brian Adams",
+  "wrestler": "Brian Adams",
+  "elo": 1065.7173139466183,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/20",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 975.9638085401336,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/20",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1173.1937491559036,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/20",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 967.9007605853301,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1987/09/20",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1139.7411648564585,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/09/20",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1046.4120448583933,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/04",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1240.453505471839,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1391.3340926673636,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/05",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1068.4143057014953,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/05",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1277.5863936585852,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/05",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1291.2663047428355,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1295.2791435126785,
+  "opponent": "Riki Choshu; Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/05",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1309.6397467580007,
+  "opponent": "Tatsumi Fujinami; Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/06",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1235.0757019568582,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/06",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1060.9851919435876,
+  "opponent": "Darryl Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/06",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1040.621900267173,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/06",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1248.173204846851,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/06",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1019.3297160555296,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/07",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1050.8939728709627,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/07",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1300.4348606767837,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/08",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1249.9100133044171,
+  "opponent": "Steve Williams",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/08",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1102.042298932366,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/10",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1034.1332126269779,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/10",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1248.501691615163,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/10",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1175.9391529941481,
+  "opponent": "Steve Williams",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/10",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1166.8821863124551,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/10",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1304.943679177297,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/12",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1090.4579165396538,
+  "opponent": "Bad News Allen",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/12",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 985.2632219720151,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/12",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1312.3120681912897,
+  "opponent": "Manny Fernandez",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/13",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1133.9589334098348,
+  "opponent": "Eli The Eliminator",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/13",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1275.1237203953726,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/14",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1215.5458487115668,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/14",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1199.8706192170273,
+  "opponent": "Darryl Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/14",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1259.567048332146,
+  "opponent": "Eli The Eliminator",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/14",
+  "wrestling_as": "Steve Casey",
+  "wrestler": "Steve Casey",
+  "elo": 985.7882477805081,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/14",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1319.4179443010355,
+  "opponent": "Steve Casey",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/15",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1058.1460433355865,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/15",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1028.920053185356,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/15",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1068.9926962150887,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/15",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1013.3275292287069,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/15",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1176.7076129231132,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/15",
+  "wrestling_as": "Steve Casey",
+  "wrestler": "Steve Casey",
+  "elo": 969.8863944484162,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/15",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1283.0746470614185,
+  "opponent": "Steve Casey",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/15",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1186.343561517276,
+  "opponent": "Riki Choshu",
+  "result": "draw"
+ },
+ {
+  "date": "1987/10/15",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1299.9090591555903,
+  "opponent": "Steve Williams",
+  "result": "draw"
+ },
+ {
+  "date": "1987/10/16",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1107.0984012859005,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/16",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1186.3104503034965,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/16",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1003.4615170346655,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/16",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1228.2751167869121,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/16",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 957.108223318911,
+  "opponent": "Steve Casey",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/16",
+  "wrestling_as": "Steve Casey",
+  "wrestler": "Steve Casey",
+  "elo": 1026.105700358212,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/16",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1268.4107217188282,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/17",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 994.002024782927,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/17",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1021.2522418715703,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/17",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1073.0261018889462,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/17",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1238.8011452258872,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/17",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1147.939117665015,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/17",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1287.6129436449587,
+  "opponent": "Steve Williams",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/17",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1309.012867755396,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/19",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1238.5575385312704,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/19",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 971.9506652637883,
+  "opponent": "Steve Casey",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/19",
+  "wrestling_as": "Steve Casey",
+  "wrestler": "Steve Casey",
+  "elo": 1075.407276965994,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/19",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 1001.0319050036071,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/19",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1221.3570203915422,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/19",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1253.0711799966784,
+  "opponent": "Steve Williams",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/19",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1217.0226449615755,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/19",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1299.4204044241578,
+  "opponent": "Antonio Inoki (winner), Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/19",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1309.7978116508853,
+  "opponent": "Antonio Inoki (winner), Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/19",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1410.546688648752,
+  "opponent": "Riki Choshu, Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1987/10/21",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1196.04515318753,
+  "opponent": "Steve Williams",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/21",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1270.252638214196,
+  "opponent": "Kengo Kimura; Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/21",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1255.1565210128101,
+  "opponent": "Steve Williams",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/21",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1315.4886743306495,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/23",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1033.655227637762,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/23",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 974.3434966107653,
+  "opponent": "Darryl Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/23",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1248.3868026173513,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/23",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 926.1260455703357,
+  "opponent": "Manny Fernandez",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/23",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 1046.8565246970597,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/23",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1413.7018396520095,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/25",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1168.508146045417,
+  "opponent": "Eli The Eliminator",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/25",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1265.4538065660129,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1987/10/25",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1280.025520946705,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1987/10/25",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1403.9289569195005,
+  "opponent": "Steve Williams",
+  "result": "draw"
+ },
+ {
+  "date": "1987/10/25",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1289.3332929988421,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1987/10/25",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1325.5757857559652,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/09",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1004.3116249909386,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/09",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1215.65405295032,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/09",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1114.296319578338,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/09",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1193.3836847572543,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/09",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1100.1472433102101,
+  "opponent": "Ron Starr",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/09",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1222.6143421800946,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/09",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1236.9088658092955,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/12",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1108.4244996062664,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/12",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1181.9883958496619,
+  "opponent": "Dynamite Chris",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/12",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 875.5456782058887,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/12",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1139.5865032605614,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/12",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1210.0010562861873,
+  "opponent": "Akira Maeda",
+  "result": "draw"
+ },
+ {
+  "date": "1987/11/12",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1305.1017846053646,
+  "opponent": "Scott Hall",
+  "result": "draw"
+ },
+ {
+  "date": "1987/11/12",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1285.5894222824088,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1987/11/12",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1240.6527365257289,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1987/11/13",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1144.0698699060858,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/13",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1249.834691103246,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/13",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1242.2593145227715,
+  "opponent": "Dynamite Chris",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/13",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1142.4113259891608,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/13",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1310.529269032655,
+  "opponent": "Ron Ritchie",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/14",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1004.7337961961006,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/14",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 854.7648893741863,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/14",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1255.0298883111718,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/14",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1219.2888563991055,
+  "opponent": "Dynamite Chris",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/14",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1221.6854532440952,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/14",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1257.3738781217733,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/14",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1268.8682806863644,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/16",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1126.553044653594,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/16",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1199.5052211021537,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/16",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1245.1722398281952,
+  "opponent": "Dynamite Chris",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/16",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 833.1808691364181,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/16",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1227.0814583035374,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/17",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1050.1732187583796,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/17",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1206.394640936962,
+  "opponent": "Dynamite Chris",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/17",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1212.8037472622616,
+  "opponent": "Ron Ritchie",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/17",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1104.3607116415844,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/17",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1246.1067654773256,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/17",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1270.2290947432584,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/18",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1271.8517443155724,
+  "opponent": "Akira Maeda",
+  "result": "draw"
+ },
+ {
+  "date": "1987/11/18",
+  "wrestling_as": "Akira Maeda",
+  "wrestler": "Akira Maeda",
+  "elo": 1307.545805403447,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1987/11/19",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 812.2845375249101,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/19",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1211.618723839839,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/19",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 985.2073730414062,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/19",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1264.582014285938,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/19",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1222.163176050094,
+  "opponent": "Dynamite Chris",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/19",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1106.9473299595008,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/19",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1281.7733932165431,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/21",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1247.5654703405532,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/21",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1306.0596671915623,
+  "opponent": "Dick Murdoch",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/22",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 977.9398369583025,
+  "opponent": "Ron Ritchie",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/22",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1255.0067013850457,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/22",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1315.2607622954552,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/22",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1073.8766665140736,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/22",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1262.8074929043087,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/24",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1013.7565325582106,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/24",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1234.5351329560378,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/24",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1323.3133935844535,
+  "opponent": "Ron Ritchie",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/26",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1027.7458252398787,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/26",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1216.0085237543135,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/26",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1242.936855978887,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/26",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1244.6951487732508,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/26",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1288.3414388743163,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/28",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1065.35957089613,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/28",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1115.1274528655479,
+  "opponent": "Ron Ritchie",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/28",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 797.7792567197449,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/28",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1258.633021586337,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/28",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1254.7098388922423,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/30",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 916.7840754106754,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/30",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1222.5530382026022,
+  "opponent": "Dynamite Chris",
+  "result": "won"
+ },
+ {
+  "date": "1987/11/30",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 966.7190985844879,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1987/11/30",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1252.180993207346,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/03",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1008.5669130003291,
+  "opponent": "Yoji Anjo",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/03",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1145.5231607951355,
+  "opponent": "Ron Ritchie",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/03",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1266.3267044535967,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/03",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1139.9775780682749,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/04",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1086.0535722684594,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/04",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1040.569982306878,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/04",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1232.6158156272136,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1987/12/04",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1207.399355721041,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/05",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1230.056809439028,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/05",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 987.0003061214495,
+  "opponent": "Dynamite Chris",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/05",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1140.722790070561,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/05",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1015.6989918831381,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "1987/12/05",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1245.0513108390835,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/07",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1110.6354844841355,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/07",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1028.8890521886588,
+  "opponent": "Dynamite Chris",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/07",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1259.3196837557855,
+  "opponent": "Ron Ritchie",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/07",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1252.6775725165762,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/27",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1010.84764194729,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/27",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1232.7030998848093,
+  "opponent": "Masakatsu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/27",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1054.3347600565248,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/27",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1181.1549321735315,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1987/12/27",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1078.0297209859489,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1987/12/27",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1306.1200751448498,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1987/12/27",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1377.4036567830651,
+  "opponent": "Riki Choshu; Big Van Vader",
+  "result": "lost"
+ },
+ {
+  "date": "1987/12/27",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1091.9620214951012,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Antonio Inoki",
+ "Tatsumi Fujinami",
+ "Riki Choshu",
+ "Yoshiaki Fujiwara",
+ "Akira Maeda",
+ "Kazuo Yamazaki",
+ "Keiji Muto",
+ "Dick Murdoch",
+ "Steve Williams",
+ "Darryl Peterson",
+ "Scott Hall",
+ "Kengo Kimura",
+ "Masa Saito",
+ "Shiro Koshinaka",
+ "Nobuhiko Takada",
+ "Keiichi Yamada",
+ "Kuniaki Kobayashi",
+ "Yuji Funaki / Masaharu Funaki / Masakatsu Funaki",
+ "Super Strong Machine",
+ "Makoto Arakawa / Don Arakawa",
+ "Naoki Sano",
+ "Hiro Saito",
+ "Osamu Kido",
+ "Konga The Barbarian",
+ "Crusher Bam Bam Bigelow",
+ "Brett Sawyer",
+ "Buzz Sawyer",
+ "Owen Hart",
+ "Tatsutoshi Goto",
+ "Akira Nogami",
+ "Rick Steiner",
+ "Yoji Anjo",
+ "Shinya Hashimoto",
+ "The Violence Warlord",
+ "George Wells",
+ "Tatsuo Nakano",
+ "George Takano",
+ "Big Van Vader",
+ "El Canek",
+ "Matt Borne",
+ "Masahiro Chono",
+ "Hiroshi Hase",
+ "Steve Casey",
+ "Ron Starr",
+ "Umanosuke Ueda",
+ "Norio Honaga",
+ "Brian Adams",
+ "Rey Cobra",
+ "Yang Seung-Hi",
+ "Kevin von Erich",
+ "Alexis Smirnoff",
+ "Tony St. Clair",
+ "Mike von Erich",
+ "Miss A",
+ "Manny Fernandez",
+ "Kantaro Hoshino",
+ "Shunji Kosugi",
+ "Hirokazu Hata",
+ "Eli The Eliminator",
+ "Jerry Grey",
+ "Bad News Allen",
+ "Seiji Sakaguchi",
+ "Hacksaw Higgins",
+ "Kensuke Sasaki",
+ "Ron Ritchie",
+ "Johnny Smith",
+ "Black Tiger / Black Tiger I",
+ "Kendo Nagasaki",
+ "Kerry von Erich",
+ "Black Bart",
+ "Dynamite Chris / Chris Benoit",
+ "Angel Of Death",
+ "Killer Brooks",
+ "Mike Moore",
+ "Black Cat",
+ "Osamu Matsuda",
+ "Butch Miller",
+ "Ray Candy",
+ "Kenichi Oya",
+ "Takayuki Iizuka",
+ "Luke Williams",
+ "The Cuban Assassin",
+ "Harley Saito",
+ "Shigeo Miyato",
+ "Akira Katayama"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

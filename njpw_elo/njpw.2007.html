@@ -1,0 +1,4876 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2007/01/04",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 950.0,
+  "opponent": "Toshiaki Kawada",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/04",
+  "wrestling_as": "Toshiaki Kawada",
+  "wrestler": "Toshiaki Kawada",
+  "elo": 1050.0,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 950.0,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/04",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1050.0,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/04",
+  "wrestling_as": "Taiyo Kea",
+  "wrestler": "Taiyo Kea",
+  "elo": 950.0,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/04",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1050.0,
+  "opponent": "Taiyo Kea",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/07",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 950.0,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/07",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1050.0,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/07",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 950.0,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/07",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 1050.0,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/07",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 950.0,
+  "opponent": "Naofumi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/07",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 1050.0,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/27",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 992.8536882591618,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/27",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1098.995666070175,
+  "opponent": "Yujiro; Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/27",
+  "wrestling_as": "Travis Tomko",
+  "wrestler": "Travis Tomko",
+  "elo": 950.0,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/27",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1050.0,
+  "opponent": "Travis Tomko",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/27",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 958.150645670663,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/28",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 942.8536882591618,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/28",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 1007.1463117408382,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/28",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 943.8819801793379,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/28",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1048.9717080798239,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/29",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 985.0513290120956,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/29",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1072.7510302349706,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/30",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 938.2267730116965,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/30",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 1053.9708677412373,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/30",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 913.8700167699096,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/30",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1085.1016913099143,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/31",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 988.637561169345,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/31",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 1074.5485933231225,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/01/31",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 942.8536882591618,
+  "opponent": "Travis Tomko",
+  "result": "lost"
+ },
+ {
+  "date": "2007/01/31",
+  "wrestling_as": "Travis Tomko",
+  "wrestler": "Travis Tomko",
+  "elo": 1007.1463117408382,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/02",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 940.2721648482267,
+  "opponent": "Jado",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/02",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 1048.3653963211184,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/02",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 1013.9818551301635,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/02",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1060.566738192959,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/02",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1005.7858257944381,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/02",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1016.9652044405325,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/02",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 950.0,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/02",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1050.0,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/04",
+  "wrestling_as": "Kuniyoshi Wada",
+  "wrestler": "Kuniyoshi Wada",
+  "elo": 950.8325703025197,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/04",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1054.9532554919185,
+  "opponent": "Kuniyoshi Wada",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/04",
+  "wrestling_as": "Mammoth Sasaki",
+  "wrestler": "Mammoth Sasaki",
+  "elo": 941.849354329337,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/04",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1059.1549796004879,
+  "opponent": "Mammoth Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/06",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 872.1313150032282,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/06",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1089.0236804144176,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/06",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 838.1645686123929,
+  "opponent": "Minoru",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/06",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1037.8527240787585,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/06",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1046.997227563738,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/06",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1137.1001298163512,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/06",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 965.5525282682124,
+  "opponent": "Travis Tomko",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/06",
+  "wrestling_as": "Travis Tomko",
+  "wrestler": "Travis Tomko",
+  "elo": 1058.5589879131583,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/09",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 819.4291904003103,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/09",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 990.9288976146145,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/12",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 767.1779309056234,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/12",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1026.1256297473435,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/12",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 995.1711569404367,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/12",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1015.3955812525223,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/13",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 965.7287734445736,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/13",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1074.3787114329334,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/13",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1025.8364242271468,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/13",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1058.3584131277075,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/15",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 773.315016877605,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/15",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 998.1535493119675,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/15",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 991.3227414249558,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/15",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1171.6138126185424,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/18",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 992.8536882591618,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/18",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1057.1463117408382,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/18",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1002.8905856728743,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/18",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1071.659975180136,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/18",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 995.6815315244847,
+  "opponent": "Minoru",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/18",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1089.1684201180117,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2007/02/18",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 957.1463117408382,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/02/18",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1092.8536882591618,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/03",
+  "wrestling_as": "Travis Tomko",
+  "wrestler": "Travis Tomko",
+  "elo": 1000.6155211184938,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/03",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1060.8340524675389,
+  "opponent": "Travis Tomko",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/04",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 725.332907416594,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/04",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 1019.0760610564821,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/04",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 937.2834247066342,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/04",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1019.1980011761927,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/04",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 942.8536882591618,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1007.1463117408382,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/06",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 860.3997586076872,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/06",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 1057.5178941059555,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/06",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 958.3203485740966,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/06",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1100.038064553611,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/09",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 689.768118520007,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/09",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1009.1051358732493,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/09",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 964.0115478863862,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/09",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1136.0265166672248,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/10",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 730.646837632941,
+  "opponent": "Negro Casas",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/10",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1021.3340896223319,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/10",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 999.31520353027,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/10",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1058.2026905756857,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/10",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 985.4046986529734,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/10",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1169.8198191904442,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 997.9980436933328,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/10",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1052.0019563066671,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/11",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 660.9542900315516,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/11",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 1013.7221177744976,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/11",
+  "wrestling_as": "El Texano Jr.",
+  "wrestler": "El Texano Jr.",
+  "elo": 962.5578507930886,
+  "opponent": "Minoru",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/11",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1126.610569324923,
+  "opponent": "El Texano Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/11",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 947.5689399977011,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/11",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1109.4957338354081,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/11",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 950.0,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/11",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1050.0,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/13",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 800.7653210988516,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/13",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1038.9223546276671,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/13",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 961.1281995390203,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/13",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1048.2754497599622,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/13",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 993.8639438691465,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/13",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1063.2823678716918,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/13",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1001.7138548233636,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/13",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1100.2881014833035,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/15",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1038.029615675936,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/15",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1021.4661181594721,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/15",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1104.6304744796091,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/15",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1126.023397178374,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/18",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 976.6200813942132,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/18",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1102.9166988038044,
+  "opponent": "Negro Casas",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/18",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 986.0747502629862,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/18",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1161.4147650748598,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/18",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1044.9825961223553,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/18",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1118.58787323264,
+  "opponent": "Giant Bernard",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/21",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 760.2717849817615,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/21",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1059.1691226862122,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/03/21",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1105.2825072164144,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/03/21",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1174.7201310910855,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/07",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 720.0695525440817,
+  "opponent": "Black Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/07",
+  "wrestling_as": "Black Strong Machine",
+  "wrestler": "Black Strong Machine",
+  "elo": 1020.1011162188398,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/08",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1046.1298077764861,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/08",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1103.4832628254783,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/08",
+  "wrestling_as": "Orlando Jordan",
+  "wrestler": "Orlando Jordan",
+  "elo": 973.2191500849049,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/08",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1201.5009810061806,
+  "opponent": "Orlando Jordan",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/08",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 997.5889882358045,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/08",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1145.7231346565459,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/09",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 623.1129997212636,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/09",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 827.6033904557592,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/09",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 646.3900612346099,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/09",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1110.1988132022752,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/12",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 629.388108594803,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/12",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1067.6700990061156,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/12",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 918.8287417971237,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/12",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1042.771794325067,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/13",
+  "wrestling_as": "Orlando Jordan",
+  "wrestler": "Orlando Jordan",
+  "elo": 927.3106981098955,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/13",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1047.622306798373,
+  "opponent": "Orlando Jordan",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/13",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 930.8075035097295,
+  "opponent": "Minoru",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/13",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1154.1234143892902,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/13",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1057.9988048778278,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/13",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1218.9284226968475,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/14",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 592.2793686139759,
+  "opponent": "Tomoaki Honma",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/14",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 949.6623729044114,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/14",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 923.1225535690594,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/14",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1084.1354537464472,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/17",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 566.3590611612063,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/17",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 949.0428610218289,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/17",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 614.5351870383029,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/17",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1075.0965597843656,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/17",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 956.9030282691054,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/17",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1091.3724214908568,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/19",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 500.757174415327,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/19",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 680.1370737841821,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/19",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 815.4469159501649,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/19",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 961.1993355274232,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/20",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 532.6533876453528,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/20",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 648.2408605541563,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/20",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 907.5212850719242,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/20",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1010.5810787246044,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/22",
+  "wrestling_as": "Orlando Jordan",
+  "wrestler": "Orlando Jordan",
+  "elo": 831.7813482569594,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/22",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1038.383038112098,
+  "opponent": "Orlando Jordan",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/22",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1081.9688836361686,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/22",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1111.3765578187504,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2007/04/22",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 944.162445969188,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/04/22",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1084.6840986188652,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/01",
+  "wrestling_as": "Tsubo Genjin",
+  "wrestler": "Tsubo Genjin",
+  "elo": 950.0,
+  "opponent": "Asosan",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/01",
+  "wrestling_as": "Asosan",
+  "wrestler": "Asosan",
+  "elo": 1050.0,
+  "opponent": "Tsubo Genjin",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/01",
+  "wrestling_as": "Daigoro Kashiwa",
+  "wrestler": "Daigoro Kashiwa",
+  "elo": 985.6278313595703,
+  "opponent": "Toru Yano (winner), Jinsei Shinzaki",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/01",
+  "wrestling_as": "Jinsei Shinzaki",
+  "wrestler": "Jinsei Shinzaki",
+  "elo": 986.1361720461008,
+  "opponent": "Toru Yano (winner), Daigoro Kashiwa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/01",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 975.80493659203,
+  "opponent": "Daigoro Kashiwa, Jinsei Shinzaki",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/01",
+  "wrestling_as": "BENTEN",
+  "wrestler": "BENTEN",
+  "elo": 970.8313188896361,
+  "opponent": "Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/01",
+  "wrestling_as": "Tanaka",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1183.2920954996541,
+  "opponent": "BENTEN",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/01",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1047.4042558320052,
+  "opponent": "Manabu Nakanishi (winner), TARU",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/01",
+  "wrestling_as": "TARU",
+  "wrestler": "TARU",
+  "elo": 991.7164526976514,
+  "opponent": "Manabu Nakanishi (winner), Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/01",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1130.2546541669215,
+  "opponent": "Hiroshi Tanahashi, TARU",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/02",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 519.9433189051389,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/02",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Don Arakawa",
+  "elo": 1006.355034370107,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/02",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 976.1027310526464,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/02",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1229.8760790171907,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/03",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 625.6611740565355,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/03",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Don Arakawa",
+  "elo": 1017.6448776189173,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/03",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 500.5444845919784,
+  "opponent": "Taichi Ishikari",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/03",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 926.9201193850847,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/03",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1034.2933557271758,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/03",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1132.359626527858,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/06",
+  "wrestling_as": "Kuniyoshi Wada",
+  "wrestler": "Kuniyoshi Wada",
+  "elo": 857.7976453071601,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/06",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 686.6143345826976,
+  "opponent": "Kuniyoshi Wada",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/06",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 611.6672753593964,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/06",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1082.0935091329352,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/12",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 532.9102906268806,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/12",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 765.3713193152133,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/12",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 1032.3873652012849,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/12",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1133.8415976780975,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/16",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 500.0457835248907,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/16",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 848.3114230521549,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/16",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 713.9424659870577,
+  "opponent": "Tomoaki Honma",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/16",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 1001.091226232567,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/17",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 484.26431289790725,
+  "opponent": "Taichi Ishikari",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/17",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 942.7015900120682,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/18",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1023.087728590299,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/18",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1026.4353385712209,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/18",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 955.8549043639595,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/18",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1079.5296775957834,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/19",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 470.92998112794396,
+  "opponent": "Taichi Ishikari",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/19",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 956.0359217820316,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/19",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 919.0813275087179,
+  "opponent": "Naofumi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/19",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 1086.7735768552416,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/20",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 467.44905245417283,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/20",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1173.354276955428,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/20",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 847.3645900134778,
+  "opponent": "Black Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/20",
+  "wrestling_as": "Black Strong Machine",
+  "wrestler": "Black Strong Machine",
+  "elo": 1055.9594849664597,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/22",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 952.7952604352334,
+  "opponent": "Taichi Ishikari",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/22",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 1013.8217400714025,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/22",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 922.0981213030029,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/22",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1003.7068152890271,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/22",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 1043.29654794899,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/22",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1175.8366554341094,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/05/22",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 822.9237335618169,
+  "opponent": "Minoru",
+  "result": "lost"
+ },
+ {
+  "date": "2007/05/22",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1195.985940244823,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 998.4920927865112,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1124.3341327582623,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 977.3277186468265,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 661.5510380263865,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 769.8922618960498,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1026.5157358328836,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1047.9187703774048,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1085.3677714151695,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1113.8367254702553,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1095.1059330588648,
+  "opponent": "Minoru",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "BxB Hulk",
+  "wrestler": "BxB Hulk",
+  "elo": 943.8639438691465,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/01",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1013.2823678716918,
+  "opponent": "BxB Hulk",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/02",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 974.620892931161,
+  "opponent": "Taichi Ishikari",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/02",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 1065.6361857114623,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/02",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 628.651146426442,
+  "opponent": "BxB Hulk",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/02",
+  "wrestling_as": "BxB Hulk",
+  "wrestler": "BxB Hulk",
+  "elo": 976.7638354690911,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/02",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1110.9559236753803,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/02",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1147.7661246952173,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/02",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 954.6644657067869,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/02",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1011.4131626001383,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/02",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 979.591989710473,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/02",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1094.8425164998155,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 813.6104542315138,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1141.2112006492443,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 615.8798368300207,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1101.4915878570755,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "BxB Hulk",
+  "wrestler": "BxB Hulk",
+  "elo": 931.7338085570553,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1056.443189512174,
+  "opponent": "BxB Hulk",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 1003.5005275827885,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1041.7276478391468,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 743.1969672981539,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1108.1901637987635,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 943.2924248575937,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/03",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1142.2843917489477,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 697.5673735260386,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1142.029143908607,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 896.1756474418972,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1171.3245134030656,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 706.6649398341855,
+  "opponent": "Taichi Ishikari",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 1021.7665413147728,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1005.8079491264152,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1178.2040904616792,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 920.8036356041245,
+  "opponent": "BxB Hulk",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "BxB Hulk",
+  "wrestler": "BxB Hulk",
+  "elo": 1044.7819746424593,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1042.4085938498436,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/08",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1026.0925973271985,
+  "opponent": "Minoru",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/09",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 826.7231555742029,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/09",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1040.5341950602624,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/09",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 600.0694249428338,
+  "opponent": "Minoru",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/09",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1050.313799793437,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/09",
+  "wrestling_as": "BxB Hulk",
+  "wrestler": "BxB Hulk",
+  "elo": 1002.8714318575529,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/09",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1143.4021306419818,
+  "opponent": "BxB Hulk",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/09",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1068.1317684581734,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/09",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1218.2624858022693,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/10",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 693.4803656497877,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/10",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 839.9077297586007,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/10",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 992.0519267851247,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/10",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1201.0391279327137,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/10",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1005.5611909254609,
+  "opponent": "Minoru",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/10",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1101.1957983801503,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/10",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1011.3877156975846,
+  "opponent": "Gedo",
+  "result": "draw"
+ },
+ {
+  "date": "2007/06/10",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 950.2133988633523,
+  "opponent": "Koji Kanemoto",
+  "result": "draw"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 997.6623558423511,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1176.7541532675407,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 877.9486441123499,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1163.2859392445707,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1173.3497324045873,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 1019.558743349329,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 952.8289900713448,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1107.3547051719534,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 920.6697492316273,
+  "opponent": "Minoru",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1130.7394480118753,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 582.93620136029,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1019.9543274888564,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 974.4189166560747,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/12",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1174.544404911368,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1005.6216910081885,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1196.0472863484802,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 676.5762400868445,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1115.806767953425,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 883.9232368423767,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 763.9275609876861,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1093.3694285996753,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1083.0197018550127,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "BxB Hulk",
+  "wrestler": "BxB Hulk",
+  "elo": 970.4849640847132,
+  "opponent": "Minoru",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1163.125915784715,
+  "opponent": "BxB Hulk",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1165.2469098142453,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/14",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1112.118631297199,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 645.0564860079676,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 816.4384485057572,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 965.8685223674462,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1162.0484876418263,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 930.8933249269928,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1195.2853975489393,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 989.3767931822488,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1195.4288599813256,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 835.6824903921616,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1107.1400750801204,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 980.3651215201826,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/15",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1132.9586345683492,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/16",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1091.8331828883422,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/16",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1236.4108492289463,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/16",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1117.7613340097105,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/16",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1240.7934417563301,
+  "opponent": "Minoru",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/17",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 906.1610768871634,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/17",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1215.0479708894925,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2007/06/17",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1215.4781055992075,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/06/17",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1261.726185386069,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/01",
+  "wrestling_as": "Yusaku Obata",
+  "wrestler": "Yusaku Obata",
+  "elo": 930.6064626879352,
+  "opponent": "Kuniyoshi Wada",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/01",
+  "wrestling_as": "Kuniyoshi Wada",
+  "wrestler": "Kuniyoshi Wada",
+  "elo": 996.5847199312898,
+  "opponent": "Yusaku Obata",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/01",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 920.7646963641994,
+  "opponent": "Kazushi Miyamoto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/01",
+  "wrestling_as": "Kazushi Miyamoto",
+  "wrestler": "Kazushi Miyamoto",
+  "elo": 1045.103826003247,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/06",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 748.2390855130706,
+  "opponent": "Taichi Ishikari",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/06",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 999.0926879196794,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/06",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1064.0368846473489,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/06",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1145.5576322507038,
+  "opponent": "Minoru",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/06",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1133.5514415530479,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/06",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1251.0186859577216,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/08",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 554.1037933374907,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/08",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 767.5289327573213,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/08",
+  "wrestling_as": "Orlando Jordan",
+  "wrestler": "Orlando Jordan",
+  "elo": 744.9917031840287,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/08",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 964.7382891852807,
+  "opponent": "Orlando Jordan",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/09",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 597.5329359985291,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/09",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 704.8099428520322,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/10",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 622.668353084779,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/10",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 849.6705225245746,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/12",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1099.5396792043114,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/12",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1041.95276324851,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/12",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 949.7426060202185,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/12",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1030.066940321455,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/13",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 920.2892770318321,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/13",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 987.845554825408,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/13",
+  "wrestling_as": "Orlando Jordan",
+  "wrestler": "Orlando Jordan",
+  "elo": 715.1501086279859,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/13",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1062.3250531100266,
+  "opponent": "Orlando Jordan",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/20",
+  "wrestling_as": "Kuniyoshi Wada",
+  "wrestler": "Kuniyoshi Wada",
+  "elo": 922.4442076977222,
+  "opponent": "Tomoaki Honma",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/20",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 961.8914786986492,
+  "opponent": "Kuniyoshi Wada",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/29",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 947.6486726320778,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/29",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1065.6886427724398,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/29",
+  "wrestling_as": "Kintaro Kanemura",
+  "wrestler": "Kintaro Kanemura",
+  "elo": 956.0083148791771,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/29",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1085.944448369333,
+  "opponent": "Kintaro Kanemura",
+  "result": "won"
+ },
+ {
+  "date": "2007/07/29",
+  "wrestling_as": "Daisuke Sekimoto",
+  "wrestler": "Daisuke Sekimoto",
+  "elo": 971.7648283949878,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/07/29",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1190.2836592468384,
+  "opponent": "Daisuke Sekimoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 592.1196613342427,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 950.8379687823684,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1059.2832589830605,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1275.0567800792053,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1118.7329829002922,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1101.6176166680011,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1057.7996507785892,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1179.235053599937,
+  "opponent": "Giant Bernard",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Akebono",
+  "wrestler": "Akebono",
+  "elo": 980.9224603941376,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1260.5574557606528,
+  "opponent": "Akebono",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1204.7157328489634,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1082.9895291910848,
+  "opponent": "Shinsuke Nakamura",
+  "result": "draw"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 931.5039073499692,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/05",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1030.8811499255182,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 557.0380094594143,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 876.1774169312765,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1074.6919278758185,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1288.5196244752967,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1103.4381099092298,
+  "opponent": "Akebono",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Akebono",
+  "wrestler": "Akebono",
+  "elo": 1056.7194040848447,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1062.6895809631317,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1079.5832072110136,
+  "opponent": "Toru Yano",
+  "result": "draw"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1080.8603188004429,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1223.652064898888,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 866.3339624883051,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1090.3846232094213,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1009.8346216604108,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/06",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1271.0807198932066,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 538.2575925646203,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 960.2281772297655,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1028.2477210199306,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1115.302178743644,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1250.0690787732494,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1156.4842986151084,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 971.2233757656045,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1128.9958691042277,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Akebono",
+  "wrestler": "Akebono",
+  "elo": 981.7694171833872,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1016.2339362912201,
+  "opponent": "Akebono",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1188.5453342664766,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1144.9053891406415,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1234.8743473168133,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/08",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1175.8508550620163,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 476.73992455564735,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 653.6373293432156,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1090.6554244657327,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1169.5521434185528,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1220.6877890007243,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1247.307913811527,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1088.8243255145048,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1095.9076941205342,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1108.9915490920348,
+  "opponent": "Akebono",
+  "result": "draw"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Akebono",
+  "wrestler": "Akebono",
+  "elo": 1001.7737371955801,
+  "opponent": "Giant Bernard",
+  "result": "draw"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1099.393305991954,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1047.6809248356667,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1195.9351365597963,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/10",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1094.112357805254,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 914.1942875354736,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1033.8794445197,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1187.0762497260762,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1163.13077266983,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 991.1125303352825,
+  "opponent": "Akebono",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Akebono",
+  "wrestler": "Akebono",
+  "elo": 1058.3421316959643,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1044.8722888186696,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1148.6333749785385,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1130.5589465844598,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1266.8045122285735,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1071.2489384545543,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1233.6777471972769,
+  "opponent": "Giant Bernard",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1040.3919105837394,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/11",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1139.087839396498,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/12",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 506.7089344082682,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/12",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 623.6683194905947,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/12",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1097.260007520416,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/12",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1250.482826454416,
+  "opponent": "Togi Makabe; Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/12",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1239.4280469588791,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/12",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1231.0434026670737,
+  "opponent": "Shinsuke Nakamura; Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/19",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 495.61015112301305,
+  "opponent": "Taichi Ishikari",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/19",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 1004.642079562307,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/19",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 842.7705316277279,
+  "opponent": "Naofumi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/19",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 1037.4891751547468,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/19",
+  "wrestling_as": "Mammoth Sasaki",
+  "wrestler": "Mammoth Sasaki",
+  "elo": 891.3862138100868,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/19",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1155.7905168440848,
+  "opponent": "Mammoth Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/25",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 873.725867069053,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/25",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1077.3533133652518,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/26",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 910.2814218985559,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/26",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 803.105475693483,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2007/08/26",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1120.0743380842234,
+  "opponent": "Minoru",
+  "result": "lost"
+ },
+ {
+  "date": "2007/08/26",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1131.0387962892016,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/01",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 793.9216553208784,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/01",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 963.0431638423231,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/02",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 482.90600085121815,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/02",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 969.3952389782205,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/02",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 982.1148905078136,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/02",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1055.3742846469331,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/07",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 630.4397447182472,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/07",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 655.571731826454,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/07",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 747.1367551770821,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/07",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1023.3924500718981,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/07",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1043.2177833105768,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/07",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1111.6961805406677,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/09",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 581.332590976668,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/09",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 821.3758960268681,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/13",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 580.4586629799446,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/13",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 871.3569777651707,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/14",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 561.1963962941446,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/14",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 979.0263723211206,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/15",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 888.2275951130957,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/15",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 762.9301453927177,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/15",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 817.1473130788811,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/15",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1070.3226156537216,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/17",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 957.3378581139349,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/17",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1070.6966715202702,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/17",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 844.9346535703401,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/17",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1133.3426513120455,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/19",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 542.6440941806815,
+  "opponent": "Taichi Ishikari",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/19",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 966.6140091706665,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/22",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 498.726477806749,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/22",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 806.8477617666501,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/22",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1046.7505493549836,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/22",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1094.2689702448367,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/22",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1069.3607209750876,
+  "opponent": "Jado",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/22",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 1110.0434716352324,
+  "opponent": "Minoru",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/22",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 934.7400308548235,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/22",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1160.494099155871,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/24",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 783.4177384053564,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/24",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1111.133757581599,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/24",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 770.8576702113542,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/24",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1088.3176614313697,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/24",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 955.7450403196315,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/24",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1186.863949344053,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/24",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1070.077827447182,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/24",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1191.2865727569467,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/30",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 927.9463331788112,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/30",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1085.4182253468389,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/09/30",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 932.4871876043867,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/09/30",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1186.3886253850749,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/08",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1061.2826829196479,
+  "opponent": "Akebono",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/08",
+  "wrestling_as": "Akebono",
+  "wrestler": "Akebono",
+  "elo": 1117.13378686054,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/08",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1030.214986155038,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/08",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1144.3983347306296,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/08",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 966.6379778389007,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/08",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1211.338501840435,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/08",
+  "wrestling_as": "Minoru",
+  "wrestler": "Minoru / Tanaka",
+  "elo": 1036.2207598151272,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/08",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1224.4265339169071,
+  "opponent": "Minoru",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/08",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1207.4407238338088,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/08",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1274.085505287681,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/10",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1030.033101729997,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1088.4995458564108,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/11",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 770.2220424285756,
+  "opponent": "Tomoaki Honma",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/11",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 1009.452641996588,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/18",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 674.4711744346333,
+  "opponent": "Yujiro",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/18",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 879.8042341820773,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/20",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 643.3398867083507,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/20",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 801.3533301548582,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/21",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 438.1015160835979,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/21",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 703.9648484315018,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/22",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 623.3473700590148,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/22",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 616.1074761794414,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/22",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 853.9735465238322,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/22",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1217.7961737549963,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/23",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 682.3598994799399,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/23",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1081.499145996051,
+  "opponent": "Takashi Uwano",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/27",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 605.167080219254,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/27",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1116.6039555616926,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/28",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 877.4719042681526,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/28",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1141.841170017022,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/10/28",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 960.6616322214181,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/10/28",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1234.2782785662894,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/02",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 809.2253168231531,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/02",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1092.4519422975216,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/02",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 898.4061907501222,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/02",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1215.9609730473749,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/03",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 596.4572933747861,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/03",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1146.196063439256,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/03",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 793.2907644836645,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/03",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1238.2619166511615,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/11",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1023.0209135678501,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/11",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1182.6601040824273,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/11",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1084.7613236272894,
+  "opponent": "Rhino",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/11",
+  "wrestling_as": "Rhino",
+  "wrestler": "Rhino",
+  "elo": 1071.0291932167954,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/11",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1196.81144651252,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/11",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1295.0702325301572,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/23",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 540.1710660299086,
+  "opponent": "Takashi Uwano",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/23",
+  "wrestling_as": "Takashi Uwano",
+  "wrestler": "Takashi Uwano",
+  "elo": 765.5362035090461,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/23",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 830.2625000199138,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/23",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1105.1038481201706,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/23",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 970.6361045873533,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/23",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1127.3160832656456,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/24",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 909.4248948843261,
+  "opponent": "Mammoth Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/24",
+  "wrestling_as": "Mammoth Sasaki",
+  "wrestler": "Mammoth Sasaki",
+  "elo": 1013.8086332161411,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/24",
+  "wrestling_as": "Daisuke Sekimoto",
+  "wrestler": "Daisuke Sekimoto",
+  "elo": 908.0188073581473,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/24",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1001.217909142734,
+  "opponent": "Daisuke Sekimoto",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/25",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 588.352943081948,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/25",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1150.2482385856752,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/25",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 777.112617154068,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/25",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1219.5226424316068,
+  "opponent": "Yujiro",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/25",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1055.6572170781437,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/25",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1253.980100233452,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/11/25",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1144.776030091265,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2007/11/25",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1234.6955205036822,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/02",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 528.9191260390862,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/02",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1035.6590717254082,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/02",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 583.203301988943,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/02",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1220.810052704858,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/06",
+  "wrestling_as": "Taichi Ishikari",
+  "wrestler": "Taichi Ishikari",
+  "elo": 752.6610008581084,
+  "opponent": "Tomoaki Honma",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/06",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 987.0263940461315,
+  "opponent": "Taichi Ishikari",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/07",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 516.5441650698951,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/07",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1007.4053896273296,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/08",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1212.007209170679,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/08",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1247.0647601853404,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/09",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 976.1614394859724,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/09",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1091.7317629005474,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/09",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1018.208378924458,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/09",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1182.2248682449508,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/09",
+  "wrestling_as": "Travis Tomko",
+  "wrestler": "Travis Tomko",
+  "elo": 978.1654478782042,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/09",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1227.1860096675198,
+  "opponent": "Travis Tomko",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/09",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1211.0817342763717,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/09",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1277.5938864607626,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/09",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1049.636884236652,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/09",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1305.8762596391084,
+  "opponent": "Giant Bernard",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/23",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1226.2566269625902,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/23",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1326.6843928618587,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/24",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 562.7597996574735,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/24",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 970.8833833871529,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/24",
+  "wrestling_as": "Mitsuhide Hirasawa",
+  "wrestler": "Mitsuhide Hirasawa",
+  "elo": 512.4010434921767,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/24",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1188.460186173934,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2007/12/24",
+  "wrestling_as": "Yujiro",
+  "wrestler": "Yujiro",
+  "elo": 763.1664418224224,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2007/12/24",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1230.6725535004311,
+  "opponent": "Yujiro",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Hiroshi Tanahashi",
+ "Milano Collection AT",
+ "Shinsuke Nakamura",
+ "Yuji Nagata",
+ "Wataru Inoue",
+ "Ryusuke Taguchi",
+ "Togi Makabe",
+ "Hirooki Goto",
+ "Minoru / Tanaka",
+ "Manabu Nakanishi",
+ "Takashi Iizuka",
+ "Toru Yano",
+ "Prince Devitt",
+ "Shiro Koshinaka",
+ "Giant Bernard",
+ "Akebono",
+ "Tiger Mask IV / Tiger Mask",
+ "Jushin Thunder Liger",
+ "Jado",
+ "Gedo",
+ "AKIRA",
+ "Masahiro Chono",
+ "Takashi Uwano",
+ "Naofumi Yamamoto",
+ "Yujiro",
+ "Rhino",
+ "Riki Choshu",
+ "Taichi Ishikari",
+ "Travis Tomko",
+ "El Samurai",
+ "Black Strong Machine",
+ "Mitsuhide Hirasawa",
+ "Toshiaki Kawada",
+ "Minoru Suzuki",
+ "Tetsuya Naito",
+ "Asosan",
+ "Hiroyoshi Tenzan",
+ "Kazushi Miyamoto",
+ "BxB Hulk",
+ "Tomohiro Ishii",
+ "Koji Kanemoto",
+ "Negro Casas",
+ "Don Arakawa",
+ "Mammoth Sasaki",
+ "Tomoaki Honma",
+ "Kuniyoshi Wada",
+ "TARU",
+ "Jinsei Shinzaki",
+ "Daigoro Kashiwa",
+ "Orlando Jordan",
+ "Daisuke Sekimoto",
+ "BENTEN",
+ "El Texano Jr.",
+ "Kintaro Kanemura",
+ "Taiyo Kea",
+ "Tsubo Genjin",
+ "Yusaku Obata",
+ "Kazuchika Okada"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

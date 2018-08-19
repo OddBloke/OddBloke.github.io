@@ -1,0 +1,5933 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1988/01/04",
+  "wrestling_as": "Tatsuo Nakano",
+  "wrestler": "Tatsuo Nakano",
+  "elo": 950.0,
+  "opponent": "Akira Nogami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/04",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1050.0,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/04",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 950.0,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/04",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1050.0,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/04",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 950.0,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1050.0,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/04",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 950.0,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/04",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1050.0,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/04",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 950.0,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/04",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1050.0,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/05",
+  "wrestling_as": "Yoji Anjo",
+  "wrestler": "Yoji Anjo",
+  "elo": 1050.0,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/05",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 942.8536882591618,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/05",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1007.1463117408382,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/05",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 950.0,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/05",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1050.0,
+  "opponent": "Kazuo Yamazaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/06",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1072.7510302349706,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/06",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1000.0,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/06",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1042.8536882591618,
+  "opponent": "Steve R. Blackman",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/07",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1050.0,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/07",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 957.1463117408382,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/07",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1092.8536882591618,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/07",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1098.1223466610204,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/07",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1013.4203846096452,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/07",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1066.4769573661636,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/10",
+  "wrestling_as": "Tatsuo Nakano",
+  "wrestler": "Tatsuo Nakano",
+  "elo": 994.8385707214815,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/10",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1085.9935000197115,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/10",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 992.8536882591618,
+  "opponent": "Johnny K-9",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/10",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 983.8038188628807,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1128.3145639291272,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/10",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1056.5946060842432,
+  "opponent": "Steve R. Blackman",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/11",
+  "wrestling_as": "Yoji Anjo",
+  "wrestler": "Yoji Anjo",
+  "elo": 1085.9935000197115,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/11",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 926.3897130802768,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/11",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1128.8789453215818,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/11",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1063.0534101698356,
+  "opponent": "Johnny K-9",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/11",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 953.4788526666363,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/11",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1158.6395301253715,
+  "opponent": "Kazuo Yamazaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/11",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 958.0733387266629,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/11",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1098.5212673575804,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/13",
+  "wrestling_as": "Yoji Anjo",
+  "wrestler": "Yoji Anjo",
+  "elo": 1104.142874068671,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/13",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 983.1815104798573,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/13",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1188.8784042551595,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/13",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1014.1075086863685,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/13",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1102.369448679795,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/13",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 913.0619804547423,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/13",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1037.8650465310825,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1097.0962973003557,
+  "opponent": "Johnny K-9",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Tatsuo Nakano",
+  "wrestler": "Tatsuo Nakano",
+  "elo": 943.4304458684807,
+  "opponent": "Akira Nogami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1059.0597712207937,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1053.0006845806454,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 860.5387794050532,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1082.9254668376118,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 985.7134220647905,
+  "opponent": "Big Van Vader (winner), Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 986.2196127444879,
+  "opponent": "Big Van Vader (winner), George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 978.0669651907216,
+  "opponent": "George Takano, Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 950.0,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1050.0,
+  "opponent": "Steve Williams",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 861.5766450220207,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/16",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1122.8389650167164,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/18",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1092.829503201147,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/18",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1118.8895989754956,
+  "opponent": "Johnny K-9",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/18",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1007.7345117136932,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/18",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1131.2596728866636,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/18",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1115.6535244266458,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/18",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1087.332388514882,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/18",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1014.0064999802885,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/19",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1025.1387263514277,
+  "opponent": "Steve R. Blackman",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/19",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1030.5623463090665,
+  "opponent": "Johnny K-9",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/19",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 786.6377947326438,
+  "opponent": "Tony St. Clair",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/19",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1154.3692384505264,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/19",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1096.1687691739305,
+  "opponent": "Keiichi Yamada",
+  "result": "draw"
+ },
+ {
+  "date": "1988/01/19",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1065.260450726658,
+  "opponent": "Nobuhiko Takada",
+  "result": "draw"
+ },
+ {
+  "date": "1988/01/22",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1059.703608922704,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/22",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1019.5289926025724,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1988/01/22",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1123.7222295914592,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/22",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1046.7342447459428,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/22",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1025.634206896189,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/22",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1118.5541787532854,
+  "opponent": "Johnny K-9",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/23",
+  "wrestling_as": "Yoji Anjo",
+  "wrestler": "Yoji Anjo",
+  "elo": 1133.3092408592702,
+  "opponent": "Kenichi Oya",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/23",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1050.362198010265,
+  "opponent": "Steve R. Blackman",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/23",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 970.1933202608985,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/23",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1133.7099606267252,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/23",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1067.8639085917212,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/23",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1178.3477960981031,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/23",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1092.8536882591618,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/24",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1124.259939326928,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 968.4256131720472,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1022.4621657748141,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1158.4518093784898,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1056.5856114838564,
+  "opponent": "Steve R. Blackman",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1071.9401725134057,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1112.1319861235845,
+  "opponent": "Nobuhiko Takada",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1005.5443175196974,
+  "opponent": "Big Van Vader (winner), Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1044.7999356939424,
+  "opponent": "Big Van Vader (winner), George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1006.9553135023582,
+  "opponent": "George Takano, Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "Bob Orton",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 966.9764013948524,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/25",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1155.862563621864,
+  "opponent": "Bob Orton",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/26",
+  "wrestling_as": "Tatsuo Nakano",
+  "wrestler": "Tatsuo Nakano",
+  "elo": 1071.1529341786134,
+  "opponent": "Akira Katayama",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/26",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 913.2719884918531,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/26",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1063.7993377801056,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/26",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1172.054877934938,
+  "opponent": "Kazuo Yamazaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/26",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1033.248696310504,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/26",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1212.9630083793202,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/26",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1166.938758110332,
+  "opponent": "Steve R. Blackman",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/26",
+  "wrestling_as": "Bob Orton",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 1020.5145639475996,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/26",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1037.1077742027041,
+  "opponent": "Buzz Sawyer",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/26",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1024.4694541231831,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/27",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 997.4246228592708,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/27",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1225.4817798370918,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/27",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 856.0097405761906,
+  "opponent": "Nobuhiko Takada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/27",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1100.571296471237,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/27",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 929.1693832174698,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/27",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1074.2726333539329,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/27",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1105.178384103305,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/27",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1116.876493831633,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/27",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1077.5934555874019,
+  "opponent": "Johnny K-9",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/29",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1053.916965615932,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/29",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1099.2643860312098,
+  "opponent": "Steve R. Blackman",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/29",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1120.967315539469,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/29",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 866.0893514573244,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/29",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1095.3393536601782,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/29",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1192.1553935210059,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/29",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1171.831156735477,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/29",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1030.943725436044,
+  "opponent": "Big Van Vader (winner), Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/29",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 988.2478605146789,
+  "opponent": "Big Van Vader (winner), Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/29",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1032.563663245578,
+  "opponent": "Kantaro Hoshino, Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/30",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 948.0296963824438,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/30",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1104.7751028708467,
+  "opponent": "Masaharu Funaki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/30",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1030.770321876509,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/30",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1117.1619904822871,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/30",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 967.8869673176426,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/30",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1169.3743032947852,
+  "opponent": "Steve R. Blackman",
+  "result": "won"
+ },
+ {
+  "date": "1988/01/30",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1020.0073249542786,
+  "opponent": "Buzz Sawyer",
+  "result": "lost"
+ },
+ {
+  "date": "1988/01/30",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1082.0555847563064,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/01",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1012.4126033904633,
+  "opponent": "Johnny K-9",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/01",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1116.099925651292,
+  "opponent": "Steve R. Blackman",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/01",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1107.3209603388245,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/01",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1158.8821838027172,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/01",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 955.74619345674,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/01",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 970.0803224614529,
+  "opponent": "Bob Orton",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/01",
+  "wrestling_as": "Bob Orton",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 1070.4415664404255,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/04",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1018.5792749175722,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/04",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1194.219874501077,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/04",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1108.5840861953877,
+  "opponent": "Nobuhiko Takada",
+  "result": "draw"
+ },
+ {
+  "date": "1988/02/04",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1114.836799794729,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1988/02/04",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 940.9183251595626,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1153.4219366288182,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Yoji Anjo",
+  "wrestler": "Yoji Anjo",
+  "elo": 1068.9667272762345,
+  "opponent": "Masaharu Funaki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1095.1128354595446,
+  "opponent": "Yoji Anjo",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1071.4102747406387,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1028.3967130313783,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1110.2444832087845,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1055.3232376747635,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1158.035951391471,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1126.066211005709,
+  "opponent": "Hiroshi Hase",
+  "result": "draw"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1182.9904632900968,
+  "opponent": "Nobuhiko Takada",
+  "result": "draw"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1060.2334770955015,
+  "opponent": "Bob Orton",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Bob Orton",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 1127.084583176557,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1000.6367841976097,
+  "opponent": "Big Van Vader (winner), Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 977.7485665763085,
+  "opponent": "Big Van Vader (winner), Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/05",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1054.8387763768021,
+  "opponent": "Kantaro Hoshino, Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/06",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1107.7688590112664,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/06",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1135.4725724648492,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/06",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1014.1297512372078,
+  "opponent": "Kazuo Yamazaki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/06",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1158.3554769198429,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1177.1762883550207,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/07",
+  "wrestling_as": "Yoji Anjo",
+  "wrestler": "Yoji Anjo",
+  "elo": 1112.6666014095017,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/07",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1041.0500295553459,
+  "opponent": "Johnny K-9",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/07",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1103.8673462821012,
+  "opponent": "Bob Orton",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/07",
+  "wrestling_as": "Bob Orton",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 1181.5727138142988,
+  "opponent": "Kazuo Yamazaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/07",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1129.405383143293,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/07",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1211.6210315382748,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/07",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1068.6571634538107,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1988/02/07",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1139.6035495518097,
+  "opponent": "Big Van Vader",
+  "result": "draw"
+ },
+ {
+  "date": "1988/02/29",
+  "wrestling_as": "Yoji Anjo",
+  "wrestler": "Yoji Anjo",
+  "elo": 1060.1425587259691,
+  "opponent": "Masaharu Funaki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/02/29",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1147.6368781430772,
+  "opponent": "Yoji Anjo",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/29",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1044.4479857675524,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/29",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1054.7464938116134,
+  "opponent": "The Midnight Soldier",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/29",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1158.6802152185298,
+  "opponent": "Vinnie Valentino",
+  "result": "won"
+ },
+ {
+  "date": "1988/02/29",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1203.6808068404462,
+  "opponent": "Jerry Grey",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/02",
+  "wrestling_as": "Yoji Anjo",
+  "wrestler": "Yoji Anjo",
+  "elo": 1015.0612694369574,
+  "opponent": "Akira Nogami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/02",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1063.2074876591441,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/02",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1221.4648722748782,
+  "opponent": "Vinnie Valentino",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/02",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 996.9324059384364,
+  "opponent": "Gully Gaspar",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/02",
+  "wrestling_as": "Gully Gaspar",
+  "wrestler": "Gully Gaspar",
+  "elo": 1057.814087873177,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/02",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1094.9853866167148,
+  "opponent": "The Midnight Soldier",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/03",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 985.4977494932339,
+  "opponent": "The Midnight Soldier",
+  "result": "draw"
+ },
+ {
+  "date": "1988/03/03",
+  "wrestling_as": "Billy Gaspar",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 1217.3730387863795,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/04",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1196.4680358472822,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/04",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 937.5835798696751,
+  "opponent": "Ray Candy",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/04",
+  "wrestling_as": "Billy Gaspar",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 1186.8686978987635,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1200.6122313270416,
+  "opponent": "Billy Gaspar",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/07",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1116.4774462511948,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/07",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1035.7367830528274,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/07",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1007.2557725309274,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/07",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1172.664785701474,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/07",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1227.107084752435,
+  "opponent": "Vinnie Valentino",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/07",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1141.5217066881023,
+  "opponent": "Jerry Grey",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/09",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1084.946751219903,
+  "opponent": "Vinnie Valentino",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/09",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1232.7336115410637,
+  "opponent": "The Midnight Soldier",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/09",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 987.7111344490756,
+  "opponent": "Ray Candy",
+  "result": "draw"
+ },
+ {
+  "date": "1988/03/11",
+  "wrestling_as": "Kazuo Yamazaki",
+  "wrestler": "Kazuo Yamazaki",
+  "elo": 1118.4805561360383,
+  "opponent": "Vinnie Valentino",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/11",
+  "wrestling_as": "Nobuhiko Takada",
+  "wrestler": "Nobuhiko Takada",
+  "elo": 1104.4771703090032,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/11",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1183.6084280528196,
+  "opponent": "Nobuhiko Takada",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/12",
+  "wrestling_as": "Yoji Anjo",
+  "wrestler": "Yoji Anjo",
+  "elo": 1043.228446966643,
+  "opponent": "Osamu Matsuda",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/12",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1173.635483514967,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/12",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1134.8918737206309,
+  "opponent": "The Midnight Soldier",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/12",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1191.9828158634223,
+  "opponent": "Vinnie Valentino",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/12",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1177.0431205395978,
+  "opponent": "Ray Candy",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/14",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 994.3211773441286,
+  "opponent": "The Midnight Soldier",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/14",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1019.8583506406331,
+  "opponent": "Vinnie Valentino",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/14",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1211.1720566491504,
+  "opponent": "Jerry Grey",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/16",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1101.3682018854797,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/16",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1079.5230541604149,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/16",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1049.2184518779657,
+  "opponent": "Vinnie Valentino",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/16",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 957.7613588443953,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1988/03/16",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 991.5784831575837,
+  "opponent": "Riki Choshu",
+  "result": "draw"
+ },
+ {
+  "date": "1988/03/18",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1152.605318579157,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/18",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1182.8417924332334,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/18",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1234.7916382693327,
+  "opponent": "Vinnie Valentino",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/18",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1102.6287111149504,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/18",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1065.992892582231,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/18",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1210.996826063328,
+  "opponent": "The Midnight Soldier",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/19",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1158.7028306592836,
+  "opponent": "Vinnie Valentino",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/19",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1208.094686179327,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/19",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1237.869008739156,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1988/03/19",
+  "wrestling_as": "Billy Gaspar",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 1138.8455203707524,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/03/19",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1224.6238200910473,
+  "opponent": "Billy Gaspar",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/10",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 950.3780413722752,
+  "opponent": "Don Arakawa",
+  "result": "draw"
+ },
+ {
+  "date": "1988/04/10",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1195.239730088731,
+  "opponent": "Tatsutoshi Goto; Shiro Koshinaka; Tatsutoshi Goto (winner), Akira Nogami, Black Cat, George Takano, Hiroshi Hase, Kensuke Sasaki, Masaharu Funaki, Minoru Suzuki, Osamu Matsuda, Shiro Koshinaka, Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1203.9722387414263,
+  "opponent": "Tatsumi Fujinami; Tatsutoshi Goto (winner), Akira Nogami, Black Cat, George Takano, Hiroshi Hase, Kensuke Sasaki, Masaharu Funaki, Minoru Suzuki, Osamu Matsuda, Tatsumi Fujinami, Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/10",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1171.8378167896485,
+  "opponent": "Antonio Inoki (winner), Masaharu Funaki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/10",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1145.8985092282599,
+  "opponent": "Antonio Inoki (winner), Keiichi Yamada; Tatsutoshi Goto (winner), Akira Nogami, Black Cat, George Takano, Hiroshi Hase, Kensuke Sasaki, Minoru Suzuki, Osamu Matsuda, Shiro Koshinaka, Tatsumi Fujinami, Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/10",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1245.4045519965282,
+  "opponent": "Keiichi Yamada, Masaharu Funaki",
+  "result": "draw"
+ },
+ {
+  "date": "1988/04/10",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 992.2218422038226,
+  "opponent": "Tatsutoshi Goto (winner), Akira Nogami, Black Cat, Hiroshi Hase, Kensuke Sasaki, Masaharu Funaki, Minoru Suzuki, Osamu Matsuda, Shiro Koshinaka, Tatsumi Fujinami, Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/10",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1234.3460876968898,
+  "opponent": "Tatsutoshi Goto (winner), Akira Nogami, Black Cat, George Takano, Kensuke Sasaki, Masaharu Funaki, Minoru Suzuki, Osamu Matsuda, Shiro Koshinaka, Tatsumi Fujinami, Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/10",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1092.3659412553234,
+  "opponent": "Tatsutoshi Goto (winner), Akira Nogami, Black Cat, George Takano, Hiroshi Hase, Kensuke Sasaki, Masaharu Funaki, Minoru Suzuki, Osamu Matsuda, Shiro Koshinaka, Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/11",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1109.5875319520703,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/11",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1147.1970360574812,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/11",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 965.0859386669094,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/11",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 916.7713115262509,
+  "opponent": "Big Van Vader",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/11",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1102.263893299835,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/12",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1246.883191449524,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/12",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1020.0936307839897,
+  "opponent": "Crusher Crunchky",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/13",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 967.2051446022186,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/13",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1052.888486181771,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/13",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 924.8761504748727,
+  "opponent": "Crusher Crunchky",
+  "result": "draw"
+ },
+ {
+  "date": "1988/04/13",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1164.75607742271,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/14",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1083.8389134747958,
+  "opponent": "Keiichi Yamada",
+  "result": "draw"
+ },
+ {
+  "date": "1988/04/14",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1105.2716726376893,
+  "opponent": "Norio Honaga",
+  "result": "draw"
+ },
+ {
+  "date": "1988/04/14",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1151.9303015437436,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/14",
+  "wrestling_as": "Masaharu Funaki",
+  "wrestler": "Masaharu Funaki",
+  "elo": 1110.0354922675067,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/14",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1264.8146999299006,
+  "opponent": "Masaharu Funaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/15",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1273.7554551869785,
+  "opponent": "Steve Casey",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/15",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 960.1395934055963,
+  "opponent": "Scott Hall",
+  "result": "draw"
+ },
+ {
+  "date": "1988/04/15",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1035.2567647164092,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1988/04/15",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 964.3543715579018,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/15",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1138.2743395570487,
+  "opponent": "Manny Fernandez",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/17",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1183.695708458623,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/19",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1115.1758648143712,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/19",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1011.2609004388241,
+  "opponent": "Steve Casey",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/22",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1005.869209503319,
+  "opponent": "Crusher Crunchky",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/22",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1190.4462667295775,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/22",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 921.0640471286509,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/22",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1054.551224868075,
+  "opponent": "Manny Fernandez",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/23",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1172.0423588493081,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1988/04/23",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1086.5343188134777,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/23",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1288.0762281874252,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/23",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 998.7178575060694,
+  "opponent": "Big Van Vader (winner), Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/23",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1177.8667574585752,
+  "opponent": "George Takano, Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/24",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1195.5383714575203,
+  "opponent": "Crusher Crunchky",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/24",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1075.164767925415,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/24",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 899.4901795299847,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/24",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1293.4696950870916,
+  "opponent": "Manny Fernandez",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/24",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1041.1464048948883,
+  "opponent": "Big Van Vader (winner), Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/24",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1136.0851347838375,
+  "opponent": "Big Van Vader (winner), Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/24",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1197.0507057152963,
+  "opponent": "Hiro Saito, Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/25",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1152.298316047992,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/26",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1017.8242352339109,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1988/04/27",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1209.3309377657326,
+  "opponent": "Steve Casey",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/27",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 1055.512351920132,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/27",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1146.7900877329573,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/27",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1245.50034807107,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/30",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1088.7191516455619,
+  "opponent": "Manny Fernandez",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/30",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 1119.0915163225623,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/30",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1043.5670774350683,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1988/04/30",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1225.1297830109058,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1988/04/30",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1021.1528966186494,
+  "opponent": "Crusher Crunchky",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/02",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1053.1208984650082,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/02",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1240.4887905157998,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/02",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1013.0018167224591,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/02",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1218.044532827641,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/02",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1026.3387675012182,
+  "opponent": "Crusher Crunchky",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/02",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1012.985820772915,
+  "opponent": "Big Van Vader (winner), Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/02",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1158.2901948897388,
+  "opponent": "Seiji Sakaguchi, Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/03",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 974.4554433151621,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/03",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1252.6315784206913,
+  "opponent": "Crusher Crunchky",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/03",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1297.0737334395506,
+  "opponent": "Steve Casey",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/03",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1010.1194435855875,
+  "opponent": "Big Van Vader (winner), Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/03",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1177.0680106860643,
+  "opponent": "Big Van Vader (winner), George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/03",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1179.3732425815754,
+  "opponent": "George Takano, Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/05",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1085.0457762678827,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/05",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1061.3498813106291,
+  "opponent": "Crusher Crunchky",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/05",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1006.0683981652476,
+  "opponent": "Big Van Vader (winner), Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/05",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1079.640636874379,
+  "opponent": "Big Van Vader (winner), Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/05",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1195.3851759099698,
+  "opponent": "Hiro Saito, Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/05",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 1086.5208426483885,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1261.7856849081568,
+  "opponent": "Manny Fernandez",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/06",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1299.613156015002,
+  "opponent": "Steve Casey",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/08",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1035.6442415473591,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/08",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 939.7886710358484,
+  "opponent": "Steve Casey",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/08",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1198.808356332881,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/08",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1318.849332509762,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/08",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1154.826309367257,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/08",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1282.0651181795133,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/20",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1054.8033967974256,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/20",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 973.4833381580851,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/20",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1203.5846725279791,
+  "opponent": "Adrian Adonis",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/20",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 982.0208038596344,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/20",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1110.3108562238149,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/20",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1129.1641778764435,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/20",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1124.1954033245124,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/20",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1291.2123410175166,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/20",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1309.7021096717588,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/21",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 970.3001000196703,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/21",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1143.5371571568437,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/21",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1210.0839779018338,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/21",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1035.095201037715,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/24",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1221.5748652439318,
+  "opponent": "Dave Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/24",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1047.9826470142823,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/25",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1038.0736672966011,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/25",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1076.8142383075776,
+  "opponent": "Dave Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/25",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1044.6648643204414,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/25",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1185.40661164988,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/27",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1052.6115563452067,
+  "opponent": "Darryl Peterson",
+  "result": "draw"
+ },
+ {
+  "date": "1988/05/27",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1008.7383249654224,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1988/05/27",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1258.8259468666586,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/27",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1250.1793999515962,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/27",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1148.6144232099614,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1988/05/27",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1297.4925997290343,
+  "opponent": "Riki Choshu",
+  "result": "draw"
+ },
+ {
+  "date": "1988/05/28",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 978.1680662316012,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/28",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1232.4908321281312,
+  "opponent": "Dr. Wagner Jr.",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/28",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 996.9813201388545,
+  "opponent": "El Canek",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/28",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 1057.8220766585712,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/28",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1037.4226848567066,
+  "opponent": "Adrian Adonis",
+  "result": "draw"
+ },
+ {
+  "date": "1988/05/28",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 984.0433003156606,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
+ },
+ {
+  "date": "1988/05/30",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1249.7086384074657,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/05/30",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1013.1128562630473,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/05/30",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1261.4450925937522,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/02",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1171.2686198843917,
+  "opponent": "Dave Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/03",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1099.4854222397153,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/03",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 993.7954339633111,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/03",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1271.1038037436203,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/04",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 999.5039261187973,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/04",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1067.3935382155394,
+  "opponent": "Dave Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/07",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1080.2147427239095,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/07",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 958.5530182999438,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/07",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1134.7278379030827,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/07",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1026.8832716736893,
+  "opponent": "Dave Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/09",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1256.937158866192,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/09",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 979.8730860873601,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/09",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1279.6579207693676,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/09",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1055.623413619537,
+  "opponent": "Adrian Adonis",
+  "result": "draw"
+ },
+ {
+  "date": "1988/06/09",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 995.8134249116631,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
+ },
+ {
+  "date": "1988/06/10",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1001.8866092214862,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/10",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1267.5728531162486,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1040.7008093558404,
+  "opponent": "Dave Peterson",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/10",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1104.453850646648,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/10",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1294.7949143975848,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/12",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1120.0149764112791,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/12",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 984.0786499456112,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/12",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1276.476832754186,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/12",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1035.0434018639135,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1988/06/12",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1213.1079509748647,
+  "opponent": "Dave Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/15",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 969.7545310165148,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/15",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1301.956973862133,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/16",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1122.0079209586384,
+  "opponent": "Dave Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/17",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1011.7231980681385,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/17",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1224.350882036905,
+  "opponent": "Dave Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/17",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1047.1000934901865,
+  "opponent": "Adrian Adonis",
+  "result": "draw"
+ },
+ {
+  "date": "1988/06/17",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1004.3367450410135,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
+ },
+ {
+  "date": "1988/06/17",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1262.8365643736995,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/17",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1157.8814558512458,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/17",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1084.9130048651423,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/17",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1310.1915254083706,
+  "opponent": "Dick Murdoch",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1079.87426807151,
+  "opponent": "Black Cat; Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 1070.3814478555423,
+  "opponent": "Kuniaki Kobayashi; Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1193.8670814731865,
+  "opponent": "El Canek",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1014.2455562084538,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1204.1231571661244,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 963.1782012492267,
+  "opponent": "El Canek",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1011.7413757756306,
+  "opponent": "Adrian Adonis",
+  "result": "draw"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1005.5811900382979,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1026.6899378607645,
+  "opponent": "Big Van Vader (winner), Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1209.6725367681654,
+  "opponent": "Big Van Vader (winner), George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/19",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1177.8581186391455,
+  "opponent": "George Takano, Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/22",
+  "wrestling_as": "Black Bart",
+  "wrestler": "Black Bart",
+  "elo": 1050.0568833508291,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/22",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 949.0355482473769,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/22",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1283.548159255111,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/22",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1252.168921596429,
+  "opponent": "Keiichi Yamada",
+  "result": "draw"
+ },
+ {
+  "date": "1988/06/22",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1125.7891362011887,
+  "opponent": "Owen Hart",
+  "result": "draw"
+ },
+ {
+  "date": "1988/06/23",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1044.4944166458888,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/23",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 1099.2486944207467,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/23",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 968.290202258762,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/23",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1019.3095894494834,
+  "opponent": "Big Van Vader (winner), Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/23",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1005.0115937192122,
+  "opponent": "Big Van Vader (winner), George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/23",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1191.968249106845,
+  "opponent": "George Takano, Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/24",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1143.252471852664,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/24",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1078.5353310079083,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/24",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 948.3415775059447,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/24",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1219.646849144574,
+  "opponent": "Darryl Peterson",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/24",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1213.589445864383,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/24",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1117.859760819933,
+  "opponent": "Owen Hart",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/24",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1186.5267961305235,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/24",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1327.7878864439715,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/26",
+  "wrestling_as": "Darryl Peterson",
+  "wrestler": "Darryl Peterson",
+  "elo": 1015.4163379208524,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/26",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1103.2387205413204,
+  "opponent": "Owen Hart",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/26",
+  "wrestling_as": "Owen Hart",
+  "wrestler": "Owen Hart",
+  "elo": 1233.5963215200547,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/26",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1133.0999703836821,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/26",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1178.6268719094373,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/06/26",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1160.5759178182302,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/06/26",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1343.484052088279,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/15",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1241.7243842104651,
+  "opponent": "Tracy Smothers",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/15",
+  "wrestling_as": "Tracy Smothers",
+  "wrestler": "Tracy Smothers",
+  "elo": 1083.6475500892918,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/15",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1117.4218295396165,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/15",
+  "wrestling_as": "Steve Armstrong",
+  "wrestler": "Steve Armstrong",
+  "elo": 1023.6578214120443,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1988/07/15",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1154.969050497393,
+  "opponent": "Steve Armstrong",
+  "result": "draw"
+ },
+ {
+  "date": "1988/07/15",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1192.270862480052,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/15",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1241.278769459567,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/16",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1119.6988563431912,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/16",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1265.1559768100965,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/16",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1011.629334046065,
+  "opponent": "Big Van Vader (winner), Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/16",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1170.4607533290875,
+  "opponent": "George Takano, Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/18",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1145.1703528013695,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/18",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1048.7275544258825,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/18",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 943.5738883535502,
+  "opponent": "Big Van Vader (winner), Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/18",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1184.1468967582537,
+  "opponent": "Norio Honaga, Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/18",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1132.2948433643653,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/18",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1181.9839400743253,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/21",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1144.4693638468991,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/21",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1175.2702988674034,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/21",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1089.702041087258,
+  "opponent": "Big Van Vader",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/21",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1226.739699035361,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/22",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1018.6113958302121,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/22",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1043.1439575231288,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/22",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1077.9004857358311,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/22",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1217.3847895428514,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/22",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1198.536959084529,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/22",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1238.3894199759893,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/22",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1220.1076920325554,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/22",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1266.5756294235398,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/24",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 985.9710410282319,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/24",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1177.1097186488794,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/25",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1273.8264795488478,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/25",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1236.7414921863535,
+  "opponent": "Big Van Vader",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/25",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1258.2052335589017,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/25",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1057.634623014451,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/25",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1236.1414010689589,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/27",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1009.3679450077653,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/27",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1259.3016996145266,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1988/07/27",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1072.1935173917714,
+  "opponent": "Osamu Kido",
+  "result": "draw"
+ },
+ {
+  "date": "1988/07/27",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1071.3616856940616,
+  "opponent": "Big Van Vader (winner), Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/27",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1270.2192737945106,
+  "opponent": "Hiro Saito, Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/27",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1213.227664270032,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/27",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1261.3031567749163,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/29",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1036.1268952615615,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/29",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1212.3445090813796,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/29",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1189.917041673771,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/29",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1260.0521147826144,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/07/29",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1244.577848404714,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/07/29",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1286.944582164713,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/01",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1266.0084708926854,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/01",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1065.4321850639506,
+  "opponent": "Big Van Vader (winner), Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/08/01",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1042.7895627015666,
+  "opponent": "Big Van Vader (winner), George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1988/08/01",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1257.2771724568506,
+  "opponent": "George Takano, Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/03",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1041.4673779667817,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1988/08/03",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1277.9908744412699,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/03",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1074.3733983929508,
+  "opponent": "The Cuban Assassin",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/04",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1009.5147377345965,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/08/04",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1225.650587844862,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/08",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1161.9981409217949,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/08",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1105.415730063337,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/08/08",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1237.2621009118677,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/08",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1031.4724551685995,
+  "opponent": "Big Van Vader",
+  "result": "draw"
+ },
+ {
+  "date": "1988/08/08",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1241.5409448725509,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "draw"
+ },
+ {
+  "date": "1988/08/08",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1290.9773874986392,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1988/08/08",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1339.4512467543527,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1988/08/26",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1028.7480005118243,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/26",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1286.3882494450072,
+  "opponent": "Luis Mariscal",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/26",
+  "wrestling_as": "Great Kokina",
+  "wrestler": "Great Kokina",
+  "elo": 1005.0212173457359,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1988/08/26",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1182.6197427267016,
+  "opponent": "Billy Gaspar",
+  "result": "draw"
+ },
+ {
+  "date": "1988/08/26",
+  "wrestling_as": "Billy Gaspar",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 1146.142819317822,
+  "opponent": "Masa Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1988/08/28",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1299.4843075998429,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/28",
+  "wrestling_as": "Great Kokina",
+  "wrestler": "Great Kokina",
+  "elo": 1021.3975648736075,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/28",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1246.666601909444,
+  "opponent": "Luis Mariscal",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/29",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1136.1670025818667,
+  "opponent": "Luis Mariscal",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/29",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 980.5326987928396,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/08/29",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1256.400252513024,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1988/08/29",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1066.8081013358715,
+  "opponent": "Great Kokina",
+  "result": "draw"
+ },
+ {
+  "date": "1988/08/29",
+  "wrestling_as": "Great Kokina",
+  "wrestler": "Great Kokina",
+  "elo": 1028.9628619306868,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1988/09/01",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1036.661295734704,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/01",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1035.4629834052625,
+  "opponent": "Big Van Vader (winner), Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/01",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1060.2813154165615,
+  "opponent": "Big Van Vader (winner), George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/01",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1254.07212535338,
+  "opponent": "George Takano, Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/02",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1053.8043310148269,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/02",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1071.215737170533,
+  "opponent": "Luis Mariscal",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/05",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1153.282989112532,
+  "opponent": "Luis Mariscal",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/05",
+  "wrestling_as": "Great Kokina",
+  "wrestler": "Great Kokina",
+  "elo": 979.1103593254182,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/05",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 960.9252500420545,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/05",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1235.4543122202547,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/05",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1059.7410283639783,
+  "opponent": "Big Van Vader",
+  "result": "draw"
+ },
+ {
+  "date": "1988/09/05",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1239.9378387556906,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "draw"
+ },
+ {
+  "date": "1988/09/07",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 945.4903548363636,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/07",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1264.1177001158694,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/07",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1112.6303213796928,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/09",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1059.778882842341,
+  "opponent": "Luis Mariscal",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/09",
+  "wrestling_as": "Great Kokina",
+  "wrestler": "Great Kokina",
+  "elo": 953.2413255975986,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/09",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1187.8671746496145,
+  "opponent": "Great Kokina",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/09",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1027.1477060863165,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/09",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1156.6983524639093,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/10",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1238.872246918509,
+  "opponent": "Luis Mariscal",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/10",
+  "wrestling_as": "Great Kokina",
+  "wrestler": "Great Kokina",
+  "elo": 986.9630261421661,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/10",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1305.4997363913417,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/12",
+  "wrestling_as": "Great Kokina",
+  "wrestler": "Great Kokina",
+  "elo": 1054.039178630514,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/12",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 988.7027940912611,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/12",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1075.693428683495,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/12",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1209.0603046322017,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/12",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1218.4534207108873,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/13",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1065.1118367790118,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/13",
+  "wrestling_as": "Great Kokina",
+  "wrestler": "Great Kokina",
+  "elo": 1022.3993983017557,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/13",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1219.506954978373,
+  "opponent": "Great Kokina",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/13",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1232.0730698438615,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/13",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1246.43246564964,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/17",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1018.9782559466822,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/17",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1085.463173248637,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/17",
+  "wrestling_as": "Great Kokina",
+  "wrestler": "Great Kokina",
+  "elo": 1059.6945742948496,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/17",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1032.4126352844244,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/17",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1259.0434595146535,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/18",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1309.0261343181064,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/18",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1035.4031050234264,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/18",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1135.1058444930934,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/18",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1268.7060087815769,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/19",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 995.0084569971417,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/19",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1231.4918544531433,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/20",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1119.7319799951656,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/20",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1268.8845798726018,
+  "opponent": "George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/20",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1145.3949456700211,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/20",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1057.6160995520781,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/22",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1280.9518661807735,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/22",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1074.1354763562783,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/22",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1118.5864676888932,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/22",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1236.4342200021601,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/22",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 966.3310069678114,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/22",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1181.9604391418625,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/25",
+  "wrestling_as": "The Tiger",
+  "wrestler": "The Tiger",
+  "elo": 1015.8243739516458,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/25",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1197.4910991097477,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/25",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1049.0933025853342,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/25",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1236.5176415428923,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/25",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1104.4559362899197,
+  "opponent": "Big Van Vader",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/25",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1229.5298093222525,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/27",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1140.6875702906088,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/27",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1112.1223891895174,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/27",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1045.9392095438766,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/27",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1250.6157749490933,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/27",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1193.100524190977,
+  "opponent": "Ron Starr",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/29",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1195.2103278148413,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/29",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 965.5887369747178,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/29",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1220.605156226291,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/29",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1027.0679980567518,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/29",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1279.718661045868,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/29",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1174.1442756233594,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/30",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 983.8252095825653,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/30",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1235.0410416640814,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/30",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1172.7401544203392,
+  "opponent": "Black Tiger",
+  "result": "draw"
+ },
+ {
+  "date": "1988/09/30",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1049.538171451254,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1988/09/30",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1022.4018443507316,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/30",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1262.3844575456658,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1988/09/30",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1163.6202208894672,
+  "opponent": "Big Van Vader (winner), Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1988/09/30",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1242.1989232609708,
+  "opponent": "Kengo Kimura, Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/02",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1247.0571060474385,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/02",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1062.8890039073067,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/02",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1205.1871532720802,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/02",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1028.5398303260533,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/02",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1290.2178316084683,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/02",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1246.0786034833227,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/02",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 985.0341103708655,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/02",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1149.4901231693834,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/08",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1291.2756670427032,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/08",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1199.7450883897582,
+  "opponent": "Biff Wellington",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/08",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 999.629091806531,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/08",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1167.6692366807001,
+  "opponent": "Steve Williams",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/08",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1089.0423331630489,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/10",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1026.517229092764,
+  "opponent": "Biff Wellington",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/10",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1248.4477983900508,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/10",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1236.3348414112752,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/10",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1313.6860056020178,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/12",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1185.6727838063966,
+  "opponent": "El Canek",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/12",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 1113.3209990041082,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/12",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 972.7084857065706,
+  "opponent": "Perro Aguayo",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/12",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1150.998936760362,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/12",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1269.4985921053583,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/13",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1257.3314314235986,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/13",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1038.5382124897858,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/13",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1291.9800517462222,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/13",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1201.8458482099377,
+  "opponent": "Perro Aguayo",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/13",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1257.5677713019506,
+  "opponent": "Steve Williams",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/13",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1112.9039747698641,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/13",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 1089.3340232909886,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/13",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1325.6794934585776,
+  "opponent": "El Canek",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/15",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1037.350416679932,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/15",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 999.0798115215515,
+  "opponent": "Steve Williams",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/15",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1152.3623757380985,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/15",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1185.3973093552418,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/15",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1342.1280323132735,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/16",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1111.1349057784212,
+  "opponent": "George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/16",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1073.617689549527,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/16",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1050.423380439045,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/16",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1204.836241549963,
+  "opponent": "Steve Casey",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/16",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1260.5135414763743,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/16",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1238.2057574805667,
+  "opponent": "Riki Choshu",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/16",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1238.5350092343288,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/16",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1361.1607943808954,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/18",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1297.495812117006,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/18",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1027.1164124285415,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/18",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1268.9849154288504,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/18",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1249.8827105386115,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/18",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1266.076514395469,
+  "opponent": "Steve Casey",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/19",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1108.7528705778225,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/19",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1164.8572717431143,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/19",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1242.9535430472354,
+  "opponent": "Masa Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/19",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1329.4847770392728,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/19",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1297.7525317370917,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/20",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1184.2843273051715,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/22",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1145.0672181309694,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/22",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1077.4432734079403,
+  "opponent": "Biff Wellington",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/22",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1300.6497897166998,
+  "opponent": "Steve Casey",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/25",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1273.8320602411447,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/25",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1118.935393650913,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/25",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1125.8518142561268,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/25",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1342.7400577802587,
+  "opponent": "Steve Williams",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/26",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1289.9516847000373,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/26",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1155.0213458046649,
+  "opponent": "Perro Aguayo",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/26",
+  "wrestling_as": "El Canek",
+  "wrestler": "El Canek",
+  "elo": 1027.509595313974,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/26",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1270.6067604806397,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/26",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1364.1133490458412,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/27",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1159.3000900858822,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/10/27",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1230.6996257572157,
+  "opponent": "Steve Williams",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/27",
+  "wrestling_as": "Steve Williams",
+  "wrestler": "Steve Williams",
+  "elo": 1141.5225812103527,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
+ },
+ {
+  "date": "1988/10/27",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1330.7322197738833,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1988/10/27",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1276.3346723191933,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/11",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1296.8159256075066,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/11",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 946.6715115289903,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/12",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1016.1637834135327,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/12",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1128.201593550832,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/12",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1313.045060384531,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/15",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 1102.9187720989278,
+  "opponent": "Kengo Kimura",
+  "result": "draw"
+ },
+ {
+  "date": "1988/11/15",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1196.6372768246933,
+  "opponent": "Manny Fernandez",
+  "result": "draw"
+ },
+ {
+  "date": "1988/11/15",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1276.8812978303608,
+  "opponent": "Bob Orton",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/15",
+  "wrestling_as": "Bob Orton",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 1218.4703444261625,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/16",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1280.339522505059,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/16",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1174.9780818169925,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/16",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1086.251766658659,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/17",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1128.0910589317782,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/17",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1243.5242997099076,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/17",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1201.0178012739486,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/17",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1224.2209207096482,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/17",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1014.0964745799001,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/17",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1346.6013659800917,
+  "opponent": "Buzz Sawyer",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/19",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1039.6975523047633,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/19",
+  "wrestling_as": "Kendo Nagasaki",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 1008.4093603803123,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1988/11/19",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1241.7246410434568,
+  "opponent": "Bob Orton",
+  "result": "draw"
+ },
+ {
+  "date": "1988/11/19",
+  "wrestling_as": "Bob Orton",
+  "wrestler": "Billy Gaspar / Bob Orton",
+  "elo": 1220.2700030926133,
+  "opponent": "Kengo Kimura",
+  "result": "draw"
+ },
+ {
+  "date": "1988/11/20",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1021.1562049817619,
+  "opponent": "Keiichi Yamada",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/20",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1306.0865992690074,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/20",
+  "wrestling_as": "Kendo Nagasaki",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 994.8858105616418,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/20",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1337.4939946832185,
+  "opponent": "Kendo Nagasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/23",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 971.3264832648467,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/23",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1251.3362187813498,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/23",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1253.2242244333574,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/24",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1311.1320551700362,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/24",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 954.6935073013801,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/24",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1259.652706763083,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/24",
+  "wrestling_as": "Kendo Nagasaki",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 983.2217790011903,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/24",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1352.4333817603174,
+  "opponent": "Kendo Nagasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/25",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 956.6581083686597,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/25",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1058.3724350013283,
+  "opponent": "Kendo Nagasaki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/25",
+  "wrestling_as": "Kendo Nagasaki",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 1052.9404029316402,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/25",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1131.1369156544415,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/26",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1272.3351799227094,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/26",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1098.017544815022,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/26",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1269.7839098530674,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/28",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 967.7148607451674,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/28",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1060.183343983265,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1988/11/28",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1222.1185281369283,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/29",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1033.0393304590611,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/29",
+  "wrestling_as": "Kendo Nagasaki",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 1046.1835830138657,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1988/11/30",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1058.538886132785,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/11/30",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1001.7853995438331,
+  "opponent": "Tatsutoshi Goto",
+  "result": "draw"
+ },
+ {
+  "date": "1988/12/01",
+  "wrestling_as": "Kendo Nagasaki",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 1047.9369805351203,
+  "opponent": "George Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1988/12/01",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1056.6190374800738,
+  "opponent": "Kendo Nagasaki",
+  "result": "draw"
+ },
+ {
+  "date": "1988/12/01",
+  "wrestling_as": "Buzz Sawyer",
+  "wrestler": "Buzz Sawyer",
+  "elo": 1063.8605443076203,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/01",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 1082.3370236822802,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1988/12/01",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1347.7848688915424,
+  "opponent": "Manny Fernandez",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/03",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1094.3186654482445,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/03",
+  "wrestling_as": "The Grappler",
+  "wrestler": "The Grappler",
+  "elo": 1051.5287426727316,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/03",
+  "wrestling_as": "Kendo Nagasaki",
+  "wrestler": "Kendo Nagasaki",
+  "elo": 1033.1678213979756,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/12/03",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1359.8179613288896,
+  "opponent": "Kendo Nagasaki",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/04",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1101.731974088368,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/04",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1088.054288250991,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/04",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1046.510337148576,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1988/12/05",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1276.5570732335814,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/05",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1002.46066059977,
+  "opponent": "George Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1988/12/05",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1132.103964799797,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/05",
+  "wrestling_as": "The Grappler",
+  "wrestler": "The Grappler",
+  "elo": 1037.0323087160132,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1988/12/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1367.066178307249,
+  "opponent": "The Grappler",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/06",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1235.1122544536088,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "1988/12/06",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1085.3502981597153,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/07",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1085.9628522809583,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/07",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1074.9905109241665,
+  "opponent": "Manny Fernandez",
+  "result": "lost"
+ },
+ {
+  "date": "1988/12/07",
+  "wrestling_as": "Manny Fernandez",
+  "wrestler": "Manny Fernandez",
+  "elo": 1139.4504775579107,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/07",
+  "wrestling_as": "The Grappler",
+  "wrestler": "The Grappler",
+  "elo": 1078.389384100915,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/09",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1117.9406838670059,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/09",
+  "wrestling_as": "George Takano",
+  "wrestler": "George Takano",
+  "elo": 1014.3630324322434,
+  "opponent": "Kevin von Erich",
+  "result": "lost"
+ },
+ {
+  "date": "1988/12/09",
+  "wrestling_as": "Kevin von Erich",
+  "wrestler": "Kevin von Erich",
+  "elo": 1060.627478491923,
+  "opponent": "George Takano",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/09",
+  "wrestling_as": "Keiichi Yamada",
+  "wrestler": "Keiichi Yamada",
+  "elo": 1283.2291785909601,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1988/12/09",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1298.5096370597157,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/09",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1354.7080481479916,
+  "opponent": "Kerry von Erich; Kerry von Erich",
+  "result": "won"
+ },
+ {
+  "date": "1988/12/09",
+  "wrestling_as": "Kerry von Erich",
+  "wrestler": "Kerry von Erich",
+  "elo": 1024.7162603185145,
+  "opponent": "Tatsumi Fujinami; Tatsumi Fujinami",
+  "result": "lost"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Tatsumi Fujinami",
+ "Antonio Inoki",
+ "Hiroshi Hase",
+ "Osamu Kido",
+ "Keiichi Yamada",
+ "Owen Hart",
+ "Riki Choshu",
+ "Shiro Koshinaka",
+ "Crusher Bam Bam Bigelow",
+ "Big Van Vader",
+ "Masa Saito",
+ "Yoshiaki Fujiwara",
+ "Kengo Kimura",
+ "Kuniaki Kobayashi",
+ "Seiji Sakaguchi",
+ "Billy Gaspar / Bob Orton",
+ "Don Arakawa",
+ "Akira Nogami",
+ "Masaharu Funaki",
+ "Super Strong Machine",
+ "Kensuke Sasaki",
+ "George Takano",
+ "Nobuhiko Takada",
+ "Kazuo Yamazaki",
+ "Steve Williams",
+ "Kantaro Hoshino",
+ "Tatsutoshi Goto",
+ "Manny Fernandez",
+ "Scott Hall",
+ "Yoji Anjo",
+ "Black Cat",
+ "Hiro Saito",
+ "El Canek",
+ "Dick Murdoch",
+ "Norio Honaga",
+ "Johnny K-9",
+ "Tracy Smothers",
+ "Buzz Sawyer",
+ "Dr. Wagner Jr.",
+ "The Grappler",
+ "Black Tiger / Black Tiger I",
+ "Tatsuo Nakano",
+ "Kevin von Erich",
+ "Great Kokina",
+ "Gully Gaspar",
+ "Perro Aguayo",
+ "Kendo Nagasaki",
+ "Black Bart",
+ "Akira Katayama",
+ "Ray Candy",
+ "Steve R. Blackman",
+ "Dave Peterson",
+ "Crusher Crunchky",
+ "Kenichi Oya",
+ "Tony St. Clair",
+ "Biff Wellington",
+ "Osamu Matsuda",
+ "Kerry von Erich",
+ "Steve Armstrong",
+ "The Tiger",
+ "Darryl Peterson",
+ "Adrian Adonis",
+ "Shinya Hashimoto",
+ "Minoru Suzuki",
+ "The Cuban Assassin",
+ "Luis Mariscal",
+ "Steve Casey",
+ "Jerry Grey",
+ "Vinnie Valentino",
+ "Bad News Allen",
+ "Ron Starr",
+ "The Midnight Soldier",
+ "Shunji Kosugi",
+ "Takayuki Iizuka",
+ "Shigeo Miyato"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

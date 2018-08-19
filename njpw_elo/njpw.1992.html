@@ -1,0 +1,7762 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 950.0,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1050.0,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 950.0,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1050.0,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Bill Kazmaier",
+  "wrestler": "Bill Kazmaier",
+  "elo": 950.0,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1050.0,
+  "opponent": "Bill Kazmaier",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "El Gigante",
+  "wrestler": "El Gigante",
+  "elo": 1000.0,
+  "opponent": "Big Van Vader",
+  "result": "draw"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 1000.0,
+  "opponent": "El Gigante",
+  "result": "draw"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 950.0,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1050.0,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 950.0,
+  "opponent": "Lex Luger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Lex Luger",
+  "wrestler": "Lex Luger",
+  "elo": 1050.0,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 950.0,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/04",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1050.0,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/29",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 950.0,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/29",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1050.0,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/29",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 992.8536882591618,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/29",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1057.1463117408382,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/29",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 942.8536882591618,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/29",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1007.1463117408382,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/30",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 906.1360561308536,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/30",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1036.7176321283082,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/30",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 950.0,
+  "opponent": "Masashi Aoyagi",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/30",
+  "wrestling_as": "Masashi Aoyagi",
+  "wrestler": "Masashi Aoyagi",
+  "elo": 1050.0,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/30",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 950.0,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/30",
+  "wrestling_as": "Akitoshi Saito",
+  "wrestler": "Akitoshi Saito",
+  "elo": 1050.0,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/30",
+  "wrestling_as": "Rambo",
+  "wrestler": "Rambo",
+  "elo": 957.1463117408382,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/30",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1092.8536882591618,
+  "opponent": "Rambo",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/31",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 985.9935000197115,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/31",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1014.0064999802885,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/31",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 832.5136268804658,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/31",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1036.8112146251938,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/31",
+  "wrestling_as": "Michiyoshi Ohara",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 957.1463117408382,
+  "opponent": "Masashi Aoyagi",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/31",
+  "wrestling_as": "Masashi Aoyagi",
+  "wrestler": "Masashi Aoyagi",
+  "elo": 1092.8536882591618,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1992/01/31",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 963.0534101698356,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1992/01/31",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1129.8002780893262,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/01",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 909.108464014338,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/01",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1054.8980359659506,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/01",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 915.2387776407259,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/01",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 974.0230716384372,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/01",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 912.2268211296681,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/01",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1074.4908109986402,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/02",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 827.5779717158399,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/02",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1014.7883177876862,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/02",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 944.7029104316196,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/02",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1018.3504997382161,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/02",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 967.856620730342,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/02",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1161.9436573589842,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/04",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 853.4022500594547,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/04",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1085.8162997565862,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/04",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 973.2966168147894,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/04",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1115.982511971537,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/04",
+  "wrestling_as": "Kim Duk",
+  "wrestler": "Kim Duk",
+  "elo": 971.7525990958549,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/04",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1190.1910582631294,
+  "opponent": "Kim Duk",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/05",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 906.6961991441525,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/05",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 986.6030854007284,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/05",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 763.2329565985143,
+  "opponent": "Michiyoshi Ohara",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/05",
+  "wrestling_as": "Michiyoshi Ohara",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 989.318819299501,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/05",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1028.8102999555417,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/05",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1093.8172144262383,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/05",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 974.9289725757369,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/05",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1215.2620856873925,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/08",
+  "wrestling_as": "Michiyoshi Ohara",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 947.9638185339911,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/08",
+  "wrestling_as": "Akitoshi Saito",
+  "wrestler": "Akitoshi Saito",
+  "elo": 1091.3550007655099,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/08",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 972.7658985408195,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/08",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1042.6474868154507,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/08",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1174.1839482593944,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/08",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1032.1562748559966,
+  "opponent": "Tony Halme",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/08",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 998.9956660701752,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/08",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1058.1506456706632,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/10",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 702.3279112512781,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/10",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 967.6012444913887,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/10",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 918.7360697420366,
+  "opponent": "Flying Scorpio",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/10",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 1052.7625680291853,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/10",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1003.0472560652425,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/10",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1155.582742721745,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/10",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 952.6383962663266,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/10",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1065.7121034718896,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/10",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 958.2912735168322,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/10",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1099.859372153831,
+  "opponent": "Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 657.6404148437318,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/11",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 963.4235661495829,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/11",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 947.9637897286048,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/11",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1022.6847108280265,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/11",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1002.9367907322909,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/11",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1037.7042853153355,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/11",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1084.5781675646365,
+  "opponent": "Brad Armstrong",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/11",
+  "wrestling_as": "Brad Armstrong",
+  "wrestler": "Brad Armstrong",
+  "elo": 1071.0045751571085,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/12",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 625.9885150234608,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/12",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 979.6156895488757,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/12",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 914.6414683196848,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/12",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1075.7012132619773,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/12",
+  "wrestling_as": "Rambo",
+  "wrestler": "Rambo",
+  "elo": 917.7764631270865,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/12",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1071.5261234697482,
+  "opponent": "Rambo",
+  "result": "won"
+ },
+ {
+  "date": "1992/02/12",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 962.8522062797527,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/02/12",
+  "wrestling_as": "Akitoshi Saito",
+  "wrestler": "Akitoshi Saito",
+  "elo": 1128.502794485757,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/01",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 602.8862606240245,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/01",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 991.1668167485938,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/01",
+  "wrestling_as": "Michiyoshi Ohara",
+  "wrestler": "Michiyoshi Ohara",
+  "elo": 862.8300431343562,
+  "opponent": "Brian Blair",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/01",
+  "wrestling_as": "Brian Blair",
+  "wrestler": "Brian Blair / Killer Bee",
+  "elo": 1042.5668876998175,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/01",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 848.6033758998789,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/01",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1009.9773624593943,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/01",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 963.2823678716918,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/01",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1093.8639438691464,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/01",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 918.6679779460775,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/01",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1044.7555882035053,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/02",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 586.5024525905405,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/02",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1030.8766148447685,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/02",
+  "wrestling_as": "Brian Blair",
+  "wrestler": "Brian Blair / Killer Bee",
+  "elo": 967.2321826326075,
+  "opponent": "Akira Nogami",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/02",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 999.2727860342989,
+  "opponent": "Brian Blair",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/02",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 1001.6104749625861,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/02",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1095.9076812701046,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/02",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 950.0,
+  "opponent": "Takayuki Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/02",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1050.0,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/02",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 942.8536882591618,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/02",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1007.1463117408382,
+  "opponent": "Tiger Jeet Singh",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/03",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 900.0382470247639,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/03",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 768.7595920382003,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/03",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 989.8366915215681,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/03",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1134.8571377494386,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/03",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 842.0973425701321,
+  "opponent": "Flying Scorpio",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/03",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 1039.8957926505586,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/03",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1024.0042513080068,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/03",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1070.551278716024,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/05",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 927.193931006847,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/05",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1025.323768054206,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/05",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 747.0841798667312,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/05",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1145.694843835173,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/05",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 984.596936893989,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/05",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1058.2356464888605,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/06",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 694.7304077677919,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/06",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 979.5477031057864,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/06",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 969.4894044414924,
+  "opponent": "Flying Scorpio",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/06",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 1040.4313005067027,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/06",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 797.3559156610879,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/06",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1080.6063599433826,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/08",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 886.5457398471237,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/08",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 860.6177369565291,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/08",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 905.493642909585,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/08",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 945.4640360534905,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/08",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 995.4896848540459,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/08",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1120.642828914634,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/08",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 901.910555715231,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/08",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1011.3718121564608,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/09",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 768.066593253732,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/09",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 979.0968835499209,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/09",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 838.3396352092561,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/09",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1057.5812551581712,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/09",
+  "wrestling_as": "Brian Blair",
+  "wrestler": "Brian Blair / Killer Bee",
+  "elo": 921.2898211685334,
+  "opponent": "Flying Scorpio",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/09",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 1041.43204631812,
+  "opponent": "Brian Blair",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/09",
+  "wrestling_as": "Mad Bull Rex",
+  "wrestler": "Mad Bull Rex",
+  "elo": 963.9878480233745,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/09",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1135.8715241304565,
+  "opponent": "Mad Bull Rex",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/10",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 798.4234901178469,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/10",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 915.1071391893756,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/10",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 993.7544320267717,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/10",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1105.2588694495196,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/10",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 846.9653062997064,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1098.0239034237864,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/11",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 746.1950216522649,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/11",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1005.2111177827119,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 793.3643634334976,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/11",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 960.0824109651342,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/11",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 765.5312380679503,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/11",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 993.6608893614242,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/11",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 949.3774403837704,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/11",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1049.8953456505285,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1992/03/11",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1032.3117162923613,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/03/11",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1062.5916310479183,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 737.9769600555233,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 987.7761126541213,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 950.0,
+  "opponent": "Negro Casas",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1050.0,
+  "opponent": "Eddie Guerrero",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 718.3400367380927,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1076.5191235050045,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 938.6685235670873,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1013.3771819765167,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1071.3942956077165,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1096.7889448151013,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Larry Cameron",
+  "wrestler": "Larry Cameron",
+  "elo": 951.0282919201761,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1056.118019820662,
+  "opponent": "Larry Cameron",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 959.735860990449,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/16",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1051.6359511660116,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/18",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 952.7041228953174,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/18",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1040.2831075415158,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/18",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 856.1400378994522,
+  "opponent": "Dave Finlay",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/18",
+  "wrestling_as": "Dave Finlay",
+  "wrestler": "Dave Finlay",
+  "elo": 1041.2642428338174,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/18",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1006.6930578337451,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/18",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1140.0958869813562,
+  "opponent": "Negro Casas",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/18",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 695.1703072123129,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/18",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1082.9791603706065,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/18",
+  "wrestling_as": "Larry Cameron",
+  "wrestler": "Larry Cameron",
+  "elo": 908.0295826210048,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/18",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1042.9987092991714,
+  "opponent": "Larry Cameron",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/19",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 875.216221886358,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/19",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 892.9527620734422,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/19",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 671.1670688556989,
+  "opponent": "Dave Finlay",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/19",
+  "wrestling_as": "Dave Finlay",
+  "wrestler": "Dave Finlay",
+  "elo": 1053.2658620121244,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/19",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1081.0472281312327,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/19",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1135.567782355128,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/19",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 918.2544392853227,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/19",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1114.7247210852836,
+  "opponent": "Eddie Guerrero",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/20",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 824.5684047926457,
+  "opponent": "Negro Casas",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/20",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1040.8852364741433,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/20",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 822.7810712674402,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/20",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1152.247265671134,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/20",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 844.9687893620979,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/20",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1050.020006938129,
+  "opponent": "Eddie Guerrero",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/20",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 653.9037121286228,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/20",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1089.6789064947707,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/20",
+  "wrestling_as": "Dave Finlay",
+  "wrestler": "Dave Finlay",
+  "elo": 988.7453187568584,
+  "opponent": "Akira Nogami",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/20",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1078.4185268943024,
+  "opponent": "Dave Finlay",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/21",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 950.0431233687351,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/21",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 834.3836804741844,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/21",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 805.6798376681652,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/21",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1109.323382341737,
+  "opponent": "Eddie Guerrero",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/21",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 998.7057106243506,
+  "opponent": "Negro Casas",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/21",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1092.1995327879217,
+  "opponent": "Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/21",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1096.8682343072521,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/21",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1170.1037524491655,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/21",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 944.2313266696725,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/21",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1015.5045343207765,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/23",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 760.7409994516415,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/23",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 939.0436272273621,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/23",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 726.1407956845392,
+  "opponent": "Eddie Guerrero",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/23",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 913.9227224578103,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/23",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 787.7897306356869,
+  "opponent": "Negro Casas",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/23",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1109.6952031037983,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/23",
+  "wrestling_as": "Dave Finlay",
+  "wrestler": "Dave Finlay",
+  "elo": 955.4332253450086,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/23",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1142.635475753587,
+  "opponent": "Dave Finlay",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/23",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1097.261250165516,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/23",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1071.548212908,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/24",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 842.2084794034037,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/24",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 998.4606972807143,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/24",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 643.7008785972994,
+  "opponent": "Flying Scorpio",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/24",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 870.2296477229268,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/24",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 825.8138784264524,
+  "opponent": "Dave Finlay",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/24",
+  "wrestling_as": "Dave Finlay",
+  "wrestler": "Dave Finlay",
+  "elo": 999.4876473606876,
+  "opponent": "Eddie Guerrero",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/24",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1048.7133452772055,
+  "opponent": "Negro Casas",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/24",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1157.850092133845,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/24",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1012.9335260269397,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/24",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1179.5972953771757,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/25",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 720.166099797753,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/25",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1018.7481471076585,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/25",
+  "wrestling_as": "Dave Finlay",
+  "wrestler": "Dave Finlay",
+  "elo": 970.820547028251,
+  "opponent": "Negro Casas",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/25",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1186.5171924662816,
+  "opponent": "Dave Finlay",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/25",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 628.0006338455677,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/25",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1079.398335283866,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/25",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 827.6284030779599,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/25",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1118.5618724879994,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/26",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 789.056546261844,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/26",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1045.3241136784384,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/26",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1090.3774096542506,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/26",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 820.2801994696295,
+  "opponent": "Negro Casas",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/26",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1024.9938561747078,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/26",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1103.1178243863635,
+  "opponent": "Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/26",
+  "wrestling_as": "Dave Finlay",
+  "wrestler": "Dave Finlay",
+  "elo": 940.8870658523655,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/26",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1148.4953536638848,
+  "opponent": "Dave Finlay",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/26",
+  "wrestling_as": "Larry Cameron",
+  "wrestler": "Larry Cameron",
+  "elo": 845.0338353963176,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/26",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1074.4965829115151,
+  "opponent": "Larry Cameron",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/27",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 639.7385307112978,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/27",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 869.4841153482992,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/27",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 967.5395219897651,
+  "opponent": "Flying Scorpio",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/27",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 983.1975864553065,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/28",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 825.686188186123,
+  "opponent": "Negro Casas",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/28",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1112.2763732353387,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/28",
+  "wrestling_as": "Dave Finlay",
+  "wrestler": "Dave Finlay",
+  "elo": 864.6328959771539,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/28",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1063.1209411123136,
+  "opponent": "Dave Finlay",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/28",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 958.7919497942842,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/28",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1204.002932038198,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/28",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 792.1137181890826,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/28",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1119.9679045050484,
+  "opponent": "Eddie Guerrero",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 897.5312288690026,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 960.2967857111546,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 886.4902412632098,
+  "opponent": "Eddie Guerrero",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 936.7171352512314,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Dave Finlay",
+  "wrestler": "Dave Finlay",
+  "elo": 827.2390974789882,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1138.6648037541313,
+  "opponent": "Dave Finlay",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1032.3528119369591,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1219.3869966258753,
+  "opponent": "Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1067.469903814357,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1193.3018230848666,
+  "opponent": "Negro Casas",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 965.1345432385339,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/29",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1063.3035171091824,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/30",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 746.0750639204102,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/30",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 977.1423531347153,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/30",
+  "wrestling_as": "Flying Scorpio",
+  "wrestler": "Flying Scorpio",
+  "elo": 807.4195859261432,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/30",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 999.8321133796878,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/30",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1096.4635210179217,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/30",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1259.3442895498804,
+  "opponent": "Norio Honaga; El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/30",
+  "wrestling_as": "Akitoshi Saito",
+  "wrestler": "Akitoshi Saito",
+  "elo": 1060.0164718612755,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1992/04/30",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1062.1472119859059,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/04/30",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1195.545812897071,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/01",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 614.6584104810698,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/01",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 989.6824132498293,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/01",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 854.6858626455012,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/01",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1040.8477496825528,
+  "opponent": "Eddie Guerrero",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/01",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1055.2213112329284,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/01",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1212.8265808956123,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/01",
+  "wrestling_as": "Masashi Aoyagi",
+  "wrestler": "Masashi Aoyagi",
+  "elo": 1043.5976871142004,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/01",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1147.2799045687477,
+  "opponent": "Masashi Aoyagi",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/01",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1018.4322231103916,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/01",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1103.0939003593564,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 900.0334802148344,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 793.9562765510597,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1154.6253302717869,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1279.8045308625226,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "The Great Oz",
+  "wrestler": "The Great Oz",
+  "elo": 957.8807363835729,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1097.3405748493556,
+  "opponent": "The Great Oz",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 989.6254734269926,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1083.5750881925194,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Big Van Vader",
+  "wrestler": "Big Van Vader",
+  "elo": 977.2964772319184,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1224.1783422796532,
+  "opponent": "Big Van Vader",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 927.3321035011409,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1089.4383909034048,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1028.6027988521216,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/17",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1148.98768441875,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/18",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 706.5749239747793,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/18",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1009.3755433998081,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/19",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 669.3231077434164,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/19",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 831.2080927824226,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/19",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 830.5052269666515,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/19",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1044.1396700238995,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/19",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1033.6132790561219,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/19",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1087.5225074564678,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/21",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 612.6504341278763,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/21",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 887.1779005821916,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/21",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 737.4933684350354,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/21",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1094.62529475984,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/21",
+  "wrestling_as": "Brad Armstrong",
+  "wrestler": "Brad Armstrong",
+  "elo": 1018.8635376873947,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/21",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1108.259057290376,
+  "opponent": "Brad Armstrong",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/22",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 771.2064167347527,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/22",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 947.1795766298615,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/23",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 987.875677266052,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/23",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1109.0411188992523,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/23",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1088.6569279660196,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/23",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1153.5014368870752,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/24",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 587.2050771039183,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/24",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 972.6249336538197,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/24",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 961.345204681132,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/24",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 936.7953474202875,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/24",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 952.772344529845,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/24",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1129.728627496047,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/24",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1091.6222993765048,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/24",
+  "wrestling_as": "Kuniaki Kobayashi",
+  "wrestler": "Kuniaki Kobayashi",
+  "elo": 1125.150242881188,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/25",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 825.5725637512503,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/25",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 997.3067968140623,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/25",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1050.434444355861,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/25",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1194.689291907719,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/27",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 847.0715282647784,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/27",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1017.4868432315742,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/27",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 713.4886447037617,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/27",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1095.5774500581563,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/27",
+  "wrestling_as": "Brad Armstrong",
+  "wrestler": "Brad Armstrong",
+  "elo": 973.3324773005028,
+  "opponent": "Takayuki Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/27",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1095.531060386892,
+  "opponent": "Brad Armstrong",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/28",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 925.2361890059358,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/28",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 771.7063855551951,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/28",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 695.976162631019,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/28",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1129.3990699510055,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/28",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1029.123639963239,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/28",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1087.0016663453505,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/29",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 693.0642752375709,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/29",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 925.7136385824026,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/29",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 835.5919402149196,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/29",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1006.1673290766402,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/29",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 954.8934400803553,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/29",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1092.8478010895678,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/30",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 631.9308664669551,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/30",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 896.7253489855354,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/30",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 848.4648627673766,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/30",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1044.791716984153,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/30",
+  "wrestling_as": "Brad Armstrong",
+  "wrestler": "Brad Armstrong",
+  "elo": 890.1783341576852,
+  "opponent": "Masanobu Kurisu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/30",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 862.284448916654,
+  "opponent": "Brad Armstrong",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/30",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 795.9848885923499,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/30",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1144.5224650754972,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/31",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 732.4917880183307,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/31",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 796.1644274341598,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/31",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 808.3483296692363,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/31",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1108.7151945150897,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/31",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1002.0487589159601,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/31",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1138.320408126349,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/05/31",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 826.908591591262,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/05/31",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1147.0869986137016,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/01",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1262.4781170548601,
+  "opponent": "Pegasus Kid (winner), Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/01",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 994.7409585639327,
+  "opponent": "Pegasus Kid (winner), Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/01",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1162.954622286039,
+  "opponent": "Jushin Thunder Liger, Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/02",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 653.9846210958792,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/02",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 886.8554965916876,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/02",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 772.2771895721881,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/02",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1156.376314585578,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/02",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 799.5714605110089,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/02",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1160.7555641538281,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/02",
+  "wrestling_as": "Rambo",
+  "wrestler": "Rambo",
+  "elo": 867.6974340091202,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/02",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1133.298571849359,
+  "opponent": "Rambo",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/02",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1045.7914680965218,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/02",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1147.0801671397257,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/03",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 916.4856945288802,
+  "opponent": "Tony St. Clair",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/03",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 928.7877176422932,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/03",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 776.8403622709702,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/03",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1167.7418637055973,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/03",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1040.050826008048,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/03",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1199.1232650400825,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/03",
+  "wrestling_as": "Rambo",
+  "wrestler": "Rambo",
+  "elo": 834.3312649390319,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/03",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1163.76325167477,
+  "opponent": "Rambo",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/18",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 721.6902835866214,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/18",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 961.3296404392261,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/18",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 617.8287929128811,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/18",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 952.6415227118783,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/18",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 922.469272114077,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/18",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1045.387348616265,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/19",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 592.6562948505225,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/19",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 746.86278164898,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/19",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1124.4833331729342,
+  "opponent": "Takayuki Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/19",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1115.9974268313067,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/20",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 701.786284431451,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/20",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 983.8678890479905,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/20",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 925.5345298737594,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/20",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1151.590326011053,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/20",
+  "wrestling_as": "Killer Bee",
+  "wrestler": "Brian Blair / Killer Bee",
+  "elo": 821.6292931351264,
+  "opponent": "Masa Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/20",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1022.1298001474839,
+  "opponent": "Killer Bee",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/20",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1007.1383426833307,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/20",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1196.6757349994873,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/21",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 664.0010236741698,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/21",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 973.7860704589958,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/21",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 956.2898129637832,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/21",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1179.1684020952605,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/21",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1055.8736341824495,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/21",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1140.1691510621533,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/24",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 572.597443937654,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/24",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 983.8154959154301,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/24",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 998.0772331988812,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/24",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1198.788270469955,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/24",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1011.1746478353108,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/24",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1137.5467874367066,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/25",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 943.7425771053646,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/25",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1012.5472358584186,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/25",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 538.2835532565389,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/25",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 698.3149143552849,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/26",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1102.529906246852,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/26",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1149.863106942592,
+  "opponent": "Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/26",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1228.8569882202949,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/26",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1204.789045105837,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/26",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 968.2942659793495,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/26",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1165.0043058700096,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/26",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 883.6840924996206,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/26",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1170.81168991951,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/29",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 761.4116135840827,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/29",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 720.6145167778209,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/29",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 950.2804977842454,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/29",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1050.068006022106,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/29",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1061.4250303013116,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/29",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1206.10918181555,
+  "opponent": "Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/30",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 643.4479774606351,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/30",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 816.2785504787325,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/30",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 678.5194849719093,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/30",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 971.3280136872012,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/06/30",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1020.9703504941709,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/06/30",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1219.3378728698044,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/01",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 623.0112404556223,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/01",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1031.1887189966774,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/01",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 761.0797356690532,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/01",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1011.4149033202698,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/01",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1183.6978999512723,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/01",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1132.704976138376,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/01",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 932.1849011603853,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/01",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1015.4687565766126,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/02",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 637.7543777995446,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/02",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 801.8448428414179,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/03",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 527.2521113425006,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/03",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 733.5135069126663,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/03",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 927.071516843522,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/03",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1055.6714001639489,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/03",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 775.9267364162204,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/03",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1145.6640293509747,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/03",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1001.8276833176916,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/03",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1213.058935630258,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/05",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 488.67866717325757,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/05",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 814.5001805854633,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/05",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 972.3986746849487,
+  "opponent": "Masanobu Kurisu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/05",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 943.3858132289706,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/06",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 745.8126785774543,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/06",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 995.759018851531,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/06",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 698.3382708020682,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/06",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1019.4153013729907,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/06",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 906.0623951825884,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/06",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1217.7849740632737,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/08",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1175.1986493637066,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/08",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1091.1893291097153,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/08",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1069.470416017375,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/08",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1186.696161876085,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/08",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 948.015678692496,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/08",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1216.2484754589768,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/16",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 442.628581502358,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/16",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 744.3883564729679,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/16",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 707.4666402726913,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/16",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1014.9320380039126,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/16",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 951.6294489414291,
+  "opponent": "Brad Armstrong",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/16",
+  "wrestling_as": "Brad Armstrong",
+  "wrestler": "Brad Armstrong",
+  "elo": 1025.7500390208083,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/16",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 926.3624894086041,
+  "opponent": "TNT",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/16",
+  "wrestling_as": "TNT",
+  "wrestler": "TNT",
+  "elo": 1046.0361852763444,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/16",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 1025.4718399701205,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "draw"
+ },
+ {
+  "date": "1992/07/16",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1042.0453087936282,
+  "opponent": "Masa Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1992/07/17",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 406.869509257981,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/17",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 743.2257125170682,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/17",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 978.1100054058476,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/17",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1145.5372271131546,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/17",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1011.1588333924794,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/17",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1069.4862304602063,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/17",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1131.2968046910667,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/17",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1239.7358963995937,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/17",
+  "wrestling_as": "TNT",
+  "wrestler": "TNT",
+  "elo": 1015.2408259184674,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/17",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1217.491521233962,
+  "opponent": "TNT",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/19",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 703.0639964685386,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/19",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 998.7721854080622,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/19",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 874.7828711277383,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/19",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 896.91886814445,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/19",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 854.2129648737716,
+  "opponent": "Brad Armstrong",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/19",
+  "wrestling_as": "Brad Armstrong",
+  "wrestler": "Brad Armstrong",
+  "elo": 1061.8248012882245,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/19",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1028.288814543982,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/19",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1172.494220607291,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/21",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 935.5859084195864,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/21",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1025.7470513052772,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/22",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 853.5744939558218,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/22",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1039.7778926399444,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/22",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 394.1982163251759,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/22",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 887.4541640605435,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/22",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 644.0166069230017,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/22",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 913.2603544193084,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/23",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 799.4357154559846,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/23",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1052.8164405551959,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/23",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 389.4487689393599,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/23",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1042.1526163328524,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/23",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 634.9051899916982,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/23",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1177.0499290729429,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/23",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 825.9062952900481,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/23",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1059.0627489292297,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/24",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 974.1287856304658,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/24",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 983.2816051395082,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/26",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 982.4863976204717,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/26",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1033.7950043428466,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/27",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 384.6662885065219,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/27",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1036.1862445592656,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/27",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 611.0822025264645,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/27",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 994.3978913530885,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/28",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 375.5606994079938,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/28",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 922.3659435178365,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/28",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1025.418511242752,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/28",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1210.6941667594206,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/29",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 334.5749943732311,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/29",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 652.0679075612272,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/29",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 888.5233338343432,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/29",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1215.7095753117017,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 978.6309589082043,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1040.8368907905694,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 929.6160630761867,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1018.0869903881469,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1089.277227062638,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1149.192006615825,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "TNT",
+  "wrestler": "TNT",
+  "elo": 991.4512107665503,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1229.3863288099205,
+  "opponent": "TNT",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 977.855146391333,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1089.6620023724158,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1102.874202339934,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/07/31",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1217.8005945221678,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/03",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 306.8709705486104,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/03",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 679.771931385848,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/03",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 921.6235749594983,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/03",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1043.6308309735987,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 974.0594613418466,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1139.973574390567,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1183.4319109714797,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1233.692913671142,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1054.2589406853995,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1231.694021376726,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Arn Anderson",
+  "wrestler": "Arn Anderson",
+  "elo": 950.0,
+  "opponent": "Steve Austin",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Steve Austin",
+  "wrestler": "Steve Austin",
+  "elo": 1050.0,
+  "opponent": "Arn Anderson",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1029.552457506253,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1078.5417679765546,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Barry Windham",
+  "wrestler": "Barry Windham",
+  "elo": 978.9257205946634,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1239.923468512589,
+  "opponent": "Barry Windham",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1193.8648898957472,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/06",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1209.818911383637,
+  "opponent": "Tony Halme",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/07",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 958.4120222843593,
+  "opponent": "Arn Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/07",
+  "wrestling_as": "Arn Anderson",
+  "wrestler": "Arn Anderson",
+  "elo": 1009.6749681037876,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/07",
+  "wrestling_as": "Jim Neidhart",
+  "wrestler": "Jim Neidhart",
+  "elo": 942.5741861965869,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/07",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1062.867306299322,
+  "opponent": "Jim Neidhart",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/07",
+  "wrestling_as": "The Barbarian",
+  "wrestler": "The Barbarian",
+  "elo": 979.1458271525023,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/07",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1242.1211078004749,
+  "opponent": "The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/07",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1070.8532058795151,
+  "opponent": "Rick Rude",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/07",
+  "wrestling_as": "Rick Rude",
+  "wrestler": "Rick Rude",
+  "elo": 1069.1203685110518,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/07",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1177.428326335347,
+  "opponent": "Terry Taylor",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/07",
+  "wrestling_as": "Terry Taylor",
+  "wrestler": "Terry Taylor",
+  "elo": 1077.6402982472596,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 991.2389624371366,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1093.2287593270314,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 832.1727457253648,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1003.1374369014261,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Terry Taylor",
+  "wrestler": "Terry Taylor",
+  "elo": 1025.5155741236847,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1114.992030422897,
+  "opponent": "Terry Taylor",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1205.608795219834,
+  "opponent": "Rick Rude",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Rick Rude",
+  "wrestler": "Rick Rude",
+  "elo": 1142.1449936723334,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Steve Austin",
+  "wrestler": "Steve Austin",
+  "elo": 1024.9000248935333,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1252.4734560658223,
+  "opponent": "Steve Austin",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1046.5835366716103,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/10",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1225.798027036109,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/11",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1208.3449633330986,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/11",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1254.2049385583382,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/11",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 996.7103057008203,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/11",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1212.1401165134114,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/11",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1068.8917196527827,
+  "opponent": "Rick Rude",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/11",
+  "wrestling_as": "Rick Rude",
+  "wrestler": "Rick Rude",
+  "elo": 1188.2453044424476,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/11",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1225.5577674189606,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/11",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1252.7137156829708,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/12",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 968.9648388310785,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/12",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1219.4820251361275,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/12",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1221.639333467969,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/12",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1210.7952395317132,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/12",
+  "wrestling_as": "Arn Anderson",
+  "wrestler": "Arn Anderson",
+  "elo": 968.3893439788509,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/12",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1112.1388300044518,
+  "opponent": "Arn Anderson",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/12",
+  "wrestling_as": "Rick Rude",
+  "wrestler": "Rick Rude",
+  "elo": 1147.4180212362307,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/12",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1273.1273572860791,
+  "opponent": "Rick Rude",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/15",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1011.4301950736906,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/15",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 995.7698742320465,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/15",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 944.5089027706151,
+  "opponent": "Jim Neidhart",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/15",
+  "wrestling_as": "Jim Neidhart",
+  "wrestler": "Jim Neidhart",
+  "elo": 1059.8312544582088,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/15",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 859.2771010034678,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/15",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1135.5314770940122,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/15",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1036.1392824035358,
+  "opponent": "Tony Halme",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/15",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1226.617327144994,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/15",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1185.892010726198,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/15",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1237.0433453189266,
+  "opponent": "Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/16",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 651.8618793523417,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/16",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1009.7249002487996,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/16",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 989.9923738967987,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/16",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1247.7622559073727,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/16",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 779.9589639581633,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/16",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1011.5030382056898,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/16",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 950.0340146775883,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/16",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1231.1047455447142,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/16",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1193.3586752509134,
+  "opponent": "Great Muta",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/16",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1249.999686690215,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 624.7979079221079,
+  "opponent": "Takayuki Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 987.5914470569635,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 933.4855564654407,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1239.378974650788,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 967.5694455670198,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1216.8202593847236,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1236.1732208906976,
+  "opponent": "Masahiro Chono (winner), Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1176.8546217246148,
+  "opponent": "Masahiro Chono (winner), El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1293.7537813043373,
+  "opponent": "El Samurai, Pegasus Kid",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "Crusher Bam Bam Bigelow",
+  "wrestler": "Crusher Bam Bam Bigelow",
+  "elo": 1007.6095450697123,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/18",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1260.9711429084853,
+  "opponent": "Crusher Bam Bam Bigelow",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/19",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 948.925951337914,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/19",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1055.0834542872121,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/19",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 950.2715675500974,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/19",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1248.0279136592492,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/19",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 966.5020819024393,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/19",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1227.3649419619858,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/30",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 302.06301309173523,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/30",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 952.675546278535,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/30",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 739.9901980861005,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/30",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1008.371468707798,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/30",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 609.2995274986461,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/30",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1062.8326444989432,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/08/30",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 910.4310935378666,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/08/30",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1228.0014774443146,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 297.44605913971606,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 954.9840232545446,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 966.1454937472156,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1105.0586194595255,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Killer Bee",
+  "wrestler": "Brian Blair / Killer Bee",
+  "elo": 793.4282561467337,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1149.6319955882086,
+  "opponent": "Killer Bee",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1134.5657024368775,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1248.7962539112204,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1222.2442501261266,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1124.0373222363276,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1017.6410309392663,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/10",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1303.0029070364722,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/12",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 925.3314818007334,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/12",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1134.7111609133367,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/12",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1107.1868413095374,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/12",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1247.1766703461233,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/13",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 292.20071140976216,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/13",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 930.5768295306873,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/13",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 600.0333904115345,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/13",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1139.3442294568924,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/13",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 978.2337535461774,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/13",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1233.127373353038,
+  "opponent": "Brad Rheingans",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/14",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 940.1400784623098,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/14",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1050.2966726060677,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/14",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 908.1955745246111,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/14",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1026.3309319830757,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/15",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 764.8808967474117,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/15",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 775.2925721264326,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/15",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 289.3206287203531,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/15",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1027.7709733277802,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/15",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 764.9044349691892,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/15",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1219.4732075589452,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/15",
+  "wrestling_as": "Killer Bee",
+  "wrestler": "Brian Blair / Killer Bee",
+  "elo": 783.3223595110492,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/15",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1305.5293811953934,
+  "opponent": "Killer Bee",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/16",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 286.8478410594279,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/16",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1051.5330664365304,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/16",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 866.3835017141371,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/16",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1160.2502658621295,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/16",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 728.8108782384237,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/16",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1045.817751693163,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/17",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 693.2919581669858,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/17",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 937.9724402945631,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/19",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 616.4649462403421,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/19",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 852.1195840530762,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/19",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 985.7485209296982,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/19",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1069.5415313082271,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/19",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1121.0057981715859,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/19",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1255.7954547359695,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/19",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 690.3713589105822,
+  "opponent": "Brad Rheingans",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/19",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 997.4535132100981,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/20",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 595.1414458239797,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/20",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 996.4102711378795,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/20",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 284.6624750136807,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/20",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1070.6342143311008,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/20",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1060.3511795960335,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/20",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1106.4723702687154,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/21",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 958.5989204190922,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/21",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1101.7522591769414,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/21",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 558.0343600922583,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/21",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 889.2266697847975,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/21",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1010.1121191832627,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/21",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1056.9323662857175,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/21",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 975.6652468173603,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/21",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1230.3673407553142,
+  "opponent": "Brad Rheingans",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/23",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 943.3849155230922,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/23",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1022.6810771051387,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/23",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1041.1816863550875,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/23",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1062.0009896144481,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/23",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1194.4433573347276,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/23",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1188.3852618568603,
+  "opponent": "Tony Halme",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/23",
+  "wrestling_as": "Steve Austin",
+  "wrestler": "Steve Austin",
+  "elo": 1008.3164491529948,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/23",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1313.8211690656626,
+  "opponent": "Steve Austin",
+  "result": "won"
+ },
+ {
+  "date": "1992/09/23",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1222.6695510832526,
+  "opponent": "Great Muta",
+  "result": "lost"
+ },
+ {
+  "date": "1992/09/23",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1259.2540761810058,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/08",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 928.1086023759544,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/08",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1132.242577220079,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/08",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 538.4097558070066,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/08",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 963.009519808344,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/08",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 282.3435306802711,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/08",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1058.0918384524223,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/09",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 279.5631374496035,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/09",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1024.0712737204724,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/09",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 667.2219128195363,
+  "opponent": "Masashi Aoyagi",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/09",
+  "wrestling_as": "Masashi Aoyagi",
+  "wrestler": "Masashi Aoyagi",
+  "elo": 1055.1724101597233,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/10",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 855.0473053131484,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/10",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1060.6019222518753,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/10",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 277.0993661836092,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/10",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1042.4135719880846,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/10",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 926.3612923596312,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/10",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1094.740065901135,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/10",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 654.5116506770493,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/10",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1140.920833508121,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/11",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 510.5880073625052,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/11",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 882.8690537576498,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 879.5357233453087,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/11",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1155.6553617272402,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/13",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1015.4990463648643,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/13",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1139.8429417881462,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/13",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 845.6440956708955,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/13",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1172.601175564447,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/13",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 995.2294453050231,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/13",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1109.1851162975097,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/13",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 922.8577748475929,
+  "opponent": "Masanobu Kurisu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/13",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 831.8021773932431,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/14",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 500.22138715568957,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/14",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1020.6823564682721,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/14",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 767.5091857394212,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/14",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1000.9926847790671,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/14",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 798.1147572410739,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/14",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1126.0288263735943,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/15",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 275.9518035589141,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/15",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1173.1749568767946,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/16",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 820.5776819464317,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/16",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1051.828042373881,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/16",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 495.31028830218855,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/16",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1142.2984912148966,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/16",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 725.040698250143,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/16",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1016.4636890496622,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/17",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 711.5000638045601,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/17",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1066.0731095146512,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/17",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 453.22758148974833,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/17",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 767.1234050625833,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/17",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 274.59596157391326,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/17",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1142.976412207397,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/17",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1123.7044834174587,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/17",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1226.3250951839507,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/18",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1058.7434316755034,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/18",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1081.4247407916175,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/18",
+  "wrestling_as": "Dean Malenko",
+  "wrestler": "Dean Malenko",
+  "elo": 981.343358626703,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/18",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1265.123775422618,
+  "opponent": "Dean Malenko",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/18",
+  "wrestling_as": "Tony Halme",
+  "wrestler": "Tony Halme",
+  "elo": 1144.2872595420702,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/18",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1243.5147730435708,
+  "opponent": "Tony Halme",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/18",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1148.444972897132,
+  "opponent": "Great Muta",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/18",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1279.2242206608698,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/21",
+  "wrestling_as": "Dean Malenko",
+  "wrestler": "Dean Malenko",
+  "elo": 963.5477872856947,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/21",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1256.0744560166274,
+  "opponent": "Dean Malenko",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/21",
+  "wrestling_as": "Jim Neidhart",
+  "wrestler": "Jim Neidhart",
+  "elo": 1041.016367505943,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/21",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1323.2286125417957,
+  "opponent": "Jim Neidhart",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/21",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1224.2570679426515,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/21",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1288.8946211392158,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1992/10/29",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 735.6698627534187,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/10/29",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1074.4702028300858,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/10",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 272.51722439595414,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/10",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1067.1124781036308,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/10",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 449.5246829702704,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/10",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1144.827861467136,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/10",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1013.914242599978,
+  "opponent": "Tazmaniac",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/10",
+  "wrestling_as": "Tazmaniac",
+  "wrestler": "Tazmaniac",
+  "elo": 1060.5559602301078,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/10",
+  "wrestling_as": "TNT",
+  "wrestler": "TNT",
+  "elo": 970.5518066244874,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/10",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1233.119253154284,
+  "opponent": "TNT",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/11",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 417.2267040264647,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 767.9678416972245,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/11",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 771.1128472415127,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/11",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1038.6466599524374,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/11",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 271.2068404076395,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/11",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1145.4830534612934,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/11",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 774.7631586913653,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/11",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1161.307794863063,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/12",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 412.5908429561219,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/12",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1069.4304086388022,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/12",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 269.3386997850302,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/12",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1082.3588111029221,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/12",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 750.3407602720586,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/12",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1155.8690969460204,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/12",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 978.0042924577883,
+  "opponent": "Dean Malenko",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/12",
+  "wrestling_as": "Dean Malenko",
+  "wrestler": "Dean Malenko",
+  "elo": 1024.1901547803436,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/13",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 266.0114891491355,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/13",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 979.6678977757357,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/13",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1029.225240915187,
+  "opponent": "Tazmaniac",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/13",
+  "wrestling_as": "Tazmaniac",
+  "wrestler": "Tazmaniac",
+  "elo": 1113.689530417843,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/15",
+  "wrestling_as": "Dean Malenko",
+  "wrestler": "Dean Malenko",
+  "elo": 1006.2993245382095,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/15",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1297.840036260283,
+  "opponent": "Dean Malenko",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/15",
+  "wrestling_as": "Tazmaniac",
+  "wrestler": "Tazmaniac",
+  "elo": 1079.0852157971528,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/15",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1241.5592252529964,
+  "opponent": "Tazmaniac",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/15",
+  "wrestling_as": "TNT",
+  "wrestler": "TNT",
+  "elo": 956.082692700061,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/15",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1286.458777623083,
+  "opponent": "TNT",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/16",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 408.1328321725339,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/16",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1071.6594140305963,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/16",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 732.6781498013788,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/16",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1164.7004021813602,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/16",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 722.3327896138621,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/16",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1002.4854238174169,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/16",
+  "wrestling_as": "Tazmaniac",
+  "wrestler": "Tazmaniac",
+  "elo": 993.8670126648539,
+  "opponent": "Masanobu Kurisu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/16",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 945.1995649559634,
+  "opponent": "Tazmaniac",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/16",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 968.8519760303225,
+  "opponent": "TNT",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/16",
+  "wrestling_as": "TNT",
+  "wrestler": "TNT",
+  "elo": 1016.4559575849255,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/17",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 697.7856159530744,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/17",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1171.557626107103,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/17",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 401.8059765441563,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/17",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 1005.6488516316057,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/17",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 252.52476430396928,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/17",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 735.8195144590284,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/17",
+  "wrestling_as": "Tazmaniac",
+  "wrestler": "Tazmaniac",
+  "elo": 979.0598884504188,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/17",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1305.2435983675005,
+  "opponent": "Tazmaniac",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/18",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 608.6891316392268,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/18",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 824.9159987728759,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/18",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 250.74926418196748,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/18",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1072.547164091597,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/18",
+  "wrestling_as": "Tazmaniac",
+  "wrestler": "Tazmaniac",
+  "elo": 927.59127432324,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/18",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1020.3205901575013,
+  "opponent": "Tazmaniac",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/19",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 260.875468598377,
+  "opponent": "Shinjiro Otani",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/19",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 391.6797721277468,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/19",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1036.4223286756906,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/19",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1207.6824615230096,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/19",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 775.8930474910043,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/19",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 1044.8320657984373,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/20",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 954.6689516476686,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/20",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 939.3998015470484,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/20",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 981.836572814435,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/20",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1219.588600931595,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 906.1624260868055,
+  "opponent": "Hiroyoshi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "Hiroyoshi Yamamoto",
+  "wrestler": "Hiroyoshi Yamamoto",
+  "elo": 1227.8979447966558,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "Tazmaniac",
+  "wrestler": "Tazmaniac",
+  "elo": 897.2080268011748,
+  "opponent": "Pegasus Kid",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "Pegasus Kid",
+  "wrestler": "Pegasus Kid",
+  "elo": 1233.920907064467,
+  "opponent": "Tazmaniac",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "Dean Malenko",
+  "wrestler": "Dean Malenko",
+  "elo": 985.7819249908126,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1251.8179250266949,
+  "opponent": "Dean Malenko",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "TNT",
+  "wrestler": "TNT",
+  "elo": 994.1376826854465,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1244.2783906040236,
+  "opponent": "TNT",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1262.6011473683634,
+  "opponent": "Ultimo Dragon",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "Ultimo Dragon",
+  "wrestler": "Ultimo Dragon",
+  "elo": 1085.284901998274,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "Sting",
+  "wrestler": "Sting",
+  "elo": 983.8754401634933,
+  "opponent": "Great Muta",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/22",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1294.5210575413364,
+  "opponent": "Sting",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/23",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 196.84057341261104,
+  "opponent": "Shinjiro Otani",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/23",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 455.71466731351273,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/23",
+  "wrestling_as": "Akitoshi Saito",
+  "wrestler": "Akitoshi Saito",
+  "elo": 1024.1940461560064,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/23",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1197.130220568332,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/11/23",
+  "wrestling_as": "Scott Steiner",
+  "wrestler": "Scott Steiner",
+  "elo": 986.5373096203006,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1992/11/23",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1329.9599577316453,
+  "opponent": "Scott Steiner",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/01",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 292.4930371915273,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/01",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 360.0622035345964,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/01",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1055.64667882765,
+  "opponent": "Brad Rheingans",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/01",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 1046.0473943633044,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/01",
+  "wrestling_as": "El Engendro",
+  "wrestler": "El Engendro",
+  "elo": 980.9933864252675,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/01",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1261.321231814061,
+  "opponent": "El Engendro",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/03",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 447.2711248318612,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/03",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 675.7432713020471,
+  "opponent": "Tatsuhito Takaiwa; Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/03",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 578.4150888412937,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/04",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 404.947238378303,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 718.0671577556053,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/04",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 286.81309191061774,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/04",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 911.842371367715,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/04",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 940.147025094244,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/04",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1269.8621106450757,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/05",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 351.1023588972784,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/05",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 632.2599683223183,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/05",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1079.0247218039403,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/05",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1283.9431703978742,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/05",
+  "wrestling_as": "Black Cat",
+  "wrestler": "Black Cat",
+  "elo": 995.0069649248683,
+  "opponent": "Brad Rheingans",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/05",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 1095.8724952368734,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/08",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 556.4670765661766,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/08",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 793.860049511747,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/08",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 851.3232504231851,
+  "opponent": "Takayuki Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/08",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1013.4402391688284,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/08",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 969.6376212393156,
+  "opponent": "Brad Rheingans",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/08",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 1133.3732166808884,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/09",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 251.86087455192876,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/09",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 591.4192939248655,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/09",
+  "wrestling_as": "El Engendro",
+  "wrestler": "El Engendro",
+  "elo": 913.1531080750036,
+  "opponent": "Masanobu Kurisu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/09",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 987.0038071237128,
+  "opponent": "El Engendro",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/09",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 837.1255996995199,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/09",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1265.7112975505563,
+  "opponent": "Eddie Guerrero",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/10",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 641.3996196936561,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/10",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 743.8797237429565,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/10",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 819.9711302076433,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/10",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1032.0182662543157,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/10",
+  "wrestling_as": "Masanobu Kurisu",
+  "wrestler": "Masanobu Kurisu",
+  "elo": 967.2366816867352,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/10",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1240.250903473803,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/10",
+  "wrestling_as": "Jim Neidhart",
+  "wrestler": "Jim Neidhart",
+  "elo": 1005.0101969425192,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/10",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1176.9270040715448,
+  "opponent": "Jim Neidhart",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/11",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 954.8006251962246,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 974.4064123238255,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/11",
+  "wrestling_as": "Akitoshi Saito",
+  "wrestler": "Akitoshi Saito",
+  "elo": 972.646942949024,
+  "opponent": "Takayuki Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/11",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1064.9873423758108,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/11",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1294.609228180211,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/11",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1247.6284631744136,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/12",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 615.7590093651914,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/12",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 987.2267174880578,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/12",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 930.5143870859537,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/12",
+  "wrestling_as": "Akitoshi Saito",
+  "wrestler": "Akitoshi Saito",
+  "elo": 1023.9691286775054,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/13",
+  "wrestling_as": "Tatsuhito Takaiwa",
+  "wrestler": "Tatsuhito Takaiwa / Black Tiger V",
+  "elo": 332.22153184001866,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/13",
+  "wrestling_as": "Tokimitsu Ishizawa",
+  "wrestler": "Tokimitsu Ishizawa",
+  "elo": 762.7605508002162,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/13",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 249.00091277362242,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/13",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 988.656698377211,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/13",
+  "wrestling_as": "Brad Rheingans",
+  "wrestler": "Brad Rheingans",
+  "elo": 1099.2477067254706,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/13",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1264.6912181521225,
+  "opponent": "Brad Rheingans",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/14",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 909.6575423171189,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/14",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1033.7997812563167,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/14",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Tiger Mask / Koji Kanemoto",
+  "elo": 905.154275045529,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/14",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1272.0513255606625,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/14",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1241.832389038522,
+  "opponent": "Great Muta",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/14",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1317.3798866549369,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1992/12/14",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 996.513318619718,
+  "opponent": "Genichiro Tenryu",
+  "result": "lost"
+ },
+ {
+  "date": "1992/12/14",
+  "wrestling_as": "Genichiro Tenryu",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1057.7456220656816,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Masahiro Chono",
+ "Great Muta / Keiji Muto",
+ "El Samurai",
+ "Jushin Thunder Liger",
+ "Hiroshi Hase",
+ "Norio Honaga",
+ "Shinya Hashimoto",
+ "Riki Choshu",
+ "Osamu Kido",
+ "Kengo Kimura",
+ "Pegasus Kid",
+ "Hiroyoshi Yamamoto",
+ "Tony Halme",
+ "Super Strong Machine",
+ "Scott Norton",
+ "Rick Rude",
+ "Negro Casas",
+ "Tiger Mask / Koji Kanemoto",
+ "Black Cat",
+ "Shiro Koshinaka",
+ "Kantaro Hoshino",
+ "Brad Rheingans",
+ "Akitoshi Saito",
+ "Hiro Saito",
+ "Kuniaki Kobayashi",
+ "Takayuki Iizuka",
+ "Kensuke Sasaki",
+ "Tazmaniac",
+ "Masashi Aoyagi",
+ "Crusher Bam Bam Bigelow",
+ "Tatsutoshi Goto",
+ "Ultimo Dragon",
+ "Akira Nogami",
+ "Terry Taylor",
+ "Osamu Nishimura",
+ "Brad Armstrong",
+ "Satoshi Kojima",
+ "Jim Neidhart",
+ "Genichiro Tenryu",
+ "Dave Finlay",
+ "Flying Scorpio",
+ "Antonio Inoki",
+ "Lex Luger",
+ "Steve Austin",
+ "TNT",
+ "Brian Blair / Killer Bee",
+ "Masa Saito",
+ "Dean Malenko",
+ "Arn Anderson",
+ "El Gigante",
+ "Big Van Vader",
+ "Michiyoshi Ohara",
+ "Masanobu Kurisu",
+ "Scott Steiner",
+ "Sting",
+ "El Engendro",
+ "The Barbarian",
+ "Barry Windham",
+ "Kim Duk",
+ "Mad Bull Rex",
+ "Tokimitsu Ishizawa",
+ "The Great Oz",
+ "Rambo",
+ "Tony St. Clair",
+ "Larry Cameron",
+ "Bill Kazmaier",
+ "Tatsumi Fujinami",
+ "Eddie Guerrero",
+ "Shinjiro Otani",
+ "Tiger Jeet Singh",
+ "Yuji Nagata",
+ "Tatsuhito Takaiwa / Black Tiger V"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,3048 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2001/01/04",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 950.0,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2001/01/04",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1137.7330001343364,
+  "opponent": "Satoshi Kojima; Masahiro Chono; Toshiaki Kawada",
+  "result": "won"
+ },
+ {
+  "date": "2001/01/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 950.0,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2001/01/04",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 992.8536882591618,
+  "opponent": "Yuji Nagata; Toshiaki Kawada",
+  "result": "lost"
+ },
+ {
+  "date": "2001/01/04",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 950.0,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2001/01/04",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 957.1463117408382,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2001/01/04",
+  "wrestling_as": "Toshiaki Kawada",
+  "wrestler": "Toshiaki Kawada",
+  "elo": 1012.2669998656636,
+  "opponent": "Hiroyoshi Tenzan; Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2001/01/04",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1000.0,
+  "opponent": "Riki Choshu",
+  "result": "draw"
+ },
+ {
+  "date": "2001/01/19",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1050.0,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "2001/01/31",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1092.8536882591618,
+  "opponent": "The Sledge Hammer",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/03",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1050.0,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/04",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1129.8002780893262,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/04",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1063.0534101698356,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/07",
+  "wrestling_as": "Silver King",
+  "wrestler": "Silver King / Black Tiger III / Black Tiger",
+  "elo": 1056.1360561308536,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/07",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1063.0534101698356,
+  "opponent": "Shinya Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/08",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1000.6678583319173,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/09",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1004.0776210087015,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "2001/02/09",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1058.9757891611341,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/11",
+  "wrestling_as": "Brian Johnston",
+  "wrestler": "Brian Johnston",
+  "elo": 1043.8639438691464,
+  "opponent": "The Sledge Hammer",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/14",
+  "wrestling_as": "Silver King",
+  "wrestler": "Silver King / Black Tiger III / Black Tiger",
+  "elo": 1113.3958234588451,
+  "opponent": "Shinya Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/14",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1033.3450719791285,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/17",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1079.711920130909,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/18",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1050.0,
+  "opponent": "Super J",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/18",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 913.2823678716918,
+  "opponent": "Don Frye",
+  "result": "lost"
+ },
+ {
+  "date": "2001/02/18",
+  "wrestling_as": "Don Frye",
+  "wrestler": "Don Frye",
+  "elo": 1043.8639438691464,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/18",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 958.9757891611341,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/02/18",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1104.0776210087015,
+  "opponent": "Kazunari Murakami",
+  "result": "won"
+ },
+ {
+  "date": "2001/02/18",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1080.9416902235953,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2001/02/18",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1186.5915880000673,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/03",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1118.4375808727339,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/03",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1044.7029104316196,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/06",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 950.0961124215765,
+  "opponent": "Kendo Kashin",
+  "result": "lost"
+ },
+ {
+  "date": "2001/03/06",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1050.5717459103407,
+  "opponent": "Negro Casas",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/06",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1011.2864077758315,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/08",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1013.3504620059902,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/09",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1050.0,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/10",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1057.3456949329548,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/13",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1065.2954179646897,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/13",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1126.725947815914,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/14",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1105.6630870506488,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/15",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1133.5286582590381,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/15",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1014.058083847945,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2001/03/15",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1217.2364145837419,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/16",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1068.87107002992,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/17",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 950.0,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2001/03/17",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1050.0,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/17",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1178.3669792093897,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "2001/03/17",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1077.7388707487044,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/18",
+  "wrestling_as": "Brian Johnston",
+  "wrestler": "Brian Johnston",
+  "elo": 1002.443660054956,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/03/18",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1145.4979048228918,
+  "opponent": "Brian Johnston",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/18",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 950.1423579430237,
+  "opponent": "Don Frye",
+  "result": "lost"
+ },
+ {
+  "date": "2001/03/18",
+  "wrestling_as": "Don Frye",
+  "wrestler": "Don Frye",
+  "elo": 1086.5752741852846,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/19",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1003.568635795349,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "2001/03/19",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1136.9398413977676,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/20",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1036.0781515966908,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/20",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1123.3142630788668,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/20",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1000.0,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/03/20",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1100.0,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/20",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1092.8735914859712,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2001/03/20",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1222.433229121186,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/23",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1087.4040801364881,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/23",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 963.0560792132188,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2001/03/23",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1129.8175122727523,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/24",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1105.7474529858914,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/03/24",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1108.7373715033582,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 988.4835943339315,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1041.303986352785,
+  "opponent": "Brian Johnston",
+  "result": "lost"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Brian Johnston",
+  "wrestler": "Brian Johnston",
+  "elo": 1066.8871266880624,
+  "opponent": "Kendo Kashin",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 907.6843565609764,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1001.2914326001577,
+  "opponent": "Kazunari Murakami",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1037.5034954463124,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1073.7829123295191,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1056.277374132905,
+  "opponent": "Kazuyuki Fujita",
+  "result": "lost"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Kazuyuki Fujita",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1067.036888945962,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1183.307092933407,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/04/09",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1078.2522723755583,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/19",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1009.3478157042882,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/19",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 970.9294455882464,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/04/19",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1175.859891834803,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/20",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1058.0028813978304,
+  "opponent": "Takehiro Murahama",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/22",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 972.5695040698607,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/04/22",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1115.2714921076033,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/26",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1044.039010944947,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/26",
+  "wrestling_as": "Silver King",
+  "wrestler": "Silver King / Black Tiger III / Black Tiger",
+  "elo": 1053.1673501245557,
+  "opponent": "Kendo Kashin",
+  "result": "lost"
+ },
+ {
+  "date": "2001/04/26",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1101.5324596870744,
+  "opponent": "Silver King",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/28",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1008.3935890046411,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/28",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1000.5473532895908,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/29",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1072.6686935726425,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2001/04/30",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1086.1780234911762,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/02",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1030.8196904362385,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/02",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1171.6665154091563,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/05",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1049.324216128949,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/05",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1138.3862670493015,
+  "opponent": "Kendo Kashin",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/05",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1010.6265733887749,
+  "opponent": "Don Frye",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/05",
+  "wrestling_as": "Don Frye",
+  "wrestler": "Don Frye",
+  "elo": 1132.2260749294146,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/05",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1054.310973908871,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/18",
+  "wrestling_as": "Silver King",
+  "wrestler": "Silver King / Black Tiger III / Black Tiger",
+  "elo": 1095.5751248389531,
+  "opponent": "Chris Candido",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/18",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 987.7350131731497,
+  "opponent": "Super Shocker",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/18",
+  "wrestling_as": "Super Shocker",
+  "wrestler": "Super Shocker",
+  "elo": 1056.3039977717972,
+  "opponent": "Dr. Wagner Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/18",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1026.327515067865,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/18",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1181.666873601152,
+  "opponent": "Shinya Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/19",
+  "wrestling_as": "Gran Naniwa",
+  "wrestler": "Gran Naniwa",
+  "elo": 963.4176108871197,
+  "opponent": "Silver King",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/19",
+  "wrestling_as": "Silver King",
+  "wrestler": "Silver King / Black Tiger III / Black Tiger",
+  "elo": 1132.1575139518334,
+  "opponent": "Gran Naniwa",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/19",
+  "wrestling_as": "Super Shocker",
+  "wrestler": "Super Shocker",
+  "elo": 1105.1279343820909,
+  "opponent": "Shinya Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/20",
+  "wrestling_as": "Silver King",
+  "wrestler": "Silver King / Black Tiger III / Black Tiger",
+  "elo": 1141.248630911229,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/20",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1000.9071039206251,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/20",
+  "wrestling_as": "Super Shocker",
+  "wrestler": "Super Shocker",
+  "elo": 1040.4442249617894,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/20",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1064.6837094203015,
+  "opponent": "Super Shocker",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/20",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1066.562774954781,
+  "opponent": "Chris Candido",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/20",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1087.2781627809213,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/25",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1185.7609025797371,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/25",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1005.6072358029462,
+  "opponent": "Dr. Wagner Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/25",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1059.9835775379804,
+  "opponent": "AKIRA",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/25",
+  "wrestling_as": "Gran Naniwa",
+  "wrestler": "Gran Naniwa",
+  "elo": 927.8401511710036,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/25",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1102.140234670897,
+  "opponent": "Gran Naniwa",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/25",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1156.524149065126,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/26",
+  "wrestling_as": "Gran Naniwa",
+  "wrestler": "Gran Naniwa",
+  "elo": 973.0386421423041,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/26",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1015.6951689668713,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/26",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1101.3391411119285,
+  "opponent": "Shinya Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/26",
+  "wrestling_as": "Silver King",
+  "wrestler": "Silver King / Black Tiger III / Black Tiger",
+  "elo": 1084.3402380401656,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/26",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1075.1704013078263,
+  "opponent": "Super J",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/27",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1199.495232529186,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/27",
+  "wrestling_as": "Gran Naniwa",
+  "wrestler": "Gran Naniwa",
+  "elo": 906.9224556507957,
+  "opponent": "Chris Candido",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/27",
+  "wrestling_as": "Super Shocker",
+  "wrestler": "Super Shocker",
+  "elo": 1010.2171930810007,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/27",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1215.9879344605258,
+  "opponent": "Super Shocker",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/27",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1158.9624803942095,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/28",
+  "wrestling_as": "Super Shocker",
+  "wrestler": "Super Shocker",
+  "elo": 1018.0599512839975,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/28",
+  "wrestling_as": "Gran Naniwa",
+  "wrestler": "Gran Naniwa",
+  "elo": 1055.8901737143076,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/28",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1177.9852139000332,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/28",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1091.7006100878566,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2001/05/28",
+  "wrestling_as": "Brian Johnston",
+  "wrestler": "Brian Johnston",
+  "elo": 1029.508139399301,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/05/28",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1193.9031363538875,
+  "opponent": "Brian Johnston",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/01",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1024.8140677438248,
+  "opponent": "Shinya Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/01",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1062.1938785163004,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/01",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1217.1304764956612,
+  "opponent": "Dr. Wagner Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/01",
+  "wrestling_as": "Silver King",
+  "wrestler": "Silver King / Black Tiger III / Black Tiger",
+  "elo": 1044.9171013526786,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/01",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1198.3856170816964,
+  "opponent": "Silver King",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/02",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1004.0621848194759,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/03",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1126.6942051869044,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/04",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1023.3844599672302,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1224.8296502955282,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/04",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1007.9158817193253,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/04",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1017.3968775315248,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/04",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 976.9501752520613,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/04",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1202.9719014022176,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/04",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1190.782982622651,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/04",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1251.080604827717,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/06",
+  "wrestling_as": "Masanobu Fuchi",
+  "wrestler": "Masanobu Fuchi",
+  "elo": 1052.6652273742243,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/06",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1115.7900550245813,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/06",
+  "wrestling_as": "Mitsuya Nagai",
+  "wrestler": "Mitsuya Nagai",
+  "elo": 1046.5114042417213,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/06",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1056.7768918424501,
+  "opponent": "Mike Barton",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/06",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 932.0152415697485,
+  "opponent": "Toshiaki Kawada",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/06",
+  "wrestling_as": "Toshiaki Kawada",
+  "wrestler": "Toshiaki Kawada",
+  "elo": 1057.2019335479765,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/06",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1214.829115395776,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/06",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1189.1967538568645,
+  "opponent": "Kazuyuki Fujita",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/06",
+  "wrestling_as": "Kazuyuki Fujita",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1138.3026818232893,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/22",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1101.4315830842593,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/23",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1063.4202068032337,
+  "opponent": "Michiyoshi Ohara",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/23",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 942.6491604993253,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/23",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1219.9021512430795,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/24",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1051.7766304643483,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/24",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1184.3466374299592,
+  "opponent": "Rob Rage",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/24",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1134.5312344294741,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/28",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1055.279933396645,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/28",
+  "wrestling_as": "Gran Naniwa",
+  "wrestler": "Gran Naniwa",
+  "elo": 1098.6282530075025,
+  "opponent": "Chris Candido",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/29",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1186.5214067723716,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/29",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1067.419288555859,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "2001/06/29",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1077.73851926239,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/30",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1119.1853754901128,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/30",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1034.7011640341934,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2001/06/30",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1061.3024307182272,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/01",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1022.2984746242056,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/07/01",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1146.552397015913,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/06",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1059.612600622766,
+  "opponent": "Shinya Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/06",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1207.638565444452,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/07",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1057.3477781957256,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/07",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1027.105104229144,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2001/07/07",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1219.0289031659936,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/08",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1061.5220095163804,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/08",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 977.6452159807212,
+  "opponent": "Super J",
+  "result": "lost"
+ },
+ {
+  "date": "2001/07/11",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 980.7681386167851,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/11",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1078.3819172867727,
+  "opponent": "Shinya Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1065.4973020884343,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/12",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1020.4606198307309,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/13",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1220.1862741564405,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/15",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1066.9262981038692,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/15",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1119.9472989657665,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/15",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1041.7908938107794,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/16",
+  "wrestling_as": "Negro Casas",
+  "wrestler": "Negro Casas",
+  "elo": 1002.1299961041568,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2001/07/20",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1083.6117273815933,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/20",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1053.3401037604863,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2001/07/20",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1076.6296170980584,
+  "opponent": "Gary Goodridge",
+  "result": "lost"
+ },
+ {
+  "date": "2001/07/20",
+  "wrestling_as": "Gary Goodridge",
+  "wrestler": "Gary Goodridge",
+  "elo": 1069.9227799178545,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/20",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1169.2545082325469,
+  "opponent": "Mark Coleman",
+  "result": "lost"
+ },
+ {
+  "date": "2001/07/20",
+  "wrestling_as": "Mark Coleman",
+  "wrestler": "Mark Coleman",
+  "elo": 1076.7681144238106,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/20",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1172.3212038971171,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2001/07/20",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1083.314013866327,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "2001/07/20",
+  "wrestling_as": "Don Frye",
+  "wrestler": "Don Frye",
+  "elo": 1083.100479800385,
+  "opponent": "Kazuyuki Fujita",
+  "result": "lost"
+ },
+ {
+  "date": "2001/07/20",
+  "wrestling_as": "Kazuyuki Fujita",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1187.4282769523188,
+  "opponent": "Don Frye",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1007.6855501207447,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1129.2662810213349,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1214.5854246260042,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1151.3722776901986,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1191.7637310641683,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1229.1662900816618,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1003.8248230724759,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1122.8047940255826,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1137.4119211507716,
+  "opponent": "Kazunari Murakami",
+  "result": "draw"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 971.3695307245272,
+  "opponent": "Yuji Nagata",
+  "result": "draw"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1030.7522281162014,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/04",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1118.05908783856,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 926.5768752622922,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1052.4782055829796,
+  "opponent": "Kazunari Murakami",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 971.1317311450429,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1161.9593729487679,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1078.5097369165358,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1231.3130819861924,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1190.6339867167294,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1253.1177279909366,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1084.6790021246181,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1097.445503681782,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1085.3110242717808,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/05",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1174.9056909045735,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1123.0434278174887,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1213.8216360358526,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1196.3467480979714,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1154.6116699010602,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1127.5356908540748,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1160.5437995444365,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 839.3309553248059,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1014.7546911137861,
+  "opponent": "Kazunari Murakami",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1007.1892127308747,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1130.6000171238857,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1216.5144829008484,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/06",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1151.716227096712,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1098.241975880827,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1181.0099420699596,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 958.2778005407833,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1063.6661033038774,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1039.3829439301735,
+  "opponent": "Kazunari Murakami",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1006.6519230994361,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1141.2124506945017,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1215.6780969479062,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1182.9453165264624,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1192.352656142666,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1113.4271161853221,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/08",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1237.1067597587175,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1146.9148517181184,
+  "opponent": "Jushin Thunder Liger",
+  "result": "draw"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1175.307541046343,
+  "opponent": "Osamu Nishimura",
+  "result": "draw"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 919.7422734756963,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1077.9184709952606,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1109.5489554590333,
+  "opponent": "Kazunari Murakami",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1080.0482841668652,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1031.3827287186202,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1224.6360307279233,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1192.2180609998134,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1260.5667957068104,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1050.4259028024817,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/10",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1161.2431892636675,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/11",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1161.4139816380602,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1074.5678441136452,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/11",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1080.009552262786,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/11",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1275.336497304934,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/11",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1146.8698899504116,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/11",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1247.310116252624,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/12",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1030.8107276220073,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/08/12",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1248.3241999067009,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/08/12",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1274.3224136508572,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/07",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 879.7279584123999,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/07",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1109.3790720387233,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/07",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 961.7361675375801,
+  "opponent": "Don Frye",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/07",
+  "wrestling_as": "Don Frye",
+  "wrestler": "Don Frye",
+  "elo": 1121.364312262805,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/07",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1016.7340784512404,
+  "opponent": "Giant Silva",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/07",
+  "wrestling_as": "Giant Silva",
+  "wrestler": "Giant Silva",
+  "elo": 1061.0044408111494,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/08",
+  "wrestling_as": "Giant Silva",
+  "wrestler": "Giant Silva",
+  "elo": 1066.5471091164627,
+  "opponent": "Super J",
+  "result": "draw"
+ },
+ {
+  "date": "2001/09/08",
+  "wrestling_as": "Don Frye",
+  "wrestler": "Don Frye",
+  "elo": 1056.7460779587918,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/08",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1081.3523127552535,
+  "opponent": "Don Frye",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/09",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 907.6035600786087,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/09",
+  "wrestling_as": "Don Frye",
+  "wrestler": "Don Frye",
+  "elo": 1112.1061170811697,
+  "opponent": "Super J",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/13",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1043.6606499568766,
+  "opponent": "Super J",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/13",
+  "wrestling_as": "Giant Silva",
+  "wrestler": "Giant Silva",
+  "elo": 1073.066254790741,
+  "opponent": "Don Frye",
+  "result": "draw"
+ },
+ {
+  "date": "2001/09/13",
+  "wrestling_as": "Don Frye",
+  "wrestler": "Don Frye",
+  "elo": 1105.5869714068915,
+  "opponent": "Giant Silva",
+  "result": "draw"
+ },
+ {
+  "date": "2001/09/14",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1133.0014968973176,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/14",
+  "wrestling_as": "Giant Silva",
+  "wrestler": "Giant Silva",
+  "elo": 1018.844523745046,
+  "opponent": "Scott Hall",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/14",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1097.8823810025715,
+  "opponent": "Giant Silva",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/14",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1115.9516450703902,
+  "opponent": "Super J",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/15",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1050.4804151827009,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/15",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1163.3536108902608,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/16",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 855.4006757372655,
+  "opponent": "Kendo Kashin",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/16",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1081.4950149981644,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/16",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1127.1139728436542,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/16",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1291.4724180480603,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/16",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1105.1160905111637,
+  "opponent": "Don Frye",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/16",
+  "wrestling_as": "Don Frye",
+  "wrestler": "Don Frye",
+  "elo": 1163.8244917859886,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/16",
+  "wrestling_as": "Gary Goodridge",
+  "wrestler": "Gary Goodridge",
+  "elo": 1028.9020936106192,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/16",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1174.022183204553,
+  "opponent": "Gary Goodridge",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/19",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1042.3149433588749,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/19",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1073.474162024415,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/21",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1023.1275795372217,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/21",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1098.4072825439994,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/23",
+  "wrestling_as": "Gran Naniwa",
+  "wrestler": "Gran Naniwa",
+  "elo": 1105.3278326927204,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/23",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1201.215775608767,
+  "opponent": "Kazunari Murakami; Kazunari Murakami",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/23",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1052.854691762651,
+  "opponent": "Manabu Nakanishi; Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/23",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1079.628106110052,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/23",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1304.216410248616,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "2001/09/23",
+  "wrestling_as": "Scott Hall",
+  "wrestler": "Scott Hall",
+  "elo": 1068.7358037212334,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/09/23",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1263.1599393180838,
+  "opponent": "Scott Hall",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/07",
+  "wrestling_as": "Shinichi Nakano",
+  "wrestler": "Shinichi Nakano",
+  "elo": 1050.0,
+  "opponent": "Nobuyuki Kurashima",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/07",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1026.8786338734064,
+  "opponent": "Bob Backlund",
+  "result": "draw"
+ },
+ {
+  "date": "2001/10/07",
+  "wrestling_as": "Bob Backlund",
+  "wrestler": "Bob Backlund",
+  "elo": 1004.5040948452139,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "2001/10/07",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1059.5955625515837,
+  "opponent": "Dory Funk Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "2001/10/07",
+  "wrestling_as": "Dory Funk Jr.",
+  "wrestler": "Dory Funk Jr.",
+  "elo": 1067.5184102920705,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/08",
+  "wrestling_as": "Gary Goodridge",
+  "wrestler": "Gary Goodridge",
+  "elo": 1079.8141313747049,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/08",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1138.8826914291876,
+  "opponent": "Masayuki Naruse",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/08",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1046.7777397744428,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/10/08",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1217.8316818529386,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/08",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1133.9001511746162,
+  "opponent": "Kazuyuki Fujita",
+  "result": "lost"
+ },
+ {
+  "date": "2001/10/08",
+  "wrestling_as": "Kazuyuki Fujita",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1236.8352187111095,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/12",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1044.277135396446,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/13",
+  "wrestling_as": "Brian Blair",
+  "wrestler": "Brian Blair",
+  "elo": 1048.5078184130875,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/13",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1107.5860823534254,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/17",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1150.3297902407191,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/17",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1140.7812807364737,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/18",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1172.7322129456693,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/18",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1019.3676739618403,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/19",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1179.3706735036913,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/19",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1004.0415931168724,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/21",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1072.9398178138233,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2001/10/21",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1235.1548141227397,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/23",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1046.6663112349797,
+  "opponent": "Dolgorsuren Serjbudee",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/23",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1067.082875920679,
+  "opponent": "Chris Candido",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/24",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1142.1291579354945,
+  "opponent": "Dolgorsuren Serjbudee",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/26",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1101.5895117747796,
+  "opponent": "Chris Candido",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/26",
+  "wrestling_as": "Giant Silva",
+  "wrestler": "Giant Silva",
+  "elo": 1030.0525281482505,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/28",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1012.1233656661291,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/28",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1080.9614391563327,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/28",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1028.2642238710941,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2001/10/28",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1283.0803174511586,
+  "opponent": "Tadao Yasuda; Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2001/10/28",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1206.1749633049317,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2001/10/28",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1267.723225888439,
+  "opponent": "Manabu Nakanishi; Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2001/10/28",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1151.01092591466,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2001/11/02",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1152.2674830891588,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/11/02",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1048.3621172573971,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2001/11/02",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1280.0120761666522,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2001/11/17",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1050.576677095315,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/11/23",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1054.0161714799192,
+  "opponent": "GOKU-DO",
+  "result": "won"
+ },
+ {
+  "date": "2001/11/23",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1021.5500878720345,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2001/11/23",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1290.1324791360246,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2001/11/24",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1022.8926822135139,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/11/26",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Silver King / Black Tiger III / Black Tiger",
+  "elo": 1046.0496045413836,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/02",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 935.3930057578866,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2001/12/03",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 939.2906060545931,
+  "opponent": "Dolgorsuren Serjbudee",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/07",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1065.2827499441294,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/07",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1121.5060536425228,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/08",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1068.0046080829773,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/09",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1017.6129092227972,
+  "opponent": "Rob Rage",
+  "result": "lost"
+ },
+ {
+  "date": "2001/12/09",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1115.6744488043096,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/11",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1006.4569525223694,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2001/12/11",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1273.3707799936024,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/23",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1162.3760757411071,
+  "opponent": "Dolgorsuren Serjbudee",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/23",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1175.8185364235665,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/23",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1045.0652863392424,
+  "opponent": "Minoru Tanaka",
+  "result": "draw"
+ },
+ {
+  "date": "2001/12/23",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 1017.6347564222018,
+  "opponent": "Osamu Nishimura",
+  "result": "draw"
+ },
+ {
+  "date": "2001/12/23",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1077.9926915691242,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/23",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1101.030359928042,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/23",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1298.0753633728661,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2001/12/23",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1211.755338330962,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Yuji Nagata",
+ "Kensuke Sasaki",
+ "Keiji Muto",
+ "Jushin Thunder Liger",
+ "Kazuyuki Fujita",
+ "Manabu Nakanishi",
+ "Osamu Nishimura",
+ "Minoru Tanaka",
+ "Masahiro Chono",
+ "Tadao Yasuda",
+ "Shinya Makabe",
+ "Don Frye",
+ "Scott Norton",
+ "Hiroyoshi Tenzan",
+ "Kendo Kashin",
+ "Satoshi Kojima",
+ "El Samurai",
+ "Silver King / Black Tiger III / Black Tiger",
+ "Rob Rage",
+ "Masayuki Naruse",
+ "Shinjiro Otani",
+ "Giant Singh",
+ "Osamu Kido",
+ "Gran Naniwa",
+ "Super Shocker",
+ "Dr. Wagner Jr.",
+ "Kazunari Murakami",
+ "Super J",
+ "Scott Hall",
+ "Michiyoshi Ohara",
+ "Takashi Iizuka",
+ "AKIRA",
+ "Gary Goodridge",
+ "Masahito Kakihara",
+ "Shinya Hashimoto",
+ "Mark Coleman",
+ "Yutaka Yoshie",
+ "Giant Silva",
+ "Tatsutoshi Goto",
+ "Dory Funk Jr.",
+ "Negro Casas",
+ "Brian Johnston",
+ "Tatsumi Fujinami",
+ "Toshiaki Kawada",
+ "Dan Devine",
+ "Masanobu Fuchi",
+ "Shinichi Nakano",
+ "Brian Blair",
+ "Mitsuya Nagai",
+ "Tony St. Clair",
+ "Black Cat",
+ "Hiroshi Tanahashi",
+ "Wataru Inoue",
+ "Hiro Saito",
+ "Katsuyori Shibata",
+ "Kenzo Suzuki",
+ "Chris Candido",
+ "Bob Backlund",
+ "GOKU-DO",
+ "Riki Choshu",
+ "Hiroshi Hase",
+ "Katsushi Takemura",
+ "The Sledge Hammer",
+ "Super Delfin",
+ "Takehiro Murahama",
+ "Mike Barton",
+ "Yoshiaki Fujiwara",
+ "Nobuyuki Kurashima",
+ "Dolgorsuren Serjbudee",
+ "Kazuhiko Shoda"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

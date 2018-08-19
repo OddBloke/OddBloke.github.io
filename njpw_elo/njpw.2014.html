@@ -1,0 +1,4972 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2014/01/03",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 950.0,
+  "opponent": "Yohei Komatsu",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/03",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 1050.0,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Rob Conway",
+  "wrestler": "Rob Conway",
+  "elo": 950.0,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1050.0,
+  "opponent": "Rob Conway",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 950.0,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1050.0,
+  "opponent": "Bad Luck Fale",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 950.0,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1050.0,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 950.0,
+  "opponent": "Kota Ibushi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1050.0,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 950.0,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1050.0,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 950.0,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/04",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1050.0,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/05",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 907.1463117408382,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/05",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1042.8536882591618,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/17",
+  "wrestling_as": "Maximo",
+  "wrestler": "Maximo",
+  "elo": 950.0,
+  "opponent": "Rey Escorpion",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/17",
+  "wrestling_as": "Rey Escorpion",
+  "wrestler": "Rey Escorpion",
+  "elo": 1050.0,
+  "opponent": "Maximo",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/17",
+  "wrestling_as": "Volador Jr.",
+  "wrestler": "Volador Jr.",
+  "elo": 1000.0,
+  "opponent": "La Sombra",
+  "result": "draw"
+ },
+ {
+  "date": "2014/01/17",
+  "wrestling_as": "La Sombra",
+  "wrestler": "La Sombra",
+  "elo": 1000.0,
+  "opponent": "Volador Jr.",
+  "result": "draw"
+ },
+ {
+  "date": "2014/01/18",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 985.7134220647905,
+  "opponent": "Maximo (winner), Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/18",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 986.2196127444879,
+  "opponent": "Maximo (winner), Jado",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/18",
+  "wrestling_as": "Maximo",
+  "wrestler": "Maximo",
+  "elo": 978.0669651907216,
+  "opponent": "Jado, Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/18",
+  "wrestling_as": "Rush",
+  "wrestler": "Rush",
+  "elo": 942.8536882591618,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/18",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1007.1463117408382,
+  "opponent": "Rush",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/18",
+  "wrestling_as": "Mistico",
+  "wrestler": "Mistico II / Mistico",
+  "elo": 950.0,
+  "opponent": "Mephisto",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/18",
+  "wrestling_as": "Mephisto",
+  "wrestler": "Mephisto",
+  "elo": 1050.0,
+  "opponent": "Mistico",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/19",
+  "wrestling_as": "Ultimo Guerrero",
+  "wrestler": "Ultimo Guerrero",
+  "elo": 950.0,
+  "opponent": "La Sombra",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/19",
+  "wrestling_as": "La Sombra",
+  "wrestler": "La Sombra",
+  "elo": 1050.0,
+  "opponent": "Ultimo Guerrero",
+  "result": "won"
+ },
+ {
+  "date": "2014/01/19",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 950.0,
+  "opponent": "Volador Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "2014/01/19",
+  "wrestling_as": "Volador Jr.",
+  "wrestler": "Volador Jr.",
+  "elo": 1050.0,
+  "opponent": "Mascara Dorada",
+  "result": "won"
+ },
+ {
+  "date": "2014/02/09",
+  "wrestling_as": "Tama Tonga",
+  "wrestler": "Tama Tonga",
+  "elo": 956.1360561308536,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2014/02/09",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1086.7176321283082,
+  "opponent": "Tama Tonga",
+  "result": "won"
+ },
+ {
+  "date": "2014/02/09",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 950.0,
+  "opponent": "Michael Tarver",
+  "result": "lost"
+ },
+ {
+  "date": "2014/02/09",
+  "wrestling_as": "Michael Tarver",
+  "wrestler": "Michael Tarver",
+  "elo": 1050.0,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2014/02/09",
+  "wrestling_as": "Big Daddy Yum Yum",
+  "wrestler": "Big Daddy Yum Yum",
+  "elo": 957.1463117408382,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2014/02/09",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1092.8536882591618,
+  "opponent": "Big Daddy Yum Yum",
+  "result": "won"
+ },
+ {
+  "date": "2014/02/09",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 963.2823678716918,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/02/09",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1093.8639438691464,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2014/02/11",
+  "wrestling_as": "YOSHI-HASHI",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 942.8536882591618,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/02/11",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1007.1463117408382,
+  "opponent": "YOSHI-HASHI",
+  "result": "won"
+ },
+ {
+  "date": "2014/02/11",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 957.1463117408382,
+  "opponent": "Kota Ibushi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/02/11",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1092.8536882591618,
+  "opponent": "El Desperado",
+  "result": "won"
+ },
+ {
+  "date": "2014/02/11",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 907.1463117408382,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/02/11",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1042.8536882591618,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/02/11",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1000.0,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/02/11",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1100.0,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/06",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1043.881980179338,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/06",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1148.9717080798239,
+  "opponent": "Kota Ibushi",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/07",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 833.2531320805094,
+  "opponent": "Tomoaki Honma",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/07",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 1036.9465898301644,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/09",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 992.8536882591618,
+  "opponent": "Captain New Japan",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/09",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 1057.1463117408382,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/12",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 790.0430427989593,
+  "opponent": "Captain New Japan",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/12",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 1078.7513563816133,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/13",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 949.1653180837716,
+  "opponent": "Tomoaki Honma",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/13",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 1080.6349600055546,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 950.0,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1050.0,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 962.2268211296681,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1124.4908109986402,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 951.0282919201761,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1056.118019820662,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 950.0,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1050.0,
+  "opponent": "Doc Gallows",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 942.8536882591618,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1007.1463117408382,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 985.9935000197115,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1014.0064999802885,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 974.2599393269278,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1044.3338096053062,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 944.7354925476653,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/15",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1018.5468753240265,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/16",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 744.0536039669246,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/16",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1022.9947194160173,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/17",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 870.100953226749,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/17",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1062.5269018445285,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/22",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 735.3337341921365,
+  "opponent": "Sho Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/22",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 878.8208230015371,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/22",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1005.2376569856034,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/22",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1100.8803628350586,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/22",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 989.9804100257256,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/22",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1068.359899559869,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/22",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1010.5587937609182,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/22",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1163.932017237722,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/22",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 958.78639612905,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/22",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1066.9067909358146,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/23",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1046.2139119522787,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/23",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1074.1042957338618,
+  "opponent": "Shelton Benjamin; Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/23",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1100.320965870826,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/23",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1179.4398970114976,
+  "opponent": "Minoru Suzuki; Bad Luck Fale",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/29",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 708.9356930098227,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/29",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1075.7259224356853,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/03/29",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 812.350288800898,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/03/29",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1033.2352671003196,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/04/03",
+  "wrestling_as": "Nick Jackson",
+  "wrestler": "Nick Jackson",
+  "elo": 956.2817571921499,
+  "opponent": "Kota Ibushi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/04/03",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1087.6002229871879,
+  "opponent": "Nick Jackson",
+  "result": "won"
+ },
+ {
+  "date": "2014/04/06",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 919.3394232494311,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/04/06",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1072.6822399799385,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2014/04/06",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 937.7195950813767,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/04/06",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1026.5207542712767,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/04/06",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1055.9361653834842,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/04/06",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1217.3676754971598,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/04/12",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 953.8092477560266,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/04/12",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1072.7115065152502,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2014/04/12",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 907.1463117408382,
+  "opponent": "Jax Dane",
+  "result": "lost"
+ },
+ {
+  "date": "2014/04/12",
+  "wrestling_as": "Jax Dane",
+  "wrestler": "Jax Dane",
+  "elo": 1042.8536882591618,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2014/04/12",
+  "wrestling_as": "Rob Conway",
+  "wrestler": "Rob Conway",
+  "elo": 919.4731120354475,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2014/04/12",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1123.3805762237143,
+  "opponent": "Rob Conway",
+  "result": "won"
+ },
+ {
+  "date": "2014/04/19",
+  "wrestling_as": "Tama Tonga",
+  "wrestler": "Tama Tonga",
+  "elo": 931.3499226078861,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/04/19",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1173.7578416027914,
+  "opponent": "Tama Tonga",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/03",
+  "wrestling_as": "Wes Brisco",
+  "wrestler": "Wes Brisco",
+  "elo": 967.0453236358176,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/03",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1156.3352525878968,
+  "opponent": "Wes Brisco",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/03",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1024.8277919444563,
+  "opponent": "Kota Ibushi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/03",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1135.45467102267,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/03",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 1029.4948810292321,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/03",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1123.8515854915727,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/03",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1100.6474512963525,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/03",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1073.1103903064388,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/05",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 750.9554361400386,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/05",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 984.5066740864563,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/06",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 687.3372224094038,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/06",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1086.5251577358947,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "The Romantic Touch",
+  "wrestler": "The Romantic Touch",
+  "elo": 950.0,
+  "opponent": "Tadarius Thomas",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Tadarius Thomas",
+  "wrestler": "Tadarius Thomas",
+  "elo": 1050.0,
+  "opponent": "The Romantic Touch",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "ACH",
+  "wrestler": "ACH",
+  "elo": 950.0,
+  "opponent": "Michael Bennett",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Michael Bennett",
+  "wrestler": "Michael Bennett",
+  "elo": 1050.0,
+  "opponent": "ACH",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 950.0,
+  "opponent": "Michael Elgin",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Michael Elgin",
+  "wrestler": "Michael Elgin",
+  "elo": 1050.0,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Roderick Strong",
+  "wrestler": "Roderick Strong",
+  "elo": 950.0,
+  "opponent": "Cedric Alexander",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Cedric Alexander",
+  "wrestler": "Cedric Alexander",
+  "elo": 1050.0,
+  "opponent": "Roderick Strong",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Matt Taven",
+  "wrestler": "Matt Taven",
+  "elo": 991.6666666666666,
+  "opponent": "Jay Lethal (winner), Silas Young, Tommaso Ciampa",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Silas Young",
+  "wrestler": "Silas Young",
+  "elo": 991.866505524398,
+  "opponent": "Jay Lethal (winner), Matt Taven, Tommaso Ciampa",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Tommaso Ciampa",
+  "wrestler": "Tommaso Ciampa",
+  "elo": 992.0613323651722,
+  "opponent": "Jay Lethal (winner), Matt Taven, Silas Young",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Jay Lethal",
+  "wrestler": "Jay Lethal",
+  "elo": 1024.4054954437631,
+  "opponent": "Matt Taven, Silas Young, Tommaso Ciampa",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Kevin Steen",
+  "wrestler": "Kevin Steen",
+  "elo": 950.0,
+  "opponent": "Adam Cole",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Adam Cole",
+  "wrestler": "Adam Cole",
+  "elo": 1050.0,
+  "opponent": "Kevin Steen",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 704.1937489277547,
+  "opponent": "El Desperado",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 980.5271553469802,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 662.2680535445642,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/10",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1037.3623763768762,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/11",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 634.669125874803,
+  "opponent": "El Desperado",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/11",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 994.3266191818608,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/11",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1024.3243830597798,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/11",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1062.2007746761149,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Adam Page",
+  "wrestler": "Adam Page",
+  "elo": 950.0,
+  "opponent": "Caprice Coleman",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Caprice Coleman",
+  "wrestler": "Caprice Coleman",
+  "elo": 1050.0,
+  "opponent": "Adam Page",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 940.2234675129474,
+  "opponent": "Jay Lethal",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Jay Lethal",
+  "wrestler": "Jay Lethal",
+  "elo": 1068.688702017272,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Kevin Steen",
+  "wrestler": "Kevin Steen",
+  "elo": 932.333269867999,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1226.2010405631602,
+  "opponent": "Kevin Steen",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Michael Bennett",
+  "wrestler": "Michael Bennett",
+  "elo": 1000.8541997524729,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1105.0819656310111,
+  "opponent": "Michael Bennett",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 957.1463117408382,
+  "opponent": "Adam Cole",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Adam Cole",
+  "wrestler": "Adam Cole",
+  "elo": 1092.8536882591618,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1087.158795213163,
+  "opponent": "AJ Styles (winner), Michael Elgin",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "Michael Elgin",
+  "wrestler": "Michael Elgin",
+  "elo": 1038.8119075448042,
+  "opponent": "AJ Styles (winner), Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/17",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1097.787138844824,
+  "opponent": "Kazuchika Okada, Michael Elgin",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/25",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 875.0749608219351,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/25",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1105.4266128635827,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/25",
+  "wrestling_as": "Rolles Gracie",
+  "wrestler": "Rolles Gracie",
+  "elo": 950.0,
+  "opponent": "Kazushi Sakuraba",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/25",
+  "wrestling_as": "Kazushi Sakuraba",
+  "wrestler": "Kazushi Sakuraba",
+  "elo": 1050.0,
+  "opponent": "Rolles Gracie",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/25",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1083.785473302123,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/25",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1175.5207832121198,
+  "opponent": "Kota Ibushi",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/25",
+  "wrestling_as": "Daniel Gracie",
+  "wrestler": "Daniel Gracie",
+  "elo": 978.6191199649218,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/25",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1236.8914805806992,
+  "opponent": "Daniel Gracie",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/25",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1038.6878598777796,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/25",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1146.2580741802076,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 907.1463117408382,
+  "opponent": "TAKA Michinoku",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1042.8536882591618,
+  "opponent": "Mascara Dorada",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 958.8569872031734,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1103.3437874729416,
+  "opponent": "Rocky Romero",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 943.1601388672311,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1037.3860930591175,
+  "opponent": "El Desperado",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 916.6953099587098,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1064.7753848419081,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 950.0,
+  "opponent": "Ricochet",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Ricochet",
+  "wrestler": "Ricochet",
+  "elo": 1050.0,
+  "opponent": "Alex Koslov",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Nick Jackson",
+  "wrestler": "Nick Jackson",
+  "elo": 912.5403212447953,
+  "opponent": "Alex Shelley",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Alex Shelley",
+  "wrestler": "Alex Shelley",
+  "elo": 1043.7414359473546,
+  "opponent": "Nick Jackson",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Matt Jackson",
+  "wrestler": "Matt Jackson",
+  "elo": 941.4813547741232,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1057.260757964701,
+  "opponent": "Matt Jackson",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 982.0061294275619,
+  "opponent": "Kenny Omega",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/30",
+  "wrestling_as": "Kenny Omega",
+  "wrestler": "Kenny Omega",
+  "elo": 1055.3562469493143,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 915.9417666839638,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1098.8336181579443,
+  "opponent": "Alex Koslov",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1043.9641228248215,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1096.7657577072375,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 993.8819801793379,
+  "opponent": "Ricochet",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Ricochet",
+  "wrestler": "Ricochet",
+  "elo": 1098.9717080798239,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 986.9085145028189,
+  "opponent": "Mascara Dorada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 1047.8507986646025,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 823.817229140926,
+  "opponent": "Matt Jackson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Matt Jackson",
+  "wrestler": "Matt Jackson",
+  "elo": 1034.359435591907,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Nick Jackson",
+  "wrestler": "Nick Jackson",
+  "elo": 832.2719589264464,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1022.1403105867363,
+  "opponent": "Nick Jackson",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Kenny Omega",
+  "wrestler": "Kenny Omega",
+  "elo": 991.8153079427354,
+  "opponent": "Rocky Romero",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 1022.3979262097522,
+  "opponent": "Kenny Omega",
+  "result": "won"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "Alex Shelley",
+  "wrestler": "Alex Shelley",
+  "elo": 979.6578814518692,
+  "opponent": "El Desperado",
+  "result": "lost"
+ },
+ {
+  "date": "2014/05/31",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 1071.3272478582019,
+  "opponent": "Alex Shelley",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 848.7638927145886,
+  "opponent": "Matt Jackson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Matt Jackson",
+  "wrestler": "Matt Jackson",
+  "elo": 1067.9483725765945,
+  "opponent": "Alex Koslov",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1034.1730951648601,
+  "opponent": "TAKA Michinoku",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1058.5425031724221,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 1017.3974993176968,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1097.8938713653265,
+  "opponent": "El Desperado",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Nick Jackson",
+  "wrestler": "Nick Jackson",
+  "elo": 796.4546554102253,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1114.6744094653482,
+  "opponent": "Nick Jackson",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 780.6345092455998,
+  "opponent": "Mascara Dorada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 1069.4421586122655,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 972.3608523482166,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1072.177384448272,
+  "opponent": "Rocky Romero",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Alex Shelley",
+  "wrestler": "Alex Shelley",
+  "elo": 931.4067620278943,
+  "opponent": "Kenny Omega",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Kenny Omega",
+  "wrestler": "Kenny Omega",
+  "elo": 1040.0664273667105,
+  "opponent": "Alex Shelley",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "Ricochet",
+  "wrestler": "Ricochet",
+  "elo": 1033.381446905527,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/01",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1052.4987756771159,
+  "opponent": "Ricochet",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 804.9236097488541,
+  "opponent": "Mascara Dorada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 1091.3623000951327,
+  "opponent": "Alex Koslov",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1045.2672781243052,
+  "opponent": "Rocky Romero",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 1041.7679836892596,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1012.8859354883425,
+  "opponent": "Nick Jackson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Nick Jackson",
+  "wrestler": "Nick Jackson",
+  "elo": 966.4705271641933,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Matt Jackson",
+  "wrestler": "Matt Jackson",
+  "elo": 1016.5950897536214,
+  "opponent": "TAKA Michinoku",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1109.8957859953953,
+  "opponent": "Matt Jackson",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 999.8639412525024,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1086.8079295894736,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Kenny Omega",
+  "wrestler": "Kenny Omega",
+  "elo": 986.808727846874,
+  "opponent": "El Desperado",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 1070.6551988375334,
+  "opponent": "Kenny Omega",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Ricochet",
+  "wrestler": "Ricochet",
+  "elo": 952.3058719240447,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 942.7856592085641,
+  "opponent": "Ricochet",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1002.9591713617409,
+  "opponent": "Alex Shelley",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/03",
+  "wrestling_as": "Alex Shelley",
+  "wrestler": "Alex Shelley",
+  "elo": 1069.8431882009565,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 742.644272697459,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1005.0649962599592,
+  "opponent": "Alex Koslov",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1026.8388338581942,
+  "opponent": "Matt Jackson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Matt Jackson",
+  "wrestler": "Matt Jackson",
+  "elo": 1076.564185484901,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 959.140154874383,
+  "opponent": "Kenny Omega",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Kenny Omega",
+  "wrestler": "Kenny Omega",
+  "elo": 1040.5545084608336,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 1006.0956271178294,
+  "opponent": "Nick Jackson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Nick Jackson",
+  "wrestler": "Nick Jackson",
+  "elo": 1031.0300988838972,
+  "opponent": "El Desperado",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 1022.3547318302368,
+  "opponent": "Ricochet",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Ricochet",
+  "wrestler": "Ricochet",
+  "elo": 1021.3134401889406,
+  "opponent": "Mascara Dorada",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1044.569916899871,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1065.1898103480266,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Alex Shelley",
+  "wrestler": "Alex Shelley",
+  "elo": 1015.8116127456427,
+  "opponent": "Rocky Romero",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 1095.7995591445735,
+  "opponent": "Alex Shelley",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 989.2085698439377,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/04",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1059.0178796421085,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 715.6271404549883,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1078.698376469262,
+  "opponent": "Alex Koslov",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 973.0000101574849,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1076.1935555309462,
+  "opponent": "Mascara Dorada",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 943.0295909387917,
+  "opponent": "Alex Shelley",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Alex Shelley",
+  "wrestler": "Alex Shelley",
+  "elo": 1061.9905916507887,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 1033.1695313249074,
+  "opponent": "El Desperado",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 1068.7256549374954,
+  "opponent": "Rocky Romero",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Kenny Omega",
+  "wrestler": "Kenny Omega",
+  "elo": 989.1841789905552,
+  "opponent": "Nick Jackson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Nick Jackson",
+  "wrestler": "Nick Jackson",
+  "elo": 1082.4004283541756,
+  "opponent": "Kenny Omega",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 995.0275972083826,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1023.1304373081089,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 988.909076522498,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1060.7258366373323,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Matt Jackson",
+  "wrestler": "Matt Jackson",
+  "elo": 1018.6793184843068,
+  "opponent": "Ricochet",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/05",
+  "wrestling_as": "Ricochet",
+  "wrestler": "Ricochet",
+  "elo": 1079.1983071895347,
+  "opponent": "Matt Jackson",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 681.2732189708086,
+  "opponent": "TAKA Michinoku",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1006.086037264588,
+  "opponent": "Alex Koslov",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 990.2073871322859,
+  "opponent": "Nick Jackson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Nick Jackson",
+  "wrestler": "Nick Jackson",
+  "elo": 1125.362572546797,
+  "opponent": "Rocky Romero",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Kenny Omega",
+  "wrestler": "Kenny Omega",
+  "elo": 932.580798420628,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1056.2363520786462,
+  "opponent": "Kenny Omega",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 978.6996585897289,
+  "opponent": "Alex Shelley",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Alex Shelley",
+  "wrestler": "Alex Shelley",
+  "elo": 1106.4213703691687,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 1008.27591218934,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1055.477339956538,
+  "opponent": "El Desperado",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 929.5361733672884,
+  "opponent": "Matt Jackson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Matt Jackson",
+  "wrestler": "Matt Jackson",
+  "elo": 1062.1431552745032,
+  "opponent": "Mascara Dorada",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1013.3099884625959,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1126.1142246439986,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1026.6259632740293,
+  "opponent": "Ricochet",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/06",
+  "wrestling_as": "Ricochet",
+  "wrestler": "Ricochet",
+  "elo": 1128.7658994464516,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/08",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1016.1591495862209,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/08",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1116.5053086633886,
+  "opponent": "Taichi; Ricochet",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/08",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1015.8707113727398,
+  "opponent": "Ricochet",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/08",
+  "wrestling_as": "Ricochet",
+  "wrestler": "Ricochet",
+  "elo": 1218.058646503285,
+  "opponent": "Ryusuke Taguchi; KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/21",
+  "wrestling_as": "Tama Tonga",
+  "wrestler": "Tama Tonga",
+  "elo": 815.2928608598404,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/21",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 991.1320225699808,
+  "opponent": "Tama Tonga",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/21",
+  "wrestling_as": "Ricochet",
+  "wrestler": "Ricochet",
+  "elo": 1183.850835952684,
+  "opponent": "Kota Ibushi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/21",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1152.201094403325,
+  "opponent": "Ricochet",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/21",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1202.8588494259236,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/21",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1173.4918751731336,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/28",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 675.68098070739,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/28",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1030.1270954829222,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/06/29",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1096.9675607750605,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/06/29",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1028.5532224370593,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/04",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 972.0360997933745,
+  "opponent": "Alex Shelley",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/04",
+  "wrestling_as": "Alex Shelley",
+  "wrestler": "Alex Shelley",
+  "elo": 1142.6611827651343,
+  "opponent": "El Desperado",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/04",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1097.0820568357906,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/04",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1171.624346230923,
+  "opponent": "Kota Ibushi",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/06",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 609.584352475158,
+  "opponent": "El Desperado",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/06",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 984.578486493197,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/07",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 556.8830731801507,
+  "opponent": "Yohei Komatsu",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/07",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 728.3822600023972,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/13",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 691.1389492490489,
+  "opponent": "El Desperado",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/13",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 1003.2001418698712,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1057.8056003037768,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1212.6538356444173,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 913.5028775123214,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1082.7110344399573,
+  "opponent": "Doc Gallows",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 894.7465347280262,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1019.7098261251382,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 971.0936772802929,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1185.2415753076039,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1031.4319929058693,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1031.1157940946248,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 946.4966376015568,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1073.1886074054833,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 939.5228506874637,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1057.029443093166,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 990.204304740141,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1144.3725419201023,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1164.9969221642755,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1080.9615115088998,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1081.2538718859191,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/21",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1103.692062172068,
+  "opponent": "AJ Styles",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1117.682526967285,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1125.3646486440957,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1178.7165792333017,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1150.5855472621886,
+  "opponent": "Bad Luck Fale",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1020.864792082017,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1109.3532584166323,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 843.9021749420217,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1045.448150918697,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 937.4568346622223,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1023.8411473582116,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 900.8130182375846,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1186.9581593193159,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 988.281569797548,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1124.088096182996,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 981.5658256629692,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1141.836062634237,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 807.563314160396,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1026.7060712550938,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 871.6376681870364,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/23",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1165.3051465827448,
+  "opponent": "Doc Gallows",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 818.7359766579847,
+  "opponent": "Doc Gallows",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 990.358526191274,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 717.9845061621734,
+  "opponent": "Lance Archer",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 933.4809829402443,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 965.2332129434045,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1037.1974048015816,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1078.987865726773,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1196.9623301795114,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 946.4350549255048,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1087.29466579074,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1007.1340880624626,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 1048.467865130459,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 994.7618242845424,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1207.795902306971,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 992.4614562031808,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1148.3237951193207,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1074.4933723722925,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1208.4943011777373,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 992.6936672867253,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/25",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1175.8484666026054,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1173.6485226389111,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1142.788131708412,
+  "opponent": "Bad Luck Fale",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 1018.6252330493761,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1226.8049622605943,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 980.7947290709236,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1048.8641319338387,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1072.1512065529232,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1098.7802320582996,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 782.1950669678723,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1097.2583205718292,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 850.3606521459299,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1034.2538326838826,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 969.9070185111966,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1211.8129650926617,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1068.8128016605738,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1142.5699603131623,
+  "opponent": "AJ Styles",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1082.5361983591927,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 904.609042648999,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1170.4356390108612,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/26",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1083.2514123962146,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 955.27488471874,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1132.341962044363,
+  "opponent": "Doc Gallows",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 912.8585826282153,
+  "opponent": "Lance Archer",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 986.2329450313464,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1075.6433836572417,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 1085.7699811005464,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 927.0414851670353,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1087.0558597102079,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 855.3228673272596,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1123.4233197191693,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1192.025719207785,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1152.8098985018332,
+  "opponent": "Shelton Benjamin",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1021.6707862543919,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1119.293221959105,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1120.8979969531676,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1223.1861646966047,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 766.641648224935,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1215.701319778396,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1041.0907828138295,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/28",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1184.0153758585254,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1181.9967944608043,
+  "opponent": "Doc Gallows",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 1037.653625190341,
+  "opponent": "Bad Luck Fale",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 1019.6877507320161,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1035.989248879727,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 969.2965083302735,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1056.9561338742535,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1036.5694655046373,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1191.8838166544376,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 949.4071725983416,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 999.8500946393602,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 950.3485060921082,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1122.940298649446,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1145.4276479308164,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1239.0003554168802,
+  "opponent": "Shelton Benjamin",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 866.1471516639327,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1142.6489374412463,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1061.7916332066268,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1102.722469326372,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1080.6956384230307,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/07/31",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1172.5443205745,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1080.2549714761674,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1101.742141959286,
+  "opponent": "Shelton Benjamin",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 996.2819759140511,
+  "opponent": "Lance Archer",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 1015.8581633846838,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 998.8111299798514,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1057.9950985337623,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 985.0704300281757,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 1072.2709458941813,
+  "opponent": "Doc Gallows",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 825.8914525171824,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 989.6628717450919,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 749.8689716752839,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1190.38313273563,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1106.528307847618,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1046.783576341181,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1075.773561422056,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1189.8156746686363,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1120.8422996437764,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1107.0307658903882,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1052.0217422219168,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/01",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1253.337303517437,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 1019.3601462716169,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1104.9325418444812,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 945.3295254809201,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1040.6153221782229,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1034.100707381067,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1153.1850299854887,
+  "opponent": "Shelton Benjamin",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 951.2569295367773,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1135.5556424506844,
+  "opponent": "Doc Gallows",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1023.1112864371219,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 992.7254953381745,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 988.9911436806238,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1216.6826943726965,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1000.9459153413632,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1121.611222421874,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 728.7300632677411,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1131.4117538475477,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 963.3346931432283,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1138.1989061629952,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1222.626352282625,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/03",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1233.9662230441238,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 697.1251741678495,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 1035.1625908215626,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 935.3055804772931,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1017.020256346559,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1077.008329321407,
+  "opponent": "Doc Gallows",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 1027.433630200859,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 984.9311150104265,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1056.6301225091595,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 986.9186106349919,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1157.803898224004,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1089.8178472960662,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1231.9770392871114,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1097.8302252037577,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1241.4890609060885,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1029.3662578538585,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1230.9971147126482,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1010.0612664514566,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1245.985943508929,
+  "opponent": "Shelton Benjamin",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 962.5174883371025,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/04",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1168.4069131640672,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 679.0103289941081,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1106.8876477906283,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 1010.8009736699443,
+  "opponent": "Bad Luck Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1244.1578478629206,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 935.2171355028853,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1036.632590142533,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1090.1186047119454,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1097.051551365917,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 991.1390056689626,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1076.311759161314,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 994.4327248804739,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1242.2908804456908,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 893.8640252263517,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1189.1276907895378,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1049.5743286480324,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1259.7029438456163,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1052.758733630192,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1141.9916555103555,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 1004.8540064535559,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/06",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1252.7788727797401,
+  "opponent": "Doc Gallows",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 653.1169907272727,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1023.0079355848743,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1014.7418236370214,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1056.0026604047666,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 902.7640754195385,
+  "opponent": "Lance Archer",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 1013.3708510614797,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 995.2409762977463,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1138.4431652107037,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1000.0325885311029,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1102.3004737471215,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1073.2208107457925,
+  "opponent": "Doc Gallows",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Doc Gallows",
+  "wrestler": "Doc Gallows",
+  "elo": 1073.624851218119,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1219.7780531894423,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1277.1586674532184,
+  "opponent": "Bad Luck Fale",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 972.0732995282408,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1251.8237335160518,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1219.3361227231337,
+  "opponent": "Davey Boy Smith Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Davey Boy Smith Jr.",
+  "wrestler": "Davey Boy Smith Jr.",
+  "elo": 1091.5346159149096,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1053.9935865310847,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/08",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1225.2527089703985,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/10",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 628.6268364726997,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/10",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1007.4860534250329,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/10",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1057.483143666127,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/10",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1183.2604952916981,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/10",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 848.2344313316687,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/10",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1100.4856327897273,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/10",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1224.4928514309393,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/10",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1246.6670048082462,
+  "opponent": "AJ Styles",
+  "result": "won"
+ },
+ {
+  "date": "2014/08/10",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1248.4512750222716,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/08/10",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1253.9601014013456,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/07",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 554.3120102847549,
+  "opponent": "Sho Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/07",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 693.7100121444447,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/07",
+  "wrestling_as": "Maximo",
+  "wrestler": "Maximo",
+  "elo": 933.5270111736008,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/07",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1060.6991036033417,
+  "opponent": "Maximo",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/09",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 555.610801934537,
+  "opponent": "Yohei Komatsu",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/09",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 692.4112204946626,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/12",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 554.9529442602881,
+  "opponent": "Sho Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/12",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 693.0690781689116,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/13",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 555.2857066342325,
+  "opponent": "Yohei Komatsu",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/13",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 692.7363157949671,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/20",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 555.1172705676527,
+  "opponent": "Sho Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/20",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 692.9047518615471,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/21",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1102.3170834100324,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/21",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1099.4343583038128,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/21",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 782.4416033009568,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/21",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1004.9697135435968,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/21",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1070.3634761377255,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/21",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1261.728083134247,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/21",
+  "wrestling_as": "Bad Luck Fale",
+  "wrestler": "Bad Luck Fale",
+  "elo": 1196.8365859855596,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/21",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1271.3927422261543,
+  "opponent": "Bad Luck Fale",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/23",
+  "wrestling_as": "YOSHI-HASHI",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 874.3160640213526,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/23",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1090.2714725236713,
+  "opponent": "YOSHI-HASHI",
+  "result": "won"
+ },
+ {
+  "date": "2014/09/23",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1143.2968387323144,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/09/23",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1273.9419296810374,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2014/10/13",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 972.8016629525308,
+  "opponent": "Chase Owens",
+  "result": "lost"
+ },
+ {
+  "date": "2014/10/13",
+  "wrestling_as": "Chase Owens",
+  "wrestler": "Chase Owens",
+  "elo": 1053.8243003214986,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2014/10/13",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 966.7057282809874,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/10/13",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1135.9287718926967,
+  "opponent": "El Desperado",
+  "result": "won"
+ },
+ {
+  "date": "2014/10/13",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1035.566811215015,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/10/13",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1112.1878049747834,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2014/10/13",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 989.7428476519563,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2014/10/13",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1282.8135325675757,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2014/10/13",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1202.1619307460621,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/10/13",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1284.0590038191242,
+  "opponent": "AJ Styles",
+  "result": "won"
+ },
+ {
+  "date": "2014/10/26",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 663.741085452183,
+  "opponent": "Fuego",
+  "result": "lost"
+ },
+ {
+  "date": "2014/10/26",
+  "wrestling_as": "Fuego",
+  "wrestler": "Fuego",
+  "elo": 1014.5818332046821,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/10/28",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 538.5494792948085,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2014/10/28",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 981.085558588953,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/10/29",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 636.0166616859792,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2014/10/29",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 994.9477704720549,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/11/01",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 508.67682104786684,
+  "opponent": "Yohei Komatsu",
+  "result": "lost"
+ },
+ {
+  "date": "2014/11/01",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 665.8893199329209,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/11/02",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 642.2002527311928,
+  "opponent": "Fuego",
+  "result": "lost"
+ },
+ {
+  "date": "2014/11/02",
+  "wrestling_as": "Fuego",
+  "wrestler": "Fuego",
+  "elo": 1026.4263668055462,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/11/06",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 625.7035640612846,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/11/06",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1068.9474479382957,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/11/06",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 973.9479884598418,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/11/06",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1168.0668206974428,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "2014/11/08",
+  "wrestling_as": "Chase Owens",
+  "wrestler": "Chase Owens",
+  "elo": 998.0201064152502,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2014/11/08",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1069.1141823688445,
+  "opponent": "Chase Owens",
+  "result": "won"
+ },
+ {
+  "date": "2014/11/08",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1032.8370777921994,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2014/11/08",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1204.1771908435392,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2014/11/08",
+  "wrestling_as": "Yoshitatsu",
+  "wrestler": "Yoshitatsu",
+  "elo": 976.2011196421278,
+  "opponent": "AJ Styles",
+  "result": "lost"
+ },
+ {
+  "date": "2014/11/08",
+  "wrestling_as": "AJ Styles",
+  "wrestler": "AJ Styles",
+  "elo": 1214.0613709249983,
+  "opponent": "Yoshitatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/11/08",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 756.3784954180626,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2014/11/08",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1125.2193589162305,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2014/11/08",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1046.446150994434,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2014/11/08",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1283.3514047978,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2014/12/03",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 441.1412667191234,
+  "opponent": "Yohei Komatsu",
+  "result": "lost"
+ },
+ {
+  "date": "2014/12/03",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 693.2391183900281,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/12/07",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 531.2027586008496,
+  "opponent": "Sho Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2014/12/07",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 603.1776265083018,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/12/12",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 592.4795340260507,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2014/12/12",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1107.666129651158,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/12/14",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 517.0629318682568,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2014/12/14",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 985.7695719560253,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/12/19",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 471.1075091989213,
+  "opponent": "Yohei Komatsu",
+  "result": "lost"
+ },
+ {
+  "date": "2014/12/19",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 638.4349566953862,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2014/12/20",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 612.1787296451181,
+  "opponent": "El Desperado",
+  "result": "lost"
+ },
+ {
+  "date": "2014/12/20",
+  "wrestling_as": "El Desperado",
+  "wrestler": "El Desperado",
+  "elo": 979.8338418061214,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2014/12/20",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 952.1202467258083,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2014/12/20",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1062.6215769112132,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Hiroshi Tanahashi",
+ "Shinsuke Nakamura",
+ "Kazuchika Okada",
+ "AJ Styles",
+ "Bad Luck Fale",
+ "Shelton Benjamin",
+ "Ricochet",
+ "Ryusuke Taguchi",
+ "Katsuyori Shibata",
+ "Satoshi Kojima",
+ "Tetsuya Naito",
+ "Karl Anderson",
+ "Tomohiro Ishii",
+ "KUSHIDA",
+ "Minoru Suzuki",
+ "Yuji Nagata",
+ "Kota Ibushi",
+ "Hirooki Goto",
+ "Alex Shelley",
+ "Nick Jackson",
+ "Toru Yano",
+ "Taichi",
+ "TAKA Michinoku",
+ "Tiger Mask IV / Tiger Mask",
+ "BUSHI",
+ "Black Tiger IV / Rocky Romero",
+ "Adam Cole",
+ "Davey Boy Smith Jr.",
+ "Mascara Dorada",
+ "Yujiro Takahashi",
+ "Tomoaki Honma",
+ "Captain New Japan",
+ "Matt Jackson",
+ "Doc Gallows",
+ "El Desperado",
+ "Jushin Thunder Liger",
+ "Jay Lethal",
+ "Togi Makabe",
+ "Kenny Omega",
+ "Chase Owens",
+ "Yohei Komatsu",
+ "Rey Escorpion",
+ "Volador Jr.",
+ "La Sombra",
+ "Mephisto",
+ "Michael Tarver",
+ "Tadarius Thomas",
+ "Michael Bennett",
+ "Michael Elgin",
+ "Cedric Alexander",
+ "Caprice Coleman",
+ "Kazushi Sakuraba",
+ "Jax Dane",
+ "Hiroyoshi Tenzan",
+ "Fuego",
+ "Lance Archer",
+ "Prince Devitt",
+ "Tommaso Ciampa",
+ "Silas Young",
+ "Matt Taven",
+ "Jado",
+ "Daniel Gracie",
+ "Maximo",
+ "Yoshitatsu",
+ "Wes Brisco",
+ "Big Daddy Yum Yum",
+ "Tama Tonga",
+ "Takashi Iizuka",
+ "Sho Tanaka",
+ "Rob Conway",
+ "Mistico II / Mistico",
+ "Ultimo Guerrero",
+ "The Romantic Touch",
+ "ACH",
+ "Takaaki Watanabe",
+ "Roderick Strong",
+ "Kevin Steen",
+ "Adam Page",
+ "Rolles Gracie",
+ "Alex Koslov",
+ "Rush",
+ "YOSHI-HASHI"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

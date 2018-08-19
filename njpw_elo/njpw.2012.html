@@ -1,0 +1,5194 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2012/01/04",
+  "wrestling_as": "YOSHI-HASHI",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 950.0,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/04",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1050.0,
+  "opponent": "YOSHI-HASHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/04",
+  "wrestling_as": "Takashi Sugiura",
+  "wrestler": "Takashi Sugiura",
+  "elo": 950.0,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/04",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1050.0,
+  "opponent": "Takashi Sugiura",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/04",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 950.0,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/04",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1050.0,
+  "opponent": "Yoshihiro Takayama",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/04",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 950.0,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/04",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Keiji Muto",
+  "elo": 1050.0,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/04",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 950.0,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/04",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1050.0,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/22",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 950.0,
+  "opponent": "Mascara Dorada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/22",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 1050.0,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/22",
+  "wrestling_as": "Rush",
+  "wrestler": "Rush",
+  "elo": 957.1463117408382,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/22",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1092.8536882591618,
+  "opponent": "Rush",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/22",
+  "wrestling_as": "Volador Jr.",
+  "wrestler": "Volador Jr.",
+  "elo": 950.0,
+  "opponent": "La Sombra",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/22",
+  "wrestling_as": "La Sombra",
+  "wrestler": "La Sombra",
+  "elo": 1050.0,
+  "opponent": "Volador Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/25",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 950.0,
+  "opponent": "King Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/25",
+  "wrestling_as": "King Fale",
+  "wrestler": "King Fale",
+  "elo": 1050.0,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/25",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 950.0,
+  "opponent": "TAKA Michinoku",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/25",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1050.0,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/26",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 914.0064999802885,
+  "opponent": "King Fale",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/26",
+  "wrestling_as": "King Fale",
+  "wrestler": "King Fale",
+  "elo": 1085.9935000197115,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/26",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 907.1463117408382,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/26",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1042.8536882591618,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/29",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 950.0,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/29",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1050.0,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/29",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 963.0534101698356,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/29",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1129.8002780893262,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/30",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 833.2531320805094,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/30",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1036.9465898301644,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/01/30",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1000.0,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2012/01/30",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1100.0,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/03",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 838.2640838542414,
+  "opponent": "TAKA Michinoku",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/03",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1037.8712080630235,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/03",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 765.645494354748,
+  "opponent": "YOSHI-HASHI",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/03",
+  "wrestling_as": "YOSHI-HASHI",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 983.8038188628807,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/04",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 717.661915551672,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/04",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 886.2476626573175,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 817.8664247601051,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/05",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1034.1906189486062,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/06",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 773.7104287820578,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/06",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1059.0245878191881,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/06",
+  "wrestling_as": "King Fale",
+  "wrestler": "King Fale",
+  "elo": 1019.0042245273775,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/06",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1030.0426856621696,
+  "opponent": "King Fale",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Shoichi Uchida",
+  "wrestler": "Shoichi Uchida",
+  "elo": 942.8536882591618,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1007.1463117408382,
+  "opponent": "Shoichi Uchida",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 682.1227160383423,
+  "opponent": "YOSHI-HASHI",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "YOSHI-HASHI",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 1001.5734186195456,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 986.7176321283083,
+  "opponent": "Captain New Japan",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 1056.1360561308536,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 720.5022916700784,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 976.6040685559897,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Tama Tonga",
+  "wrestler": "Tama Tonga",
+  "elo": 950.0,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1050.0,
+  "opponent": "Tama Tonga",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "King Fale",
+  "wrestler": "King Fale",
+  "elo": 980.4537845509712,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1138.5504399764063,
+  "opponent": "King Fale",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Tomoaki Honma",
+  "wrestler": "Tomoaki Honma",
+  "elo": 954.3127465242999,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/10",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1075.7299391378697,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/12",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 967.856620730342,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/12",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1161.9436573589842,
+  "opponent": "Masato Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/12",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 942.8536882591618,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/12",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1007.1463117408382,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2012/02/12",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1000.0,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/02/12",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1100.0,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/04",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 970.1997219106738,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/04",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1136.9465898301644,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/10",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 661.6203472054934,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/10",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1069.2757722356125,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/10",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 688.282005140494,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/10",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1023.2564550056304,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/10",
+  "wrestling_as": "Davey Richards",
+  "wrestler": "Davey Richards",
+  "elo": 950.0,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/10",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1050.0,
+  "opponent": "Davey Richards",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/11",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 636.6631844042387,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/11",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1012.4785814006274,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/11",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1037.8885535818456,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/11",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1199.7850429150083,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/12",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 651.9924666137645,
+  "opponent": "Tama Tonga",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/12",
+  "wrestling_as": "Tama Tonga",
+  "wrestler": "Tama Tonga",
+  "elo": 968.1447692633648,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/13",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 610.8256741289953,
+  "opponent": "Tama Tonga",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/13",
+  "wrestling_as": "Tama Tonga",
+  "wrestler": "Tama Tonga",
+  "elo": 981.0635244009865,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/16",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 630.8851681343366,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/16",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1033.8101042453443,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/17",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 597.492260837888,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/17",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1075.9424788811662,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/19",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 580.6869312824024,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/19",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1020.8812461783701,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/03/25",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 495.0354417946684,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/03/25",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 716.5366576220706,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "YOSHI-HASHI",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 958.4977806318188,
+  "opponent": "La Sombra",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "La Sombra",
+  "wrestler": "La Sombra",
+  "elo": 1093.0756379877269,
+  "opponent": "YOSHI-HASHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 957.1463117408382,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1092.8536882591618,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1009.635649099058,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1228.0379473977957,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "MVP",
+  "wrestler": "MVP",
+  "elo": 941.849354329337,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1059.1549796004879,
+  "opponent": "MVP",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 957.1463117408382,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1092.8536882591618,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1063.7992976338924,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1024.751142342514,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 945.7218812647219,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1024.4778406459518,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 929.9659337870776,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/01",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1046.638134768912,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/04",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 451.3571022617426,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/04",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 760.2149971549964,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/05",
+  "wrestling_as": "La Sombra",
+  "wrestler": "La Sombra",
+  "elo": 1061.5769176267331,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/05",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1243.7873075782925,
+  "opponent": "La Sombra",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/05",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1013.9894628505483,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/05",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1138.0192050091014,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/05",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 984.4282652296989,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/05",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1133.1765653719767,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/05",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 977.6626456888753,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/05",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1093.4533297259886,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/07",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 422.44529149988904,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/07",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 789.12680791685,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/08",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1081.6406049609425,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/08",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1115.3170780319756,
+  "opponent": "Karl Anderson; Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/08",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1098.577878688219,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/08",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1278.3440767912575,
+  "opponent": "Togi Makabe; Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/08",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 1017.560352525774,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/08",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1175.522293435244,
+  "opponent": "Captain New Japan",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/13",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 415.4984075380587,
+  "opponent": "Ryuichi Sekine",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/13",
+  "wrestling_as": "Ryuichi Sekine",
+  "wrestler": "Ryuichi Sekine",
+  "elo": 1003.4734419809151,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/13",
+  "wrestling_as": "Yusuke Kodama",
+  "wrestler": "Yusuke Kodama",
+  "elo": 950.0,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/13",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger VII",
+  "elo": 1050.0,
+  "opponent": "Yusuke Kodama",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/13",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 743.3238876184319,
+  "opponent": "Hiro Tonai",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/13",
+  "wrestling_as": "Hiro Tonai",
+  "wrestler": "Hiro Tonai",
+  "elo": 1022.9014601492091,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/13",
+  "wrestling_as": "Kaji Tomato",
+  "wrestler": "Kaji Tomato",
+  "elo": 950.0,
+  "opponent": "Madoka",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/13",
+  "wrestling_as": "Madoka",
+  "wrestler": "Madoka",
+  "elo": 1050.0,
+  "opponent": "Kaji Tomato",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/15",
+  "wrestling_as": "Hiro Tonai",
+  "wrestler": "Hiro Tonai",
+  "elo": 976.7933647706478,
+  "opponent": "Madoka",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/15",
+  "wrestling_as": "Madoka",
+  "wrestler": "Madoka",
+  "elo": 1045.7103227553503,
+  "opponent": "Hiro Tonai; Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/15",
+  "wrestling_as": "Ryuichi Sekine",
+  "wrestler": "Ryuichi Sekine",
+  "elo": 960.1294122001972,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/15",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger VII",
+  "elo": 1143.7418024039291,
+  "opponent": "Ryuichi Sekine; Madoka",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/15",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 407.0869528973036,
+  "opponent": "YOSHI-HASHI",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/15",
+  "wrestling_as": "YOSHI-HASHI",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 962.7035079521963,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/21",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 702.7527001306755,
+  "opponent": "Tama Tonga",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/21",
+  "wrestling_as": "Tama Tonga",
+  "wrestler": "Tama Tonga",
+  "elo": 1001.3491181448646,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/21",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 939.4742321343718,
+  "opponent": "Hiroyoshi Tenzan; Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/21",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1017.6720796064664,
+  "opponent": "Takashi Iizuka; Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2012/04/21",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 841.1900612619493,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2012/04/21",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1034.49775378985,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 992.8536882591618,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1057.1463117408382,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1022.0260265960816,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1073.604041215409,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1246.154145404701,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/03",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1239.902156208357,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/04",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 401.80732266303147,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/04",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1036.4499193624804,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/05",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 675.1358881569403,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/05",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1034.6896521652377,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/06",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 966.4200937626789,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/06",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1060.7759078621532,
+  "opponent": "Captain New Japan",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/20",
+  "wrestling_as": "Tama Tonga",
+  "wrestler": "Tama Tonga",
+  "elo": 961.6000770888421,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/20",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1113.3530822714315,
+  "opponent": "Tama Tonga",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/20",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1048.649671525951,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/20",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1259.8005490823086,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 950.0,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1050.0,
+  "opponent": "Rocky Romero",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 950.0,
+  "opponent": "Daisuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Daisuke Sasaki",
+  "wrestler": "Daisuke Sasaki",
+  "elo": 1050.0,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 982.4425860865318,
+  "opponent": "Alex Koslov",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 1055.4286219764915,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 950.0,
+  "opponent": "Brian Kendrick",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Brian Kendrick",
+  "wrestler": "Brian Kendrick",
+  "elo": 1050.0,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 979.2860155860892,
+  "opponent": "Angel de Oro",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Angel de Oro",
+  "wrestler": "Angel de Oro",
+  "elo": 1054.904603362517,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 950.0,
+  "opponent": "PAC",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "PAC",
+  "wrestler": "PAC",
+  "elo": 1050.0,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 958.150645670663,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1098.995666070175,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 949.0949677671205,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/27",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1080.2086398545216,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 654.9899116458936,
+  "opponent": "Alex Koslov",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 1065.5016102320149,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1004.3364505885576,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1125.872189265964,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "Daisuke Sasaki",
+  "wrestler": "Daisuke Sasaki",
+  "elo": 1007.0046708977206,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1141.9909951724544,
+  "opponent": "Daisuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 905.2645074523347,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1031.4531246759736,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "Brian Kendrick",
+  "wrestler": "Brian Kendrick",
+  "elo": 990.398412126454,
+  "opponent": "TAKA Michinoku",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1042.0441739600778,
+  "opponent": "Brian Kendrick",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 857.7628436137777,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/28",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1024.9520776627605,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 631.6973178021357,
+  "opponent": "Daisuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Daisuke Sasaki",
+  "wrestler": "Daisuke Sasaki",
+  "elo": 1018.6509678195996,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 916.035591960268,
+  "opponent": "Alex Koslov",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 1099.4660182717469,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 984.822947573017,
+  "opponent": "Angel de Oro",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Angel de Oro",
+  "wrestler": "Angel de Oro",
+  "elo": 1101.5347804654737,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 978.5505312828875,
+  "opponent": "PAC",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "PAC",
+  "wrestler": "PAC",
+  "elo": 1096.401546379873,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 906.977888602079,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1001.172757068584,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 887.0293068647196,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/30",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 983.7042298843385,
+  "opponent": "Rocky Romero",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 609.1852175312182,
+  "opponent": "Brian Kendrick",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "Brian Kendrick",
+  "wrestler": "Brian Kendrick",
+  "elo": 1001.6544622619127,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 937.6282173329549,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1051.5311808286197,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 813.4291658312729,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1009.5843147310741,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1006.0436211511106,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1177.9915479814217,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1046.055281041242,
+  "opponent": "Rocky Romero",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 1046.6631233141634,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 856.4257360209924,
+  "opponent": "Angel de Oro",
+  "result": "lost"
+ },
+ {
+  "date": "2012/05/31",
+  "wrestling_as": "Angel de Oro",
+  "wrestler": "Angel de Oro",
+  "elo": 1125.9541661811447,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 562.0207891863162,
+  "opponent": "Jado",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 860.593594176175,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "Daisuke Sasaki",
+  "wrestler": "Daisuke Sasaki",
+  "elo": 966.1377708136048,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1053.6859540745788,
+  "opponent": "Daisuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 911.6651224623497,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 990.1965536620681,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 1036.812042571615,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1072.238290431206,
+  "opponent": "Alex Koslov",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "PAC",
+  "wrestler": "PAC",
+  "elo": 1050.6442829946575,
+  "opponent": "Angel de Oro",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "Angel de Oro",
+  "wrestler": "Angel de Oro",
+  "elo": 1171.7114295663603,
+  "opponent": "PAC",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 991.8922394396164,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/01",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1043.3431712733418,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 981.7696592287349,
+  "opponent": "Brian Kendrick",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "Brian Kendrick",
+  "wrestler": "Brian Kendrick",
+  "elo": 1056.6968456047928,
+  "opponent": "Alex Koslov",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 962.8572508675016,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1096.8723243581878,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 988.6077311864985,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1048.2519457897329,
+  "opponent": "Rocky Romero",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 556.4134984388288,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1180.7951933551653,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 867.1499455843842,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1078.582307147627,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "PAC",
+  "wrestler": "PAC",
+  "elo": 999.9839109282387,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/02",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1096.715653107661,
+  "opponent": "PAC",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Daisuke Sasaki",
+  "wrestler": "Daisuke Sasaki",
+  "elo": 930.9492697874815,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1107.4267914573293,
+  "opponent": "Daisuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 789.2058970034452,
+  "opponent": "TAKA Michinoku",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 998.5510994538665,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1039.786050790106,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1105.1815481072879,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 803.6225983887518,
+  "opponent": "PAC",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "PAC",
+  "wrestler": "PAC",
+  "elo": 1031.7475845260549,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1058.7202603359299,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1218.9472573774233,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Angel de Oro",
+  "wrestler": "Angel de Oro",
+  "elo": 1108.6210904880058,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/03",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1141.6726462259815,
+  "opponent": "Angel de Oro",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 548.3660063553641,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1111.4505374990617,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 781.5330683190023,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 933.7546525320993,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "Daisuke Sasaki",
+  "wrestler": "Daisuke Sasaki",
+  "elo": 865.6406137341469,
+  "opponent": "Brian Kendrick",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "Brian Kendrick",
+  "wrestler": "Brian Kendrick",
+  "elo": 1089.3511736314601,
+  "opponent": "Daisuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 773.6626694772365,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1222.8330642589756,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "Angel de Oro",
+  "wrestler": "Angel de Oro",
+  "elo": 1042.4272301687852,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1058.086099758837,
+  "opponent": "Angel de Oro",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "PAC",
+  "wrestler": "PAC",
+  "elo": 975.5709702658876,
+  "opponent": "Rocky Romero",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/05",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 1044.7843454466658,
+  "opponent": "PAC",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 538.3030841094421,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1063.7517214588909,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Daisuke Sasaki",
+  "wrestler": "Daisuke Sasaki",
+  "elo": 797.8737192632493,
+  "opponent": "Alex Koslov",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 1015.6531064641837,
+  "opponent": "Daisuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 958.2289545009339,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 944.6472608973464,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 1014.8224714825545,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1148.4451763835702,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Angel de Oro",
+  "wrestler": "Angel de Oro",
+  "elo": 992.7664411208414,
+  "opponent": "Rocky Romero",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 1094.4451344946096,
+  "opponent": "Angel de Oro",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1045.7517130227266,
+  "opponent": "TAKA Michinoku",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1064.2499239302017,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Brian Kendrick",
+  "wrestler": "Brian Kendrick",
+  "elo": 1057.6682851193927,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1238.6745085150092,
+  "opponent": "Brian Kendrick",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1069.4374527019854,
+  "opponent": "PAC",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/06",
+  "wrestling_as": "PAC",
+  "wrestler": "PAC",
+  "elo": 1047.8061637898836,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "Daisuke Sasaki",
+  "wrestler": "Daisuke Sasaki",
+  "elo": 762.3739184351374,
+  "opponent": "TAKA Michinoku",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 1081.9998243442576,
+  "opponent": "Daisuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 741.0297454647048,
+  "opponent": "Brian Kendrick",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "Brian Kendrick",
+  "wrestler": "Brian Kendrick",
+  "elo": 1073.9847471256587,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 876.9669679505037,
+  "opponent": "Rocky Romero",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 1122.8389767854076,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 954.8585758734173,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1064.575052115621,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1006.8736584422804,
+  "opponent": "Alex Koslov",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 1072.5311694807942,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "Angel de Oro",
+  "wrestler": "Angel de Oro",
+  "elo": 937.812404661521,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/07",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1013.1829909602543,
+  "opponent": "Angel de Oro",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 986.1894080939779,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 729.9239166100015,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 924.6683370705673,
+  "opponent": "Jado",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 905.4403882081309,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Alex Koslov",
+  "wrestler": "Alex Koslov",
+  "elo": 1044.7711728083445,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1252.554506851234,
+  "opponent": "Alex Koslov",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Brian Kendrick",
+  "wrestler": "Brian Kendrick",
+  "elo": 1019.9306066649076,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1099.8058534834777,
+  "opponent": "Brian Kendrick",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Rocky Romero",
+  "wrestler": "Black Tiger IV / Rocky Romero",
+  "elo": 1064.5318502459943,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1122.8821786550343,
+  "opponent": "Rocky Romero",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 944.5261991978944,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1014.2805514752234,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 917.9245773844194,
+  "opponent": "PAC",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "PAC",
+  "wrestler": "PAC",
+  "elo": 1084.7401622788816,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1087.2670703272363,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/09",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1130.6155587583194,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/10",
+  "wrestling_as": "PAC",
+  "wrestler": "PAC",
+  "elo": 1036.9069316318007,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/10",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1214.4428139482586,
+  "opponent": "PAC; Low Ki",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/10",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1097.4772679879627,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/10",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1235.7217873275622,
+  "opponent": "Prince Devitt; Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/16",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1190.972047565004,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/16",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1259.1925537108168,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/16",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 950.2890844789342,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/16",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1132.7170594389838,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/06/16",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1206.3029868853976,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/06/16",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1182.5154166778943,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/01",
+  "wrestling_as": "Taiyo Kea",
+  "wrestler": "Taiyo Kea",
+  "elo": 950.0,
+  "opponent": "Jun Akiyama",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/01",
+  "wrestling_as": "Jun Akiyama",
+  "wrestler": "Jun Akiyama",
+  "elo": 1050.0,
+  "opponent": "Taiyo Kea",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/01",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1089.834942890761,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/01",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1225.397533226117,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/07",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 700.4246098407395,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/07",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1049.4393055498688,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/08",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 893.3283256672165,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/08",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1265.3416166401175,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/08",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1069.2326201795256,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/08",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1151.1268264634714,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/10",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 397.11234580385366,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/10",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1051.7867939794576,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/11",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 677.05459576443,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/11",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1063.4718010176123,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/13",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 392.8870421902739,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/13",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1065.5844528244022,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/15",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 657.7515359716127,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/15",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1075.2359827208109,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/16",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 641.1662467811852,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/16",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1083.5286273160245,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/18",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 861.6088784724601,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/18",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1056.6047564374223,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/18",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 959.2332647629304,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/18",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 991.7190393157887,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/22",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1222.1542928592269,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/22",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1117.2754943214568,
+  "opponent": "Low Ki",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/22",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1224.8455114797707,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/22",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1183.2631574765076,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/22",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 949.3519820907272,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/22",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1234.6498525459244,
+  "opponent": "Masato Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/29",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1183.0418257263314,
+  "opponent": "Kota Ibushi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/29",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1078.2249342657913,
+  "opponent": "Low Ki",
+  "result": "won"
+ },
+ {
+  "date": "2012/07/29",
+  "wrestling_as": "Volador Jr.",
+  "wrestler": "Volador Jr.",
+  "elo": 926.0928928100744,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2012/07/29",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1175.033933653397,
+  "opponent": "Volador Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1183.6650056502572,
+  "opponent": "Rush",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Rush",
+  "wrestler": "Rush",
+  "elo": 1039.5073233998653,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 995.3907376392497,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1015.6742547018378,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1007.8164423403849,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1078.008881889589,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1021.6167522629835,
+  "opponent": "Lance Archer",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 1025.3645023686158,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 942.9105397392689,
+  "opponent": "Naomichi Marufuji",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 1048.8084995765198,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1026.9070015532113,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1221.151864327503,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1106.704935912606,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1054.2208672527768,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 979.4252728685241,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/01",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1244.9372161116623,
+  "opponent": "Shelton Benjamin",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 857.9017143358878,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1037.89515034094,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 977.3986944930083,
+  "opponent": "Rush",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Rush",
+  "wrestler": "Rush",
+  "elo": 1087.473131275473,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 916.1797291867791,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1050.869977916536,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 974.5498991142317,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1119.133237477195,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 988.9541029952899,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1039.279669449754,
+  "opponent": "Naomichi Marufuji",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 960.3348353157182,
+  "opponent": "MVP",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "MVP",
+  "wrestler": "MVP",
+  "elo": 1064.4131882238676,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1067.6027229457825,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1222.7672186170807,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1184.9864452793884,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/03",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1126.551705349006,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1057.6506398369547,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1099.3777479811804,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 850.1989705634768,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1072.2700487614052,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "MVP",
+  "wrestler": "MVP",
+  "elo": 1035.7450973880825,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1237.1012640349732,
+  "opponent": "MVP",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Rush",
+  "wrestler": "Rush",
+  "elo": 1051.1491940105018,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1221.3103825443595,
+  "opponent": "Rush",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 940.0960752670577,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1104.905342171733,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 919.7997892340796,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1067.4420476348498,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 947.7713705969973,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1092.0527103148288,
+  "opponent": "Naomichi Marufuji",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 838.4481104123751,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/04",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1249.8006170925405,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1043.1067118103074,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1148.3237464857018,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Rush",
+  "wrestler": "Rush",
+  "elo": 998.9338177275017,
+  "opponent": "MVP",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "MVP",
+  "wrestler": "MVP",
+  "elo": 1087.9604736710826,
+  "opponent": "Rush",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 999.8943553508327,
+  "opponent": "Lance Archer",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 1075.191459835092,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1020.1673875125638,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1109.7533010857962,
+  "opponent": "Shelton Benjamin",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 907.3812774134387,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 984.5362139650629,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1049.874742826285,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1073.1537142795214,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1188.234314634636,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1171.0574779911806,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1207.275031697666,
+  "opponent": "Naomichi Marufuji",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/05",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 1117.8737121764955,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 992.5958388690614,
+  "opponent": "Rush",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Rush",
+  "wrestler": "Rush",
+  "elo": 1056.2127216847255,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1080.6738784359356,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1087.8172555623298,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1027.0927509611427,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1003.7692106616823,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1197.2688780295746,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1079.5591273616299,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 1040.9088865787937,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1222.5168878909342,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "MVP",
+  "wrestler": "MVP",
+  "elo": 1049.6961686021755,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1209.3217830600877,
+  "opponent": "MVP",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 1040.8138955165628,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1061.500910733304,
+  "opponent": "Naomichi Marufuji",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 962.8184081469653,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/07",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1218.1339346067148,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 979.0663564435696,
+  "opponent": "Naomichi Marufuji",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 1088.840290034136,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1014.3350445703181,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1029.1572420125829,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Rush",
+  "wrestler": "Rush",
+  "elo": 1009.5674917386722,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1126.2043573076833,
+  "opponent": "Rush",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1126.1722742649051,
+  "opponent": "Lance Archer",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 1112.0054903434632,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "MVP",
+  "wrestler": "MVP",
+  "elo": 991.5519645692533,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1050.7400429019835,
+  "opponent": "MVP",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 987.469657497442,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1059.4062649745479,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1174.9963574899825,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1141.8045654197317,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1182.569489377107,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/08",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1132.6298011925194,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1009.4665874890918,
+  "opponent": "Lance Archer",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 1153.278945756355,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1023.7646706063158,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1051.522242453456,
+  "opponent": "Shelton Benjamin",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1057.7415842964424,
+  "opponent": "MVP",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "MVP",
+  "wrestler": "MVP",
+  "elo": 1060.0147375804943,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Rush",
+  "wrestler": "Rush",
+  "elo": 977.7292987393485,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1173.6427584190556,
+  "opponent": "Rush",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 971.9981184527915,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1036.225480003361,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1072.24538339423,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1119.7906827728373,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 986.8157958124472,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1210.088738134978,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1190.756731177395,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/10",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1189.6925876919831,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Rush",
+  "wrestler": "Rush",
+  "elo": 953.4156591537075,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1199.3099970756236,
+  "opponent": "Rush",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 942.0708230960612,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1149.7179781295674,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 980.6966731846128,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1115.313380815933,
+  "opponent": "Shelton Benjamin",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 951.090340457276,
+  "opponent": "Naomichi Marufuji",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 1124.565745389307,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1000.8386199699938,
+  "opponent": "Tetsuya Naito",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1066.3695518155403,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "MVP",
+  "wrestler": "MVP",
+  "elo": 1027.9894822508977,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1222.7819865069916,
+  "opponent": "MVP",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1137.3844731871973,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1225.9508729238414,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1022.8791558172942,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/11",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1224.410281453059,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Lance Archer",
+  "wrestler": "Lance Archer",
+  "elo": 1085.9912936265337,
+  "opponent": "MVP",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "MVP",
+  "wrestler": "MVP",
+  "elo": 1095.277134380719,
+  "opponent": "Lance Archer",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1123.4962892307733,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1076.652327814844,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 1026.4494365082435,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1177.304588494494,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1200.7228595394988,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1263.6285663991264,
+  "opponent": "Togi Makabe; Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1077.1469722023448,
+  "opponent": "Shelton Benjamin",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Shelton Benjamin",
+  "wrestler": "Shelton Benjamin",
+  "elo": 1053.2676791118354,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 1050.4781710992338,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1090.2459716762075,
+  "opponent": "Naomichi Marufuji",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1052.316239654373,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1085.876296978854,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1187.0545832788373,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/08/12",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1079.6997433362203,
+  "opponent": "Hiroshi Tanahashi; Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/07",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1061.6792130670694,
+  "opponent": "Kota Ibushi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/07",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1133.8212155201786,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/08",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 388.4019305168205,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/08",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1050.8922273626777,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/09",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 626.6330785177321,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/09",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1090.7952114477512,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/12",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 347.9221708579727,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/12",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 667.1128381765799,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/13",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 320.45057237808845,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/13",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 694.584436656464,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/15",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 299.65314659148936,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/15",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 715.3818624430631,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/16",
+  "wrestling_as": "Averno",
+  "wrestler": "Averno",
+  "elo": 957.1463117408382,
+  "opponent": "Mascara Dorada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/16",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 1092.8536882591618,
+  "opponent": "Averno",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 282.9134842757076,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/17",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 732.1215247588449,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/21",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 281.0202904539134,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/21",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1091.7418083586483,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/21",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 957.4361166497312,
+  "opponent": "Captain New Japan",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/21",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 1023.2645285881711,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/22",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 709.714917815069,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/22",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1102.9451118305362,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/22",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 805.0468468693903,
+  "opponent": "Captain New Japan",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/22",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 1051.545544389706,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/22",
+  "wrestling_as": "Ayumu Honda",
+  "wrestler": "Ayumu Honda",
+  "elo": 950.0,
+  "opponent": "Saburo Inematsu",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/22",
+  "wrestling_as": "Saburo Inematsu",
+  "wrestler": "Saburo Inematsu",
+  "elo": 1050.0,
+  "opponent": "Ayumu Honda",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/22",
+  "wrestling_as": "Mascara Dorada",
+  "wrestler": "Mascara Dorada",
+  "elo": 1024.259939326928,
+  "opponent": "Averno",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/22",
+  "wrestling_as": "Averno",
+  "wrestler": "Averno",
+  "elo": 1025.740060673072,
+  "opponent": "Mascara Dorada",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/22",
+  "wrestling_as": "Ryuichi Sekine",
+  "wrestler": "Ryuichi Sekine",
+  "elo": 915.842195570014,
+  "opponent": "Yuji Hino",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/22",
+  "wrestling_as": "Yuji Hino",
+  "wrestler": "Yuji Hino",
+  "elo": 1044.2872166301831,
+  "opponent": "Ryuichi Sekine",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Ryuichi Sekine",
+  "wrestler": "Ryuichi Sekine",
+  "elo": 833.207569770984,
+  "opponent": "Hiro Tonai",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Hiro Tonai",
+  "wrestler": "Hiro Tonai",
+  "elo": 1018.1106776701628,
+  "opponent": "Ryuichi Sekine",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 950.0,
+  "opponent": "Felino",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Felino",
+  "wrestler": "Felino",
+  "elo": 1050.0,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Shiori Asahi",
+  "wrestler": "Shiori Asahi",
+  "elo": 950.0,
+  "opponent": "Taishi Takizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Taishi Takizawa",
+  "wrestler": "Taishi Takizawa",
+  "elo": 1050.0,
+  "opponent": "Shiori Asahi",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Daisuke Sasaki",
+  "wrestler": "Daisuke Sasaki",
+  "elo": 746.0652365228871,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1191.1961666824566,
+  "opponent": "Daisuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Kengo Mashimo",
+  "wrestler": "Kengo Mashimo",
+  "elo": 976.0505640029997,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1212.697577537999,
+  "opponent": "Kengo Mashimo",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1132.8207686581597,
+  "opponent": "Kota Ibushi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1191.9724944270229,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 1019.179588677199,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/09/23",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1218.353165700872,
+  "opponent": "Naomichi Marufuji",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/08",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1141.8607720697128,
+  "opponent": "Low Ki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/08",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1241.3078890397667,
+  "opponent": "Kota Ibushi",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/08",
+  "wrestling_as": "Tetsuya Naito",
+  "wrestler": "Tetsuya Naito",
+  "elo": 965.7713221599956,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/08",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1011.7684548055239,
+  "opponent": "Tetsuya Naito",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/08",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1053.9454654272993,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/08",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1276.505705353587,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/08",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1119.6222753058184,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/08",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1181.178602419449,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/08",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1024.54395709094,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/08",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1232.2393069825885,
+  "opponent": "Minoru Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/25",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 278.66949293315616,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/25",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1052.0676261230562,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/27",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 989.0317114716997,
+  "opponent": "YOSHI-HASHI",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/27",
+  "wrestling_as": "YOSHI-HASHI",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 1025.2173408702026,
+  "opponent": "Captain New Japan",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/27",
+  "wrestling_as": "SUSHI",
+  "wrestler": "SUSHI",
+  "elo": 939.3256535976591,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/27",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1046.0170298752491,
+  "opponent": "SUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/27",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 678.0571446917836,
+  "opponent": "Seiya Sanada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/27",
+  "wrestling_as": "Seiya Sanada",
+  "wrestler": "Seiya Sanada",
+  "elo": 1015.8288865616427,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/27",
+  "wrestling_as": "Kaz Hayashi",
+  "wrestler": "Kaz Hayashi",
+  "elo": 962.3011345792536,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/27",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1124.9659357479827,
+  "opponent": "Kaz Hayashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/28",
+  "wrestling_as": "SUSHI",
+  "wrestler": "SUSHI",
+  "elo": 888.1929640649136,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/28",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1150.5322805143555,
+  "opponent": "SUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/28",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka",
+  "elo": 950.0,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/28",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1050.0,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/28",
+  "wrestling_as": "Masayuki Kono",
+  "wrestler": "Masayuki Kono",
+  "elo": 962.1129162631187,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/28",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1123.7633807157354,
+  "opponent": "Masayuki Kono",
+  "result": "won"
+ },
+ {
+  "date": "2012/10/30",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 633.1421095723105,
+  "opponent": "BUSHI",
+  "result": "lost"
+ },
+ {
+  "date": "2012/10/30",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 938.2433607866897,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/03",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 255.6664983542667,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/03",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 656.1451041511999,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/03",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 948.0050639419603,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/03",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1093.0942736527957,
+  "opponent": "Captain New Japan",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/04",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 744.0185903192952,
+  "opponent": "Captain New Japan",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/04",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 1009.0333204920554,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Low Ki",
+  "wrestler": "Low Ki",
+  "elo": 1211.5961045043857,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1234.457502724159,
+  "opponent": "Low Ki",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1090.7807580100477,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1290.9264640014724,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1021.4789178235746,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1213.6451500231735,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 989.8278714289119,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/11",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1243.2095986708944,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 901.3590131355886,
+  "opponent": "Takaaki Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 452.9484720830896,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 625.0310701080198,
+  "opponent": "Shiori Asahi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Shiori Asahi",
+  "wrestler": "Shiori Asahi",
+  "elo": 965.55701702159,
+  "opponent": "Hiromu Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Ryuichi Sekine",
+  "wrestler": "Ryuichi Sekine",
+  "elo": 783.4578307129301,
+  "opponent": "YOSHI-HASHI",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "YOSHI-HASHI",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 1050.0922103992295,
+  "opponent": "Ryuichi Sekine",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 964.9017283288101,
+  "opponent": "Taishi Takizawa",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Taishi Takizawa",
+  "wrestler": "Taishi Takizawa",
+  "elo": 1094.1315921632452,
+  "opponent": "Captain New Japan",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Hiro Tonai",
+  "wrestler": "Hiro Tonai",
+  "elo": 984.0440025219641,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1166.8874438063585,
+  "opponent": "Hiro Tonai",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Daisuke Sasaki",
+  "wrestler": "Daisuke Sasaki",
+  "elo": 722.1754654153882,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1105.039159206545,
+  "opponent": "Daisuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "BUSHI",
+  "wrestler": "BUSHI",
+  "elo": 849.0823994589707,
+  "opponent": "Kengo Mashimo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Kengo Mashimo",
+  "wrestler": "Kengo Mashimo",
+  "elo": 1020.6310446668592,
+  "opponent": "BUSHI",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 944.3702642767156,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1066.936524975771,
+  "opponent": "Yujiro Takahashi",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 996.0546562538068,
+  "opponent": "Masato Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/15",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 1080.6010957172525,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 904.1127475720816,
+  "opponent": "Takaaki Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 644.7229769389262,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1097.0005104926506,
+  "opponent": "Kengo Mashimo",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Kengo Mashimo",
+  "wrestler": "Kengo Mashimo",
+  "elo": 1042.2771896974834,
+  "opponent": "Ryusuke Taguchi; Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Shiori Asahi",
+  "wrestler": "Shiori Asahi",
+  "elo": 929.7462609495481,
+  "opponent": "Karl Anderson",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Karl Anderson",
+  "wrestler": "Karl Anderson",
+  "elo": 1105.8179235169723,
+  "opponent": "Shiori Asahi; Kengo Mashimo; Masato Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Taishi Takizawa",
+  "wrestler": "Taishi Takizawa",
+  "elo": 1042.18538099252,
+  "opponent": "Masato Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 1229.8244545110492,
+  "opponent": "Taishi Takizawa; Tomohiro Ishii; Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "YOSHI-HASHI",
+  "wrestler": "YOSHI-HASHI",
+  "elo": 1007.9344389465753,
+  "opponent": "Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1095.089928850052,
+  "opponent": "YOSHI-HASHI; Masato Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Captain New Japan",
+  "wrestler": "Captain New Japan",
+  "elo": 911.9504477628999,
+  "opponent": "Yujiro Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/11/19",
+  "wrestling_as": "Yujiro Takahashi",
+  "wrestler": "Yujiro Takahashi",
+  "elo": 1050.2728254085362,
+  "opponent": "Captain New Japan",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/06",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 903.3201756854334,
+  "opponent": "Sho Tanaka",
+  "result": "draw"
+ },
+ {
+  "date": "2012/12/06",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 902.1515850222369,
+  "opponent": "Yohei Komatsu",
+  "result": "draw"
+ },
+ {
+  "date": "2012/12/09",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 736.8617227489544,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/09",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 791.4895230444986,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/09",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 621.3493383730746,
+  "opponent": "KUSHIDA",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/09",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 1007.7414755367327,
+  "opponent": "Takaaki Watanabe",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/16",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 771.3355894573538,
+  "opponent": "Hiromu Takahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/16",
+  "wrestling_as": "Hiromu Takahashi",
+  "wrestler": "Hiromu Takahashi",
+  "elo": 922.3055186093818,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/17",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 604.7877567698472,
+  "opponent": "Takaaki Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/17",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 753.423304352182,
+  "opponent": "Yohei Komatsu",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/18",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 666.1845823414113,
+  "opponent": "Takaaki Watanabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/18",
+  "wrestling_as": "Takaaki Watanabe",
+  "wrestler": "Takaaki Watanabe",
+  "elo": 858.5743114681244,
+  "opponent": "Sho Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/20",
+  "wrestling_as": "Yohei Komatsu",
+  "wrestler": "Yohei Komatsu",
+  "elo": 622.2775053451271,
+  "opponent": "Sho Tanaka",
+  "result": "draw"
+ },
+ {
+  "date": "2012/12/20",
+  "wrestling_as": "Sho Tanaka",
+  "wrestler": "Sho Tanaka",
+  "elo": 648.6948337661314,
+  "opponent": "Yohei Komatsu",
+  "result": "draw"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "TAKA Michinoku",
+  "wrestler": "TAKA Michinoku",
+  "elo": 950.802524704609,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1126.1676413994167,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "KUSHIDA",
+  "wrestler": "KUSHIDA",
+  "elo": 984.3310020139081,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1225.3503867845857,
+  "opponent": "KUSHIDA",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Tomohiro Ishii",
+  "wrestler": "Tomohiro Ishii",
+  "elo": 1061.3968992498922,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1229.544092338079,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1083.1561391579237,
+  "opponent": "Minoru Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Minoru Suzuki",
+  "wrestler": "Minoru Suzuki",
+  "elo": 1091.9200984473719,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Taichi",
+  "wrestler": "Taichi",
+  "elo": 1027.0164168828144,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1165.9795840124466,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1072.3311979596917,
+  "opponent": "Kazuchika Okada",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Kazuchika Okada",
+  "wrestler": "Kazuchika Okada",
+  "elo": 1303.2611202679518,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 941.258132799421,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2012/12/23",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1251.2985905960495,
+  "opponent": "Gedo",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Kazuchika Okada",
+ "Hirooki Goto",
+ "Low Ki",
+ "Hiroshi Tanahashi",
+ "Prince Devitt",
+ "Masato Tanaka",
+ "Togi Makabe",
+ "Shinsuke Nakamura",
+ "Ryusuke Taguchi",
+ "Kota Ibushi",
+ "Angel de Oro",
+ "Yuji Nagata",
+ "Lance Archer",
+ "Jushin Thunder Liger",
+ "Satoshi Kojima",
+ "Yujiro Takahashi",
+ "Black Tiger / Black Tiger VII",
+ "Karl Anderson",
+ "Minoru Suzuki",
+ "Tetsuya Naito",
+ "Hiroyoshi Tenzan",
+ "KUSHIDA",
+ "Naomichi Marufuji",
+ "Taichi",
+ "Black Tiger IV / Rocky Romero",
+ "Tomohiro Ishii",
+ "Wataru Inoue",
+ "Alex Koslov",
+ "Tiger Mask IV / Tiger Mask",
+ "PAC",
+ "MVP",
+ "Taishi Takizawa",
+ "La Sombra",
+ "Mascara Dorada",
+ "Toru Yano",
+ "Brian Kendrick",
+ "Shelton Benjamin",
+ "Rush",
+ "King Fale",
+ "TAKA Michinoku",
+ "BUSHI",
+ "Captain New Japan",
+ "YOSHI-HASHI",
+ "Keiji Muto",
+ "Madoka",
+ "Daisuke Sasaki",
+ "Jun Akiyama",
+ "Saburo Inematsu",
+ "Felino",
+ "Koji Kanemoto",
+ "Yuji Hino",
+ "Gedo",
+ "Kengo Mashimo",
+ "Averno",
+ "Hiro Tonai",
+ "Seiya Sanada",
+ "Ryuichi Sekine",
+ "Tama Tonga",
+ "Shiori Asahi",
+ "Kaz Hayashi",
+ "Masayuki Kono",
+ "Tomoaki Honma",
+ "Takashi Sugiura",
+ "Yoshihiro Takayama",
+ "Volador Jr.",
+ "Takaaki Watanabe",
+ "Hiromu Takahashi",
+ "Davey Richards",
+ "Yusuke Kodama",
+ "Kaji Tomato",
+ "Jado",
+ "Taiyo Kea",
+ "Ayumu Honda",
+ "Super Strong Machine",
+ "Minoru Tanaka",
+ "Shoichi Uchida",
+ "Takashi Iizuka",
+ "SUSHI",
+ "Yohei Komatsu",
+ "Sho Tanaka"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

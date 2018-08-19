@@ -1,0 +1,5504 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Brutus Beefcake",
+  "wrestler": "Brutus Beefcake",
+  "elo": 1050.0,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Junji Hirata",
+  "elo": 1050.0,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1050.0,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 950.0,
+  "opponent": "Hulk Hogan",
+  "result": "lost"
+ },
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Hulk Hogan",
+  "wrestler": "Hulk Hogan",
+  "elo": 1050.0,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 950.0,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1050.0,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 950.0,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1050.0,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 950.0,
+  "opponent": "Genichiro Tenryu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/01/04",
+  "wrestling_as": "Genichiro Tenryu",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1050.0,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1994/01/30",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1050.0,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/01/30",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1050.0,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/01/30",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1092.8536882591618,
+  "opponent": "Rambo",
+  "result": "won"
+ },
+ {
+  "date": "1994/01/31",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 950.0,
+  "opponent": "Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/01/31",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1050.0,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/01",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 950.0,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/01",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1050.0,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/01",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1080.5268879645525,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/01",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1050.0,
+  "opponent": "Scorpio Jr.",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/01",
+  "wrestling_as": "Max Moon",
+  "wrestler": "Max Moon",
+  "elo": 957.1463117408382,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/01",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1092.8536882591618,
+  "opponent": "Max Moon",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/02",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 998.9717080798239,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/02",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1098.9717080798239,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/02",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 907.1463117408382,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/04",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1023.8664165734449,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/04",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1057.3568947535962,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/04",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1047.0306319373065,
+  "opponent": "Scorpio Jr.",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/05",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 950.1718341907913,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/05",
+  "wrestling_as": "Hiromichi Fuyuki",
+  "wrestler": "Hiromichi Fuyuki",
+  "elo": 1050.0,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/05",
+  "wrestling_as": "Koki Kitahara",
+  "wrestler": "Koki Kitahara",
+  "elo": 1056.1360561308536,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/05",
+  "wrestling_as": "Nobukazu Hirai",
+  "wrestler": "Nobukazu Hirai",
+  "elo": 950.0,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/05",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1050.0,
+  "opponent": "Nobukazu Hirai",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/05",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1050.0,
+  "opponent": "Ashura Hara",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/05",
+  "wrestling_as": "Genichiro Tenryu",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1085.9935000197115,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/05",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Junji Hirata",
+  "elo": 992.8536882591618,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/05",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1057.1463117408382,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1004.3819020487904,
+  "opponent": "Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1126.1449859157622,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1121.866547086057,
+  "opponent": "Scorpio Jr.",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1000.0,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1100.0,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1000.0,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1100.0,
+  "opponent": "The Great Kabuki",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 937.8712080630236,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1000.1808993307656,
+  "opponent": "Michiyoshi Ohara",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 942.8536882591618,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1090.9923267864558,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 914.9486709879044,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/06",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1092.1976407529337,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/08",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 990.1244529602411,
+  "opponent": "Scorpio Jr.",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/09",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 929.6151279993104,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/09",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 947.6257294329976,
+  "opponent": "Max Moon",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/09",
+  "wrestling_as": "Max Moon",
+  "wrestler": "Max Moon",
+  "elo": 1013.902484356631,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/09",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1048.8919813118632,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/11",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 990.3289829933904,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1056.8825482746818,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/11",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1133.2858435004928,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/11",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1043.6801872749145,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/11",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1014.1427570650405,
+  "opponent": "Mike Enos",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/13",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1044.2779430302446,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/13",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1007.3967933715113,
+  "opponent": "Scorpio Jr.",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/13",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1007.953052029383,
+  "opponent": "Michiyoshi Ohara",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/14",
+  "wrestling_as": "Max Moon",
+  "wrestler": "Max Moon",
+  "elo": 980.4374364703176,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/14",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1166.7508913868062,
+  "opponent": "Max Moon",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/14",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1078.0310154967326,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/14",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1048.113572592838,
+  "opponent": "Mike Enos",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/14",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1005.1850306809363,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/14",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1136.5606388900887,
+  "opponent": "The Great Kabuki",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/15",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1025.547106359091,
+  "opponent": "Scorpio Jr.",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/15",
+  "wrestling_as": "Max Moon",
+  "wrestler": "Max Moon",
+  "elo": 939.5228028537884,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/15",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1085.192576646774,
+  "opponent": "Max Moon",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/15",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1097.481067532358,
+  "opponent": "Bobby Eaton",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/16",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 963.4141423838174,
+  "opponent": "Max Moon",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/16",
+  "wrestling_as": "Max Moon",
+  "wrestler": "Max Moon",
+  "elo": 1063.7887308043355,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/16",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 880.8314937059323,
+  "opponent": "Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/16",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1150.5368030624513,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/16",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1128.3163395400045,
+  "opponent": "Rambo",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/17",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 896.9905392736209,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/17",
+  "wrestling_as": "Genichiro Tenryu",
+  "wrestler": "Genichiro Tenryu",
+  "elo": 1043.2197436033498,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/17",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1179.3343953064505,
+  "opponent": "Genichiro Tenryu",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/24",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1135.9935000197115,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/02/24",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1022.3329552124891,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/24",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1080.0622291513191,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/02/24",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1221.1387132411883,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/05",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 800.4808787329403,
+  "opponent": "Nobukazu Hirai",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/05",
+  "wrestling_as": "Nobukazu Hirai",
+  "wrestler": "Nobukazu Hirai",
+  "elo": 990.175307486496,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/05",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 855.5651135442363,
+  "opponent": "Killer Bee",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/05",
+  "wrestling_as": "Killer Bee",
+  "wrestler": "Killer Bee",
+  "elo": 1041.1530472593936,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/05",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1094.0641934167645,
+  "opponent": "Kuniaki Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/06",
+  "wrestling_as": "Nobukazu Hirai",
+  "wrestler": "Nobukazu Hirai",
+  "elo": 1016.1084157990853,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/06",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1010.4793057730191,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/06",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1046.4170810211306,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/06",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 752.3291360972373,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/06",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1024.0758713178514,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/06",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1118.74005050487,
+  "opponent": "Villano V",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/06",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1049.2865571408252,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/06",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1065.9513726893258,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/06",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1182.076118515302,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/06",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1078.1251894517727,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/07",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 992.7891905235447,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/07",
+  "wrestling_as": "Nobukazu Hirai",
+  "wrestler": "Nobukazu Hirai",
+  "elo": 934.0776159778687,
+  "opponent": "Shinjiro Otani",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/07",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 916.3907357396704,
+  "opponent": "Nobukazu Hirai",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/07",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1065.1418314324221,
+  "opponent": "Villano V",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/07",
+  "wrestling_as": "Killer Bee",
+  "wrestler": "Killer Bee",
+  "elo": 1010.3899551429033,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/07",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1212.8392106317922,
+  "opponent": "Killer Bee",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/08",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 825.8717020918643,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/08",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 934.4264248861568,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/08",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1095.6541758612975,
+  "opponent": "Killer Bee",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/08",
+  "wrestling_as": "Killer Bee",
+  "wrestler": "Killer Bee",
+  "elo": 1081.486670668412,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/08",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1061.0872593101053,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/08",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1122.7946226271868,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/09",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1048.0378616373157,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/09",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1063.897666504534,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/09",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1224.1903340986323,
+  "opponent": "The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/10",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1102.4340928166635,
+  "opponent": "Tatsuhito Takaiwa; Akira Nogami, Manabu Nakanishi, Osamu Kido, Shinjiro Otani, Tadao Yasuda, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/10",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1084.9413022752206,
+  "opponent": "Tokimitsu Ishizawa; Satoshi Kojima (winner), Akira Nogami, Osamu Kido, Shinjiro Otani, Tadao Yasuda, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/10",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 776.0962720576925,
+  "opponent": "Yuji Nagata; Satoshi Kojima (winner), Akira Nogami, Manabu Nakanishi, Osamu Kido, Tadao Yasuda, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/10",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1091.2235370949807,
+  "opponent": "Satoshi Kojima (winner), Manabu Nakanishi, Osamu Kido, Shinjiro Otani, Tadao Yasuda, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/10",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1092.845632834961,
+  "opponent": "Satoshi Kojima (winner), Akira Nogami, Manabu Nakanishi, Shinjiro Otani, Tadao Yasuda, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/10",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 854.4548508152285,
+  "opponent": "Satoshi Kojima (winner), Akira Nogami, Manabu Nakanishi, Osamu Kido, Shinjiro Otani, Tadao Yasuda, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/11",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 883.4227911995115,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1055.077268062333,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/11",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1240.8899150315735,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/12",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1010.4912636959996,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/12",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1137.4316372012943,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/12",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 843.1546215475933,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/12",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1142.9287074531458,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/12",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1019.9274972169129,
+  "opponent": "The Barbarian",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/15",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 895.7404147088823,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/15",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1049.0032078879137,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/15",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 969.0973173165343,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/15",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 963.3961726198276,
+  "opponent": "The Great Kabuki",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/15",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1093.287177892509,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/16",
+  "wrestling_as": "Nobukazu Hirai",
+  "wrestler": "Nobukazu Hirai",
+  "elo": 1011.8020917490404,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/16",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1098.9667831954087,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/16",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1071.143083157071,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/16",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1135.2984458347062,
+  "opponent": "Power Warrior",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/16",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1252.9774159593112,
+  "opponent": "The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/16",
+  "wrestling_as": "Rick Rude",
+  "wrestler": "Rick Rude",
+  "elo": 968.6292202061147,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/16",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1167.3642798135968,
+  "opponent": "Rick Rude",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/18",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 816.5459775520318,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/18",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1008.6945358949595,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/18",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 936.5379690433626,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/18",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1164.2898407777593,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/18",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1130.0131797748827,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/19",
+  "wrestling_as": "Nobukazu Hirai",
+  "wrestler": "Nobukazu Hirai",
+  "elo": 961.3548904377476,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/19",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1059.1417372062522,
+  "opponent": "Nobukazu Hirai",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/19",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1030.2245523169136,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/20",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1105.0724504676916,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/20",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 889.8174898931273,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/20",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1166.2889470282635,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/21",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1115.014798277957,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/21",
+  "wrestling_as": "Nobukazu Hirai",
+  "wrestler": "Nobukazu Hirai",
+  "elo": 921.1382293033201,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/21",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1070.441213451341,
+  "opponent": "Nobukazu Hirai",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/21",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1002.3007659806834,
+  "opponent": "Rick Rude",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/21",
+  "wrestling_as": "Rick Rude",
+  "wrestler": "Rick Rude",
+  "elo": 1032.2798269147572,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/21",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1111.0455054101262,
+  "opponent": "Hercules Hernandez",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/21",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1101.595539650256,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/21",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1125.780666688113,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/21",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1101.614587852332,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/21",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1269.8193449504984,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/23",
+  "wrestling_as": "Nobukazu Hirai",
+  "wrestler": "Nobukazu Hirai",
+  "elo": 1039.2792658271399,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/23",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 778.8995507488387,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/23",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1089.2644268529375,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/23",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1149.787140033093,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/23",
+  "wrestling_as": "Rick Rude",
+  "wrestler": "Rick Rude",
+  "elo": 1011.9755987178771,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/23",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1279.9714590489384,
+  "opponent": "Rick Rude",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/24",
+  "wrestling_as": "Killer Bee",
+  "wrestler": "Killer Bee",
+  "elo": 1019.9701912790273,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/24",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1061.5164793893846,
+  "opponent": "Killer Bee",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/24",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1147.9846848955865,
+  "opponent": "The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/24",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1042.963432651511,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/24",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1161.3157924793834,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/24",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1096.3827091695189,
+  "opponent": "Rick Rude",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/24",
+  "wrestling_as": "Rick Rude",
+  "wrestler": "Rick Rude",
+  "elo": 1082.957169361955,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/28",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1172.8188741228855,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/28",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 754.9918614821235,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/03/28",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1137.7345113214706,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/03/28",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1184.0775844255827,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/03",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 814.6156856686306,
+  "opponent": "Tokimitsu Ishizawa; Tatsuhito Takaiwa (winner), Manabu Nakanishi, Satoshi Kojima, Tadao Yasuda, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/03",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1045.937158346491,
+  "opponent": "Tatsuhito Takaiwa; Tatsuhito Takaiwa (winner), Satoshi Kojima, Shinjiro Otani, Tadao Yasuda, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/03",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1109.892217690963,
+  "opponent": "Tatsuhito Takaiwa (winner), Manabu Nakanishi, Shinjiro Otani, Tadao Yasuda, Tokimitsu Ishizawa, Yuji Nagata; The Great Kabuki",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/03",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1185.0163310957907,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/03",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1021.8296275971362,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/04",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 735.9287027775546,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/04",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 968.5044727842034,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/04",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1235.4202765884443,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/04",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1093.1534008298806,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/05",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 890.4782078022779,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/05",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1092.5319429766676,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/05",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1074.058663781775,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/06",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1116.9130370435676,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/06",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1086.4784807841609,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/06",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1104.5287447950018,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/07",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1016.7404411393802,
+  "opponent": "Yuki Ishikawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/07",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1070.8315881755634,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/07",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 948.9717080798239,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/07",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Junji Hirata",
+  "elo": 1043.881980179338,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/10",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 974.4624934834842,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/10",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1113.1095358314594,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/10",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 915.6964397786949,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/10",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1054.5877740908409,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/10",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1197.9685928686804,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/10",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 968.8445866077321,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/10",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1168.8899247137383,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1043.5598994497996,
+  "opponent": "Michiyoshi Ohara",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/11",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1052.802952058635,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/11",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1144.2577357130344,
+  "opponent": "Great Muta",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/12",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1056.3384212198732,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/14",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1026.073069608755,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/14",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 933.5841416200749,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/14",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1138.223913788606,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/15",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 946.2062678709203,
+  "opponent": "Jushin Thunder Liger; El Samurai (winner), Akira Nogami, Satoshi Kojima, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/15",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1193.505630609487,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/15",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1086.1344148889311,
+  "opponent": "El Samurai (winner), Satoshi Kojima, Shinjiro Otani, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/15",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 968.5141038240861,
+  "opponent": "El Samurai (winner), Akira Nogami, Shinjiro Otani, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata; Yoshiaki Yatsu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/15",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 851.8106015181136,
+  "opponent": "El Samurai (winner), Akira Nogami, Satoshi Kojima, Shinjiro Otani, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/15",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 952.441906610367,
+  "opponent": "Akira Nogami, Satoshi Kojima, Shinjiro Otani, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/15",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1053.1076030090057,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/04/16",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1062.8681151156445,
+  "opponent": "Dean Malenko; Super Delfin; Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/16",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 861.5668004426958,
+  "opponent": "Super Delfin",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/16",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 993.4248328814867,
+  "opponent": "Shinjiro Otani; Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/16",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1089.270555043158,
+  "opponent": "TAKA Michinoku; Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/16",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 957.9136853585869,
+  "opponent": "Masayoshi Motegi; The Great Sasuke",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/16",
+  "wrestling_as": "Ricky Fuji",
+  "wrestler": "Ricky Fuji",
+  "elo": 1022.479085202948,
+  "opponent": "Negro Casas; Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/16",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1195.038784264879,
+  "opponent": "Hayabusa; Ricky Fuji; The Great Sasuke",
+  "result": "lost"
+ },
+ {
+  "date": "1994/04/16",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1252.0452725803357,
+  "opponent": "Black Tiger; Gedo; The Great Sasuke",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 983.8094152379527,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "El Gigante",
+  "wrestler": "El Gigante",
+  "elo": 1025.967521139564,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Satoru Sayama",
+  "wrestler": "Tiger Mask I / Satoru Sayama",
+  "elo": 1025.4495399241175,
+  "opponent": "Jushin Thunder Liger",
+  "result": "draw"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1169.5892443407615,
+  "opponent": "Satoru Sayama",
+  "result": "draw"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1008.7094943164948,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1136.5957494454447,
+  "opponent": "Yoshiaki Yatsu",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Rick Rude",
+  "wrestler": "Rick Rude",
+  "elo": 1121.2404914581932,
+  "opponent": "Sting",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 918.6892944752784,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1117.7891863088826,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1089.8873816677276,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1198.1236721539715,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1062.55482598224,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1250.7195640122645,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 988.4255752123621,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/01",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1014.3773768462728,
+  "opponent": "Great Muta",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/26",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 1039.2314797866745,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/26",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 906.7750113994548,
+  "opponent": "Dean Malenko",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/26",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1206.8223516474375,
+  "opponent": "Shinjiro Otani",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/26",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1042.4584841742885,
+  "opponent": "Wild Pegasus",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/26",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1096.9532089795948,
+  "opponent": "Dave Finlay",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/26",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1127.232641160309,
+  "opponent": "Brad Armstrong",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/27",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1214.8089201274972,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/27",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1136.8784827328127,
+  "opponent": "Dave Finlay",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/28",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1071.4052429892442,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/28",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1215.4019395911423,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/28",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 993.3142499440593,
+  "opponent": "Masayoshi Motegi",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/28",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1039.233230888392,
+  "opponent": "Dean Malenko",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/29",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 997.3792826771712,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/29",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 1057.0089157887962,
+  "opponent": "Masayoshi Motegi",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/29",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1081.6760268753662,
+  "opponent": "Dean Malenko",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/29",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1062.1561794797801,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/29",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1098.5615775758029,
+  "opponent": "Brad Armstrong",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/30",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 957.8741443272863,
+  "opponent": "Shinjiro Otani",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/30",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1110.9103813391291,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/30",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1096.8515848070826,
+  "opponent": "TAKA Michinoku",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/30",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1227.9275735231952,
+  "opponent": "Dave Finlay",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/30",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 1007.7496123893526,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/05/30",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1111.4154828792236,
+  "opponent": "Super Delfin",
+  "result": "won"
+ },
+ {
+  "date": "1994/05/31",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1012.9238188048531,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/01",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1247.8108221550387,
+  "opponent": "Dean Malenko",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/01",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1034.3026938301366,
+  "opponent": "Super Delfin",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/01",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 1070.2985033662985,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/01",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 892.9227656898449,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/01",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1257.1611962086229,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/02",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 949.6022860923676,
+  "opponent": "Dave Finlay",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/02",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 918.6990489306793,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/02",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1073.4777892267437,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/03",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1078.5699520000016,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/03",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 883.0083149701958,
+  "opponent": "Super Delfin",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/03",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 1103.5954889273844,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/03",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1134.408934194555,
+  "opponent": "Masayoshi Motegi",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/04",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 1107.6763373737588,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/06",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1211.5127433133666,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/06",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1151.1661096833457,
+  "opponent": "Wild Pegasus",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/06",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 1032.878847700389,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/06",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1068.2940282774189,
+  "opponent": "Super Delfin",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/06",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 844.9210731734936,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/06",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1153.452555092906,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/08",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 1006.537453603992,
+  "opponent": "Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/08",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1224.683440361565,
+  "opponent": "Super Delfin",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/08",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1091.4369204937418,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/08",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1130.3096628765832,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/08",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1031.3281012051377,
+  "opponent": "Mike Enos",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/09",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1176.6498419531404,
+  "opponent": "Dave Finlay",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/09",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1227.6563613975445,
+  "opponent": "Masayoshi Motegi",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/09",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1102.9305955435466,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/10",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 1056.5265255423737,
+  "opponent": "Dean Malenko",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/10",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1065.8090086413563,
+  "opponent": "Shinjiro Otani",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/10",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1015.6352752574726,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/10",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1194.0482677444088,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/10",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1170.1467828498182,
+  "opponent": "Wild Pegasus",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/11",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1033.621103721573,
+  "opponent": "Masayoshi Motegi; Masayoshi Motegi",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/11",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1191.546523840294,
+  "opponent": "El Samurai",
+  "result": "draw"
+ },
+ {
+  "date": "1994/06/11",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1179.1515858572552,
+  "opponent": "Wild Pegasus",
+  "result": "draw"
+ },
+ {
+  "date": "1994/06/13",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 990.8847817992607,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1139.0048969816798,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/13",
+  "wrestling_as": "Super Delfin",
+  "wrestler": "Super Delfin",
+  "elo": 1022.318796994913,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/13",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1204.3545113972789,
+  "opponent": "Super Delfin",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/15",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1156.5390153052522,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/15",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1277.9535246329824,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/30",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1163.4385372932907,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/30",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1238.726089177933,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/30",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 967.388044871499,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/06/30",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1045.326364524898,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1994/06/30",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1174.9898384817097,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/01",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 940.8491322108077,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/01",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1170.7966483737257,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/01",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1062.1655467517871,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/01",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1254.9266345366032,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/02",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1195.503422123364,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/02",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1102.2895641044915,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/02",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 892.4098886694975,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/02",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1163.224518752335,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/02",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1291.4170627516955,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/03",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 779.1236723377945,
+  "opponent": "Michiyoshi Ohara; Shinjiro Otani (winner), Akira Nogami, American Machine, Black Cat, Black Tiger, Flying Scorpio, Manabu Nakanishi, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/03",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1032.3971455227772,
+  "opponent": "Akitoshi Saito; Shinjiro Otani (winner), American Machine, Black Cat, Black Tiger, Flying Scorpio, Manabu Nakanishi, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/03",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1102.7660291136108,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/03",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1063.1236573830035,
+  "opponent": "Shinjiro Otani (winner), Akira Nogami, American Machine, Black Cat, Flying Scorpio, Manabu Nakanishi, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/03",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1043.4295682603804,
+  "opponent": "Shinjiro Otani (winner), Akira Nogami, American Machine, Black Cat, Black Tiger, Flying Scorpio, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/03",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1051.463773483245,
+  "opponent": "Akira Nogami, American Machine, Black Cat, Black Tiger, Flying Scorpio, Manabu Nakanishi, Takayuki Iizuka, Tatsuhito Takaiwa, Tokimitsu Ishizawa, Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/03",
+  "wrestling_as": "Max Moon",
+  "wrestler": "Max Moon",
+  "elo": 1038.8199539981686,
+  "opponent": "Power Warrior",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/03",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1267.4110229396867,
+  "opponent": "Max Moon",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/04",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1095.1767310964287,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/04",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 908.0188386498794,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/04",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1014.061384585203,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/04",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Junji Hirata",
+  "elo": 1105.8687341778432,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/05",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 747.0700064635462,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1185.668182185609,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/05",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 988.0324327921477,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/05",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1221.5323739164194,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/06",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 859.8883960723701,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/06",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1030.228323965851,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/06",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1052.9808399227256,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/06",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1237.0527113322535,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/08",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 982.0850310651944,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/08",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1080.540438423434,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/08",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1104.9109296306167,
+  "opponent": "Takayuki Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/08",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 933.1853329396737,
+  "opponent": "The Great Kabuki",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/08",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1126.8083359040645,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/08",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 996.6439407825194,
+  "opponent": "Yoshiaki Yatsu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/08",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1065.046393456701,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/08",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1221.4408814203523,
+  "opponent": "The Great Sasuke",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1034.451233626272,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1235.777093298718,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1276.1510944167335,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 996.5364714585363,
+  "opponent": "Yoshiaki Yatsu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1111.9394902585452,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1052.18252809455,
+  "opponent": "Shinichi Nakano",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1177.5128907944222,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1038.538170894756,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1178.5980169741226,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1101.7402556631378,
+  "opponent": "Lord Steven Regal",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/09",
+  "wrestling_as": "Lord Steven Regal",
+  "wrestler": "Lord Steven Regal",
+  "elo": 1073.249582818572,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/14",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1006.3201906039708,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/14",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1130.4827543698398,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/14",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 934.1790011119808,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/14",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1044.549970735733,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/15",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1001.8702630334955,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/15",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 961.7998012267662,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/15",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1089.0703601129376,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/15",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1174.1630160491588,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/17",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1003.4699827809632,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/17",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1113.4066997863372,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/17",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1094.94154819253,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/17",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1065.290763369008,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/17",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1303.3068611236604,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/18",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1055.985545478197,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/18",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1084.4596238229612,
+  "opponent": "Michiyoshi Ohara",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/18",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 951.9690286005035,
+  "opponent": "Akitoshi Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/18",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1215.909714408271,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/18",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1237.6024781028232,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/18",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1142.3879959968283,
+  "opponent": "Power Warrior",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/19",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1153.6235085371147,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/19",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1058.0347064012235,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/19",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1186.6428537000963,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/19",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1243.7510930689616,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/19",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1227.4658517207258,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/20",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1238.3049136272593,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/20",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1112.1013488696635,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/20",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1307.4580689320148,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/21",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1034.163746710843,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/21",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1120.2125833366829,
+  "opponent": "Akitoshi Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/21",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1242.9641846141633,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/21",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1188.8087614874808,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1994/07/21",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1240.8447595416767,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1994/07/21",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1136.0215371426616,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 939.4949886099355,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1200.9028295909534,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1274.2376685491704,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1255.2495622531696,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1217.6289432131173,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1263.6401550283053,
+  "opponent": "Power Warrior",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "El Gigante",
+  "wrestler": "El Gigante",
+  "elo": 1072.2374374610376,
+  "opponent": "Nailz",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1077.9148670400748,
+  "opponent": "Yoshiaki Yatsu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1216.460732345767,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1082.5845740485324,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1165.5383119637927,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1116.3105970301133,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/03",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1262.4075488224623,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1103.1890073521972,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1140.2641716516703,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1194.7477318677313,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1284.120549300498,
+  "opponent": "Yoshiaki Yatsu",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1037.4229513669693,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1161.4722197116764,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1196.0115386455814,
+  "opponent": "Gran Hamada",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Gran Hamada",
+  "wrestler": "Gran Hamada",
+  "elo": 1079.531109306273,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1180.368709407684,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1284.1742752115747,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 914.0769176359541,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1280.5921862926657,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1227.5530714340919,
+  "opponent": "Power Warrior",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/04",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1245.325434032195,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 892.8424930362621,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1289.4828813614977,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1199.1786040660472,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1237.1176441437735,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1278.063219207504,
+  "opponent": "Power Warrior",
+  "result": "draw"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1247.8544011173567,
+  "opponent": "Shinya Hashimoto",
+  "result": "draw"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1093.3124699757086,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1208.423921387638,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1066.0685906037934,
+  "opponent": "Yoshiaki Yatsu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1231.8681486161352,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1243.8528013282018,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/05",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1117.9584473115615,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 863.569798061691,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1213.8149515533328,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1212.889970072904,
+  "opponent": "Power Warrior",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1272.0820751882263,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1263.661466395858,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1303.8846341731437,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1046.8533739028903,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1164.4175433843798,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1205.1837565826022,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1235.108313421171,
+  "opponent": "Yoshiaki Yatsu",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1207.0710043070299,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/06",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1139.6321846461371,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1058.1178230238945,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 846.1818350335815,
+  "opponent": "Power Warrior",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1249.7748522969157,
+  "opponent": "Takayuki Iizuka; Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1219.2918515838296,
+  "opponent": "Shinya Hashimoto",
+  "result": "draw"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1297.482752662218,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1235.0991297439405,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1242.3772882052504,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1018.4041570534189,
+  "opponent": "Riki Choshu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1221.2956127317655,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1177.2637796321233,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1220.2574972853379,
+  "opponent": "Yoshiaki Yatsu",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1103.0365737886698,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/07",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1280.0603324982428,
+  "opponent": "Yoshiaki Fujiwara; Power Warrior",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/20",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 944.3431269102988,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/20",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1097.5841113515485,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/20",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1023.0035772951892,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/20",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1212.133554040263,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/20",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1152.6447753658992,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/20",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1264.0606698450915,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/22",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1042.8656399618694,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/22",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 983.5747067468942,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/22",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1137.0129818998435,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/23",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 989.2483713692329,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/23",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1143.7301872926846,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/23",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1019.5587914491683,
+  "opponent": "Power Warrior",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/23",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1261.4282765532662,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/26",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1049.4753666659233,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/27",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 902.7455461257081,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/27",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1158.6049538823816,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/27",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 973.156316908505,
+  "opponent": "Takayuki Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/27",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 998.8199345484181,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/27",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1171.272536844664,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/27",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1033.6910629917018,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/27",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 828.6078568761351,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/27",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1168.2850449640168,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/27",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 979.7235663064089,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/27",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1231.3308456488812,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/28",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 978.801431243725,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/28",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1170.5660966228838,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/28",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 781.7250835159348,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/08/28",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 949.6283194859084,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/08/28",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1058.3362010182752,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/17",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1030.0247968583878,
+  "opponent": "Norio Honaga (winner), El Samurai, Gran Hamada, Jushin Thunder Liger, Shinjiro Otani, Tokimitsu Ishizawa, Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/17",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1165.7198929590731,
+  "opponent": "Norio Honaga (winner), Black Tiger, Gran Hamada, Jushin Thunder Liger, Shinjiro Otani, Tokimitsu Ishizawa, Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/17",
+  "wrestling_as": "Gran Hamada",
+  "wrestler": "Gran Hamada",
+  "elo": 1074.7736682484115,
+  "opponent": "Norio Honaga (winner), Black Tiger, El Samurai, Jushin Thunder Liger, Shinjiro Otani, Tokimitsu Ishizawa, Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/17",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1162.8290317549202,
+  "opponent": "Norio Honaga (winner), Black Tiger, El Samurai, Gran Hamada, Shinjiro Otani, Tokimitsu Ishizawa, Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/17",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 779.9180629586964,
+  "opponent": "Norio Honaga (winner), Black Tiger, El Samurai, Gran Hamada, Jushin Thunder Liger, Tokimitsu Ishizawa, Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/17",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1185.9890978700132,
+  "opponent": "Norio Honaga (winner), Black Tiger, El Samurai, Gran Hamada, Jushin Thunder Liger, Shinjiro Otani, Tokimitsu Ishizawa",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/17",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 979.2134325149449,
+  "opponent": "Black Tiger, El Samurai, Gran Hamada, Jushin Thunder Liger, Shinjiro Otani, Tokimitsu Ishizawa, Wild Pegasus",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/17",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1110.7714305189681,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/17",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1161.4092539562478,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/19",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1006.1307498856835,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/19",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1240.2111249873183,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/19",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1303.909877356016,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/20",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1039.8325989739092,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1052.7274116589613,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 748.9550792019459,
+  "opponent": "Gran Hamada",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Gran Hamada",
+  "wrestler": "Gran Hamada",
+  "elo": 1090.2551601267867,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1104.3081612114079,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1161.557444332182,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1211.478662064399,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1323.7620609404983,
+  "opponent": "Great Muta",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1239.0133319414606,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1319.8976972740236,
+  "opponent": "Power Warrior",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Willem Ruska",
+  "wrestler": "Willem Ruska",
+  "elo": 952.067890617988,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/23",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1062.3094862282849,
+  "opponent": "Willem Ruska",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/24",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 988.6068436458193,
+  "opponent": "Gran Hamada",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/24",
+  "wrestling_as": "Gran Hamada",
+  "wrestler": "Gran Hamada",
+  "elo": 1131.6731133393553,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/24",
+  "wrestling_as": "Yoshiaki Fujiwara",
+  "wrestler": "Yoshiaki Fujiwara",
+  "elo": 1121.9856642112977,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/24",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1254.8850198043826,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/24",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1330.4755385383232,
+  "opponent": "Hawk Warrior",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/26",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 993.6436472756864,
+  "opponent": "Great Muta",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/26",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1223.8589169532654,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/26",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1294.1874587238135,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/26",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1233.9854135852672,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/27",
+  "wrestling_as": "Gran Hamada",
+  "wrestler": "Gran Hamada",
+  "elo": 1061.0400592332219,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/27",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1135.6953918329891,
+  "opponent": "Gran Hamada; Shinjiro Otani; Wild Pegasus",
+  "result": "won"
+ },
+ {
+  "date": "1994/09/27",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1092.2315032804163,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/27",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1029.2058074286617,
+  "opponent": "El Samurai; Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/27",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 718.8904845254983,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/27",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1183.470219828984,
+  "opponent": "Black Tiger; Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/27",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1271.0340896111472,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/09/27",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1343.0510663866899,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/09",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1003.5345112206998,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/09",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1107.5291014565369,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/10",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1077.5490684891936,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/10",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1269.8750362880544,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/11",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1076.4946453478626,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/11",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1240.9973095388182,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/12",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1079.662405696394,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/12",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 983.1497859162637,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/12",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1250.4034876395363,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/13",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1112.210154593928,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/14",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1081.1113633871737,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/14",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1265.9528832429135,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/15",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1030.4470033553453,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/15",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1127.159005379691,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/17",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1013.7239691294798,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/17",
+  "wrestling_as": "Great Muta",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1242.3983904794998,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/19",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 790.9934729972808,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/19",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1048.454033031762,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/19",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1179.4728620816434,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/20",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1018.346796687382,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/21",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1024.573710121101,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/24",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 867.6804263647284,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/25",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 950.2270679596835,
+  "opponent": "Black Cat",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/26",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 995.8649310024529,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/26",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1083.0361053846545,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/27",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1186.2429395909528,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/28",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 959.3703185010768,
+  "opponent": "Lord Steven Regal",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/28",
+  "wrestling_as": "Lord Steven Regal",
+  "wrestler": "Lord Steven Regal",
+  "elo": 1112.6991988659133,
+  "opponent": "Takayuki Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/30",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 977.594453705912,
+  "opponent": "Lord Steven Regal",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/30",
+  "wrestling_as": "Lord Steven Regal",
+  "wrestler": "Lord Steven Regal",
+  "elo": 1148.828714289481,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1994/10/30",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 840.1230242251721,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/10/30",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1200.021640660731,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/05",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 780.0028038343573,
+  "opponent": "El Samurai; Tadao Yasuda (winner), Akira Nogami, El Samurai, Hiroshi Hase, Keiji Muto, Manabu Nakanishi, Satoshi Kojima, Shinya Hashimoto, Takayuki Iizuka, Tatsuhito Takaiwa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/05",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1021.1841381392409,
+  "opponent": "Shinjiro Otani; Tadao Yasuda (winner), Akira Nogami, Hiroshi Hase, Keiji Muto, Manabu Nakanishi, Satoshi Kojima, Shinjiro Otani, Shinya Hashimoto, Takayuki Iizuka, Tatsuhito Takaiwa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/05",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 976.2500561903624,
+  "opponent": "Tadao Yasuda (winner), El Samurai, Hiroshi Hase, Keiji Muto, Manabu Nakanishi, Satoshi Kojima, Shinjiro Otani, Shinya Hashimoto, Takayuki Iizuka, Tatsuhito Takaiwa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/05",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1261.6723721599415,
+  "opponent": "Tadao Yasuda (winner), Akira Nogami, El Samurai, Keiji Muto, Manabu Nakanishi, Satoshi Kojima, Shinjiro Otani, Shinya Hashimoto, Takayuki Iizuka, Tatsuhito Takaiwa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/05",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1238.1608033538575,
+  "opponent": "Tadao Yasuda (winner), Akira Nogami, El Samurai, Hiroshi Hase, Manabu Nakanishi, Satoshi Kojima, Shinjiro Otani, Shinya Hashimoto, Takayuki Iizuka, Tatsuhito Takaiwa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/05",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1123.1875222261863,
+  "opponent": "Tadao Yasuda (winner), Akira Nogami, El Samurai, Hiroshi Hase, Keiji Muto, Satoshi Kojima, Shinjiro Otani, Shinya Hashimoto, Takayuki Iizuka, Tatsuhito Takaiwa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/05",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 947.0020730000753,
+  "opponent": "Tadao Yasuda (winner), Akira Nogami, El Samurai, Hiroshi Hase, Keiji Muto, Manabu Nakanishi, Shinjiro Otani, Shinya Hashimoto, Takayuki Iizuka, Tatsuhito Takaiwa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/05",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1338.697251863811,
+  "opponent": "Tadao Yasuda (winner), Akira Nogami, El Samurai, Hiroshi Hase, Keiji Muto, Manabu Nakanishi, Satoshi Kojima, Shinjiro Otani, Takayuki Iizuka, Tatsuhito Takaiwa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/05",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 956.1485760032541,
+  "opponent": "Tadao Yasuda (winner), Akira Nogami, El Samurai, Hiroshi Hase, Keiji Muto, Manabu Nakanishi, Satoshi Kojima, Shinjiro Otani, Shinya Hashimoto, Tatsuhito Takaiwa, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/06",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 915.6081812274683,
+  "opponent": "Power Warrior",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/06",
+  "wrestling_as": "Power Warrior",
+  "wrestler": "Power Warrior",
+  "elo": 1246.8618048846124,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/06",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1026.7453871890011,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/06",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1017.3468193100364,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/06",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 978.6827080079119,
+  "opponent": "Yuki Ishikawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/06",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1265.162529069769,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/06",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 766.648450405318,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/06",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1241.4993917111174,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/06",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1100.7539086256172,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/06",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1349.9140586640956,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/13",
+  "wrestling_as": "Animal Hamaguchi",
+  "wrestler": "Animal Hamaguchi",
+  "elo": 1029.4211269697912,
+  "opponent": "Michiyoshi Ohara",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/13",
+  "wrestling_as": "The Great Kabuki",
+  "wrestler": "The Great Kabuki",
+  "elo": 1065.1753882508524,
+  "opponent": "Yoshiaki Yatsu",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/13",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 1216.9993210118876,
+  "opponent": "The Great Kabuki",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/13",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1250.8438034039928,
+  "opponent": "Isao Takagi",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/13",
+  "wrestling_as": "Willem Ruska",
+  "wrestler": "Willem Ruska",
+  "elo": 1007.6769766295,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/13",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1230.320372276914,
+  "opponent": "Tiger Jeet Singh",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/16",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1104.1297134398546,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/16",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 707.0752751285756,
+  "opponent": "Satoshi Kojima",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/16",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 975.1813565042107,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/16",
+  "wrestling_as": "Perro Aguayo",
+  "wrestler": "Perro Aguayo",
+  "elo": 958.6950930931448,
+  "opponent": "Gran Hamada",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/16",
+  "wrestling_as": "Gran Hamada",
+  "wrestler": "Gran Hamada",
+  "elo": 1102.344966140077,
+  "opponent": "Perro Aguayo",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/17",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 981.6567990823611,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/17",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1094.1504410472696,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/17",
+  "wrestling_as": "Perro Aguayo",
+  "wrestler": "Perro Aguayo",
+  "elo": 988.7413395857175,
+  "opponent": "Norio Honaga",
+  "result": "draw"
+ },
+ {
+  "date": "1994/11/17",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1184.9985174144447,
+  "opponent": "Perro Aguayo",
+  "result": "draw"
+ },
+ {
+  "date": "1994/11/18",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1210.6352279166708,
+  "opponent": "El Hijo del Santo",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/18",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 883.4490784614328,
+  "opponent": "The Great Sasuke",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/19",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1113.008722918385,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/19",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1096.9992493363563,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/19",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 971.2978742034978,
+  "opponent": "Perro Aguayo",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/19",
+  "wrestling_as": "Perro Aguayo",
+  "wrestler": "Perro Aguayo",
+  "elo": 1044.1888525712209,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/21",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1124.0690576787913,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/23",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1132.8714787455299,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/23",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 951.1605977421266,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/23",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1220.7038661473564,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/23",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1355.7997123155158,
+  "opponent": "Tim Horner",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/23",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 961.918012719459,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/23",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1277.713256781281,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/24",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 903.3312180861957,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/24",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1138.9274515673346,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/24",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 911.2353113713259,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/25",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1039.0502588133097,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/25",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1168.5050992042154,
+  "opponent": "Tim Horner",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/25",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1138.8081529044862,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/25",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1243.0348996096054,
+  "opponent": "Wild Pegasus",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/28",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1011.4478721362287,
+  "opponent": "Tim Horner",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/30",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 817.0113102617055,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/30",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 994.3205516543717,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/30",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1142.7195224497125,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/30",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1243.3914410189568,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/30",
+  "wrestling_as": "Gran Hamada",
+  "wrestler": "Gran Hamada",
+  "elo": 1043.3355747809508,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/30",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1098.059650172436,
+  "opponent": "Gran Hamada",
+  "result": "won"
+ },
+ {
+  "date": "1994/11/30",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1058.406338464894,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1994/11/30",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1077.110591350126,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/02",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 958.9998325772369,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/02",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1095.9932824962052,
+  "opponent": "Ron Simmons",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/02",
+  "wrestling_as": "Ron Simmons",
+  "wrestler": "Ron Simmons",
+  "elo": 1072.5118167080102,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/03",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 835.9549855273134,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/03",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1000.923574326752,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/03",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1113.5315413150618,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/03",
+  "wrestling_as": "Ron Simmons",
+  "wrestler": "Ron Simmons",
+  "elo": 1056.1388634783602,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/03",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1363.9861889303409,
+  "opponent": "Ron Simmons",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/05",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1116.725076751493,
+  "opponent": "Tokimitsu Ishizawa",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/05",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 806.7438632646076,
+  "opponent": "Wild Pegasus",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/05",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1157.3250835810654,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/06",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 915.0040311945019,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/06",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1044.9193757094872,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/06",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1147.4528886065505,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/07",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1007.9936355157242,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/07",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 760.8859861822885,
+  "opponent": "Akira Nogami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/07",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1040.275757851196,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/07",
+  "wrestling_as": "Wild Pegasus",
+  "wrestler": "Wild Pegasus",
+  "elo": 1122.3642723234132,
+  "opponent": "Hiroshi Hase",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/07",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1282.6429346985951,
+  "opponent": "Wild Pegasus",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/07",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1249.1375356615615,
+  "opponent": "Flying Scorpio",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/08",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 773.342670602304,
+  "opponent": "Shinjiro Otani",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/08",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 902.5473467744864,
+  "opponent": "Satoshi Kojima",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/08",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1125.5100358096415,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/08",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1020.7331561966024,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/08",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1255.4845507753992,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/08",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1111.6824990228295,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/08",
+  "wrestling_as": "Keiji Muto",
+  "wrestler": "Great Muta / Keiji Muto",
+  "elo": 1267.0227304534221,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/09",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 930.6691479312167,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/09",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 831.9984702529019,
+  "opponent": "Takayuki Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/09",
+  "wrestling_as": "Takayuki Iizuka",
+  "wrestler": "Takayuki Iizuka",
+  "elo": 1043.2680737765165,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/09",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1039.8197143222856,
+  "opponent": "Akira Nogami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/09",
+  "wrestling_as": "Akira Nogami",
+  "wrestler": "Akira Nogami",
+  "elo": 1098.5156937013464,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/11",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 864.4625109844538,
+  "opponent": "Tatsuhito Takaiwa",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/11",
+  "wrestling_as": "Satoshi Kojima",
+  "wrestler": "Satoshi Kojima",
+  "elo": 1052.804616653138,
+  "opponent": "Tim Horner",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/11",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger",
+  "elo": 1017.4016336187851,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/11",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1266.6935911271494,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/11",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1234.970607327799,
+  "opponent": "Junji Hirata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/11",
+  "wrestling_as": "Junji Hirata",
+  "wrestler": "Super Strong Machine / Junji Hirata",
+  "elo": 1177.9956987445398,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/12",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1205.9072911663668,
+  "opponent": "Junji Hirata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/12",
+  "wrestling_as": "Junji Hirata",
+  "wrestler": "Super Strong Machine / Junji Hirata",
+  "elo": 1236.1223310674043,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/12",
+  "wrestling_as": "Gran Hamada",
+  "wrestler": "Gran Hamada",
+  "elo": 1021.6783067528143,
+  "opponent": "Norio Honaga",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/12",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1277.5222251412176,
+  "opponent": "Gran Hamada",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/13",
+  "wrestling_as": "Norio Honaga",
+  "wrestler": "Norio Honaga",
+  "elo": 1231.7664343221245,
+  "opponent": "Shinjiro Otani",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/13",
+  "wrestling_as": "Shinjiro Otani",
+  "wrestler": "Shinjiro Otani",
+  "elo": 1047.4856742608267,
+  "opponent": "Norio Honaga",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/13",
+  "wrestling_as": "Riki Choshu",
+  "wrestler": "Riki Choshu",
+  "elo": 1200.3198796143788,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1298.6889898986676,
+  "opponent": "Riki Choshu",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/13",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1183.075973516283,
+  "opponent": "Junji Hirata",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/13",
+  "wrestling_as": "Junji Hirata",
+  "wrestler": "Super Strong Machine / Junji Hirata",
+  "elo": 1258.953648717488,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1994/12/13",
+  "wrestling_as": "Hiroshi Hase",
+  "wrestler": "Hiroshi Hase",
+  "elo": 1263.3914012972434,
+  "opponent": "Shinya Hashimoto",
+  "result": "lost"
+ },
+ {
+  "date": "1994/12/13",
+  "wrestling_as": "Shinya Hashimoto",
+  "wrestler": "Shinya Hashimoto",
+  "elo": 1383.2377223316926,
+  "opponent": "Hiroshi Hase",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Shinya Hashimoto",
+ "Masahiro Chono",
+ "Tatsumi Fujinami",
+ "Riki Choshu",
+ "Hiroshi Hase",
+ "Norio Honaga",
+ "Power Warrior",
+ "Great Muta / Keiji Muto",
+ "Super Strong Machine / Junji Hirata",
+ "Wild Pegasus",
+ "Kengo Kimura",
+ "Shiro Koshinaka",
+ "Jushin Thunder Liger",
+ "Scott Norton",
+ "Yoshiaki Yatsu",
+ "Akitoshi Saito",
+ "El Samurai",
+ "The Great Kabuki",
+ "Tatsutoshi Goto",
+ "Osamu Kido",
+ "Satoshi Kojima",
+ "Manabu Nakanishi",
+ "Black Tiger",
+ "Yoshiaki Fujiwara",
+ "Dean Malenko",
+ "Lord Steven Regal",
+ "Gran Hamada",
+ "Hiro Saito",
+ "Rick Rude",
+ "Michiyoshi Ohara",
+ "Shinjiro Otani",
+ "Super Delfin",
+ "Dave Finlay",
+ "Akira Nogami",
+ "The Great Sasuke",
+ "Genichiro Tenryu",
+ "Killer Bee",
+ "Yuji Nagata",
+ "Ron Simmons",
+ "El Gigante",
+ "Max Moon",
+ "Gedo",
+ "Antonio Inoki",
+ "Koki Kitahara",
+ "Takayuki Iizuka",
+ "Mike Enos",
+ "Brutus Beefcake",
+ "Hulk Hogan",
+ "Hiromichi Fuyuki",
+ "Kuniaki Kobayashi",
+ "Perro Aguayo",
+ "Bobby Eaton",
+ "Tokimitsu Ishizawa",
+ "The Barbarian",
+ "Nobukazu Hirai",
+ "Animal Hamaguchi",
+ "Yuki Ishikawa",
+ "Tiger Mask I / Satoru Sayama",
+ "Ricky Fuji",
+ "Tim Horner",
+ "Willem Ruska",
+ "Black Cat",
+ "Flying Scorpio",
+ "American Machine",
+ "Hawk Warrior",
+ "Scorpio Jr.",
+ "Isao Takagi",
+ "Tiger Jeet Singh",
+ "Tadao Yasuda",
+ "Hayabusa",
+ "El Hijo del Santo",
+ "TAKA Michinoku",
+ "Brad Armstrong",
+ "Sting",
+ "Villano V",
+ "Hercules Hernandez",
+ "Rambo",
+ "Nailz",
+ "Tiger Mask",
+ "Tatsuhito Takaiwa / Black Tiger V",
+ "Ashura Hara",
+ "Negro Casas",
+ "Masayoshi Motegi",
+ "Masao Orihara",
+ "Shinichi Nakano",
+ "Yutaka Yoshie"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7381 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2002/01/04",
+  "wrestling_as": "Giant Silva",
+  "wrestler": "Giant Silva",
+  "elo": 950.0,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/04",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1050.0,
+  "opponent": "Giant Silva",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/04",
+  "wrestling_as": "Daijiro Matsui",
+  "wrestler": "Daijiro Matsui",
+  "elo": 950.0,
+  "opponent": "Kendo Kashin",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/04",
+  "wrestling_as": "Kendo Kashin",
+  "wrestler": "Kendo Kashin",
+  "elo": 1050.0,
+  "opponent": "Daijiro Matsui",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/04",
+  "wrestling_as": "Naoya Ogawa",
+  "wrestler": "Naoya Ogawa",
+  "elo": 1000.0,
+  "opponent": "Kensuke Sasaki",
+  "result": "draw"
+ },
+ {
+  "date": "2002/01/04",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1000.0,
+  "opponent": "Naoya Ogawa",
+  "result": "draw"
+ },
+ {
+  "date": "2002/01/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 950.0,
+  "opponent": "Jun Akiyama",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/04",
+  "wrestling_as": "Jun Akiyama",
+  "wrestler": "Jun Akiyama",
+  "elo": 1050.0,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 950.0,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1050.0,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 950.0,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1050.0,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 942.8536882591618,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1007.1463117408382,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 957.1463117408382,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1092.8536882591618,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 997.7272727272727,
+  "opponent": "Masahito Kakihara (winner), Gedo, Gran Naniwa, Jado, Jushin Thunder Liger, Katsushi Takemura, Katsuyori Shibata, Koji Kanemoto, Masayuki Naruse, Minoru Tanaka, Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 997.7421394127759,
+  "opponent": "Masahito Kakihara (winner), El Samurai, Gran Naniwa, Jado, Jushin Thunder Liger, Katsushi Takemura, Katsuyori Shibata, Koji Kanemoto, Masayuki Naruse, Minoru Tanaka, Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Gran Naniwa",
+  "wrestler": "Gran Naniwa",
+  "elo": 997.7569075932012,
+  "opponent": "Masahito Kakihara (winner), El Samurai, Gedo, Jado, Jushin Thunder Liger, Katsushi Takemura, Katsuyori Shibata, Koji Kanemoto, Masayuki Naruse, Minoru Tanaka, Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 997.7715767027196,
+  "opponent": "Masahito Kakihara (winner), El Samurai, Gedo, Gran Naniwa, Jushin Thunder Liger, Katsushi Takemura, Katsuyori Shibata, Koji Kanemoto, Masayuki Naruse, Minoru Tanaka, Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 997.7861462278814,
+  "opponent": "Masahito Kakihara (winner), El Samurai, Gedo, Gran Naniwa, Jado, Katsushi Takemura, Katsuyori Shibata, Koji Kanemoto, Masayuki Naruse, Minoru Tanaka, Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 997.8006157062905,
+  "opponent": "Masahito Kakihara (winner), El Samurai, Gedo, Gran Naniwa, Jado, Jushin Thunder Liger, Katsuyori Shibata, Koji Kanemoto, Masayuki Naruse, Minoru Tanaka, Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 997.8149847252722,
+  "opponent": "Masahito Kakihara (winner), El Samurai, Gedo, Gran Naniwa, Jado, Jushin Thunder Liger, Katsushi Takemura, Koji Kanemoto, Masayuki Naruse, Minoru Tanaka, Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 997.8292529205389,
+  "opponent": "Masahito Kakihara (winner), El Samurai, Gedo, Gran Naniwa, Jado, Jushin Thunder Liger, Katsushi Takemura, Katsuyori Shibata, Masayuki Naruse, Minoru Tanaka, Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 997.8434199748546,
+  "opponent": "Masahito Kakihara (winner), El Samurai, Gedo, Gran Naniwa, Jado, Jushin Thunder Liger, Katsushi Takemura, Katsuyori Shibata, Koji Kanemoto, Minoru Tanaka, Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 997.8574856167013,
+  "opponent": "Masahito Kakihara (winner), El Samurai, Gedo, Gran Naniwa, Jado, Jushin Thunder Liger, Katsushi Takemura, Katsuyori Shibata, Koji Kanemoto, Masayuki Naruse, Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 997.8714496189489,
+  "opponent": "Masahito Kakihara (winner), El Samurai, Gedo, Gran Naniwa, Jado, Jushin Thunder Liger, Katsushi Takemura, Katsuyori Shibata, Koji Kanemoto, Masayuki Naruse, Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/24",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1024.1987487735428,
+  "opponent": "El Samurai, Gedo, Gran Naniwa, Jado, Jushin Thunder Liger, Katsushi Takemura, Katsuyori Shibata, Koji Kanemoto, Masayuki Naruse, Minoru Tanaka, Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 947.8026835743461,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1047.8129168572166,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 947.8674158289168,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1047.8474537648867,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Gran Naniwa",
+  "wrestler": "Gran Naniwa",
+  "elo": 947.752642793179,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1047.731537527295,
+  "opponent": "Gran Naniwa",
+  "result": "won"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 948.052105079129,
+  "opponent": "Masahiro Chono (winner), Hiro Saito, Hiroshi Tanahashi, Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Osamu Nishimura, Tatsutoshi Goto, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1047.414931989132,
+  "opponent": "Masahiro Chono (winner), Blue Wolf, Hiroshi Tanahashi, Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Osamu Nishimura, Tatsutoshi Goto, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 940.9802461224625,
+  "opponent": "Masahiro Chono (winner), Blue Wolf, Hiro Saito, Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Osamu Nishimura, Tatsutoshi Goto, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 997.7691750602827,
+  "opponent": "Masahiro Chono (winner), Blue Wolf, Hiro Saito, Hiroshi Tanahashi, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Osamu Nishimura, Tatsutoshi Goto, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 997.7837609688713,
+  "opponent": "Masahiro Chono (winner), Blue Wolf, Hiro Saito, Hiroshi Tanahashi, Hiroyoshi Tenzan, Kenzo Suzuki, Manabu Nakanishi, Osamu Nishimura, Tatsutoshi Goto, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 955.2221344985079,
+  "opponent": "Masahiro Chono (winner), Blue Wolf, Hiro Saito, Hiroshi Tanahashi, Hiroyoshi Tenzan, Kensuke Sasaki, Manabu Nakanishi, Osamu Nishimura, Tatsutoshi Goto, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1090.0662307807145,
+  "opponent": "Masahiro Chono (winner), Blue Wolf, Hiro Saito, Hiroshi Tanahashi, Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Osamu Nishimura, Tatsutoshi Goto, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 997.829022777651,
+  "opponent": "Masahiro Chono (winner), Blue Wolf, Hiro Saito, Hiroshi Tanahashi, Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Tatsutoshi Goto, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 948.1648340688158,
+  "opponent": "Masahiro Chono (winner), Blue Wolf, Hiro Saito, Hiroshi Tanahashi, Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Osamu Nishimura, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1004.9548267420951,
+  "opponent": "Masahiro Chono (winner), Blue Wolf, Hiro Saito, Hiroshi Tanahashi, Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Osamu Nishimura, Tatsutoshi Goto, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1047.5429661011995,
+  "opponent": "Masahiro Chono (winner), Blue Wolf, Hiro Saito, Hiroshi Tanahashi, Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Osamu Nishimura, Tatsutoshi Goto, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/01/25",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1024.219765811139,
+  "opponent": "Blue Wolf, Hiro Saito, Hiroshi Tanahashi, Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Osamu Nishimura, Tatsutoshi Goto, Yuji Nagata, Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/01",
+  "wrestling_as": "Chris Candido",
+  "wrestler": "Chris Candido",
+  "elo": 950.0,
+  "opponent": "Giant Singh",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/01",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1050.0,
+  "opponent": "Chris Candido",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/01",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 875.9300072618264,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/01",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1083.6040150098509,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/01",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 948.1026990777742,
+  "opponent": "Rick Steiner",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/01",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1049.6810618910972,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/01",
+  "wrestling_as": "Giant Silva",
+  "wrestler": "Giant Silva",
+  "elo": 907.1463117408382,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/01",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1042.8536882591618,
+  "opponent": "Giant Silva",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/01",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1028.056986268862,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/01",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1066.9640712539476,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/02",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 847.8213150146819,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/02",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1047.8487843885812,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/02",
+  "wrestling_as": "Chris Candido",
+  "wrestler": "Chris Candido",
+  "elo": 913.7159439362814,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/02",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1084.096972920935,
+  "opponent": "Chris Candido",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/02",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 956.8262284531634,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/02",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1090.9053090741315,
+  "opponent": "GOKU-DO",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/03",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 821.6347972366573,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/03",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1074.5625370017165,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/03",
+  "wrestling_as": "Chris Candido",
+  "wrestler": "Chris Candido",
+  "elo": 826.0607916507797,
+  "opponent": "GOKU-DO",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/03",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 1000.6538045959143,
+  "opponent": "Chris Candido",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/08",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 741.5663097175999,
+  "opponent": "Chris Candido",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/08",
+  "wrestling_as": "Chris Candido",
+  "wrestler": "Chris Candido",
+  "elo": 932.3157969478617,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/08",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 957.404239505845,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/08",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1091.0983494786503,
+  "opponent": "GOKU-DO",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/09",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 786.6509493949284,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/09",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1108.590273399515,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/10",
+  "wrestling_as": "Chris Candido",
+  "wrestler": "Chris Candido",
+  "elo": 792.6853547296292,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/10",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 926.2813916131608,
+  "opponent": "Chris Candido",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/10",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1025.8634166340855,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/10",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1132.3031353774818,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/11",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 854.1834918890709,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/11",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1061.9123664961305,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/11",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 836.4133026388339,
+  "opponent": "Giant Silva",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/11",
+  "wrestling_as": "Giant Silva",
+  "wrestler": "Giant Silva",
+  "elo": 1018.8978431708201,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/11",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 955.236218490526,
+  "opponent": "Rick Steiner",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/11",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1092.2738661782223,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/11",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 955.2296774580102,
+  "opponent": "Giant Singh",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/11",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1092.5394976022726,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/13",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 885.3289733684151,
+  "opponent": "Chris Candido",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/13",
+  "wrestling_as": "Chris Candido",
+  "wrestler": "Chris Candido",
+  "elo": 936.835887004489,
+  "opponent": "GOKU-DO",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/13",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1046.678699831257,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/13",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1086.1103223418006,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/13",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1021.9348693627542,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/13",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1060.0195891748822,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/14",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 799.0339941325997,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/14",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1049.5096182409898,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/14",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 717.3739753735081,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/14",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1098.2064895138465,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/14",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 996.8468964083729,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/14",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1097.6792571877709,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/14",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1036.7425474057436,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/14",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1116.0751281645184,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 985.5681775961036,
+  "opponent": "Daijiro Matsui",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Daijiro Matsui",
+  "wrestler": "Daijiro Matsui",
+  "elo": 1013.9414406448861,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1038.6379233030952,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1066.2326063377486,
+  "opponent": "Rick Steiner; Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 976.8988345525606,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1144.5420273090663,
+  "opponent": "Masahiro Chono; Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 905.2352771602783,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1005.2306187882579,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1042.7329757564312,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1115.4931029322975,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 870.7175791784605,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/02/16",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1066.7495462185188,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/06",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 682.1787143703693,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/06",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 946.3096223363051,
+  "opponent": "Katsushi Takemura; Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/06",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 921.1027608917952,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/06",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 899.1494033965716,
+  "opponent": "Wataru Inoue; Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/06",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 987.6045539268572,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/06",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1091.8709692353175,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/06",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1066.6202282753363,
+  "opponent": "Katsuyori Shibata; Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/06",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 989.1840616453688,
+  "opponent": "Blue Wolf; Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/08",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 891.6220180704616,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/08",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1143.41893029744,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/08",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 781.2862253728126,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/08",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 954.2764806625929,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/09",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 800.08695204126,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/09",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1012.637826920997,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/09",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 638.8052638363466,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/09",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 948.608727694301,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/09",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 927.8672071919666,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/09",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1158.7124088481082,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/10",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 617.9754951709997,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/10",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1023.0527112536704,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/10",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 752.0180622676921,
+  "opponent": "Dan Devine",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/10",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1024.0344448867838,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/10",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 848.3354482747125,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1039.765879458627,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/10",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1095.7785408641137,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/10",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1129.6834142025134,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/14",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 554.7493534516592,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/14",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 815.2442039870326,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/14",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 759.1657616856207,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/14",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1154.4791621410359,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/14",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 949.833884913361,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/14",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 994.7731009553313,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/14",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 988.7866401786628,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/14",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1164.9312189106345,
+  "opponent": "Dan Devine",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/15",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 860.662531618181,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/15",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1032.1902305744472,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/15",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 540.033705975761,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/15",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1002.1309246932805,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/16",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 976.0325623596547,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/16",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1045.3417298601614,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/16",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 798.7468469299267,
+  "opponent": "Eddie Guerrero",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/16",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 1030.9578423441271,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/16",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 763.91749092998,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/16",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1025.6633565285263,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/17",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 532.2759700073291,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/17",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1101.5581251719868,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/17",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 950.2114715277,
+  "opponent": "Dan Devine",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/17",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1040.706093344243,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/17",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 972.1334151276803,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/17",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1017.1342086434227,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/17",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 964.0675382129104,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/17",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1149.167704132163,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/20",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 687.4035257736556,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/20",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 870.5090828418919,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/20",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 728.529182800564,
+  "opponent": "Eddie Guerrero",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/20",
+  "wrestling_as": "Eddie Guerrero",
+  "wrestler": "Eddie Guerrero",
+  "elo": 1048.6519964088352,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/20",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 933.1268186194781,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/20",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1068.5691002687029,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/21",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 525.0025893783032,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/21",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1105.1948154864997,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/21",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 903.9041156791109,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/21",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1187.2835249182297,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/21",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 959.4178297098558,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/21",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1106.8147766278928,
+  "opponent": "Scott Norton",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/21",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 974.2695699884825,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/21",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1175.5030761088417,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/22",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 519.803823357662,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/22",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1157.0785451513564,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/22",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 824.7356269377432,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/22",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1012.2953073608458,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/22",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 865.0622791458898,
+  "opponent": "Giant Singh (winner), Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/22",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 963.9731656316146,
+  "opponent": "Giant Singh (winner), Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/22",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1106.1465507943406,
+  "opponent": "Blue Wolf, Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/24",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 665.921294297564,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/24",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 927.6701676488897,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/24",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 664.2630618009541,
+  "opponent": "Dan Devine",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/24",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1052.2763253305939,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/24",
+  "wrestling_as": "Super J",
+  "wrestler": "Super J",
+  "elo": 944.1861722952311,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/24",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1015.2316574146247,
+  "opponent": "Super J",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/29",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 838.0811494973645,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/29",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1008.7676747073772,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/29",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 490.32854933039545,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/29",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 854.2109009650097,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/03/29",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1010.2084841969112,
+  "opponent": "Jushin Thunder Liger",
+  "result": "draw"
+ },
+ {
+  "date": "2002/03/29",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 999.872969391816,
+  "opponent": "Osamu Nishimura",
+  "result": "draw"
+ },
+ {
+  "date": "2002/03/30",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 801.0990323375139,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/03/30",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1114.269599444039,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1024.2754453639525,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1016.049641210104,
+  "opponent": "Masayuki Naruse",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 778.2720361502086,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1168.492043245009,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 950.419652693542,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1008.5594935415352,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1050.6438702441383,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1080.7599378433233,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1159.9681246786247,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "draw"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1001.5849702280874,
+  "opponent": "Manabu Nakanishi",
+  "result": "draw"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 955.4294735774906,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1031.6778451719813,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1115.7448406953174,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/05",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1166.573012041417,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/13",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 724.1275887505249,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/13",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 977.4918763933839,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/13",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 976.7912240913868,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/13",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1131.1293863540348,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/13",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1091.1717351972866,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/13",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1032.749781625213,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/13",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1009.9045264098306,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/13",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1156.484184529625,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/13",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 968.8029416619762,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/13",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1120.5164897228824,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/16",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 695.1822047100018,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/16",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1047.2224736454746,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/16",
+  "wrestling_as": "Shane",
+  "wrestler": "Shane",
+  "elo": 946.664947820064,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/16",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1030.1262762713227,
+  "opponent": "Shane",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/16",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1035.5975032410986,
+  "opponent": "Dan Devine",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/16",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1107.8505572867819,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/16",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 928.7198096266017,
+  "opponent": "Rick Steiner",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/16",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1078.7210553384698,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/17",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 667.0953403161456,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/17",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1023.9479586067587,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/17",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 979.2843536041499,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/17",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1075.1173680311251,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/18",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 941.8578878105234,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/18",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1105.9955660623295,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/18",
+  "wrestling_as": "Shane",
+  "wrestler": "Shane",
+  "elo": 899.1383104870016,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/18",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1172.9310227986941,
+  "opponent": "Shane",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/18",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1073.6439094131788,
+  "opponent": "Rick Steiner",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/18",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1136.2065322793258,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/19",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 649.5270719213607,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/19",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1082.4280436105712,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/19",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1029.549434896318,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/19",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1151.5634991971367,
+  "opponent": "Masayuki Naruse",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/19",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 886.9267060436715,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/19",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1180.8646764700898,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/22",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 608.8925492466827,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/22",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 927.5612287183495,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/22",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 995.848204516253,
+  "opponent": "Dan Devine",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/22",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1147.5998560116275,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/22",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1005.6219520823106,
+  "opponent": "Giant Singh",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/22",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1147.7470723575045,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/23",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 565.4440202431373,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/23",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 764.740335855381,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/23",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 829.6237962403836,
+  "opponent": "Shane",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/23",
+  "wrestling_as": "Shane",
+  "wrestler": "Shane",
+  "elo": 1011.3724020571414,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/24",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 776.3501218231186,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/24",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1032.2587892909432,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/24",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 885.3238679250131,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/24",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1177.6028649262933,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/25",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 732.2768446651683,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/25",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1017.8848430952281,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/25",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1042.248163302469,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/25",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1191.7433795052389,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/25",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1101.906935018646,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/25",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1223.2957859192747,
+  "opponent": "Dan Devine",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/26",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 731.073050053789,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/26",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1059.081806203265,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/26",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 551.1850886713422,
+  "opponent": "Shane",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/26",
+  "wrestling_as": "Shane",
+  "wrestler": "Shane",
+  "elo": 1018.5018678430389,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/26",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 575.0513948374502,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/26",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 919.1650223342457,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/26",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1139.0387064394365,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/26",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1225.6356958644965,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/27",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 517.1645249085925,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/27",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 788.9599199826466,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/27",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 543.1246285530617,
+  "opponent": "Dan Devine",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/27",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1105.9371650777862,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/27",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 705.8275561200535,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/27",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1072.3064504758222,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/29",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 628.044788539621,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/29",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 704.0397599960874,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/29",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1014.6246595275127,
+  "opponent": "Shane",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/29",
+  "wrestling_as": "Shane",
+  "wrestler": "Shane",
+  "elo": 1076.1836587913485,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/29",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 677.3682703526601,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/29",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1032.114485978925,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/04/29",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 506.9033380698673,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/04/29",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1029.0785520261213,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Daisuke Sekimoto",
+  "wrestler": "Daisuke Sekimoto",
+  "elo": 950.0,
+  "opponent": "Kintaro Kanemura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Kintaro Kanemura",
+  "wrestler": "Kintaro Kanemura",
+  "elo": 1050.0,
+  "opponent": "Daisuke Sekimoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 549.5756211330221,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 782.5089274026863,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1106.9576706311175,
+  "opponent": "Bas Rutten",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Bas Rutten",
+  "wrestler": "Bas Rutten",
+  "elo": 1073.9070058389723,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1184.1274592430545,
+  "opponent": "Don Frye",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Don Frye",
+  "wrestler": "Don Frye",
+  "elo": 1078.3366533524404,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 972.2895770900715,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1194.2834349513455,
+  "opponent": "Yoshihiro Takayama",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Mitsuharu Misawa",
+  "wrestler": "Mitsuharu Misawa",
+  "elo": 1004.5462176448164,
+  "opponent": "Masahiro Chono",
+  "result": "draw"
+ },
+ {
+  "date": "2002/05/02",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1027.131627527165,
+  "opponent": "Mitsuharu Misawa",
+  "result": "draw"
+ },
+ {
+  "date": "2002/05/18",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 905.5279208805711,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/18",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 695.8474963087252,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/18",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 537.7037492847332,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/18",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1035.4853708204623,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/18",
+  "wrestling_as": "Curry Man",
+  "wrestler": "Curry Man",
+  "elo": 949.6793085059851,
+  "opponent": "Jado",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/18",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 1048.0922681967345,
+  "opponent": "Curry Man",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/18",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 950.2444252133737,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/18",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1062.209487234678,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/18",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1186.3535135894092,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/18",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1078.5643645501748,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/19",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 799.7207376194045,
+  "opponent": "GOKU-DO",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/19",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 991.1361566295816,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/19",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 539.2035038165736,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/19",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 675.8685158208198,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/19",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1050.4202167592991,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/19",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 959.7459067629611,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/19",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1022.3963752232651,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/19",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1091.653360147372,
+  "opponent": "AKIRA",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/19",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1003.3335793090869,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/19",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1058.748877317407,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/20",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 670.6836519107035,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/20",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 824.8845820174263,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/20",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 998.4272819118557,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/20",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1100.085203044178,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/20",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 665.812783653774,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/20",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1191.381379672932,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/20",
+  "wrestling_as": "Curry Man",
+  "wrestler": "Curry Man",
+  "elo": 849.8419620258246,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/20",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1000.1630984534539,
+  "opponent": "Curry Man",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/20",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 872.0427925143497,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/20",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 723.2529952136952,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 778.3368478362585,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1055.3883530695089,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "Curry Man",
+  "wrestler": "Curry Man",
+  "elo": 791.3542045546864,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1032.577458044656,
+  "opponent": "Curry Man",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 952.0154272869135,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1012.8046883870529,
+  "opponent": "AKIRA",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 947.0266975966225,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1076.3682483239024,
+  "opponent": "GOKU-DO",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1002.3636340689342,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 901.832447370571,
+  "opponent": "Masayuki Naruse",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 964.1592674187974,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/23",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1136.0890340788344,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/24",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 569.2817951728102,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/24",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 767.2146403916672,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/24",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1048.1735265086065,
+  "opponent": "Curry Man",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/24",
+  "wrestling_as": "Curry Man",
+  "wrestler": "Curry Man",
+  "elo": 967.1852196951421,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/24",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 960.9627794669422,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/24",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1051.8419089201107,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/24",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 977.1655136646898,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/24",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1216.5795000771764,
+  "opponent": "Masayuki Naruse",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/24",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 923.6200762562073,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/24",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1094.8747078241609,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/25",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 523.1082353758558,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/25",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 824.5104076332129,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/25",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 715.8978082967042,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/25",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 977.673843334395,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/25",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 967.3918213633599,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/25",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1053.9913496187994,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/25",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 943.5116478479052,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/25",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1019.0749014827479,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/25",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 842.5117206982012,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/25",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1081.5022722562956,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 514.116483073444,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1092.5195824613315,
+  "opponent": "Toru Yano; Jado",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 784.7467393247607,
+  "opponent": "Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1086.5020624295623,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 875.4469344652528,
+  "opponent": "Katsuyori Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1016.9896348935032,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1042.1864806971873,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1004.8541800581565,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1138.1940542746108,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1175.915630363696,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/26",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1042.2905188939028,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Sachie Abe",
+  "wrestler": "Sachie Abe",
+  "elo": 950.0,
+  "opponent": "The Bloody",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "The Bloody",
+  "wrestler": "The Bloody",
+  "elo": 1050.0,
+  "opponent": "Sachie Abe",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 988.3888266191985,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1204.5164386380006,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1071.6929748282982,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1085.5759809290605,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Yoshiaki Yatsu",
+  "wrestler": "Yoshiaki Yatsu",
+  "elo": 964.9239459332945,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1142.0337246978231,
+  "opponent": "Yoshiaki Yatsu",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1101.9964852493065,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1083.426970321742,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 1003.2718900689667,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1159.431080351103,
+  "opponent": "AKIRA",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1024.5191719833058,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1063.567860674344,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1009.8217271203803,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 982.9018066876283,
+  "opponent": "Scott Norton",
+  "result": "draw"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1121.9271653940646,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/28",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1099.4878970844459,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/29",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 504.0562250089111,
+  "opponent": "Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/29",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1029.5493010155722,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/29",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 801.3098427388499,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/29",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1004.4603672265614,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/29",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 1025.226241506547,
+  "opponent": "Curry Man",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/29",
+  "wrestling_as": "Curry Man",
+  "wrestler": "Curry Man",
+  "elo": 1034.4785606499267,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/29",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 936.4295100170146,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/29",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1083.0265225415778,
+  "opponent": "Masayuki Naruse",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/29",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 681.4141499948043,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/29",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1005.6306557701485,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/30",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 992.0410152065574,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/30",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 863.3851646648451,
+  "opponent": "Gedo",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/30",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 954.5170414245063,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/30",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger III / Black Tiger",
+  "elo": 1054.7975058602117,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/30",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 931.6575769290833,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/30",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 985.740346977968,
+  "opponent": "AKIRA",
+  "result": "won"
+ },
+ {
+  "date": "2002/05/30",
+  "wrestling_as": "Curry Man",
+  "wrestler": "Curry Man",
+  "elo": 989.8137575267617,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/05/30",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1116.3577779514633,
+  "opponent": "Curry Man",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/02",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 749.9582038204685,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/02",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1072.782620821655,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/02",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 945.8014475022169,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/02",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1056.0879265528777,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/02",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 983.8249607978364,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/02",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1126.977261637771,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/02",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 963.6322212782106,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/02",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1215.5705014878793,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/02",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1080.378599255242,
+  "opponent": "Jado",
+  "result": "draw"
+ },
+ {
+  "date": "2002/06/02",
+  "wrestling_as": "Jado",
+  "wrestler": "Jado",
+  "elo": 873.2682001312924,
+  "opponent": "Jushin Thunder Liger",
+  "result": "draw"
+ },
+ {
+  "date": "2002/06/03",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 798.2488137953634,
+  "opponent": "Curry Man",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/03",
+  "wrestling_as": "Curry Man",
+  "wrestler": "Curry Man",
+  "elo": 1022.3819329615026,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/03",
+  "wrestling_as": "Katsuyori Shibata",
+  "wrestler": "Katsuyori Shibata",
+  "elo": 944.077028521569,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/03",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1095.835858829145,
+  "opponent": "Katsuyori Shibata",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/03",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 708.4868098369706,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/03",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1003.6375036793772,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/05",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 767.6950740125101,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/05",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1111.1127287205718,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/05",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 963.6144293582247,
+  "opponent": "Bas Rutten",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/05",
+  "wrestling_as": "Bas Rutten",
+  "wrestler": "Bas Rutten",
+  "elo": 1113.9300801601248,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/05",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1060.1875103085927,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/05",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1201.2400552918168,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/05",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1184.330369012718,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/05",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1189.457526588094,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/07",
+  "wrestling_as": "Minoru Fujita",
+  "wrestler": "Minoru Fujita",
+  "elo": 954.1749962105152,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/07",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1074.903555815606,
+  "opponent": "Minoru Fujita",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/07",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1061.518169298086,
+  "opponent": "Bas Rutten",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/07",
+  "wrestling_as": "Bas Rutten",
+  "wrestler": "Bas Rutten",
+  "elo": 1163.5246395826107,
+  "opponent": "Masayuki Naruse",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/07",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1069.3799694986685,
+  "opponent": "Yoshihiro Takayama",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/07",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1044.9433322892262,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/07",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1170.630145375192,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/07",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1183.1469852273144,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/20",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 917.7114882857122,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/20",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1037.9617481990558,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/20",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 882.624692309671,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/20",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1108.5692509673781,
+  "opponent": "GOKU-DO",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/20",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 955.6979108292957,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/20",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1084.0679686293315,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/21",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 468.0939868670958,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/21",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 803.6573121543254,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/21",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 474.5895846879757,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/21",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 933.450452928132,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/21",
+  "wrestling_as": "Super J",
+  "wrestler": "Super J",
+  "elo": 962.8560297328698,
+  "opponent": "Scott Norton",
+  "result": "draw"
+ },
+ {
+  "date": "2002/06/21",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1000.4867984015609,
+  "opponent": "Super J",
+  "result": "draw"
+ },
+ {
+  "date": "2002/06/21",
+  "wrestling_as": "AKIRA",
+  "wrestler": "AKIRA",
+  "elo": 893.7956277977437,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/21",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1203.2613435783878,
+  "opponent": "AKIRA",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/22",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 451.2482409218437,
+  "opponent": "GOKU-DO",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/22",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 899.4704382549231,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/23",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 428.002319482554,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/23",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 826.9032335936151,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/23",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 809.2196078922983,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/23",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1023.7012832907567,
+  "opponent": "GOKU-DO",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/23",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 462.141787270052,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/23",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 958.2492449201405,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/27",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 337.7969451700538,
+  "opponent": "Katsushi Takemura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/27",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 552.3471615825522,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/27",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 669.6503924047654,
+  "opponent": "Rob Rage",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/27",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 975.1161195453983,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/27",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1007.4704770934696,
+  "opponent": "Super J",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/27",
+  "wrestling_as": "Super J",
+  "wrestler": "Super J",
+  "elo": 1028.1681734610552,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/27",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1052.7940846094577,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/27",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1137.21104909766,
+  "opponent": "Dan Devine",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/28",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 971.0034416776917,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/28",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 850.6798476455538,
+  "opponent": "Masayuki Naruse",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/28",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 939.0944248305775,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/28",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1110.9252505304269,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/29",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 335.4892995804093,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/29",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1112.079073325249,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/06/29",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 784.0814130872574,
+  "opponent": "Dan Devine",
+  "result": "lost"
+ },
+ {
+  "date": "2002/06/29",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1074.2049948626366,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/04",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 331.75411143120675,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/04",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1025.568877365358,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/04",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 535.8641844899211,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/04",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 979.2449302240074,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/05",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 284.5619017332409,
+  "opponent": "Katsushi Takemura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/05",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 583.0563941878869,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/05",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 972.9666614874709,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/05",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1060.072692971357,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/05",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 753.7887931654979,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/05",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1098.5732802826217,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/06",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1017.5016112760932,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/06",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1154.6501550205128,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/06",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 884.3403090979051,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/06",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1135.9463088337143,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/07",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 271.980054045616,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/07",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 766.3706408531227,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/08",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 719.6924608609935,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/08",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 996.3057514835355,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/08",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 821.0652047347677,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/08",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1169.4574764759059,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/08",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 577.5804263377103,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/08",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1204.630335540932,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 263.84639583941606,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 829.1988629409676,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 930.7281912702383,
+  "opponent": "Rob Rage",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 1015.4954295244994,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 699.398760104289,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1108.7201306609738,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 561.422145966769,
+  "opponent": "Dr. Wagner Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 1008.0791401854707,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 950.4126473645499,
+  "opponent": "Rick Steiner",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Rick Steiner",
+  "wrestler": "Rick Steiner",
+  "elo": 1165.0388151387833,
+  "opponent": "Masayuki Naruse",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Dan Devine",
+  "wrestler": "Dan Devine",
+  "elo": 1007.6310132697416,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1021.0910230174012,
+  "opponent": "Dan Devine",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1060.0122871252856,
+  "opponent": "Hiroshi Tanahashi (winner), Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Masahiro Chono, Osamu Nishimura, Shiro Koshinaka, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1166.3892354267732,
+  "opponent": "Hiroshi Tanahashi (winner), Hiroyoshi Tenzan, Kenzo Suzuki, Manabu Nakanishi, Masahiro Chono, Osamu Nishimura, Shiro Koshinaka, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1026.3109922369192,
+  "opponent": "Hiroshi Tanahashi (winner), Hiroyoshi Tenzan, Kensuke Sasaki, Manabu Nakanishi, Masahiro Chono, Osamu Nishimura, Shiro Koshinaka, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1065.863037687717,
+  "opponent": "Hiroshi Tanahashi (winner), Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Masahiro Chono, Osamu Nishimura, Shiro Koshinaka, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1095.7777337060547,
+  "opponent": "Hiroshi Tanahashi (winner), Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Osamu Nishimura, Shiro Koshinaka, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1132.0115885634116,
+  "opponent": "Hiroshi Tanahashi (winner), Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Masahiro Chono, Shiro Koshinaka, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1133.2940288028767,
+  "opponent": "Hiroshi Tanahashi (winner), Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Masahiro Chono, Osamu Nishimura, Yuji Nagata, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1178.96496256024,
+  "opponent": "Hiroshi Tanahashi (winner), Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Masahiro Chono, Osamu Nishimura, Shiro Koshinaka, Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1165.3845639289807,
+  "opponent": "Hiroshi Tanahashi (winner), Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Masahiro Chono, Osamu Nishimura, Shiro Koshinaka, Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/10",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 997.9829926027827,
+  "opponent": "Hiroyoshi Tenzan, Kensuke Sasaki, Kenzo Suzuki, Manabu Nakanishi, Masahiro Chono, Osamu Nishimura, Shiro Koshinaka, Yuji Nagata, Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/11",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 747.7596050788899,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/11",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 981.1426487712541,
+  "opponent": "GOKU-DO",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/11",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 962.3690201706527,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/11",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1083.6718682138737,
+  "opponent": "Dr. Wagner Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/11",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 985.941163237745,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/11",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1195.9435017135277,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/12",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 256.41279327614177,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/12",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 836.632465504242,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/12",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 856.1657074814877,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/12",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1058.3722649117765,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/14",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 226.94873631728262,
+  "opponent": "Katsushi Takemura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/14",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 590.8862029256281,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/14",
+  "wrestling_as": "Dr. Wagner Jr.",
+  "wrestler": "Dr. Wagner Jr.",
+  "elo": 895.0247434018157,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/14",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 971.3210190419159,
+  "opponent": "Dr. Wagner Jr.",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/14",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 957.677688007386,
+  "opponent": "Giant Singh",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/14",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1176.0105475878636,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/15",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 725.9385383687838,
+  "opponent": "GOKU-DO",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/15",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 877.9867741915938,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/15",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 671.7784271475746,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/15",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1031.3117777544503,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/16",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 212.6058251321133,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/16",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 686.1213383327439,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/16",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 578.185685282261,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/16",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1064.72252373346,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/16",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1166.9132892837679,
+  "opponent": "Giant Singh",
+  "result": "draw"
+ },
+ {
+  "date": "2002/07/16",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1174.4818222330764,
+  "opponent": "Yutaka Yoshie",
+  "result": "draw"
+ },
+ {
+  "date": "2002/07/18",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 202.7054971032426,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/18",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 735.8388663976546,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/18",
+  "wrestling_as": "Rob Rage",
+  "wrestler": "Rob Rage",
+  "elo": 935.8174888761349,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/18",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1200.8251616914913,
+  "opponent": "Rob Rage",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 191.05296816262074,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 697.7738672733658,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 567.6641854305716,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1085.6393491810868,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1052.4219967768247,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1121.0206576176092,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Minoru Fujita",
+  "wrestler": "Minoru Fujita",
+  "elo": 956.6405060341278,
+  "opponent": "Blue Wolf",
+  "result": "draw"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 968.8555092183033,
+  "opponent": "Minoru Fujita",
+  "result": "draw"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 958.5760613087615,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1101.6114489998313,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1178.5392577007285,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/19",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1241.6396822685012,
+  "opponent": "Minoru Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/20",
+  "wrestling_as": "Katsushi Takemura",
+  "wrestler": "Katsushi Takemura",
+  "elo": 503.45509751917115,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/20",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 761.9829551847662,
+  "opponent": "Katsushi Takemura",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/20",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 947.5603279284026,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/20",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1217.2386830034284,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/20",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1054.2761759181442,
+  "opponent": "Kazuyuki Fujita",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/20",
+  "wrestling_as": "Kazuyuki Fujita",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1066.744481699465,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2002/07/20",
+  "wrestling_as": "Bas Rutten",
+  "wrestler": "Bas Rutten",
+  "elo": 1118.8720869714073,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/07/20",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1223.1514379970931,
+  "opponent": "Bas Rutten",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1064.7494508293219,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1066.5275705763374,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1101.9967724124704,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1124.9288039965832,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1040.9413889264815,
+  "opponent": "Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1086.981052310269,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1122.6054267743773,
+  "opponent": "Manabu Nakanishi",
+  "result": "draw"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1075.2691994767513,
+  "opponent": "Osamu Nishimura",
+  "result": "draw"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1063.3289252775444,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1239.3758422113483,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1017.8878954258446,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/03",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1230.7664014351192,
+  "opponent": "Yoshihiro Takayama",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 188.51656293535004,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 950.0967331556733,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 717.8427089270585,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1003.2127719001079,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1046.6568937467785,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1120.0893294950138,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1057.606357519405,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1254.0631896067803,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1194.7565946850777,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1138.5471840764203,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1020.3450433866597,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1095.8655450165732,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1114.1566700963115,
+  "opponent": "Masahiro Chono",
+  "result": "draw"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1071.7776819556102,
+  "opponent": "Osamu Nishimura",
+  "result": "draw"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1059.9939471376965,
+  "opponent": "Yoshihiro Takayama",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/04",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1082.8227522847312,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 179.44752943807694,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 726.9117424243317,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1056.0895396565793,
+  "opponent": "Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1115.6734879591372,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1016.7666621465094,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1224.6468262853468,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1018.5571396358328,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1161.5261369968775,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1080.5958576959745,
+  "opponent": "Yoshihiro Takayama",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1140.774078665177,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 977.6931966026866,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1114.4295287395832,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1218.4064414073864,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/05",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1167.1790414153606,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 683.5633982450652,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 971.7709052453066,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 983.8916623541712,
+  "opponent": "Yoshihiro Takayama",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1173.6490784575153,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1101.715392712237,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1121.553188359703,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1065.4944686019007,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1164.6085480968197,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1021.7614623760385,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1077.3915349557687,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1120.5112960564834,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1245.154246755544,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1178.4115426883807,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/07",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1057.6829940406983,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1060.6688607200097,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1205.655080089047,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 966.3330406444085,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1039.3200840858012,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1014.3704964282788,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1108.8069662143203,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1078.0993642605704,
+  "opponent": "Yoshihiro Takayama",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1216.0610102534283,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1170.3012416575673,
+  "opponent": "Osamu Nishimura",
+  "result": "draw"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1129.6634893905164,
+  "opponent": "Yuji Nagata",
+  "result": "draw"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1208.9409696913522,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/08",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1149.8180890841522,
+  "opponent": "Kensuke Sasaki",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/10",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 177.37878925894785,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/10",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 972.8052753348711,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/10",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1061.8048609789673,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/10",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1132.3108774106056,
+  "opponent": "Manabu Nakanishi; Yoshihiro Takayama",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/10",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1107.7852035707615,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/10",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1226.6715228457424,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/10",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1238.2383688610603,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/11",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 167.08399377523529,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/11",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 693.8581937287778,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/11",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1212.4063747464352,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/11",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1252.5035169603675,
+  "opponent": "Yoshihiro Takayama",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "KENTA",
+  "wrestler": "KENTA",
+  "elo": 914.6503277910173,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 864.5575381467432,
+  "opponent": "KENTA",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Makoto Hashi",
+  "wrestler": "Makoto Hashi",
+  "elo": 980.0750216165344,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1251.602171460234,
+  "opponent": "Makoto Hashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Takehiro Murahama",
+  "wrestler": "Takehiro Murahama",
+  "elo": 1000.462341864738,
+  "opponent": "Masayuki Naruse",
+  "result": "draw"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1002.75043003537,
+  "opponent": "Takehiro Murahama",
+  "result": "draw"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Giant Singh",
+  "wrestler": "Giant Singh",
+  "elo": 1103.477100551903,
+  "opponent": "Giant Silva",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Giant Silva",
+  "wrestler": "Giant Silva",
+  "elo": 1089.9025648519935,
+  "opponent": "Giant Singh",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 958.643279238644,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1102.0255814813656,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Minoru Fujita",
+  "wrestler": "Minoru Fujita",
+  "elo": 937.6766160831406,
+  "opponent": "Kensuke Sasaki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Kensuke Sasaki",
+  "wrestler": "Kensuke Sasaki",
+  "elo": 1218.4229146668458,
+  "opponent": "Minoru Fujita",
+  "result": "won"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Kazuyuki Fujita",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1036.5593443985563,
+  "opponent": "Yoshihiro Takayama",
+  "result": "lost"
+ },
+ {
+  "date": "2002/08/29",
+  "wrestling_as": "Yoshihiro Takayama",
+  "wrestler": "Yoshihiro Takayama",
+  "elo": 1227.4989433968894,
+  "opponent": "Kazuyuki Fujita",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/06",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 163.53929053960445,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/06",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 868.102241382374,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/06",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1061.30888083991,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/06",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1178.787200141457,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/07",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 797.3578713310245,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/07",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 1008.1774603605459,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/07",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 162.2546563781663,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/07",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1039.9624011665203,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/07",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 942.7222092127298,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/07",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1193.912073089246,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/08",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 160.73094879598153,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/08",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 1008.9393141516382,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/08",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 736.9153793789333,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/08",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1003.164701164821,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/08",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 996.9677359540871,
+  "opponent": "Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/08",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1069.8247572510163,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/08",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1051.2828326520278,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/08",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1265.911782764639,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/11",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 153.68899612944855,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/11",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 742.8808190641876,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/11",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 705.883155958523,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/11",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1046.8278894646555,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/11",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1010.1116925560922,
+  "opponent": "Masahito Kakihara",
+  "result": "draw"
+ },
+ {
+  "date": "2002/09/11",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1046.914913397422,
+  "opponent": "Masayuki Naruse",
+  "result": "draw"
+ },
+ {
+  "date": "2002/09/11",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1018.670806346857,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/11",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1112.9588118831266,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/12",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 152.5258090750388,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/12",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1047.4094829918604,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/12",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 674.3478256172492,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/12",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1012.7354011247239,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/12",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1000.315538627411,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/12",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1152.6056744222358,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/13",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 975.6109693740249,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/13",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1218.616642342632,
+  "opponent": "Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/13",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1024.1532635576116,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/13",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1189.7612917045342,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/14",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 151.1003366214739,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/14",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1010.8244287828746,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/14",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 647.7458596652843,
+  "opponent": "Justin McCully",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/14",
+  "wrestling_as": "Justin McCully",
+  "wrestler": "Justin McCully",
+  "elo": 1013.3009829759824,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/14",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 967.019994556377,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/14",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1138.1702880898097,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/15",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 149.70747748238446,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/15",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1013.4318306942687,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/15",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 713.3471761015185,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/15",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1062.176304473195,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/15",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 962.5055319641548,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/15",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1031.7762437567271,
+  "opponent": "Kenzo Suzuki",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/16",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 148.29535249785798,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/16",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 1009.6453766439015,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/16",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 944.2092752699891,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/16",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1201.597919427845,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/16",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1117.5831265046734,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/16",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1096.3314287574724,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/16",
+  "wrestling_as": "Ryushi Yanagisawa",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 977.8760642369521,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/16",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1229.678610224156,
+  "opponent": "Ryushi Yanagisawa",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/16",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1105.7678698697355,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/16",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1282.112991874676,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/17",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 984.7643504054982,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/17",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1214.0384325470466,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/17",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 849.4704987434442,
+  "opponent": "Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/17",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1009.8749202274272,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/22",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 622.6170437993405,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/22",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 997.3287583384702,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/22",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1053.319787901924,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/22",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1230.198213186628,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2002/09/22",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 942.6542304092869,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/09/22",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1259.399678715661,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 147.16808666885547,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1047.4785463119233,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Nobuyuki Kurashima",
+  "wrestler": "Nobuyuki Kurashima",
+  "elo": 950.0,
+  "opponent": "Tatsuo Nakano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Tatsuo Nakano",
+  "wrestler": "Tatsuo Nakano",
+  "elo": 1050.0,
+  "opponent": "Nobuyuki Kurashima",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 602.1655765953361,
+  "opponent": "American Dragon",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "American Dragon",
+  "wrestler": "American Dragon",
+  "elo": 1010.2257336020023,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 949.1335117822031,
+  "opponent": "Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1058.0701667836943,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 779.8804828618792,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 993.371069249544,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 979.0033513245706,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/06",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1240.6965375243426,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Nobuyuki Kurashima",
+  "wrestler": "Nobuyuki Kurashima",
+  "elo": 908.6649965891679,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1052.1594321937066,
+  "opponent": "Nobuyuki Kurashima",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Pinoy Boy",
+  "wrestler": "Pinoy Boy",
+  "elo": 941.821415420214,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1059.011399568859,
+  "opponent": "Pinoy Boy",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 146.11736625361638,
+  "opponent": "Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1058.5955269913138,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 682.6877134025068,
+  "opponent": "American Dragon",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "American Dragon",
+  "wrestler": "American Dragon",
+  "elo": 1025.5554649515082,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Tatsuo Nakano",
+  "wrestler": "Tatsuo Nakano",
+  "elo": 1017.6980865318942,
+  "opponent": "Minoru Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Minoru Tanaka",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1210.8411711688343,
+  "opponent": "Tatsuo Nakano",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 803.9384116194637,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 925.0755830246185,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1200.4004921324713,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/09",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1073.9631600332866,
+  "opponent": "Osamu Nishimura",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/12",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 909.1944611369008,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/12",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 783.7766543215344,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/12",
+  "wrestling_as": "Pinoy Boy",
+  "wrestler": "Pinoy Boy",
+  "elo": 778.55495114594,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/12",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 845.9541776767808,
+  "opponent": "Pinoy Boy",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/12",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 143.6665755745219,
+  "opponent": "Nobuyuki Kurashima",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/12",
+  "wrestling_as": "Nobuyuki Kurashima",
+  "wrestler": "Nobuyuki Kurashima",
+  "elo": 911.1157872682624,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/12",
+  "wrestling_as": "Tatsuo Nakano",
+  "wrestler": "Tatsuo Nakano",
+  "elo": 1021.9733740492635,
+  "opponent": "Masahito Kakihara",
+  "result": "draw"
+ },
+ {
+  "date": "2002/10/12",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1043.2032587945541,
+  "opponent": "Tatsuo Nakano",
+  "result": "draw"
+ },
+ {
+  "date": "2002/10/12",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1026.0167486110765,
+  "opponent": "Osamu Nishimura",
+  "result": "draw"
+ },
+ {
+  "date": "2002/10/12",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1187.392117826933,
+  "opponent": "Tony St. Clair",
+  "result": "draw"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 139.29387371986977,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 808.3111134741159,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Heat",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1189.3126624750023,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1280.928187409493,
+  "opponent": "Heat",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1041.000054532876,
+  "opponent": "Tsuyoshi Kohsaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Tsuyoshi Kohsaka",
+  "wrestler": "Tsuyoshi Kohsaka",
+  "elo": 1064.7678153368595,
+  "opponent": "Tadao Yasuda",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Ryushi Yanagisawa",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 935.5712873835396,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1074.0810206101396,
+  "opponent": "Ryushi Yanagisawa",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1177.6571780532545,
+  "opponent": "Bas Rutten",
+  "result": "draw"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Bas Rutten",
+  "wrestler": "Bas Rutten",
+  "elo": 1128.6070267450857,
+  "opponent": "Osamu Nishimura",
+  "result": "draw"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 994.708975603881,
+  "opponent": "Kazunari Murakami",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1057.4504565898258,
+  "opponent": "Masayuki Naruse",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Hiroyoshi Tenzan",
+  "wrestler": "Hiroyoshi Tenzan",
+  "elo": 1032.8128740624888,
+  "opponent": "GREAT MUTA",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "GREAT MUTA",
+  "wrestler": "GREAT MUTA",
+  "elo": 1063.5185546949835,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Joanie Laurer",
+  "wrestler": "Joanie Laurer",
+  "elo": 983.5342316052142,
+  "opponent": "Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1290.345876072069,
+  "opponent": "Joanie Laurer",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1051.2793098316897,
+  "opponent": "Bob Sapp",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Bob Sapp",
+  "wrestler": "Bob Sapp",
+  "elo": 1066.3038166729834,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Kazuyuki Fujita",
+  "wrestler": "Kazuyuki Fujita",
+  "elo": 1011.8036345061347,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/14",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1242.056465170367,
+  "opponent": "Kazuyuki Fujita",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/19",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 774.5866368774796,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/19",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 918.3844785809556,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/20",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 137.89359874564772,
+  "opponent": "Makai #2",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/20",
+  "wrestling_as": "Makai #2",
+  "wrestler": "Makai #2",
+  "elo": 1000.700137487111,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/20",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 823.3272087628151,
+  "opponent": "Ryushi Yanagisawa",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/20",
+  "wrestling_as": "Ryushi Yanagisawa",
+  "wrestler": "Ryushi Yanagisawa",
+  "elo": 1030.6285572016802,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/21",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 579.579144116093,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/21",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 332.9010915070344,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/21",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 773.166457522791,
+  "opponent": "Tatsutoshi Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/21",
+  "wrestling_as": "Tatsutoshi Goto",
+  "wrestler": "Tatsutoshi Goto",
+  "elo": 1038.5122063142808,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/22",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 683.2475420979913,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/22",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 898.2300288989157,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/22",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1028.2092190857745,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/22",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1211.624263440675,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/24",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 418.51167978502997,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/24",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 493.96855583809736,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/24",
+  "wrestling_as": "Makai #2",
+  "wrestler": "Makai #2",
+  "elo": 947.5817715763473,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/24",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1032.1217172353342,
+  "opponent": "Makai #2",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/25",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 485.74215127145993,
+  "opponent": "Tadao Yasuda",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/25",
+  "wrestling_as": "Tadao Yasuda",
+  "wrestler": "Tadao Yasuda",
+  "elo": 1045.1132568161947,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/26",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 475.8918175193345,
+  "opponent": "Jack The Bull",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/26",
+  "wrestling_as": "Jack The Bull",
+  "wrestler": "Jack The Bull",
+  "elo": 1004.9251668760627,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/26",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 826.8405117067197,
+  "opponent": "Scott Norton",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/26",
+  "wrestling_as": "Scott Norton",
+  "wrestler": "Scott Norton",
+  "elo": 1036.1815569976588,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/26",
+  "wrestling_as": "Bas Rutten",
+  "wrestler": "Bas Rutten",
+  "elo": 1099.2235381325015,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/26",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1295.619931715785,
+  "opponent": "Bas Rutten",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/26",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1286.8933765061934,
+  "opponent": "Yuji Nagata",
+  "result": "draw"
+ },
+ {
+  "date": "2002/10/26",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1245.5089647362424,
+  "opponent": "Masahiro Chono",
+  "result": "draw"
+ },
+ {
+  "date": "2002/10/27",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 334.8784760697416,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/27",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 559.5250212346228,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/27",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1024.6458632740466,
+  "opponent": "Osamu Nishimura",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/27",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1225.9612257546135,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/30",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 659.1062903429557,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/30",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1040.2798449632924,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/30",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 331.3291538442462,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/30",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1033.896378348082,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/30",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 548.8229089426885,
+  "opponent": "Kenzo Suzuki",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/30",
+  "wrestling_as": "Kenzo Suzuki",
+  "wrestler": "Kenzo Suzuki",
+  "elo": 1063.946583137281,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/10/31",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 518.2011910031374,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/10/31",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 876.5758956163319,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/02",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 305.0080441905325,
+  "opponent": "Wataru Inoue",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/02",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 685.4273999966695,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/03",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 259.67501718984977,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/03",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 563.5342180038201,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/03",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 823.0112171277855,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/03",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1078.065171896301,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/03",
+  "wrestling_as": "Jack The Bull",
+  "wrestler": "Jack The Bull",
+  "elo": 964.7481088299946,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/03",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1114.2580786562075,
+  "opponent": "Jack The Bull",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/04",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 252.15789510612873,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/04",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 830.5283392115065,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/22",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 907.4986585081356,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/22",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 748.536900987549,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/22",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 245.2424302186164,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/22",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 837.4438040990188,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/22",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1032.5654367014695,
+  "opponent": "Jushin Thunder Liger",
+  "result": "draw"
+ },
+ {
+  "date": "2002/11/22",
+  "wrestling_as": "Jushin Thunder Liger",
+  "wrestler": "Jushin Thunder Liger",
+  "elo": 1025.976804920659,
+  "opponent": "Takashi Iizuka",
+  "result": "draw"
+ },
+ {
+  "date": "2002/11/22",
+  "wrestling_as": "Makai #2",
+  "wrestler": "Makai #2",
+  "elo": 883.4664334210669,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/22",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1110.1228409739413,
+  "opponent": "Makai #2",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/23",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 234.78395907571803,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/23",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 758.9953721304473,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/24",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 718.0456901653356,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/24",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1015.1838165864368,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/26",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 766.3702491067496,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/26",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 949.060329183863,
+  "opponent": "GOKU-DO",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/26",
+  "wrestling_as": "Stampede Kid",
+  "wrestler": "Stampede Kid",
+  "elo": 952.1837367867168,
+  "opponent": "Masayuki Naruse",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/26",
+  "wrestling_as": "Masayuki Naruse",
+  "wrestler": "Masayuki Naruse",
+  "elo": 1063.00007979972,
+  "opponent": "Stampede Kid",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/28",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 757.8005132416421,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/28",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 867.7438354318291,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/29",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 232.89655951644764,
+  "opponent": "Masahito Kakihara",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/29",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1044.1469585741893,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/29",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 830.4020445040968,
+  "opponent": "Makai #2",
+  "result": "lost"
+ },
+ {
+  "date": "2002/11/29",
+  "wrestling_as": "Makai #2",
+  "wrestler": "Makai #2",
+  "elo": 1002.1247181008331,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/11/29",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1057.8393656813798,
+  "opponent": "Osamu Nishimura",
+  "result": "draw"
+ },
+ {
+  "date": "2002/11/29",
+  "wrestling_as": "Osamu Nishimura",
+  "wrestler": "Osamu Nishimura",
+  "elo": 1213.3242612646584,
+  "opponent": "Takashi Iizuka",
+  "result": "draw"
+ },
+ {
+  "date": "2002/12/01",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 688.4291646023245,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/01",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 937.1151840711467,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/01",
+  "wrestling_as": "Heat",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1114.4787973865868,
+  "opponent": "Super Crazy",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/01",
+  "wrestling_as": "Super Crazy",
+  "wrestler": "Super Crazy",
+  "elo": 1074.8338650884155,
+  "opponent": "Heat",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/02",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 229.48454854681682,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/02",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 940.5271950407775,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/02",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 791.0624916060947,
+  "opponent": "Super Crazy",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/02",
+  "wrestling_as": "Super Crazy",
+  "wrestler": "Super Crazy",
+  "elo": 1094.5036415374166,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/03",
+  "wrestling_as": "GOKU-DO",
+  "wrestler": "GOKU-DO",
+  "elo": 732.1190091396484,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/03",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1057.405464946843,
+  "opponent": "GOKU-DO",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/03",
+  "wrestling_as": "Makai #2",
+  "wrestler": "Makai #2",
+  "elo": 959.1518099265129,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/03",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1094.25221800601,
+  "opponent": "Makai #2",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/04",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 872.9534053220802,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/04",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1091.1923598061917,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/04",
+  "wrestling_as": "Makai #2",
+  "wrestler": "Makai #2",
+  "elo": 929.6067980730874,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/04",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1139.667852827367,
+  "opponent": "Makai #2",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/05",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 759.758435679395,
+  "opponent": "Blue Wolf",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/05",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 940.0354813494049,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/07",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 227.8000539270607,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/07",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1058.681612991258,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/07",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 617.1391267742665,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/07",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 862.3525294341526,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/07",
+  "wrestling_as": "Masahito Kakihara",
+  "wrestler": "Masahito Kakihara",
+  "elo": 1025.1097580797534,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/07",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1305.1385319630028,
+  "opponent": "Masahito Kakihara",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/10",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 218.8613064965445,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/10",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 768.6971831099112,
+  "opponent": "Naofumi Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/10",
+  "wrestling_as": "Curry Man",
+  "wrestler": "Curry Man",
+  "elo": 950.8532107208806,
+  "opponent": "El Samurai",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/10",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 1005.4099739153966,
+  "opponent": "Curry Man",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/10",
+  "wrestling_as": "Kazunari Murakami",
+  "wrestler": "Kazunari Murakami",
+  "elo": 1032.1481148680082,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/10",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1258.160135597151,
+  "opponent": "Kazunari Murakami",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/15",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 744.6290564529473,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/15",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1126.2921419846896,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/15",
+  "wrestling_as": "El Samurai",
+  "wrestler": "El Samurai",
+  "elo": 963.016860874162,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/15",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1101.0747260324924,
+  "opponent": "El Samurai",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/15",
+  "wrestling_as": "Heat",
+  "wrestler": "Minoru Tanaka / Heat",
+  "elo": 1041.0252871103764,
+  "opponent": "Minoru Fujita",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/15",
+  "wrestling_as": "Minoru Fujita",
+  "wrestler": "Minoru Fujita",
+  "elo": 1084.5836366355616,
+  "opponent": "Heat",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/15",
+  "wrestling_as": "Blue Wolf",
+  "wrestler": "Blue Wolf",
+  "elo": 881.720314605909,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/15",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1123.409801377758,
+  "opponent": "Blue Wolf",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/15",
+  "wrestling_as": "Shinya Makabe",
+  "wrestler": "Shinya Makabe",
+  "elo": 981.5490557109251,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/15",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1267.3856077416885,
+  "opponent": "Shinya Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/23",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 435.48547307189426,
+  "opponent": "Naofumi Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/23",
+  "wrestling_as": "Naofumi Yamamoto",
+  "wrestler": "Naofumi Yamamoto",
+  "elo": 400.51496019891675,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2002/12/23",
+  "wrestling_as": "Takashi Iizuka",
+  "wrestler": "Takashi Iizuka",
+  "elo": 1073.3340661834955,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2002/12/23",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1281.255937666187,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Koji Kanemoto",
+ "Masahiro Chono",
+ "Yuji Nagata",
+ "Kensuke Sasaki",
+ "Osamu Nishimura",
+ "Yoshihiro Takayama",
+ "Minoru Tanaka / Heat",
+ "Tadao Yasuda",
+ "Black Tiger III / Black Tiger",
+ "Manabu Nakanishi",
+ "Giant Singh",
+ "Yutaka Yoshie",
+ "Hiro Saito",
+ "Rick Steiner",
+ "Bas Rutten",
+ "Shiro Koshinaka",
+ "Hiroyoshi Tenzan",
+ "Dan Devine",
+ "Hiroshi Tanahashi",
+ "Jushin Thunder Liger",
+ "Masahito Kakihara",
+ "Kenzo Suzuki",
+ "Masayuki Naruse",
+ "Tatsutoshi Goto",
+ "Wataru Inoue",
+ "Takashi Iizuka",
+ "Super Crazy",
+ "Katsuyori Shibata",
+ "El Samurai",
+ "Giant Silva",
+ "Minoru Fujita",
+ "Gedo",
+ "Tiger Mask IV / Tiger Mask",
+ "AKIRA",
+ "Don Frye",
+ "Shane",
+ "Tatsumi Fujinami",
+ "Kazuyuki Fujita",
+ "Bob Sapp",
+ "Tsuyoshi Kohsaka",
+ "GREAT MUTA",
+ "Kazunari Murakami",
+ "Kendo Kashin",
+ "Jun Akiyama",
+ "Kintaro Kanemura",
+ "The Bloody",
+ "Tatsuo Nakano",
+ "Eddie Guerrero",
+ "Jado",
+ "Scott Norton",
+ "Curry Man",
+ "Ryushi Yanagisawa",
+ "Super J",
+ "Tony St. Clair",
+ "American Dragon",
+ "Rob Rage",
+ "Daijiro Matsui",
+ "Justin McCully",
+ "Blue Wolf",
+ "Dr. Wagner Jr.",
+ "Jack The Bull",
+ "Mitsuharu Misawa",
+ "Makai #2",
+ "GOKU-DO",
+ "Takehiro Murahama",
+ "Naoya Ogawa",
+ "Katsushi Takemura",
+ "Gran Naniwa",
+ "Joanie Laurer",
+ "Shinya Makabe",
+ "Makoto Hashi",
+ "Yoshiaki Yatsu",
+ "Shinsuke Nakamura",
+ "Stampede Kid",
+ "Chris Candido",
+ "Daisuke Sekimoto",
+ "Sachie Abe",
+ "Nobuyuki Kurashima",
+ "Pinoy Boy",
+ "Toru Yano",
+ "KENTA",
+ "Naofumi Yamamoto",
+ "Ryusuke Taguchi"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

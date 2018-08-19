@@ -1,0 +1,6236 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1985/01/01",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1050.0,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/01",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1050.0,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/02",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1000.0,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/01/02",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1000.0,
+  "opponent": "Umanosuke Ueda",
+  "result": "draw"
+ },
+ {
+  "date": "1985/01/04",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1100.0,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/04",
+  "wrestling_as": "David Morgan",
+  "wrestler": "David Morgan",
+  "elo": 1050.0,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/04",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1000.0,
+  "opponent": "Black Tiger",
+  "result": "draw"
+ },
+ {
+  "date": "1985/01/04",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1000.0,
+  "opponent": "The Cobra",
+  "result": "draw"
+ },
+ {
+  "date": "1985/01/05",
+  "wrestling_as": "David Morgan",
+  "wrestler": "David Morgan",
+  "elo": 1092.8536882591618,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/05",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1035.9935000197115,
+  "opponent": "Wild Samoan",
+  "result": "lost"
+ },
+ {
+  "date": "1985/01/05",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1085.9935000197115,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/05",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1057.1463117408382,
+  "opponent": "Tiger Toguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/06",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1078.8471882788733,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/06",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1051.0282919201761,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/06",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1125.7794834620518,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/06",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 958.150645670663,
+  "opponent": "King Kong Bundy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/01/06",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1098.995666070175,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/07",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1096.9212813878248,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/07",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1049.855465131636,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/07",
+  "wrestling_as": "David Morgan",
+  "wrestler": "David Morgan",
+  "elo": 1029.8002780893262,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/01/07",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1063.0534101698356,
+  "opponent": "David Morgan",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/07",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1143.1362011829897,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/07",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 948.9717080798239,
+  "opponent": "Tiger Toguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/01/09",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 963.5541283626452,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/01/09",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 992.7087898585894,
+  "opponent": "Umanosuke Ueda",
+  "result": "draw"
+ },
+ {
+  "date": "1985/01/11",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1043.7579253351882,
+  "opponent": "Abdullah The Butcher",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/18",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1001.6409673597205,
+  "opponent": "King Kong Bundy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/01/18",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1141.1126240456429,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/24",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1044.1158538653956,
+  "opponent": "Abdullah The Butcher",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/25",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1101.1990192098383,
+  "opponent": "Wild Samoan",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/25",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1019.2601439352112,
+  "opponent": "King Kong Bundy",
+  "result": "draw"
+ },
+ {
+  "date": "1985/01/25",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1121.8524801104315,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1985/01/31",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1053.5331927600605,
+  "opponent": "Anoaro Atisanoe",
+  "result": "lost"
+ },
+ {
+  "date": "1985/01/31",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1186.524289810754,
+  "opponent": "Makoto Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/31",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1094.33690558893,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/31",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1130.7167194549008,
+  "opponent": "Kerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/31",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1160.8162763942514,
+  "opponent": "Tiger Toguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/01/31",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 921.5028714391112,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/01/31",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1061.3114008587452,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/01",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1095.889540643375,
+  "opponent": "Akira Nogami",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/01",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1204.3022951797893,
+  "opponent": "Kerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/01",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 945.0608119054519,
+  "opponent": "Tiger Toguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/02/01",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1167.4920644345366,
+  "opponent": "Wild Samoan",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/01",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1089.1953981468214,
+  "opponent": "Hulk Hogan",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/01",
+  "wrestling_as": "Hulk Hogan",
+  "wrestler": "Hulk Hogan",
+  "elo": 1071.62087824743,
+  "opponent": "King Kong Bundy",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/02",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1133.975331148162,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/02",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1214.8061796797435,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/02",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 860.7430902296417,
+  "opponent": "Shunji Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/02",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1042.1588608379052,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/02",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 926.1633180520801,
+  "opponent": "King Kong Bundy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/02",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1121.1827257654045,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/03",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1095.4023984196651,
+  "opponent": "Anoaro Atisanoe",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/03",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1234.092646043992,
+  "opponent": "Makoto Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/03",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1086.094301360259,
+  "opponent": "Samula",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/03",
+  "wrestling_as": "Hulk Hogan",
+  "wrestler": "Hulk Hogan",
+  "elo": 1110.5147186925706,
+  "opponent": "Tiger Toguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/04",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 967.6923553029118,
+  "opponent": "Kerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/04",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1110.8668031862576,
+  "opponent": "King Kong Bundy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/04",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1177.8079870136835,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/05",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1009.2590504336852,
+  "opponent": "Kerry Brown",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/05",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1031.084814099605,
+  "opponent": "The Cobra",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/05",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1063.252091489325,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1018.3453662927803,
+  "opponent": "Hulk Hogan",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/05",
+  "wrestling_as": "Hulk Hogan",
+  "wrestler": "Hulk Hogan",
+  "elo": 1153.4807532585353,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/05",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1104.2417313202882,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/05",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1073.5662556933953,
+  "opponent": "King Kong Bundy",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/06",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1067.149968170327,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/06",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 934.1013993470101,
+  "opponent": "Shunji Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/06",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1119.6852573161607,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/06",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1013.0820027070009,
+  "opponent": "The Cobra",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/06",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1113.2234989521596,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/02/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1036.8681394724517,
+  "opponent": "Hulk Hogan",
+  "result": "draw"
+ },
+ {
+  "date": "1985/02/06",
+  "wrestling_as": "Hulk Hogan",
+  "wrestler": "Hulk Hogan",
+  "elo": 1134.957980078864,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1985/02/06",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1049.8386108188104,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/02/06",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1127.9693761948731,
+  "opponent": "King Kong Bundy",
+  "result": "won"
+ },
+ {
+  "date": "1985/03/04",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1095.4321436566554,
+  "opponent": "Bad News Allen",
+  "result": "draw"
+ },
+ {
+  "date": "1985/03/04",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 1015.4346595296022,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/03/11",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 963.3985139172523,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/03/11",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1132.033629739403,
+  "opponent": "Hacksaw Higgins",
+  "result": "won"
+ },
+ {
+  "date": "1985/03/15",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1026.4498391727652,
+  "opponent": "Hacksaw Higgins",
+  "result": "draw"
+ },
+ {
+  "date": "1985/03/15",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 973.8168142169388,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1985/03/16",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1163.8972431339323,
+  "opponent": "Leroy Brown",
+  "result": "won"
+ },
+ {
+  "date": "1985/03/17",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 985.5881848928506,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/03/17",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1193.743717770684,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1985/03/29",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1042.3144704228876,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/03/29",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1053.1116210939965,
+  "opponent": "Billy Jack",
+  "result": "lost"
+ },
+ {
+  "date": "1985/03/29",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1066.5736362221642,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/03/30",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 998.7703991409073,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/03/30",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1093.3995364136163,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/03/30",
+  "wrestling_as": "Dave Taylor",
+  "wrestler": "Dave Taylor",
+  "elo": 957.584389959014,
+  "opponent": "Shunji Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1985/03/30",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1095.5272311349827,
+  "opponent": "Dave Taylor",
+  "result": "won"
+ },
+ {
+  "date": "1985/03/30",
+  "wrestling_as": "Mike Miller",
+  "wrestler": "Mike Miller",
+  "elo": 979.3728072989182,
+  "opponent": "Anoaro Atisanoe",
+  "result": "lost"
+ },
+ {
+  "date": "1985/03/30",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1244.406242394533,
+  "opponent": "Mike Miller",
+  "result": "won"
+ },
+ {
+  "date": "1985/03/30",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1097.0620277252265,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/01",
+  "wrestling_as": "Dave Taylor",
+  "wrestler": "Dave Taylor",
+  "elo": 926.1915018877254,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/01",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1124.7924244849048,
+  "opponent": "Dave Taylor",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/01",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 950.0,
+  "opponent": "Adrian Adonis",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/01",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1050.0,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/01",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1032.1160165965073,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/01",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1063.4112145384754,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/02",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1080.9128702011244,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/02",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1021.7024016438859,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/02",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1045.1456497636618,
+  "opponent": "Hiro Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/02",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1111.7627913177503,
+  "opponent": "Shunji Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/02",
+  "wrestling_as": "Strong Machine #2",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1050.0,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/03",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 952.9878924422827,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/03",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1144.3630837683181,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/03",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1112.4550892785262,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/05",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1095.3431687612572,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/05",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 875.173232791361,
+  "opponent": "Billy Jack",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/05",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1137.9501319088856,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1029.833798793213,
+  "opponent": "Adrian Adonis",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/05",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1046.6160403795523,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/05",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1022.5964121651195,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/05",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1168.784178568229,
+  "opponent": "Dick Murdoch",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/06",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 987.8342582565749,
+  "opponent": "Billy Jack",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/06",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1171.8182752961966,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/06",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 928.0446968701814,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/06",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1169.3062793404195,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/07",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1022.7572278100746,
+  "opponent": "Dave Taylor",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/07",
+  "wrestling_as": "Dave Taylor",
+  "wrestler": "Dave Taylor",
+  "elo": 1071.3633837900907,
+  "opponent": "Makoto Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/07",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1102.3488167283674,
+  "opponent": "Adrian Adonis",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/07",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1113.5735029916043,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/08",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 943.2733217876562,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/08",
+  "wrestling_as": "Dave Taylor",
+  "wrestler": "Dave Taylor",
+  "elo": 1087.9630405557873,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/08",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 966.545957623569,
+  "opponent": "Mike Miller",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/08",
+  "wrestling_as": "Mike Miller",
+  "wrestler": "Mike Miller",
+  "elo": 1035.5840774854237,
+  "opponent": "Makoto Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/08",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1012.6083172571364,
+  "opponent": "Billy Jack",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/08",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1204.355607802722,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/09",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1120.359721727725,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/09",
+  "wrestling_as": "Dave Taylor",
+  "wrestler": "Dave Taylor",
+  "elo": 1027.2855267976202,
+  "opponent": "Shunji Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/09",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1073.2858310153035,
+  "opponent": "Dave Taylor",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/09",
+  "wrestling_as": "Strong Machine #3",
+  "wrestler": "Strong Machine #3",
+  "elo": 1056.516889033434,
+  "opponent": "Gestapo",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/09",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1195.2704167830127,
+  "opponent": "Billy Jack",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/09",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1203.5922582965577,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/11",
+  "wrestling_as": "Dave Taylor",
+  "wrestler": "Dave Taylor",
+  "elo": 990.3685026805105,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/11",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1157.2767458448347,
+  "opponent": "Dave Taylor",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/11",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1216.4979858913732,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/12",
+  "wrestling_as": "Dave Taylor",
+  "wrestler": "Dave Taylor",
+  "elo": 1057.407036962765,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/12",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1061.3100101600999,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/12",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1162.9490361649275,
+  "opponent": "Bad News Allen",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/12",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 992.6874581063519,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/12",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1188.0861236848461,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/12",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1225.607902981283,
+  "opponent": "Billy Jack",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/13",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1059.202545774384,
+  "opponent": "Keiichi Yamada",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/13",
+  "wrestling_as": "Dave Taylor",
+  "wrestler": "Dave Taylor",
+  "elo": 1105.6198684394442,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/13",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 926.3526091710074,
+  "opponent": "Mike Miller",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/13",
+  "wrestling_as": "Mike Miller",
+  "wrestler": "Mike Miller",
+  "elo": 1075.7774259379853,
+  "opponent": "Makoto Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/13",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1147.0617431991259,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/14",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1093.673975231975,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/14",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 1043.275012766535,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/14",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1111.6989863347148,
+  "opponent": "Billy Jack",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/14",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1233.663883194966,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/16",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 873.8111808526162,
+  "opponent": "Dave Taylor",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/16",
+  "wrestling_as": "Dave Taylor",
+  "wrestler": "Dave Taylor",
+  "elo": 1131.8905825986399,
+  "opponent": "Makoto Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/16",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1012.8928352924218,
+  "opponent": "Strong Machine #1",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/16",
+  "wrestling_as": "Strong Machine #1",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1060.3929957228818,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/17",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 906.7641572800809,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/17",
+  "wrestling_as": "Dave Taylor",
+  "wrestler": "Dave Taylor",
+  "elo": 1078.9880453313178,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/17",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1164.6015236020369,
+  "opponent": "Dave Taylor",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/17",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 981.2954854647228,
+  "opponent": "Adrian Adonis",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/17",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1178.6590930268248,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/17",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1028.7924057576465,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/17",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1023.637805200686,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/18",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1102.0901106051997,
+  "opponent": "Mike Miller",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/18",
+  "wrestling_as": "Mike Miller",
+  "wrestler": "Mike Miller",
+  "elo": 1138.2888389348225,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/18",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1146.2410971970867,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/18",
+  "wrestling_as": "Billy Jack",
+  "wrestler": "Billy Jack",
+  "elo": 1203.6446589978773,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/18",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1222.987484559105,
+  "opponent": "Billy Jack",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/18",
+  "wrestling_as": "Strong Machine #1",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1005.8578043042994,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/04/18",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1083.327597176229,
+  "opponent": "Strong Machine #1",
+  "result": "won"
+ },
+ {
+  "date": "1985/04/18",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1028.5616700940805,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1985/04/18",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1211.3270679342427,
+  "opponent": "Bruiser Brody",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/10",
+  "wrestling_as": "Strong Machine #1",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1005.0148783695181,
+  "opponent": "Mike Sharpe Jr.",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/10",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1000.8429259347813,
+  "opponent": "Strong Machine #1",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/10",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 941.0336227740603,
+  "opponent": "King Kong Bundy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/10",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1090.100473509473,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/10",
+  "wrestling_as": "The Masked Superstar",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 978.3065205136685,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/10",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1233.8342243022707,
+  "opponent": "The Masked Superstar",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/11",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1037.8068931200883,
+  "opponent": "Tony St. Clair",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/11",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1064.2832174851114,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/11",
+  "wrestling_as": "Strong Machine #1",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 951.1787900964341,
+  "opponent": "The Masked Superstar",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/11",
+  "wrestling_as": "The Masked Superstar",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 1032.1426087867526,
+  "opponent": "Strong Machine #1",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/11",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 919.1359579966036,
+  "opponent": "King Kong Bundy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/11",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1120.9645155128694,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/12",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 982.387417886093,
+  "opponent": "Enrique Vera",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/12",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 998.557805778964,
+  "opponent": "Strong Machine #1",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/12",
+  "wrestling_as": "Strong Machine #1",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1016.9042018025815,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/12",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 809.6312287972753,
+  "opponent": "Andre The Giant",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/12",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1032.771001997043,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/13",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 980.4211382282266,
+  "opponent": "The Cobra",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/13",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1149.7065625265145,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/13",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 764.4621481230778,
+  "opponent": "Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/13",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1046.2223455377848,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/13",
+  "wrestling_as": "Jimmy Snuka",
+  "wrestler": "Jimmy Snuka",
+  "elo": 961.7670468411644,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1121.5605503350644,
+  "opponent": "Jimmy Snuka",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/15",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1067.5346242156709,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/15",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1076.5489039594354,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/15",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1055.6792126211828,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/15",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1086.659483270138,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/15",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1250.9867404236365,
+  "opponent": "King Kong Bundy",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/15",
+  "wrestling_as": "Canek",
+  "wrestler": "Canek / El Canek",
+  "elo": 954.7021898379983,
+  "opponent": "Andre The Giant",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/15",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1078.0688121590447,
+  "opponent": "Canek",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/16",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 942.7812347730573,
+  "opponent": "Mike Sharpe Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/16",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1095.2853957342186,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/16",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 852.3219434714466,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/16",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1024.7769778795334,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/16",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1075.0218526543345,
+  "opponent": "Jimmy Snuka",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/16",
+  "wrestling_as": "Jimmy Snuka",
+  "wrestler": "Jimmy Snuka",
+  "elo": 1036.4517567133446,
+  "opponent": "The Cobra",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/16",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1049.5982855921684,
+  "opponent": "Adrian Adonis",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/16",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1215.7202907047945,
+  "opponent": "King Kong Bundy",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/17",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1227.1945293878803,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/17",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 971.2173165094409,
+  "opponent": "Bob Backlund",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/17",
+  "wrestling_as": "Bob Backlund",
+  "wrestler": "Bob Backlund",
+  "elo": 1053.5596613700925,
+  "opponent": "Super Strong Machine",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/17",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1049.0595021152892,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/17",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1167.7864439539937,
+  "opponent": "Mike Sharpe Jr.",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/18",
+  "wrestling_as": "Masked Superstar",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 1077.7877297442228,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/18",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 944.6312946808808,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/18",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1025.1438276075241,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/18",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 879.1057342810823,
+  "opponent": "The Cobra",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/18",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1106.859602900322,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/18",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1003.6863773788127,
+  "opponent": "Andre The Giant",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/18",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1123.9807203724004,
+  "opponent": "King Kong Bundy",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/20",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1102.033853751045,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/20",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1028.0906109910998,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/20",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1036.6437180995267,
+  "opponent": "The Cobra",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/20",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1151.9156373863977,
+  "opponent": "Bob Backlund",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/20",
+  "wrestling_as": "Bob Backlund",
+  "wrestler": "Bob Backlund",
+  "elo": 1069.4304679376885,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/20",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 980.4547099757339,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/20",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1222.9429016357822,
+  "opponent": "King Kong Bundy",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/21",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 973.7031952455566,
+  "opponent": "Tony St. Clair",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/21",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1070.512340388821,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/21",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1081.5051298925805,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/21",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 787.6157351096904,
+  "opponent": "King Kong Bundy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/21",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1012.8078141566119,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/22",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1051.3333337175734,
+  "opponent": "Adrian Adonis",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/22",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1214.0997763328555,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/22",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 734.9921564158414,
+  "opponent": "Bob Backlund",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/22",
+  "wrestling_as": "Bob Backlund",
+  "wrestler": "Bob Backlund",
+  "elo": 1084.1654637913066,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/22",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1201.6936743032422,
+  "opponent": "Dick Murdoch; Dick Murdoch",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/22",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1144.8084777785732,
+  "opponent": "Seiji Sakaguchi; Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/24",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1047.5099489775566,
+  "opponent": "Tony St. Clair",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/24",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1125.0362451623093,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/24",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 938.7377357683774,
+  "opponent": "Mike Sharpe Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/24",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1116.4705893697596,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/24",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1043.9991635438546,
+  "opponent": "Pedro Morales",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/24",
+  "wrestling_as": "Pedro Morales",
+  "wrestler": "Pedro Morales",
+  "elo": 1007.3341701737189,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/24",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1216.0085260145795,
+  "opponent": "Andre The Giant",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/24",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1137.8494716148055,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/25",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1094.455476835281,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/25",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1160.1670061340474,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/25",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 717.0803833220168,
+  "opponent": "Andre The Giant",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/25",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1146.8053581617178,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/26",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1186.7135139200354,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/26",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1071.1133184454864,
+  "opponent": "Enrique Vera",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/26",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 755.9406115448228,
+  "opponent": "Masked Superstar",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/26",
+  "wrestling_as": "Masked Superstar",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 1093.6252915266566,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/27",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1017.6834901135709,
+  "opponent": "Canek",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/27",
+  "wrestling_as": "Canek",
+  "wrestler": "Canek / El Canek",
+  "elo": 965.1093107155272,
+  "opponent": "The Cobra",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/27",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1012.0364909528968,
+  "opponent": "Pedro Morales",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/27",
+  "wrestling_as": "Pedro Morales",
+  "wrestler": "Pedro Morales",
+  "elo": 1066.4109976663085,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/27",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1184.6724422168634,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/27",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1210.7703056183818,
+  "opponent": "Adrian Adonis",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/28",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1047.6194727836598,
+  "opponent": "Mike Sharpe Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/28",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1163.3065934213807,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/28",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1063.598074403577,
+  "opponent": "Enrique Vera",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/28",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1200.941999784905,
+  "opponent": "Pedro Morales",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/28",
+  "wrestling_as": "Pedro Morales",
+  "wrestler": "Pedro Morales",
+  "elo": 1086.0676093332625,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/29",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1207.73912719592,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/29",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 982.5273030526427,
+  "opponent": "Mike Sharpe Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/29",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1192.8157813216349,
+  "opponent": "Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/29",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1137.1200365589355,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/29",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1225.4698771322062,
+  "opponent": "Adrian Adonis",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/31",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 740.9759546055769,
+  "opponent": "Mike Sharpe Jr.",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/31",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1200.2981097912577,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/31",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1096.9481705478997,
+  "opponent": "Enrique Vera",
+  "result": "won"
+ },
+ {
+  "date": "1985/05/31",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1058.3769684471465,
+  "opponent": "Andre The Giant",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/31",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1132.4275532584259,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1985/05/31",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1168.4775049956327,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/05/31",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1061.0505474532172,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/02",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1074.1131851513408,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/02",
+  "wrestling_as": "Pedro Morales",
+  "wrestler": "Pedro Morales",
+  "elo": 1082.4735739148755,
+  "opponent": "Hiro Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/02",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1064.6445828716041,
+  "opponent": "Pedro Morales",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/02",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1103.1426796732346,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/02",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1123.7117937695446,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/03",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 851.9921389810996,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/03",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1089.9502792839955,
+  "opponent": "Enrique Vera",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/03",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1169.8748384347548,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/03",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1184.5583364825507,
+  "opponent": "Mike Sharpe Jr.",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/04",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1024.4637075225105,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/04",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1126.1983815882656,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/04",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 826.2947809111504,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/04",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1197.4070155175252,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/04",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1093.0274733283197,
+  "opponent": "Andre The Giant",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/04",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1184.2085577086793,
+  "opponent": "Dick Murdoch",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/05",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1095.941229203558,
+  "opponent": "Hiro Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/05",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1090.9572206283374,
+  "opponent": "The Cobra",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/05",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 775.3530680786847,
+  "opponent": "King Kong Bundy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/05",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1038.2786705728447,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/05",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1198.7078807300627,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1227.7039961870485,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/06",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1156.2353427160035,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/06",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1077.9552168302678,
+  "opponent": "Canek",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/06",
+  "wrestling_as": "Canek",
+  "wrestler": "Canek / El Canek",
+  "elo": 983.0953230888173,
+  "opponent": "The Cobra",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/06",
+  "wrestling_as": "Pedro Morales",
+  "wrestler": "Pedro Morales",
+  "elo": 1048.4357715436765,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/06",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1231.4448178887242,
+  "opponent": "Pedro Morales",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/06",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1011.8361791353889,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/06",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1229.2297717333074,
+  "opponent": "King Kong Bundy",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/07",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 983.9177474878884,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/07",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1131.5031806629595,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/07",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1238.7059543775101,
+  "opponent": "Enrique Vera",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/07",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1199.5904962977293,
+  "opponent": "Andre The Giant",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/07",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1240.4355574873177,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/08",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1168.953805796231,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/08",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1139.6351236584958,
+  "opponent": "Hulk Hogan",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/08",
+  "wrestling_as": "Hulk Hogan",
+  "wrestler": "Hulk Hogan",
+  "elo": 1194.030737150431,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/09",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1158.0648595433474,
+  "opponent": "Hiro Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/09",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1167.1242889688872,
+  "opponent": "Kantaro Hoshino",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/09",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1117.836652197815,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/09",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1197.7753688781127,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/09",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1103.7477072590498,
+  "opponent": "Andre The Giant",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/09",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1258.3792656870407,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/11",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1013.5780436193263,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/11",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 762.3666065916262,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/11",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1241.9525697492747,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/11",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1148.7904509281764,
+  "opponent": "Hulk Hogan",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/11",
+  "wrestling_as": "Hulk Hogan",
+  "wrestler": "Hulk Hogan",
+  "elo": 1244.8307825199838,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/11",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1231.2866985773019,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/11",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1256.3223388430463,
+  "opponent": "Andre The Giant",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/12",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1176.2673902001284,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/12",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1123.600223316294,
+  "opponent": "Kantaro Hoshino",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/12",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1152.3012884248685,
+  "opponent": "Tony St. Clair",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/12",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1154.0989366676113,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/12",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1263.7907858545254,
+  "opponent": "Mike Sharpe Jr.",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/12",
+  "wrestling_as": "Adrian Adonis",
+  "wrestler": "Adrian Adonis",
+  "elo": 1045.3015041401418,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/12",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 900.7174481596043,
+  "opponent": "Adrian Adonis",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/12",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1140.833717740691,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/12",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1100.984206515805,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1985/06/13",
+  "wrestling_as": "Mike Sharpe Jr.",
+  "wrestler": "Mike Sharpe Jr.",
+  "elo": 1164.2127189387272,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/13",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1047.078763813367,
+  "opponent": "Enrique Vera",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/13",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1271.8419566543737,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/13",
+  "wrestling_as": "Hulk Hogan",
+  "wrestler": "Hulk Hogan",
+  "elo": 1220.6573650669663,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/13",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1280.4957562960637,
+  "opponent": "Hulk Hogan",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/28",
+  "wrestling_as": "Strong Machine #2",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1028.1942932584752,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/28",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1282.744810025136,
+  "opponent": "Strong Machine #2",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/28",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1041.737576645964,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/28",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1212.485030384432,
+  "opponent": "The Cobra",
+  "result": "won"
+ },
+ {
+  "date": "1985/06/29",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 835.9385138074865,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/06/29",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1060.9511372701393,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/04",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1090.8207328320855,
+  "opponent": "King Kong Bundy",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/04",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1024.7631535623534,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1171.6077665113662,
+  "opponent": "Matt Borne",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/05",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1036.5327117102515,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/05",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1115.2391583919732,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/12",
+  "wrestling_as": "Strong Machine #3",
+  "wrestler": "Strong Machine #3",
+  "elo": 1035.138609914843,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/12",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1293.4339495844315,
+  "opponent": "Strong Machine #3",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/13",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1034.8395837391274,
+  "opponent": "King Kong Bundy",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/13",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1026.4562815334775,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/19",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1285.0102870611083,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/19",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1188.4550915580128,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/21",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 965.5112067081083,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/21",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 843.3862192161315,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/21",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1293.1291114276312,
+  "opponent": "Gerry Morrow",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/22",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1120.7399686990718,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/22",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1064.5059295385313,
+  "opponent": "Hiro Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/22",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1201.1008539381485,
+  "opponent": "The Cobra",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/22",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1299.83786968132,
+  "opponent": "Matt Borne",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/22",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 808.7976122661595,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/22",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1132.5334618669592,
+  "opponent": "Shunji Takano",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/23",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1159.278289871707,
+  "opponent": "Hiro Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/23",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1197.6123532147292,
+  "opponent": "Kantaro Hoshino",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/23",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1306.8127020594225,
+  "opponent": "Gerry Morrow",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/23",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 966.5379243331996,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/23",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 989.412690674157,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/23",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1073.6582750457787,
+  "opponent": "Matt Borne",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/24",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1030.7836152713471,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/24",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 967.3139972809453,
+  "opponent": "Shunji Takano",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/24",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 968.327145331003,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/24",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1072.5287229066682,
+  "opponent": "Black Tiger",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/24",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1112.7171753309349,
+  "opponent": "The Cobra",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/25",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1048.9277171048545,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/25",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 946.32690949012,
+  "opponent": "Hiro Saito",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/25",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1218.5994410055546,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/25",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1036.595011757593,
+  "opponent": "Gerry Morrow",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/25",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1287.9926640701563,
+  "opponent": "Bad News Allen",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/25",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 1004.1780003117318,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/25",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1066.9068491810292,
+  "opponent": "King Kong Bundy",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/25",
+  "wrestling_as": "King Kong Bundy",
+  "wrestler": "King Kong Bundy",
+  "elo": 1033.207707398227,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/26",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 875.0282830941039,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/26",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1084.5770303028626,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/26",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1226.089221700125,
+  "opponent": "Matt Borne",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/26",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 963.1085789907423,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/26",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1107.9762705020187,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/26",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 986.5743957006749,
+  "opponent": "Jimmy Snuka",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/26",
+  "wrestling_as": "Jimmy Snuka",
+  "wrestler": "Jimmy Snuka",
+  "elo": 1086.4723727702626,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/28",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1269.8443852211224,
+  "opponent": "Shunji Takano",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/28",
+  "wrestling_as": "Shunji Takano",
+  "wrestler": "Shunji Takano",
+  "elo": 1004.6237030290706,
+  "opponent": "Super Strong Machine",
+  "result": "draw"
+ },
+ {
+  "date": "1985/07/28",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1160.2153212370033,
+  "opponent": "Hiro Saito; Hiro Saito",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/28",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1182.2459225349576,
+  "opponent": "The Cobra; The Cobra",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/28",
+  "wrestling_as": "Jimmy Snuka",
+  "wrestler": "Jimmy Snuka",
+  "elo": 1050.7413952631123,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/28",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1224.186069065163,
+  "opponent": "Jimmy Snuka",
+  "result": "won"
+ },
+ {
+  "date": "1985/07/28",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1245.4491612440095,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/07/28",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1202.6266519710678,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/01",
+  "wrestling_as": "Hiro Saito",
+  "wrestler": "Hiro Saito",
+  "elo": 1172.3713990005456,
+  "opponent": "Black Tiger",
+  "result": "draw"
+ },
+ {
+  "date": "1985/08/01",
+  "wrestling_as": "Black Tiger",
+  "wrestler": "Black Tiger / Black Tiger I",
+  "elo": 1122.5916988653469,
+  "opponent": "Hiro Saito",
+  "result": "draw"
+ },
+ {
+  "date": "1985/08/01",
+  "wrestling_as": "Strong Machine #3",
+  "wrestler": "Strong Machine #3",
+  "elo": 1014.5691429070603,
+  "opponent": "Super Strong Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/01",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine / Strong Machine #1",
+  "elo": 1280.1291187250138,
+  "opponent": "Strong Machine #3",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/01",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1045.2934849015246,
+  "opponent": "The Cobra",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/01",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1199.4988666383415,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/01",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1187.648601402422,
+  "opponent": "Jimmy Snuka",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/01",
+  "wrestling_as": "Jimmy Snuka",
+  "wrestler": "Jimmy Snuka",
+  "elo": 1123.8163305885946,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/01",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1217.3833429230156,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/01",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1230.6924702920617,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/23",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 940.5020278447188,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/23",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1047.0267947298862,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/23",
+  "wrestling_as": "Super Machine",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 1034.3187778795132,
+  "opponent": "Yang Seung-Hi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/23",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1087.5008069056187,
+  "opponent": "Super Machine",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/23",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1075.012671621749,
+  "opponent": "Giant Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/23",
+  "wrestling_as": "Giant Machine",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1247.7684980174367,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/23",
+  "wrestling_as": "Sivi Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 974.6530350042493,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/23",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1212.9955663981725,
+  "opponent": "Sivi Afi",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/24",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1056.4274205828158,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/24",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 910.8777848078842,
+  "opponent": "Anoaro Atisanoe",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/24",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1251.8123031537416,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/24",
+  "wrestling_as": "Siva Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 984.920375923466,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1985/08/24",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1036.7594538106696,
+  "opponent": "Siva Afi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/08/24",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1021.700278682155,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/24",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1039.6173424404024,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/25",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1031.9138456195105,
+  "opponent": "Anoaro Atisanoe",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/25",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1264.0690906353943,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/25",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1059.3093938484708,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/25",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 817.5521410554543,
+  "opponent": "Umanosuke Ueda",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/25",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1027.42704309944,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/25",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1086.1000454925313,
+  "opponent": "Siva Afi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/25",
+  "wrestling_as": "Siva Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 1058.0986203026418,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/27",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1097.7382873887098,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/27",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1266.9298567987194,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/27",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1022.5243517019738,
+  "opponent": "Umanosuke Ueda",
+  "result": "draw"
+ },
+ {
+  "date": "1985/08/27",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1026.6029700796212,
+  "opponent": "Yang Seung-Hi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/08/28",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1120.3287987957983,
+  "opponent": "Anoaro Atisanoe",
+  "result": "draw"
+ },
+ {
+  "date": "1985/08/28",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1255.634601095175,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1985/08/28",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 770.5386412023681,
+  "opponent": "Yang Seung-Hi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/28",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1046.0311016285168,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/28",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 977.3672069848382,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/28",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1081.1496087142937,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/29",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1111.943590380134,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/29",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1126.907832659345,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/29",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1073.000334280485,
+  "opponent": "Anoaro Atisanoe",
+  "result": "draw"
+ },
+ {
+  "date": "1985/08/29",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1242.1499847691907,
+  "opponent": "Yang Seung-Hi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/08/29",
+  "wrestling_as": "Siva Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 997.9484406203917,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/29",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1046.724575382925,
+  "opponent": "Siva Afi",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/29",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1114.0637172302538,
+  "opponent": "Kerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/30",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1093.4912168426615,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/30",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1243.7181805505859,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/30",
+  "wrestling_as": "Sivi Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 965.6993914488638,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/30",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1159.156881830873,
+  "opponent": "Sivi Afi",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/30",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 949.1132132994805,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/31",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1080.047594266324,
+  "opponent": "Anoaro Atisanoe",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/31",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1259.6661786074908,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/08/31",
+  "wrestling_as": "Sivi Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 946.2888445778343,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/08/31",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1222.7008398336873,
+  "opponent": "Sivi Afi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/02",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 920.4418951260051,
+  "opponent": "Anoaro Atisanoe",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/02",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1266.8340081508597,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/02",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1003.4572629363429,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/02",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1035.7996896816653,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/02",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1097.3088696013986,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/03",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1014.8827680204178,
+  "opponent": "Anoaro Atisanoe",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/03",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1277.2924689814836,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/03",
+  "wrestling_as": "Siva Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 1082.8653381643787,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/03",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1137.1744234539183,
+  "opponent": "Kerry Brown",
+  "result": "draw"
+ },
+ {
+  "date": "1985/09/05",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1003.6788174299567,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/05",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1279.5880136140083,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/05",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 964.3043563042703,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/05",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1119.2005008983965,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/05",
+  "wrestling_as": "Siva Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 1083.3308365192056,
+  "opponent": "Kantaro Hoshino",
+  "result": "draw"
+ },
+ {
+  "date": "1985/09/05",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1085.6345471377044,
+  "opponent": "Siva Afi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/09/06",
+  "wrestling_as": "Siva Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 1041.0181080501527,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/06",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1179.4871519229712,
+  "opponent": "Siva Afi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1185.3344176879878,
+  "opponent": "Super Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/06",
+  "wrestling_as": "Super Machine",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 1109.0516221709124,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/06",
+  "wrestling_as": "Giant Machine",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1220.5876675252855,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/06",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1244.5641734151668,
+  "opponent": "Giant Machine",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/07",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1123.7387914521069,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/07",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1281.743117012242,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/07",
+  "wrestling_as": "Siva Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 1060.0992506706982,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/07",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1212.8675281896583,
+  "opponent": "Kerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/09",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1161.5602057724382,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/09",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 935.763278303625,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/09",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1152.279869452752,
+  "opponent": "Umanosuke Ueda",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/09",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1251.8510374308764,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/09",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1242.7596077710239,
+  "opponent": "Anoaro Atisanoe",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/10",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1182.6915984451985,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/10",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1255.8309651998532,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/10",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1061.263230164724,
+  "opponent": "Kerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/12",
+  "wrestling_as": "Siva Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 1077.9293670322804,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/12",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1193.064425186931,
+  "opponent": "Anoaro Atisanoe",
+  "result": "draw"
+ },
+ {
+  "date": "1985/09/12",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1250.6445518289868,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1985/09/12",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1200.054071314105,
+  "opponent": "Umanosuke Ueda",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/12",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1106.5854241313004,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/13",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1116.0692114660446,
+  "opponent": "Anoaro Atisanoe",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/13",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1268.7498808223404,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/13",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1017.7488719474129,
+  "opponent": "Umanosuke Ueda",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/13",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1150.0997823486116,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1176.5298644836607,
+  "opponent": "Giant Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/13",
+  "wrestling_as": "Giant Machine",
+  "wrestler": "Andre The Giant / Giant Machine",
+  "elo": 1244.1118743557297,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/13",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1210.2793815981343,
+  "opponent": "Super Machine",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/13",
+  "wrestling_as": "Super Machine",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 1177.6212058049778,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/14",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1077.5585623277711,
+  "opponent": "Keiji Muto",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/14",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1143.5272920570221,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/14",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1237.2656845976578,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/14",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1239.4982569330261,
+  "opponent": "Anoaro Atisanoe",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/15",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1106.6992646899755,
+  "opponent": "Anoaro Atisanoe",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/15",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1255.6796982811811,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/15",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 964.2045719198951,
+  "opponent": "Siva Afi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/15",
+  "wrestling_as": "Siva Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 1117.403612542342,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/15",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1162.2543123158712,
+  "opponent": "Kerry Brown",
+  "result": "draw"
+ },
+ {
+  "date": "1985/09/17",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 958.2099445343454,
+  "opponent": "Shiro Koshinaka (winner), Masahiro Chono",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/17",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1170.6448774335388,
+  "opponent": "Masahiro Chono, Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/17",
+  "wrestling_as": "Anoaro Atisanoe",
+  "wrestler": "Anoaro Atisanoe",
+  "elo": 1264.5535112845496,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/17",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1062.9128156799625,
+  "opponent": "Umanosuke Ueda",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/17",
+  "wrestling_as": "Umanosuke Ueda",
+  "wrestler": "Umanosuke Ueda",
+  "elo": 1193.8862313586246,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/17",
+  "wrestling_as": "Sivi Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 1084.2851770469297,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/17",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1256.0574746807324,
+  "opponent": "Sivi Afi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/18",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1054.7237794699583,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/18",
+  "wrestling_as": "Siva Afi",
+  "wrestler": "Sivi Afi / Siva Afi",
+  "elo": 1046.4635557007844,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/18",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1208.4664987796841,
+  "opponent": "Siva Afi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/18",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1124.7004057679926,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/19",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1010.821759771428,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/19",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1141.210889299929,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/19",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1227.7824066689927,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/19",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1238.5544496098742,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/21",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1015.683640370375,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/21",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 978.7522698763056,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/21",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1173.2803791950514,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/21",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1089.1146120202557,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/21",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1245.575303542861,
+  "opponent": "Tony St. Clair",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/22",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1071.691612278617,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/22",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1124.6131823166581,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/22",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1149.307446308753,
+  "opponent": "Kerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/22",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1132.565089678859,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/22",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1258.9120943679702,
+  "opponent": "Hacksaw Higgins",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/23",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1048.779134777466,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/23",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1073.9806357307093,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/23",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1168.7220728304185,
+  "opponent": "Kerry Brown",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/23",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 949.5466354540595,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/23",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1161.7707241011053,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/24",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1091.6314400956117,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/24",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1186.7235951401474,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/24",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1004.5579376083267,
+  "opponent": "Tony St. Clair",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/24",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1133.335809189395,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/24",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1270.5977541547045,
+  "opponent": "Kerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/26",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1200.5817716020806,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/26",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1105.277472644329,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/26",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1094.2129810857332,
+  "opponent": "Kerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/26",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 904.0177467969979,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/26",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1184.535168429636,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/27",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1060.7042607629342,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/27",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1203.9456518336535,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/27",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1123.2556569662,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/27",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1075.8682055612082,
+  "opponent": "Tony St. Clair",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/27",
+  "wrestling_as": "Tony St. Clair",
+  "wrestler": "Tony St. Clair",
+  "elo": 1182.0807859448448,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1985/09/27",
+  "wrestling_as": "Masked Superstar",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 1140.6910903653768,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/09/27",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1289.062811874505,
+  "opponent": "Masked Superstar",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/04",
+  "wrestling_as": "Fishman",
+  "wrestler": "Fishman",
+  "elo": 975.9219973313265,
+  "opponent": "The Cobra",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/04",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1223.5768693070152,
+  "opponent": "Fishman",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/04",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1234.85347912764,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1284.9018030389268,
+  "opponent": "Bruiser Brody",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/06",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1124.923092397089,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/06",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1002.0560393713816,
+  "opponent": "Karl Steiner",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/06",
+  "wrestling_as": "Ray Candy",
+  "wrestler": "Ray Candy",
+  "elo": 950.0,
+  "opponent": "Rambo Sakurada",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/06",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1050.0,
+  "opponent": "Ray Candy",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/07",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1189.5481758176916,
+  "opponent": "Fishman",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/07",
+  "wrestling_as": "Fishman",
+  "wrestler": "Fishman",
+  "elo": 1004.7169493632503,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/07",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1237.527087970102,
+  "opponent": "Karl Steiner",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/07",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1063.4152320335857,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/07",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1250.2523536537137,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/08",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1051.6810389027407,
+  "opponent": "Ray Candy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/08",
+  "wrestling_as": "Ray Candy",
+  "wrestler": "Ray Candy",
+  "elo": 1023.2420534943483,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/08",
+  "wrestling_as": "Konga The Barbarian",
+  "wrestler": "Konga The Barbarian",
+  "elo": 970.2552574743587,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/08",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1179.0521888343942,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/09",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1199.4345949447943,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/09",
+  "wrestling_as": "Roger Smith",
+  "wrestler": "Roger Smith",
+  "elo": 1052.1973818584324,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/09",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 837.0468723532613,
+  "opponent": "Ray Candy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/09",
+  "wrestling_as": "Ray Candy",
+  "wrestler": "Ray Candy",
+  "elo": 1056.7274907162166,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/10",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1061.065318093428,
+  "opponent": "Hirokazu Hata",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/10",
+  "wrestling_as": "Roger Smith",
+  "wrestler": "Roger Smith",
+  "elo": 1054.640355187353,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/10",
+  "wrestling_as": "Ray Candy",
+  "wrestler": "Ray Candy",
+  "elo": 1005.7594479582423,
+  "opponent": "Rambo Sakurada",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/10",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1100.9680427579742,
+  "opponent": "Ray Candy",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/11",
+  "wrestling_as": "Fishman",
+  "wrestler": "Fishman",
+  "elo": 1049.7872767171266,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/11",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 987.6600835331103,
+  "opponent": "Karl Steiner",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/11",
+  "wrestling_as": "Ray Candy",
+  "wrestler": "Ray Candy",
+  "elo": 1049.6482940035999,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/11",
+  "wrestling_as": "Konga The Barbarian",
+  "wrestler": "Konga The Barbarian",
+  "elo": 938.2263418548417,
+  "opponent": "Rambo Sakurada",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/11",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1132.9969583774912,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/13",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1091.7120956705235,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/13",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 958.8625959361642,
+  "opponent": "Ray Candy",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/13",
+  "wrestling_as": "Ray Candy",
+  "wrestler": "Ray Candy",
+  "elo": 1092.8417374388173,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/13",
+  "wrestling_as": "Fishman",
+  "wrestler": "Fishman",
+  "elo": 1024.4502455040345,
+  "opponent": "The Cobra",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/13",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1250.195603576648,
+  "opponent": "Fishman",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/15",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 985.8394436900622,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/15",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1023.0485043077985,
+  "opponent": "Karl Steiner",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/15",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1037.9797745370042,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/15",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1262.9700824020044,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/16",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1029.7355787293845,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/16",
+  "wrestling_as": "Fishman",
+  "wrestler": "Fishman",
+  "elo": 1052.1631820643124,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/16",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1259.566167845639,
+  "opponent": "Keiichi Yamada",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/16",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1080.9810376722837,
+  "opponent": "Rick Oliver",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/17",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1014.8501047313821,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/17",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1172.2445737465225,
+  "opponent": "Yang Seung-Hi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/17",
+  "wrestling_as": "Ray Candy",
+  "wrestler": "Ray Candy",
+  "elo": 1048.5949442846363,
+  "opponent": "Rambo Sakurada",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/17",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1177.2437515316722,
+  "opponent": "Ray Candy",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/17",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1007.0350592398509,
+  "opponent": "Konga The Barbarian",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/17",
+  "wrestling_as": "Konga The Barbarian",
+  "wrestler": "Konga The Barbarian",
+  "elo": 1075.8926344975564,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/18",
+  "wrestling_as": "Fishman",
+  "wrestler": "Fishman",
+  "elo": 1048.940066094222,
+  "opponent": "Don Arakawa",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/18",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1032.958694699475,
+  "opponent": "Fishman",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/18",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1139.3363504333738,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/18",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1281.9237829511535,
+  "opponent": "Rambo Sakurada",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/18",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1253.4119148638536,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/18",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1184.5530797100935,
+  "opponent": "The Cobra",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/18",
+  "wrestling_as": "Konga The Barbarian",
+  "wrestler": "Konga The Barbarian",
+  "elo": 1052.8011641615994,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/18",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1296.4475382069054,
+  "opponent": "Konga The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/19",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1038.8564082919447,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/19",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1037.5990818081907,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/19",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 940.7183963266828,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/19",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1201.442371498454,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/20",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1001.4454061264977,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/20",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1057.5704584023147,
+  "opponent": "Shiro Koshinaka",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/20",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1164.5817031159695,
+  "opponent": "Yang Seung-Hi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/20",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1057.0546482959203,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/20",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1293.886977639335,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/21",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1040.8638006304532,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/21",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 991.5469750826946,
+  "opponent": "Yang Seung-Hi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/21",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1104.8798916115647,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/21",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1255.0145673531363,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/21",
+  "wrestling_as": "Ray Candy",
+  "wrestler": "Ray Candy",
+  "elo": 1019.2742759115039,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/21",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1216.10270568502,
+  "opponent": "Ray Candy",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/22",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1130.168233992725,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/22",
+  "wrestling_as": "Fishman",
+  "wrestler": "Fishman",
+  "elo": 992.9385247831267,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/22",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1063.036600550946,
+  "opponent": "Fishman",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/22",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1063.5071742398393,
+  "opponent": "Bad News Allen",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/22",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 1092.3767487137518,
+  "opponent": "Rambo Sakurada",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/22",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1102.3269449752836,
+  "opponent": "Karl Steiner",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/24",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1024.2413952758961,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/24",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1003.4399887816222,
+  "opponent": "Yang Seung-Hi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/24",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1167.592045841556,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/24",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1042.5278600893196,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/24",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1304.376634714595,
+  "opponent": "Rambo Sakurada",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/25",
+  "wrestling_as": "Fishman",
+  "wrestler": "Fishman",
+  "elo": 997.4312201289116,
+  "opponent": "Don Arakawa",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/25",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1019.7486999301112,
+  "opponent": "Fishman",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/25",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1083.462690079414,
+  "opponent": "Karl Steiner",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/26",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1172.8461643471653,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/26",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 955.7852787064011,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/26",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1067.4034100053325,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/26",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1257.5358159687887,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/26",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1197.32128844775,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/26",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1323.158051951865,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/28",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 959.5211111603221,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/28",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1031.0348546341309,
+  "opponent": "Shiro Koshinaka",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/28",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1200.9502584871711,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/28",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1034.7452448285119,
+  "opponent": "Bad News Allen",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/28",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 1141.0941939646539,
+  "opponent": "Rambo Sakurada",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/29",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1037.8558533724959,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/29",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 936.8679047668851,
+  "opponent": "Yang Seung-Hi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/29",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1195.4993707406024,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/29",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1071.1578647230901,
+  "opponent": "Karl Steiner",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/29",
+  "wrestling_as": "Bad News Allen",
+  "wrestler": "Bad News Allen",
+  "elo": 1085.5381773544143,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/29",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1157.8829615855232,
+  "opponent": "Bad News Allen",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/30",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1046.2299935548901,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/30",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1210.0328432531085,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/30",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1188.748950445412,
+  "opponent": "Tatsutoshi Goto",
+  "result": "draw"
+ },
+ {
+  "date": "1985/10/30",
+  "wrestling_as": "Rambo Sakurada",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1052.167397164165,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/30",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1332.6532857313275,
+  "opponent": "Rambo Sakurada",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/31",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1023.3724763113104,
+  "opponent": "The Cobra",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/31",
+  "wrestling_as": "The Cobra",
+  "wrestler": "The Cobra",
+  "elo": 1268.9645745905786,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/10/31",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1305.057462356325,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/10/31",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1324.043361581908,
+  "opponent": "Bruiser Brody",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/15",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1035.659215339871,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/16",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 943.2335323492415,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/16",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1040.038263051567,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/16",
+  "wrestling_as": "Masked Superstar",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 1128.2202108893557,
+  "opponent": "Kendo Nagasaki",
+  "result": "draw"
+ },
+ {
+  "date": "1985/11/16",
+  "wrestling_as": "Kendo Nagasaki",
+  "wrestler": "Kendo Nagasaki / Rambo Sakurada",
+  "elo": 1064.6382766401862,
+  "opponent": "Masked Superstar",
+  "result": "draw"
+ },
+ {
+  "date": "1985/11/17",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 870.3968641373604,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/17",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1076.4565971575075,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/17",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1152.9960304522674,
+  "opponent": "Jimmy Snuka",
+  "result": "draw"
+ },
+ {
+  "date": "1985/11/17",
+  "wrestling_as": "Jimmy Snuka",
+  "wrestler": "Jimmy Snuka",
+  "elo": 1128.7032617218504,
+  "opponent": "Kengo Kimura",
+  "result": "draw"
+ },
+ {
+  "date": "1985/11/18",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 910.0106926345943,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/18",
+  "wrestling_as": "The Masked Superstar",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 1138.0355739332388,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/11/18",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1187.505925403867,
+  "opponent": "The Masked Superstar",
+  "result": "draw"
+ },
+ {
+  "date": "1985/11/19",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 919.353916504675,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/19",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1079.8909525456436,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/19",
+  "wrestling_as": "Jimmy Snuka",
+  "wrestler": "Jimmy Snuka",
+  "elo": 1104.1849161902342,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/19",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1336.302534347716,
+  "opponent": "Jimmy Snuka",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/21",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 858.5023647581434,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/21",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1093.462376424212,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/21",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1123.5815091682716,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/21",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1319.764722998323,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/22",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1081.6610435399111,
+  "opponent": "Masahiro Chono",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/22",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1203.8889797230975,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/22",
+  "wrestling_as": "Canek",
+  "wrestler": "Canek / El Canek",
+  "elo": 1043.078950412271,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/22",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1128.876519440202,
+  "opponent": "Bruiser Brody",
+  "result": "draw"
+ },
+ {
+  "date": "1985/11/22",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1305.8185665361245,
+  "opponent": "Dick Murdoch",
+  "result": "draw"
+ },
+ {
+  "date": "1985/11/23",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 910.8947494364211,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/24",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1133.735334876672,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/24",
+  "wrestling_as": "El Canek",
+  "wrestler": "Canek / El Canek",
+  "elo": 1004.4612309737337,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/24",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1162.1992286068091,
+  "opponent": "El Canek",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/25",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1065.9448144751384,
+  "opponent": "Canek",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/25",
+  "wrestling_as": "Canek",
+  "wrestler": "Canek / El Canek",
+  "elo": 1072.2517513752673,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/25",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1183.2014247893153,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/25",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1238.1980053572227,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/25",
+  "wrestling_as": "Nord The Barbarian",
+  "wrestler": "Nord The Barbarian",
+  "elo": 974.637490818721,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/25",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1212.8684345851461,
+  "opponent": "Nord The Barbarian",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/25",
+  "wrestling_as": "Jimmy Snuka",
+  "wrestler": "Jimmy Snuka",
+  "elo": 1139.6253122654725,
+  "opponent": "Dos Caras",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/26",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1045.8715717159207,
+  "opponent": "Yang Seung-Hi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/26",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1218.9908966133057,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/26",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1181.3497191875215,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/26",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1260.7372658927986,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/27",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1057.7121224918524,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/27",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 854.2629529653635,
+  "opponent": "Canek",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/27",
+  "wrestling_as": "Canek",
+  "wrestler": "Canek / El Canek",
+  "elo": 1100.567649610796,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/28",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1223.016120111155,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/28",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1064.321062427938,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/28",
+  "wrestling_as": "Masked Superstar",
+  "wrestler": "The Masked Superstar / Masked Superstar / Super Machine",
+  "elo": 1167.8267188023647,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/29",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 836.6878334107975,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/29",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1265.1310457814402,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/29",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1182.6727502654712,
+  "opponent": "Nord The Barbarian",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/29",
+  "wrestling_as": "Nord The Barbarian",
+  "wrestler": "Nord The Barbarian",
+  "elo": 1055.3242305100887,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/30",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1075.1754799251116,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/30",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 812.6713362290459,
+  "opponent": "Yang Seung-Hi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/11/30",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1194.680998856347,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/30",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1268.014050491246,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/11/30",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1238.1794362305227,
+  "opponent": "Jimmy Snuka",
+  "result": "draw"
+ },
+ {
+  "date": "1985/11/30",
+  "wrestling_as": "Jimmy Snuka",
+  "wrestler": "Jimmy Snuka",
+  "elo": 1154.417046890149,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1985/12/02",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1126.9581279631107,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1985/12/02",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1133.6676853683748,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/02",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1216.8034911875468,
+  "opponent": "Hacksaw Higgins",
+  "result": "draw"
+ },
+ {
+  "date": "1985/12/02",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1264.0789938888454,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/12/03",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 857.9195228790123,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/03",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1154.5461914583993,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/03",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1265.5738077336525,
+  "opponent": "Kim Su Hong",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/04",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1184.2522684481246,
+  "opponent": "Naoki Sano",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/04",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1268.4567684344454,
+  "opponent": "Bruiser Brody",
+  "result": "draw"
+ },
+ {
+  "date": "1985/12/04",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1302.9356058353317,
+  "opponent": "Hacksaw Higgins",
+  "result": "draw"
+ },
+ {
+  "date": "1985/12/05",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1122.436699485717,
+  "opponent": "Canek",
+  "result": "lost"
+ },
+ {
+  "date": "1985/12/05",
+  "wrestling_as": "Canek",
+  "wrestler": "Canek / El Canek",
+  "elo": 1162.3832185732035,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/05",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1220.4930996759333,
+  "opponent": "Hacksaw Higgins",
+  "result": "draw"
+ },
+ {
+  "date": "1985/12/05",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1264.7671599460589,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1985/12/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1246.75408956132,
+  "opponent": "Dos Caras",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/06",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1157.3718116664886,
+  "opponent": "Shinya Hashimoto",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/07",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 823.9676604424578,
+  "opponent": "Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1985/12/07",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 1150.6436165866521,
+  "opponent": "Shunji Kosugi",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/07",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1236.5985181779608,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1985/12/07",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1248.6617414440313,
+  "opponent": "Hacksaw Higgins",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/09",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 927.5490038307013,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/09",
+  "wrestling_as": "Shiro Koshinaka",
+  "wrestler": "Shiro Koshinaka",
+  "elo": 1078.1602673267,
+  "opponent": "Canek",
+  "result": "lost"
+ },
+ {
+  "date": "1985/12/09",
+  "wrestling_as": "Canek",
+  "wrestler": "Canek / El Canek",
+  "elo": 1206.6596507322206,
+  "opponent": "Shiro Koshinaka",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/10",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1165.3608803193324,
+  "opponent": "Black Cat",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/10",
+  "wrestling_as": "Kengo Kimura",
+  "wrestler": "Kengo Kimura",
+  "elo": 1161.079469890122,
+  "opponent": "Jimmy Snuka",
+  "result": "draw"
+ },
+ {
+  "date": "1985/12/10",
+  "wrestling_as": "Jimmy Snuka",
+  "wrestler": "Jimmy Snuka",
+  "elo": 1155.5368056068362,
+  "opponent": "Kengo Kimura",
+  "result": "draw"
+ },
+ {
+  "date": "1985/12/10",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1225.7618041334513,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/12/10",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1323.9278912632003,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/10",
+  "wrestling_as": "Dick Murdoch",
+  "wrestler": "Dick Murdoch",
+  "elo": 1105.6228052859651,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1985/12/10",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1347.9293914248344,
+  "opponent": "Dick Murdoch",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/11",
+  "wrestling_as": "Shunji Kosugi",
+  "wrestler": "Shunji Kosugi",
+  "elo": 1035.5957178774822,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/11",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1228.9944152674761,
+  "opponent": "Bruiser Brody",
+  "result": "lost"
+ },
+ {
+  "date": "1985/12/11",
+  "wrestling_as": "Bruiser Brody",
+  "wrestler": "Bruiser Brody",
+  "elo": 1343.5952174397555,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/12",
+  "wrestling_as": "Yang Seung-Hi",
+  "wrestler": "Strong Machine #2 / Yang Seung-Hi",
+  "elo": 1125.4715098892375,
+  "opponent": "Hacksaw Higgins",
+  "result": "lost"
+ },
+ {
+  "date": "1985/12/12",
+  "wrestling_as": "Hacksaw Higgins",
+  "wrestler": "Hacksaw Higgins",
+  "elo": 1256.5432033930083,
+  "opponent": "Yang Seung-Hi",
+  "result": "won"
+ },
+ {
+  "date": "1985/12/12",
+  "wrestling_as": "Nord The Barbarian",
+  "wrestler": "Nord The Barbarian",
+  "elo": 1084.5336689847966,
+  "opponent": "Tatsutoshi Goto",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Antonio Inoki",
+ "Bruiser Brody",
+ "Super Strong Machine / Strong Machine #1",
+ "Anoaro Atisanoe",
+ "The Cobra",
+ "Hacksaw Higgins",
+ "Andre The Giant / Giant Machine",
+ "Tatsumi Fujinami",
+ "Seiji Sakaguchi",
+ "Hulk Hogan",
+ "Billy Jack",
+ "Adrian Adonis",
+ "Hiro Saito",
+ "Strong Machine #2 / Yang Seung-Hi",
+ "Shiro Koshinaka",
+ "Tony St. Clair",
+ "Canek / El Canek",
+ "Mike Sharpe Jr.",
+ "Umanosuke Ueda",
+ "King Kong Bundy",
+ "The Masked Superstar / Masked Superstar / Super Machine",
+ "Kendo Nagasaki / Rambo Sakurada",
+ "Naoki Sano",
+ "Kengo Kimura",
+ "Kantaro Hoshino",
+ "Jimmy Snuka",
+ "Makoto Arakawa / Don Arakawa",
+ "Shunji Kosugi",
+ "Dick Murdoch",
+ "Bad News Allen",
+ "Keiichi Yamada",
+ "Mike Miller",
+ "Dave Taylor",
+ "Black Tiger / Black Tiger I",
+ "Shunji Takano",
+ "Sivi Afi / Siva Afi",
+ "Samula / Wild Samoan",
+ "David Morgan",
+ "Ray Candy",
+ "Pedro Morales",
+ "Nord The Barbarian",
+ "Bob Backlund",
+ "Konga The Barbarian",
+ "Keiji Muto",
+ "Karl Steiner",
+ "Strong Machine #3",
+ "Enrique Vera",
+ "Roger Smith",
+ "Tatsutoshi Goto",
+ "Kerry Brown",
+ "Fishman",
+ "Hirokazu Hata",
+ "Tiger Toguchi",
+ "Gestapo / Rick Oliver",
+ "Kim Su Hong",
+ "Black Cat",
+ "Gerry Morrow",
+ "Matt Borne",
+ "Leroy Brown",
+ "Dos Caras",
+ "Akira Nogami",
+ "Shinya Hashimoto",
+ "Abdullah The Butcher",
+ "Masahiro Chono",
+ "Yuji Funaki / Masaharu Funaki / Masakatsu Funaki",
+ "King Iaukea Jr."
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

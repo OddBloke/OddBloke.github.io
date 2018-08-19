@@ -1,0 +1,2543 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "2009/01/04",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1050.0,
+  "opponent": "Low Ki",
+  "result": "won"
+ },
+ {
+  "date": "2009/01/04",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 950.0,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2009/01/04",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1050.0,
+  "opponent": "Masato Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2009/01/04",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 950.0,
+  "opponent": "Jun Akiyama",
+  "result": "lost"
+ },
+ {
+  "date": "2009/01/04",
+  "wrestling_as": "Jun Akiyama",
+  "wrestler": "Jun Akiyama",
+  "elo": 1050.0,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2009/01/04",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1050.0,
+  "opponent": "Keiji Muto",
+  "result": "won"
+ },
+ {
+  "date": "2009/02/15",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1092.8536882591618,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2009/02/15",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 957.1463117408382,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2009/02/15",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1092.8536882591618,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2009/02/15",
+  "wrestling_as": "Mistico",
+  "wrestler": "Mistico I / Mistico",
+  "elo": 1050.0,
+  "opponent": "Mephisto",
+  "result": "won"
+ },
+ {
+  "date": "2009/02/15",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 950.0,
+  "opponent": "Kurt Angle",
+  "result": "lost"
+ },
+ {
+  "date": "2009/02/15",
+  "wrestling_as": "Kurt Angle",
+  "wrestler": "Kurt Angle",
+  "elo": 1050.0,
+  "opponent": "Giant Bernard",
+  "result": "won"
+ },
+ {
+  "date": "2009/02/15",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 957.1463117408382,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/02/15",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1092.8536882591618,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2009/02/28",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1024.7841979982427,
+  "opponent": "Nobuo Yoshihashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/08",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 950.0,
+  "opponent": "Tomohiro Ishii; Tomohiro Ishii",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/08",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 950.0,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/08",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1050.0,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/08",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1019.2363424107509,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/08",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 907.1463117408382,
+  "opponent": "Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/08",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1042.8536882591618,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/08",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 943.8639438691465,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/08",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1013.2823678716918,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/15",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 985.9935000197115,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/15",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1014.0064999802885,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/15",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1093.881980179338,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/15",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1150.7364517605088,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/15",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 964.1391298173997,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/15",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1068.3795804650429,
+  "opponent": "Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/16",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 938.0081061277382,
+  "opponent": "Val Venis",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/16",
+  "wrestling_as": "Val Venis",
+  "wrestler": "Val Venis",
+  "elo": 1047.9853938919734,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/19",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 970.8129207284946,
+  "opponent": "Nobuo Yoshihashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/22",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1032.5853018905618,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/22",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1033.1123391689819,
+  "opponent": "Yutaka Yoshie; Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/22",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1089.10145282453,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/22",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1172.2054185011043,
+  "opponent": "Yuji Nagata; Giant Bernard",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/22",
+  "wrestling_as": "Val Venis",
+  "wrestler": "Val Venis",
+  "elo": 1004.4068024830399,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/03/22",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1136.4322796680954,
+  "opponent": "Val Venis",
+  "result": "won"
+ },
+ {
+  "date": "2009/03/29",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1172.1769513594502,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/05",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1045.7251290531576,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/05",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1120.3110858144992,
+  "opponent": "Black Tiger; Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/05",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 928.2299468660876,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/04/05",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1193.9754716350167,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/05",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1039.2605073769244,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2009/04/05",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 849.6929960372659,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/04/05",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1011.2246037333401,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/05",
+  "wrestling_as": "Kurt Angle",
+  "wrestler": "Kurt Angle",
+  "elo": 1016.8920583291132,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/04/05",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1205.2848930303371,
+  "opponent": "Kurt Angle",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/11",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1054.6644400662128,
+  "opponent": "Nobuo Yoshihashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/11",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1065.1601387833066,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/18",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1044.3396479147195,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/19",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1068.251753752297,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/21",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1086.761778184926,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/22",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1153.657329258802,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/22",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 874.9548215664372,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/04/22",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1210.0712167222173,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/22",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 976.5255995788873,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/04/22",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1217.0220932408934,
+  "opponent": "Takao Omori",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/26",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1117.3559962651386,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/26",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1048.7841730690275,
+  "opponent": "Togi Makabe (winner), Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2009/04/26",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1026.0219174165309,
+  "opponent": "Togi Makabe (winner), Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2009/04/26",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 887.4783072187239,
+  "opponent": "Giant Bernard, Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2009/04/30",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1074.0746204040106,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/03",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1103.3713274338293,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/03",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1185.5713057743778,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/05/03",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1241.5220041887328,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/06",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1179.0746185515993,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/06",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 953.4378643054288,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/05/06",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1208.6590410478364,
+  "opponent": "Takao Omori",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/06",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1029.18317063214,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/06",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1196.9278091487897,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/05/06",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1053.331601726209,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/30",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 941.1721330098255,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2009/05/30",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1055.663840108087,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/30",
+  "wrestling_as": "YAMATO",
+  "wrestler": "YAMATO",
+  "elo": 960.5015556843291,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/05/30",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1113.5730647196815,
+  "opponent": "YAMATO",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/30",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 973.7078011088123,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2009/05/30",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1205.3668174427871,
+  "opponent": "Atsushi Aoki",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/30",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 966.2745992153856,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/05/30",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1151.0813970497531,
+  "opponent": "Kota Ibushi",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/31",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 981.0204032085712,
+  "opponent": "Nobuo Yoshihashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/05/31",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1081.4385442676364,
+  "opponent": "Tsuyoshi Kikuchi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/02",
+  "wrestling_as": "YAMATO",
+  "wrestler": "YAMATO",
+  "elo": 967.7589876493689,
+  "opponent": "Nobuo Yoshihashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/02",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1070.9833474103616,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/02",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1009.4610683934692,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/03",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 943.6853209021031,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/03",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1108.3184297168298,
+  "opponent": "Atsushi Aoki",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/03",
+  "wrestling_as": "YAMATO",
+  "wrestler": "YAMATO",
+  "elo": 1023.677131843603,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/03",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 974.0110675363177,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/03",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1149.023065576833,
+  "opponent": "Kota Ibushi",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/03",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1025.9666557229832,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/03",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1220.215409635339,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/05",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 957.831086936444,
+  "opponent": "Nobuo Yoshihashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/05",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1073.485526999121,
+  "opponent": "Jushin Thunder Liger",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/06",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1048.2035093474105,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/06",
+  "wrestling_as": "YAMATO",
+  "wrestler": "YAMATO",
+  "elo": 984.4059952844163,
+  "opponent": "Tsuyoshi Kikuchi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/06",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 1014.9049515938036,
+  "opponent": "AKIRA",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/07",
+  "wrestling_as": "YAMATO",
+  "wrestler": "YAMATO",
+  "elo": 909.4025692257502,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/07",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 1033.9937345158635,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/07",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1073.8870931715908,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/07",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1237.4310779079585,
+  "opponent": "Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/07",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1123.905989422615,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/08",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 1037.9984216343444,
+  "opponent": "Nobuo Yoshihashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/08",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1150.0535588134999,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/08",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1046.0801914624546,
+  "opponent": "Tsuyoshi Kikuchi",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/08",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1195.4650251230144,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/09",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1085.7701858144342,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/09",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1097.781466178722,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/09",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1122.495874316054,
+  "opponent": "Tsuyoshi Kikuchi",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/11",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1038.7287457724565,
+  "opponent": "AKIRA",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/11",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1043.3914654289756,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/11",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1070.0694981027598,
+  "opponent": "YAMATO",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/11",
+  "wrestling_as": "YAMATO",
+  "wrestler": "YAMATO",
+  "elo": 1069.3706906472303,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/11",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1119.514276526492,
+  "opponent": "Jado",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/12",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 1092.8252696201857,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/12",
+  "wrestling_as": "YAMATO",
+  "wrestler": "YAMATO",
+  "elo": 1016.0239300510653,
+  "opponent": "Kota Ibushi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/12",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1099.4269520586195,
+  "opponent": "YAMATO",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/12",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1136.843321905414,
+  "opponent": "AKIRA",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/13",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 996.4515534437796,
+  "opponent": "Atsushi Aoki",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/13",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 1135.1024619488626,
+  "opponent": "Milano Collection AT",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/13",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1027.8086361772398,
+  "opponent": "Black Tiger",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/13",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1141.0592795741177,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/13",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 997.2232152168629,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/13",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1116.2377483148725,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/14",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 954.6826258103627,
+  "opponent": "Taichi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/14",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 1082.3902762243195,
+  "opponent": "Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/14",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1221.6097966624325,
+  "opponent": "Atsushi Aoki; Prince Devitt",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/14",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1090.4525842716296,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/14",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1134.7901545848854,
+  "opponent": "Kota Ibushi; Koji Kanemoto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/20",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1058.3996963661577,
+  "opponent": "Black Tiger",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/20",
+  "wrestling_as": "Go Shiozaki",
+  "wrestler": "Go Shiozaki",
+  "elo": 1023.8348168421162,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/20",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1170.2226828295102,
+  "opponent": "Takashi Sugiura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/20",
+  "wrestling_as": "Takashi Sugiura",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1076.8727164366524,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/20",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 825.3671026215783,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/20",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1057.0775197151036,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2009/06/20",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1022.895287159611,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/06/20",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1227.3641237153877,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/05",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 975.2126147059246,
+  "opponent": "Tomoaki Honma",
+  "result": "lost"
+ },
+ {
+  "date": "2009/07/05",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1178.4184089467055,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/05",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1135.2124582905383,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/10",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1178.6612430381717,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/10",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 910.6648649863967,
+  "opponent": "Milano Collection AT",
+  "result": "lost"
+ },
+ {
+  "date": "2009/07/10",
+  "wrestling_as": "Milano Collection AT",
+  "wrestler": "Milano Collection AT",
+  "elo": 1040.4693142677456,
+  "opponent": "Ryusuke Taguchi",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/14",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 975.4924349047742,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/15",
+  "wrestling_as": "Val Venis",
+  "wrestler": "Val Venis",
+  "elo": 1018.4730020040503,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/20",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1100.337683652685,
+  "opponent": "Tomoaki Honma",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/20",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1185.6597343179953,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2009/07/20",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1130.2998210550322,
+  "opponent": "Koji Kanemoto",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/20",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 904.8926716656475,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2009/07/20",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 966.0069887021324,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/20",
+  "wrestling_as": "Takashi Sugiura",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1047.2702006739719,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/07/20",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1242.165381596728,
+  "opponent": "Takashi Sugiura",
+  "result": "won"
+ },
+ {
+  "date": "2009/07/21",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1125.9227441812604,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/07",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1025.0953106359889,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/07",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 991.809343654277,
+  "opponent": "TAJIRI",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/07",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1071.785060336583,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/07",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 817.8031476001327,
+  "opponent": "Masato Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/07",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 993.5447620327574,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/07",
+  "wrestling_as": "Takashi Sugiura",
+  "wrestler": "Takashi Sugiura",
+  "elo": 999.2101950974725,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/07",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1120.9206458250069,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/07",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1183.4205073029593,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/07",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1201.0278695146408,
+  "opponent": "Takao Omori",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/07",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 1057.7674590689485,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/08",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 977.4979113070822,
+  "opponent": "TAJIRI",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/08",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 979.7833997452381,
+  "opponent": "Takao Omori",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/08",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 1103.0793699596993,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/08",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1072.976243676018,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/08",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1183.1568604395272,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/08",
+  "wrestling_as": "Takashi Sugiura",
+  "wrestler": "Takashi Sugiura",
+  "elo": 973.4868890618933,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/08",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1209.1438133385384,
+  "opponent": "Takashi Sugiura",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/08",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 968.7392691451493,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/08",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1212.5629067692046,
+  "opponent": "Giant Bernard",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 1037.8183643097268,
+  "opponent": "Masato Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 1058.8057676827298,
+  "opponent": "Takao Omori",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1229.1905840412962,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 928.1945567022665,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1020.3281121881208,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1021.9564847274327,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1122.8048192851684,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1156.1808455248763,
+  "opponent": "Takashi Sugiura",
+  "result": "draw"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Takashi Sugiura",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1000.4629039765443,
+  "opponent": "Yuji Nagata",
+  "result": "draw"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 956.9622089712256,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/09",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1222.8307579371328,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/10",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 985.3034387923075,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/10",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1072.8430377055402,
+  "opponent": "Takao Omori",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/10",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 1102.019890415306,
+  "opponent": "TAJIRI",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/10",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1198.0660730904035,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/10",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1236.9837451994624,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/10",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 968.867249737081,
+  "opponent": "Takashi Sugiura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/10",
+  "wrestling_as": "Takashi Sugiura",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1053.5521389668959,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/10",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 997.1985067449668,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "draw"
+ },
+ {
+  "date": "2009/08/10",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1205.5797704264578,
+  "opponent": "Togi Makabe",
+  "result": "draw"
+ },
+ {
+  "date": "2009/08/11",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 931.2338304749352,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/11",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1011.0318172885978,
+  "opponent": "Takao Omori",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/11",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1163.5026863300661,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/11",
+  "wrestling_as": "Takashi Sugiura",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1083.3336539987358,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/11",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 1097.8308465649804,
+  "opponent": "Giant Bernard",
+  "result": "draw"
+ },
+ {
+  "date": "2009/08/11",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1077.0320815558657,
+  "opponent": "Masato Tanaka",
+  "result": "draw"
+ },
+ {
+  "date": "2009/08/11",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1043.0272025710956,
+  "opponent": "TAJIRI",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/11",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1119.1583112608294,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/11",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1047.7750115666552,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/13",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1177.2846066413697,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/13",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1093.3159136753577,
+  "opponent": "Hiroyoshi Tenzan",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/13",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1017.6465063411753,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/13",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1070.4173925032883,
+  "opponent": "Giant Bernard",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/13",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 1040.00873520263,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/13",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1100.849313933446,
+  "opponent": "Masato Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/13",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1085.4932840169586,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/13",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1253.816258821398,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/13",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1163.7672409523018,
+  "opponent": "TAJIRI",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1003.1012943242797,
+  "opponent": "Takashi Iizuka",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1064.8998127190164,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1268.0243092995686,
+  "opponent": "Manabu Nakanishi",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1114.0841716883237,
+  "opponent": "Takashi Sugiura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Takashi Sugiura",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1146.534088951782,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1068.9452084767252,
+  "opponent": "Mistico",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Mistico",
+  "wrestler": "Mistico I / Mistico",
+  "elo": 1111.354612578307,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 1073.8927871630128,
+  "opponent": "TAJIRI",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1024.7857324113565,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1146.4809740253777,
+  "opponent": "Toru Yano",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 1007.1021085597392,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/15",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1196.6738675951926,
+  "opponent": "Masato Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/16",
+  "wrestling_as": "Takashi Sugiura",
+  "wrestler": "Takashi Sugiura",
+  "elo": 1096.5264450994819,
+  "opponent": "Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/16",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1259.3566274283712,
+  "opponent": "Takashi Sugiura; Shinsuke Nakamura",
+  "result": "won"
+ },
+ {
+  "date": "2009/08/16",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1156.8000661226527,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/16",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1256.5272052604919,
+  "opponent": "Hiroshi Tanahashi; Togi Makabe",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/30",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 984.3051781901563,
+  "opponent": "Manabu Nakanishi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/08/30",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1109.777805161,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/13",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 937.0075208827257,
+  "opponent": "Yuji Nagata",
+  "result": "lost"
+ },
+ {
+  "date": "2009/09/13",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1050.3989516317104,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/14",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 874.4867897487126,
+  "opponent": "Takao Omori",
+  "result": "lost"
+ },
+ {
+  "date": "2009/09/14",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 1105.1531527300194,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/16",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 815.2355711480262,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2009/09/16",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1054.4113417116996,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/17",
+  "wrestling_as": "Manabu Nakanishi",
+  "wrestler": "Manabu Nakanishi",
+  "elo": 1123.833588197226,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/17",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 975.6270726260111,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/19",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 931.6448433922625,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2009/09/19",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1061.628735574924,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/20",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1072.105242606848,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/21",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1210.75683298543,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/23",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1023.9002810336399,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/25",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1265.633497264414,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/25",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1258.4977100297383,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/26",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1135.6288605996322,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/27",
+  "wrestling_as": "Masahiro Chono",
+  "wrestler": "Masahiro Chono",
+  "elo": 1063.4891613920952,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/27",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1019.3999614046209,
+  "opponent": "Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2009/09/27",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1121.6504896789522,
+  "opponent": "Tiger Mask",
+  "result": "won"
+ },
+ {
+  "date": "2009/09/27",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1240.1201082835887,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/09/27",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1284.0110990105636,
+  "opponent": "Togi Makabe",
+  "result": "won"
+ },
+ {
+  "date": "2009/10/10",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1211.064310727452,
+  "opponent": "Nobuo Yoshihashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/10/12",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1207.141898911097,
+  "opponent": "Kazuchika Okada (winner), Don Arakawa, Gran Hamada, Great Kojika, Kuniaki Kobayashi, Mitsuhide Hirasawa, Nobuo Yoshihashi, Super Strong Machine, Taichi, Tiger Toguchi, Tomoaki Honma, Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "2009/10/12",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 996.5936124946214,
+  "opponent": "Kazuchika Okada (winner), Don Arakawa, Gran Hamada, Great Kojika, Koji Kanemoto, Kuniaki Kobayashi, Mitsuhide Hirasawa, Nobuo Yoshihashi, Taichi, Tiger Toguchi, Tomoaki Honma, Yoshiaki Fujiwara",
+  "result": "lost"
+ },
+ {
+  "date": "2009/10/12",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 1144.864111599311,
+  "opponent": "Karl Anderson",
+  "result": "won"
+ },
+ {
+  "date": "2009/10/12",
+  "wrestling_as": "Giant Bernard",
+  "wrestler": "Giant Bernard",
+  "elo": 1104.9442627991168,
+  "opponent": "Akebono (winner), Yutaka Yoshie",
+  "result": "lost"
+ },
+ {
+  "date": "2009/10/12",
+  "wrestling_as": "Yutaka Yoshie",
+  "wrestler": "Yutaka Yoshie",
+  "elo": 1019.5144036900971,
+  "opponent": "Akebono (winner), Giant Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "2009/10/12",
+  "wrestling_as": "Akebono",
+  "wrestler": "Akebono",
+  "elo": 1029.7771250803003,
+  "opponent": "Giant Bernard, Yutaka Yoshie",
+  "result": "won"
+ },
+ {
+  "date": "2009/10/12",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1292.169114520017,
+  "opponent": "Shinjiro Otani",
+  "result": "won"
+ },
+ {
+  "date": "2009/10/24",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1203.7118077010784,
+  "opponent": "AKIRA",
+  "result": "won"
+ },
+ {
+  "date": "2009/10/24",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 954.0749183304267,
+  "opponent": "TAJIRI",
+  "result": "lost"
+ },
+ {
+  "date": "2009/10/31",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1207.4529704360511,
+  "opponent": "Nobuo Yoshihashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/01",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1038.4949448106597,
+  "opponent": "Taichi",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/08",
+  "wrestling_as": "Mistico",
+  "wrestler": "Mistico I / Mistico",
+  "elo": 1051.0203118116335,
+  "opponent": "Tiger Mask",
+  "result": "lost"
+ },
+ {
+  "date": "2009/11/08",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1098.8292455773333,
+  "opponent": "Mistico",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/08",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1067.9323483134515,
+  "opponent": "Masato Tanaka",
+  "result": "lost"
+ },
+ {
+  "date": "2009/11/08",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 1074.79862084592,
+  "opponent": "Hirooki Goto",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/08",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1250.4770633569776,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/08",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1125.3518438349456,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/11/08",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1307.8932256638707,
+  "opponent": "Hiroshi Tanahashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/23",
+  "wrestling_as": "Super Strong Machine",
+  "wrestler": "Super Strong Machine",
+  "elo": 1008.6895581361349,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/23",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1082.8469019193474,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/23",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1007.5828230632513,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/11/23",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1316.051954649065,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/23",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1090.5047583714547,
+  "opponent": "Tomohiro Ishii",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/24",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1207.761286354617,
+  "opponent": "Nobuo Yoshihashi",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/27",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1046.8214886126937,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/27",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1252.8485749884549,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/28",
+  "wrestling_as": "Takao Omori",
+  "wrestler": "Takao Omori",
+  "elo": 1159.4056357777308,
+  "opponent": "Mitsuhide Hirasawa",
+  "result": "won"
+ },
+ {
+  "date": "2009/11/30",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1209.769736121284,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/04",
+  "wrestling_as": "Tiger Mask",
+  "wrestler": "Tiger Mask IV / Tiger Mask",
+  "elo": 1105.7892792994696,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/05",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1001.987461598926,
+  "opponent": "Toru Yano",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/05",
+  "wrestling_as": "Toru Yano",
+  "wrestler": "Toru Yano",
+  "elo": 1127.6809289331152,
+  "opponent": "Wataru Inoue",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/05",
+  "wrestling_as": "Togi Makabe",
+  "wrestler": "Togi Makabe",
+  "elo": 1259.1537331097306,
+  "opponent": "Takashi Iizuka",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/05",
+  "wrestling_as": "Masato Tanaka",
+  "wrestler": "Masato Tanaka",
+  "elo": 1023.810613421051,
+  "opponent": "Hirooki Goto",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/05",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1118.9203557383203,
+  "opponent": "Masato Tanaka",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/05",
+  "wrestling_as": "Hiroshi Tanahashi",
+  "wrestler": "Hiroshi Tanahashi",
+  "elo": 1172.290837900761,
+  "opponent": "TAJIRI",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/05",
+  "wrestling_as": "Yuji Nagata",
+  "wrestler": "Yuji Nagata",
+  "elo": 1069.0605422338658,
+  "opponent": "Shinsuke Nakamura",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/05",
+  "wrestling_as": "Shinsuke Nakamura",
+  "wrestler": "Shinsuke Nakamura",
+  "elo": 1326.7740627178594,
+  "opponent": "Yuji Nagata",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/13",
+  "wrestling_as": "Hirooki Goto",
+  "wrestler": "Hirooki Goto",
+  "elo": 1124.714530798213,
+  "opponent": "Kazuchika Okada",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/13",
+  "wrestling_as": "Wataru Inoue",
+  "wrestler": "Wataru Inoue",
+  "elo": 1059.8552017965008,
+  "opponent": "TAJIRI",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/22",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1035.8255187069794,
+  "opponent": "GENTARO",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/22",
+  "wrestling_as": "YAMATO",
+  "wrestler": "YAMATO",
+  "elo": 1058.4842615649395,
+  "opponent": "AKIRA",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/22",
+  "wrestling_as": "Danshoku Dino",
+  "wrestler": "Danshoku Dino",
+  "elo": 1052.4182333999345,
+  "opponent": "Jado",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/22",
+  "wrestling_as": "Kota Ibushi",
+  "wrestler": "Kota Ibushi",
+  "elo": 1027.7217463131499,
+  "opponent": "Gedo",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/22",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1062.7308379584797,
+  "opponent": "Kota Ibushi",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/22",
+  "wrestling_as": "Atsushi Aoki",
+  "wrestler": "Atsushi Aoki",
+  "elo": 1049.1731899427473,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/22",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1220.3203508418646,
+  "opponent": "Atsushi Aoki",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/22",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1221.2766403790179,
+  "opponent": "Fujita Hayato",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/22",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 1050.7563429235665,
+  "opponent": "Jushin Thunder Liger",
+  "result": "won"
+ },
+ {
+  "date": "2009/12/23",
+  "wrestling_as": "Gedo",
+  "wrestler": "Gedo",
+  "elo": 1012.1197369207633,
+  "opponent": "YAMATO",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/23",
+  "wrestling_as": "YAMATO",
+  "wrestler": "YAMATO",
+  "elo": 1076.346795974573,
+  "opponent": "Gedo; Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/23",
+  "wrestling_as": "Danshoku Dino",
+  "wrestler": "Danshoku Dino",
+  "elo": 1024.8608106355564,
+  "opponent": "Prince Devitt",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/23",
+  "wrestling_as": "Prince Devitt",
+  "wrestler": "Prince Devitt",
+  "elo": 1218.2804325532968,
+  "opponent": "Danshoku Dino; YAMATO; Naomichi Marufuji",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/23",
+  "wrestling_as": "Koji Kanemoto",
+  "wrestler": "Koji Kanemoto",
+  "elo": 1184.0701763376253,
+  "opponent": "Ryusuke Taguchi",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/23",
+  "wrestling_as": "Ryusuke Taguchi",
+  "wrestler": "Ryusuke Taguchi",
+  "elo": 1058.116441660118,
+  "opponent": "Koji Kanemoto; Naomichi Marufuji",
+  "result": "lost"
+ },
+ {
+  "date": "2009/12/23",
+  "wrestling_as": "Naomichi Marufuji",
+  "wrestler": "Naomichi Marufuji",
+  "elo": 1211.9922135814747,
+  "opponent": "Tigers Mask; Ryusuke Taguchi; Prince Devitt",
+  "result": "won"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Shinsuke Nakamura",
+ "Togi Makabe",
+ "Hiroshi Tanahashi",
+ "Tiger Mask IV / Tiger Mask",
+ "Koji Kanemoto",
+ "Prince Devitt",
+ "Naomichi Marufuji",
+ "Hirooki Goto",
+ "Yuji Nagata",
+ "Takao Omori",
+ "Ryusuke Taguchi",
+ "Takashi Iizuka",
+ "Takashi Sugiura",
+ "Kota Ibushi",
+ "Hiroyoshi Tenzan",
+ "Tsuyoshi Kikuchi",
+ "Atsushi Aoki",
+ "Toru Yano",
+ "Manabu Nakanishi",
+ "Giant Bernard",
+ "Mistico I / Mistico",
+ "TAJIRI",
+ "Masato Tanaka",
+ "Milano Collection AT",
+ "Karl Anderson",
+ "Yutaka Yoshie",
+ "AKIRA",
+ "Taichi / Taichi Ishikari",
+ "Tomoaki Honma",
+ "YAMATO",
+ "Jado",
+ "Masahiro Chono",
+ "Gedo",
+ "Wataru Inoue",
+ "Tomohiro Ishii",
+ "Danshoku Dino",
+ "Jun Akiyama",
+ "Kurt Angle",
+ "Val Venis",
+ "Jushin Thunder Liger",
+ "Akebono",
+ "Go Shiozaki",
+ "Tigers Mask",
+ "Super Strong Machine",
+ "Kazuchika Okada",
+ "Yoshiaki Fujiwara",
+ "Tiger Toguchi",
+ "Kuniaki Kobayashi",
+ "Great Kojika",
+ "Gran Hamada",
+ "Don Arakawa",
+ "Shinjiro Otani",
+ "Fujita Hayato",
+ "Black Tiger IV / Black Tiger",
+ "Black Tiger / Black Tiger V",
+ "Mitsuhide Hirasawa",
+ "Low Ki",
+ "Keiji Muto",
+ "Nobuo Yoshihashi",
+ "Mephisto",
+ "GENTARO"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4999 @@
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/d3js/3.5.17/d3.min.js" charset="utf-8"></script>
+    <script src="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/taucharts@1/build/production/tauCharts.min.css">
+  </head>
+  <body>
+    <div id='line'>
+
+    <script>
+var datasource = [
+ {
+  "date": "1975/01/03",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 950.0,
+  "opponent": "Huracan Ramirez",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/03",
+  "wrestling_as": "Huracan Ramirez",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1050.0,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1007.1463117408382,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/05",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1050.0,
+  "opponent": "Colin Johnson",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1056.118019820662,
+  "opponent": "Takashi Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/06",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1092.8536882591618,
+  "opponent": "Pete Roberts",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/07",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1098.1114939785468,
+  "opponent": "Little Hamada",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/07",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1042.8536882591618,
+  "opponent": "Colin Johnson",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/07",
+  "wrestling_as": "The Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 950.0,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/07",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1050.0,
+  "opponent": "The Canadian Wildman",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/08",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1128.124492259467,
+  "opponent": "Takashi Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/08",
+  "wrestling_as": "Huracan Ramirez",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1006.1360561308536,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/08",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1136.7176321283082,
+  "opponent": "Huracan Ramirez",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/09",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1061.2564713838856,
+  "opponent": "Huracan Ramirez",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/09",
+  "wrestling_as": "Huracan Ramirez",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1073.004077006435,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/09",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1080.763657589249,
+  "opponent": "Pete Roberts",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/10",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1002.5311792126519,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/10",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1058.7252921712336,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/10",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1080.5268879645525,
+  "opponent": "Colin Johnson",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/10",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1062.1661372266217,
+  "opponent": "The Canadian Wildman",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/10",
+  "wrestling_as": "The Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 1024.5514949016865,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/11",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1044.0263741537613,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/11",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1119.345755224702,
+  "opponent": "Steve Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/11",
+  "wrestling_as": "The Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 982.5380201037781,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/11",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1122.540362762461,
+  "opponent": "The Canadian Wildman",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/12",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 987.7241660621713,
+  "opponent": "Haruka Eigen",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/12",
+  "wrestling_as": "Haruka Eigen",
+  "wrestler": "Haruka Eigen",
+  "elo": 1056.3022080915898,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/12",
+  "wrestling_as": "Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 951.2680634115051,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/12",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1150.615711916975,
+  "opponent": "Canadian Wildman",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/12",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1098.0604675005306,
+  "opponent": "Steve Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/14",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1028.2402449426106,
+  "opponent": "Takashi Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/14",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1146.2202218075952,
+  "opponent": "Pete Roberts",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/14",
+  "wrestling_as": "Huracan Ramirez",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1026.603742978032,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/14",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1144.4608015289336,
+  "opponent": "Huracan Ramirez",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/15",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 974.1850735827779,
+  "opponent": "Katsuhisa Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/15",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1054.0551713598327,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/15",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1172.104088561566,
+  "opponent": "Steve Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/15",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1069.2086340404612,
+  "opponent": "The Canadian Wildman",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/15",
+  "wrestling_as": "The Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 1026.5202308999774,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/17",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 977.8933186185595,
+  "opponent": "Shoji Kai",
+  "result": "draw"
+ },
+ {
+  "date": "1975/01/17",
+  "wrestling_as": "Shoji Kai",
+  "wrestler": "Shoji Kai",
+  "elo": 996.2917549642184,
+  "opponent": "Tatsumi Fujinami",
+  "result": "draw"
+ },
+ {
+  "date": "1975/01/18",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1025.034500495111,
+  "opponent": "Little Hamada",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/18",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1185.3812332096586,
+  "opponent": "Colin Johnson",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/18",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1079.6446982476682,
+  "opponent": "The Canadian Wildman",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/18",
+  "wrestling_as": "The Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 1093.0957544599044,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/19",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 979.8678550489255,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/19",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1103.891937617419,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/19",
+  "wrestling_as": "Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 1056.0729335250805,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/19",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1222.4040541444824,
+  "opponent": "Canadian Wildman",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/21",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 940.6935556991061,
+  "opponent": "Haruka Eigen",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/21",
+  "wrestling_as": "Haruka Eigen",
+  "wrestler": "Haruka Eigen",
+  "elo": 1095.4765074414092,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/21",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1228.5970459534472,
+  "opponent": "Steve Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/21",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1093.5153939622514,
+  "opponent": "Pete Roberts",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/22",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 857.5994410921937,
+  "opponent": "Kotetsu Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/22",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1041.5470573034563,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/22",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1232.931566110227,
+  "opponent": "Colin Johnson",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/22",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1026.2576438307087,
+  "opponent": "The Canadian Wildman",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/22",
+  "wrestling_as": "The Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 1109.45998794204,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/25",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 802.7375562609582,
+  "opponent": "Huracan Ramirez",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/25",
+  "wrestling_as": "Huracan Ramirez",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1054.0346853936496,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/25",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1113.9877100625602,
+  "opponent": "Steve Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/26",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 754.1092993369197,
+  "opponent": "Masashi Ozawa",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/26",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1024.3141284620192,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/26",
+  "wrestling_as": "The Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 1076.51688476897,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/26",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1249.4031176967621,
+  "opponent": "The Canadian Wildman",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/26",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1049.9697144192967,
+  "opponent": "Pete Roberts",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/28",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 896.3961612057046,
+  "opponent": "Little Hamada",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/28",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1070.686883529859,
+  "opponent": "Steve Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/28",
+  "wrestling_as": "Huracan Ramirez",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1012.5779904872056,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/28",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1155.4444049690042,
+  "opponent": "Huracan Ramirez",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/29",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 980.3003886069489,
+  "opponent": "Takashi Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/29",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1252.4684373721195,
+  "opponent": "Steve Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/29",
+  "wrestling_as": "The Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 1025.6779588851168,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/29",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1121.525809413712,
+  "opponent": "The Canadian Wildman",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/31",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 934.9321911008449,
+  "opponent": "Huracan Ramirez",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/31",
+  "wrestling_as": "Huracan Ramirez",
+  "wrestler": "Huracan Ramirez",
+  "elo": 1057.9461879933096,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/31",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1255.2895051480923,
+  "opponent": "Steve Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/01/31",
+  "wrestling_as": "Canadian Wildman",
+  "wrestler": "Canadian Wildman / The Canadian Wildman",
+  "elo": 993.5303316370375,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/01/31",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1187.5920322170834,
+  "opponent": "Canadian Wildman",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/01",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1013.6556942594193,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/01",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1196.139060659115,
+  "opponent": "Pete Roberts",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/03",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 972.7807374774566,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/03",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1065.189085243982,
+  "opponent": "Masashi Ozawa",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/03",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1258.7201582023865,
+  "opponent": "Colin Johnson",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/03",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1132.1660904534533,
+  "opponent": "Steve Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/04",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1080.538848128177,
+  "opponent": "Little Hamada",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/04",
+  "wrestling_as": "Brute Bernard",
+  "wrestler": "Brute Bernard",
+  "elo": 975.5666711800203,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1220.5723894790947,
+  "opponent": "Brute Bernard",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1093.919174154858,
+  "opponent": "Takashi Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/06",
+  "wrestling_as": "Brute Bernard",
+  "wrestler": "Brute Bernard",
+  "elo": 946.6915889765994,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/06",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1161.0411726568743,
+  "opponent": "Brute Bernard",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/06",
+  "wrestling_as": "Benny McGuire",
+  "wrestler": "Benny McGuire",
+  "elo": 994.5173563647451,
+  "opponent": "Antonio Inoki (winner), Billy McGuire",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/06",
+  "wrestling_as": "Billy McGuire",
+  "wrestler": "Billy McGuire",
+  "elo": 994.651247110909,
+  "opponent": "Antonio Inoki (winner), Benny McGuire",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/06",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1231.4037860034405,
+  "opponent": "Benny McGuire, Billy McGuire",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/21",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1104.8404123072974,
+  "opponent": "Takashi Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/21",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 981.597512756666,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/21",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1267.9214018240536,
+  "opponent": "Tiger Jeet Singh",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/22",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1054.7039161662524,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/22",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1154.028433758464,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/22",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1241.8446670066191,
+  "opponent": "Steve Veidor",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/23",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 934.356685548068,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/23",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1093.1279680956409,
+  "opponent": "Masashi Ozawa",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/23",
+  "wrestling_as": "Johnny Londos",
+  "wrestler": "Johnny Londos",
+  "elo": 980.0938415464677,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/23",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1251.7977462333852,
+  "opponent": "Johnny Londos",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/25",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1021.7469665348912,
+  "opponent": "Masashi Ozawa",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/25",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1077.1186886695673,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/25",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1005.3464621991693,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/02/25",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1137.292223214371,
+  "opponent": "Tiger Jeet Singh",
+  "result": "draw"
+ },
+ {
+  "date": "1975/02/26",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 987.2748444999202,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/26",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1276.9572106736782,
+  "opponent": "Tiger Jeet Singh",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/26",
+  "wrestling_as": "Tony Charles",
+  "wrestler": "Tony Charles",
+  "elo": 968.7899514177896,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/26",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1168.5022717965815,
+  "opponent": "Tony Charles",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/28",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1041.766944353152,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/02/28",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1094.555016806732,
+  "opponent": "Tiger Jeet Singh",
+  "result": "lost"
+ },
+ {
+  "date": "1975/02/28",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1061.2220994897696,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/02",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 985.7849865085753,
+  "opponent": "Peter Kaiser",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/02",
+  "wrestling_as": "Peter Kaiser",
+  "wrestler": "Peter Kaiser",
+  "elo": 1055.9819578445768,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/02",
+  "wrestling_as": "Johnny Londos",
+  "wrestler": "Johnny Londos",
+  "elo": 964.7629753282948,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/02",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1284.6226437827647,
+  "opponent": "Johnny Londos",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/02",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1128.5277956921377,
+  "opponent": "Steve Veidor",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/03",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 947.9554358294334,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/03",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1037.829550679142,
+  "opponent": "Makoto Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/03",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1089.568984848275,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/03/03",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1270.449201103512,
+  "opponent": "Tiger Jeet Singh",
+  "result": "draw"
+ },
+ {
+  "date": "1975/03/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1259.1045572944126,
+  "opponent": "Steve Veidor",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1052.9311523586905,
+  "opponent": "Little Hamada",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/05",
+  "wrestling_as": "Johnny Londos",
+  "wrestler": "Johnny Londos",
+  "elo": 950.0798249680532,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/05",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1277.7907762836328,
+  "opponent": "Johnny Londos",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/05",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1072.9445531875667,
+  "opponent": "Tiger Jeet Singh",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/05",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1145.152227352846,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1095.3721383514999,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/07",
+  "wrestling_as": "Tony Charles",
+  "wrestler": "Tony Charles",
+  "elo": 954.3442175912379,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/07",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1285.0136431969086,
+  "opponent": "Tony Charles",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/07",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1101.769190102183,
+  "opponent": "Steve Veidor",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/08",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1288.9617235480755,
+  "opponent": "Steve Veidor",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/09",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1045.3871582704603,
+  "opponent": "Haruka Eigen",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/09",
+  "wrestling_as": "Haruka Eigen",
+  "wrestler": "Haruka Eigen",
+  "elo": 1145.4614875224488,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/09",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1254.1668861994212,
+  "opponent": "Tiger Jeet Singh",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/09",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1214.7419020501547,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/10",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1010.5314883828697,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/10",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1188.8841036460547,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/11",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1258.441813542374,
+  "opponent": "Steve Veidor",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/11",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1177.3126988505637,
+  "opponent": "Tiger Jeet Singh (winner), Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/11",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1093.567475363749,
+  "opponent": "Tiger Jeet Singh (winner), Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/11",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1234.5150215840797,
+  "opponent": "Osamu Kido, Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/11",
+  "wrestling_as": "Johnny Londos",
+  "wrestler": "Johnny Londos",
+  "elo": 935.6357919255464,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/11",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1266.326573815666,
+  "opponent": "Johnny Londos",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/12",
+  "wrestling_as": "Johnny Londos",
+  "wrestler": "Johnny Londos",
+  "elo": 908.6536792996573,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/12",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1265.1873416988462,
+  "opponent": "Johnny Londos",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/12",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1199.895067254091,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/12",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1162.8073840237266,
+  "opponent": "Tiger Jeet Singh",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/13",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 966.7624897865652,
+  "opponent": "Katsuhisa Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/13",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1097.8241699561372,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/13",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1236.6038561938897,
+  "opponent": "Tiger Jeet Singh",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/13",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1259.340502497644,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/14",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1240.8892218567403,
+  "opponent": "Steve Veidor",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/15",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1268.5476269831547,
+  "opponent": "Steve Veidor",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/15",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1227.5677754100248,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/15",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1226.352838198965,
+  "opponent": "Tiger Jeet Singh",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/16",
+  "wrestling_as": "Peter Kaiser",
+  "wrestler": "Peter Kaiser",
+  "elo": 1033.2520668875698,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/16",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1279.9125724616583,
+  "opponent": "Peter Kaiser",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/16",
+  "wrestling_as": "Johnny Londos",
+  "wrestler": "Johnny Londos",
+  "elo": 882.9136632529843,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/16",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1247.3242258684086,
+  "opponent": "Johnny Londos",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/18",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1282.798935572968,
+  "opponent": "Steve Veidor",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/20",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1011.750538935246,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/20",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1032.1306395208865,
+  "opponent": "Masashi Ozawa",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/20",
+  "wrestling_as": "Johnny Londos",
+  "wrestler": "Johnny Londos",
+  "elo": 864.7209259956536,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/03/20",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1287.3471198873008,
+  "opponent": "Johnny Londos",
+  "result": "won"
+ },
+ {
+  "date": "1975/03/20",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1245.904165229624,
+  "opponent": "Tiger Jeet Singh",
+  "result": "draw"
+ },
+ {
+  "date": "1975/03/20",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1228.9878360488094,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1975/04/04",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1283.0027677575995,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/04/04",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1230.6971903286662,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/04/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1205.6722658278284,
+  "opponent": "Kintaro Oki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/04",
+  "wrestling_as": "Kintaro Oki",
+  "wrestler": "Kintaro Oki",
+  "elo": 1080.463798803591,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/05",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1047.9024168439475,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/05",
+  "wrestling_as": "Man Mountain Mike",
+  "wrestler": "Man Mountain Mike",
+  "elo": 979.0509582239106,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/05",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1241.171711216711,
+  "opponent": "Man Mountain Mike",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/06",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 992.7184390967899,
+  "opponent": "Masashi Ozawa",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/06",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1066.9345166824037,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/08",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1136.4006404763702,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/08",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1261.6277404038078,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/08",
+  "wrestling_as": "Haruka Eigen",
+  "wrestler": "Haruka Eigen",
+  "elo": 1104.040798815485,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/08",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1226.3826101813102,
+  "opponent": "Haruka Eigen",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/09",
+  "wrestling_as": "Haruka Eigen",
+  "wrestler": "Haruka Eigen",
+  "elo": 1077.7360311621158,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/09",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1296.155151584284,
+  "opponent": "Haruka Eigen",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/09",
+  "wrestling_as": "Super Destroyer",
+  "wrestler": "Super Destroyer",
+  "elo": 978.6366839355984,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/09",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1237.064268213511,
+  "opponent": "Super Destroyer",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/10",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 943.7661865469586,
+  "opponent": "Sangre Fria",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/10",
+  "wrestling_as": "Sangre Fria",
+  "wrestler": "Sangre Fria",
+  "elo": 1048.9522525498312,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/10",
+  "wrestling_as": "Man Mountain Mike",
+  "wrestler": "Man Mountain Mike",
+  "elo": 965.1722223011255,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/10",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1303.0945195456766,
+  "opponent": "Man Mountain Mike",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/10",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1103.6803901743006,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/10",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1277.9878655548428,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/11",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 984.9984743586487,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/11",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1236.3853615788921,
+  "opponent": "Killer Karl Krupp",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/11",
+  "wrestling_as": "Killer Karl Krupp",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1083.2050079519015,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/11",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 979.6514668662428,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/11",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1247.2385347803897,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/12",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1074.3482655837768,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/12",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1314.8324717318567,
+  "opponent": "Katsuhisa Shibata",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/12",
+  "wrestling_as": "Man Mountain Mike",
+  "wrestler": "Man Mountain Mike",
+  "elo": 948.7027576120838,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/12",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1255.4732671249105,
+  "opponent": "Man Mountain Mike",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/14",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1090.4445807282455,
+  "opponent": "Killer Karl Krupp (winner), Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/14",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1295.369036238295,
+  "opponent": "Killer Karl Krupp (winner), Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/14",
+  "wrestling_as": "Killer Karl Krupp",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1115.9042528915184,
+  "opponent": "Osamu Kido, Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/14",
+  "wrestling_as": "Sangre Fria",
+  "wrestler": "Sangre Fria",
+  "elo": 1025.605436460893,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/14",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1267.1466751693795,
+  "opponent": "Sangre Fria",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/15",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1031.0578083310152,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/15",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1016.9752141366392,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/15",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1248.6712831623006,
+  "opponent": "Kotetsu Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/17",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 984.5571411907317,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/17",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1303.090465642929,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/18",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 986.2026084658862,
+  "opponent": "Masashi Ozawa",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/18",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1111.7897165475326,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/18",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1265.789147594198,
+  "opponent": "Killer Karl Krupp",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/18",
+  "wrestling_as": "Killer Karl Krupp",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1190.5068889889803,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/18",
+  "wrestling_as": "Super Destroyer",
+  "wrestler": "Super Destroyer",
+  "elo": 961.1921511755224,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/18",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1257.3935495423386,
+  "opponent": "Super Destroyer",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/18",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 968.1290695416131,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/18",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1275.3607109939387,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/19",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 962.8366941663032,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/19",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1265.8009358923084,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/20",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1050.4291784297511,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/20",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1287.3202545709514,
+  "opponent": "Katsuhisa Shibata",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/22",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1025.6146536373003,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/22",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1063.7341562784604,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/22",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1279.1443598190906,
+  "opponent": "Osamu Kido",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/24",
+  "wrestling_as": "Sangre Fria",
+  "wrestler": "Sangre Fria",
+  "elo": 1006.7508620464108,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/24",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1288.5716470263317,
+  "opponent": "Sangre Fria",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/24",
+  "wrestling_as": "Man Mountain Mike",
+  "wrestler": "Man Mountain Mike",
+  "elo": 923.7754854114066,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/24",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1293.5520726211207,
+  "opponent": "Man Mountain Mike",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/25",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1039.4360576681993,
+  "opponent": "Gran Hamada",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/25",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1253.600719409811,
+  "opponent": "Kintaro Oki",
+  "result": "draw"
+ },
+ {
+  "date": "1975/04/25",
+  "wrestling_as": "Kintaro Oki",
+  "wrestler": "Kintaro Oki",
+  "elo": 1104.8642317685856,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/04/25",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1261.3473986143383,
+  "opponent": "Killer Karl Krupp",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/25",
+  "wrestling_as": "Killer Karl Krupp",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1254.9162370025451,
+  "opponent": "Antonio Inoki",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/26",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1026.7355343013655,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/26",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1265.4475414740039,
+  "opponent": "Katsuhisa Shibata",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/27",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1049.997965541322,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/27",
+  "wrestling_as": "Killer Karl Krupp",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1230.3789434342698,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/27",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1285.8846921826137,
+  "opponent": "Killer Karl Krupp",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/28",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1060.622409392645,
+  "opponent": "Gran Hamada",
+  "result": "won"
+ },
+ {
+  "date": "1975/04/28",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 949.5412052717633,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/04/28",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1295.2193914736017,
+  "opponent": "Kantaro Hoshino",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/01",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1072.2018289106807,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/01",
+  "wrestling_as": "Man Mountain Mike",
+  "wrestler": "Man Mountain Mike",
+  "elo": 901.6523603709443,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/01",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1291.4154734427293,
+  "opponent": "Man Mountain Mike",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/02",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1056.1170896247147,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/02",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1127.8744558334986,
+  "opponent": "Masashi Ozawa",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/02",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1000.2008303207434,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/02",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1303.6065833815496,
+  "opponent": "Kotetsu Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/02",
+  "wrestling_as": "Man Mountain Mike",
+  "wrestler": "Man Mountain Mike",
+  "elo": 879.7194750040986,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/02",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1270.9307628157153,
+  "opponent": "Man Mountain Mike",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/02",
+  "wrestling_as": "Super Destroyer",
+  "wrestler": "Super Destroyer",
+  "elo": 948.1916929647641,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/02",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1297.9157025481086,
+  "opponent": "Super Destroyer",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/03",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1133.787917731686,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/03",
+  "wrestling_as": "Kintaro Oki",
+  "wrestler": "Kintaro Oki",
+  "elo": 1080.7065304090158,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/03",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1315.6854340613345,
+  "opponent": "Kintaro Oki",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/04",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1148.8039791072943,
+  "opponent": "Masanobu Kurisu",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/04",
+  "wrestling_as": "Man Mountain Mike",
+  "wrestler": "Man Mountain Mike",
+  "elo": 863.1963996591032,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1302.0464713843573,
+  "opponent": "Man Mountain Mike",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/05",
+  "wrestling_as": "Sangre Fria",
+  "wrestler": "Sangre Fria",
+  "elo": 992.3004141020089,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/05",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1322.9106580335354,
+  "opponent": "Sangre Fria",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/05",
+  "wrestling_as": "Masa Saito",
+  "wrestler": "Masa Saito",
+  "elo": 953.2366865265969,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/05",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1278.3769543232233,
+  "opponent": "Masa Saito",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/06",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1321.411161203098,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1975/05/06",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1303.5459682147948,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/05/07",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1153.7514892551378,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/07",
+  "wrestling_as": "Super Destroyer",
+  "wrestler": "Super Destroyer",
+  "elo": 925.2918147959764,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/07",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1309.2709377569918,
+  "opponent": "Super Destroyer",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/08",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 901.1122692943286,
+  "opponent": "Tatsumi Fujinami",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/08",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1177.1730725226903,
+  "opponent": "Don Arakawa",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/08",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 985.7600248196984,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/08",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1316.4913405075142,
+  "opponent": "Kotetsu Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/09",
+  "wrestling_as": "Kintaro Oki",
+  "wrestler": "Kintaro Oki",
+  "elo": 1056.4355942316865,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/09",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1290.5124224118879,
+  "opponent": "Kintaro Oki",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/11",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1181.1816948106145,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/12",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1113.9225403198022,
+  "opponent": "Masashi Ozawa",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/12",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1123.376244115527,
+  "opponent": "Tatsumi Fujinami",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/13",
+  "wrestling_as": "Sangre Fria",
+  "wrestler": "Sangre Fria",
+  "elo": 979.2273470448874,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/13",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1327.9476947316587,
+  "opponent": "Sangre Fria",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/14",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1121.6997574659063,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/15",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1126.902119872878,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/15",
+  "wrestling_as": "Super Destroyer",
+  "wrestler": "Super Destroyer",
+  "elo": 1007.3611231305956,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/05/15",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1307.4303676480038,
+  "opponent": "Super Destroyer",
+  "result": "draw"
+ },
+ {
+  "date": "1975/05/15",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1267.3782797620015,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/15",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1339.6254831574006,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/16",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 923.8136755661744,
+  "opponent": "Don Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/16",
+  "wrestling_as": "Don Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1025.0049678013766,
+  "opponent": "Kotetsu Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/16",
+  "wrestling_as": "Ivan Gomes",
+  "wrestler": "Ivan Gomes",
+  "elo": 1009.4322292517893,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/16",
+  "wrestling_as": "Sangre Fria",
+  "wrestler": "Sangre Fria",
+  "elo": 941.1545685667965,
+  "opponent": "Osamu Kido",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/16",
+  "wrestling_as": "Osamu Kido",
+  "wrestler": "Osamu Kido",
+  "elo": 1101.8069347565515,
+  "opponent": "Sangre Fria",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/16",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1253.825478559488,
+  "opponent": "Kintaro Oki",
+  "result": "draw"
+ },
+ {
+  "date": "1975/05/16",
+  "wrestling_as": "Kintaro Oki",
+  "wrestler": "Kintaro Oki",
+  "elo": 1083.5411966367135,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/05/16",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1284.7403843281656,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/16",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1378.2533418375406,
+  "opponent": "Strong Kobayashi; Killer Karl Krupp",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/16",
+  "wrestling_as": "Killer Karl Krupp",
+  "wrestler": "Killer Karl Krupp",
+  "elo": 1214.441068073968,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/30",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1267.8697801011613,
+  "opponent": "Andre The Giant",
+  "result": "draw"
+ },
+ {
+  "date": "1975/05/30",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant",
+  "elo": 1033.7412084540088,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/05/31",
+  "wrestling_as": "Tatsumi Fujinami",
+  "wrestler": "Tatsumi Fujinami",
+  "elo": 1131.208451080001,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/31",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 940.0125983402045,
+  "opponent": "Andre The Giant (winner), Kotetsu Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/31",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 915.4497455647987,
+  "opponent": "Andre The Giant (winner), Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1975/05/31",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant",
+  "elo": 1051.633745386943,
+  "opponent": "Kantaro Hoshino, Kotetsu Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1975/05/31",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1383.3432567599757,
+  "opponent": "The Masked Gladiator",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/01",
+  "wrestling_as": "Haruka Eigen",
+  "wrestler": "Haruka Eigen",
+  "elo": 1023.9866617891726,
+  "opponent": "Andre The Giant",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/01",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant",
+  "elo": 1105.3831147598862,
+  "opponent": "Haruka Eigen",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/01",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 981.1706500297497,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/01",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1263.2401535446131,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/02",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1250.9227082592597,
+  "opponent": "Greg Valentine",
+  "result": "draw"
+ },
+ {
+  "date": "1975/06/02",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 1015.0647937135526,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/06/02",
+  "wrestling_as": "Professional",
+  "wrestler": "The Professional / Professional",
+  "elo": 990.0849666319862,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/02",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1388.3007734439825,
+  "opponent": "Professional",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/03",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1271.822982751961,
+  "opponent": "The Masked Gladiator",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/03",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1216.022696025794,
+  "opponent": "Andre The Giant",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/03",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant",
+  "elo": 1175.183139226818,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/04",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1176.7258809626198,
+  "opponent": "Professional",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/04",
+  "wrestling_as": "Professional",
+  "wrestler": "The Professional / Professional",
+  "elo": 1068.6785967583344,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/05",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1265.043140382616,
+  "opponent": "Andre The Giant",
+  "result": "draw"
+ },
+ {
+  "date": "1975/06/05",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant",
+  "elo": 1188.742823965508,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/06/06",
+  "wrestling_as": "Haruka Eigen",
+  "wrestler": "Haruka Eigen",
+  "elo": 1017.0065580059869,
+  "opponent": "Andre The Giant (winner), Kotetsu Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/06",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 911.2967560919475,
+  "opponent": "Andre The Giant (winner), Haruka Eigen",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/06",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant",
+  "elo": 1199.8759172215448,
+  "opponent": "Haruka Eigen, Kotetsu Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/06",
+  "wrestling_as": "The Professional",
+  "wrestler": "The Professional / Professional",
+  "elo": 1033.7452466679338,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/06",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1211.6592310530204,
+  "opponent": "The Professional",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/07",
+  "wrestling_as": "Kantaro Hoshino",
+  "wrestler": "Kantaro Hoshino",
+  "elo": 935.4366285644854,
+  "opponent": "Andre The Giant (winner), Katsuhisa Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/07",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1020.1245334739128,
+  "opponent": "Andre The Giant (winner), Kantaro Hoshino",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/07",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant",
+  "elo": 1211.0628878247164,
+  "opponent": "Kantaro Hoshino, Katsuhisa Shibata",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/07",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 1004.6178239771372,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/07",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1393.5242583121903,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/09",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 986.3622718029437,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/09",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1274.1709164697127,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/09",
+  "wrestling_as": "The Professional",
+  "wrestler": "The Professional / Professional",
+  "elo": 1022.5510297313109,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/09",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1399.1213667805018,
+  "opponent": "The Professional",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/10",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 907.5179509041942,
+  "opponent": "Andre The Giant (winner), Masashi Ozawa",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/10",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1114.0930065246218,
+  "opponent": "Andre The Giant (winner), Kotetsu Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/10",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant",
+  "elo": 1224.1249306033749,
+  "opponent": "Kotetsu Yamamoto, Masashi Ozawa",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/10",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1403.0752670619654,
+  "opponent": "Masked Gladiator",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/12",
+  "wrestling_as": "Professional",
+  "wrestler": "The Professional / Professional",
+  "elo": 1012.4901065691068,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/12",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1408.1057286430673,
+  "opponent": "Professional",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/13",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1221.381789749683,
+  "opponent": "Masked Gladiator",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/14",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 1014.2226612594478,
+  "opponent": "Andre The Giant (winner), Kotetsu Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/14",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 904.1401924824072,
+  "opponent": "Andre The Giant (winner), Katsuhisa Shibata",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/14",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant",
+  "elo": 1233.4045612396267,
+  "opponent": "Katsuhisa Shibata, Kotetsu Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/14",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1280.7153506260222,
+  "opponent": "The Masked Gladiator",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/15",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1197.2465525549057,
+  "opponent": "Andre The Giant",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/15",
+  "wrestling_as": "Andre The Giant",
+  "wrestler": "Andre The Giant",
+  "elo": 1257.539798434404,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/15",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 978.2541805037459,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/15",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1412.1597742926663,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/16",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 956.1674869708398,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/16",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1219.3332460878119,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/17",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1226.8745018915208,
+  "opponent": "The Masked Gladiator",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/17",
+  "wrestling_as": "The Professional",
+  "wrestler": "The Professional / Professional",
+  "elo": 994.8950670938448,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/17",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1289.5128703636533,
+  "opponent": "The Professional",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/19",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1294.045163208157,
+  "opponent": "The Masked Gladiator",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/19",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 949.4122044176396,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/19",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1415.5374155692664,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/20",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 915.7375794514602,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/20",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1235.2931581330656,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/20",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1298.0677530523353,
+  "opponent": "The Masked Gladiator",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/22",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1204.4414906401685,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/22",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1259.8395035417066,
+  "opponent": "Tiger Jeet Singh",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/22",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1417.4433004196032,
+  "opponent": "Masked Gladiator",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/23",
+  "wrestling_as": "The Professional",
+  "wrestler": "The Professional / Professional",
+  "elo": 980.0297316337442,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/23",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1305.5004207823856,
+  "opponent": "The Professional",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/23",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 905.188089186494,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/23",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1420.0806729858448,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/24",
+  "wrestling_as": "Professional",
+  "wrestler": "The Professional / Professional",
+  "elo": 972.6729748739017,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/24",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1423.759051365766,
+  "opponent": "Professional",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/25",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1264.091230395174,
+  "opponent": "The Masked Gladiator",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/25",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1273.4270140864514,
+  "opponent": "Tiger Jeet Singh",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/25",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1236.5148973361026,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/06/26",
+  "wrestling_as": "Tiger Jeet Singh",
+  "wrestler": "Tiger Jeet Singh",
+  "elo": 1223.8193749036695,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/06/26",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1436.4545737981991,
+  "opponent": "Tiger Jeet Singh",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/04",
+  "wrestling_as": "Gene Lewis",
+  "wrestler": "Gene Lewis",
+  "elo": 982.8349170506773,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/04",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1282.0095555611128,
+  "opponent": "Gene Lewis",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1440.20412682389,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/05",
+  "wrestling_as": "Brute Bernard",
+  "wrestler": "Brute Bernard",
+  "elo": 935.6607249142191,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/05",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1442.961842839485,
+  "opponent": "Brute Bernard",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/06",
+  "wrestling_as": "Ali Baba",
+  "wrestler": "Ali Baba",
+  "elo": 982.0572541958708,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/06",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1273.0626032972386,
+  "opponent": "Ali Baba",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/06",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1289.9538182649976,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/09",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1231.6600684322152,
+  "opponent": "Hans Schmidt",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/09",
+  "wrestling_as": "Hans Schmidt",
+  "wrestler": "Hans Schmidt",
+  "elo": 1082.805069730047,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/09",
+  "wrestling_as": "Ali Baba",
+  "wrestler": "Ali Baba",
+  "elo": 967.5327813855714,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/09",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1297.2160546701473,
+  "opponent": "Ali Baba",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/10",
+  "wrestling_as": "Ali Baba",
+  "wrestler": "Ali Baba",
+  "elo": 961.4490744015237,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/10",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1446.0036963315088,
+  "opponent": "Ali Baba",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/12",
+  "wrestling_as": "Gene Lewis",
+  "wrestler": "Gene Lewis",
+  "elo": 963.5616801204612,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/12",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1241.2966868973233,
+  "opponent": "Gene Lewis",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/12",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1449.1463693083692,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/13",
+  "wrestling_as": "Brute Bernard",
+  "wrestler": "Brute Bernard",
+  "elo": 906.2871741708342,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/13",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1248.6400745831695,
+  "opponent": "Brute Bernard",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/13",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1283.4879868648213,
+  "opponent": "Hans Schmidt",
+  "result": "draw"
+ },
+ {
+  "date": "1975/07/13",
+  "wrestling_as": "Hans Schmidt",
+  "wrestler": "Hans Schmidt",
+  "elo": 1110.2612053406988,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/07/15",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1257.0244993484748,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/18",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1264.4464774010276,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/18",
+  "wrestling_as": "Hans Schmidt",
+  "wrestler": "Hans Schmidt",
+  "elo": 1097.8143701428774,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/18",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1455.36978690728,
+  "opponent": "Hans Schmidt",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/19",
+  "wrestling_as": "Gene Lewis",
+  "wrestler": "Gene Lewis",
+  "elo": 949.8759809306928,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/19",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1290.3308364597056,
+  "opponent": "Gene Lewis",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/19",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1457.8002551544196,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/23",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1253.2982819202978,
+  "opponent": "Hans Schmidt",
+  "result": "draw"
+ },
+ {
+  "date": "1975/07/23",
+  "wrestling_as": "Hans Schmidt",
+  "wrestler": "Hans Schmidt",
+  "elo": 1120.110761104337,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/07/23",
+  "wrestling_as": "Ali Baba",
+  "wrestler": "Ali Baba",
+  "elo": 948.361020643504,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/23",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1296.8748633387154,
+  "opponent": "Ali Baba",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/24",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1209.2712675031491,
+  "opponent": "Brute Bernard",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/24",
+  "wrestling_as": "Brute Bernard",
+  "wrestler": "Brute Bernard",
+  "elo": 1082.395231839429,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/24",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1460.0739792768643,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/25",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1301.9984554369878,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/26",
+  "wrestling_as": "Brute Bernard",
+  "wrestler": "Brute Bernard",
+  "elo": 1072.1851186756169,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/26",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1465.1790358587705,
+  "opponent": "Brute Bernard",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/27",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1306.482549839465,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/28",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1466.8573051380204,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/29",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1215.6329742865587,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/29",
+  "wrestling_as": "Ali Baba",
+  "wrestler": "Ali Baba",
+  "elo": 938.736685837608,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/07/29",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1469.2633888394944,
+  "opponent": "Ali Baba",
+  "result": "won"
+ },
+ {
+  "date": "1975/07/30",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1221.0454717339449,
+  "opponent": "Gilles Poisson",
+  "result": "won"
+ },
+ {
+  "date": "1975/08/22",
+  "wrestling_as": "Johnny Powers",
+  "wrestler": "Johnny Powers",
+  "elo": 978.1160152999722,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/08/22",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1231.9874640839587,
+  "opponent": "Johnny Powers",
+  "result": "won"
+ },
+ {
+  "date": "1975/08/25",
+  "wrestling_as": "Jerry Brown",
+  "wrestler": "Jerry Brown",
+  "elo": 979.1736938910395,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/08/25",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1242.400617138439,
+  "opponent": "Jerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1975/08/26",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1313.7954590710945,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/08/27",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1251.6752881313407,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/08/27",
+  "wrestling_as": "Johnny Powers",
+  "wrestler": "Johnny Powers",
+  "elo": 965.4666825446277,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/08/27",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1320.1201254487667,
+  "opponent": "Johnny Powers",
+  "result": "won"
+ },
+ {
+  "date": "1975/08/29",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 986.3274750378064,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/08/29",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1326.9563879298635,
+  "opponent": "Jacques Rougeau",
+  "result": "won"
+ },
+ {
+  "date": "1975/08/30",
+  "wrestling_as": "Jerry Brown",
+  "wrestler": "Jerry Brown",
+  "elo": 967.2743646808754,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/08/30",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1332.9060525349455,
+  "opponent": "Jerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1975/08/31",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1235.5935340845958,
+  "opponent": "Jacques Rougeau",
+  "result": "draw"
+ },
+ {
+  "date": "1975/08/31",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1018.4909831312959,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Daigoro Oshiro",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 958.1649984236864,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "draw"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Ivan Gomes",
+  "wrestler": "Ivan Gomes",
+  "elo": 1021.7675473933122,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Shoji Kai",
+  "wrestler": "Shoji Kai",
+  "elo": 962.6236189681364,
+  "opponent": "Masashi Ozawa",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1147.7611425207037,
+  "opponent": "Shoji Kai",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 837.5893151951245,
+  "opponent": "Makoto Arakawa",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1058.280406445018,
+  "opponent": "Kotetsu Yamamoto",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Clayton Thomson",
+  "wrestler": "Clayton Thomson",
+  "elo": 950.0,
+  "opponent": "John Harris",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "John Harris",
+  "wrestler": "John Harris",
+  "elo": 1050.0,
+  "opponent": "Clayton Thomson",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 962.1769983278939,
+  "opponent": "Raymond Rougeau",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Raymond Rougeau",
+  "wrestler": "Raymond Rougeau",
+  "elo": 1052.0456629315538,
+  "opponent": "Katsuhisa Shibata",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Haruka Eigen",
+  "wrestler": "Haruka Eigen",
+  "elo": 967.2201826539491,
+  "opponent": "Jacques Rougeau",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1068.2773584833337,
+  "opponent": "Haruka Eigen",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1313.2876984576412,
+  "opponent": "Johnny Powers",
+  "result": "draw"
+ },
+ {
+  "date": "1975/09/02",
+  "wrestling_as": "Johnny Powers",
+  "wrestler": "Johnny Powers",
+  "elo": 1004.7033906992361,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/09/03",
+  "wrestling_as": "Johnny Powers",
+  "wrestler": "Johnny Powers",
+  "elo": 983.7727370928395,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/03",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1246.0588608877943,
+  "opponent": "Johnny Powers",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/05",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1234.277215464324,
+  "opponent": "Jacques Rougeau",
+  "result": "draw"
+ },
+ {
+  "date": "1975/09/05",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1091.8406493302743,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/09/06",
+  "wrestling_as": "Jerry Brown",
+  "wrestler": "Jerry Brown",
+  "elo": 955.2678444228143,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/06",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1319.2909585866716,
+  "opponent": "Jerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/09",
+  "wrestling_as": "Jerry Brown",
+  "wrestler": "Jerry Brown",
+  "elo": 944.3142061645935,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/09",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1324.767777715782,
+  "opponent": "Jerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/10",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1224.5661330932176,
+  "opponent": "Jacques Rougeau",
+  "result": "draw"
+ },
+ {
+  "date": "1975/09/10",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1111.2628140724873,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/09/13",
+  "wrestling_as": "Buddy Roberts",
+  "wrestler": "Buddy Roberts",
+  "elo": 986.640198795936,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/13",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1331.4476783178138,
+  "opponent": "Buddy Roberts",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/17",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1089.2940223616329,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/17",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1342.432074173241,
+  "opponent": "Jacques Rougeau",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/19",
+  "wrestling_as": "Jerry Brown",
+  "wrestler": "Jerry Brown",
+  "elo": 925.9525111142245,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/19",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1347.0224979358334,
+  "opponent": "Jerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/19",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1079.204159909097,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/19",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1474.3083200657622,
+  "opponent": "Jacques Rougeau",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/20",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1209.7002619654133,
+  "opponent": "Buddy Roberts",
+  "result": "draw"
+ },
+ {
+  "date": "1975/09/20",
+  "wrestling_as": "Buddy Roberts",
+  "wrestler": "Buddy Roberts",
+  "elo": 1016.3719410515445,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/09/20",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1476.8638272548149,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/21",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1351.9297158988356,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/21",
+  "wrestling_as": "Jerry Brown",
+  "wrestler": "Jerry Brown",
+  "elo": 917.9004838042941,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/21",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1478.8768340822974,
+  "opponent": "Jerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/22",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1481.17353681209,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/23",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1218.7437721637102,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/23",
+  "wrestling_as": "Jerry Brown",
+  "wrestler": "Jerry Brown",
+  "elo": 902.7074256488294,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/23",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1355.727980437702,
+  "opponent": "Jerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/25",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1062.29106678171,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/25",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1364.1845270013955,
+  "opponent": "Jacques Rougeau",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/25",
+  "wrestling_as": "Buddy Roberts",
+  "wrestler": "Buddy Roberts",
+  "elo": 1009.9291608120202,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/25",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1484.3949269318523,
+  "opponent": "Buddy Roberts",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/26",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1033.3986365786423,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/26",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1233.189987265244,
+  "opponent": "Jacques Rougeau",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/26",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1367.6158561724292,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/27",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1194.0233682663845,
+  "opponent": "Buddy Roberts",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/27",
+  "wrestling_as": "Buddy Roberts",
+  "wrestler": "Buddy Roberts",
+  "elo": 1088.2623988097396,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/27",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1026.4599324407984,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/27",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1487.8642790007743,
+  "opponent": "Jacques Rougeau",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/28",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1209.3726719902393,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/28",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1320.8353933042865,
+  "opponent": "Jerry Brown",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/28",
+  "wrestling_as": "Jerry Brown",
+  "wrestler": "Jerry Brown",
+  "elo": 1089.8292771214,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/29",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1324.247002481123,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/29",
+  "wrestling_as": "Buddy Roberts",
+  "wrestler": "Buddy Roberts",
+  "elo": 1079.1525317727917,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/29",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1492.4192125192483,
+  "opponent": "Buddy Roberts",
+  "result": "won"
+ },
+ {
+  "date": "1975/09/30",
+  "wrestling_as": "Jerry Brown",
+  "wrestler": "Jerry Brown",
+  "elo": 1069.2327053327601,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/09/30",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1334.5452883754429,
+  "opponent": "Jerry Brown",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/01",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1197.30581132919,
+  "opponent": "Jacques Rougeau",
+  "result": "draw"
+ },
+ {
+  "date": "1975/10/01",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1050.5936537628968,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/10/01",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1293.8912116430201,
+  "opponent": "Buddy Roberts",
+  "result": "lost"
+ },
+ {
+  "date": "1975/10/01",
+  "wrestling_as": "Buddy Roberts",
+  "wrestler": "Buddy Roberts",
+  "elo": 1160.4606852376369,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/02",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1209.4203397832557,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/04",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1043.3062186773623,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/10/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1496.0629300620155,
+  "opponent": "Jacques Rougeau",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/06",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1199.8470082107867,
+  "opponent": "Jerry Brown",
+  "result": "draw"
+ },
+ {
+  "date": "1975/10/06",
+  "wrestling_as": "Jerry Brown",
+  "wrestler": "Jerry Brown",
+  "elo": 1088.3793684776983,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/10/07",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1297.1081443521725,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/09",
+  "wrestling_as": "Clayton Thomson",
+  "wrestler": "Clayton Thomson",
+  "elo": 864.6671555757439,
+  "opponent": "Kengo Kimura",
+  "result": "lost"
+ },
+ {
+  "date": "1975/10/09",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1160.6595275565135,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/09",
+  "wrestling_as": "Haruka Eigen",
+  "wrestler": "Haruka Eigen",
+  "elo": 927.9980959610871,
+  "opponent": "Jacques Rougeau",
+  "result": "lost"
+ },
+ {
+  "date": "1975/10/09",
+  "wrestling_as": "Jacques Rougeau",
+  "wrestler": "Jacques Rougeau",
+  "elo": 1082.5283053702242,
+  "opponent": "Haruka Eigen",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/09",
+  "wrestling_as": "Lou Thesz",
+  "wrestler": "Lou Thesz",
+  "elo": 994.5605775315875,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/10/09",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1498.7826412962218,
+  "opponent": "Lou Thesz",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/24",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1223.8883946208093,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/25",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1501.4623687994608,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/26",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1209.4321653629231,
+  "opponent": "Ricky Hunter",
+  "result": "draw"
+ },
+ {
+  "date": "1975/10/26",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1303.9095109082443,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/27",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1170.9562930456727,
+  "opponent": "Bearcat Wright",
+  "result": "lost"
+ },
+ {
+  "date": "1975/10/27",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1076.9517446345005,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/27",
+  "wrestling_as": "Raul Castillo",
+  "wrestler": "Raul Castillo",
+  "elo": 985.1882631827247,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/10/27",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1311.315379316882,
+  "opponent": "Raul Castillo",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/28",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1194.0895772904448,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/28",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1118.9615467311396,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1975/10/28",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1480.4574677511414,
+  "opponent": "Bearcat Wright",
+  "result": "draw"
+ },
+ {
+  "date": "1975/10/29",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1481.3803690809254,
+  "opponent": "Mike Sandow",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/30",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1273.7343174939087,
+  "opponent": "Bearcat Wright",
+  "result": "lost"
+ },
+ {
+  "date": "1975/10/30",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1194.1236703770858,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/31",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1118.7413902499254,
+  "opponent": "Mr. X",
+  "result": "lost"
+ },
+ {
+  "date": "1975/10/31",
+  "wrestling_as": "Mr. X",
+  "wrestler": "Mr. X",
+  "elo": 1075.3481870405194,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/10/31",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1228.0611349062815,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1975/10/31",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1464.4116368163277,
+  "opponent": "Bearcat Wright",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/01",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1144.9840683914922,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/01",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1283.310350702641,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/02",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1467.7171497428048,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/03",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1156.7170520756822,
+  "opponent": "Bearcat Wright",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/03",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1222.1946430641865,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/03",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1287.9379812851946,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/04",
+  "wrestling_as": "Mr. X",
+  "wrestler": "Mr. X",
+  "elo": 1065.8876555828365,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/11/04",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1472.4474154716463,
+  "opponent": "Mr. X",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/06",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1185.3177257108848,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/06",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1292.0358209897636,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/07",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1198.107464377832,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/07",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1202.1535053644393,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/11/07",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1312.0769586895108,
+  "opponent": "Bearcat Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/07",
+  "wrestling_as": "Mr. X",
+  "wrestler": "Mr. X",
+  "elo": 1057.1040375335383,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/11/07",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1476.8392244962954,
+  "opponent": "Mr. X",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/08",
+  "wrestling_as": "Raul Castillo",
+  "wrestler": "Raul Castillo",
+  "elo": 962.4940955832308,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/11/08",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1220.801631977326,
+  "opponent": "Raul Castillo",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/08",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1479.3924084530806,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/10",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1230.0896898851763,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/11",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1228.083840734294,
+  "opponent": "Bearcat Wright",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/11",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1204.1593545153216,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/11",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1314.9523381934762,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/12",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1481.6035304142029,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/13",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1232.3220224991494,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/13",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1299.1913227821683,
+  "opponent": "Mr. X",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/13",
+  "wrestling_as": "Mr. X",
+  "wrestler": "Mr. X",
+  "elo": 1088.626068356154,
+  "opponent": "Seiji Sakaguchi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/14",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1240.032531775037,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/16",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1483.357427027284,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/17",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1301.8332439820501,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/20",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1243.4685367480424,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/20",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1195.8104219265701,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/11/20",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1491.7063596160356,
+  "opponent": "Bearcat Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/21",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1240.0606073862205,
+  "opponent": "Bearcat Wright",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/21",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1202.6262806502139,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/22",
+  "wrestling_as": "Mr. X",
+  "wrestler": "Mr. X",
+  "elo": 1059.1365665517742,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/11/22",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1254.8053582884104,
+  "opponent": "Mr. X",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/22",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1184.5769114507318,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/11/22",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1319.8826131815322,
+  "opponent": "Bearcat Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/23",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1239.1770035297354,
+  "opponent": "Ivan Koloff",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/23",
+  "wrestling_as": "Ivan Koloff",
+  "wrestler": "Ivan Koloff",
+  "elo": 1031.2567095173501,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/23",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1493.300916110643,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/24",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1220.5556284582044,
+  "opponent": "Greg Valentine",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/24",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 979.6735894726183,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/24",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1321.946478295099,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/25",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1494.0461323404645,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/27",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1223.8916346674162,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/28",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1153.376420787796,
+  "opponent": "Seiji Sakaguchi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/11/28",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1337.546723626567,
+  "opponent": "Bearcat Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/11/30",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1218.8861978018924,
+  "opponent": "Bearcat Wright",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/30",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1163.3872945188432,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/11/30",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 974.7515132777087,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/11/30",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1496.5071704379193,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/01",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1181.56072127993,
+  "opponent": "Ivan Koloff",
+  "result": "lost"
+ },
+ {
+  "date": "1975/12/01",
+  "wrestling_as": "Ivan Koloff",
+  "wrestler": "Ivan Koloff",
+  "elo": 1105.9076625612752,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/01",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1339.1796149132401,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/02",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1154.8778613566687,
+  "opponent": "Greg Valentine",
+  "result": "draw"
+ },
+ {
+  "date": "1975/12/02",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 1001.43437320097,
+  "opponent": "Strong Kobayashi",
+  "result": "draw"
+ },
+ {
+  "date": "1975/12/02",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1498.005324188023,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/03",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1295.4388752910927,
+  "opponent": "Greg Valentine",
+  "result": "lost"
+ },
+ {
+  "date": "1975/12/03",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 1088.9158524452646,
+  "opponent": "Seiji Sakaguchi",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/04",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1083.9568960104514,
+  "opponent": "Bill Robinson",
+  "result": "lost"
+ },
+ {
+  "date": "1975/12/04",
+  "wrestling_as": "Bill Robinson",
+  "wrestler": "Bill Robinson",
+  "elo": 1070.9209653462174,
+  "opponent": "Strong Kobayashi",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/05",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 1038.202249705077,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/12/05",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1134.670498750639,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/06",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1153.9964941713,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/06",
+  "wrestling_as": "Greg Valentine",
+  "wrestler": "Greg Valentine",
+  "elo": 1031.5838409768535,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/12/06",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1501.3145285521348,
+  "opponent": "Greg Valentine",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/07",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1501.9399348557986,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/08",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1112.0361787213692,
+  "opponent": "Strong Kobayashi",
+  "result": "lost"
+ },
+ {
+  "date": "1975/12/08",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1205.347609968774,
+  "opponent": "Bearcat Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/08",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1297.4007872018628,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/09",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1208.4243513863917,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/09",
+  "wrestling_as": "Seiji Sakaguchi",
+  "wrestler": "Seiji Sakaguchi",
+  "elo": 1300.8958248311465,
+  "opponent": "Ricky Hunter",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/10",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1102.4533938973143,
+  "opponent": "Antonio Inoki",
+  "result": "lost"
+ },
+ {
+  "date": "1975/12/10",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1506.731327267826,
+  "opponent": "Bearcat Wright",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Makoto Arakawa",
+  "wrestler": "Makoto Arakawa / Don Arakawa",
+  "elo": 1044.25860265963,
+  "opponent": "Daigoro Oshiro",
+  "result": "draw"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Daigoro Oshiro",
+  "wrestler": "Daigoro Oshiro",
+  "elo": 972.1868022090742,
+  "opponent": "Makoto Arakawa",
+  "result": "draw"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Katsuhisa Shibata",
+  "wrestler": "Katsuhisa Shibata",
+  "elo": 992.1493560428524,
+  "opponent": "Kengo Kimura",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Ivan Gomes",
+  "wrestler": "Ivan Gomes",
+  "elo": 1033.0341071965984,
+  "opponent": "Yoshiaki Fujiwara",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Masashi Ozawa",
+  "wrestler": "Masashi Ozawa",
+  "elo": 1074.1328444619446,
+  "opponent": "Kotetsu Yamamoto",
+  "result": "lost"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Kotetsu Yamamoto",
+  "wrestler": "Kotetsu Yamamoto",
+  "elo": 1010.642681384262,
+  "opponent": "Masashi Ozawa",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Haruka Eigen",
+  "wrestler": "Haruka Eigen",
+  "elo": 874.3765879271407,
+  "opponent": "Bearcat Wright",
+  "result": "lost"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Bearcat Wright",
+  "wrestler": "Bearcat Wright",
+  "elo": 1129.2641479142874,
+  "opponent": "Haruka Eigen",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Strong Kobayashi",
+  "wrestler": "Strong Kobayashi",
+  "elo": 1211.2551076646878,
+  "opponent": "Ivan Karamazov",
+  "result": "won"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Bill Robinson",
+  "wrestler": "Bill Robinson",
+  "elo": 1113.3960946369093,
+  "opponent": "Antonio Inoki",
+  "result": "draw"
+ },
+ {
+  "date": "1975/12/11",
+  "wrestling_as": "Antonio Inoki",
+  "wrestler": "Antonio Inoki",
+  "elo": 1485.4937626224798,
+  "opponent": "Bill Robinson",
+  "result": "draw"
+ }
+]
+var chart = new tauCharts.Chart({
+    data: datasource,
+    type: 'line',
+    x: 'date',
+    y: 'elo',
+    color: 'wrestler',
+    dimensions: {
+      date: {
+        type: 'measure',
+        scale: 'time',
+      },
+      elo: {
+        type: 'measure',
+      },
+      wrestler: {
+        type: 'category',
+        order: [
+ "Antonio Inoki",
+ "Seiji Sakaguchi",
+ "Strong Kobayashi",
+ "Tiger Jeet Singh",
+ "Andre The Giant",
+ "Killer Karl Krupp",
+ "Bearcat Wright",
+ "Osamu Kido",
+ "Tatsumi Fujinami",
+ "Masashi Ozawa",
+ "Buddy Roberts",
+ "Haruka Eigen",
+ "Hans Schmidt",
+ "Bill Robinson",
+ "Jacques Rougeau",
+ "Canadian Wildman / The Canadian Wildman",
+ "Ivan Koloff",
+ "Kintaro Oki",
+ "Katsuhisa Shibata",
+ "Jerry Brown",
+ "Greg Valentine",
+ "Mr. X",
+ "Brute Bernard",
+ "Huracan Ramirez",
+ "The Professional / Professional",
+ "Makoto Arakawa / Don Arakawa",
+ "Peter Kaiser",
+ "Raymond Rougeau",
+ "John Harris",
+ "Sangre Fria",
+ "Kotetsu Yamamoto",
+ "Ivan Gomes",
+ "Ricky Hunter",
+ "Super Destroyer",
+ "Johnny Powers",
+ "Shoji Kai",
+ "Billy McGuire",
+ "Lou Thesz",
+ "Benny McGuire",
+ "Gilles Poisson",
+ "Masked Gladiator / The Masked Gladiator",
+ "Mike Sandow",
+ "Raul Castillo",
+ "Masa Saito",
+ "Gene Lewis",
+ "Ali Baba",
+ "Johnny Londos",
+ "Kantaro Hoshino",
+ "Steve Veidor",
+ "Man Mountain Mike",
+ "Ivan Karamazov",
+ "Daigoro Oshiro",
+ "Tony Charles",
+ "Steve Wright",
+ "Little Hamada / Gran Hamada",
+ "Masanobu Kurisu",
+ "Pete Roberts",
+ "Takashi Kimura / Kengo Kimura",
+ "Colin Johnson",
+ "Clayton Thomson",
+ "Yoshiaki Fujiwara"
+],
+      },
+    },
+    plugins: [
+        tauCharts.api.plugins.get('tooltip')(),
+        tauCharts.api.plugins.get('quick-filter')(['date']),
+        tauCharts.api.plugins.get('legend')(),
+    ]
+});
+chart.renderTo('#line');
+    </script>
+  </body>
+</html>
